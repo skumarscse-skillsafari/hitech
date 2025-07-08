@@ -1,0 +1,96 @@
+{
+  "newsTicker": {
+    "settings": {
+      "speed": 60,
+      "pauseOnHover": true,
+      "showControls": false,
+      "autoHide": true
+    },
+    "newsItems": [
+      {
+        "id": 1,
+        "text": "Admissions Open for Academic Year 2024-25! Apply now for B.Tech, M.Tech & Ph.D programs",
+        "type": "announcement",
+        "url": "/admissions",
+        "isActive": true
+      },
+      {
+        "id": 2,
+        "text": "HIT Students Win National Robotics Championship 2024 - Congratulations to Team Innovators!",
+        "type": "achievement",
+        "url": "/news/robotics-championship",
+        "isActive": true
+      },
+      {
+        "id": 3,
+        "text": "TechFest 2024 - March 15-17, 2024. Register now for technical competitions and workshops",
+        "type": "event",
+        "url": "/events/techfest-2024",
+        "isActive": true
+      },
+      {
+        "id": 4,
+        "text": "New AI Research Center inaugurated with state-of-the-art facilities and industry partnerships",
+        "type": "facility",
+        "url": "/news/ai-research-center",
+        "isActive": true
+      },
+      {
+        "id": 5,
+        "text": "Placement Drive 2024: 98% placement rate achieved with highest package of 45 LPA",
+        "type": "announcement",
+        "url": "/placements",
+        "isActive": true
+      },
+      {
+        "id": 6,
+        "text": "NAAC A+ Grade Accreditation renewed - Maintaining excellence in engineering education",
+        "type": "achievement",
+        "url": "/about/accreditations",
+        "isActive": true
+      },
+      {
+        "id": 7,
+        "text": "New Digital Library with 50,000+ e-books and research journals now available",
+        "type": "facility",
+        "url": "/facilities/library",
+        "isActive": true
+      },
+      {
+        "id": 8,
+        "text": "Last date for scholarship applications: March 31, 2024. Don't miss out!",
+        "type": "urgent",
+        "url": "/admissions/scholarships",
+        "isActive": true
+      },
+      {
+        "id": 9,
+        "text": "MOU signed with Google Cloud for advanced computing curriculum and certifications",
+        "type": "news",
+        "url": "/news/google-partnership",
+        "isActive": true
+      },
+      {
+        "id": 10,
+        "text": "Convocation 2024 scheduled for April 20, 2024. Chief Guest: Dr. A.P.J. Abdul Kalam Memorial Lecture",
+        "type": "event",
+        "url": "/events/convocation-2024",
+        "isActive": true
+      },
+      {
+        "id": 11,
+        "text": "Industry 4.0 Lab inaugurated with robotic arms, IoT sensors, and smart manufacturing equipment",
+        "type": "facility",
+        "url": "/facilities/industry-lab",
+        "isActive": true
+      },
+      {
+        "id": 12,
+        "text": "Student startup incubated at HIT receives 50 Lakh funding from venture capitalists",
+        "type": "achievement",
+        "url": "/news/startup-funding",
+        "isActive": true
+      }
+    ]
+  }
+}

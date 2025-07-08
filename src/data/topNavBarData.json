@@ -1,0 +1,112 @@
+{
+  "topNavBar": {
+    "socialMedia": {
+      "facebook": "https://facebook.com/hit.official",
+      "twitter": "https://twitter.com/hit_official",
+      "linkedin": "https://linkedin.com/school/hindusthan-institute-technology",
+      "instagram": "https://instagram.com/hit_official",
+      "youtube": "https://youtube.com/c/HindusthanInstituteOfTechnology"
+    },
+    "menuItems": [
+      {
+        "name": "ERP",
+        "href": "/erp",
+        "external": true
+      },
+      {
+        "name": "IQAC",
+        "href": "/iqac",
+        "dropdown": [
+          { "name": "About IQAC", "href": "/iqac/about" },
+          { "name": "IQAC Committee", "href": "/iqac/committee" },
+          { "name": "IQAC Reports", "href": "/iqac/reports" },
+          { "name": "Quality Initiatives", "href": "/iqac/initiatives" },
+          { "name": "Academic Audit", "href": "/iqac/audit" },
+          { "name": "Best Practices", "href": "/iqac/best-practices" }
+        ]
+      },
+      {
+        "name": "NIRF",
+        "href": "/nirf",
+        "dropdown": [
+          { "name": "NIRF Ranking", "href": "/nirf/ranking" },
+          { "name": "NIRF Data", "href": "/nirf/data" },
+          { "name": "NIRF Reports", "href": "/nirf/reports" },
+          { "name": "Performance Metrics", "href": "/nirf/metrics" }
+        ]
+      },
+      {
+        "name": "NAAC",
+        "href": "/naac",
+        "dropdown": [
+          { "name": "NAAC Accreditation", "href": "/naac/accreditation" },
+          { "name": "Self Study Report", "href": "/naac/ssr" },
+          { "name": "NAAC Certificate", "href": "/naac/certificate" },
+          { "name": "Quality Assurance", "href": "/naac/quality-assurance" },
+          { "name": "NAAC Guidelines", "href": "/naac/guidelines" }
+        ]
+      },
+      {
+        "name": "NBA",
+        "href": "/nba",
+        "dropdown": [
+          { "name": "NBA Accreditation", "href": "/nba/accreditation" },
+          { "name": "Accredited Programs", "href": "/nba/programs" },
+          { "name": "NBA Reports", "href": "/nba/reports" },
+          { "name": "Quality Standards", "href": "/nba/standards" },
+          { "name": "NBA Guidelines", "href": "/nba/guidelines" }
+        ]
+      },
+      {
+        "name": "AICTE",
+        "href": "/aicte",
+        "dropdown": [
+          { "name": "AICTE Approval", "href": "/aicte/approval" },
+          { "name": "Mandatory Disclosures", "href": "/aicte/disclosures" },
+          { "name": "AICTE Reports", "href": "/aicte/reports" },
+          { "name": "Compliance", "href": "/aicte/compliance" }
+        ]
+      },
+      {
+        "name": "Admissions",
+        "href": "/admissions",
+        "dropdown": [
+          { "name": "Admission Process", "href": "/admissions/process" },
+          { "name": "Eligibility Criteria", "href": "/admissions/eligibility" },
+          { "name": "Application Form", "href": "/admissions/application" },
+          { "name": "Fee Structure", "href": "/admissions/fees" },
+          { "name": "Scholarships", "href": "/admissions/scholarships" },
+          { "name": "Important Dates", "href": "/admissions/dates" },
+          { "name": "Admission Guidelines", "href": "/admissions/guidelines" }
+        ]
+      },
+      {
+        "name": "Students",
+        "href": "/students",
+        "dropdown": [
+          { "name": "Student Portal", "href": "/students/portal" },
+          { "name": "Academic Calendar", "href": "/students/calendar" },
+          { "name": "Examination", "href": "/students/examination" },
+          { "name": "Results", "href": "/students/results" },
+          { "name": "Time Table", "href": "/students/timetable" },
+          { "name": "Student Activities", "href": "/students/activities" },
+          { "name": "Grievance Cell", "href": "/students/grievance" }
+        ]
+      },
+      {
+        "name": "Quick Links",
+        "href": "/quick-links",
+        "dropdown": [
+          { "name": "Library", "href": "/library" },
+          { "name": "E-Learning", "href": "/e-learning" },
+          { "name": "Faculty Portal", "href": "/faculty-portal" },
+          { "name": "Alumni Portal", "href": "/alumni-portal" },
+          { "name": "Fee Payment", "href": "/fee-payment" },
+          { "name": "Downloads", "href": "/downloads" },
+          { "name": "Contact Directory", "href": "/contact-directory" },
+          { "name": "Campus Map", "href": "/campus-map" }
+        ]
+      }
+    ]
+  }
+}

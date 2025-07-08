@@ -1,0 +1,46 @@
+{
+  "contact": {
+    "address": "Hindusthan Institute of Technology, Othakalmandapam, Coimbatore - 641 032, Tamil Nadu, India",
+    "phone": "+91-422-2987654",
+    "email": "info@hit.edu.in",
+    "website": "www.hit.edu.in",
+    "socialMedia": {
+      "facebook": "HindusthanInstituteOfTechnology",
+      "twitter": "HIT_Official",
+      "linkedin": "hindusthan-institute-technology",
+      "instagram": "hit_official",
+      "youtube": "HindusthanInstituteOfTechnology"
+    },
+    "departments": [
+      {
+        "name": "Admissions Office",
+        "phone": "+91-422-2987655",
+        "email": "admissions@hit.edu.in"
+      },
+      {
+        "name": "Placement Cell",
+        "phone": "+91-422-2987656",
+        "email": "placements@hit.edu.in"
+      },
+      {
+        "name": "Academic Office",
+        "phone": "+91-422-2987657",
+        "email": "academics@hit.edu.in"
+      },
+      {
+        "name": "Finance Office",
+        "phone": "+91-422-2987658",
+        "email": "finance@hit.edu.in"
+      }
+    ],
+    "officeHours": {
+      "weekdays": "Monday - Friday: 9:00 AM - 5:00 PM",
+      "saturday": "Saturday: 9:00 AM - 1:00 PM",
+      "sunday": "Sunday: Closed"
+    },
+    "emergencyContact": {
+      "phone": "+91-422-2987699",
+      "email": "emergency@hit.edu.in"
+    }
+  }
+}

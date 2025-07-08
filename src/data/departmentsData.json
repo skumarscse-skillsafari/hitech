@@ -1,0 +1,1055 @@
+{
+  "departments": [
+    {
+      "id": "cse",
+      "name": "Computer Science & Engineering",
+      "shortName": "CSE",
+      "description": "Pioneering the digital revolution with cutting-edge curriculum in AI, ML, Data Science, and Software Engineering.",
+      "icon": "Monitor",
+      "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To be a leading department in computer science education and research, producing innovative engineers who drive technological advancement.",
+      "mission": "To provide comprehensive education in computer science, foster research and innovation, and develop ethical professionals for the global technology industry.",
+      "programs": [
+        {
+          "name": "B.Tech Computer Science & Engineering",
+          "duration": "4 Years",
+          "intake": "120 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Computer Science & Engineering",
+          "duration": "2 Years",
+          "intake": "30 Students",
+          "eligibility": "B.Tech CSE/IT, GATE"
+        },
+        {
+          "name": "Ph.D Computer Science",
+          "duration": "3-6 Years",
+          "intake": "15 Students",
+          "eligibility": "M.Tech/M.E, NET/GATE"
+        }
+      ],
+      "specializations": ["Artificial Intelligence", "Machine Learning", "Cybersecurity", "Data Science", "Cloud Computing", "IoT"],
+      "facilities": ["AI Lab", "Robotics Lab", "Cloud Computing Center", "Research Center", "High Performance Computing Lab"],
+      "psos": [
+        {
+          "id": "PSO1",
+          "title": "Software Development Proficiency",
+          "description": "Graduates will demonstrate proficiency in software development methodologies, programming languages, and modern development tools to create efficient and scalable software solutions."
+        },
+        {
+          "id": "PSO2",
+          "title": "Emerging Technology Expertise",
+          "description": "Graduates will possess expertise in emerging technologies such as AI, ML, IoT, and cloud computing to address contemporary technological challenges."
+        }
+      ],
+      "peos": [
+        {
+          "id": "PEO1",
+          "title": "Professional Excellence",
+          "description": "Graduates will establish themselves as competent computer science professionals, demonstrating technical expertise, leadership skills, and ethical practices in their chosen careers."
+        },
+        {
+          "id": "PEO2",
+          "title": "Innovation and Research",
+          "description": "Graduates will engage in continuous learning, research, and innovation to contribute to technological advancement and societal development."
+        }
+      ],
+      "pos": [
+        {
+          "id": "PO1",
+          "title": "Engineering Knowledge",
+          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex engineering problems."
+        },
+        {
+          "id": "PO2",
+          "title": "Problem Analysis",
+          "description": "Identify, formulate, and analyze complex engineering problems using first principles of mathematics and engineering sciences."
+        },
+        {
+          "id": "PO3",
+          "title": "Design/Development of Solutions",
+          "description": "Design solutions for complex engineering problems considering public health, safety, and cultural, societal, and environmental considerations."
+        },
+        {
+          "id": "PO4",
+          "title": "Conduct Investigations",
+          "description": "Use research-based knowledge and methods including design of experiments, analysis and interpretation of data to provide valid conclusions."
+        },
+        {
+          "id": "PO5",
+          "title": "Modern Tool Usage",
+          "description": "Create, select, and apply appropriate techniques, resources, and modern engineering tools including prediction and modeling."
+        },
+        {
+          "id": "PO6",
+          "title": "The Engineer and Society",
+          "description": "Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal and cultural issues."
+        },
+        {
+          "id": "PO7",
+          "title": "Environment and Sustainability",
+          "description": "Understand the impact of professional engineering solutions in societal and environmental contexts and demonstrate sustainable development."
+        },
+        {
+          "id": "PO8",
+          "title": "Ethics",
+          "description": "Apply ethical principles and commit to professional ethics and responsibilities and norms of engineering practice."
+        },
+        {
+          "id": "PO9",
+          "title": "Individual and Team Work",
+          "description": "Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+        },
+        {
+          "id": "PO10",
+          "title": "Communication",
+          "description": "Communicate effectively on complex engineering activities with the engineering community and society at large."
+        },
+        {
+          "id": "PO11",
+          "title": "Project Management",
+          "description": "Demonstrate knowledge and understanding of engineering and management principles and apply these to one's own work."
+        },
+        {
+          "id": "PO12",
+          "title": "Life-long Learning",
+          "description": "Recognize the need for, and have the preparation and ability to engage in independent and life-long learning."
+        }
+      ],
+      "teachingMethodologies": [
+        {
+          "id": 1,
+          "title": "Project-Based Learning",
+          "description": "Students work on real-world projects to apply theoretical knowledge practically, developing industry-relevant skills.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 2,
+          "title": "Industry-Integrated Curriculum",
+          "description": "Curriculum designed with industry input to meet current market demands and emerging technology trends.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 3,
+          "title": "Hands-on Laboratory Sessions",
+          "description": "Practical sessions in well-equipped labs for experiential learning and skill development.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 4,
+          "title": "Research-Oriented Teaching",
+          "description": "Teaching methodology that encourages research and innovation among students.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 5,
+          "title": "Collaborative Learning",
+          "description": "Group-based learning to enhance teamwork and communication skills.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 6,
+          "title": "Case Study Method",
+          "description": "Real-world case studies to understand practical applications of theoretical concepts.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400"
+        }
+      ],
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor & Head",
+          "specialization": "Artificial Intelligence, Machine Learning",
+          "experience": "18 years",
+          "education": "Ph.D from IIT Delhi",
+          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "rajesh.kumar@hit.edu",
+          "publications": 45,
+          "researchAreas": ["Deep Learning", "Computer Vision", "Natural Language Processing"]
+        },
+        {
+          "id": 2,
+          "name": "Dr. Anita Singh",
+          "designation": "Associate Professor",
+          "specialization": "Data Science, Big Data Analytics",
+          "experience": "12 years",
+          "education": "Ph.D from IIT Bombay",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "anita.singh@hit.edu",
+          "publications": 32,
+          "researchAreas": ["Big Data", "Data Mining", "Business Intelligence"]
+        },
+        {
+          "id": 3,
+          "name": "Dr. Vikram Patel",
+          "designation": "Assistant Professor",
+          "specialization": "Cybersecurity, Network Security",
+          "experience": "8 years",
+          "education": "Ph.D from IIT Kanpur",
+          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "vikram.patel@hit.edu",
+          "publications": 28,
+          "researchAreas": ["Cryptography", "Network Security", "Blockchain"]
+        },
+        {
+          "id": 4,
+          "name": "Dr. Priya Sharma",
+          "designation": "Associate Professor",
+          "specialization": "Software Engineering, Web Technologies",
+          "experience": "10 years",
+          "education": "Ph.D from NIT Trichy",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "priya.sharma@hit.edu",
+          "publications": 25,
+          "researchAreas": ["Software Architecture", "Web Development", "Mobile Computing"]
+        },
+        {
+          "id": 5,
+          "name": "Dr. Amit Gupta",
+          "designation": "Assistant Professor",
+          "specialization": "Cloud Computing, Distributed Systems",
+          "experience": "7 years",
+          "education": "Ph.D from IIT Madras",
+          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "amit.gupta@hit.edu",
+          "publications": 22,
+          "researchAreas": ["Cloud Architecture", "Microservices", "DevOps"]
+        },
+        {
+          "id": 6,
+          "name": "Dr. Kavitha Reddy",
+          "designation": "Professor",
+          "specialization": "Database Systems, Information Retrieval",
+          "experience": "15 years",
+          "education": "Ph.D from IISc Bangalore",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "kavitha.reddy@hit.edu",
+          "publications": 38,
+          "researchAreas": ["NoSQL Databases", "Search Engines", "Data Warehousing"]
+        },
+        {
+          "id": 7,
+          "name": "Dr. Suresh Kumar",
+          "designation": "Assistant Professor",
+          "specialization": "Internet of Things, Embedded Systems",
+          "experience": "6 years",
+          "education": "Ph.D from VIT Vellore",
+          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "suresh.kumar@hit.edu",
+          "publications": 18,
+          "researchAreas": ["IoT Applications", "Sensor Networks", "Edge Computing"]
+        },
+        {
+          "id": 8,
+          "name": "Dr. Meera Nair",
+          "designation": "Associate Professor",
+          "specialization": "Human-Computer Interaction, UI/UX Design",
+          "experience": "9 years",
+          "education": "Ph.D from Anna University",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "meera.nair@hit.edu",
+          "publications": 24,
+          "researchAreas": ["User Experience", "Accessibility", "Design Thinking"]
+        },
+        {
+          "id": 9,
+          "name": "Dr. Ravi Krishnan",
+          "designation": "Assistant Professor",
+          "specialization": "Computer Graphics, Virtual Reality",
+          "experience": "5 years",
+          "education": "Ph.D from IIT Guwahati",
+          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "ravi.krishnan@hit.edu",
+          "publications": 15,
+          "researchAreas": ["3D Graphics", "AR/VR", "Game Development"]
+        },
+        {
+          "id": 10,
+          "name": "Dr. Deepika Jain",
+          "designation": "Professor",
+          "specialization": "Algorithms, Computational Complexity",
+          "experience": "16 years",
+          "education": "Ph.D from IIT Delhi",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "deepika.jain@hit.edu",
+          "publications": 42,
+          "researchAreas": ["Algorithm Design", "Optimization", "Parallel Computing"]
+        },
+        {
+          "id": 11,
+          "name": "Dr. Arjun Mehta",
+          "designation": "Assistant Professor",
+          "specialization": "Mobile Computing, Wireless Networks",
+          "experience": "4 years",
+          "education": "Ph.D from BITS Pilani",
+          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "arjun.mehta@hit.edu",
+          "publications": 12,
+          "researchAreas": ["5G Networks", "Mobile Apps", "Wireless Security"]
+        },
+        {
+          "id": 12,
+          "name": "Dr. Sanjana Rao",
+          "designation": "Associate Professor",
+          "specialization": "Natural Language Processing, Text Mining",
+          "experience": "11 years",
+          "education": "Ph.D from IIIT Hyderabad",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "sanjana.rao@hit.edu",
+          "publications": 29,
+          "researchAreas": ["NLP", "Sentiment Analysis", "Chatbots"]
+        }
+      ]
+    },
+    {
+      "id": "aids",
+      "name": "Artificial Intelligence & Data Science",
+      "shortName": "AI&DS",
+      "description": "Exploring the frontiers of artificial intelligence and data science to solve complex real-world problems.",
+      "icon": "Brain",
+      "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To be a center of excellence in AI and Data Science education, fostering innovation and research in intelligent systems.",
+      "mission": "To provide cutting-edge education in AI and Data Science, develop skilled professionals, and contribute to technological advancement through research and innovation.",
+      "programs": [
+        {
+          "name": "B.Tech Artificial Intelligence & Data Science",
+          "duration": "4 Years",
+          "intake": "60 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Artificial Intelligence",
+          "duration": "2 Years",
+          "intake": "18 Students",
+          "eligibility": "B.Tech CSE/IT/AI&DS, GATE"
+        }
+      ],
+      "specializations": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Data Analytics", "Robotics"],
+      "facilities": ["AI Research Lab", "Data Science Lab", "GPU Computing Center", "Robotics Lab", "Visualization Studio"],
+      "psos": [
+        {
+          "id": "PSO1",
+          "title": "AI System Development",
+          "description": "Graduates will be able to design, develop, and deploy intelligent systems using modern AI techniques and frameworks."
+        },
+        {
+          "id": "PSO2",
+          "title": "Data Analytics Expertise",
+          "description": "Graduates will demonstrate proficiency in data collection, processing, analysis, and visualization to extract meaningful insights."
+        }
+      ],
+      "peos": [
+        {
+          "id": "PEO1",
+          "title": "AI Innovation Leadership",
+          "description": "Graduates will lead AI innovation in various domains, contributing to technological advancement and societal benefit."
+        },
+        {
+          "id": "PEO2",
+          "title": "Research Excellence",
+          "description": "Graduates will pursue advanced research in AI and Data Science, contributing to scientific knowledge and breakthrough discoveries."
+        }
+      ],
+      "pos": [
+        {
+          "id": "PO1",
+          "title": "Engineering Knowledge",
+          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex AI and data science problems."
+        },
+        {
+          "id": "PO2",
+          "title": "Problem Analysis",
+          "description": "Identify, formulate, and analyze complex AI problems using first principles and advanced computational methods."
+        },
+        {
+          "id": "PO3",
+          "title": "Design/Development of Solutions",
+          "description": "Design AI solutions considering ethical, societal, and environmental implications."
+        },
+        {
+          "id": "PO4",
+          "title": "Conduct Investigations",
+          "description": "Use research-based knowledge and experimental methods to validate AI models and data science solutions."
+        },
+        {
+          "id": "PO5",
+          "title": "Modern Tool Usage",
+          "description": "Create and apply AI frameworks, data science tools, and modern computational resources."
+        },
+        {
+          "id": "PO6",
+          "title": "The Engineer and Society",
+          "description": "Assess the societal impact of AI systems and data-driven decisions."
+        },
+        {
+          "id": "PO7",
+          "title": "Environment and Sustainability",
+          "description": "Understand the environmental impact of AI systems and promote sustainable computing practices."
+        },
+        {
+          "id": "PO8",
+          "title": "Ethics",
+          "description": "Apply ethical principles in AI development, ensuring fairness, transparency, and accountability."
+        },
+        {
+          "id": "PO9",
+          "title": "Individual and Team Work",
+          "description": "Function effectively in interdisciplinary AI and data science teams."
+        },
+        {
+          "id": "PO10",
+          "title": "Communication",
+          "description": "Communicate complex AI concepts and data insights effectively to diverse audiences."
+        },
+        {
+          "id": "PO11",
+          "title": "Project Management",
+          "description": "Manage AI projects considering technical, ethical, and business constraints."
+        },
+        {
+          "id": "PO12",
+          "title": "Life-long Learning",
+          "description": "Adapt to rapidly evolving AI technologies and methodologies through continuous learning."
+        }
+      ],
+      "teachingMethodologies": [
+        {
+          "id": 1,
+          "title": "Machine Learning Workshops",
+          "description": "Hands-on workshops with real datasets to build and deploy ML models.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 2,
+          "title": "Industry Case Studies",
+          "description": "Real-world AI implementation case studies from leading technology companies.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 3,
+          "title": "Research-Based Projects",
+          "description": "Students work on cutting-edge research projects in AI and data science.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 4,
+          "title": "Kaggle Competitions",
+          "description": "Participation in global data science competitions for practical experience.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400"
+        }
+      ],
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Arun Kumar",
+          "designation": "Professor & Head",
+          "specialization": "Machine Learning, Deep Learning",
+          "experience": "16 years",
+          "education": "Ph.D from IIT Bombay",
+          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "arun.kumar@hit.edu",
+          "publications": 52,
+          "researchAreas": ["Neural Networks", "Computer Vision", "Reinforcement Learning"]
+        },
+        {
+          "id": 2,
+          "name": "Dr. Sneha Patel",
+          "designation": "Associate Professor",
+          "specialization": "Natural Language Processing, Text Analytics",
+          "experience": "11 years",
+          "education": "Ph.D from IIIT Hyderabad",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "sneha.patel@hit.edu",
+          "publications": 34,
+          "researchAreas": ["NLP", "Sentiment Analysis", "Language Models"]
+        }
+      ]
+    },
+    {
+      "id": "it",
+      "name": "Information Technology",
+      "shortName": "IT",
+      "description": "Bridging technology and business through innovative IT solutions and digital transformation.",
+      "icon": "Globe",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To be a premier department in information technology education, creating IT professionals who drive digital innovation.",
+      "mission": "To provide comprehensive IT education, foster innovation in digital technologies, and develop skilled professionals for the global IT industry.",
+      "programs": [
+        {
+          "name": "B.Tech Information Technology",
+          "duration": "4 Years",
+          "intake": "90 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Information Technology",
+          "duration": "2 Years",
+          "intake": "24 Students",
+          "eligibility": "B.Tech IT/CSE, GATE"
+        }
+      ],
+      "specializations": ["Web Technologies", "Mobile Computing", "Network Security", "Database Systems", "Enterprise Systems", "Digital Marketing"],
+      "facilities": ["Web Development Lab", "Mobile App Lab", "Network Security Lab", "Database Lab", "Enterprise Systems Lab"],
+      "psos": [
+        {
+          "id": "PSO1",
+          "title": "IT Solution Development",
+          "description": "Graduates will be able to design and develop comprehensive IT solutions for business and organizational needs."
+        },
+        {
+          "id": "PSO2",
+          "title": "Digital Transformation",
+          "description": "Graduates will lead digital transformation initiatives using modern IT technologies and methodologies."
+        }
+      ],
+      "peos": [
+        {
+          "id": "PEO1",
+          "title": "IT Leadership",
+          "description": "Graduates will assume leadership roles in IT organizations, driving technological innovation and business growth."
+        },
+        {
+          "id": "PEO2",
+          "title": "Entrepreneurship",
+          "description": "Graduates will establish successful IT ventures and contribute to the digital economy."
+        }
+      ],
+      "pos": [
+        {
+          "id": "PO1",
+          "title": "Engineering Knowledge",
+          "description": "Apply knowledge of mathematics, science, and IT fundamentals to solve complex technology problems."
+        },
+        {
+          "id": "PO2",
+          "title": "Problem Analysis",
+          "description": "Identify and analyze complex IT problems using systematic approaches."
+        },
+        {
+          "id": "PO3",
+          "title": "Design/Development of Solutions",
+          "description": "Design IT solutions considering user requirements, scalability, and security."
+        },
+        {
+          "id": "PO4",
+          "title": "Conduct Investigations",
+          "description": "Use research methods to evaluate and improve IT systems and processes."
+        },
+        {
+          "id": "PO5",
+          "title": "Modern Tool Usage",
+          "description": "Apply modern IT tools, frameworks, and platforms effectively."
+        },
+        {
+          "id": "PO6",
+          "title": "The Engineer and Society",
+          "description": "Understand the societal impact of IT systems and digital technologies."
+        },
+        {
+          "id": "PO7",
+          "title": "Environment and Sustainability",
+          "description": "Promote sustainable IT practices and green computing initiatives."
+        },
+        {
+          "id": "PO8",
+          "title": "Ethics",
+          "description": "Apply ethical principles in IT development and data management."
+        },
+        {
+          "id": "PO9",
+          "title": "Individual and Team Work",
+          "description": "Work effectively in diverse IT teams and project environments."
+        },
+        {
+          "id": "PO10",
+          "title": "Communication",
+          "description": "Communicate technical concepts effectively to stakeholders."
+        },
+        {
+          "id": "PO11",
+          "title": "Project Management",
+          "description": "Manage IT projects using modern methodologies and tools."
+        },
+        {
+          "id": "PO12",
+          "title": "Life-long Learning",
+          "description": "Adapt to evolving IT technologies and industry trends."
+        }
+      ],
+      "teachingMethodologies": [
+        {
+          "id": 1,
+          "title": "Agile Development",
+          "description": "Learn modern software development using agile methodologies and DevOps practices.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 2,
+          "title": "Industry Internships",
+          "description": "Mandatory industry internships to gain real-world IT experience.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400"
+        }
+      ],
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Ramesh Gupta",
+          "designation": "Professor & Head",
+          "specialization": "Web Technologies, Enterprise Systems",
+          "experience": "17 years",
+          "education": "Ph.D from Anna University",
+          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "ramesh.gupta@hit.edu",
+          "publications": 41,
+          "researchAreas": ["Web Services", "Enterprise Architecture", "Cloud Computing"]
+        }
+      ]
+    },
+    {
+      "id": "ece",
+      "name": "Electronics & Communication Engineering",
+      "shortName": "ECE",
+      "description": "Advancing communication technologies and embedded systems for the connected world.",
+      "icon": "Radio",
+      "image": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To excel in electronics and communication engineering education and research, creating innovative solutions for emerging technologies.",
+      "mission": "To provide quality education in electronics and communication, promote research in emerging areas, and develop skilled professionals for the electronics industry.",
+      "programs": [
+        {
+          "name": "B.Tech Electronics & Communication Engineering",
+          "duration": "4 Years",
+          "intake": "90 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Electronics & Communication Engineering",
+          "duration": "2 Years",
+          "intake": "24 Students",
+          "eligibility": "B.Tech ECE/EEE, GATE"
+        }
+      ],
+      "specializations": ["VLSI Design", "Embedded Systems", "Signal Processing", "IoT", "Wireless Communication"],
+      "facilities": ["VLSI Lab", "Communication Lab", "Microprocessor Lab", "Digital Signal Processing Lab", "Embedded Systems Lab"],
+      "psos": [
+        {
+          "id": "PSO1",
+          "title": "Electronics System Design",
+          "description": "Graduates will be able to design and develop electronic systems for various applications."
+        },
+        {
+          "id": "PSO2",
+          "title": "Communication Technology",
+          "description": "Graduates will demonstrate expertise in modern communication technologies and protocols."
+        }
+      ],
+      "peos": [
+        {
+          "id": "PEO1",
+          "title": "Technical Excellence",
+          "description": "Graduates will excel in electronics and communication engineering careers."
+        },
+        {
+          "id": "PEO2",
+          "title": "Innovation",
+          "description": "Graduates will contribute to technological innovation in electronics and communication."
+        }
+      ],
+      "pos": [
+        {
+          "id": "PO1",
+          "title": "Engineering Knowledge",
+          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex engineering problems."
+        },
+        {
+          "id": "PO2",
+          "title": "Problem Analysis",
+          "description": "Identify, formulate, and analyze complex engineering problems using first principles of mathematics and engineering sciences."
+        },
+        {
+          "id": "PO3",
+          "title": "Design/Development of Solutions",
+          "description": "Design solutions for complex engineering problems considering public health, safety, and cultural, societal, and environmental considerations."
+        },
+        {
+          "id": "PO4",
+          "title": "Conduct Investigations",
+          "description": "Use research-based knowledge and methods including design of experiments, analysis and interpretation of data to provide valid conclusions."
+        },
+        {
+          "id": "PO5",
+          "title": "Modern Tool Usage",
+          "description": "Create, select, and apply appropriate techniques, resources, and modern engineering tools including prediction and modeling."
+        },
+        {
+          "id": "PO6",
+          "title": "The Engineer and Society",
+          "description": "Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal and cultural issues."
+        },
+        {
+          "id": "PO7",
+          "title": "Environment and Sustainability",
+          "description": "Understand the impact of professional engineering solutions in societal and environmental contexts and demonstrate sustainable development."
+        },
+        {
+          "id": "PO8",
+          "title": "Ethics",
+          "description": "Apply ethical principles and commit to professional ethics and responsibilities and norms of engineering practice."
+        },
+        {
+          "id": "PO9",
+          "title": "Individual and Team Work",
+          "description": "Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+        },
+        {
+          "id": "PO10",
+          "title": "Communication",
+          "description": "Communicate effectively on complex engineering activities with the engineering community and society at large."
+        },
+        {
+          "id": "PO11",
+          "title": "Project Management",
+          "description": "Demonstrate knowledge and understanding of engineering and management principles and apply these to one's own work."
+        },
+        {
+          "id": "PO12",
+          "title": "Life-long Learning",
+          "description": "Recognize the need for, and have the preparation and ability to engage in independent and life-long learning."
+        }
+      ],
+      "teachingMethodologies": [
+        {
+          "id": 1,
+          "title": "Circuit Simulation",
+          "description": "Advanced circuit simulation using industry-standard tools for practical learning.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 2,
+          "title": "Hardware-in-Loop Testing",
+          "description": "Real-time testing with actual hardware components for practical understanding.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=400"
+        }
+      ],
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Priya Sharma",
+          "designation": "Professor & Head",
+          "specialization": "VLSI Design, Digital Signal Processing",
+          "experience": "15 years",
+          "education": "Ph.D from IIT Madras",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "priya.sharma@hit.edu",
+          "publications": 38,
+          "researchAreas": ["VLSI Design", "Low Power Design", "Digital Signal Processing"]
+        }
+      ]
+    },
+    {
+      "id": "mech",
+      "name": "Mechanical Engineering",
+      "shortName": "MECH",
+      "description": "Engineering mechanical solutions for manufacturing, automation, and sustainable technologies.",
+      "icon": "Settings",
+      "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
+      "mission": "To provide comprehensive mechanical engineering education, promote innovation in manufacturing and design, and develop competent engineers for industry and research.",
+      "programs": [
+        {
+          "name": "B.Tech Mechanical Engineering",
+          "duration": "4 Years",
+          "intake": "120 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Mechanical Engineering",
+          "duration": "2 Years",
+          "intake": "30 Students",
+          "eligibility": "B.Tech ME, GATE"
+        }
+      ],
+      "specializations": ["Robotics & Automation", "Thermal Engineering", "Manufacturing", "Design Engineering", "Renewable Energy"],
+      "facilities": ["CAD/CAM Lab", "Thermal Lab", "Manufacturing Lab", "Robotics Workshop", "Materials Testing Lab"],
+      "psos": [
+        {
+          "id": "PSO1",
+          "title": "Mechanical System Design",
+          "description": "Graduates will be able to design and analyze mechanical systems for various industrial applications."
+        },
+        {
+          "id": "PSO2",
+          "title": "Manufacturing Excellence",
+          "description": "Graduates will demonstrate expertise in modern manufacturing processes and automation technologies."
+        }
+      ],
+      "peos": [
+        {
+          "id": "PEO1",
+          "title": "Engineering Leadership",
+          "description": "Graduates will assume leadership roles in mechanical engineering and related fields."
+        },
+        {
+          "id": "PEO2",
+          "title": "Sustainable Innovation",
+          "description": "Graduates will contribute to sustainable engineering solutions and environmental conservation."
+        }
+      ],
+      "pos": [
+        {
+          "id": "PO1",
+          "title": "Engineering Knowledge",
+          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex engineering problems."
+        },
+        {
+          "id": "PO2",
+          "title": "Problem Analysis",
+          "description": "Identify, formulate, and analyze complex engineering problems using first principles of mathematics and engineering sciences."
+        },
+        {
+          "id": "PO3",
+          "title": "Design/Development of Solutions",
+          "description": "Design solutions for complex engineering problems considering public health, safety, and cultural, societal, and environmental considerations."
+        },
+        {
+          "id": "PO4",
+          "title": "Conduct Investigations",
+          "description": "Use research-based knowledge and methods including design of experiments, analysis and interpretation of data to provide valid conclusions."
+        },
+        {
+          "id": "PO5",
+          "title": "Modern Tool Usage",
+          "description": "Create, select, and apply appropriate techniques, resources, and modern engineering tools including prediction and modeling."
+        },
+        {
+          "id": "PO6",
+          "title": "The Engineer and Society",
+          "description": "Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal and cultural issues."
+        },
+        {
+          "id": "PO7",
+          "title": "Environment and Sustainability",
+          "description": "Understand the impact of professional engineering solutions in societal and environmental contexts and demonstrate sustainable development."
+        },
+        {
+          "id": "PO8",
+          "title": "Ethics",
+          "description": "Apply ethical principles and commit to professional ethics and responsibilities and norms of engineering practice."
+        },
+        {
+          "id": "PO9",
+          "title": "Individual and Team Work",
+          "description": "Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+        },
+        {
+          "id": "PO10",
+          "title": "Communication",
+          "description": "Communicate effectively on complex engineering activities with the engineering community and society at large."
+        },
+        {
+          "id": "PO11",
+          "title": "Project Management",
+          "description": "Demonstrate knowledge and understanding of engineering and management principles and apply these to one's own work."
+        },
+        {
+          "id": "PO12",
+          "title": "Life-long Learning",
+          "description": "Recognize the need for, and have the preparation and ability to engage in independent and life-long learning."
+        }
+      ],
+      "teachingMethodologies": [
+        {
+          "id": 1,
+          "title": "Design Thinking Approach",
+          "description": "Human-centered approach to innovation and problem-solving in mechanical design.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 2,
+          "title": "Industry-Integrated Projects",
+          "description": "Real industry projects to bridge the gap between theory and practice.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400"
+        }
+      ],
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Amit Patel",
+          "designation": "Professor & Head",
+          "specialization": "Robotics, Manufacturing Engineering",
+          "experience": "16 years",
+          "education": "Ph.D from IIT Kanpur",
+          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "amit.patel@hit.edu",
+          "publications": 42,
+          "researchAreas": ["Industrial Robotics", "Advanced Manufacturing", "Automation"]
+        }
+      ]
+    },
+    {
+      "id": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "description": "Developing future business leaders with strategic thinking and management excellence.",
+      "icon": "Briefcase",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To be a premier business school that develops ethical leaders and innovative managers for the global business environment.",
+      "mission": "To provide world-class management education, foster entrepreneurship, and develop business leaders who create value for organizations and society.",
+      "programs": [
+        {
+          "name": "MBA (Master of Business Administration)",
+          "duration": "2 Years",
+          "intake": "60 Students",
+          "eligibility": "Bachelor's Degree, CAT/MAT/XAT"
+        },
+        {
+          "name": "Executive MBA",
+          "duration": "18 Months",
+          "intake": "30 Students",
+          "eligibility": "Bachelor's + 3 years experience"
+        }
+      ],
+      "specializations": ["Finance", "Marketing", "Human Resources", "Operations", "International Business", "Entrepreneurship"],
+      "facilities": ["Case Study Rooms", "Business Simulation Lab", "Bloomberg Terminal", "Entrepreneurship Cell", "Corporate Training Center"],
+      "psos": [
+        {
+          "id": "PSO1",
+          "title": "Strategic Management",
+          "description": "Graduates will be able to formulate and implement strategic decisions for organizational success."
+        },
+        {
+          "id": "PSO2",
+          "title": "Leadership Excellence",
+          "description": "Graduates will demonstrate effective leadership and team management skills in diverse business environments."
+        }
+      ],
+      "peos": [
+        {
+          "id": "PEO1",
+          "title": "Business Leadership",
+          "description": "Graduates will assume senior leadership positions in organizations and drive business growth."
+        },
+        {
+          "id": "PEO2",
+          "title": "Entrepreneurial Success",
+          "description": "Graduates will establish successful ventures and contribute to economic development."
+        }
+      ],
+      "pos": [
+        {
+          "id": "PO1",
+          "title": "Business Knowledge",
+          "description": "Apply comprehensive knowledge of business functions to solve complex organizational problems."
+        },
+        {
+          "id": "PO2",
+          "title": "Problem Analysis",
+          "description": "Identify and analyze complex business problems using analytical and strategic thinking."
+        },
+        {
+          "id": "PO3",
+          "title": "Solution Development",
+          "description": "Develop innovative business solutions considering stakeholder interests and market dynamics."
+        },
+        {
+          "id": "PO4",
+          "title": "Research and Analysis",
+          "description": "Conduct business research and market analysis to support decision-making."
+        },
+        {
+          "id": "PO5",
+          "title": "Technology Integration",
+          "description": "Leverage modern business tools and technologies for organizational efficiency."
+        },
+        {
+          "id": "PO6",
+          "title": "Social Responsibility",
+          "description": "Understand the role of business in society and promote sustainable practices."
+        },
+        {
+          "id": "PO7",
+          "title": "Global Perspective",
+          "description": "Demonstrate understanding of global business environment and cultural diversity."
+        },
+        {
+          "id": "PO8",
+          "title": "Ethics and Governance",
+          "description": "Apply ethical principles and corporate governance in business decisions."
+        },
+        {
+          "id": "PO9",
+          "title": "Leadership and Teamwork",
+          "description": "Lead teams effectively and work collaboratively in diverse business settings."
+        },
+        {
+          "id": "PO10",
+          "title": "Communication",
+          "description": "Communicate business ideas and strategies effectively to various stakeholders."
+        },
+        {
+          "id": "PO11",
+          "title": "Project Management",
+          "description": "Manage business projects and initiatives using modern management methodologies."
+        },
+        {
+          "id": "PO12",
+          "title": "Continuous Learning",
+          "description": "Adapt to changing business environment through continuous learning and development."
+        }
+      ],
+      "teachingMethodologies": [
+        {
+          "id": 1,
+          "title": "Case Study Method",
+          "description": "Harvard-style case study discussions for real-world business problem solving.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 2,
+          "title": "Business Simulation",
+          "description": "Virtual business simulations to experience real-world business challenges.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 3,
+          "title": "Industry Immersion",
+          "description": "Live projects and internships with leading corporations for practical exposure.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400"
+        }
+      ],
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Sunita Agarwal",
+          "designation": "Professor & Director",
+          "specialization": "Strategic Management, Finance",
+          "experience": "20 years",
+          "education": "Ph.D from IIM Ahmedabad",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "sunita.agarwal@hit.edu",
+          "publications": 48,
+          "researchAreas": ["Corporate Strategy", "Financial Management", "Mergers & Acquisitions"]
+        }
+      ]
+    }
+  ]
+}
