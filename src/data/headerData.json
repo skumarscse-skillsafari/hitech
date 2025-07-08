@@ -1,0 +1,63 @@
+{
+  "header": {
+    "collegeName": "Hindusthan Institute of Technology",
+    "collegeSubtitle": "(An Autonomous Institution); Approved by AICTE New Delhi, Affiliated to Anna University, Chennai.",
+    "navigationItems": [
+      { "name": "Home", "href": "/" },
+      { 
+        "name": "About", 
+        "href": "/about",
+        "dropdown": [
+          { "name": "About Us", "href": "/about" },
+          { "name": "Vision & Mission", "href": "/vision-mission" },
+          { "name": "Leadership", "href": "/leadership" },
+          { "name": "Accreditations", "href": "/accreditations" }
+        ]
+      },
+      { 
+        "name": "Academics", 
+        "href": "/academics",
+        "dropdown": [
+          { "name": "Computer Science & Engineering", "href": "/department/cse" },
+          { "name": "Electronics & Communication", "href": "/department/ece" },
+          { "name": "Mechanical Engineering", "href": "/department/me" },
+          { "name": "Civil Engineering", "href": "/department/ce" },
+          { "name": "Academic Calendar", "href": "/academic-calendar" },
+          { "name": "Examination", "href": "/examination" }
+        ]
+      },
+      { 
+        "name": "Admissions", 
+        "href": "/admissions",
+        "dropdown": [
+          { "name": "Admission Process", "href": "/admissions" },
+          { "name": "Eligibility", "href": "/eligibility" },
+          { "name": "Fee Structure", "href": "/fee-structure" },
+          { "name": "Scholarships", "href": "/scholarships" }
+        ]
+      },
+      { 
+        "name": "Campus Life", 
+        "href": "/campus-life",
+        "dropdown": [
+          { "name": "Gallery", "href": "/gallery" },
+          { "name": "Events", "href": "/events" },
+          { "name": "Student Activities", "href": "/student-activities" },
+          { "name": "Facilities", "href": "/facilities" }
+        ]
+      },
+      { 
+        "name": "Placements", 
+        "href": "/placements",
+        "dropdown": [
+          { "name": "Placement Statistics", "href": "/placements" },
+          { "name": "Top Recruiters", "href": "/recruiters" },
+          { "name": "Training Programs", "href": "/training" },
+          { "name": "Alumni Network", "href": "/alumni" }
+        ]
+      },
+      { "name": "Research", "href": "/research" },
+      { "name": "Contact", "href": "/contact" }
+    ]
+  }
+}
