@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { BookOpen, Users, Award, Building, Briefcase, Globe, ChevronRight, Plus } from 'lucide-react';
+import Slider from 'react-slick';
+import {
+  BookOpen, Users, Award, Building, Briefcase, Globe, ChevronRight, Plus,
+} from 'lucide-react';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 interface TabsSectionProps {
   departmentName: string;
@@ -18,13 +24,13 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
         items: [
           {
             title: 'Dr.A.JameerBasha, Professor & Head Dr.S.Lokesh, ASP/CSE Ms.P.Jeevitha, AP/CSE',
-            description: 'Design and development of smart assistive device with integration of hybrid blockchain and augmented reality to shape the future mobile healthcare system for post covid challenges and diagnosis system',
+            description: 'Design and development of smart assistive device...',
             status: '3-years (Ongoing)',
-            funding: 'Rs.9,48,614	'
+            funding: 'Rs.9,48,614'
           },
           {
             title: 'Dr.R.Kala AP/CSE',
-            description: 'Brain Tumor Detection Using Deep Convolutional Neural Network And Its Application Using FPGA Implementation',
+            description: 'Brain Tumor Detection Using Deep CNN and FPGA Implementation',
             status: '1 year (Ongoing)',
             funding: 'Rs.2,00,000'
           },
@@ -36,9 +42,9 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
           },
           {
             title: 'Dr.S.Lokesh, ASP/CSE',
-            description: 'Nano Assistive Communication Device for Elderly and Speech Disability People after Stroke',
+            description: 'Nano Assistive Communication Device for Elderly and Speech Disability People',
             status: '1 Year (Completed)',
-            funding: 'Rs.2,10,000	'
+            funding: 'Rs.2,10,000'
           }
         ]
       }
@@ -52,7 +58,7 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
         items: [
           {
             title: 'Google Cloud Partnership',
-            description: 'Collaboration for cloud computing curriculum and certification programs.',
+            description: 'Collaboration for cloud computing curriculum and certifications.',
             type: 'Technology Partner',
             duration: '3 Years'
           },
@@ -64,7 +70,7 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
           },
           {
             title: 'TCS Innovation Lab',
-            description: 'On-campus innovation lab for student projects and internships.',
+            description: 'On-campus lab for student projects and internships.',
             type: 'Industry Lab',
             duration: '5 Years'
           }
@@ -80,19 +86,19 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
         items: [
           {
             title: 'Best Engineering College Award 2024',
-            description: 'Recognized by State Government for excellence in engineering education.',
+            description: 'Recognized by State Government for excellence.',
             year: '2024',
             category: 'Institutional'
           },
           {
             title: 'National Innovation Challenge Winner',
-            description: 'Students won first prize in national level innovation competition.',
+            description: 'Students won first prize in national innovation competition.',
             year: '2024',
             category: 'Student Achievement'
           },
           {
             title: 'Research Excellence Award',
-            description: 'Faculty received recognition for outstanding research contributions.',
+            description: 'Faculty recognized for outstanding research.',
             year: '2023',
             category: 'Faculty Achievement'
           }
@@ -108,19 +114,19 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
         items: [
           {
             title: 'High Performance Computing Lab',
-            description: 'Advanced computing facility with GPU clusters for AI/ML research.',
+            description: 'Facility with GPU clusters for AI/ML research.',
             capacity: '50 Students',
             equipment: 'NVIDIA Tesla GPUs'
           },
           {
             title: 'Innovation & Incubation Center',
-            description: 'Dedicated space for student startups and entrepreneurship development.',
+            description: 'Space for startups and entrepreneurship.',
             capacity: '20 Startups',
             equipment: '3D Printers, Prototyping Tools'
           },
           {
             title: 'Industry 4.0 Lab',
-            description: 'Smart manufacturing lab with IoT sensors and automation systems.',
+            description: 'Smart manufacturing lab with IoT and automation.',
             capacity: '30 Students',
             equipment: 'Robotic Arms, IoT Sensors'
           }
@@ -136,19 +142,19 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
         items: [
           {
             title: 'Student Exchange Program - MIT',
-            description: 'Semester exchange program with Massachusetts Institute of Technology.',
+            description: 'Semester exchange program with MIT.',
             country: 'USA',
             students: '10 per year'
           },
           {
             title: 'Research Collaboration - TU Munich',
-            description: 'Joint research projects with Technical University of Munich.',
+            description: 'Joint research with TU Munich.',
             country: 'Germany',
             projects: '5 Active'
           },
           {
-            title: 'Dual Degree Program - University of Toronto',
-            description: 'Dual degree program in Computer Science and Engineering.',
+            title: 'Dual Degree Program - Toronto',
+            description: 'Dual degree in Computer Science and Engineering.',
             country: 'Canada',
             duration: '4+1 Years'
           }
@@ -163,20 +169,20 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
         title: 'Distinguished Alumni',
         items: [
           {
-            title: 'Rajesh Kumar - CEO, Tech Innovations Inc.',
-            description: 'Leading a Fortune 500 technology company with global operations.',
+            title: 'Rajesh Kumar - CEO, Tech Innovations',
+            description: 'Leading a Fortune 500 tech company.',
             batch: '2010',
-            company: 'Tech Innovations Inc.'
+            company: 'Tech Innovations'
           },
           {
             title: 'Priya Sharma - Senior Engineer, Google',
-            description: 'Working on cutting-edge AI projects at Google headquarters.',
+            description: 'Working on AI projects at Google HQ.',
             batch: '2015',
             company: 'Google'
           },
           {
             title: 'Amit Patel - Founder, StartupXYZ',
-            description: 'Founded a successful startup valued at $100M in the fintech sector.',
+            description: 'Founded successful fintech startup.',
             batch: '2012',
             company: 'StartupXYZ'
           }
@@ -187,9 +193,20 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
 
   const activeTabData = tabs.find(tab => tab.id === activeTab);
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1 } },
+    ],
+  };
+
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-      {/* Tab Headers */}
       <div className="border-b border-gray-200">
         <div className="flex flex-wrap">
           {tabs.map((tab) => {
@@ -212,55 +229,48 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
         </div>
       </div>
 
-      {/* Tab Content */}
       <div className="p-8">
         {activeTabData && (
           <div className="space-y-6">
             <div className="flex items-center justify-between">
-              <h3 className="text-2xl font-bold text-gray-900">
-                {activeTabData.content.title}
-              </h3>
+              <h3 className="text-2xl font-bold text-gray-900">{activeTabData.content.title}</h3>
               <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 py-2 rounded-lg font-medium transition-colors flex items-center space-x-2">
                 <Plus className="h-4 w-4" />
                 <span>Add New</span>
               </button>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Slider {...sliderSettings}>
               {activeTabData.content.items.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group"
-                >
-                  <h4 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">
-                    {item.title}
-                  </h4>
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                    {item.description}
-                  </p>
-                  
-                  {/* Dynamic metadata based on tab type */}
-                  <div className="space-y-2 text-xs">
-                    {Object.entries(item).map(([key, value]) => {
-                      if (key === 'title' || key === 'description') return null;
-                      return (
-                        <div key={key} className="flex justify-between">
-                          <span className="text-gray-500 capitalize">{key}:</span>
-                          <span className="text-gray-700 font-medium">{value}</span>
-                        </div>
-                      );
-                    })}
-                  </div>
+                <div key={index} className="px-3">
+                  <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group h-full flex flex-col justify-between">
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">{item.description}</p>
+                      <div className="space-y-2 text-xs">
+                        {Object.entries(item).map(([key, value]) => {
+                          if (key === 'title' || key === 'description') return null;
+                          return (
+                            <div key={key} className="flex justify-between">
+                              <span className="text-gray-500 capitalize">{key}:</span>
+                              <span className="text-gray-700 font-medium">{value}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
 
-                  <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
-                    <span>Learn More</span>
-                    <ChevronRight className="h-3 w-3" />
-                  </button>
+                    <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
+                      <span>Learn More</span>
+                      <ChevronRight className="h-3 w-3" />
+                    </button>
+                  </div>
                 </div>
               ))}
-            </div>
+            </Slider>
 
-            {/* Add More Button */}
             <div className="text-center pt-6">
               <button className="border-2 border-dashed border-gray-300 hover:border-yellow-500 text-gray-600 hover:text-yellow-600 px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:bg-yellow-50">
                 + Add More {activeTabData.name}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import PageLayout from '../components/layout/PageLayout';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import DepartmentDetail from '../components/DepartmentDetail';
@@ -14,7 +14,7 @@ const DepartmentPage: React.FC = () => {
   const { departmentId } = useParams<{ departmentId: string }>();
   
   const department = departmentsData.departments.find(dept => dept.id === departmentId);
-  
+  const navigate = useNavigate();
   if (!department) {
     return <Navigate to="/" replace />;
   }
