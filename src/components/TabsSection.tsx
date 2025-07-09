@@ -17,22 +17,28 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
         title: 'Current Research Projects',
         items: [
           {
-            title: 'Artificial Intelligence in Healthcare',
-            description: 'Developing AI-powered diagnostic tools for early disease detection.',
-            status: 'Ongoing',
-            funding: '₹15 Lakhs'
+            title: 'Dr.A.JameerBasha, Professor & Head Dr.S.Lokesh, ASP/CSE Ms.P.Jeevitha, AP/CSE',
+            description: 'Design and development of smart assistive device with integration of hybrid blockchain and augmented reality to shape the future mobile healthcare system for post covid challenges and diagnosis system',
+            status: '3-years (Ongoing)',
+            funding: 'Rs.9,48,614	'
           },
           {
-            title: 'Sustainable Energy Solutions',
-            description: 'Research on renewable energy systems and smart grid technologies.',
-            status: 'Completed',
-            funding: '₹25 Lakhs'
+            title: 'Dr.R.Kala AP/CSE',
+            description: 'Brain Tumor Detection Using Deep Convolutional Neural Network And Its Application Using FPGA Implementation',
+            status: '1 year (Ongoing)',
+            funding: 'Rs.2,00,000'
           },
           {
-            title: 'IoT-based Smart City Infrastructure',
-            description: 'Creating intelligent systems for urban management and monitoring.',
-            status: 'Ongoing',
-            funding: '₹20 Lakhs'
+            title: 'Ms.R.T. Subhalakshmi AP/CSE',
+            description: 'Automatic segmentation and classification of COVID-19 CT image Using DCN',
+            status: '1 Year (ongoing)',
+            funding: 'Rs.2,04,000'
+          },
+          {
+            title: 'Dr.S.Lokesh, ASP/CSE',
+            description: 'Nano Assistive Communication Device for Elderly and Speech Disability People after Stroke',
+            status: '1 Year (Completed)',
+            funding: 'Rs.2,10,000	'
           }
         ]
       }

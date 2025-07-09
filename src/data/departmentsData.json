@@ -11,36 +11,32 @@
       "mission": "To provide comprehensive education in computer science, foster research and innovation, and develop ethical professionals for the global technology industry.",
       "programs": [
         {
-          "name": "B.Tech Computer Science & Engineering",
+          "name": "B.E Computer Science & Engineering",
           "duration": "4 Years",
           "intake": "120 Students",
-          "eligibility": "10+2 with PCM, JEE Main"
+          "eligibility": "10+2 with PCM"
         },
         {
-          "name": "M.Tech Computer Science & Engineering",
+          "name": "M.E Computer Science & Engineering",
           "duration": "2 Years",
-          "intake": "30 Students",
-          "eligibility": "B.Tech CSE/IT, GATE"
+          "intake": "24 Students",
+          "eligibility": "B.Tech CSE/IT, GATE,TANCET"
         },
         {
-          "name": "Ph.D Computer Science",
-          "duration": "3-6 Years",
-          "intake": "15 Students",
+          "name": "Ph.D Computer Science & Engineering",
           "eligibility": "M.Tech/M.E, NET/GATE"
         }
       ],
       "specializations": ["Artificial Intelligence", "Machine Learning", "Cybersecurity", "Data Science", "Cloud Computing", "IoT"],
-      "facilities": ["AI Lab", "Robotics Lab", "Cloud Computing Center", "Research Center", "High Performance Computing Lab"],
+      "facilities": ["Networks and Simulations Laboratory", "RDBMS Laboratory", "Project Laboratory", "Mobile Application Development Laboratory", "PG Research Laboratory"],
       "psos": [
         {
           "id": "PSO1",
-          "title": "Software Development Proficiency",
-          "description": "Graduates will demonstrate proficiency in software development methodologies, programming languages, and modern development tools to create efficient and scalable software solutions."
-        },
+          "description": "Ability to apply programming skills in various languages and implement algorithms and data structures to solve computational challenges."
+},
         {
           "id": "PSO2",
-          "title": "Emerging Technology Expertise",
-          "description": "Graduates will possess expertise in emerging technologies such as AI, ML, IoT, and cloud computing to address contemporary technological challenges."
+          "description":"Ability to design, develop, test, and integrate software and hardware components to construct effective and efficient computer-based systems."
         }
       ],
       "peos": [
