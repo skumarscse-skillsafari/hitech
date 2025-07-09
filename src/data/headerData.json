@@ -8,10 +8,10 @@
         "name": "About", 
         "href": "/about",
         "dropdown": [
-          { "name": "About Us", "href": "/about" },
-          { "name": "Vision & Mission", "href": "/vision-mission" },
-          { "name": "Leadership", "href": "/leadership" },
-          { "name": "Accreditations", "href": "/accreditations" }
+          { "name": "Objectives", "href": "/about" },
+          { "name": "Management", "href": "/vision-mission" },
+          { "name": "Principal's Desk", "href": "/leadership" },
+          { "name": "Board of Governors", "href": "/accreditations" }
         ]
       },
       { 
@@ -19,11 +19,12 @@
         "href": "/academics",
         "dropdown": [
           { "name": "Computer Science & Engineering", "href": "/department/cse" },
-          { "name": "Electronics & Communication", "href": "/department/ece" },
+          { "name": "Electronics & Communication Engineering", "href": "/department/ece" },
           { "name": "Mechanical Engineering", "href": "/department/me" },
-          { "name": "Civil Engineering", "href": "/department/ce" },
-          { "name": "Academic Calendar", "href": "/academic-calendar" },
-          { "name": "Examination", "href": "/examination" }
+          { "name": "Aeronautical Engineering", "href": "/department/ae" },
+          { "name": "Artificial Intelligence and data science", "href": "/department/aids" },
+          { "name": "Information Technology", "href": "/department/it" },
+          { "name": "Academic calendar", "href": "/academic-calendar" }
         ]
       },
       { 
@@ -32,6 +33,7 @@
         "dropdown": [
           { "name": "Admission Process", "href": "/admissions" },
           { "name": "Eligibility", "href": "/eligibility" },
+          { "name": "Application form", "href": "/appform" },
           { "name": "Fee Structure", "href": "/fee-structure" },
           { "name": "Scholarships", "href": "/scholarships" }
         ]
