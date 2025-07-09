@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+
 import { CMSProvider } from './components/admin/CMSProvider';
 import TopNavBar from './components/TopNavBar';
 import Header from './components/Header';
 import NewsTicker from './components/NewsTicker';
 import Footer from './components/Footer';
+
 import HomePage from './pages/HomePage';
 import DepartmentPage from './pages/DepartmentPage';
 import GalleryPage from './pages/GalleryPage';
@@ -14,7 +16,7 @@ import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
 
-// Import JSON data files
+// JSON data
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
@@ -25,36 +27,39 @@ function App() {
     <HelmetProvider>
       <CMSProvider>
         <Router>
-          <div className="min-h-screen bg-white">
-            <TopNavBar 
-              socialMedia={topNavBarData.topNavBar.socialMedia} 
-              menuItems={topNavBarData.topNavBar.menuItems}
+          <div className="min-h-screen bg-white flex flex-col">
+            <TopNavBar
+              socialMedia={topNavBarData?.topNavBar?.socialMedia || []}
+              menuItems={topNavBarData?.topNavBar?.menuItems || []}
             />
-            <Header 
-              collegeName={headerData.header.collegeName} 
-              collegeSubtitle={headerData.header.collegeSubtitle}
-              navigationItems={headerData.header.navigationItems}
+
+            <Header
+              collegeName={headerData?.header?.collegeName || "College Name"}
+              collegeSubtitle={headerData?.header?.collegeSubtitle || "Subtitle"}
+              navigationItems={headerData?.header?.navigationItems || []}
             />
-            <NewsTicker 
-              newsItems={newsTickerData.newsTicker.newsItems}
-              speed={newsTickerData.newsTicker.settings.speed}
-              pauseOnHover={newsTickerData.newsTicker.settings.pauseOnHover}
+
+            <NewsTicker
+              newsItems={newsTickerData?.newsTicker?.newsItems || []}
+              speed={newsTickerData?.newsTicker?.settings?.speed || 50}
+              pauseOnHover={newsTickerData?.newsTicker?.settings?.pauseOnHover || true}
             />
-            
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/department/:departmentId" element={<DepartmentPage />} />
-              <Route path="/gallery" element={<GalleryPage />} />
-              <Route path="/placements" element={<PlacementsPage />} />
-              <Route path="/admissions" element={<AdmissionsPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/reuse" element={<ReusePage />} />
-              {/* Add more routes as needed */}
-            </Routes>
-            
-            <Footer 
-              collegeName={headerData.header.collegeName} 
-              contact={contactData.contact} 
+
+            <div className="flex-1">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/department/:departmentId" element={<DepartmentPage />} />
+                <Route path="/gallery" element={<GalleryPage />} />
+                <Route path="/placements" element={<PlacementsPage />} />
+                <Route path="/admissions" element={<AdmissionsPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/reuse" element={<ReusePage />} />
+              </Routes>
+            </div>
+
+            <Footer
+              collegeName={headerData?.header?.collegeName || "College Name"}
+              contact={contactData?.contact || {}}
             />
           </div>
         </Router>
