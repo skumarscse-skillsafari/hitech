@@ -45,26 +45,26 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
     },
     {
       id: 'industry',
-      name: 'Industry Partnerships',
+      name: 'Professional Society',
       icon: Briefcase,
       content: {
         title: 'Corporate Collaborations',
         items: [
           {
-            title: 'Google Cloud Partnership',
-            description: 'Collaboration for cloud computing curriculum and certification programs.',
+            title: 'IEEE',
+            description: 'IAdvancing Technology for Humanity.',
             type: 'Technology Partner',
             duration: '3 Years'
           },
           {
-            title: 'Microsoft Azure Academy',
-            description: 'Joint program for cloud and AI skill development.',
+            title: 'ICT Academy',
+            description: 'INOVATE...COLLABRATE...EDUCATE...',
             type: 'Academic Partner',
             duration: '2 Years'
           },
           {
-            title: 'TCS Innovation Lab',
-            description: 'On-campus innovation lab for student projects and internships.',
+            title: 'Computer Society Of India',
+            description: '',
             type: 'Industry Lab',
             duration: '5 Years'
           }
