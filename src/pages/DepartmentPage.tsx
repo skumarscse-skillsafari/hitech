@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import PageLayout from '../components/layout/PageLayout';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import DepartmentDetail from '../components/DepartmentDetail';
@@ -12,9 +12,10 @@ import departmentsData from '../data/departmentsData.json';
 
 const DepartmentPage: React.FC = () => {
   const { departmentId } = useParams<{ departmentId: string }>();
-  
+  const navigate = useNavigate(); // ✅ Added
+
   const department = departmentsData.departments.find(dept => dept.id === departmentId);
-  
+
   if (!department) {
     return <Navigate to="/" replace />;
   }
@@ -31,7 +32,7 @@ const DepartmentPage: React.FC = () => {
           <DepartmentDetail department={department} />
         </SectionWrapper>
 
-        {/* Program Outcomes - Moved below Vision & Mission */}
+        {/* Program Outcomes */}
         <SectionWrapper lazy lazyHeight="400px" lazyDelay={600} className="mt-12">
           <DepartmentOutcomes 
             psos={department.psos}
@@ -41,14 +42,17 @@ const DepartmentPage: React.FC = () => {
           />
         </SectionWrapper>
 
-        {/* Teaching Methodologies - Enhanced with YouTube */}
+        {/* Teaching Methodologies */}
         <SectionWrapper lazy lazyHeight="500px" lazyDelay={900} className="mt-12">
           <TeachingMethodologyCards 
             methodologies={department.teachingMethodologies}
             departmentName={department.name}
           />
           <div className="text-center mt-8">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+            <button
+              onClick={() => navigate('/innovative-methods')} // ✅ Updated
+              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+            >
               View All Innovative Teaching Methodologies
             </button>
           </div>
@@ -62,7 +66,7 @@ const DepartmentPage: React.FC = () => {
           />
         </SectionWrapper>
 
-        {/* Faculty - Enhanced with navigation */}
+        {/* Faculty */}
         <SectionWrapper lazy lazyHeight="600px" lazyDelay={1300} className="mt-12">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
