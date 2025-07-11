@@ -240,6 +240,7 @@ const TabsSection: React.FC<TabsSectionProps> = ({ departmentName }) => {
                   </p>
                   
                   {/* Dynamic metadata based on tab type */}
+                  <FacultyCarousel />
                   <div className="space-y-2 text-xs">
                     {Object.entries(item).map(([key, value]) => {
                       if (key === 'title' || key === 'description') return null;
