@@ -12,8 +12,7 @@ interface AdmissionsProps {
     deadlines: {
       applicationStart: string;
       applicationEnd: string;
-      entranceExam: string;
-      resultDeclaration: string;
+     
     };
   };
 }
@@ -115,18 +114,7 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
                     {formatDate(admissions.deadlines.applicationEnd)}
                   </span>
                 </div>
-                <div className="flex items-center justify-between py-3 border-b border-gray-100">
-                  <span className="text-gray-700 font-medium">Entrance Exam</span>
-                  <span className="text-purple-600 font-semibold">
-                    {formatDate(admissions.deadlines.entranceExam)}
-                  </span>
-                </div>
-                <div className="flex items-center justify-between py-3">
-                  <span className="text-gray-700 font-medium">Result Declaration</span>
-                  <span className="text-green-600 font-semibold">
-                    {formatDate(admissions.deadlines.resultDeclaration)}
-                  </span>
-                </div>
+                
               </div>
             </div>
 
