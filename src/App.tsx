@@ -13,6 +13,7 @@ import PlacementsPage from './pages/PlacementsPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
+import InnovativeMethods from './pages/InnovativeMethods'; // ✅ New import
 
 // Import JSON data files
 import topNavBarData from './data/topNavBarData.json';
@@ -49,7 +50,7 @@ function App() {
               <Route path="/admissions" element={<AdmissionsPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/reuse" element={<ReusePage />} />
-              {/* Add more routes as needed */}
+              <Route path="/innovative-methods" element={<InnovativeMethods />} /> 
             </Routes>
             
             <Footer 
