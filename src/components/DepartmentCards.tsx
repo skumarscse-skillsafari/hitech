@@ -59,7 +59,7 @@ const DepartmentCards: React.FC<DepartmentCardsProps> = ({ departments }) => {
         </div>
 
         {/* Department Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {departments.map((dept) => {
             const IconComponent = iconMap[dept.icon as keyof typeof iconMap] || Monitor;
             
@@ -69,7 +69,7 @@ const DepartmentCards: React.FC<DepartmentCardsProps> = ({ departments }) => {
                 className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group hover:-translate-y-2"
               >
                 {/* Department Image */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-40 overflow-hidden">
                   <img 
                     src={dept.image} 
                     alt={dept.name}
@@ -79,7 +79,7 @@ const DepartmentCards: React.FC<DepartmentCardsProps> = ({ departments }) => {
                   
                   {/* Icon */}
                   <div className="absolute top-6 left-6 bg-white/90 p-3 rounded-lg">
-                    <IconComponent className="h-6 w-6 text-gray-600" />
+                    <IconComponent className="h-3 w-3 text-gray-600" />
                   </div>
                   
                   {/* Department Badge */}
