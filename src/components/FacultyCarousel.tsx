@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Mail, Award, BookOpen, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import {
+  ChevronLeft,
+  ChevronRight,
+  Mail,
+  Award,
+  BookOpen,
+  ExternalLink
+} from 'lucide-react';
 
 interface FacultyMember {
   id: number;
@@ -19,23 +27,25 @@ interface FacultyCarouselProps {
   departmentName?: string;
 }
 
-const FacultyCarousel: React.FC<FacultyCarouselProps> = ({ 
-  faculty, 
-  departmentName = "Department" 
+const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
+  faculty,
+  departmentName = "Department"
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = 3;
   const totalPages = Math.ceil(faculty.length / itemsPerPage);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex + itemsPerPage >= faculty.length ? 0 : prevIndex + itemsPerPage
     );
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? Math.max(0, faculty.length - itemsPerPage) : Math.max(0, prevIndex - itemsPerPage)
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0
+        ? Math.max(0, faculty.length - itemsPerPage)
+        : Math.max(0, prevIndex - itemsPerPage)
     );
   };
 
@@ -47,6 +57,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
 
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg">
+      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <h4 className="text-2xl font-bold text-gray-900 mb-2">
@@ -56,8 +67,8 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
             Meet our expert faculty members from {departmentName}
           </p>
         </div>
-        
-        {/* Navigation Controls */}
+
+        {/* Pagination + Arrows */}
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
             {Array.from({ length: totalPages }).map((_, index) => (
@@ -72,7 +83,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
               />
             ))}
           </div>
-          
+
           <div className="flex items-center space-x-2">
             <button
               onClick={prevSlide}
@@ -92,25 +103,25 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
         </div>
       </div>
 
-      {/* Faculty Cards */}
+      {/* Cards */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[500px]">
         {currentFaculty.map((member) => (
           <div
             key={member.id}
             className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 border border-gray-200 hover:border-yellow-300"
           >
-            {/* Faculty Image */}
+            {/* Image */}
             <div className="relative h-64 overflow-hidden">
-              <img 
-                src={member.image} 
+              <img
+                src={member.image}
                 alt={member.name}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              
-              {/* Contact Button */}
+
+              {/* Email */}
               <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a 
+                <a
                   href={`mailto:${member.email}`}
                   className="bg-white/90 hover:bg-white p-2 rounded-full transition-colors shadow-md"
                 >
@@ -118,7 +129,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                 </a>
               </div>
 
-              {/* Experience Badge */}
+              {/* Experience */}
               <div className="absolute bottom-4 left-4 bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
                 {member.experience}
               </div>
@@ -133,9 +144,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                 <p className="text-yellow-600 font-semibold text-sm mb-1">
                   {member.designation}
                 </p>
-                <p className="text-gray-600 text-sm">
-                  {member.specialization}
-                </p>
+                <p className="text-gray-600 text-sm">{member.specialization}</p>
               </div>
 
               {/* Education */}
@@ -144,7 +153,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                 <span>{member.education}</span>
               </div>
 
-              {/* Publications */}
+              {/* Publications + View Profile */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
                   <BookOpen className="h-4 w-4 text-green-500" />
@@ -152,10 +161,13 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                     {member.publications} Publications
                   </span>
                 </div>
-                <button className="text-yellow-600 hover:text-yellow-700 text-sm font-medium flex items-center space-x-1 group/btn">
+                <Link
+                  to={`/profile/${member.id}`}
+                  className="text-yellow-600 hover:text-yellow-700 text-sm font-medium flex items-center space-x-1 group/btn"
+                >
                   <span>View Profile</span>
                   <ExternalLink className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
-                </button>
+                </Link>
               </div>
 
               {/* Research Areas */}
@@ -163,12 +175,17 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                 <p className="text-xs font-medium text-gray-700 mb-2">Research Areas:</p>
                 <div className="flex flex-wrap gap-1">
                   {member.researchAreas.slice(0, 3).map((area, idx) => (
-                    <span key={idx} className="bg-gray-200 text-gray-600 px-2 py-1 rounded text-xs">
+                    <span
+                      key={idx}
+                      className="bg-gray-200 text-gray-600 px-2 py-1 rounded text-xs"
+                    >
                       {area}
                     </span>
                   ))}
                   {member.researchAreas.length > 3 && (
-                    <span className="text-gray-500 text-xs">+{member.researchAreas.length - 3}</span>
+                    <span className="text-gray-500 text-xs">
+                      +{member.researchAreas.length - 3}
+                    </span>
                   )}
                 </div>
               </div>
@@ -177,12 +194,12 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
         ))}
       </div>
 
-      {/* Faculty Count Info */}
+      {/* Footer Summary */}
       <div className="mt-8 text-center">
         <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200 inline-block">
           <p className="text-gray-700">
-            <span className="font-bold text-yellow-700">{faculty.length}</span> distinguished faculty members 
-            contributing to excellence in {departmentName}
+            <span className="font-bold text-yellow-700">{faculty.length}</span> distinguished
+            faculty members contributing to excellence in {departmentName}
           </p>
         </div>
       </div>

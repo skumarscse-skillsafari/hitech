@@ -6,6 +6,7 @@ import TopNavBar from './components/TopNavBar';
 import Header from './components/Header';
 import NewsTicker from './components/NewsTicker';
 import Footer from './components/Footer';
+
 import HomePage from './pages/HomePage';
 import DepartmentPage from './pages/DepartmentPage';
 import GalleryPage from './pages/GalleryPage';
@@ -13,8 +14,15 @@ import PlacementsPage from './pages/PlacementsPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
+import InnovativeMethods from './pages/InnovativeMethods';
+import Objectives from './pages/Objectives';
+import Management from './pages/Management';
+import PrincipalsDesk from './pages/PrincipalsDesk';
+import BoardOfGovernors from './pages/BoardOfGovernance';
+import FacultyProfilePage from './pages/FacultyProfilePage';
+import GoverningCouncilPage from './pages/GoverningCouncilPage'; // ✅ NEW PAGE IMPORTED
 
-// Import JSON data files
+// JSON data imports
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
@@ -40,7 +48,7 @@ function App() {
               speed={newsTickerData.newsTicker.settings.speed}
               pauseOnHover={newsTickerData.newsTicker.settings.pauseOnHover}
             />
-            
+
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/department/:departmentId" element={<DepartmentPage />} />
@@ -49,9 +57,15 @@ function App() {
               <Route path="/admissions" element={<AdmissionsPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/reuse" element={<ReusePage />} />
-              {/* Add more routes as needed */}
+              <Route path="/innovative-methods" element={<InnovativeMethods />} />
+              <Route path="/about/objectives" element={<Objectives />} />
+              <Route path="/vision-mission" element={<Management />} />
+              <Route path="/leadership" element={<PrincipalsDesk />} />
+              <Route path="/accreditations" element={<BoardOfGovernors />} />
+              <Route path="/governing-council" element={<GoverningCouncilPage />} /> {/* ✅ NEW ROUTE */}
+              <Route path="/profile/:id" element={<FacultyProfilePage />} />
             </Routes>
-            
+
             <Footer 
               collegeName={headerData.header.collegeName} 
               contact={contactData.contact} 
