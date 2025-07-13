@@ -6,38 +6,7 @@
       "highestPackage": "45 LPA",
       "companiesVisited": "150+"
     },
-    "topRecruiters": [
-      {
-        "name": "Google",
-        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
-        "package": "35-45 LPA"
-      },
-      {
-        "name": "Microsoft",
-        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
-        "package": "28-40 LPA"
-      },
-      {
-        "name": "Amazon",
-        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
-        "package": "25-35 LPA"
-      },
-      {
-        "name": "TCS",
-        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
-        "package": "4-8 LPA"
-      },
-      {
-        "name": "Infosys",
-        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
-        "package": "4-7 LPA"
-      },
-      {
-        "name": "Wipro",
-        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
-        "package": "4-6 LPA"
-      }
-    ],
+   
     "placementProcess": [
       {
         "step": 1,
