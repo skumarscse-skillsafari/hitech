@@ -8,11 +8,7 @@ interface PlacementStats {
   companiesVisited: string;
 }
 
-interface TopRecruiter {
-  name: string;
-  logo: string;
-  package: string;
-}
+
 
 interface PlacementProcess {
   step: number;

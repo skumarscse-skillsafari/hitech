@@ -6,7 +6,6 @@ import AccreditationCards from '../components/AccreditationCards';
 import DepartmentCards from '../components/DepartmentCards';
 import Gallery from '../components/Gallery';
 import Placements from '../components/Placements';
-import PlacementTestimonials from '../components/PlacementTestimonials';
 import FacultyCarousel from '../components/FacultyCarousel';
 import SocialMediaCarousel from '../components/SocialMediaCarousel';
 import NewsEventsSection from '../components/NewsEventsSection';
@@ -43,9 +42,20 @@ const HomePage: React.FC = () => {
           events={newsEventsData.events} 
         />
       </SectionWrapper>
-      
+    
       <SectionWrapper lazy lazyHeight="500px" lazyDelay={700}>
-        <DepartmentCards departments={departmentsData.departments} />
+        <DepartmentCards
+          departments={departmentsData.departments.map((dept: any) => ({
+            ...dept,
+            programs: (dept.programs || []).filter(
+              (prog: any) =>
+                typeof prog.name === 'string' &&
+                typeof prog.duration === 'string' &&
+                typeof prog.intake === 'string' &&
+                typeof prog.eligibility === 'string'
+            ),
+          }))}
+        />
       </SectionWrapper>
       
       {/* Social Media Feed with Carousel */}
@@ -57,12 +67,9 @@ const HomePage: React.FC = () => {
         <Gallery gallery={collegeData.gallery} />
       </SectionWrapper>
       
-      {/* Enhanced Placements with Testimonials */}
+      {/* Enhanced Placements */}
       <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={1300}>
         <Placements placements={collegeData.placements} />
-        <div className="mt-16">
-          <PlacementTestimonials testimonials={placementsData.placements.testimonials} />
-        </div>
       </SectionWrapper>
       
       {/* Faculty with Carousel */}

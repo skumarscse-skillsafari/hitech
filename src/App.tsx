@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -16,6 +15,7 @@ import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
 
+
 // JSON data
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
@@ -28,23 +28,27 @@ function App() {
       <CMSProvider>
         <Router>
           <div className="min-h-screen bg-white flex flex-col">
+            {/* Top Navbar */}
             <TopNavBar
               socialMedia={topNavBarData?.topNavBar?.socialMedia || []}
               menuItems={topNavBarData?.topNavBar?.menuItems || []}
             />
 
+            {/* Header */}
             <Header
-              collegeName={headerData?.header?.collegeName || "College Name"}
-              collegeSubtitle={headerData?.header?.collegeSubtitle || "Subtitle"}
+              collegeName={headerData?.header?.collegeName || 'College Name'}
+              collegeSubtitle={headerData?.header?.collegeSubtitle || 'Subtitle'}
               navigationItems={headerData?.header?.navigationItems || []}
             />
 
+            {/* News Ticker */}
             <NewsTicker
               newsItems={newsTickerData?.newsTicker?.newsItems || []}
-              speed={newsTickerData?.newsTicker?.settings?.speed || 50}
-              pauseOnHover={newsTickerData?.newsTicker?.settings?.pauseOnHover || true}
+              speed={newsTickerData?.newsTicker?.settings?.speed ?? 50}
+              pauseOnHover={newsTickerData?.newsTicker?.settings?.pauseOnHover ?? true}
             />
 
+            {/* Routes */}
             <div className="flex-1">
               <Routes>
                 <Route path="/" element={<HomePage />} />
@@ -57,8 +61,12 @@ function App() {
               </Routes>
             </div>
 
+            {/* Top Recruiters */}
+            
+
+            {/* Footer */}
             <Footer
-              collegeName={headerData?.header?.collegeName || "College Name"}
+              collegeName={headerData?.header?.collegeName || 'College Name'}
               contact={contactData?.contact || {}}
             />
           </div>
