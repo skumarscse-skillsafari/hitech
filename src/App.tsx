@@ -19,6 +19,8 @@ import Hostel from './components/Hostel';
 import Cafeteria from './components/Cafeteria';
 import Transportation from './components/Transportation';
 import Library from './components/Library';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";  
 
 // JSON data imports
 import topNavBarData from './data/topNavBarData.json';
