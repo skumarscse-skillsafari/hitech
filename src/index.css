@@ -18,14 +18,14 @@
       transform: translateY(0);
     }
   }
-  
+
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  
+
   .line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -33,7 +33,6 @@
     overflow: hidden;
   }
 
-  /* Video controls animations */
   @keyframes slideInFromTop {
     from {
       opacity: 0;
@@ -49,7 +48,6 @@
     animation: slideInFromTop 0.3s ease-out;
   }
 
-  /* Progress bar animation */
   @keyframes progressPulse {
     0%, 100% {
       opacity: 0.6;
@@ -63,7 +61,6 @@
     animation: progressPulse 2s ease-in-out infinite;
   }
 
-  /* News Ticker Scrolling Animation */
   @keyframes scroll {
     0% {
       transform: translateX(100%);
@@ -72,12 +69,11 @@
       transform: translateX(-100%);
     }
   }
-  
+
   .animate-scroll {
     animation: scroll var(--scroll-speed, 50s) linear infinite;
   }
 
-  /* Hide scrollbar for news ticker */
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -86,9 +82,31 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  /* 🌟 Custom Utility Classes for Campus Pages */
+
+  .section-wrapper {
+    @apply p-4 md:p-8 lg:p-10 xl:p-16 max-w-5xl mx-auto;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-800 mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 mb-6;
+  }
+
+  .feature-list {
+    @apply list-disc list-inside space-y-2 pl-4 text-gray-700;
+  }
+
+  .card-box {
+    @apply bg-white shadow-md rounded-lg p-6 mb-6 border border-gray-200;
+  }
 }
 
-/* Custom scrollbar for better video experience */
+/* 📦 Custom Scrollbar for consistent UI */
 ::-webkit-scrollbar {
   width: 8px;
 }
