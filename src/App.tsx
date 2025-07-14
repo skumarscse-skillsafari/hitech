@@ -15,6 +15,8 @@ import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
 import InnovativeMethods from './pages/InnovativeMethods'; // ✅ New import
+import "slick-carousel/slick/slick.css"; // Import slick carousel styles
+import "slick-carousel/slick/slick-theme.css"; // Import slick carousel theme styles
 
 
 // JSON data
