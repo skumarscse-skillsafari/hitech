@@ -14,7 +14,7 @@
         { "number": "50+", "label": "Years of Excellence" },
         { "number": "15,000+", "label": "Students" },
         { "number": "500+", "label": "Faculty Members" },
-        { "number": "98%", "label": "Placement Rate" }
+        { "number": "90%", "label": "Placement Rate" }
       ]
     },
     "about": {
@@ -367,7 +367,7 @@
   },
   "placements": {
     "stats": {
-      "placementRate": "98%",
+      "placementRate": "90%",
       "averagePackage": "8.5 LPA",
       "highestPackage": "45 LPA",
       "companiesVisited": "150+"
@@ -566,8 +566,8 @@
       },
       {
         "step": 2,
-        "title": "Entrance Exam",
-        "description": "Appear for entrance examination or submit valid JEE/GATE scores"
+        "title": "Apply for Councelling / Management Quota",
+        "description": "Apply Counselling with your original documents"
       },
       {
         "step": 3,
@@ -581,15 +581,15 @@
       }
     ],
     "requirements": [
-      "10+2 with Physics, Chemistry, Mathematics (for B.Tech)",
+      "10+2 with Physics, Chemistry, Mathematics (for BE and B.Tech)",
       "Minimum 75% aggregate in qualifying examination",
-      "Valid JEE Main/State CET score",
+      
       "Age limit: 17-25 years"
     ],
     "deadlines": {
       "applicationStart": "2024-04-01",
       "applicationEnd": "2024-06-30",
-      "entranceExam": "2024-07-15",
+      
       "resultDeclaration": "2024-08-01"
     }
   },
