@@ -1,0 +1,290 @@
+{
+  "reusePage": {
+    "id": "reuse-template",
+    "name": "Reusable Page Template",
+    "shortName": "REUSE",
+    "description": "This is a customizable page template that can be adapted for different departments, programs, or institutional sections.",
+    "icon": "Settings",
+    "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "vision": "To provide a flexible and customizable template that can be easily adapted for various institutional needs while maintaining consistency in design and user experience.",
+    "mission": "To streamline content management and ensure uniform presentation across different sections of the institution while allowing for specific customization based on requirements.",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "content": "This section provides a comprehensive overview of the subject matter. It can be customized to include department information, program details, or any other relevant content.",
+        "type": "text",
+        "order": 1
+      },
+      {
+        "id": "features",
+        "title": "Key Features",
+        "content": [
+          "Fully customizable content sections",
+          "Responsive design for all devices",
+          "SEO optimized structure",
+          "Easy content management through JSON",
+          "Consistent branding and styling",
+          "Modular component architecture"
+        ],
+        "type": "list",
+        "order": 2
+      },
+      {
+        "id": "statistics",
+        "title": "Statistics",
+        "content": [
+          { "number": "100%", "label": "Customizable" },
+          { "number": "50+", "label": "Components" },
+          { "number": "24/7", "label": "Availability" },
+          { "number": "∞", "label": "Possibilities" }
+        ],
+        "type": "stats",
+        "order": 3
+      }
+    ],
+    "programs": [
+      {
+        "name": "Template Program A",
+        "duration": "Customizable",
+        "intake": "As Required",
+        "eligibility": "Based on Requirements"
+      },
+      {
+        "name": "Template Program B",
+        "duration": "Flexible",
+        "intake": "Variable",
+        "eligibility": "Configurable"
+      }
+    ],
+    "specializations": [
+      "Content Management",
+      "Template Design",
+      "User Experience",
+      "Responsive Layout",
+      "SEO Optimization",
+      "Performance"
+    ],
+    "facilities": [
+      "Modern Design System",
+      "Component Library",
+      "Content Management",
+      "Analytics Integration",
+      "Mobile Optimization",
+      "Accessibility Features"
+    ],
+    "psos": [
+      {
+        "id": "PSO1",
+        "title": "Customization Excellence",
+        "description": "Users will be able to customize and adapt the template to meet specific requirements while maintaining design consistency."
+      },
+      {
+        "id": "PSO2",
+        "title": "Content Management Proficiency",
+        "description": "Users will demonstrate proficiency in managing and updating content through structured data formats."
+      }
+    ],
+    "peos": [
+      {
+        "id": "PEO1",
+        "title": "Template Mastery",
+        "description": "Users will master the art of template customization and content management for various institutional needs."
+      },
+      {
+        "id": "PEO2",
+        "title": "Innovation in Design",
+        "description": "Users will innovate and create unique experiences while leveraging the template's flexible architecture."
+      }
+    ],
+    "pos": [
+      {
+        "id": "PO1",
+        "title": "Technical Knowledge",
+        "description": "Apply knowledge of web technologies and design principles to create effective digital experiences."
+      },
+      {
+        "id": "PO2",
+        "title": "Problem Analysis",
+        "description": "Identify and analyze content management and user experience challenges."
+      },
+      {
+        "id": "PO3",
+        "title": "Design Solutions",
+        "description": "Design user-centered solutions that meet accessibility and usability standards."
+      },
+      {
+        "id": "PO4",
+        "title": "Research Methods",
+        "description": "Use research-based approaches to validate design decisions and content strategies."
+      },
+      {
+        "id": "PO5",
+        "title": "Modern Tools",
+        "description": "Utilize modern web technologies and content management tools effectively."
+      },
+      {
+        "id": "PO6",
+        "title": "User Impact",
+        "description": "Understand the impact of design decisions on user experience and accessibility."
+      },
+      {
+        "id": "PO7",
+        "title": "Sustainability",
+        "description": "Promote sustainable web practices and efficient resource utilization."
+      },
+      {
+        "id": "PO8",
+        "title": "Ethics",
+        "description": "Apply ethical principles in design and content management practices."
+      },
+      {
+        "id": "PO9",
+        "title": "Collaboration",
+        "description": "Work effectively in multidisciplinary teams and collaborative environments."
+      },
+      {
+        "id": "PO10",
+        "title": "Communication",
+        "description": "Communicate design concepts and technical requirements effectively."
+      },
+      {
+        "id": "PO11",
+        "title": "Project Management",
+        "description": "Manage web projects and content workflows using modern methodologies."
+      },
+      {
+        "id": "PO12",
+        "title": "Continuous Learning",
+        "description": "Adapt to evolving web technologies and design trends through continuous learning."
+      }
+    ],
+    "teachingMethodologies": [
+      {
+        "id": 1,
+        "title": "Interactive Learning",
+        "description": "Hands-on approach to learning through interactive components and real-time feedback.",
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": 2,
+        "title": "Modular Approach",
+        "description": "Breaking down complex concepts into manageable, reusable components for better understanding.",
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "image": "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": 3,
+        "title": "Practical Implementation",
+        "description": "Learning through practical implementation and real-world application scenarios.",
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": 4,
+        "title": "Collaborative Development",
+        "description": "Working together to build and improve the template through collaborative methodologies.",
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400"
+      }
+    ],
+    "faculty": [
+      {
+        "id": 1,
+        "name": "Dr. Template Master",
+        "designation": "Professor & Lead Designer",
+        "specialization": "Template Design, User Experience",
+        "experience": "15 years",
+        "education": "Ph.D in Design Technology",
+        "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "email": "template.master@hit.edu",
+        "publications": 35,
+        "researchAreas": ["Template Architecture", "User Interface Design", "Content Management"]
+      },
+      {
+        "id": 2,
+        "name": "Dr. Content Curator",
+        "designation": "Associate Professor",
+        "specialization": "Content Strategy, Information Architecture",
+        "experience": "12 years",
+        "education": "Ph.D in Information Science",
+        "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "email": "content.curator@hit.edu",
+        "publications": 28,
+        "researchAreas": ["Content Strategy", "Information Design", "Digital Communication"]
+      },
+      {
+        "id": 3,
+        "name": "Dr. UX Specialist",
+        "designation": "Assistant Professor",
+        "specialization": "User Experience, Accessibility",
+        "experience": "8 years",
+        "education": "Ph.D in Human-Computer Interaction",
+        "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "email": "ux.specialist@hit.edu",
+        "publications": 22,
+        "researchAreas": ["User Experience", "Accessibility", "Interaction Design"]
+      }
+    ],
+    "customSections": [
+      {
+        "id": "testimonials",
+        "title": "User Testimonials",
+        "type": "testimonials",
+        "content": [
+          {
+            "name": "John Doe",
+            "role": "Content Manager",
+            "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+            "testimonial": "This template has revolutionized how we manage our institutional content. It's incredibly flexible and easy to use."
+          },
+          {
+            "name": "Jane Smith",
+            "role": "Web Administrator",
+            "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+            "testimonial": "The modular approach makes it simple to customize pages for different departments while maintaining consistency."
+          }
+        ]
+      },
+      {
+        "id": "gallery",
+        "title": "Template Gallery",
+        "type": "gallery",
+        "content": [
+          {
+            "url": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "caption": "Template Design Process"
+          },
+          {
+            "url": "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "caption": "Component Library"
+          },
+          {
+            "url": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "caption": "Content Management Interface"
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "theme": {
+        "primaryColor": "#f59e0b",
+        "secondaryColor": "#374151",
+        "accentColor": "#10b981"
+      },
+      "layout": {
+        "showHero": true,
+        "showStats": true,
+        "showTestimonials": true,
+        "showGallery": true
+      },
+      "features": {
+        "enableComments": false,
+        "enableSharing": true,
+        "enablePrint": true,
+        "enableSearch": true
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "about": {
+    "title": "About Our Institution",
+    "content": "Hindusthan Institute of Technology stands at the forefront of engineering education, combining theoretical excellence with practical innovation. Our state-of-the-art facilities, distinguished faculty, and industry partnerships create an environment where future engineers thrive.",
+    "highlights": [
+      "NAAC A Grade Accreditation",
+      "NBA Accredited Programs",
+      "ISO 9001:2015 Certified",
+      "NIRF Ranking: Top 50 Engineering Colleges"
+    ],
+    "image": "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "vision": "To be a globally recognized institution of excellence in engineering education, research, and innovation.",
+    "mission": "To provide world-class engineering education, foster innovation, and develop ethical leaders who contribute to society's advancement through technology and research.",
+    "accreditations": [
+      {
+        "name": "NAAC",
+        "fullName": "National Assessment and Accreditation Council",
+        "grade": "A Grade",
+        "logo": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "color": "bg-blue-50 border-blue-200 text-blue-700"
+      },
+      {
+        "name": "NBA",
+        "fullName": "National Board of Accreditation",
+        "grade": "Accredited",
+        "logo": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "color": "bg-green-50 border-green-200 text-green-700"
+      },
+      {
+        "name": "NIRF",
+        "fullName": "National Institutional Ranking Framework",
+        "grade": "Top 50",
+        "logo": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "color": "bg-purple-50 border-purple-200 text-purple-700"
+      },
+      {
+        "name": "ISO",
+        "fullName": "International Organization for Standardization",
+        "grade": "9001:2015",
+        "logo": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "color": "bg-orange-50 border-orange-200 text-orange-700"
+      }
+    ]
+  }
+}

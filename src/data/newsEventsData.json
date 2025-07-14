@@ -1,0 +1,171 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "HIT Students Win National Robotics Championship",
+      "excerpt": "Our robotics team secured first place in the National Inter-College Robotics Competition, showcasing innovative autonomous navigation solutions.",
+      "content": "The robotics team from Hindusthan Institute of Technology has achieved a remarkable victory at the National Inter-College Robotics Competition held in Delhi. The team, comprising students from Computer Science and Mechanical Engineering departments, developed an autonomous navigation robot that impressed judges with its precision and innovation. The competition saw participation from over 150 colleges across India, making this victory even more significant.",
+      "date": "2024-01-15",
+      "category": "Achievement",
+      "image": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": true
+     
+    },
+    {
+      "id": 2,
+      "title": "New AI Research Center Inaugurated",
+      "excerpt": "State-of-the-art Artificial Intelligence Research Center opens with advanced computing infrastructure and industry partnerships.",
+      "content": "Hindusthan Institute of Technology inaugurated its new AI Research Center, equipped with high-performance GPU clusters, advanced computing infrastructure, and collaborative spaces for research. The center will focus on cutting-edge research in machine learning, computer vision, and natural language processing. Industry partners including Google, Microsoft, and IBM have committed to supporting research initiatives.",
+      "date": "2024-01-10",
+      "category": "Infrastructure",
+      "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": true
+      
+      
+    },
+    {
+      "id": 3,
+      "title": "Industry Partnership with Tech Giants",
+      "excerpt": "Signed MOUs with leading technology companies for internships, placements, and collaborative research projects.",
+      "content": "HIT has strengthened its industry connections by signing multiple MOUs with leading technology companies. These partnerships will provide students with internship opportunities, placement assistance, and access to cutting-edge technologies. The collaborations also include joint research projects and guest lectures by industry experts.",
+      "date": "2024-01-05",
+      "category": "Partnership",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Record Placement Season 2024",
+      "excerpt": "Achieved 98% placement rate with highest package of 45 LPA, setting new records in student placements.",
+      "content": "The placement season 2024 has been exceptional for HIT with a record 98% placement rate. Over 150 companies visited the campus, offering diverse opportunities across various sectors. The highest package offered was 45 LPA by a leading technology company, while the average package increased by 12% compared to the previous year.",
+      "date": "2024-01-20",
+      "category": "Placement",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": false
+      
+    },
+    {
+      "id": 5,
+      "title": "NAAC A+ Grade Accreditation Renewed",
+      "excerpt": "HIT successfully renews its NAAC A+ grade accreditation, maintaining excellence in engineering education.",
+      "content": "Hindusthan Institute of Technology has successfully renewed its NAAC A+ grade accreditation for another cycle. The accreditation team praised the institution's commitment to quality education, research initiatives, and infrastructure development. This achievement reinforces HIT's position among the top engineering colleges in India.",
+      "date": "2024-01-25",
+      "category": "Accreditation",
+      "image": "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": true
+      
+    },
+    {
+      "id": 6,
+      "title": "Student Startup Receives 50 Lakh Funding",
+      "excerpt": "A student startup incubated at HIT receives significant funding from venture capitalists for their innovative solution.",
+      "content": "EcoTech Solutions, a startup founded by final-year students from the Environmental Engineering department, has secured 50 lakh rupees in funding from prominent venture capitalists. The startup focuses on developing sustainable waste management solutions using IoT and AI technologies. This success story highlights HIT's strong entrepreneurship ecosystem.",
+      "date": "2024-01-22",
+      "category": "Entrepreneurship",
+      "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": false
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "TechFest 2024",
+      "description": "Annual technical festival featuring competitions, workshops, and guest lectures from industry experts.",
+      "date": "2024-03-15",
+      "endDate": "2024-03-17",
+      "time": "09:00 AM",
+      "venue": "Main Campus",
+      "type": "Festival",
+      "registrationOpen": true,
+      "registrationDeadline": "2024-03-10",
+      "organizer": "Student Technical Council",
+      "image": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 2,
+      "title": "Industry Expert Lecture Series",
+      "description": "Weekly lectures by industry leaders sharing insights on emerging technologies and career opportunities.",
+      "date": "2024-02-20",
+      "time": "02:00 PM",
+      "venue": "Conference Hall",
+      "type": "Lecture",
+      "registrationOpen": true,
+      "speaker": "Mr. Rajesh Khanna, CTO, TechCorp",
+      "organizer": "Academic Department",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 3,
+      "title": "Convocation 2024",
+      "description": "Annual convocation ceremony for graduating students with distinguished guests.",
+      "date": "2024-04-20",
+      "time": "10:00 AM",
+      "venue": "Main Auditorium",
+      "type": "Ceremony",
+      "registrationOpen": false,
+      "organizer": "Academic Office",
+      "image": "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 4,
+      "title": "Research Symposium 2024",
+      "description": "Annual research symposium showcasing faculty and student research projects.",
+      "date": "2024-03-25",
+      "time": "09:30 AM",
+      "venue": "Research Center",
+      "type": "Symposium",
+      "registrationOpen": true,
+      "organizer": "Research & Development",
+      "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 5,
+      "title": "Career Fair 2024",
+      "description": "Annual career fair with leading companies for internships and placements.",
+      "date": "2024-02-28",
+      "time": "10:00 AM",
+      "venue": "Sports Complex",
+      "type": "Career Fair",
+      "registrationOpen": true,
+      "organizer": "Placement Cell",
+      "image": "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 6,
+      "title": "Cultural Fest - Kaleidoscope 2024",
+      "description": "Annual cultural festival celebrating arts, music, dance, and literature.",
+      "date": "2024-04-05",
+      "endDate": "2024-04-07",
+      "time": "06:00 PM",
+      "venue": "Open Air Theatre",
+      "type": "Cultural",
+      "registrationOpen": true,
+      "organizer": "Cultural Committee",
+      "image": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 7,
+      "title": "Entrepreneurship Summit",
+      "description": "Summit featuring successful entrepreneurs sharing their journey and insights.",
+      "date": "2024-03-30",
+      "time": "11:00 AM",
+      "venue": "Business Center",
+      "type": "Summit",
+      "registrationOpen": true,
+      "organizer": "Entrepreneurship Cell",
+      "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": 8,
+      "title": "Alumni Meet 2024",
+      "description": "Annual alumni gathering to reconnect and share experiences.",
+      "date": "2024-04-15",
+      "time": "05:00 PM",
+      "venue": "Alumni Hall",
+      "type": "Reunion",
+      "registrationOpen": true,
+      "organizer": "Alumni Association",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+    }
+  ]
+}
