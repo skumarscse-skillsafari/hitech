@@ -121,7 +121,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                 Hindusthan Institute<br />of Technology
               </div>
               <div className="text-xs font-semibold text-gray-500 leading-tight">
-                An Autonomous Institution
+                (An Autonomous Institution)
               </div>
             </div>
           </Link>

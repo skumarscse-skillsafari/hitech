@@ -30,7 +30,7 @@ const LocationMap: React.FC = () => {
             
             <div className="relative h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.3267!2d76.9558!3d11.0168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sHindusthan%20Institute%20of%20Technology%20and%20Science!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31343.270009689997!2d76.96502354550023!3d10.894539137441964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85abaa31dcfa9%3A0x72d5daed0d228046!2sHindusthan%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1752210144684!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
