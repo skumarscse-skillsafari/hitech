@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Award, Shield, Star, Trophy, CheckCircle } from 'lucide-react';
+import aicte from "../../public/aicte.jpg"
+import ann from "../../public/annauniversity.jpg"
+import nba from "../../public/nba.jpg"
+import naac from "../../public/naac.jpg"
+import nirf from "../../public/nirf_logo.jpg"
+import iso from "../../public/isoo.jpg"
 
 interface Accreditation {
   name: string;
@@ -33,7 +39,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       name: 'AICTE',
       fullName: 'All India Council for Technical Education',
       grade: 'Approved',
-      logo: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200',
+      logo: aicte,
       color: 'bg-blue-50 border-blue-200 text-blue-700',
       icon: 'Shield',
       description: 'Statutory body for technical education approval and regulation',
@@ -43,7 +49,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       name: 'Anna University',
       fullName: 'Anna University, Chennai',
       grade: 'Affiliated',
-      logo: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200',
+      logo: ann,
       color: 'bg-green-50 border-green-200 text-green-700',
       icon: 'Award',
       description: 'State university affiliation for degree programs',
@@ -53,7 +59,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       name: 'NBA',
       fullName: 'National Board of Accreditation',
       grade: 'Accredited',
-      logo: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200',
+      logo: nba,
       color: 'bg-purple-50 border-purple-200 text-purple-700',
       icon: 'Trophy',
       description: 'Quality assurance for technical education programs',
@@ -62,8 +68,8 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
     {
       name: 'NAAC',
       fullName: 'National Assessment and Accreditation Council',
-      grade: 'A+ Grade',
-      logo: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200',
+      grade: 'A Grade',
+      logo: naac,
       color: 'bg-yellow-50 border-yellow-200 text-yellow-700',
       icon: 'Star',
       description: 'Institutional accreditation for quality education',
@@ -73,7 +79,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       name: 'NIRF',
       fullName: 'National Institutional Ranking Framework',
       grade: 'Top 50',
-      logo: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200',
+      logo: nirf,
       color: 'bg-orange-50 border-orange-200 text-orange-700',
       icon: 'Award',
       description: 'Government ranking framework for higher education',
@@ -83,7 +89,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       name: 'ISO',
       fullName: 'International Organization for Standardization',
       grade: '9001:2015',
-      logo: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200',
+      logo: iso,
       color: 'bg-red-50 border-red-200 text-red-700',
       icon: 'CheckCircle',
       description: 'International quality management system certification',

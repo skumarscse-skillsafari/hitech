@@ -71,22 +71,12 @@ const HomePage: React.FC = () => {
       <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={1300}>
         <Placements placements={collegeData.placements} />
       </SectionWrapper>
+       
+       
+          
+        
+        
       
-      {/* Faculty with Carousel */}
-      <SectionWrapper className="py-20 bg-white" lazy lazyHeight="500px" lazyDelay={1500}>
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Faculty Members
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Learn from renowned experts and researchers who are shaping the future of engineering education
-          </p>
-        </div>
-        <FacultyCarousel 
-          faculty={allFaculty}
-          departmentName="All Departments"
-        />
-      </SectionWrapper>
       
       <SectionWrapper lazy lazyHeight="500px" lazyDelay={1700}>
         <Admissions admissions={collegeData.admissions} />
