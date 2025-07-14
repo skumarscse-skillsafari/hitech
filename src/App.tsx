@@ -14,6 +14,7 @@ import PlacementsPage from './pages/PlacementsPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
+import InnovativeMethods from './pages/InnovativeMethods'; // ✅ New import
 
 
 // JSON data
@@ -58,6 +59,7 @@ function App() {
                 <Route path="/admissions" element={<AdmissionsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/reuse" element={<ReusePage />} />
+                <Route path="/innovative-methods" element={<InnovativeMethods />} />
               </Routes>
             </div>
 
