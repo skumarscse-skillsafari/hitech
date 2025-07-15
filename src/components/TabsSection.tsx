@@ -334,7 +334,15 @@ const TabsSection: React.FC<TabsSectionProps> = () => {
       <div className="p-8">
         {activeTabData && (
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-gray-900">{activeTabData.content.title}</h3>
+            <div className="flex justify-between items-center">
+              <h3 className="text-2xl font-bold text-gray-900">{activeTabData.content.title}</h3>
+              {activeTab === 'projects' && (
+                <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold text-sm px-5 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out">
+  View more
+</button>
+
+              )}
+            </div>
 
             <Slider {...sliderSettings}>
               {activeTabData.content.items.map((item, index) => (
