@@ -21,7 +21,9 @@
           { "name": "IQAC Committee", "href": "/iqac/committee" },
           { "name": "IQAC Reports", "href": "/iqac/reports" },
           { "name": "Quality Initiatives", "href": "/iqac/initiatives" },
-          { "name": "Academic Audit", "href": "/iqac/audit" },
+          
+          { "name": "Statutory", "href": "/iqac/audit" },
+          { "name": "Non Statutory", "href": "/iqac/audit" },
           { "name": "Best Practices", "href": "/iqac/best-practices" }
         ]
       },
@@ -67,22 +69,16 @@
           { "name": "Compliance", "href": "/aicte/compliance" }
         ]
       },
-      {
-        "name": "Admissions",
-        "href": "/admissions",
-        "dropdown": [
-          { "name": "Admission Process", "href": "/admissions/process" },
-          { "name": "Eligibility Criteria", "href": "/admissions/eligibility" },
-          { "name": "Application Form", "href": "/admissions/application" },
-          { "name": "Fee Structure", "href": "/admissions/fees" },
-          { "name": "Scholarships", "href": "/admissions/scholarships" },
-          { "name": "Important Dates", "href": "/admissions/dates" },
-          { "name": "Admission Guidelines", "href": "/admissions/guidelines" }
-        ]
-      },
+      
       {
         "name": "CoE",
-        "href": "/coe"
+        "href": "/admissions",
+        "dropdown": [
+          { "name": "Examination", "href": "/admissions/process" },
+          { "name": "Exam Time Table", "href": "/admissions/eligibility" },
+          { "name": "Exam Fees", "href": "/admissions/application" }
+          
+        ]
       },
       {
         "name": "Students",
