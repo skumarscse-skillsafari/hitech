@@ -79,8 +79,8 @@ const LocationMap: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900">Phone</h4>
-                    <p className="text-gray-700">+91-422-2987654</p>
-                    <p className="text-gray-700">+91-422-2987655</p>
+                    <p className="text-gray-700">+91 97152 601184</p>
+                    <p className="text-gray-700">+91 90470 10006</p>
                   </div>
                 </div>
 
@@ -103,9 +103,8 @@ const LocationMap: React.FC = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">Office Hours</h4>
                     <div className="space-y-1 text-gray-700">
-                      <p><span className="font-medium">Monday - Friday:</span> 9:00 AM - 5:00 PM</p>
-                      <p><span className="font-medium">Saturday:</span> 9:00 AM - 1:00 PM</p>
-                      <p><span className="font-medium">Sunday:</span> Closed</p>
+                      <p><span className="font-medium">Monday - Saturday:</span> 9:00 AM - 5:00 PM</p>
+                      <p><span className="font-medium">Sunday:</span> 9:00 AM - 1.00 PM</p>
                     </div>
                   </div>
                 </div>
@@ -118,15 +117,15 @@ const LocationMap: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="font-semibold text-gray-900 mb-2">By Air</h5>
-                  <p className="text-gray-700">Coimbatore International Airport - 15 km (30 minutes drive)</p>
+                  <p className="text-gray-700">Coimbatore International Airport - 23 km (90 minutes drive)</p>
                 </div>
                 <div>
                   <h5 className="font-semibold text-gray-900 mb-2">By Train</h5>
-                  <p className="text-gray-700">Coimbatore Junction Railway Station - 12 km (25 minutes drive)</p>
+                  <p className="text-gray-700">Coimbatore Junction Railway Station - 15 km (35 minutes drive)</p>
                 </div>
                 <div>
                   <h5 className="font-semibold text-gray-900 mb-2">By Bus</h5>
-                  <p className="text-gray-700">Regular bus services available from Coimbatore Central Bus Stand</p>
+                  <p className="text-gray-700">Regular bus services available from Coimbatore Bus Stand</p>
                 </div>
               </div>
             </div>
