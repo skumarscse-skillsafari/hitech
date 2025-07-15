@@ -75,7 +75,7 @@
       "id": "cse",
       "name": "Computer Science & Engineering",
       "shortName": "CSE",
-      "description": "Pioneering the digital revolution with cutting-edge curriculum in AI, ML, Data Science, and Software Engineering.",
+      "description": " Pioneering the digital revolution with cutting-edge curriculum in AI, ML, Data Science, and Software Engineering.",
       "icon": "Monitor",
       "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To be a leading department in computer science education and research, producing innovative engineers who drive technological advancement.",
@@ -213,7 +213,7 @@
       "id": "me",
       "name": "Mechanical Engineering",
       "shortName": "ME",
-      "description": "Engineering mechanical solutions for manufacturing, automation, and sustainable technologies.",
+      "description": "Engineering innovative mechanical solutions for manufacturing, automation, and sustainable technologies—enhancing productivity, promoting eco-friendly practices, and driving technological advancement across industries for a smarter, greener future.",
       "icon": "Settings",
       "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
@@ -368,9 +368,9 @@
   "placements": {
     "stats": {
       "placementRate": "90%",
-      "averagePackage": "8.5 LPA",
-      "highestPackage": "45 LPA",
-      "companiesVisited": "150+"
+      "averagePackage": "4.5 LPA",
+      "highestPackage": "42 LPA",
+      "companiesVisited": "50+ Current Accademic Year"
     },
     "topRecruiters": [
       {
@@ -412,7 +412,7 @@
       },
       {
         "step": 2,
-        "title": "Pre-Placement Training",
+        "title": "Pre-Placement Training By Industry Experts",
         "description": "Comprehensive training on aptitude, technical skills, and soft skills"
       },
       {
@@ -582,7 +582,7 @@
     ],
     "requirements": [
       "10+2 with Physics, Chemistry, Mathematics (for BE and B.Tech)",
-      "Minimum 75% aggregate in qualifying examination",
+      "Minimum 45% aggregate in HSC examination",
       
       "Age limit: 17-25 years"
     ],
@@ -594,10 +594,10 @@
     }
   },
   "contact": {
-    "address": "123 Education Boulevard, Tech City, State 560001",
-    "phone": "+91-80-1234-5678",
-    "email": "info@hit.edu",
-    "website": "www.hit.edu",
+    "address": "Hindusthan Institute of Technology, Othakalmandapam, Coimbatore - 641 032, Tamil Nadu, India",
+    "phone": "+91 97152 601184",
+    "email": "hit.office@hindusthan.net",
+    "website": "www.hit.edu.in",
     "socialMedia": {
       "facebook": "HindusthanInstituteOfTechnology",
       "twitter": "HIT_Official",
