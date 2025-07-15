@@ -10,8 +10,8 @@
         "dropdown": [
           { "name": "Objectives", "href": "/about" },
           { "name": "Management", "href": "/vision-mission" },
-          { "name": "Principal's Desk", "href": "/leadership" },
-          { "name": "Board of Governors", "href": "/accreditations" }
+          { "name": "Principal's Desk", "href": "/leadership" }
+         
         ]
       },
       { 
