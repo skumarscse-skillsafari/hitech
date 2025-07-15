@@ -33,10 +33,10 @@
         {
           "id": "PSO1",
           "description": "Ability to apply programming skills in various languages and implement algorithms and data structures to solve computational challenges."
-},
+        },
         {
           "id": "PSO2",
-          "description":"Ability to design, develop, test, and integrate software and hardware components to construct effective and efficient computer-based systems."
+          "description": "Ability to design, develop, test, and integrate software and hardware components to construct effective and efficient computer-based systems."
         }
       ],
       "peos": [
@@ -216,14 +216,14 @@
       
     },
     {
-      "id": "aids",
+      "id": "ai",
       "name": "Artificial Intelligence & Data Science",
-      "shortName": "AI&DS",
-      "description": "Exploring the frontiers of artificial intelligence and data science to solve complex real-world problems.",
+      "shortName": "AI & DS",
+      "description": "Empowering the next generation of AI and data science professionals with cutting-edge curriculum and research opportunities.",
       "icon": "Brain",
       "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "vision": "To be a center of excellence in AI and Data Science education, fostering innovation and research in intelligent systems.",
-      "mission": "To provide cutting-edge education in AI and Data Science, develop skilled professionals, and contribute to technological advancement through research and innovation.",
+      "vision": "To be a leading department in AI and data science education, producing innovative professionals who drive technological advancements.",
+      "mission": "To provide comprehensive education in AI and data science, foster research and innovation, and develop ethical professionals for the global technology industry.",
       "programs": [
         {
           "name": "B.Tech Artificial Intelligence & Data Science",
@@ -232,98 +232,36 @@
           "eligibility": "10+2 with PCM, JEE Main"
         },
         {
-          "name": "M.Tech Artificial Intelligence",
+          "name": "M.Tech Artificial Intelligence & Data Science",
           "duration": "2 Years",
-          "intake": "18 Students",
-          "eligibility": "B.Tech CSE/IT/AI&DS, GATE"
+          "intake": "24 Students",
+          "eligibility": "B.Tech CSE/IT, GATE,TANCET"
         }
       ],
-      "specializations": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Data Analytics", "Robotics"],
-      "facilities": ["AI Research Lab", "Data Science Lab", "GPU Computing Center", "Robotics Lab", "Visualization Studio"],
+      "specializations": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Big Data Analytics"],
+      "facilities": ["AI Research Lab", "Data Analytics Lab", "Machine Learning Lab", "NLP Lab", "Computer Vision Lab"],
       "psos": [
         {
-          "id": "PSO1",
-          "title": "AI System Development",
-          "description": "Graduates will be able to design, develop, and deploy intelligent systems using modern AI techniques and frameworks."
+          "id": 1,
+          "title": "AI Model Development",
+          "description": "Graduates will be able to design, develop, and deploy AI models for real-world applications."
         },
         {
-          "id": "PSO2",
-          "title": "Data Analytics Expertise",
-          "description": "Graduates will demonstrate proficiency in data collection, processing, analysis, and visualization to extract meaningful insights."
+          "id": 2,
+          "title": "Data-Driven Decision Making",
+          "description": "Graduates will utilize data analytics techniques to derive insights and support decision-making processes."
         }
       ],
       "peos": [
         {
-          "id": "PEO1",
-          "title": "AI Innovation Leadership",
-          "description": "Graduates will lead AI innovation in various domains, contributing to technological advancement and societal benefit."
+          "id": 1,
+          "title": "AI Leadership",
+          "description": "Graduates will assume leadership roles in AI and data science domains, driving innovation and technological advancements."
         },
         {
-          "id": "PEO2",
+          "id": 2,
           "title": "Research Excellence",
           "description": "Graduates will pursue advanced research in AI and Data Science, contributing to scientific knowledge and breakthrough discoveries."
-        }
-      ],
-      "pos": [
-        {
-          "id": "PO1",
-          "title": "Engineering Knowledge",
-          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex AI and data science problems."
-        },
-        {
-          "id": "PO2",
-          "title": "Problem Analysis",
-          "description": "Identify, formulate, and analyze complex AI problems using first principles and advanced computational methods."
-        },
-        {
-          "id": "PO3",
-          "title": "Design/Development of Solutions",
-          "description": "Design AI solutions considering ethical, societal, and environmental implications."
-        },
-        {
-          "id": "PO4",
-          "title": "Conduct Investigations",
-          "description": "Use research-based knowledge and experimental methods to validate AI models and data science solutions."
-        },
-        {
-          "id": "PO5",
-          "title": "Modern Tool Usage",
-          "description": "Create and apply AI frameworks, data science tools, and modern computational resources."
-        },
-        {
-          "id": "PO6",
-          "title": "The Engineer and Society",
-          "description": "Assess the societal impact of AI systems and data-driven decisions."
-        },
-        {
-          "id": "PO7",
-          "title": "Environment and Sustainability",
-          "description": "Understand the environmental impact of AI systems and promote sustainable computing practices."
-        },
-        {
-          "id": "PO8",
-          "title": "Ethics",
-          "description": "Apply ethical principles in AI development, ensuring fairness, transparency, and accountability."
-        },
-        {
-          "id": "PO9",
-          "title": "Individual and Team Work",
-          "description": "Function effectively in interdisciplinary AI and data science teams."
-        },
-        {
-          "id": "PO10",
-          "title": "Communication",
-          "description": "Communicate complex AI concepts and data insights effectively to diverse audiences."
-        },
-        {
-          "id": "PO11",
-          "title": "Project Management",
-          "description": "Manage AI projects considering technical, ethical, and business constraints."
-        },
-        {
-          "id": "PO12",
-          "title": "Life-long Learning",
-          "description": "Adapt to rapidly evolving AI technologies and methodologies through continuous learning."
         }
       ],
       "teachingMethodologies": [
@@ -807,6 +745,7 @@
           "publications": 42,
           "researchAreas": ["Industrial Robotics", "Advanced Manufacturing", "Automation"]
         }
+        
       ]
     },
     {
@@ -956,7 +895,13 @@
           "publications": 48,
           "researchAreas": ["Corporate Strategy", "Financial Management", "Mergers & Acquisitions"]
         }
-      ]
+      ],
+       "trainingAndPlacement": {
+    "description": "The Department of Training and Placement conducts many Training Programmes to all students to develop their technical knowledge and soft skills in the areas of Aptitude, Logical Reasoning, Quantitative Reasoning and Verbal through the qualified and reputed External Training Centers. Also the training programmes like Mock Interviews, Group Discussions, Oral and Written Communication Skills and Workshop etc. are conducted for final year students by HR Managers from different industries. The Department of Training and Placement plays a vital role in locating job opportunities for Under Graduates and Post Graduates who all are passing out from the college by keeping in touch with top-notch companies and industries. The Department of Training and Placement operates round the year to facilitate interactions between companies and budding graduates. The number of students placed through the campus interviews is continuously trending towards increasing. Based on the invitations, many reputed companies are regularly visiting the institute to conduct campus interviews.",
+    "topRecruiters": ["Hexaware", "HCL", "Cognizant", "Accenture", "Amazon", "Atos", "Bosch"]
+  }
+
     }
   ]
+  
 }
