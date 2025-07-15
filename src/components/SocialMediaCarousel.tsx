@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Instagram, Facebook, Twitter, Linkedin, Youtube, ExternalLink } from 'lucide-react';
-import SocialMediaFeed from './SocialMediaFeed';
+
 import socialMediaData from '../data/socialMediaData.json';
 
 const SocialMediaCarousel: React.FC = () => {
@@ -212,13 +212,7 @@ const SocialMediaCarousel: React.FC = () => {
       </div>
 
       {/* Current Posts from Selected Platform */}
-      {activePlatformData && (
-        <SocialMediaFeed
-          platform={activePlatformData.name as any}
-          posts={activePlatformData.posts}
-          showHeader={true}
-        />
-      )}
+      
     </div>
   );
 };
