@@ -157,18 +157,63 @@
           "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400"
         }
       ],
-      "faculty": [
+      "faculty":[
         {
-          "id": 1,
-          "name": "Dr. Anil Verma",
-          "designation": "Professor & Head",
-          "specialization": "Artificial Intelligence, Machine Learning",
-          "experience": "20 years",
-          "education": "Ph.D from IIT Delhi",
-          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "amit.patel@hit.edu"
+          "id": 13,
+          "name": "Dr. S. Ramasamy",
+          "designation": "Associate Professor",
+          "specialization": "Cloud Computing",
+          "experience": "12 Years",
+          "education": "M.E, Ph.D",
+          "email": "ramasamy.s@hit.edu.in",
+          "description": "Dr. S. Ramasamy M.E., Ph.D., currently working as Associate Professor in Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore. He holds Ph.D in Computer Science and Engineering from Anna University, Master of Engineering in Computer Science and Engineering from Anna University of Technology, Coimbatore and Bachelor of Technology in Information Technology from Anna University. He is having more than 14 years of experience in academic, administration, research and innovations. He has published more than 14 research papers in national and international journals. He has published 2 books. He is an active reviewer in Springer Nature Journal. He is a life member of ISTE. His research interest includes Cloud Computing, Edge Computing, Bigdata Security, Wireless Communication."
+        },
+        {
+          "id": 14,
+          "name": "Mr. J. Uthaya Kumar",
+          "designation": "Assistant Professor",
+          "specialization": "Computer Science",
+          "experience": "8 years",
+          "education": "M.Tech, (Ph.D)",
+          "email": "uthayakumar.j@hit.edu.in",
+          "description": "He has 3 years of Teaching Experience in the field of Computer Science and Engineering and 5 years in industry. He received his Bachelor Degree and Master Degree from Anna University, Chennai. He has published 4 Journal papers in various international journals and conferences and 1 copyright. He has also published 5 patents, 2 text books."
+        },
+        {
+          "id": 10,
+          "name": "Ms. Priyanka",
+          "designation": "Assistant Professor",
+          "specialization": "Computer Science",
+          "experience": "4 years",
+          "education": "M.E",
+          "email": "priyanga@hit.edu.in",
+          "researchAreas": ["Computer Networks", "Software Engineering"],
+          "description": "She completed her B.Tech Information Technology in the year 2014. She completed her M.E in Computer Science and Engineering in the year 2016. Her area of interest was Computer Networks and Software Engineering."
+        },
+        {
+          "id": 11,
+          "name": "Dr. R.T. Subhalakshmi",
+          "designation": "Associate Professor",
+          "specialization": "Medical Image Analysis, Deep Learning and Machine Learning",
+          "experience": "8 years",
+          "education": "M.Tech, Ph.D",
+          "email": "subhalakshmi.rt@hit.edu.in",
+          "researchAreas": ["Medical Image Classification", "Deep Learning", "Generative AI"],
+          "description": "She completed her Ph.D. in the Faculty of Information and Communication Engineering from Anna University and has been passionate about Information and Communication Engineering since her undergraduate years. Expertise: Her research primarily centers on Medical Image Analysis, Deep Learning and Machine Learning. She specializes in using medical image classification and analyzing medical images. She published several peer-reviewed articles in leading journals and has presented her work at national and international conferences. Research Interests: Her research focuses mostly on machine learning, deep learning, and generative AI. She uses image categorization and analysis as her area of expertise. She presented her findings at national and international conferences and published many peer-reviewed pieces in prestigious journals."
+        },
+        {
+          "id": 12,
+          "name": "Ms. D. Vidhya",
+          "designation": "Assistant Professor",
+          "specialization": "Machine Learning",
+          "experience": "8 years",
+          "education": "M.E",
+          "email": "vidhya.d@hit.edu.in",
+          "researchAreas": ["Cloud Computing", "Machine Learning"],
+          "description": "D. Vidhya, currently working as Assistant Professor in Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore. She holds Master of Engineering in Computer Science and Engineering from Anna University of Technology, Coimbatore and Bachelor of Engineering in Electrical and Electronics Engineering from Bharathiyar University. She is having more than 13 years of experience in academic. She got a elite in NPTEL course. She is a life member of ISTE. Her research interest includes Cloud Computing, Machine Learning."
         }
       ]
+      
+      
     },
     {
       "id": "ai",
