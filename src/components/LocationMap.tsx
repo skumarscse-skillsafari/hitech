@@ -90,8 +90,9 @@ const LocationMap: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900">Email</h4>
-                    <p className="text-gray-700">info@hit.edu.in</p>
-                    <p className="text-gray-700">admissions@hit.edu.in</p>
+                    <p className="text-gray-700"> hit.office@hindusthan.net
+                      </p>
+                    <p className="text-gray-700"></p>
                   </div>
                 </div>
 
