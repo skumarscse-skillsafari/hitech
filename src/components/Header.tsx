@@ -93,16 +93,15 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
   const hamburgerNavItems = extendedNavItems.slice(6);
 
   return (
-    <header className={`fixed top-10 w-full z-40 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg top-0' : 'bg-white/95 backdrop-blur-sm shadow-lg'
-    }`}>
+    <header className="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-md">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 flex-shrink-0">
             <div className="bg-white p-1 rounded-lg shadow-md">
               <img 
-                src="Logo.jpg" 
+                src="/Logo.jpg" 
                 alt="Hindusthan Institute of Technology Logo"
                 className="h-16 w-auto object-contain"
               />
