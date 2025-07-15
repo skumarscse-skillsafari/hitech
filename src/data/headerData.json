@@ -10,21 +10,21 @@
         "dropdown": [
           { "name": "Objectives", "href": "/about" },
           { "name": "Management", "href": "/vision-mission" },
-          { "name": "Principal's Desk", "href": "/leadership" },
-          { "name": "Board of Governors", "href": "/accreditations" }
+          { "name": "Principal's Desk", "href": "/leadership" }
+         
         ]
       },
       { 
         "name": "Academics", 
         "href": "/academics",
         "dropdown": [
+          { "name": "Aeronautical Engineering", "href": "/department/ae" },
+          { "name": "Artificial Intelligence and Data Science", "href": "/department/aids" },
           { "name": "Computer Science & Engineering", "href": "/department/cse" },
           { "name": "Electronics & Communication Engineering", "href": "/department/ece" },
-          { "name": "Mechanical Engineering", "href": "/department/me" },
-          { "name": "Aeronautical Engineering", "href": "/department/ae" },
-          { "name": "Artificial Intelligence and data science", "href": "/department/aids" },
           { "name": "Information Technology", "href": "/department/it" },
-          { "name": "Academic calendar", "href": "/academic-calendar" }
+          { "name": "Mechanical Engineering", "href": "/department/me" },
+          { "name": "MBA", "href": "/academic-calendar" }
         ]
       },
       { 
@@ -43,9 +43,19 @@
         "href": "/campus-life",
         "dropdown": [
           { "name": "Gallery", "href": "/gallery" },
+          { "name": "Library", "href": "/gallery" },
+          { "name": "Cafeteria", "href": "/gallery" },
+          { "name": "Transport ", "href": "/gallery" },
+          { "name": "Hostel", "href": "/gallery" },
+          { "name": "Incubation Lab", "href": "/gallery" },
+          { "name": "AICTE Idea Lab", "href": "/gallery" },
           { "name": "Events", "href": "/events" },
           { "name": "Student Activities", "href": "/student-activities" },
-          { "name": "Facilities", "href": "/facilities" }
+          { "name": "Facilities", "href": "/facilities" },
+          { "name": "Hostel", "href": "/hostel" },
+          { "name": "Cafeteria", "href": "/cafeteria" },
+          { "name": "Transportation", "href": "/transportation" },
+          { "name": "Library", "href": "/library" }
         ]
       },
       { 
