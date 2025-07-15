@@ -1,0 +1,42 @@
+{
+  "departments": [
+    {
+      "id": "cse",
+      "name": "Computer Science & Engineering",
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor & Head",
+          "specialization": "Artificial Intelligence, Machine Learning",
+          "experience": "18 years",
+          "education": "Ph.D from IIT Delhi",
+          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg",
+          "email": "rajesh.kumar@hit.edu",
+          "publications": 45,
+          "researchAreas": [
+            "Deep Learning",
+            "Computer Vision",
+            "Natural Language Processing"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Dr. Anita Singh",
+          "designation": "Associate Professor",
+          "specialization": "Data Science, Big Data Analytics",
+          "experience": "12 years",
+          "education": "Ph.D from IIT Bombay",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg",
+          "email": "anita.singh@hit.edu",
+          "publications": 32,
+          "researchAreas": [
+            "Big Data",
+            "Data Mining",
+            "Business Intelligence"
+          ]
+        }
+      ]
+    }
+  ]
+}
