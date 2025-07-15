@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Award, Shield, Star, Trophy, CheckCircle } from 'lucide-react';
-import aicte from "../../public/aicte.jpg"
-import ann from "../../public/annauniversity.jpg"
-import nba from "../../public/nba.jpg"
-import naac from "../../public/naac.jpg"
-import nirf from "../../public/nirf_logo.jpg"
-import iso from "../../public/isoo.jpg"
+import aicte from "../../public/aicte.jpg";
+import ann from "../../public/annauniversity.jpg";
+import nba from "../../public/nba.jpg";
+import naac from "../../public/naac.jpg";
+import nirf from "../../public/nirf_logo.jpg";
+import iso from "../../public/isoo.jpg";
+import hit from "/hit.jpg"; // ✅ Import the image
 
 interface Accreditation {
   name: string;
@@ -41,9 +42,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'Approved',
       logo: aicte,
       color: 'bg-blue-50 border-blue-200 text-blue-700',
-      icon: 'Shield',
-      description: 'Statutory body for technical education approval and regulation',
-      validUntil: '2025'
+      
     },
     {
       name: 'Anna University',
@@ -51,9 +50,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'Affiliated',
       logo: ann,
       color: 'bg-green-50 border-green-200 text-green-700',
-      icon: 'Award',
-      description: 'State university affiliation for degree programs',
-      validUntil: 'Permanent'
+     
     },
     {
       name: 'NBA',
@@ -61,9 +58,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'Accredited',
       logo: nba,
       color: 'bg-purple-50 border-purple-200 text-purple-700',
-      icon: 'Trophy',
-      description: 'Quality assurance for technical education programs',
-      validUntil: '2026'
+      
     },
     {
       name: 'NAAC',
@@ -71,9 +66,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'A Grade',
       logo: naac,
       color: 'bg-yellow-50 border-yellow-200 text-yellow-700',
-      icon: 'Star',
-      description: 'Institutional accreditation for quality education',
-      validUntil: '2027'
+     
     },
     {
       name: 'NIRF',
@@ -81,9 +74,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'Top 50',
       logo: nirf,
       color: 'bg-orange-50 border-orange-200 text-orange-700',
-      icon: 'Award',
-      description: 'Government ranking framework for higher education',
-      validUntil: '2024'
+      
     },
     {
       name: 'ISO',
@@ -91,22 +82,20 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: '9001:2015',
       logo: iso,
       color: 'bg-red-50 border-red-200 text-red-700',
-      icon: 'CheckCircle',
-      description: 'International quality management system certification',
-      validUntil: '2025'
+      
     }
   ];
 
   const totalPages = Math.ceil(enhancedAccreditations.length / itemsPerPage);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex + itemsPerPage >= enhancedAccreditations.length ? 0 : prevIndex + itemsPerPage
     );
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? Math.max(0, enhancedAccreditations.length - itemsPerPage) : Math.max(0, prevIndex - itemsPerPage)
     );
   };
@@ -120,23 +109,55 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header */}
+
+        {/* Section Header - About Us */}
+        <div className="mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 text-center mb-8">
+            About US
+          </h2>
+
+          {/* Flex layout for text and image */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-6xl mx-auto">
+            
+            {/* Text content */}
+            <div className="md:w-1/2 text-xl text-gray-600">
+              <p>
+                Hindusthan Educational and Charitable Trust, one of the finest in education and teaching is strategically placed in the heart of the city, and since 1992 has established itself firmly in the fields of Arts, Science, Education and Technical Education. The Trust aims at providing education that is world-class and on par with global standards.
+              </p>
+              <br />
+              <p>
+                The Management has always stood by its commitment to the betterment of the student community and had at first established itself as a brand in the 'power sector', and today in the field of Education has reigned supreme with the 'Life Time Education Achievement Award' for giving back to society. The Management believes in leading and has set new trends/ innovative training methodologies in all its Institutions that will assist students towards the road to success.
+              </p>
+            </div>
+
+            {/* Image on the right */}
+            <div className="md:w-1/2">
+              <img 
+                src={hit} 
+                alt="Our Legacy" 
+               className="rounded-xl shadow-lg w-[90%] max-w-[500px] h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Section Header - Accreditations */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Approvals & Accreditations
+             Ranking and Recognition
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our commitment to excellence is recognized by leading national and international bodies
           </p>
         </div>
 
+        {/* Cards */}
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
             <h3 className="text-2xl font-bold text-gray-900">
               Quality Assurance & Recognition
             </h3>
-            
+
             {/* Navigation Controls */}
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
@@ -152,7 +173,7 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
                   />
                 ))}
               </div>
-              
+
               <div className="flex items-center space-x-2">
                 <button
                   onClick={prevSlide}
@@ -181,7 +202,6 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
                     className={`${accred.color} p-8 rounded-2xl border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer`}
                   >
                     <div className="text-center space-y-6">
-                      {/* Logo */}
                       <div className="relative mx-auto w-24 h-24 bg-white rounded-full p-4 shadow-lg group-hover:shadow-xl transition-shadow">
                         <img 
                           src={accred.logo} 
@@ -193,7 +213,6 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
                         </div>
                       </div>
 
-                      {/* Content */}
                       <div>
                         <h4 className="text-2xl font-bold mb-2">{accred.name}</h4>
                         <p className="text-sm opacity-80 mb-3">{accred.fullName}</p>
@@ -208,7 +227,6 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
                         )}
                       </div>
 
-                      {/* Hover Effect */}
                       <div className="opacity-0 group-hover:opacity-100 transition-opacity">
                         <div className="text-sm font-medium">
                           Click to learn more
@@ -231,7 +249,6 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

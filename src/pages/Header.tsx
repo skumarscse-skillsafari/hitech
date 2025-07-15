@@ -2,15 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-interface DropdownItem {
-  name: string;
-  href: string;
-}
-
 interface NavigationItem {
   name: string;
   href: string;
-  dropdown?: DropdownItem[];
+  dropdown?: NavigationItem[]; // recursive type for nested dropdowns
 }
 
 interface HeaderProps {
@@ -19,15 +14,48 @@ interface HeaderProps {
   navigationItems?: NavigationItem[];
 }
 
-const Header: React.FC<HeaderProps> = ({ 
-  collegeName = "Hindusthan Institute of Technology", 
+const Header: React.FC<HeaderProps> = ({
+  collegeName = "Hindusthan Institute of Technology",
   collegeSubtitle = "(An Autonomous Institution); Approved by AICTE New Delhi, Affiliated to Anna University, Chennai.",
-  navigationItems = []
+  navigationItems = [],
 }) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const toggleDropdown = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
+  };
+
+  const renderDropdown = (items: NavigationItem[]) => {
+    return (
+      <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-lg z-50 border border-gray-200">
+        {items.map((item) => (
+          <div key={item.name} className="relative group/sub">
+            {item.dropdown ? (
+              <>
+                <button
+                  className="flex justify-between items-center w-full px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
+                >
+                  <span>{item.name}</span>
+                  <ChevronRightIcon />
+                </button>
+                {/* Sub-dropdown */}
+                <div className="absolute top-0 left-full w-56 bg-white rounded-md shadow-lg z-50 border border-gray-200 hidden group-hover/sub:block">
+                  {renderDropdown(item.dropdown)}
+                </div>
+              </>
+            ) : (
+              <Link
+                to={item.href}
+                className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
+                onClick={() => setOpenDropdown(null)}
+              >
+                {item.name}
+              </Link>
+            )}
+          </div>
+        ))}
+      </div>
+    );
   };
 
   return (
@@ -49,7 +77,7 @@ const Header: React.FC<HeaderProps> = ({
         <nav className="border-t border-gray-200">
           <div className="flex flex-wrap justify-center items-center">
             {navigationItems.map((item) => (
-              <div 
+              <div
                 key={item.name}
                 className="relative group"
                 onMouseEnter={() => item.dropdown && setOpenDropdown(item.name)}
@@ -68,22 +96,7 @@ const Header: React.FC<HeaderProps> = ({
                         <ChevronDown className="ml-1 h-4 w-4" />
                       )}
                     </button>
-
-                    {/* Dropdown Menu */}
-                    {(openDropdown === item.name) && (
-                      <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-lg z-50 border border-gray-200">
-                        {item.dropdown.map((dropdownItem) => (
-                          <Link
-                            key={dropdownItem.name}
-                            to={dropdownItem.href}
-                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
-                            onClick={() => setOpenDropdown(null)}
-                          >
-                            {dropdownItem.name}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
+                    {openDropdown === item.name && renderDropdown(item.dropdown)}
                   </>
                 ) : (
                   <Link
@@ -101,5 +114,17 @@ const Header: React.FC<HeaderProps> = ({
     </header>
   );
 };
+
+const ChevronRightIcon: React.FC = () => (
+  <svg
+    className="ml-2 h-4 w-4 text-gray-400 group-hover:text-yellow-600 transition-colors"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+  </svg>
+);
 
 export default Header;
