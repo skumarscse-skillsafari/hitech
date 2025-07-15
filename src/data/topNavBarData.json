@@ -69,19 +69,7 @@
           { "name": "Compliance", "href": "/aicte/compliance" }
         ]
       },
-      {
-        "name": "Admissions",
-        "href": "/admissions",
-        "dropdown": [
-          { "name": "Admission Process", "href": "/admissions/process" },
-          { "name": "Eligibility Criteria", "href": "/admissions/eligibility" },
-          { "name": "Application Form", "href": "/admissions/application" },
-          { "name": "Fee Structure", "href": "/admissions/fees" },
-          { "name": "Scholarships", "href": "/admissions/scholarships" },
-          { "name": "Important Dates", "href": "/admissions/dates" },
-          { "name": "Admission Guidelines", "href": "/admissions/guidelines" }
-        ]
-      },
+      
       {
         "name": "CoE",
         "href": "/admissions",
