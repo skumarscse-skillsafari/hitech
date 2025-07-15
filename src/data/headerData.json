@@ -51,7 +51,11 @@
           { "name": "AICTE Idea Lab", "href": "/gallery" },
           { "name": "Events", "href": "/events" },
           { "name": "Student Activities", "href": "/student-activities" },
-          { "name": "Facilities", "href": "/facilities" }
+          { "name": "Facilities", "href": "/facilities" },
+          { "name": "Hostel", "href": "/hostel" },
+          { "name": "Cafeteria", "href": "/cafeteria" },
+          { "name": "Transportation", "href": "/transportation" },
+          { "name": "Library", "href": "/library" }
         ]
       },
       { 
