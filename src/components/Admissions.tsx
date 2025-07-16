@@ -1,4 +1,7 @@
+// src/pages/Admissions.tsx
+
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Calendar, FileText, CheckCircle2, Clock, MapPin, Phone, Mail } from 'lucide-react';
 
 interface AdmissionsProps {
@@ -12,12 +15,13 @@ interface AdmissionsProps {
     deadlines: {
       applicationStart: string;
       applicationEnd: string;
-     
     };
   };
 }
 
 const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
+  const navigate = useNavigate();
+
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
       year: 'numeric',
@@ -78,8 +82,6 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
 
           {/* Requirements & Deadlines */}
           <div className="space-y-8">
-            
-            {/* Requirements */}
             <div className="bg-white p-6 rounded-2xl shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center space-x-2">
                 <FileText className="h-6 w-6 text-gray-600" />
@@ -95,7 +97,6 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
               </div>
             </div>
 
-            {/* Important Dates */}
             <div className="bg-white p-6 rounded-2xl shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center space-x-2">
                 <Calendar className="h-6 w-6 text-yellow-500" />
@@ -114,14 +115,12 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
                     {formatDate(admissions.deadlines.applicationEnd)}
                   </span>
                 </div>
-                
               </div>
             </div>
-
           </div>
         </div>
 
-        {/* Combined Campus Visit and Get in Touch Section */}
+        {/* Visit Campus & Contact Section */}
         <div className="mt-16 bg-white p-8 rounded-2xl shadow-lg">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Visit Our Campus & Get in Touch</h3>
@@ -131,7 +130,6 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            
             {/* Campus Visit */}
             <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200">
               <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center space-x-2">
@@ -151,12 +149,15 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
                   <span className="text-sm text-gray-700">Advance booking recommended</span>
                 </div>
               </div>
-              <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105">
+              <button
+                onClick={() => navigate('/contact')}
+                className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105"
+              >
                 Book Campus Tour
               </button>
             </div>
 
-            {/* Contact Information */}
+            {/* Contact Admissions */}
             <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
               <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center space-x-2">
                 <Phone className="h-6 w-6 text-blue-600" />
@@ -165,6 +166,7 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
               <p className="text-gray-700 mb-6">
                 Our admissions counselors are here to help you with any questions about programs, eligibility, or the application process.
               </p>
+              {/* contact info blocks */}
               <div className="space-y-4 mb-6">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-blue-600" />
@@ -179,30 +181,16 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
                   <span className="text-sm text-gray-700">Monday - Friday: 9:00 AM - 5:00 PM</span>
                 </div>
               </div>
-              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105">
+              <button
+                onClick={() => navigate('/contact')}
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105"
+              >
                 Contact Admissions Team
               </button>
             </div>
-
           </div>
 
-          {/* Additional Resources */}
-          <div className="mt-8 grid md:grid-cols-4 gap-4">
-            <button className="bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-4 rounded-lg font-medium transition-colors">
-              Download Prospectus
-            </button>
-            <button className="bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-4 rounded-lg font-medium transition-colors">
-              Fee Structure
-            </button>
-            <button className="bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-4 rounded-lg font-medium transition-colors">
-              Scholarship Information
-            </button>
-            <button className="bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-4 rounded-lg font-medium transition-colors">
-              FAQs
-            </button>
-          </div>
         </div>
-
       </div>
     </section>
   );
