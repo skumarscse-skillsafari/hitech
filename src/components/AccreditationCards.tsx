@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Award, Shield, Star, Trophy, CheckCircle } from 'lucide-react';
-import aicte from "../../public/aicte.jpg";
-import ann from "../../public/annauniversity.jpg";
-import nba from "../../public/nba.jpg";
-import naac from "../../public/naac.jpg";
-import nirf from "../../public/nirf_logo.jpg";
-import iso from "../../public/isoo.jpg";
-import hit from "/hit.jpg"; // ✅ Import the image
+import React, { useEffect, useState } from 'react';
+import {
+  ChevronLeft,
+  ChevronRight,
+  Award,
+  Shield,
+  Star,
+  Trophy,
+  CheckCircle,
+} from 'lucide-react';
+
+import aicte from '../../public/aicte.jpg';
+import ann from '../../public/annauniversity.jpg';
+import nba from '../../public/nba.jpg';
+import naac from '../../public/naac.jpg';
+import nirf from '../../public/nirf_logo.jpg';
+import iso from '../../public/isoo.jpg';
 
 interface Accreditation {
   name: string;
@@ -15,34 +23,32 @@ interface Accreditation {
   logo: string;
   color: string;
   icon: string;
-  description: string;
+  
   validUntil?: string;
 }
 
-interface AccreditationCardsProps {
-  accreditations: Accreditation[];
-}
-
-const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations }) => {
+const AccreditationCards: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 3;
+  const visibleCount = 3;
 
   const iconMap = {
     Award,
     Shield,
     Star,
     Trophy,
-    CheckCircle
+    CheckCircle,
   };
 
-  const enhancedAccreditations = [
+  const accreditations: Accreditation[] = [
     {
       name: 'AICTE',
       fullName: 'All India Council for Technical Education',
       grade: 'Approved',
       logo: aicte,
       color: 'bg-blue-50 border-blue-200 text-blue-700',
-      
+      icon: 'Shield',
+    
+      validUntil: '2025',
     },
     {
       name: 'Anna University',
@@ -50,7 +56,9 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'Affiliated',
       logo: ann,
       color: 'bg-green-50 border-green-200 text-green-700',
-     
+      icon: 'Award',
+    
+      validUntil: 'Permanent',
     },
     {
       name: 'NBA',
@@ -58,7 +66,9 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'Accredited',
       logo: nba,
       color: 'bg-purple-50 border-purple-200 text-purple-700',
-      
+      icon: 'Trophy',
+     
+      validUntil: '2026',
     },
     {
       name: 'NAAC',
@@ -66,7 +76,9 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'A Grade',
       logo: naac,
       color: 'bg-yellow-50 border-yellow-200 text-yellow-700',
-     
+      icon: 'Star',
+    
+      validUntil: '2027',
     },
     {
       name: 'NIRF',
@@ -74,7 +86,9 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: 'Top 50',
       logo: nirf,
       color: 'bg-orange-50 border-orange-200 text-orange-700',
-      
+      icon: 'Award',
+
+      validUntil: '2024',
     },
     {
       name: 'ISO',
@@ -82,170 +96,109 @@ const AccreditationCards: React.FC<AccreditationCardsProps> = ({ accreditations 
       grade: '9001:2015',
       logo: iso,
       color: 'bg-red-50 border-red-200 text-red-700',
+      icon: 'CheckCircle',
       
-    }
+      validUntil: '2025',
+    },
   ];
 
-  const totalPages = Math.ceil(enhancedAccreditations.length / itemsPerPage);
+  const next = () => {
+    setCurrentIndex((prev) => (prev + 1) % accreditations.length);
+  };
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + itemsPerPage >= enhancedAccreditations.length ? 0 : prevIndex + itemsPerPage
+  const prev = () => {
+    setCurrentIndex((prev) =>
+      prev === 0 ? accreditations.length - 1 : prev - 1
     );
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? Math.max(0, enhancedAccreditations.length - itemsPerPage) : Math.max(0, prevIndex - itemsPerPage)
-    );
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      next();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
-  const goToPage = (pageIndex: number) => {
-    setCurrentIndex(pageIndex * itemsPerPage);
+  const getVisibleAccreditations = () => {
+    const visible: Accreditation[] = [];
+    for (let i = 0; i < visibleCount; i++) {
+      visible.push(accreditations[(currentIndex + i) % accreditations.length]);
+    }
+    return visible;
   };
-
-  const currentAccreditations = enhancedAccreditations.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Section Header - About Us */}
-        <div className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-8">
-            About US
-          </h2>
-
-          {/* Flex layout for text and image */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-6xl mx-auto">
-            
-            {/* Text content */}
-            <div className="md:w-1/2 text-xl text-gray-600">
-              <p>
-                Hindusthan Educational and Charitable Trust, one of the finest in education and teaching is strategically placed in the heart of the city, and since 1992 has established itself firmly in the fields of Arts, Science, Education and Technical Education. The Trust aims at providing education that is world-class and on par with global standards.
-              </p>
-              <br />
-              <p>
-                The Management has always stood by its commitment to the betterment of the student community and had at first established itself as a brand in the 'power sector', and today in the field of Education has reigned supreme with the 'Life Time Education Achievement Award' for giving back to society. The Management believes in leading and has set new trends/ innovative training methodologies in all its Institutions that will assist students towards the road to success.
-              </p>
-            </div>
-
-            {/* Image on the right */}
-            <div className="md:w-1/2">
-              <img 
-                src={hit} 
-                alt="Our Legacy" 
-               className="rounded-xl shadow-lg w-[90%] max-w-[500px] h-[400px] object-cover"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Section Header - Accreditations */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-             Ranking and Recognition
+            Approvals & Accreditations
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our commitment to excellence is recognized by leading national and international bodies
           </p>
         </div>
 
-        {/* Cards */}
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h3 className="text-2xl font-bold text-gray-900">
-              Quality Assurance & Recognition
-            </h3>
-
-            {/* Navigation Controls */}
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                {Array.from({ length: totalPages }).map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToPage(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
-                      Math.floor(currentIndex / itemsPerPage) === index
-                        ? 'bg-yellow-500'
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                  />
-                ))}
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <button
-                  onClick={prevSlide}
-                  className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full transition-colors group"
-                >
-                  <ChevronLeft className="h-5 w-5 text-gray-600 group-hover:text-yellow-600" />
-                </button>
-                <button
-                  onClick={nextSlide}
-                  className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full transition-colors group"
-                >
-                  <ChevronRight className="h-5 w-5 text-gray-600 group-hover:text-yellow-600" />
-                </button>
-              </div>
+            <h3 className="text-2xl font-bold text-gray-900">Quality Assurance & Recognition</h3>
+            <div className="flex items-center space-x-2">
+              <button
+                onClick={prev}
+                className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full transition-colors group"
+              >
+                <ChevronLeft className="h-5 w-5 text-gray-600 group-hover:text-yellow-600" />
+              </button>
+              <button
+                onClick={next}
+                className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full transition-colors group"
+              >
+                <ChevronRight className="h-5 w-5 text-gray-600 group-hover:text-yellow-600" />
+              </button>
             </div>
           </div>
 
-          {/* Accreditation Cards */}
-          <div className="p-8">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
-              {currentAccreditations.map((accred, index) => {
-                const IconComponent = iconMap[accred.icon as keyof typeof iconMap] || Award;
-                return (
-                  <div 
-                    key={index}
-                    className={`${accred.color} p-8 rounded-2xl border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer`}
-                  >
-                    <div className="text-center space-y-6">
-                      <div className="relative mx-auto w-24 h-24 bg-white rounded-full p-4 shadow-lg group-hover:shadow-xl transition-shadow">
-                        <img 
-                          src={accred.logo} 
-                          alt={accred.name}
-                          className="w-full h-full object-contain rounded-full"
-                        />
-                        <div className="absolute -top-2 -right-2 bg-yellow-500 p-2 rounded-full">
-                          <IconComponent className="h-4 w-4 text-gray-900" />
-                        </div>
-                      </div>
-
-                      <div>
-                        <h4 className="text-2xl font-bold mb-2">{accred.name}</h4>
-                        <p className="text-sm opacity-80 mb-3">{accred.fullName}</p>
-                        <div className="bg-white/70 px-4 py-2 rounded-full inline-block mb-4">
-                          <span className="font-bold text-lg">{accred.grade}</span>
-                        </div>
-                        <p className="text-sm leading-relaxed mb-4">{accred.description}</p>
-                        {accred.validUntil && (
-                          <div className="text-xs font-medium opacity-75">
-                            Valid until: {accred.validUntil}
-                          </div>
-                        )}
-                      </div>
-
-                      <div className="opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div className="text-sm font-medium">
-                          Click to learn more
-                        </div>
+          <div className="grid md:grid-cols-3 gap-6 p-8 transition-all duration-700">
+            {getVisibleAccreditations().map((accred, index) => {
+              const IconComponent = iconMap[accred.icon as keyof typeof iconMap] || Award;
+              return (
+                <div
+                  key={index}
+                  className={`${accred.color} p-6 rounded-2xl border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer`}
+                >
+                  <div className="text-center space-y-4">
+                    <div className="relative mx-auto w-20 h-20 bg-white rounded-full p-4 shadow-lg group-hover:shadow-xl">
+                      <img
+                        src={accred.logo}
+                        alt={accred.name}
+                        className="w-full h-full object-contain rounded-full"
+                      />
+                      <div className="absolute -top-2 -right-2 bg-yellow-500 p-2 rounded-full">
+                        <IconComponent className="h-4 w-4 text-gray-900" />
                       </div>
                     </div>
+                    <h4 className="text-xl font-bold">{accred.name}</h4>
+                    <p className="text-sm text-gray-600">{accred.fullName}</p>
+                    <div className="bg-white/70 px-3 py-1 rounded-full inline-block text-lg font-bold">
+                      {accred.grade}
+                    </div>
+                    <p className="text-sm">{accred.description}</p>
+                    {accred.validUntil && (
+                      <div className="text-xs text-gray-500">
+                        Valid until: {accred.validUntil}
+                      </div>
+                    )}
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
+          </div>
 
-            {/* Additional Info */}
-            <div className="mt-8 text-center">
-              <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200 inline-block">
-                <p className="text-gray-700">
-                  <span className="font-bold text-yellow-700">{enhancedAccreditations.length}</span> prestigious 
-                  accreditations validating our commitment to educational excellence
-                </p>
-              </div>
+          <div className="mt-8 text-center">
+            <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200 inline-block">
+              <p className="text-gray-700">
+                <span className="font-bold text-yellow-700">{accreditations.length}</span> prestigious accreditations validating our commitment to educational excellence
+              </p>
             </div>
           </div>
         </div>

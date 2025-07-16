@@ -54,65 +54,61 @@
       "pos": [
         {
           "id": "PO1",
-          "title": "Engineering Knowledge",
-          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex engineering problems."
+          "title": "ENGINEERING KNOWLEDGE",
+          "description": "Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization applicable to computer science and engineering discipline to develop to the solution of complex engineering problems."
         },
         {
           "id": "PO2",
-          "title": "Problem Analysis",
-          "description": "Identify, formulate, and analyze complex engineering problems using first principles of mathematics and engineering sciences."
+          "title": "PROBLEM ANALYSIS",
+          "description": "Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development."
         },
         {
           "id": "PO3",
-          "title": "Design/Development of Solutions",
-          "description": "Design solutions for complex engineering problems considering public health, safety, and cultural, societal, and environmental considerations."
+          "title": "DESIGN /DEVELOPMENT OF SOLUTIONS",
+          "description": "Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required."
         },
         {
           "id": "PO4",
-          "title": "Conduct Investigations",
-          "description": "Use research-based knowledge and methods including design of experiments, analysis and interpretation of data to provide valid conclusions."
+          "title": "CONDUCT INVESTIGATION OF COMPLEX PROBLEMS",
+          "description": "Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, analysis & interpretation of data to provide valid conclusions."
         },
         {
           "id": "PO5",
-          "title": "Modern Tool Usage",
-          "description": "Create, select, and apply appropriate techniques, resources, and modern engineering tools including prediction and modeling."
+          "title": "ENGINEERING TOOL USAGE",
+          "description": "Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction & modeling to recognize their limitations to solve complex engineering problems."
         },
         {
           "id": "PO6",
-          "title": "The Engineer and Society",
-          "description": "Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal and cultural issues."
+          "title": "THE ENGINEER AND THE WORLD",
+          "description": "Analyze and evaluate societal and environmental aspects while solving complex engineering problems for sustainability with reference to economy, health, safety, legal framework, culture and ethics."
         },
         {
           "id": "PO7",
-          "title": "Environment and Sustainability",
-          "description": "Understand the impact of professional engineering solutions in societal and environmental contexts and demonstrate sustainable development."
+          "title": "ENVIRONMENT & SUSTAINABILITY",
+          "description": "Ability to assess the impact of engineering practices on societal and environmental sustainability."
         },
         {
           "id": "PO8",
-          "title": "Ethics",
-          "description": "Apply ethical principles and commit to professional ethics and responsibilities and norms of engineering practice."
+          "title": "ETHICS",
+          "description": "Apply ethical principles and uphold professional, ethical, security, social issues and responsibilities."
         },
         {
           "id": "PO9",
-          "title": "Individual and Team Work",
-          "description": "Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+          "title": "INDIVIDUAL AND COLLABORATIVE TEAM WORK",
+          "description": "Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams."
         },
         {
           "id": "PO10",
-          "title": "Communication",
-          "description": "Communicate effectively on complex engineering activities with the engineering community and society at large."
+          "title": "COMMUNICATION",
+          "description": "Communicate effectively and inclusively within the engineering community and with society at large such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences."
         },
         {
           "id": "PO11",
-          "title": "Project Management",
-          "description": "Demonstrate knowledge and understanding of engineering and management principles and apply these to one's own work."
-        },
-        {
-          "id": "PO12",
-          "title": "Life-long Learning",
-          "description": "Recognize the need for, and have the preparation and ability to engage in independent and life-long learning."
+          "title": "PROJECT MANAGEMENT AND FINANCE",
+          "description": "Apply knowledge and understanding of engineering and management principles to one’s own work, as a member and leader in a team, and to manage projects in multidisciplinary environments."
         }
       ],
+      
       "teachingMethodologies": [
         {
           "id": 1,
@@ -159,57 +155,284 @@
       ],
       "faculty":[
         {
-          "id": 13,
-          "name": "Dr. S. Ramasamy",
-          "designation": "Associate Professor",
-          "specialization": "Cloud Computing",
-          "experience": "12 Years",
-          "education": "M.E, Ph.D",
-          "email": "ramasamy.s@hit.edu.in",
-          "description": "Dr. S. Ramasamy M.E., Ph.D., currently working as Associate Professor in Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore. He holds Ph.D in Computer Science and Engineering from Anna University, Master of Engineering in Computer Science and Engineering from Anna University of Technology, Coimbatore and Bachelor of Technology in Information Technology from Anna University. He is having more than 14 years of experience in academic, administration, research and innovations. He has published more than 14 research papers in national and international journals. He has published 2 books. He is an active reviewer in Springer Nature Journal. He is a life member of ISTE. His research interest includes Cloud Computing, Edge Computing, Bigdata Security, Wireless Communication."
+          "id": 1,
+          "name": "Dr. Jameer Basha A",
+          "designation": "Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
-          "id": 14,
-          "name": "Mr. J. Uthaya Kumar",
+          "id": 2,
+          "name": "Dr. Mahesh Kumar N.B",
+          "designation": "Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "name": "Dr. Ramasamy S",
+          "designation": "Associate Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 4,
+          "name": "Dr. Subhalaskhmi R.T",
           "designation": "Assistant Professor",
-          "specialization": "Computer Science",
-          "experience": "8 years",
-          "education": "M.Tech, (Ph.D)",
-          "email": "uthayakumar.j@hit.edu.in",
-          "description": "He has 3 years of Teaching Experience in the field of Computer Science and Engineering and 5 years in industry. He received his Bachelor Degree and Master Degree from Anna University, Chennai. He has published 4 Journal papers in various international journals and conferences and 1 copyright. He has also published 5 patents, 2 text books."
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 5,
+          "name": "Dr. Senthil Kumar R",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 6,
+          "name": "Mrs. Kalaiselvi T",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 7,
+          "name": "Mrs. Vidhya D",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 8,
+          "name": "Mrs. Banupriya M",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 9,
+          "name": "Mrs. C.E. Rajaprabha",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 10,
-          "name": "Ms. Priyanka",
+          "name": "Mrs. Nishanandhini A",
           "designation": "Assistant Professor",
-          "specialization": "Computer Science",
-          "experience": "4 years",
-          "education": "M.E",
-          "email": "priyanga@hit.edu.in",
-          "researchAreas": ["Computer Networks", "Software Engineering"],
-          "description": "She completed her B.Tech Information Technology in the year 2014. She completed her M.E in Computer Science and Engineering in the year 2016. Her area of interest was Computer Networks and Software Engineering."
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 11,
-          "name": "Dr. R.T. Subhalakshmi",
-          "designation": "Associate Professor",
-          "specialization": "Medical Image Analysis, Deep Learning and Machine Learning",
-          "experience": "8 years",
-          "education": "M.Tech, Ph.D",
-          "email": "subhalakshmi.rt@hit.edu.in",
-          "researchAreas": ["Medical Image Classification", "Deep Learning", "Generative AI"],
-          "description": "She completed her Ph.D. in the Faculty of Information and Communication Engineering from Anna University and has been passionate about Information and Communication Engineering since her undergraduate years. Expertise: Her research primarily centers on Medical Image Analysis, Deep Learning and Machine Learning. She specializes in using medical image classification and analyzing medical images. She published several peer-reviewed articles in leading journals and has presented her work at national and international conferences. Research Interests: Her research focuses mostly on machine learning, deep learning, and generative AI. She uses image categorization and analysis as her area of expertise. She presented her findings at national and international conferences and published many peer-reviewed pieces in prestigious journals."
+          "name": "Mr. Suresh Kumar P",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 12,
-          "name": "Ms. D. Vidhya",
+          "name": "Mr. Devendran M",
           "designation": "Assistant Professor",
-          "specialization": "Machine Learning",
-          "experience": "8 years",
-          "education": "M.E",
-          "email": "vidhya.d@hit.edu.in",
-          "researchAreas": ["Cloud Computing", "Machine Learning"],
-          "description": "D. Vidhya, currently working as Assistant Professor in Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore. She holds Master of Engineering in Computer Science and Engineering from Anna University of Technology, Coimbatore and Bachelor of Engineering in Electrical and Electronics Engineering from Bharathiyar University. She is having more than 13 years of experience in academic. She got a elite in NPTEL course. She is a life member of ISTE. Her research interest includes Cloud Computing, Machine Learning."
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 13,
+          "name": "Mr. Murugan K",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 14,
+          "name": "Ms. Uma Maheswari P",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 15,
+          "name": "Mrs. V. Priyanka",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 16,
+          "name": "Mr. Sathishkumar S",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 17,
+          "name": "Mr. Udhayakumar T",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 18,
+          "name": "Mr. Jayaprakash S",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 19,
+          "name": "Mrs. N. Abinaya",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 20,
+          "name": "Mr. Johny Sebastine",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 21,
+          "name": "Ms. J. Pavithra",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 22,
+          "name": "Mrs. Mookhambika N",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 23,
+          "name": "Mrs. Suganthi D",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 24,
+          "name": "Mrs. Ramalakshmi B",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 25,
+          "name": "Mrs. Praveena A",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 26,
+          "name": "Dr. Senthil Singh C",
+          "designation": "Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 27,
+          "name": "Mr. Periyasamy P.N",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 28,
+          "name": "Mr. Uthayakumar J",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "uthayakumar.j@hit.edu.in",
+          "description": "He has 3 years of Teaching Experience in the field of Computer Science and Engineering and 5 years in industry. He received his Bachelor Degree and Master Degree from Anna University, Chennai. He has published 4 Journal papers in various international journals and conferences and 1 copyright. He has also published 5 patents, 2 text books."
         }
       ]
       
