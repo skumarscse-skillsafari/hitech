@@ -1,6 +1,6 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+
 import { CMSProvider } from './components/admin/CMSProvider';
 import TopNavBar from './components/TopNavBar';
 import Header from './components/Header';
@@ -15,7 +15,7 @@ import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
 import InnovativeMethods from './pages/InnovativeMethods';
-import Objectives from './pages/Objectives';
+import Objectives from './pages/objectives';
 import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import BoardOfGovernors from './pages/BoardOfGovernance';
@@ -33,20 +33,25 @@ function App() {
     <HelmetProvider>
       <CMSProvider>
         <Router>
-          <div className="min-h-screen bg-white">
-            <TopNavBar 
-              socialMedia={topNavBarData.topNavBar.socialMedia} 
-              menuItems={topNavBarData.topNavBar.menuItems}
+          <div className="min-h-screen bg-white flex flex-col">
+            {/* Top Navbar */}
+            <TopNavBar
+              socialMedia={topNavBarData?.topNavBar?.socialMedia || []}
+              menuItems={topNavBarData?.topNavBar?.menuItems || []}
             />
-            <Header 
-              collegeName={headerData.header.collegeName} 
-              collegeSubtitle={headerData.header.collegeSubtitle}
-              navigationItems={headerData.header.navigationItems}
+
+            {/* Header */}
+            <Header
+              collegeName={headerData?.header?.collegeName || 'College Name'}
+              collegeSubtitle={headerData?.header?.collegeSubtitle || 'Subtitle'}
+              navigationItems={headerData?.header?.navigationItems || []}
             />
-            <NewsTicker 
-              newsItems={newsTickerData.newsTicker.newsItems}
-              speed={newsTickerData.newsTicker.settings.speed}
-              pauseOnHover={newsTickerData.newsTicker.settings.pauseOnHover}
+
+            {/* News Ticker */}
+            <NewsTicker
+              newsItems={newsTickerData?.newsTicker?.newsItems || []}
+              speed={newsTickerData?.newsTicker?.settings?.speed ?? 50}
+              pauseOnHover={newsTickerData?.newsTicker?.settings?.pauseOnHover ?? true}
             />
 
             <Routes>

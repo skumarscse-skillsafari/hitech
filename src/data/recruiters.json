@@ -1,0 +1,21 @@
+[
+  { "name": "Infosys",
+   "logo": "/logo/infosiscon.png" },
+  { "name": "TCS", 
+  "logo": "/logo/tcs.png" },
+  { "name": "Wipro", 
+  "logo": "/logo/wipro.png" },
+  { "name": "IBM", "logo": "/logo/ibm.png" },
+  { "name": "Tech Mahindra", "logo": "/logo/techmahi.png" },
+  { "name": "Accenture", "logo": "/logo/acc.png" },
+  { "name": "Amazon", "logo": "/logo/amazon.png" },
+  { "name": "Cognizant", "logo": "/logo/cog.png" },
+  { "name": "HCL", "logo": "/logo/hcl.png" },
+  { "name": "Zoho", "logo": "/logo/zoho.png" },
+  { "name": "Virtusa", "logo": "/logo/virtusa.png" },
+  { "name": "Hexaware", "logo": "/logo/hexa.png" },
+  { "name": "NTT Data", "logo": "/logo/NTT.png" },
+  { "name": "Atos", "logo": "/logo/atos.png" },
+  { "name": "Bosch", "logo": "/logo/bosch.png" },
+  { "name": "Capgemini", "logo": "/logo/capgemini.png" }
+]
