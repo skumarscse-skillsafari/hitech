@@ -33,12 +33,7 @@
         "editable": true,
         "dataSource": "departmentsData.json"
       },
-      {
-        "name": "Placements",
-        "fields": ["stats", "topRecruiters", "testimonials", "placementProcess"],
-        "editable": true,
-        "dataSource": "placementsData.json"
-      },
+     
       {
         "name": "Contact Information",
         "fields": ["address", "phone", "email", "socialMedia", "departments"],

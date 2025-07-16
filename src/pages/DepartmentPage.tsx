@@ -8,11 +8,12 @@ import TeachingMethodologyCards from '../components/TeachingMethodologyCards';
 import FacultyCarousel from '../components/FacultyCarousel';
 import FacilitiesCarousel from '../components/FacilitiesCarousel';
 import TabsSection from '../components/TabsSection';
+
 import departmentsData from '../data/departmentsData.json';
 
 const DepartmentPage: React.FC = () => {
   const { departmentId } = useParams<{ departmentId: string }>();
-  const navigate = useNavigate(); // ✅ Added
+  const navigate = useNavigate();
 
   const department = departmentsData.departments.find(dept => dept.id === departmentId);
 
@@ -28,7 +29,7 @@ const DepartmentPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
         {/* Department Header */}
-        <SectionWrapper lazy lazyHeight="300px" lazyDelay={300} className="">
+        <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
           <DepartmentDetail department={department} />
         </SectionWrapper>
 
@@ -50,7 +51,7 @@ const DepartmentPage: React.FC = () => {
           />
           <div className="text-center mt-8">
             <button
-              onClick={() => navigate('/innovative-methods')} // ✅ Updated
+              onClick={() => navigate('/innovative-methods')}
               className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
             >
               View All Innovative Teaching Methodologies
@@ -58,10 +59,10 @@ const DepartmentPage: React.FC = () => {
           </div>
         </SectionWrapper>
 
-        {/* Facilities & Infrastructure */}
+       
         <SectionWrapper lazy lazyHeight="500px" lazyDelay={1100} className="mt-12">
           <FacilitiesCarousel 
-            facilities={[]}
+            facilities={department.facilities || []}
             departmentName={department.name}
           />
         </SectionWrapper>
