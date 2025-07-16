@@ -1,10 +1,4 @@
 import React from 'react';
-import pbl from "../../public/projectbasedlearning.jpg";
-import fl from "../../public/flippedclass.jpg";
-import gm from "../../public/AIGamification.jpg";
-import gp from "../../public/grp.jpg";
-import cs from "../../public/case.jpg";
-import rp from "../../public/role.jpg";
 
 interface Method {
   title: string;
@@ -16,38 +10,38 @@ const methods: Method[] = [
   {
     title: 'Project-Based Learning',
     description: 'Students work on real-world projects to gain deep knowledge.',
-    image: pbl,
+    image: '/images/project-based.jpg',
   },
   {
     title: 'Flipped Classroom',
     description: 'Students study theory at home and apply it during class.',
-    image: fl,
+    image: '/images/flipped-classroom.jpg',
   },
   {
     title: 'Gamification',
     description: 'Game elements like points and challenges keep students engaged.',
-    image: gm,
+    image: '/images/gamification.jpg',
   },
   {
     title: 'Group Discussions',
     description: 'Encourages communication, collaboration, and critical thinking.',
-    image: gp,
+    image: '/images/group-discussion.jpg',
   },
   {
     title: 'Case Studies',
     description: 'Students analyze real-life problems to make decisions.',
-    image: cs,
+    image: '/images/case-study.jpg',
   },
   {
     title: 'Role Play & Simulation',
     description: 'Simulated environments and role-playing for experiential learning.',
-    image: rp,
+    image: '/images/roleplay.jpg',
   },
 ];
 
 const InnovativeMethods: React.FC = () => {
   return (
-    <div className="max-w-7xl m-auto px-4 pt-40 pb-12">
+    <div className="max-w-7xl mx-auto px-4 py-12">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
         Innovative Teaching Methodologies
       </h1>
