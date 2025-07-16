@@ -1,0 +1,31 @@
+{
+  "admissionNotice": "⭐ Admissions Open for Academic Year 2024-25! Apply now for B.Tech, M.Tech & Ph.D programs",
+  "boardOfGovernance": {
+    "title": "Board of Governance",
+    "description": "The Board of Governance (BoG) is the apex body that shapes the strategic direction and ensures quality standards of our institution. Education is about much more than employability. It includes evolving with a different view, developing various perspectives and opening the mind to enormous possibilities, and ultimately emerging as a world-class human resource.",
+    "majorResponsibilities": {
+      "title": "Major Responsibilities of Governing Council:",
+      "items": [
+        "Uphold the legal stature of the college in line with the policies of AICTE, UGC, State Government and affiliating university (Anna University) or any other body or agency.",
+        "Taking decisions regarding the intake and addition or discontinuing of any program and instructing the Principal to take formal steps with the affiliating body to put this into action.",
+        "Fix the fee structure and any charges applicable in accordance with the recommendation of the affiliating university.",
+        "Approve the budget for the respective financial year."
+      ]
+    },
+    "additionalResponsibilities": {
+      "title": "In addition the BoG shall have:",
+      "items": [
+        "Two to five Members (Industrialist / Technologist / Educationist) to be nominated by the Registered Trust.",
+        "Nominee of the affiliating University.",
+        "Nominee of the All India Council for Technical Education (Ex-officio).",
+        "Nominee of the State Government / UT (Ex-officio).",
+        "An Industrialist / Technologist / Educationist from the Region nominated by the State Government.",
+        "Two Faculty members to be nominated from amongst the Regular Staff, one at the level of Professor and one at the level of Assistant Professor."
+      ]
+    }
+  },
+  "governingCouncilMembers": {
+    "title": "Governing Council Members:",
+    "description": "Our distinguished governing council comprises eminent personalities from academia, industry, and government who guide our institution towards excellence."
+  }
+}

@@ -170,7 +170,7 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
               <div className="space-y-4 mb-6">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-blue-600" />
-                  <span className="text-sm text-gray-700">+91-422-2987654 (Admissions Helpline)</span>
+                  <span className="text-sm text-gray-700"> +91 97152 601184  (Admissions Helpline)</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-blue-600" />
