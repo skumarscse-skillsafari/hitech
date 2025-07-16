@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import departmentData from '../data/departments.json';
+import departmentData from '../data/departmentsData.json';
 
 const FacultyList: React.FC = () => {
   const facultyList = departmentData.departments[0].faculty;
