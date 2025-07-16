@@ -14,7 +14,7 @@ const FAQ: React.FC = () => {
   const faqData: FAQItem[] = [
     {
       id: 1,
-      question: "What are the admission requirements for B.Tech programs?",
+      question: "What are the admission requirements for B.E/B.Tech programs?",
       answer: "Candidates must have completed 10+2 with Physics, Chemistry, and Mathematics with a minimum of 75% aggregate marks. Valid JEE Main or State CET scores are required. Age limit is 17-25 years at the time of admission.",
       category: "Admissions"
     },
