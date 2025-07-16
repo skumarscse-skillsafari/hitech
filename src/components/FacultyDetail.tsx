@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import departmentData from '../data/departments.json';
+import departmentData from '../data/departmentsData.json';
 
 const FacultyDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
