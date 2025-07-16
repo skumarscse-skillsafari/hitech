@@ -11,8 +11,8 @@
       "subtitle": "Join 50,000+ alumni who are transforming industries worldwide through innovative engineering solutions.",
       "backgroundImage": "https://images.pexels.com/photos/159306/building-architecture-sky-blue-159306.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "stats": [
-        { "number": "50+", "label": "Years of Excellence" },
-        { "number": "15,000+", "label": "Students" },
+        { "number": "15+", "label": "Years of Excellence" },
+        { "number": "2500+", "label": "Students" },
         { "number": "500+", "label": "Faculty Members" },
         { "number": "90%", "label": "Placement Rate" }
       ]
@@ -594,9 +594,9 @@
     }
   },
   "contact": {
-    "address": "123 Education Boulevard, Tech City, State 560001",
-    "phone": "+91-80-1234-5678",
-    "email": "info@hit.edu",
+    "address": "Hindusthan Institute of Technology Othakalmandapam, Coimbatore - 641 032 Tamil Nadu, India",
+    "phone": "+91-422-2987654 +91-422-2987655",
+    "email": "admissions@hit.edu.in",
     "website": "www.hit.edu",
     "socialMedia": {
       "facebook": "HindusthanInstituteOfTechnology",
