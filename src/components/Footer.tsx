@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
     { name: 'Faculty', href: '#faculty' },
     { name: 'Admissions', href: '#admissions' },
     { name: 'Research', href: '#research' },
-    { name: 'Campus Life', href: '#campus' },
+    { name: '', href: '#campus' },
   ];
 
   const academicLinks = [
