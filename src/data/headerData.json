@@ -8,10 +8,10 @@
         "name": "About", 
         "href": "/about",
         "dropdown": [
-          { "name": "Objectives", "href": "/about" },
+          { "name": "Objectives", "href": "/about/Objectives" },
           { "name": "Management", "href": "/vision-mission" },
-          { "name": "Principal's Desk", "href": "/leadership" }
-         
+          { "name": "Principal's Desk", "href": "/leadership" },
+          { "name": "Board of Governance", "href": "/accreditations" }
         ]
       },
       { 
@@ -43,19 +43,25 @@
         "href": "/campus-life",
         "dropdown": [
           { "name": "Gallery", "href": "/gallery" },
-          { "name": "Library", "href": "/gallery" },
-          { "name": "Cafeteria", "href": "/gallery" },
-          { "name": "Transport ", "href": "/gallery" },
-          { "name": "Hostel", "href": "/gallery" },
-          { "name": "Incubation Lab", "href": "/gallery" },
-          { "name": "AICTE Idea Lab", "href": "/gallery" },
           { "name": "Events", "href": "/events" },
-          { "name": "Student Activities", "href": "/student-activities" },
-          { "name": "Facilities", "href": "/facilities" },
-          { "name": "Hostel", "href": "/hostel" },
-          { "name": "Cafeteria", "href": "/cafeteria" },
-          { "name": "Transportation", "href": "/transportation" },
-          { "name": "Library", "href": "/library" }
+          {
+            "name": "Facilities",
+            "href": "/facilities",
+            "dropdown": [
+              { "name": "Hostel", "href": "/hostel" },
+              { "name": "Cafeteria", "href": "/cafeteria" },
+              { "name": "Library", "href": "/library" },
+              { "name": "Transport", "href": "/transportation" }
+            ]
+          },
+          {
+            "name": "Innovation",
+            "href": "/innovation",
+            "dropdown": [
+              { "name": "Incubation Lab", "href": "/incubation-lab" },
+              { "name": "AICTE Idea Lab", "href": "/aicte-lab" }
+            ]
+          }
         ]
       },
       { 
@@ -67,9 +73,8 @@
           { "name": "Training Programs", "href": "/training" },
           { "name": "Alumni Network", "href": "/alumni" }
         ]
-      },
-      { "name": "Research", "href": "/research" },
-      { "name": "Contact", "href": "/contact" }
+      }
+      
     ]
   }
 }
