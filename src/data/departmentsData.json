@@ -4,7 +4,7 @@
       "id": "cse",
       "name": "Computer Science & Engineering",
       "shortName": "CSE",
-      "description": "Pioneering the digital revolution with cutting-edge curriculum in AI, ML, Data Science, and Software Engineering.",
+      "description": "Empowering future innovators with industry-aligned programs in AI, ML, Data Science, and Software Engineering—blending theory, hands-on learning, and real-world applications to drive the digital future.",
       "icon": "Monitor",
       "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To be a leading department in computer science education and research, producing innovative engineers who drive technological advancement.",
@@ -33,10 +33,10 @@
         {
           "id": "PSO1",
           "description": "Ability to apply programming skills in various languages and implement algorithms and data structures to solve computational challenges."
-},
+        },
         {
           "id": "PSO2",
-          "description":"Ability to design, develop, test, and integrate software and hardware components to construct effective and efficient computer-based systems."
+          "description": "Ability to design, develop, test, and integrate software and hardware components to construct effective and efficient computer-based systems."
         }
       ],
       "peos": [
@@ -54,65 +54,61 @@
       "pos": [
         {
           "id": "PO1",
-          "title": "Engineering Knowledge",
-          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex engineering problems."
+          "title": "ENGINEERING KNOWLEDGE",
+          "description": "Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization applicable to computer science and engineering discipline to develop to the solution of complex engineering problems."
         },
         {
           "id": "PO2",
-          "title": "Problem Analysis",
-          "description": "Identify, formulate, and analyze complex engineering problems using first principles of mathematics and engineering sciences."
+          "title": "PROBLEM ANALYSIS",
+          "description": "Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development."
         },
         {
           "id": "PO3",
-          "title": "Design/Development of Solutions",
-          "description": "Design solutions for complex engineering problems considering public health, safety, and cultural, societal, and environmental considerations."
+          "title": "DESIGN /DEVELOPMENT OF SOLUTIONS",
+          "description": "Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required."
         },
         {
           "id": "PO4",
-          "title": "Conduct Investigations",
-          "description": "Use research-based knowledge and methods including design of experiments, analysis and interpretation of data to provide valid conclusions."
+          "title": "CONDUCT INVESTIGATION OF COMPLEX PROBLEMS",
+          "description": "Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, analysis & interpretation of data to provide valid conclusions."
         },
         {
           "id": "PO5",
-          "title": "Modern Tool Usage",
-          "description": "Create, select, and apply appropriate techniques, resources, and modern engineering tools including prediction and modeling."
+          "title": "ENGINEERING TOOL USAGE",
+          "description": "Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction & modeling to recognize their limitations to solve complex engineering problems."
         },
         {
           "id": "PO6",
-          "title": "The Engineer and Society",
-          "description": "Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal and cultural issues."
+          "title": "THE ENGINEER AND THE WORLD",
+          "description": "Analyze and evaluate societal and environmental aspects while solving complex engineering problems for sustainability with reference to economy, health, safety, legal framework, culture and ethics."
         },
         {
           "id": "PO7",
-          "title": "Environment and Sustainability",
-          "description": "Understand the impact of professional engineering solutions in societal and environmental contexts and demonstrate sustainable development."
+          "title": "ENVIRONMENT & SUSTAINABILITY",
+          "description": "Ability to assess the impact of engineering practices on societal and environmental sustainability."
         },
         {
           "id": "PO8",
-          "title": "Ethics",
-          "description": "Apply ethical principles and commit to professional ethics and responsibilities and norms of engineering practice."
+          "title": "ETHICS",
+          "description": "Apply ethical principles and uphold professional, ethical, security, social issues and responsibilities."
         },
         {
           "id": "PO9",
-          "title": "Individual and Team Work",
-          "description": "Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+          "title": "INDIVIDUAL AND COLLABORATIVE TEAM WORK",
+          "description": "Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams."
         },
         {
           "id": "PO10",
-          "title": "Communication",
-          "description": "Communicate effectively on complex engineering activities with the engineering community and society at large."
+          "title": "COMMUNICATION",
+          "description": "Communicate effectively and inclusively within the engineering community and with society at large such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences."
         },
         {
           "id": "PO11",
-          "title": "Project Management",
-          "description": "Demonstrate knowledge and understanding of engineering and management principles and apply these to one's own work."
-        },
-        {
-          "id": "PO12",
-          "title": "Life-long Learning",
-          "description": "Recognize the need for, and have the preparation and ability to engage in independent and life-long learning."
+          "title": "PROJECT MANAGEMENT AND FINANCE",
+          "description": "Apply knowledge and understanding of engineering and management principles to one’s own work, as a member and leader in a team, and to manage projects in multidisciplinary environments."
         }
       ],
+      
       "teachingMethodologies": [
         {
           "id": 1,
@@ -157,162 +153,300 @@
           "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400"
         }
       ],
-      "faculty": [
+      "faculty":[
         {
           "id": 1,
-          "name": "Dr. Rajesh Kumar",
-          "designation": "Professor & Head",
-          "specialization": "Artificial Intelligence, Machine Learning",
-          "experience": "18 years",
-          "education": "Ph.D from IIT Delhi",
-          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "rajesh.kumar@hit.edu",
-          "publications": 45,
-          "researchAreas": ["Deep Learning", "Computer Vision", "Natural Language Processing"]
+          "name": "Dr. Jameer Basha A",
+          "designation": "Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 2,
-          "name": "Dr. Anita Singh",
-          "designation": "Associate Professor",
-          "specialization": "Data Science, Big Data Analytics",
-          "experience": "12 years",
-          "education": "Ph.D from IIT Bombay",
-          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "anita.singh@hit.edu",
-          "publications": 32,
-          "researchAreas": ["Big Data", "Data Mining", "Business Intelligence"]
+          "name": "Dr. Mahesh Kumar N.B",
+          "designation": "Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 3,
-          "name": "Dr. Vikram Patel",
-          "designation": "Assistant Professor",
-          "specialization": "Cybersecurity, Network Security",
-          "experience": "8 years",
-          "education": "Ph.D from IIT Kanpur",
-          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "vikram.patel@hit.edu",
-          "publications": 28,
-          "researchAreas": ["Cryptography", "Network Security", "Blockchain"]
+          "name": "Dr. Ramasamy S",
+          "designation": "Associate Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 4,
-          "name": "Dr. Priya Sharma",
-          "designation": "Associate Professor",
-          "specialization": "Software Engineering, Web Technologies",
-          "experience": "10 years",
-          "education": "Ph.D from NIT Trichy",
-          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "priya.sharma@hit.edu",
-          "publications": 25,
-          "researchAreas": ["Software Architecture", "Web Development", "Mobile Computing"]
+          "name": "Dr. Subhalaskhmi R.T",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 5,
-          "name": "Dr. Amit Gupta",
+          "name": "Dr. Senthil Kumar R",
           "designation": "Assistant Professor",
-          "specialization": "Cloud Computing, Distributed Systems",
-          "experience": "7 years",
-          "education": "Ph.D from IIT Madras",
-          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "amit.gupta@hit.edu",
-          "publications": 22,
-          "researchAreas": ["Cloud Architecture", "Microservices", "DevOps"]
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 6,
-          "name": "Dr. Kavitha Reddy",
-          "designation": "Professor",
-          "specialization": "Database Systems, Information Retrieval",
-          "experience": "15 years",
-          "education": "Ph.D from IISc Bangalore",
-          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "kavitha.reddy@hit.edu",
-          "publications": 38,
-          "researchAreas": ["NoSQL Databases", "Search Engines", "Data Warehousing"]
+          "name": "Mrs. Kalaiselvi T",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 7,
-          "name": "Dr. Suresh Kumar",
+          "name": "Mrs. Vidhya D",
           "designation": "Assistant Professor",
-          "specialization": "Internet of Things, Embedded Systems",
-          "experience": "6 years",
-          "education": "Ph.D from VIT Vellore",
-          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "suresh.kumar@hit.edu",
-          "publications": 18,
-          "researchAreas": ["IoT Applications", "Sensor Networks", "Edge Computing"]
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 8,
-          "name": "Dr. Meera Nair",
-          "designation": "Associate Professor",
-          "specialization": "Human-Computer Interaction, UI/UX Design",
-          "experience": "9 years",
-          "education": "Ph.D from Anna University",
-          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "meera.nair@hit.edu",
-          "publications": 24,
-          "researchAreas": ["User Experience", "Accessibility", "Design Thinking"]
+          "name": "Mrs. Banupriya M",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 9,
-          "name": "Dr. Ravi Krishnan",
+          "name": "Mrs. C.E. Rajaprabha",
           "designation": "Assistant Professor",
-          "specialization": "Computer Graphics, Virtual Reality",
-          "experience": "5 years",
-          "education": "Ph.D from IIT Guwahati",
-          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "ravi.krishnan@hit.edu",
-          "publications": 15,
-          "researchAreas": ["3D Graphics", "AR/VR", "Game Development"]
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 10,
-          "name": "Dr. Deepika Jain",
-          "designation": "Professor",
-          "specialization": "Algorithms, Computational Complexity",
-          "experience": "16 years",
-          "education": "Ph.D from IIT Delhi",
-          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "deepika.jain@hit.edu",
-          "publications": 42,
-          "researchAreas": ["Algorithm Design", "Optimization", "Parallel Computing"]
+          "name": "Mrs. Nishanandhini A",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 11,
-          "name": "Dr. Arjun Mehta",
+          "name": "Mr. Suresh Kumar P",
           "designation": "Assistant Professor",
-          "specialization": "Mobile Computing, Wireless Networks",
-          "experience": "4 years",
-          "education": "Ph.D from BITS Pilani",
-          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "arjun.mehta@hit.edu",
-          "publications": 12,
-          "researchAreas": ["5G Networks", "Mobile Apps", "Wireless Security"]
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 12,
-          "name": "Dr. Sanjana Rao",
-          "designation": "Associate Professor",
-          "specialization": "Natural Language Processing, Text Mining",
-          "experience": "11 years",
-          "education": "Ph.D from IIIT Hyderabad",
-          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
-          "email": "sanjana.rao@hit.edu",
-          "publications": 29,
-          "researchAreas": ["NLP", "Sentiment Analysis", "Chatbots"]
+          "name": "Mr. Devendran M",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 13,
+          "name": "Mr. Murugan K",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 14,
+          "name": "Ms. Uma Maheswari P",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 15,
+          "name": "Mrs. V. Priyanka",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 16,
+          "name": "Mr. Sathishkumar S",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 17,
+          "name": "Mr. Udhayakumar T",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 18,
+          "name": "Mr. Jayaprakash S",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 19,
+          "name": "Mrs. N. Abinaya",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 20,
+          "name": "Mr. Johny Sebastine",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 21,
+          "name": "Ms. J. Pavithra",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 22,
+          "name": "Mrs. Mookhambika N",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 23,
+          "name": "Mrs. Suganthi D",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 24,
+          "name": "Mrs. Ramalakshmi B",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 25,
+          "name": "Mrs. Praveena A",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 26,
+          "name": "Dr. Senthil Singh C",
+          "designation": "Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 27,
+          "name": "Mr. Periyasamy P.N",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
+        },
+        {
+          "id": 28,
+          "name": "Mr. Uthayakumar J",
+          "designation": "Assistant Professor",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "uthayakumar.j@hit.edu.in",
+          "description": "He has 3 years of Teaching Experience in the field of Computer Science and Engineering and 5 years in industry. He received his Bachelor Degree and Master Degree from Anna University, Chennai. He has published 4 Journal papers in various international journals and conferences and 1 copyright. He has also published 5 patents, 2 text books."
         }
       ]
+      
+      
     },
     {
-      "id": "aids",
+      "id": "ai",
       "name": "Artificial Intelligence & Data Science",
-      "shortName": "AI&DS",
-      "description": "Exploring the frontiers of artificial intelligence and data science to solve complex real-world problems.",
+      "shortName": "AI & DS",
+      "description": "Empowering future AI and Data Science experts with innovative curriculum, practical training, and research to tackle real-world challenges.",
       "icon": "Brain",
       "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "vision": "To be a center of excellence in AI and Data Science education, fostering innovation and research in intelligent systems.",
-      "mission": "To provide cutting-edge education in AI and Data Science, develop skilled professionals, and contribute to technological advancement through research and innovation.",
+      "vision": "To be a leading department in AI and data science education, producing innovative professionals who drive technological advancements.",
+      "mission": "To provide comprehensive education in AI and data science, foster research and innovation, and develop ethical professionals for the global technology industry.",
       "programs": [
         {
           "name": "B.Tech Artificial Intelligence & Data Science",
@@ -321,98 +455,36 @@
           "eligibility": "10+2 with PCM, JEE Main"
         },
         {
-          "name": "M.Tech Artificial Intelligence",
+          "name": "M.Tech Artificial Intelligence & Data Science",
           "duration": "2 Years",
-          "intake": "18 Students",
-          "eligibility": "B.Tech CSE/IT/AI&DS, GATE"
+          "intake": "24 Students",
+          "eligibility": "B.Tech CSE/IT, GATE,TANCET"
         }
       ],
-      "specializations": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Data Analytics", "Robotics"],
-      "facilities": ["AI Research Lab", "Data Science Lab", "GPU Computing Center", "Robotics Lab", "Visualization Studio"],
+      "specializations": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Big Data Analytics"],
+      "facilities": ["AI Research Lab", "Data Analytics Lab", "Machine Learning Lab", "NLP Lab", "Computer Vision Lab"],
       "psos": [
         {
-          "id": "PSO1",
-          "title": "AI System Development",
-          "description": "Graduates will be able to design, develop, and deploy intelligent systems using modern AI techniques and frameworks."
+          "id": 1,
+          "title": "AI Model Development",
+          "description": "Graduates will be able to design, develop, and deploy AI models for real-world applications."
         },
         {
-          "id": "PSO2",
-          "title": "Data Analytics Expertise",
-          "description": "Graduates will demonstrate proficiency in data collection, processing, analysis, and visualization to extract meaningful insights."
+          "id": 2,
+          "title": "Data-Driven Decision Making",
+          "description": "Graduates will utilize data analytics techniques to derive insights and support decision-making processes."
         }
       ],
       "peos": [
         {
-          "id": "PEO1",
-          "title": "AI Innovation Leadership",
-          "description": "Graduates will lead AI innovation in various domains, contributing to technological advancement and societal benefit."
+          "id": 1,
+          "title": "AI Leadership",
+          "description": "Graduates will assume leadership roles in AI and data science domains, driving innovation and technological advancements."
         },
         {
-          "id": "PEO2",
+          "id": 2,
           "title": "Research Excellence",
           "description": "Graduates will pursue advanced research in AI and Data Science, contributing to scientific knowledge and breakthrough discoveries."
-        }
-      ],
-      "pos": [
-        {
-          "id": "PO1",
-          "title": "Engineering Knowledge",
-          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex AI and data science problems."
-        },
-        {
-          "id": "PO2",
-          "title": "Problem Analysis",
-          "description": "Identify, formulate, and analyze complex AI problems using first principles and advanced computational methods."
-        },
-        {
-          "id": "PO3",
-          "title": "Design/Development of Solutions",
-          "description": "Design AI solutions considering ethical, societal, and environmental implications."
-        },
-        {
-          "id": "PO4",
-          "title": "Conduct Investigations",
-          "description": "Use research-based knowledge and experimental methods to validate AI models and data science solutions."
-        },
-        {
-          "id": "PO5",
-          "title": "Modern Tool Usage",
-          "description": "Create and apply AI frameworks, data science tools, and modern computational resources."
-        },
-        {
-          "id": "PO6",
-          "title": "The Engineer and Society",
-          "description": "Assess the societal impact of AI systems and data-driven decisions."
-        },
-        {
-          "id": "PO7",
-          "title": "Environment and Sustainability",
-          "description": "Understand the environmental impact of AI systems and promote sustainable computing practices."
-        },
-        {
-          "id": "PO8",
-          "title": "Ethics",
-          "description": "Apply ethical principles in AI development, ensuring fairness, transparency, and accountability."
-        },
-        {
-          "id": "PO9",
-          "title": "Individual and Team Work",
-          "description": "Function effectively in interdisciplinary AI and data science teams."
-        },
-        {
-          "id": "PO10",
-          "title": "Communication",
-          "description": "Communicate complex AI concepts and data insights effectively to diverse audiences."
-        },
-        {
-          "id": "PO11",
-          "title": "Project Management",
-          "description": "Manage AI projects considering technical, ethical, and business constraints."
-        },
-        {
-          "id": "PO12",
-          "title": "Life-long Learning",
-          "description": "Adapt to rapidly evolving AI technologies and methodologies through continuous learning."
         }
       ],
       "teachingMethodologies": [
@@ -476,7 +548,7 @@
       "id": "it",
       "name": "Information Technology",
       "shortName": "IT",
-      "description": "Bridging technology and business through innovative IT solutions and digital transformation.",
+      "description": "We bridge technology and business by crafting innovative IT solutions that power digital transformation, enabling organizations to optimize processes, enhance customer experiences, improve decision-making, and thrive in a rapidly evolving digital economy.",
       "icon": "Globe",
       "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To be a premier department in information technology education, creating IT professionals who drive digital innovation.",
@@ -760,7 +832,7 @@
       "id": "mech",
       "name": "Mechanical Engineering",
       "shortName": "MECH",
-      "description": "Engineering mechanical solutions for manufacturing, automation, and sustainable technologies.",
+      "description": "Engineering innovative mechanical solutions for manufacturing, automation, and sustainable technologies—enhancing productivity, promoting eco-friendly practices, and driving technological advancement across industries for a smarter, greener future.",
       "icon": "Settings",
       "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
@@ -896,13 +968,14 @@
           "publications": 42,
           "researchAreas": ["Industrial Robotics", "Advanced Manufacturing", "Automation"]
         }
+        
       ]
     },
     {
       "id": "mba",
       "name": "Master of Business Administration",
       "shortName": "MBA",
-      "description": "Developing future business leaders with strategic thinking and management excellence.",
+      "description": "Developing future business leaders with strategic thinking, management excellence, and practical experience—equipping them to innovate, make impactful decisions, and lead organizations effectively in a dynamic global environment.",
       "icon": "Briefcase",
       "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To be a premier business school that develops ethical leaders and innovative managers for the global business environment.",
@@ -1045,7 +1118,13 @@
           "publications": 48,
           "researchAreas": ["Corporate Strategy", "Financial Management", "Mergers & Acquisitions"]
         }
-      ]
+      ],
+       "trainingAndPlacement": {
+    "description": "The Department of Training and Placement conducts many Training Programmes to all students to develop their technical knowledge and soft skills in the areas of Aptitude, Logical Reasoning, Quantitative Reasoning and Verbal through the qualified and reputed External Training Centers. Also the training programmes like Mock Interviews, Group Discussions, Oral and Written Communication Skills and Workshop etc. are conducted for final year students by HR Managers from different industries. The Department of Training and Placement plays a vital role in locating job opportunities for Under Graduates and Post Graduates who all are passing out from the college by keeping in touch with top-notch companies and industries. The Department of Training and Placement operates round the year to facilitate interactions between companies and budding graduates. The number of students placed through the campus interviews is continuously trending towards increasing. Based on the invitations, many reputed companies are regularly visiting the institute to conduct campus interviews.",
+    "topRecruiters": ["Hexaware", "HCL", "Cognizant", "Accenture", "Amazon", "Atos", "Bosch"]
+  }
+
     }
   ]
+  
 }

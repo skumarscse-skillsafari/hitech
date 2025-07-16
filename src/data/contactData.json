@@ -1,8 +1,8 @@
 {
   "contact": {
     "address": "Hindusthan Institute of Technology, Othakalmandapam, Coimbatore - 641 032, Tamil Nadu, India",
-    "phone": "+91-422-2987654",
-    "email": "info@hit.edu.in",
+    "phone": "+91 97152 601184,+91 97151 29797, +91 94438 45599, +91 90470 10006",
+    "email": "hit.office@hindusthan.net",
     "website": "www.hit.edu.in",
     "socialMedia": {
       "facebook": "HindusthanInstituteOfTechnology",
@@ -34,9 +34,7 @@
       }
     ],
     "officeHours": {
-      "weekdays": "Monday - Friday: 9:00 AM - 5:00 PM",
-      "saturday": "Saturday: 9:00 AM - 1:00 PM",
-      "sunday": "Sunday: Closed"
+      "weekdays": "Monday - Saturday: 9:00 AM - 5:00 PM"
     },
     "emergencyContact": {
       "phone": "+91-422-2987699",
