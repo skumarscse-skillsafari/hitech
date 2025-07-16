@@ -30,7 +30,7 @@ const LocationMap: React.FC = () => {
             
             <div className="relative h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.3267!2d76.9558!3d11.0168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sHindusthan%20Institute%20of%20Technology%20and%20Science!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31343.270009689997!2d76.96502354550023!3d10.894539137441964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85abaa31dcfa9%3A0x72d5daed0d228046!2sHindusthan%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1752210144684!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -79,8 +79,8 @@ const LocationMap: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900">Phone</h4>
-                    <p className="text-gray-700">+91-422-2987654</p>
-                    <p className="text-gray-700">+91-422-2987655</p>
+                    <p className="text-gray-700">+91 97152 601184</p>
+                    <p className="text-gray-700">+91 90470 10006</p>
                   </div>
                 </div>
 
@@ -90,8 +90,9 @@ const LocationMap: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900">Email</h4>
-                    <p className="text-gray-700">info@hit.edu.in</p>
-                    <p className="text-gray-700">admissions@hit.edu.in</p>
+                    <p className="text-gray-700"> hit.office@hindusthan.net
+                      </p>
+                    <p className="text-gray-700"></p>
                   </div>
                 </div>
 
@@ -102,9 +103,8 @@ const LocationMap: React.FC = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">Office Hours</h4>
                     <div className="space-y-1 text-gray-700">
-                      <p><span className="font-medium">Monday - Friday:</span> 9:00 AM - 5:00 PM</p>
-                      <p><span className="font-medium">Saturday:</span> 9:00 AM - 1:00 PM</p>
-                      <p><span className="font-medium">Sunday:</span> Closed</p>
+                      <p><span className="font-medium">Monday - Saturday:</span> 9:00 AM - 5:00 PM</p>
+                      <p><span className="font-medium">Sunday:</span> 9:00 AM - 1.00 PM</p>
                     </div>
                   </div>
                 </div>
@@ -117,15 +117,15 @@ const LocationMap: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="font-semibold text-gray-900 mb-2">By Air</h5>
-                  <p className="text-gray-700">Coimbatore International Airport - 15 km (30 minutes drive)</p>
+                  <p className="text-gray-700">Coimbatore International Airport - 23 km (90 minutes drive)</p>
                 </div>
                 <div>
                   <h5 className="font-semibold text-gray-900 mb-2">By Train</h5>
-                  <p className="text-gray-700">Coimbatore Junction Railway Station - 12 km (25 minutes drive)</p>
+                  <p className="text-gray-700">Coimbatore Junction Railway Station - 15 km (35 minutes drive)</p>
                 </div>
                 <div>
                   <h5 className="font-semibold text-gray-900 mb-2">By Bus</h5>
-                  <p className="text-gray-700">Regular bus services available from Coimbatore Central Bus Stand</p>
+                  <p className="text-gray-700">Regular bus services available from Coimbatore Bus Stand</p>
                 </div>
               </div>
             </div>
