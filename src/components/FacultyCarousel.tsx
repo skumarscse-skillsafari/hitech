@@ -52,6 +52,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
 
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg">
+      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <h4 className="text-2xl font-bold text-gray-900 mb-2">Meet our Faculty</h4>

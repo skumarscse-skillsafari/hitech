@@ -14,12 +14,15 @@ import PlacementsPage from './pages/PlacementsPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
-import InnovativeMethods from './pages/InnovativeMethods'; // ✅ New import
-import "slick-carousel/slick/slick.css"; // Import slick carousel styles
-import "slick-carousel/slick/slick-theme.css"; // Import slick carousel theme styles
+import InnovativeMethods from './pages/InnovativeMethods';
+import Objectives from './pages/objectives';
+import Management from './pages/Management';
+import PrincipalsDesk from './pages/PrincipalsDesk';
+import BoardOfGovernors from './pages/BoardOfGovernance';
+import FacultyProfilePage from './pages/FacultyProfilePage';
+import GoverningCouncilPage from './pages/GoverningCouncilPage'; // ✅ NEW PAGE IMPORTED
 
-
-// JSON data
+// JSON data imports
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
@@ -51,27 +54,26 @@ function App() {
               pauseOnHover={newsTickerData?.newsTicker?.settings?.pauseOnHover ?? true}
             />
 
-            {/* Routes */}
-            <div className="flex-1">
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/department/:departmentId" element={<DepartmentPage />} />
-                <Route path="/gallery" element={<GalleryPage />} />
-                <Route path="/placements" element={<PlacementsPage />} />
-                <Route path="/admissions" element={<AdmissionsPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/reuse" element={<ReusePage />} />
-                <Route path="/innovative-methods" element={<InnovativeMethods />} />
-              </Routes>
-            </div>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/department/:departmentId" element={<DepartmentPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/placements" element={<PlacementsPage />} />
+              <Route path="/admissions" element={<AdmissionsPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/reuse" element={<ReusePage />} />
+              <Route path="/innovative-methods" element={<InnovativeMethods />} />
+              <Route path="/about/objectives" element={<Objectives />} />
+              <Route path="/vision-mission" element={<Management />} />
+              <Route path="/leadership" element={<PrincipalsDesk />} />
+              <Route path="/accreditations" element={<BoardOfGovernors />} />
+              <Route path="/governing-council" element={<GoverningCouncilPage />} /> {/* ✅ NEW ROUTE */}
+              <Route path="/profile/:id" element={<FacultyProfilePage />} />
+            </Routes>
 
-            {/* Top Recruiters */}
-            
-
-            {/* Footer */}
-            <Footer
-              collegeName={headerData?.header?.collegeName || 'College Name'}
-              contact={contactData?.contact || {}}
+            <Footer 
+              collegeName={headerData.header.collegeName} 
+              contact={contactData.contact} 
             />
           </div>
         </Router>
