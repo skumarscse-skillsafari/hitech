@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Mail, Award, BookOpen, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import {
+  ChevronLeft,
+  ChevronRight,
+  Mail,
+  Award,
+  BookOpen,
+  ExternalLink
+} from 'lucide-react';
 
 interface FacultyMember {
   id: number;
@@ -19,9 +27,9 @@ interface FacultyCarouselProps {
   departmentName?: string;
 }
 
-const FacultyCarousel: React.FC<FacultyCarouselProps> = ({ 
-  faculty = [], 
-  departmentName = "Department" 
+const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
+  faculty,
+  departmentName = "Department"
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = 3;
@@ -29,14 +37,16 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
   const currentFaculty = faculty.slice(currentIndex, currentIndex + itemsPerPage);
 
   const nextSlide = () => {
-    setCurrentIndex(prev => 
-      prev + itemsPerPage >= faculty.length ? 0 : prev + itemsPerPage
+    setCurrentIndex((prevIndex) =>
+      prevIndex + itemsPerPage >= faculty.length ? 0 : prevIndex + itemsPerPage
     );
   };
 
   const prevSlide = () => {
-    setCurrentIndex(prev => 
-      prev === 0 ? Math.max(0, faculty.length - itemsPerPage) : prev - itemsPerPage
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0
+        ? Math.max(0, faculty.length - itemsPerPage)
+        : Math.max(0, prevIndex - itemsPerPage)
     );
   };
 
@@ -46,6 +56,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
 
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg">
+      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <h4 className="text-2xl font-bold text-gray-900 mb-2">

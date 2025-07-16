@@ -1,5 +1,4 @@
-
-`NPM RUN DEVimport React from 'react';
+import React from 'react';
 
 const Objective = () => {
   return (
