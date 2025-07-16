@@ -45,6 +45,28 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
     }
   };
 
+  const handleWatchCampusTour = () => {
+    if (videoRef.current) {
+      const video = videoRef.current;
+
+      video.muted = false;
+      setIsMuted(false);
+
+      video.play();
+      setIsPlaying(true);
+
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if ((video as any).webkitEnterFullscreen) {
+        (video as any).webkitEnterFullscreen(); // iOS Safari
+      } else if ((video as any).mozRequestFullScreen) {
+        (video as any).mozRequestFullScreen(); // Firefox
+      } else if ((video as any).msRequestFullscreen) {
+        (video as any).msRequestFullscreen(); // IE/Edge
+      }
+    }
+  };
+
   return (
     <section 
       id="home" 
@@ -64,7 +86,6 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       >
         <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
         <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
-        {/* Fallback to background image if video fails */}
         Your browser does not support the video tag.
       </video>
 
@@ -117,11 +138,22 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg">
+            <button
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
+            >
               Apply Now
               <ArrowRight className="h-5 w-5" />
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105">
+            <button
+              onClick={handleWatchCampusTour}
+              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105"
+            >
               <Play className="h-5 w-5" />
               Watch Campus Tour
             </button>
@@ -157,7 +189,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         </div>
       </div>
 
-      {/* Fallback Background Image (if video fails to load) */}
+      {/* Fallback Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0"
         style={{ 
@@ -165,7 +197,6 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
           zIndex: -1
         }}
         onError={() => {
-          // Show background image if video fails
           const videoElement = videoRef.current;
           if (videoElement) {
             videoElement.style.display = 'none';
