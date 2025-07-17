@@ -3,7 +3,6 @@ import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import PageLayout from '../components/layout/PageLayout';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import DepartmentDetail from '../components/DepartmentDetail';
-import DepartmentOutcomes from '../components/DepartmentOutcomes';
 import TeachingMethodologyCards from '../components/TeachingMethodologyCards';
 import FacultyCarousel from '../components/FacultyCarousel';
 import FacilitiesCarousel from '../components/FacilitiesCarousel';
@@ -33,15 +32,7 @@ const DepartmentPage: React.FC = () => {
           <DepartmentDetail department={department} />
         </SectionWrapper>
 
-        {/* Program Outcomes */}
-        <SectionWrapper lazy lazyHeight="400px" lazyDelay={600} className="mt-12">
-          <DepartmentOutcomes 
-            psos={department.psos}
-            peos={department.peos}
-            pos={department.pos}
-            departmentName={department.name}
-          />
-        </SectionWrapper>
+       
 
         {/* Teaching Methodologies */}
         <SectionWrapper lazy lazyHeight="500px" lazyDelay={900} className="mt-12">
