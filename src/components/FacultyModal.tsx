@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import {
   X,
   Mail,
@@ -6,8 +6,6 @@ import {
   GraduationCap,
   Briefcase,
   Info,
-  FileText,
-  PenTool,
 } from 'lucide-react';
 
 interface FacultyMember {
@@ -19,8 +17,6 @@ interface FacultyMember {
   education: string;
   email: string;
   description: string;
-  patents?: string;
-  publications?: string;
   image?: string;
 }
 
@@ -30,49 +26,19 @@ interface FacultyModalProps {
 }
 
 const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
-  const modalRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setIsVisible(true), 10);
-  }, []);
-
-  useEffect(() => {
-    const handleOutsideClick = (e: MouseEvent) => {
-      if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-        handleClose();
-      }
-    };
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, []);
-
-  const handleClose = () => {
-    setIsVisible(false);
-    setTimeout(() => {
-      onClose();
-    }, 300);
-  };
-
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto backdrop-blur-sm px-4 py-12">
-      <div
-        ref={modalRef}
-        className={`relative bg-white w-full max-w-3xl mx-auto rounded-xl shadow-xl p-5 sm:p-6 border border-gray-200 transform transition-all duration-300 ease-out ${
-          isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-        }`}
-      >
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm transition-all duration-300">
+      <div className="bg-white w-full max-w-4xl mx-4 md:mx-auto rounded-2xl shadow-2xl p-8 relative animate-fadeIn overflow-y-auto max-h-[90vh] border border-gray-200">
         {/* Close Button */}
         <button
-          className="absolute top-4 right-4 text-gray-500 hover:text-red-500 transition"
-          onClick={handleClose}
-          aria-label="Close"
+          className="absolute top-5 right-5 text-gray-500 hover:text-gray-800 transition"
+          onClick={onClose}
         >
-          <X className="h-5 w-5" />
+          <X className="h-6 w-6" />
         </button>
 
-        {/* Faculty Image */}
-        <div className="w-24 h-24 rounded-full overflow-hidden mx-auto border-4 border-gray-200 shadow mb-4">
+        {/* Photo */}
+        <div className="w-36 h-36 rounded-full overflow-hidden mx-auto border-4 border-gray-200 shadow-md mb-6">
           <img
             src={member.image || '/images/default-faculty.jpg'}
             alt={member.name}
@@ -85,16 +51,17 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
         </div>
 
         {/* Name & Designation */}
-        <div className="text-center mb-5">
-          <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
-          <p className="text-yellow-600 text-sm mt-1">
+        <div className="text-center mb-8">
+          <h3 className="text-3xl font-bold text-gray-900">{member.name}</h3>
+          <p className="text-yellow-600 text-sm font-medium mt-1">
             {member.designation || '—'}
           </p>
         </div>
 
         {/* Info Sections */}
-        <div className="space-y-4 text-sm text-gray-800 divide-y divide-gray-200">
-          <div className="flex items-start gap-3 pt-0">
+        <div className="space-y-6 text-sm text-gray-800 divide-y divide-gray-200">
+          {/* Education */}
+          <div className="flex items-start gap-4 pt-0">
             <GraduationCap className="h-5 w-5 text-orange-500 mt-0.5" />
             <div>
               <p className="font-semibold">Education</p>
@@ -102,7 +69,8 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
             </div>
           </div>
 
-          <div className="flex items-start gap-3 pt-4">
+          {/* Specialization */}
+          <div className="flex items-start gap-4 pt-6">
             <User className="h-5 w-5 text-yellow-500 mt-0.5" />
             <div>
               <p className="font-semibold">Specialization</p>
@@ -110,7 +78,8 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
             </div>
           </div>
 
-          <div className="flex items-start gap-3 pt-4">
+          {/* Experience */}
+          <div className="flex items-start gap-4 pt-6">
             <Briefcase className="h-5 w-5 text-green-600 mt-0.5" />
             <div>
               <p className="font-semibold">Experience</p>
@@ -118,30 +87,15 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
             </div>
           </div>
 
-          <div className="flex items-start gap-3 pt-4">
-            <PenTool className="h-5 w-5 text-purple-600 mt-0.5" />
-            <div>
-              <p className="font-semibold">Patents</p>
-              <p>{member.patents || '—'}</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3 pt-4">
-            <FileText className="h-5 w-5 text-pink-600 mt-0.5" />
-            <div>
-              <p className="font-semibold">Publications</p>
-              <p>{member.publications || '—'}</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3 pt-4">
+          {/* Email */}
+          <div className="flex items-start gap-4 pt-6">
             <Mail className="h-5 w-5 text-blue-600 mt-0.5" />
             <div>
               <p className="font-semibold">Email</p>
               {member.email ? (
                 <a
                   href={`mailto:${member.email}`}
-                  className="text-blue-600 underline break-words hover:text-blue-800"
+                  className="text-blue-600 underline break-words"
                 >
                   {member.email}
                 </a>
@@ -151,7 +105,8 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
             </div>
           </div>
 
-          <div className="flex items-start gap-3 pt-4">
+          {/* Description */}
+          <div className="flex items-start gap-4 pt-6">
             <Info className="h-5 w-5 text-gray-600 mt-1" />
             <div>
               <p className="font-semibold mb-1">Description</p>
@@ -167,3 +122,4 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
 };
 
 export default FacultyModal;
+
