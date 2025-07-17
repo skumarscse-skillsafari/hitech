@@ -156,55 +156,53 @@
       "faculty":[
         {
           "id": 1,
-          "image":"https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600",
           "name": "Dr. Jameer Basha A",
           "designation": "Professor",
-          "specialization": "machine learning, deep learning, and generative AI.",
-          "experience": "18 years",
-          "education": "M.Tech and Ph.D",
-          "email": "jameer@hit.edu.in",
-          "description": "Professor and Head of Computer Science and Engineering He completed his Ph.D. in Faculty of Information and Communication Engineering from Anna University and has been passionate about Information and Communication Engineering since his undergraduate years. Expertise: His research focuses mostly on machine learning, deep learning, and generative AI. His area of expertise is the classification and analysis of medical images. He presented her findings at national and international conferences and published many peer-reviewed pieces in prestigious journals. Research Interests: His current research projects include assessing the vulnerability of endangered species to climate change, modeling the distribution of invasive species in urban areas, and evaluating the effectiveness of community-based conservation. Teaching Philosophy: He works to develop an inclusive learning environment in the classroom that promotes critical thinking and problem-solving abilities. He thinks that debates, practical assignments, and application of course principles in the real world are the greatest ways for students to learn. He dedicated to assisting my students in understanding their responsibility for protecting it and cultivating a profound appreciation for it."
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 2,
           "name": "Dr. Mahesh Kumar N.B",
           "designation": "Professor",
-          "specialization": "Computer Science And Engineering",
-          "experience": "16 years",
-          "education": "M.E and Ph.D",
-          "email": "maheshkumar.nb@hit.edu.in",
-          "description": "He is working as Associate Professor, Department of Computer Science and Engineering in Hindusthan Institute of Technology, Valley Campus, Pollachi Highway, Coimbatore. He has more than 6 years of experience in teaching and 10 years of experience in research. He pursed his Ph.D. Degree (2016) in Computer science and Engineering, Anna University, Chennai. He received M.E. (2009) in Computer science and Engineering form Sri Krishna College of Engineering and Technology, Coimbatore. He received his B.Tech. (2005) in Information Technology form M.Kumarasamy College of Engineering, Karur. He has published more than 31 research papers in various National, International conferences and reputed journals and acting as reviewer in reputed journals. His main area of research interest include Machine Learning, Image Processing and Data Science"
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 3,
           "name": "Dr. Ramasamy S",
           "designation": "Associate Professor",
-          "specialization": "cloud computing",
-          "experience": "12 years",
-          "education": "M.E and Ph.D",
-          "email": "Ramasamy.s@hit.edu.in",
-          "description": "Dr. S. Ramasamy M.E., Ph.D., currently working as Associate Professor in Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore. He holds Ph.D in Computer Science and Engineering from Anna University, Master of Engineering in Computer Science and Engineering from Anna University of Technology, Coimbatore and Bachelor of Technology in Information Technology from Anna University. He is having more than 14 years of experience in academic, administration, research and innovations. He has published more than 14 research papers in national and international journals. He has published 2 books. He is an active reviewer in Springer Nature Journal. He is a life member of ISTE. His research interest includes Cloud Computing, Edge Computing, Bigdata Security, Wireless Communication."
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 4,
           "name": "Dr. Subhalaskhmi R.T",
           "designation": "Assistant Professor",
-          "specialization": "Medical Image Analysis, Deep Learning and Machine Learning.",
-          "experience": "8 years",
-          "education": "M.Tech and Ph.D",
-          "email": "subhalakshmi.rt@hit.edu.in",
-          "description": "She completed her Ph.D. in the Faculty of Information and Communication Engineering from Anna University and has been passionate about Information and Communication Engineering since her undergraduate years. Expertise: Her research primarily centers on the Medical Image Analysis, Deep Learning and Machine Learning. She specializes in using medical image classification and analyzing medical images. She published several peer-reviewed articles in leading journals and has presented her work at national and international conferences. Research Interests: Her research focuses mostly on machine learning, deep learning, and generative AI. She uses image categorization and analysis as his area of expertise. She presented her findings at national and international conferences and published many peer-reviewed pieces in prestigious journals. Teaching Philosophy: She works to build inclusive, engaging learning environments in the classroom that promote critical thinking and problem-solving abilities. She thinks that debates, practical assignments, and application of course principles in the real world are the greatest ways for students to learn. She pledged to work with my kids to foster a profound respect of the image classification and an understanding of their responsibility to conserve it"
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 5,
           "name": "Dr. Senthil Kumar R",
           "designation": "Assistant Professor",
-          "specialization": "IoT Technology and AI with Machine Learning Techniques",
-          "experience": "13",
-          "education": "M.E and Ph.D",
-          "email": "senthilkumar.r@hit.edu.in",
-          "description": "He completed his Ph.D. in the Faculty of Information and Communication Engineering from Anna University Chennai in the year 2023. He received his B.Tech (IT) Degree from Christian College of Engineering and Technology, Oddanchatram, in the year 2006 and M.E in the specialization of Computer and Communication from Pavendar Bharathidasan College of Engineering and Technology, Affiliated to Anna University, Tiruchirappalli in 2010. He has more than 13 years of teaching experience from various reputed Engineering colleges in Tamilnadu. EXPERTISE: His research AI, IoT, Deep Learning and Machine Learning. He specializes in using IoT Technology and AI with Machine Learning Techniques. He published several peer-reviewed articles in leading journals and has presented her work at national and international conferences. RESEARCH INTERESTS: Data Science, AI with Machine Learning Techniques, IoT TEACHING PHILOSOPHY: He works to build inclusive, engaging learning environments in the classroom that promote critical thinking and problem-solving abilities. He thinks that debates, practical assignments, and application of course principles in the real world are the greatest ways for students to learn. He pledged to work with my kids to foster a profound respect of the image classification and an understanding of their responsibility to conserve it"
-
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech and Ph.D",
+          "email": "",
+          "description": ""
         },
         {
           "id": 6,
@@ -212,7 +210,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E,M.C.A",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -220,11 +218,11 @@
           "id": 7,
           "name": "Mrs. Vidhya D",
           "designation": "Assistant Professor",
-          "specialization": "Machine Learning",
-          "experience": "8 years",
-          "education": "M.E",
-          "email": "Vidhya.d@hit.edu.in",
-          "description": "D.Vidhya, currently working as Assistant Professor in Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore. She holds Master of Engineering in Computer Science and Engineering from Anna University of Technology, Coimbatore and Bachelor of Engineering in Electrical and Electronics Engineering from Bharathiyar University. She is having more than 13 years of experience in academic. She got a ellite in NPTEL course.He is a life member of ISTE. Her research interest includes Cloud Computing, Machine Learning"
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 8,
@@ -232,7 +230,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -242,7 +240,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -252,7 +250,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -262,7 +260,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -270,12 +268,11 @@
           "id": 12,
           "name": "Mr. Devendran M",
           "designation": "Assistant Professor",
-          "specialization": "Computer Science and Engineering",
-          "experience": "12 years",
-          "education": "M.E",
-          "email": "devendran.m@hit.edu.in",
-          "description": "He is having more than 12 years of Teaching Experience in the field of Computer Science and Engineering. He received his Master Degree from Anna University, Thirnelveli from Thiagararajar College of engineering.. and also completed his Received B.Tech(IT) Degree of Madurai Kamaraj University from P.S.N.A College of engineering and technology . He has published more than 20 papers in various international journals and conferences. He has also published than 1 patent"
-
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 13,
@@ -283,7 +280,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E,M.C.A",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -293,7 +290,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -301,11 +298,11 @@
           "id": 15,
           "name": "Mrs. V. Priyanka",
           "designation": "Assistant Professor",
-          "specialization": "computer science",
-          "experience": "4 years",
-          "education": "M.E",
-          "email": "priyanga@hit.edu.in",
-          "description": "She completed his B.Tech Information technology in in the year 2014. She completed her M.E computer science and Engineering in the year 2016. Her area of interest was computer Networks and Software Engineering."
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 16,
@@ -313,7 +310,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -323,7 +320,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -343,7 +340,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -353,7 +350,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.Tech",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -363,7 +360,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -373,7 +370,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E,M.C.A",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -383,7 +380,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -393,7 +390,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -403,7 +400,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -413,7 +410,7 @@
           "designation": "Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.Tech and Ph.D",
+          "education": "M.E/M.Tech and Ph.D",
           "email": "",
           "description": ""
         },
@@ -423,7 +420,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.Tech",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -431,9 +428,9 @@
           "id": 28,
           "name": "Mr. Uthayakumar J",
           "designation": "Assistant Professor",
-          "specialization": "She completed his B.Tech Information technology in in the year 2014. She completed her M.E computer science and Engineering in the year 2016. Her area of interest was computer Networks and Software Engineering.",
-          "experience": "8 years",
-          "education": "M.E",
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
           "email": "uthayakumar.j@hit.edu.in",
           "description": "He has 3 years of Teaching Experience in the field of Computer Science and Engineering and 5 years in industry. He received his Bachelor Degree and Master Degree from Anna University, Chennai. He has published 4 Journal papers in various international journals and conferences and 1 copyright. He has also published 5 patents, 2 text books."
         }
