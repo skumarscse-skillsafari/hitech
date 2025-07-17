@@ -101,32 +101,7 @@ const HomePage: React.FC = () => {
         </div>
       </SectionWrapper>
 
-      {/* 5-Column Stats Section */}
-      <SectionWrapper className="bg-gradient-to-r from-gray-700 to-gray-600 py-10 px-4 md:px-20" lazy lazyHeight="300px" lazyDelay={550}>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-x-4 gap-y-6 text-center text-white">
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">15+</h3>
-            <p className="mt-2 font-semibold">Years of Excellence</p>
-          </div>
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">2500+</h3>
-            <p className="mt-2 font-semibold">Students</p>
-          </div>
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">500+</h3>
-            <p className="mt-2 font-semibold">Faculty Members</p>
-          </div>
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">90%</h3>
-            <p className="mt-2 font-semibold">Placement Rate</p>
-          </div>
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">2708</h3>
-            <p className="mt-2 font-semibold">TNEA Code</p>
-          </div>
-        </div>
-      </SectionWrapper>
-
+      {/* ===== Existing Homepage Content ===== */}
       <SectionWrapper lazy lazyHeight="300px" lazyDelay={600}>
         <AccreditationCards accreditations={[]} />
       </SectionWrapper>
