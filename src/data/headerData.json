@@ -15,6 +15,14 @@
         ]
       },
       { 
+        "name": "Anna University", 
+        "href": "/academics",
+        "dropdown": [
+          { "name": "Anna University", "href": "/department/ae" }
+          
+        ]
+      },
+      { 
         "name": "Academics", 
         "href": "/academics",
         "dropdown": [
