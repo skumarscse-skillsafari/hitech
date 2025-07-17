@@ -10,8 +10,7 @@
         "dropdown": [
           { "name": "Objectives", "href": "/about/Objectives" },
           { "name": "Management", "href": "/vision-mission" },
-          { "name": "Principal's Desk", "href": "/leadership" },
-          { "name": "Board of Governance", "href": "/accreditations" }
+          { "name": "Principal's Desk", "href": "/leadership" }
         ]
       },
       { 
@@ -25,6 +24,15 @@
           { "name": "Information Technology", "href": "/department/it" },
           { "name": "Mechanical Engineering", "href": "/department/me" },
           { "name": "MBA", "href": "/academic-calendar" }
+        ]
+      },
+      {
+        "name": "Research",
+        "href": "/research",
+        "dropdown": [
+          { "name": "Research Areas", "href": "/research/areas" },
+          { "name": "Publications", "href": "/research/publications" },
+          { "name": "Projects & Grants", "href": "/research/projects" }
         ]
       },
       { 
@@ -74,7 +82,6 @@
           { "name": "Alumni Network", "href": "/alumni" }
         ]
       }
-      
     ]
   }
 }
