@@ -1,10 +1,10 @@
 {
   "topNavBar": {
     "socialMedia": {
-      "facebook": "https://facebook.com/hit.official",
+      "facebook": "https://facebook.com/hect.hitech",
       "twitter": "https://twitter.com/hit_official",
-      "linkedin": "https://linkedin.com/school/hindusthan-institute-technology",
-      "instagram": "https://instagram.com/hit_official",
+      "linkedin": "https://linkedin.com/school/hindusthan-institute-of-tech/",
+      "instagram": "https://instagram.com/hindusthan.hitech",
       "youtube": "https://youtube.com/c/HindusthanInstituteOfTechnology"
     },
     "menuItems": [
@@ -21,7 +21,6 @@
           { "name": "IQAC Committee", "href": "/iqac/committee" },
           { "name": "IQAC Reports", "href": "/iqac/reports" },
           { "name": "Quality Initiatives", "href": "/iqac/initiatives" },
-          
           { "name": "Statutory", "href": "/iqac/audit" },
           { "name": "Non Statutory", "href": "/iqac/audit" },
           { "name": "Best Practices", "href": "/iqac/best-practices" }
@@ -69,7 +68,16 @@
           { "name": "Compliance", "href": "/aicte/compliance" }
         ]
       },
-      
+      {
+        "name": "Anna University",
+        "href": "/anna-university",
+        "dropdown": [
+          { "name": "Affiliation Details", "href": "/anna-university/affiliation" },
+          { "name": "Syllabus", "href": "/anna-university/syllabus" },
+          { "name": "Regulations", "href": "/anna-university/regulations" },
+          { "name": "Academic Schedules", "href": "/anna-university/schedule" }
+        ]
+      },
       {
         "name": "CoE",
         "href": "/admissions",
@@ -77,7 +85,6 @@
           { "name": "Examination", "href": "/admissions/process" },
           { "name": "Exam Time Table", "href": "/admissions/eligibility" },
           { "name": "Exam Fees", "href": "/admissions/application" }
-          
         ]
       },
       {
