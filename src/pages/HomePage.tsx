@@ -123,31 +123,31 @@ const HomePage: React.FC = () => {
         />
       </SectionWrapper>
 
-      <SectionWrapper className="py-20 bg-white" lazy lazyHeight="600px" lazyDelay={800}>
+      <SectionWrapper className="py-20 bg-white" lazy lazyHeight="600px" lazyDelay={1000}>
         <SocialMediaCarousel />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={700}>
+      <SectionWrapper lazy lazyHeight="400px" lazyDelay={1100}>
         <Gallery gallery={collegeData.gallery} />
       </SectionWrapper>
 
-      <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={500}>
+      <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={1300}>
         <Placements placements={collegeData.placements} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={700}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={1700}>
         <Admissions admissions={collegeData.admissions} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="600px" lazyDelay={700}>
+      <SectionWrapper lazy lazyHeight="600px" lazyDelay={1900}>
         <FAQ />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={600}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={2100}>
         <LocationMap />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={700}>
+      <SectionWrapper lazy lazyHeight="400px" lazyDelay={2300}>
         <Contact contact={collegeData.contact} />
       </SectionWrapper>
     </PageLayout>
