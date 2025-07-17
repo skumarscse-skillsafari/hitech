@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
     <PageLayout
       title="Hindusthan Institute of Technology - Engineering Excellence"
       description="Leading engineering education with cutting-edge research, world-class faculty, and industry partnerships"
-      className="pt-44"
+      className="pt-0"
     >
       <Hero hero={collegeData.college.hero} />
 
@@ -62,7 +62,6 @@ const HomePage: React.FC = () => {
               <h2 className="text-2xl font-bold text-gray-900">About Us</h2>
             </div>
 
-            {/* Increased font size here */}
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.content}</p>
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.managementContent}</p>
 
@@ -81,7 +80,7 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* ===== Image Block (Moved Up) ===== */}
-          <div className="relative -mt-10"> {/* Image lifted up */}
+          <div className="relative -mt-10">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src={hit}
@@ -97,32 +96,6 @@ const HomePage: React.FC = () => {
                 <div className="text-xs text-gray-600">Years of Excellence</div>
               </div>
             </div>
-          </div>
-        </div>
-      </SectionWrapper>
-
-      {/* 5-Column Stats Section */}
-      <SectionWrapper className="bg-gradient-to-r from-gray-700 to-gray-600 py-10 px-4 md:px-20" lazy lazyHeight="300px" lazyDelay={550}>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-x-4 gap-y-6 text-center text-white">
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">15+</h3>
-            <p className="mt-2 font-semibold">Years of Excellence</p>
-          </div>
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">2500+</h3>
-            <p className="mt-2 font-semibold">Students</p>
-          </div>
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">500+</h3>
-            <p className="mt-2 font-semibold">Faculty Members</p>
-          </div>
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">90%</h3>
-            <p className="mt-2 font-semibold">Placement Rate</p>
-          </div>
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">2708</h3>
-            <p className="mt-2 font-semibold">TNEA Code</p>
           </div>
         </div>
       </SectionWrapper>

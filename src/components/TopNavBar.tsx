@@ -56,8 +56,8 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
   };
 
   return (
-    <div className="relative z-[80] bg-yellow-500 text-gray-900 border-b border-yellow-600">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="relative z-10 bg-yellow-500 text-gray-900 border-b  border-yellow-600">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
         <div className="flex justify-between items-center h-10">
 
           {/* Mobile Menu Button */}
@@ -90,7 +90,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                     {/* Desktop Dropdown Menu */}
                     {activeDropdown === item.name && (
                       <div
-                        className="absolute top-full left-0 mt-0 w-56 bg-white text-gray-800 rounded-b-lg shadow-xl border border-gray-200 z-[80]"
+                        className="absolute top-full left-0 mt-0 w-56 bg-white text-gray-800 rounded-b-lg shadow-xl border border-gray-200 z-50"
                         onMouseLeave={handleMouseLeave}
                       >
                         <div className="py-2">
@@ -122,7 +122,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
             ))}
           </div>
 
-          {/* Social Media */}
+          {/* Social Media - Always Visible */}
           <div className="flex items-center space-x-3">
             <span className="text-gray-800 hidden md:block font-medium text-xs">Follow us:</span>
             <div className="flex items-center space-x-2">
@@ -147,7 +147,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-10 left-0 right-0 bg-yellow-500 border-t border-yellow-600 shadow-xl z-[80] max-h-96 overflow-y-auto">
+          <div className="lg:hidden absolute top-10 left-0 right-0 bg-yellow-500 border-t border-yellow-600 shadow-xl z-50 max-h-96 overflow-y-auto">
             <div className="px-4 py-4 space-y-2">
               {menuItems.map((item) => (
                 <div key={item.name}>
