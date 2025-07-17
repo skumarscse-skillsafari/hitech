@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import {
   BookOpen, Users, Award, Building, Briefcase, Globe, ChevronRight,
+  User, GraduationCap, ClipboardList, FileText
 } from 'lucide-react';
 
 import 'slick-carousel/slick/slick.css';
@@ -23,12 +24,35 @@ import uipath from "../../public/uipath.png";
 import celonis from "../../public/celonis.png";
 import infosys from "../../public/infosys.png";
 
+// Add this import for the HOD photo (replace with your actual image path)
+import hodPhoto from "../../public/hod-photo.jpg";
+import SectionWrapper from './layout/SectionWrapper';
 interface TabsSectionProps {}
 
 const TabsSection: React.FC<TabsSectionProps> = () => {
-  const [activeTab, setActiveTab] = useState('research');
+  const [activeTab, setActiveTab] = useState('hod');
 
   const tabs = [
+    {
+      id: 'hod',
+      name: 'HOD Desk',
+      icon: User,
+      content: {
+        title: 'Message from Head of Department',
+        items: [
+          {
+            title: 'Dr. A. Jameer Basha',
+            description: 'Welcome to the Department of Computer Science and Engineering. Our department is committed to excellence in teaching, research, and innovation. We strive to provide our students with the knowledge and skills needed to excel in the rapidly evolving field of computer science.',
+            qualification: 'Ph.D in Computer Science and Engineering',
+            experience: '15+ years of teaching and research experience',
+            specialization: 'Artificial Intelligence, Machine Learning',
+            email: 'hod.cse@university.edu',
+            phone: '+91 9876543210',
+            achievements: 'Published 50+ research papers, Recipient of Best Teacher Award 2023'
+          }
+        ],
+      },
+    },
     {
       id: 'research',
       name: 'Research & Development',
@@ -72,29 +96,63 @@ const TabsSection: React.FC<TabsSectionProps> = () => {
       },
     },
     {
-      id: 'achievements',
-      name: 'Achievements',
+      id: 'student-achievements',
+      name: 'Student Achievements',
       icon: Award,
       content: {
-        title: 'Recent Accomplishments',
+        title: 'Student Accomplishments',
         items: [
-          {
-            title: 'Best Engineering College Award 2024',
-            description: 'Recognized by State Government for excellence.',
-            year: '2024',
-            category: 'Institutional',
-          },
           {
             title: 'National Innovation Challenge Winner',
             description: 'Students won first prize in national innovation competition.',
             year: '2024',
-            category: 'Student Achievement',
+            competition: 'National Level',
+            team: 'Team Innovators (5 members)'
           },
           {
-            title: 'Research Excellence Award',
-            description: 'Faculty recognized for outstanding research.',
+            title: 'Hackathon Champions',
+            description: 'Won the regional hackathon with an AI-based solution for traffic management.',
             year: '2023',
-            category: 'Faculty Achievement',
+            competition: 'Regional Level',
+            prize: 'Rs. 1,00,000'
+          },
+          {
+            title: 'Paper Publication in IEEE',
+            description: 'Undergraduate students published research paper in IEEE conference.',
+            year: '2024',
+            conference: 'IEEE International Conference',
+            topic: 'Machine Learning Applications'
+          },
+        ],
+      },
+    },
+    {
+      id: 'faculty-achievements',
+      name: 'Faculty Achievements',
+      icon: Award,
+      content: {
+        title: 'Faculty Accomplishments',
+        items: [
+          {
+            title: 'Best Researcher Award',
+            description: 'Recognized for outstanding contributions in AI research.',
+            year: '2024',
+            awardedBy: 'National Science Foundation',
+            area: 'Artificial Intelligence'
+          },
+          {
+            title: 'Patent Granted',
+            description: 'Patent for innovative algorithm in image processing.',
+            year: '2023',
+            patentNumber: 'IN345678',
+            field: 'Computer Vision'
+          },
+          {
+            title: 'Book Publication',
+            description: 'Published textbook on Advanced Machine Learning adopted by universities.',
+            year: '2024',
+            publisher: 'Springer',
+            subject: 'Machine Learning'
           },
         ],
       },
@@ -155,6 +213,102 @@ const TabsSection: React.FC<TabsSectionProps> = () => {
             year: '2024',
             awards: 'Green Technology Innovation Prize',
           },
+        ],
+      },
+    },
+    {
+      id: 'placements',
+      name: 'Placements',
+      icon: Briefcase,
+      content: {
+        title: 'Placement Highlights',
+        items: [
+          {
+            title: 'Placement Statistics 2024',
+            description: 'Our students have been placed in top companies with excellent packages.',
+            placed: '95% of students placed',
+            highest: 'Rs. 42 LPA',
+            average: 'Rs. 8.5 LPA',
+            companies: '50+ recruiters'
+          },
+          {
+            title: 'Top Recruiters',
+            description: 'Our students have been recruited by leading global companies.',
+            list: 'Google, Microsoft, Amazon, TCS, Infosys, Wipro, IBM, Accenture',
+            visits: 'Regular campus recruitment drives'
+          },
+          {
+            title: 'Placement Training',
+            description: 'Comprehensive training program to prepare students for placements.',
+            modules: 'Aptitude, Technical, Communication, Interview Skills',
+            duration: 'Year-round program',
+            success: '90% placement rate in last 5 years'
+          }
+        ],
+      },
+    },
+    {
+      id: 'obe',
+      name: 'OBE Practices',
+      icon: ClipboardList,
+      content: {
+        title: 'Outcome Based Education',
+        items: [
+          {
+            title: 'Program Educational Objectives (PEOs)',
+            description: 'To prepare graduates who will be successful professionals in industry, government, academia, research, entrepreneurial pursuit, and consulting firms.',
+            peo1: 'Technical Competence',
+            peo2: 'Professional Skills',
+            peo3: 'Lifelong Learning'
+          },
+          {
+            title: 'Program Outcomes (POs)',
+            description: 'Engineering Graduates will be able to:',
+            po1: 'Engineering knowledge',
+            po2: 'Problem analysis',
+            po3: 'Design/development of solutions',
+            po12: 'Life-long learning'
+          },
+          {
+            title: 'Program Specific Outcomes (PSOs)',
+            description: 'Computer Science and Engineering graduates will be able to:',
+            pso1: 'Develop software solutions for real-world problems',
+            pso2: 'Apply computing knowledge to emerging technologies',
+            pso3: 'Adapt to new tools and technologies in computing'
+          }
+        ],
+      },
+    },
+    {
+      id: 'curriculum-syllabus',
+      name: 'Curriculum & Syllabus',
+      icon: FileText,
+      content: {
+        title: 'Curriculum & Syllabus Details',
+        items: [
+          {
+            title: 'Undergraduate Program',
+            description: 'B.Tech in Computer Science and Engineering - 4 Year Program',
+            credits: '160 Credits',
+            semesters: '8 Semesters',
+            focus: 'Core CS subjects with electives',
+            syllabusLink: 'Download Syllabus PDF'
+          },
+          {
+            title: 'Postgraduate Program',
+            description: 'M.Tech in Computer Science and Engineering - 2 Year Program',
+            credits: '80 Credits',
+            semesters: '4 Semesters',
+            specializations: 'AI, Data Science, Cyber Security',
+            syllabusLink: 'Download Syllabus PDF'
+          },
+          {
+            title: 'Elective Courses',
+            description: 'Wide range of elective courses offered',
+            areas: 'AI/ML, Cloud Computing, IoT, Blockchain, Cybersecurity',
+            options: '30+ elective courses available',
+            syllabusLink: 'Download Electives PDF'
+          }
         ],
       },
     },
@@ -229,7 +383,7 @@ const TabsSection: React.FC<TabsSectionProps> = () => {
     },
     {
       id: 'collaborations',
-      name: 'Collaborations & MoU',
+      name: 'Powered by Industries',
       icon: Briefcase,
       content: {
         title: 'Collaboration & MoU Partners',
@@ -301,9 +455,26 @@ const TabsSection: React.FC<TabsSectionProps> = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
+      { 
+        breakpoint: 1024, 
+        settings: { 
+          slidesToShow: 2,
+          autoplay: true,
+          autoplaySpeed: 2000 
+        } 
+      },
+      { 
+        breakpoint: 768, 
+        settings: { 
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 2000
+        } 
+      },
     ],
   };
 
@@ -336,51 +507,137 @@ const TabsSection: React.FC<TabsSectionProps> = () => {
           <div className="space-y-6">
             <div className="flex justify-between items-center">
               <h3 className="text-2xl font-bold text-gray-900">{activeTabData.content.title}</h3>
-              {activeTab === 'projects' && (
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold text-sm px-5 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out">
-  View more
-</button>
-
+              {activeTab !== 'hod' && (
+                <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium text-sm px-4 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2">
+                  View more
+                  <ChevronRight className="h-4 w-4" />
+                </button>
               )}
             </div>
 
-            <Slider {...sliderSettings}>
-              {activeTabData.content.items.map((item, index) => (
-                <div key={index} className="px-3">
-                  <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group h-full flex flex-col justify-between">
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">
-                        {item.title}
-                      </h4>
-                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">{item.description}</p>
-
-                      {item.logo ? (
-                        <div className="flex justify-center">
-                          <img src={item.logo} alt={item.title} className="h-16 object-contain" />
-                        </div>
-                      ) : null}
-
-                      <div className="space-y-2 text-xs mt-4">
-                        {Object.entries(item).map(([key, value]) => {
-                          if (key === 'title' || key === 'description' || key === 'logo') return null;
-                          return (
-                            <div key={key} className="flex justify-between">
-                              <span className="text-gray-500 capitalize">{key}:</span>
-                              <span className="text-gray-700 font-medium">{value}</span>
-                            </div>
-                          );
-                        })}
-                      </div>
+            {activeTab === 'hod' ? (
+              <div className="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300">
+                <div className="flex flex-col md:flex-row gap-8">
+                  {/* HOD Photo Section */}
+                  <div className="md:w-1/3 flex flex-col items-center">
+                    <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500 shadow-md mb-4">
+                      <img 
+                        src={hodPhoto} 
+                        alt="HOD Photo" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-
-                    <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
-                      <span>Learn More</span>
-                      <ChevronRight className="h-3 w-3" />
-                    </button>
+                    <h4 className="font-bold text-xl text-center text-gray-900 mb-1">
+                      {activeTabData.content.items[0].title}
+                    </h4>
+                    <p className="text-yellow-600 text-sm font-medium mb-4">Head of Department</p>
+                    
+                    <div className="text-center space-y-2">
+                      <p className="text-gray-600 text-sm">
+                        <span className="font-medium">Email:</span> {activeTabData.content.items[0].email}
+                      </p>
+                      <p className="text-gray-600 text-sm">
+                        <span className="font-medium">Phone:</span> {activeTabData.content.items[0].phone}
+                      </p>
+                    </div>
+                  </div>
+                 
+                  {/* HOD Details Section */}
+                  <div className="md:w-2/3">
+                    <div className="space-y-6">
+                      <p className="text-gray-600 leading-relaxed text-justify">
+                        {activeTabData.content.items[0].description}
+                      </p>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                          <h5 className="font-bold text-gray-800 mb-2 flex items-center">
+                            <GraduationCap className="h-5 w-5 mr-2 text-yellow-600" />
+                            Qualifications
+                          </h5>
+                          <p className="text-gray-700 text-sm">
+                            {activeTabData.content.items[0].qualification}
+                          </p>
+                        </div>
+                        
+                        <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                          <h5 className="font-bold text-gray-800 mb-2 flex items-center">
+                            <Briefcase className="h-5 w-5 mr-2 text-yellow-600" />
+                            Experience
+                          </h5>
+                          <p className="text-gray-700 text-sm">
+                            {activeTabData.content.items[0].experience}
+                          </p>
+                        </div>
+                        
+                        <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                          <h5 className="font-bold text-gray-800 mb-2 flex items-center">
+                            <Award className="h-5 w-5 mr-2 text-yellow-600" />
+                            Specialization
+                          </h5>
+                          <p className="text-gray-700 text-sm">
+                            {activeTabData.content.items[0].specialization}
+                          </p>
+                        </div>
+                        
+                        <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                          <h5 className="font-bold text-gray-800 mb-2 flex items-center">
+                            <BookOpen className="h-5 w-5 mr-2 text-yellow-600" />
+                            Key Achievements
+                          </h5>
+                          <p className="text-gray-700 text-sm">
+                            {activeTabData.content.items[0].achievements}
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 transition-transform hover:translate-x-1">
+                        <span>View Full Profile</span>
+                        <ChevronRight className="h-3 w-3" />
+                      </button>
+                    </div>
                   </div>
                 </div>
-              ))}
-            </Slider>
+              </div>
+            ) : (
+              <Slider {...sliderSettings}>
+                {activeTabData.content.items.map((item, index) => (
+                  <div key={index} className="px-3">
+                    <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group h-full flex flex-col justify-between">
+                      <div>
+                        <h4 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">
+                          {item.title}
+                        </h4>
+                        <p className="text-gray-600 text-sm mb-4 leading-relaxed">{item.description}</p>
+
+                        {item.logo ? (
+                          <div className="flex justify-center">
+                            <img src={item.logo} alt={item.title} className="h-16 object-contain" />
+                          </div>
+                        ) : null}
+
+                        <div className="space-y-2 text-xs mt-4">
+                          {Object.entries(item).map(([key, value]) => {
+                            if (key === 'title' || key === 'description' || key === 'logo') return null;
+                            return (
+                              <div key={key} className="flex justify-between">
+                                <span className="text-gray-500 capitalize">{key}:</span>
+                                <span className="text-gray-700 font-medium">{value}</span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+
+                      <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
+                        <span>Learn More</span>
+                        <ChevronRight className="h-3 w-3" />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+            )}
           </div>
         )}
       </div>

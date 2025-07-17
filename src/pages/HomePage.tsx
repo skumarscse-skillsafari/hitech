@@ -17,7 +17,7 @@ import collegeData from '../data/collegeData.json';
 import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
-import hit from "../../public/hit.jpg"
+import hit from "../../public/hit.jpg";
 
 import { Award, Trophy } from 'lucide-react';
 
@@ -41,33 +41,37 @@ const HomePage: React.FC = () => {
     >
       <Hero hero={collegeData.college.hero} />
 
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={300}>
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">{trustInfo.title}</h1>
-          <p className="text-2xl text-yellow-600 font-semibold mb-4">
+      {/* ===== About The Trust Section ===== */}
+      <SectionWrapper className="py-6">
+        <div className="text-center mb-2">
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">{trustInfo.title}</h1>
+          <p className="text-xl text-yellow-600 font-semibold mb-1">
             {trustInfo.subtitle}
           </p>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {trustInfo.description}
           </p>
         </div>
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={500}>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="flex items-center space-x-3 mb-6">
-              <Award className="h-8 w-8 text-yellow-500" />
-              <h2 className="text-3xl font-bold text-gray-900">About Us</h2>
+      <SectionWrapper className="py-6">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="space-y-4">
+            <div className="flex items-center space-x-2 mb-4">
+              <Award className="h-6 w-6 text-yellow-500" />
+              <h2 className="text-2xl font-bold text-gray-900">About Us</h2>
             </div>
+
+            {/* Increased font size here */}
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.content}</p>
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.managementContent}</p>
-            <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200">
-              <h3 className="font-bold text-gray-900 mb-3 flex items-center space-x-2">
-                <Trophy className="h-5 w-5 text-yellow-600" />
+
+            <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
+              <h3 className="font-bold text-gray-900 mb-2 flex items-center space-x-2">
+                <Trophy className="h-4 w-4 text-yellow-600" />
                 <span>Key Achievements</span>
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-1 text-gray-700 text-sm">
                 <li>• Established in 1992 with a vision to serve youth and humanity</li>
                 <li>• Leading brand in power sector before entering education</li>
                 <li>• Life Time Education Achievement Award recipient</li>
@@ -76,19 +80,21 @@ const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative">
+          {/* ===== Image Block (Moved Up) ===== */}
+          <div className="relative -mt-10"> {/* Image lifted up */}
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src={hit}
                 alt="Trust Campus"
-                className="w-full h-96 object-cover"
+                className="w-full h-80 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
+
+            <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-xl shadow-xl border">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-600">30+</div>
-                <div className="text-sm text-gray-600">Years of Excellence</div>
+                <div className="text-xl font-bold text-yellow-600">15+</div>
+                <div className="text-xs text-gray-600">Years of Excellence</div>
               </div>
             </div>
           </div>
@@ -144,31 +150,31 @@ const HomePage: React.FC = () => {
         />
       </SectionWrapper>
 
-      <SectionWrapper className="py-20 bg-white" lazy lazyHeight="600px" lazyDelay={1000}>
+      <SectionWrapper className="py-20 bg-white" lazy lazyHeight="600px" lazyDelay={800}>
         <SocialMediaCarousel />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={1100}>
+      <SectionWrapper lazy lazyHeight="400px" lazyDelay={700}>
         <Gallery gallery={collegeData.gallery} />
       </SectionWrapper>
 
-      <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={1300}>
+      <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={500}>
         <Placements placements={collegeData.placements} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={1700}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={700}>
         <Admissions admissions={collegeData.admissions} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="600px" lazyDelay={1900}>
+      <SectionWrapper lazy lazyHeight="600px" lazyDelay={700}>
         <FAQ />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={2100}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={600}>
         <LocationMap />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={2300}>
+      <SectionWrapper lazy lazyHeight="400px" lazyDelay={700}>
         <Contact contact={collegeData.contact} />
       </SectionWrapper>
     </PageLayout>

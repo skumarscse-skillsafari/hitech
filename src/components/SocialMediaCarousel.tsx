@@ -194,13 +194,8 @@ const SocialMediaCarousel: React.FC = () => {
             })}
           </div>
 
-          <div className="mt-8 text-center">
-            <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200 inline-block">
-              <p className="text-gray-700">
-                <span className="font-bold text-yellow-700">100K+</span> total followers across all platforms
-              </p>
-            </div>
-          </div>
+          {/* Follow Us Info */}
+         
         </div>
       </div>
     </div>
