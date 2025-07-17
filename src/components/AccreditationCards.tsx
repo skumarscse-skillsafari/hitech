@@ -194,7 +194,13 @@ const AccreditationCards: React.FC = () => {
             })}
           </div>
 
-          
+          <div className="mt-8 text-center">
+            <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200 inline-block">
+              <p className="text-gray-700">
+                <span className="font-bold text-yellow-700">{accreditations.length}</span> prestigious accreditations validating our commitment to educational excellence
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
