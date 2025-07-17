@@ -1,14 +1,13 @@
-[media pointer="file-service://file-RvT6H1qUHjmvLbfeLsxszk"]
 {
   "hero": {
     "title": "Shape Tomorrow's Technology Today",
     "subtitle": "Join 50,000+ alumni who are transforming industries worldwide through innovative engineering solutions.",
     "backgroundImage": "https://images.pexels.com/photos/159306/building-architecture-sky-blue-159306.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "stats": [
-      { "number": "15+", "label": "Years of Excellence" },
-      { "number": "2500+", "label": "Students" },
-      { "number": "250+", "label": "Faculty Members" },
-      { "number": "90%", "label": "Placement Rate" }
+      { "number": "50+", "label": "Years of Excellence" },
+      { "number": "15,000+", "label": "Students" },
+      { "number": "500+", "label": "Faculty Members" },
+      { "number": "98%", "label": "Placement Rate" }
     ],
     "ctaButtons": [
       {
