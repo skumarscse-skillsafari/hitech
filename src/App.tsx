@@ -18,7 +18,6 @@ import InnovativeMethods from './pages/InnovativeMethods';
 import Objectives from './pages/objectives';
 import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
-import BoardOfGovernors from './pages/BoardOfGovernance';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage'; // ✅ NEW PAGE IMPORTED
 
@@ -66,7 +65,6 @@ function App() {
               <Route path="/about/objectives" element={<Objectives />} />
               <Route path="/vision-mission" element={<Management />} />
               <Route path="/leadership" element={<PrincipalsDesk />} />
-              <Route path="/accreditations" element={<BoardOfGovernors />} />
               <Route path="/governing-council" element={<GoverningCouncilPage />} /> {/* ✅ NEW ROUTE */}
               <Route path="/profile/:id" element={<FacultyProfilePage />} />
             </Routes>
