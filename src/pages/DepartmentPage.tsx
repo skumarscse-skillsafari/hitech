@@ -26,7 +26,7 @@ const DepartmentPage: React.FC = () => {
       title={`${department.name} - Hindusthan Institute of Technology`}
       description={department.description}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-[112px]">
         
         {/* Department Header */}
         <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
@@ -59,7 +59,7 @@ const DepartmentPage: React.FC = () => {
           </div>
         </SectionWrapper>
 
-       
+        {/* Facilities */}
         <SectionWrapper lazy lazyHeight="500px" lazyDelay={1100} className="mt-12">
           <FacilitiesCarousel 
             facilities={department.facilities || []}
