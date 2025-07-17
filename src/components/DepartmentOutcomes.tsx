@@ -163,7 +163,7 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
               <div className="flex items-center space-x-3">
                 <BookOpen className="h-6 w-6 text-purple-600" />
                 <h4 className="text-lg font-bold text-gray-900">
-                  Program Outcomes (POs) - 110 Outcomes
+                  Program Outcomes (POs) - 11 Outcomes
                 </h4>
               </div>
               {activeAccordion === 'pos' ? (
