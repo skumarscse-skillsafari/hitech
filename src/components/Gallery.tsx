@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import admin from "../../public/adminblock.jpg"
-import hit from "../../public/hit.jpg"
+
 interface GalleryImage {
   url: string;
   caption: string;
@@ -12,34 +11,14 @@ interface GalleryCategory {
   images: GalleryImage[];
 }
 
-const Gallery: React.FC = () => {
-  // 🔁 REPLACE YOUR IMAGE PATHS HERE
-  const campusImages: GalleryImage[] = [
-    { url: '/images/campus1.jpg', caption: 'Group Study Session' },
-    { url: admin, caption: 'Academic Block' },
-    { url: '/images/campus3.jpg', caption: 'Students Walking to Class' },
-    { url: hit , caption: 'Main Building' }
-  ];
-
-  const labImages: GalleryImage[] = [
-    { url: '/images/lab1.jpg', caption: 'Physics Lab' },
-    { url: '/images/lab2.jpg', caption: 'Computer Science Lab' }
-  ];
-
-  const eventImages: GalleryImage[] = [
-    { url: '/images/event1.jpg', caption: 'Tech Fest 2024' },
-    { url: '/images/event2.jpg', caption: 'Hilaricas cultural fest' }
-  ];
-
-  const gallery = {
-    categories: [
-      { name: 'Campus', images: campusImages },
-      { name: 'Laboratories', images: labImages },
-      { name: 'Events', images: eventImages }
-    ]
+interface GalleryProps {
+  gallery: {
+    categories: GalleryCategory[];
   };
+}
 
-  const [selectedCategory, setSelectedCategory] = useState(gallery.categories[0].name);
+const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
+  const [selectedCategory, setSelectedCategory] = useState(gallery.categories[0]?.name || 'Campus');
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -51,13 +30,15 @@ const Gallery: React.FC = () => {
     setCurrentImageIndex(index);
   };
 
-  const closeLightbox = () => setSelectedImage(null);
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
 
   const navigateImage = (direction: 'prev' | 'next') => {
-    const newIndex = direction === 'prev'
+    const newIndex = direction === 'prev' 
       ? (currentImageIndex - 1 + currentImages.length) % currentImages.length
       : (currentImageIndex + 1) % currentImages.length;
-
+    
     setCurrentImageIndex(newIndex);
     setSelectedImage(currentImages[newIndex]);
   };
@@ -65,18 +46,20 @@ const Gallery: React.FC = () => {
   return (
     <section id="gallery" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Header */}
+        
+        {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Campus Gallery</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Campus Gallery
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Take a visual tour of our beautiful campus, modern facilities, and vibrant student life
           </p>
         </div>
 
-        {/* Category Buttons */}
+        {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {gallery.categories.map(category => (
+          {gallery.categories.map((category) => (
             <button
               key={category.name}
               onClick={() => setSelectedCategory(category.name)}
@@ -94,14 +77,14 @@ const Gallery: React.FC = () => {
         {/* Image Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {currentImages.map((image, index) => (
-            <div
+            <div 
               key={index}
               className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
               onClick={() => openLightbox(image, index)}
             >
               <div className="aspect-w-4 aspect-h-3">
-                <img
-                  src={image.url}
+                <img 
+                  src={image.url} 
                   alt={image.caption}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -119,7 +102,6 @@ const Gallery: React.FC = () => {
         {selectedImage && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
             <div className="relative max-w-4xl max-h-full">
-
               {/* Close Button */}
               <button
                 onClick={closeLightbox}
@@ -128,7 +110,7 @@ const Gallery: React.FC = () => {
                 <X className="h-6 w-6" />
               </button>
 
-              {/* Navigation */}
+              {/* Navigation Buttons */}
               {currentImages.length > 1 && (
                 <>
                   <button
@@ -147,8 +129,8 @@ const Gallery: React.FC = () => {
               )}
 
               {/* Image */}
-              <img
-                src={selectedImage.url}
+              <img 
+                src={selectedImage.url} 
                 alt={selectedImage.caption}
                 className="max-w-full max-h-full object-contain"
               />
@@ -163,6 +145,7 @@ const Gallery: React.FC = () => {
             </div>
           </div>
         )}
+
       </div>
     </section>
   );
