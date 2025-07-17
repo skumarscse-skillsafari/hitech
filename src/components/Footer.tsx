@@ -92,7 +92,7 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
               <span className="text-xl font-bold">{collegeName}</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Shaping tomorrow's engineers through excellence in education, research, and innovation since 1995.
+              Shaping tomorrow's engineers through excellence in education, research, and innovation since 2007.
             </p>
             
             {/* Social Media */}
