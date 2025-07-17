@@ -56,8 +56,8 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
   };
 
   return (
-    <div className="bg-yellow-500 text-gray-900 border-b border-yellow-600">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="relative z-10 bg-yellow-500 text-gray-900 border-b  border-yellow-600">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
         <div className="flex justify-between items-center h-10">
           
           {/* Mobile Menu Button */}
@@ -89,7 +89,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                     
                     {/* Desktop Dropdown Menu */}
                     {activeDropdown === item.name && (
-                      <div 
+                      <div
                         className="absolute top-full left-0 mt-0 w-56 bg-white text-gray-800 rounded-b-lg shadow-xl border border-gray-200 z-50"
                         onMouseLeave={handleMouseLeave}
                       >

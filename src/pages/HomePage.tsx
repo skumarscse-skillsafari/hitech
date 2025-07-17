@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
     <PageLayout
       title="Hindusthan Institute of Technology - Engineering Excellence"
       description="Leading engineering education with cutting-edge research, world-class faculty, and industry partnerships"
-      className="pt-44"
+      className="pt-0"
     >
       <Hero hero={collegeData.college.hero} />
 
@@ -79,7 +79,8 @@ const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative">
+          {/* ===== Image Block (Moved Up) ===== */}
+          <div className="relative -mt-10">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src={hit}
@@ -99,7 +100,6 @@ const HomePage: React.FC = () => {
         </div>
       </SectionWrapper>
 
-      {/* ===== Existing Homepage Content ===== */}
       <SectionWrapper lazy lazyHeight="300px" lazyDelay={600}>
         <AccreditationCards accreditations={[]} />
       </SectionWrapper>

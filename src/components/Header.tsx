@@ -93,8 +93,9 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
   const hamburgerNavItems = extendedNavItems.slice(6);
 
   return (
-    <header className="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-md">
-
+    <header className={`fixed top-10 w-full z-40 transition-all duration-300 ${
+      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg top-0' : 'bg-white/95 backdrop-blur-sm shadow-lg'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -120,7 +121,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                 Hindusthan Institute<br />of Technology
               </div>
               <div className="text-xs font-semibold text-gray-500 leading-tight">
-                (An Autonomous Institution)
+                An Autonomous Institution
               </div>
             </div>
           </Link>
