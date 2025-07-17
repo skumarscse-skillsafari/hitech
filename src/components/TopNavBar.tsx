@@ -39,13 +39,13 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
   };
 
   const handleMouseEnter = (itemName: string) => {
-    if (window.innerWidth >= 1024) {
+    if (window.innerWidth >= 1024) { // Only on desktop
       setActiveDropdown(itemName);
     }
   };
 
   const handleMouseLeave = () => {
-    if (window.innerWidth >= 1024) {
+    if (window.innerWidth >= 1024) { // Only on desktop
       setActiveDropdown(null);
     }
   };
@@ -59,7 +59,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
     <div className="relative z-10 bg-yellow-500 text-gray-900 border-b  border-yellow-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
         <div className="flex justify-between items-center h-10">
-
+          
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -86,7 +86,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                       <span>{item.name}</span>
                       <ChevronDown className="h-3 w-3" />
                     </button>
-
+                    
                     {/* Desktop Dropdown Menu */}
                     {activeDropdown === item.name && (
                       <div

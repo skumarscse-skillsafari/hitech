@@ -18,6 +18,7 @@ import InnovativeMethods from './pages/InnovativeMethods';
 import Objectives from './pages/objectives';
 import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
+import BoardOfGovernors from './pages/BoardOfGovernance';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
 
