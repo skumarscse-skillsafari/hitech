@@ -12,9 +12,8 @@
       "backgroundImage": "https://images.pexels.com/photos/159306/building-architecture-sky-blue-159306.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "stats": [
         { "number": "15+", "label": "Years of Excellence" },
-        { "number": "2708", "label": "Councelling Code" },
         { "number": "2500+", "label": "Students" },
-        { "number": "250+", "label": "Faculty Members" },
+        { "number": "500+", "label": "Faculty Members" },
         { "number": "90%", "label": "Placement Rate" }
       ]
     },
@@ -371,7 +370,7 @@
       "placementRate": "90%",
       "averagePackage": "4.5 LPA",
       "highestPackage": "42 LPA",
-      "companiesVisited": "50+ "
+      "companiesVisited": "50+ Current Accademic Year"
     },
     "topRecruiters": [
       {

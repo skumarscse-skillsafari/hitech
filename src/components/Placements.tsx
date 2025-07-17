@@ -70,7 +70,7 @@ const Placements: React.FC<PlacementsProps> = ({ placements }) => {
               <Building className="h-8 w-8 text-yellow-600" />
             </div>
             <div className="text-3xl font-bold text-gray-900 mb-2">{placements.stats.companiesVisited}</div>
-            <div className="text-gray-600 font-medium">Companies Visited for Current Academic year</div>
+            <div className="text-gray-600 font-medium">Companies Visited</div>
           </div>
         </div>
 
