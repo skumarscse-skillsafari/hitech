@@ -11,34 +11,34 @@ const SocialMediaCarousel: React.FC = () => {
     {
       name: 'instagram',
       icon: Instagram,
-      handle: '@hindusthan.hitech',
-      followers: '1.7k +',
+      handle: '@hit_official',
+      followers: '25.2K',
       description: 'Campus life, events, and student achievements',
       color: 'text-pink-600',
       bgColor: 'bg-gradient-to-br from-pink-50 to-purple-50 border-pink-200',
-      url: 'https://instagram.com/hindusthan.hitech',
+      url: 'https://instagram.com/hit_official',
       posts: socialMediaData.socialMedia.instagram.posts
     },
     {
       name: 'facebook',
       icon: Facebook,
       handle: 'HIT Official',
-      followers: '300+',
+      followers: '45.8K',
       description: 'News, announcements, and community updates',
       color: 'text-blue-600',
       bgColor: 'bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200',
-      url: 'https://facebook.com/hect.hitech',
+      url: 'https://facebook.com/hit.official',
       posts: socialMediaData.socialMedia.facebook.posts
     },
     {
       name: 'linkedin',
       icon: Linkedin,
       handle: 'Hindusthan Institute of Technology',
-      followers: '3k+',
+      followers: '32.1K',
       description: 'Professional network and career opportunities',
       color: 'text-blue-700',
       bgColor: 'bg-gradient-to-br from-blue-50 to-slate-50 border-blue-300',
-      url: 'https://linkedin.com/school/hindusthan-institute-of-tech/',
+      url: 'https://linkedin.com/school/hindusthan-institute-technology',
       posts: socialMediaData.socialMedia.linkedin.posts
     },
     {
@@ -96,13 +96,13 @@ const SocialMediaCarousel: React.FC = () => {
   const totalPages = Math.ceil(socialPlatforms.length / itemsPerPage);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex) => 
       prevIndex + itemsPerPage >= socialPlatforms.length ? 0 : prevIndex + itemsPerPage
     );
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? Math.max(0, socialPlatforms.length - itemsPerPage) : Math.max(0, prevIndex - itemsPerPage)
     );
   };
@@ -116,13 +116,15 @@ const SocialMediaCarousel: React.FC = () => {
 
   return (
     <div className="space-y-8">
+      {/* Social Media Platform Cards */}
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Follow Us on Social Media</h3>
             <p className="text-gray-600">Stay connected with our latest updates and campus life</p>
           </div>
-
+          
+          {/* Navigation Controls */}
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               {Array.from({ length: totalPages }).map((_, index) => (
@@ -137,6 +139,7 @@ const SocialMediaCarousel: React.FC = () => {
                 />
               ))}
             </div>
+            
             <div className="flex items-center space-x-2">
               <button
                 onClick={prevSlide}
@@ -154,25 +157,26 @@ const SocialMediaCarousel: React.FC = () => {
           </div>
         </div>
 
+        {/* Social Media Cards */}
         <div className="p-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[300px]">
             {currentPlatforms.map((platform, index) => {
               const IconComponent = platform.icon;
               return (
-                <a
+                <button
                   key={index}
-                  href={platform.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   onClick={() => setActivePlatform(platform.name)}
                   className={`${platform.bgColor} p-6 rounded-2xl border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer text-left w-full ${
                     activePlatform === platform.name ? 'ring-2 ring-yellow-500' : ''
                   }`}
                 >
                   <div className="text-center space-y-4">
+                    {/* Icon */}
                     <div className="relative mx-auto w-16 h-16 bg-white rounded-full p-3 shadow-md group-hover:shadow-lg transition-shadow">
                       <IconComponent className={`w-full h-full ${platform.color}`} />
                     </div>
+
+                    {/* Content */}
                     <div>
                       <h4 className="text-xl font-bold text-gray-900 mb-1 capitalize">{platform.name}</h4>
                       <p className={`font-semibold mb-2 ${platform.color}`}>{platform.handle}</p>
@@ -182,6 +186,8 @@ const SocialMediaCarousel: React.FC = () => {
                       </div>
                       <p className="text-sm text-gray-700 leading-relaxed">{platform.description}</p>
                     </div>
+
+                    {/* Hover Effect */}
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity">
                       <div className="flex items-center justify-center space-x-2 text-sm font-medium text-gray-700">
                         <span>View Posts</span>
@@ -189,7 +195,7 @@ const SocialMediaCarousel: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </button>
               );
             })}
           </div>
@@ -198,6 +204,9 @@ const SocialMediaCarousel: React.FC = () => {
          
         </div>
       </div>
+
+      {/* Current Posts from Selected Platform */}
+      
     </div>
   );
 };
