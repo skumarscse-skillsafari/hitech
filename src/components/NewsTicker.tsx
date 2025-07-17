@@ -99,7 +99,7 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ newsItems, speed = 60, pauseOnH
 
   return (
     <div
-      className={`fixed top-32 left-0 right-0 z-30 bg-yellow-500 border-b border-yellow-600 transition-transform duration-300 ${
+      className={`relative z-40 bg-yellow-500 border-b border-yellow-600 transition-transform duration-300 ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >

@@ -19,7 +19,7 @@ import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg"
 
-import { Award, Users, Heart, Star, Crown, Trophy, Shield, Lightbulb } from 'lucide-react';
+import { Award, Trophy } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   const allFaculty = departmentsData.departments.flatMap(dept => dept.faculty);
@@ -41,7 +41,6 @@ const HomePage: React.FC = () => {
     >
       <Hero hero={collegeData.college.hero} />
 
-      {/* ===== Inserted About The Trust Section ===== */}
       <SectionWrapper lazy lazyHeight="400px" lazyDelay={300}>
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">{trustInfo.title}</h1>
@@ -61,10 +60,8 @@ const HomePage: React.FC = () => {
               <Award className="h-8 w-8 text-yellow-500" />
               <h2 className="text-3xl font-bold text-gray-900">About Us</h2>
             </div>
-
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.content}</p>
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.managementContent}</p>
-
             <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200">
               <h3 className="font-bold text-gray-900 mb-3 flex items-center space-x-2">
                 <Trophy className="h-5 w-5 text-yellow-600" />
@@ -88,7 +85,6 @@ const HomePage: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
-
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
               <div className="text-center">
                 <div className="text-3xl font-bold text-yellow-600">30+</div>
@@ -99,7 +95,32 @@ const HomePage: React.FC = () => {
         </div>
       </SectionWrapper>
 
-      {/* ===== Existing Homepage Content ===== */}
+      {/* 5-Column Stats Section */}
+      <SectionWrapper className="bg-gradient-to-r from-gray-700 to-gray-600 py-10 px-4 md:px-20" lazy lazyHeight="300px" lazyDelay={550}>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-x-4 gap-y-6 text-center text-white">
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">15+</h3>
+            <p className="mt-2 font-semibold">Years of Excellence</p>
+          </div>
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">2500+</h3>
+            <p className="mt-2 font-semibold">Students</p>
+          </div>
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">500+</h3>
+            <p className="mt-2 font-semibold">Faculty Members</p>
+          </div>
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">90%</h3>
+            <p className="mt-2 font-semibold">Placement Rate</p>
+          </div>
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">2708</h3>
+            <p className="mt-2 font-semibold">TNEA Code</p>
+          </div>
+        </div>
+      </SectionWrapper>
+
       <SectionWrapper lazy lazyHeight="300px" lazyDelay={600}>
         <AccreditationCards accreditations={[]} />
       </SectionWrapper>
