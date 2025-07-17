@@ -128,7 +128,7 @@ const AccreditationCards: React.FC = () => {
   };
 
   return (
-    <section className="py-0 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -141,7 +141,7 @@ const AccreditationCards: React.FC = () => {
 
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h3 className="text-2xl font-bold text-gray-900">Ranking & Recognition</h3>
+            <h3 className="text-2xl font-bold text-gray-900">Quality Assurance & Recognition</h3>
             <div className="flex items-center space-x-2">
               <button
                 onClick={prev}
@@ -194,7 +194,13 @@ const AccreditationCards: React.FC = () => {
             })}
           </div>
 
-          
+          <div className="mt-8 text-center">
+            <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200 inline-block">
+              <p className="text-gray-700">
+                <span className="font-bold text-yellow-700">{accreditations.length}</span> prestigious accreditations validating our commitment to educational excellence
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
