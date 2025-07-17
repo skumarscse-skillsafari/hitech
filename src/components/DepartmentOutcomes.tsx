@@ -14,11 +14,11 @@ interface DepartmentOutcomesProps {
   departmentName: string;
 }
 
-const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({ 
-  psos, 
-  peos, 
-  pos, 
-  departmentName 
+const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
+  psos,
+  peos,
+  pos,
+  departmentName,
 }) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
@@ -52,18 +52,19 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
   );
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden ">
       <div className="p-8">
-        <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-          Program Outcomes & Educational Objectives
-        </h3>
+        {/* ✅ Full-width heading */}
+        <div className="mb-8">
+          <h3 className="text-2xl font-bold text-gray-900 text-center">
+            Program Outcomes & Educational Objectives
+          </h3>
+        </div>
 
         <div className="space-y-6">
-          
-          {/* PSOs and PEOs in one row */}
+          {/* 🔹 PSOs and PEOs */}
           <div className="grid md:grid-cols-2 gap-8">
-            
-            {/* Program Specific Outcomes (PSOs) */}
+            {/* PSOs */}
             <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleAccordion('psos')}
@@ -81,34 +82,35 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
                   <ChevronDown className="h-5 w-5 text-gray-500" />
                 )}
               </button>
-              
               {activeAccordion === 'psos' && (
                 <div className="px-6 pb-6">
-                  <div className="border-t border-gray-200 pt-6">
-                    <div className="space-y-4">
-                      {psos.map((pso) => (
-                        <div
-                          key={pso.id}
-                          className="bg-blue-50 p-4 rounded-lg border border-blue-200"
-                        >
-                          <div className="flex items-start space-x-3">
-                            <div className="bg-blue-500 text-white px-2 py-1 rounded font-bold text-xs">
-                              {pso.id}
-                            </div>
-                            <div>
-                              <h5 className="font-semibold text-gray-900 mb-2">{pso.title}</h5>
-                              <p className="text-gray-700 text-sm leading-relaxed">{pso.description}</p>
-                            </div>
+                  <div className="border-t border-gray-200 pt-6 space-y-4">
+                    {psos.map((pso) => (
+                      <div
+                        key={pso.id}
+                        className="bg-blue-50 p-4 rounded-lg border border-blue-200"
+                      >
+                        <div className="flex items-start space-x-3">
+                          <div className="bg-blue-500 text-white px-2 py-1 rounded font-bold text-xs">
+                            {pso.id}
+                          </div>
+                          <div>
+                            <h5 className="font-semibold text-gray-900 mb-2">
+                              {pso.title}
+                            </h5>
+                            <p className="text-gray-700 text-sm leading-relaxed">
+                              {pso.description}
+                            </p>
                           </div>
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
             </div>
 
-            {/* Program Educational Objectives (PEOs) */}
+            {/* PEOs */}
             <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleAccordion('peos')}
@@ -126,35 +128,36 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
                   <ChevronDown className="h-5 w-5 text-gray-500" />
                 )}
               </button>
-              
               {activeAccordion === 'peos' && (
                 <div className="px-6 pb-6">
-                  <div className="border-t border-gray-200 pt-6">
-                    <div className="space-y-4">
-                      {peos.map((peo) => (
-                        <div
-                          key={peo.id}
-                          className="bg-green-50 p-4 rounded-lg border border-green-200"
-                        >
-                          <div className="flex items-start space-x-3">
-                            <div className="bg-green-500 text-white px-2 py-1 rounded font-bold text-xs">
-                              {peo.id}
-                            </div>
-                            <div>
-                              <h5 className="font-semibold text-gray-900 mb-2">{peo.title}</h5>
-                              <p className="text-gray-700 text-sm leading-relaxed">{peo.description}</p>
-                            </div>
+                  <div className="border-t border-gray-200 pt-6 space-y-4">
+                    {peos.map((peo) => (
+                      <div
+                        key={peo.id}
+                        className="bg-green-50 p-4 rounded-lg border border-green-200"
+                      >
+                        <div className="flex items-start space-x-3">
+                          <div className="bg-green-500 text-white px-2 py-1 rounded font-bold text-xs">
+                            {peo.id}
+                          </div>
+                          <div>
+                            <h5 className="font-semibold text-gray-900 mb-2">
+                              {peo.title}
+                            </h5>
+                            <p className="text-gray-700 text-sm leading-relaxed">
+                              {peo.description}
+                            </p>
                           </div>
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
             </div>
           </div>
 
-          {/* Program Outcomes (POs) - Full width accordion */}
+          {/* 🔸 POs Full Width */}
           <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
             <button
               onClick={() => toggleAccordion('pos')}
@@ -172,7 +175,6 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
                 <ChevronDown className="h-5 w-5 text-gray-500" />
               )}
             </button>
-            
             {activeAccordion === 'pos' && (
               <div className="px-6 pb-6">
                 <div className="border-t border-gray-200 pt-6">
@@ -181,17 +183,6 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
               </div>
             )}
           </div>
-
-        </div>
-
-        {/* Additional Information */}
-        <div className="mt-8 bg-yellow-50 p-6 rounded-xl border border-yellow-200">
-          <h5 className="font-bold text-gray-900 mb-3">About Program Outcomes</h5>
-          <p className="text-gray-700 leading-relaxed text-sm">
-            These outcomes define what students are expected to know and be able to do by the time of graduation 
-            from the {departmentName} program. They are aligned with industry requirements and accreditation standards 
-            to ensure our graduates are well-prepared for their professional careers.
-          </p>
         </div>
       </div>
     </div>
