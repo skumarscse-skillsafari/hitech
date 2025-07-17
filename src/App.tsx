@@ -20,7 +20,7 @@ import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import BoardOfGovernors from './pages/BoardOfGovernance';
 import FacultyProfilePage from './pages/FacultyProfilePage';
-import GoverningCouncilPage from './pages/GoverningCouncilPage'; // ✅ NEW PAGE IMPORTED
+import GoverningCouncilPage from './pages/GoverningCouncilPage';
 
 // JSON data imports
 import topNavBarData from './data/topNavBarData.json';
@@ -33,43 +33,49 @@ function App() {
     <HelmetProvider>
       <CMSProvider>
         <Router>
-          <div className="min-h-screen bg-white flex flex-col">
-            {/* Top Navbar */}
+          {/* Fixed Top Stack */}
+          <div className="fixed top-0 left-0 w-full z-50">
             <TopNavBar
               socialMedia={topNavBarData?.topNavBar?.socialMedia || []}
               menuItems={topNavBarData?.topNavBar?.menuItems || []}
             />
+          </div>
 
-            {/* Header */}
+          <div className="fixed top-[40px] left-0 w-full z-40">
             <Header
               collegeName={headerData?.header?.collegeName || 'College Name'}
               collegeSubtitle={headerData?.header?.collegeSubtitle || 'Subtitle'}
               navigationItems={headerData?.header?.navigationItems || []}
             />
+          </div>
 
-            {/* News Ticker */}
+          <div className="fixed top-[40px] left-0 w-full z-30">
             <NewsTicker
               newsItems={newsTickerData?.newsTicker?.newsItems || []}
               speed={newsTickerData?.newsTicker?.settings?.speed ?? 50}
               pauseOnHover={newsTickerData?.newsTicker?.settings?.pauseOnHover ?? true}
             />
+          </div>
 
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/department/:departmentId" element={<DepartmentPage />} />
-              <Route path="/gallery" element={<GalleryPage />} />
-              <Route path="/placements" element={<PlacementsPage />} />
-              <Route path="/admissions" element={<AdmissionsPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/reuse" element={<ReusePage />} />
-              <Route path="/innovative-methods" element={<InnovativeMethods />} />
-              <Route path="/about/objectives" element={<Objectives />} />
-              <Route path="/vision-mission" element={<Management />} />
-              <Route path="/leadership" element={<PrincipalsDesk />} />
-              <Route path="/accreditations" element={<BoardOfGovernors />} />
-              <Route path="/governing-council" element={<GoverningCouncilPage />} /> {/* ✅ NEW ROUTE */}
-              <Route path="/profile/:id" element={<FacultyProfilePage />} />
-            </Routes>
+          {/* Main content offset */}
+          <div className="pt-[150px] flex flex-col min-h-screen bg-white">
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/department/:departmentId" element={<DepartmentPage />} />
+                <Route path="/gallery" element={<GalleryPage />} />
+                <Route path="/placements" element={<PlacementsPage />} />
+                <Route path="/admissions" element={<AdmissionsPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/reuse" element={<ReusePage />} />
+                <Route path="/innovative-methods" element={<InnovativeMethods />} />
+                <Route path="/about/objectives" element={<Objectives />} />
+                <Route path="/vision-mission" element={<Management />} />
+                <Route path="/leadership" element={<PrincipalsDesk />} />
+                <Route path="/governing-council" element={<GoverningCouncilPage />} />
+                <Route path="/profile/:id" element={<FacultyProfilePage />} />
+              </Routes>
+            </main>
 
             <Footer 
               collegeName={headerData.header.collegeName} 
