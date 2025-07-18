@@ -8,7 +8,7 @@
     "logo": "/api/placeholder/120/60",
     "hero": {
       "title": "Shape Tomorrow's Technology Today",
-      "subtitle": "Join 50,000+ alumni who are transforming industries worldwide through innovative engineering solutions.",
+      "subtitle": "Join 2500+ alumni who are transforming industries worldwide through innovative engineering solutions.",
       "backgroundImage": "https://images.pexels.com/photos/159306/building-architecture-sky-blue-159306.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "stats": [
         { "number": "15+", "label": "Years of Excellence" },
@@ -340,6 +340,14 @@
             "url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=800",
             "caption": "Electronics Lab"
           },
+           {
+            "url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "caption": "RDBMS Lab"
+          },
+           {
+            "url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "caption": "Electronics Lab"
+          },
           {
             "url": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800",
             "caption": "Mechanical Workshop"
@@ -370,7 +378,7 @@
       "placementRate": "90%",
       "averagePackage": "4.5 LPA",
       "highestPackage": "42 LPA",
-      "companiesVisited": "50+ Current Accademic Year"
+      "companiesVisited": "50+"
     },
     "topRecruiters": [
       {
@@ -594,7 +602,7 @@
     }
   },
   "contact": {
-    "address": "Hindusthan Institute of Technology, Othakalmandapam, Coimbatore - 641 032, Tamil Nadu, India",
+    "address": "Valley Campus, Pollachi Main Road, Othakkalmandapam (Post), Coimbatore - 641 032 ,Tamil Nadu, INDIA",
     "phone": "+91 97152 601184",
     "email": "hit.office@hindusthan.net",
     "website": "www.hit.edu.in",
