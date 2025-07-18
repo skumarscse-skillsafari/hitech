@@ -1,10 +1,5 @@
-import React, { useState } from 'react';
-import {
-  ChevronLeft,
-  ChevronRight,
-  Mail,
-  ExternalLink,
-} from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { ChevronLeft, ChevronRight, Mail, ExternalLink } from 'lucide-react';
 import FacultyModal from './FacultyModal';
 
 interface FacultyMember {
@@ -17,7 +12,15 @@ interface FacultyMember {
   image?: string;
   email: string;
   description: string;
+  publications?: string;
+  patents?: string;
 }
+
+const getHighestDegree = (education: string): string => {
+  const degreeOrder = ['Ph.D', 'PhD', 'D.Sc', 'M.E', 'M.Tech', 'M.Sc', 'MBA', 'MCA', 'B.E', 'B.Tech', 'B.Sc', 'BCA'];
+  const found = degreeOrder.find((degree) => education?.toUpperCase().includes(degree.toUpperCase()));
+  return found || education;
+};
 
 interface FacultyCarouselProps {
   faculty?: FacultyMember[];
@@ -30,64 +33,54 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedMember, setSelectedMember] = useState<FacultyMember | null>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  const itemsPerPage = 3;
-  const totalPages = Math.ceil(faculty.length / itemsPerPage);
-  const currentFaculty = faculty.slice(currentIndex, currentIndex + itemsPerPage);
+  const cardWidth = 368;
+  const itemsToShow = 3;
+  const maxIndex = Math.max(faculty.length - itemsToShow, 0);
+  const autoScrollInterval = 2000;
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) =>
-      prev + itemsPerPage >= faculty.length ? 0 : prev + itemsPerPage
-    );
+  const currentFaculty = React.useMemo(
+    () => faculty.slice(currentIndex, currentIndex + itemsToShow),
+    [faculty, currentIndex]
+  );
+
+  const startAutoplay = () => {
+    stopAutoplay();
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
+    }, autoScrollInterval);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? Math.max(0, faculty.length - itemsPerPage) : prev - itemsPerPage
-    );
+  const stopAutoplay = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
   };
 
+  useEffect(() => {
+    startAutoplay();
+    return () => stopAutoplay();
+  }, [maxIndex]);
+
+  const handlePrev = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
+  const handleNext = () => setCurrentIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
   const openModal = (member: FacultyMember) => setSelectedMember(member);
   const closeModal = () => setSelectedMember(null);
 
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg">
-      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <h4 className="text-2xl font-bold text-gray-900 mb-2">Meet our Faculty</h4>
           <p className="text-gray-600">Faculty members of {departmentName} Department</p>
         </div>
-
-        {faculty.length > itemsPerPage && (
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-              {Array.from({ length: totalPages }).map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index * itemsPerPage)}
-                  className={`w-3 h-3 rounded-full transition-colors ${
-                    Math.floor(currentIndex / itemsPerPage) === index
-                      ? 'bg-yellow-500'
-                      : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
-                />
-              ))}
-            </div>
-            <div className="flex items-center space-x-2">
-              <button
-                onClick={prevSlide}
-                className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full"
-              >
-                <ChevronLeft className="h-5 w-5 text-gray-600" />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full"
-              >
-                <ChevronRight className="h-5 w-5 text-gray-600" />
-              </button>
-            </div>
+        {faculty.length > itemsToShow && (
+          <div className="flex gap-2">
+            <button onClick={handlePrev} className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full">
+              <ChevronLeft className="h-5 w-5 text-gray-600" />
+            </button>
+            <button onClick={handleNext} className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full">
+              <ChevronRight className="h-5 w-5 text-gray-600" />
+            </button>
           </div>
         )}
       </div>
@@ -97,9 +90,12 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
           {currentFaculty.map((member) => (
             <div
               key={member.id}
-              className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 border border-gray-200 hover:border-yellow-300"
+              className="flex-shrink-0 px-2"
+              style={{ width: `${cardWidth}px` }}
+              onMouseEnter={stopAutoplay}
+              onMouseLeave={startAutoplay}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-64 overflow-hidden group">
                 <img
                   src={member.image || '/images/default-faculty.jpg'}
                   alt={member.name}
@@ -133,28 +129,35 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                     {member.name}
                   </h5>
                   {member.designation && (
-                    <p className="text-yellow-600 font-semibold text-sm mb-1">
-                      {member.designation}
+                    <p className="text-yellow-600 font-semibold text-sm">{member.designation}</p>
+                  )}
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium text-gray-800">Specialized in:</span>{' '}
+                    {member.specialization || '—'}
+                  </p>
+                  {member.education && (
+                    <p className="text-sm text-gray-600">
+                      <strong>Education:</strong> {getHighestDegree(member.education)}
                     </p>
                   )}
-                  {member.specialization && (
-                    <p className="text-gray-600 text-sm">{member.specialization}</p>
+                  {member.publications && (
+                    <p className="text-sm text-gray-600">
+                      <strong>Publications:</strong> {member.publications}
+                    </p>
                   )}
+                  {member.patents && (
+                    <p className="text-sm text-gray-600">
+                      <strong>Patents:</strong> {member.patents}
+                    </p>
+                  )}
+                  <button
+                    onClick={() => openModal(member)}
+                    className="text-yellow-600 hover:text-yellow-700 text-sm font-medium flex items-center space-x-1 group mt-2"
+                  >
+                    <span>View Profile</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </button>
                 </div>
-
-                {member.education && (
-                  <p className="text-sm text-gray-600">
-                    <strong>Education:</strong> {member.education}
-                  </p>
-                )}
-
-                <button
-                  onClick={() => openModal(member)}
-                  className="text-yellow-600 hover:text-yellow-700 text-sm font-medium flex items-center space-x-1 group"
-                >
-                  <span>View Profile</span>
-                  <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </button>
               </div>
             </div>
           ))}

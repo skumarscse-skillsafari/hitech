@@ -156,57 +156,64 @@
       "faculty":[
         {
           "id": 1,
-          "name": "Dr. Jameer Basha A",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "name": "Dr. A.Jameer Basha ",
           "designation": "Professor",
-          "specialization": "",
-          "experience": "",
-          "education": "M.E/M.Tech and Ph.D",
-          "email": "",
-          "description": ""
+          "specialization": "machine learning, deep learning, and generative AI.",
+          "experience": "18 years",
+          "education": "Ph.D and M.Tech",
+          "email": "jameer@hit.edu.in",
+          "description": "Professor and Head of Computer Science and Engineering He completed his Ph.D. in Faculty of Information and Communication Engineering from Anna University and has been passionate about Information and Communication Engineering since his undergraduate years. Expertise: His research focuses mostly on machine learning, deep learning, and generative AI. His area of expertise is the classification and analysis of medical images. He presented her findings at national and international conferences and published many peer-reviewed pieces in prestigious journals. Research Interests: His current research projects include assessing the vulnerability of endangered species to climate change, modeling the distribution of invasive species in urban areas, and evaluating the effectiveness of community-based conservation. Teaching Philosophy: He works to develop an inclusive learning environment in the classroom that promotes critical thinking and problem-solving abilities. He thinks that debates, practical assignments, and application of course principles in the real world are the greatest ways for students to learn. He dedicated to assisting my students in understanding their responsibility for protecting it and cultivating a profound appreciation for it."
         },
         {
           "id": 2,
-          "name": "Dr. Mahesh Kumar N.B",
+          "name": "Dr.N.B Mahesh Kumar ",
+          "image":"https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Professor",
-          "specialization": "",
-          "experience": "",
-          "education": "M.E/M.Tech and Ph.D",
-          "email": "",
-          "description": ""
+          "specialization": "Computer Science And Engineering",
+          "experience": "16 years",
+          "education": "Ph.D and M.E",
+          "email": "maheshkumar.nb@hit.edu.in",
+          "description": "He is working as Associate Professor, Department of Computer Science and Engineering in Hindusthan Institute of Technology, Valley Campus, Pollachi Highway, Coimbatore. He has more than 6 years of experience in teaching and 10 years of experience in research. He pursed his Ph.D. Degree (2016) in Computer science and Engineering, Anna University, Chennai. He received M.E. (2009) in Computer science and Engineering form Sri Krishna College of Engineering and Technology, Coimbatore. He received his B.Tech. (2005) in Information Technology form M.Kumarasamy College of Engineering, Karur. He has published more than 31 research papers in various National, International conferences and reputed journals and acting as reviewer in reputed journals. His main area of research interest include Machine Learning, Image Processing and Data Science"
         },
         {
           "id": 3,
-          "name": "Dr. Ramasamy S",
+          "image":"https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "name": "Dr. S.Ramasamy",
           "designation": "Associate Professor",
-          "specialization": "",
-          "experience": "",
-          "education": "M.E/M.Tech and Ph.D",
-          "email": "",
-          "description": ""
+          "specialization": "cloud computing",
+          "experience": "12 years",
+          "education": "Ph.D and M.E",
+          "email": "Ramasamy.s@hit.edu.in",
+          "description": "Dr. S. Ramasamy M.E., Ph.D., currently working as Associate Professor in Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore. He holds Ph.D in Computer Science and Engineering from Anna University, Master of Engineering in Computer Science and Engineering from Anna University of Technology, Coimbatore and Bachelor of Technology in Information Technology from Anna University. He is having more than 14 years of experience in academic, administration, research and innovations. He has published more than 14 research papers in national and international journals. He has published 2 books. He is an active reviewer in Springer Nature Journal. He is a life member of ISTE. His research interest includes Cloud Computing, Edge Computing, Bigdata Security, Wireless Communication."
         },
         {
           "id": 4,
-          "name": "Dr. Subhalaskhmi R.T",
+          "name": "Dr.R.T. Subhalaskhmi ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
-          "specialization": "",
-          "experience": "",
-          "education": "M.E/M.Tech and Ph.D",
-          "email": "",
-          "description": ""
+          "specialization": "Medical Image Analysis, Deep Learning and Machine Learning.",
+          "experience": "8 years",
+          "education": "Ph.D and M.Tech",
+          "email": "subhalakshmi.rt@hit.edu.in",
+          "description": "She completed her Ph.D. in the Faculty of Information and Communication Engineering from Anna University and has been passionate about Information and Communication Engineering since her undergraduate years. Expertise: Her research primarily centers on the Medical Image Analysis, Deep Learning and Machine Learning. She specializes in using medical image classification and analyzing medical images. She published several peer-reviewed articles in leading journals and has presented her work at national and international conferences. Research Interests: Her research focuses mostly on machine learning, deep learning, and generative AI. She uses image categorization and analysis as his area of expertise. She presented her findings at national and international conferences and published many peer-reviewed pieces in prestigious journals. Teaching Philosophy: She works to build inclusive, engaging learning environments in the classroom that promote critical thinking and problem-solving abilities. She thinks that debates, practical assignments, and application of course principles in the real world are the greatest ways for students to learn. She pledged to work with my kids to foster a profound respect of the image classification and an understanding of their responsibility to conserve it"
         },
         {
           "id": 5,
-          "name": "Dr. Senthil Kumar R",
+          "name": "Dr.R.Senthil Kumar ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
-          "specialization": "",
-          "experience": "",
-          "education": "M.E/M.Tech and Ph.D",
-          "email": "",
-          "description": ""
+          "specialization": "IoT Technology and AI with Machine Learning Techniques",
+          "experience": "13 years",
+          "education": "Ph.D and M.Tech",
+          "email": "senthilkumar.r@hit.edu.in",
+          "description": "He completed his Ph.D. in the Faculty of Information and Communication Engineering from Anna University Chennai in the year 2023. He received his B.Tech (IT) Degree from Christian College of Engineering and Technology, Oddanchatram, in the year 2006 and M.E in the specialization of Computer and Communication from Pavendar Bharathidasan College of Engineering and Technology, Affiliated to Anna University, Tiruchirappalli in 2010. He has more than 13 years of teaching experience from various reputed Engineering colleges in Tamilnadu. EXPERTISE: His research AI, IoT, Deep Learning and Machine Learning. He specializes in using IoT Technology and AI with Machine Learning Techniques. He published several peer-reviewed articles in leading journals and has presented her work at national and international conferences. RESEARCH INTERESTS: Data Science, AI with Machine Learning Techniques, IoT TEACHING PHILOSOPHY: He works to build inclusive, engaging learning environments in the classroom that promote critical thinking and problem-solving abilities. He thinks that debates, practical assignments, and application of course principles in the real world are the greatest ways for students to learn. He pledged to work with my kids to foster a profound respect of the image classification and an understanding of their responsibility to conserve it"
+
         },
         {
           "id": 6,
-          "name": "Mrs. Kalaiselvi T",
+          "name": "Mrs.T. Kalaiselvi ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -216,7 +223,8 @@
         },
         {
           "id": 7,
-          "name": "Mrs. Vidhya D",
+          "name": "Mrs.D. Vidhya ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -226,7 +234,8 @@
         },
         {
           "id": 8,
-          "name": "Mrs. Banupriya M",
+          "name": "Mrs.M. Banupriya ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -237,6 +246,7 @@
         {
           "id": 9,
           "name": "Mrs. C.E. Rajaprabha",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -246,7 +256,8 @@
         },
         {
           "id": 10,
-          "name": "Mrs. Nishanandhini A",
+          "name": "Mrs.A. Nishanandhini",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -256,7 +267,8 @@
         },
         {
           "id": 11,
-          "name": "Mr. Suresh Kumar P",
+          "name": "Mr.P.Suresh Kumar ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -266,7 +278,8 @@
         },
         {
           "id": 12,
-          "name": "Mr. Devendran M",
+          "name": "Mr.M. Devendran ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -276,7 +289,8 @@
         },
         {
           "id": 13,
-          "name": "Mr. Murugan K",
+          "name": "Mr.K. Murugan",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -286,7 +300,8 @@
         },
         {
           "id": 14,
-          "name": "Ms. Uma Maheswari P",
+          "name": "Ms. P.Uma Maheswari ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -297,6 +312,7 @@
         {
           "id": 15,
           "name": "Mrs. V. Priyanka",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -306,7 +322,8 @@
         },
         {
           "id": 16,
-          "name": "Mr. Sathishkumar S",
+          "name": "Mr. S.Sathishkumar",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -316,7 +333,8 @@
         },
         {
           "id": 17,
-          "name": "Mr. Udhayakumar T",
+          "name": "Mr.T. Udhayakumar",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -326,7 +344,8 @@
         },
         {
           "id": 18,
-          "name": "Mr. Jayaprakash S",
+          "name": "Mr.S. Jayaprakash ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -337,6 +356,7 @@
         {
           "id": 19,
           "name": "Mrs. N. Abinaya",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -347,6 +367,7 @@
         {
           "id": 20,
           "name": "Mr. Johny Sebastine",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -357,6 +378,7 @@
         {
           "id": 21,
           "name": "Ms. J. Pavithra",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -366,7 +388,8 @@
         },
         {
           "id": 22,
-          "name": "Mrs. Mookhambika N",
+          "name": "Mrs.N. Mookhambika ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -376,7 +399,8 @@
         },
         {
           "id": 23,
-          "name": "Mrs. Suganthi D",
+          "name": "Mrs.D. Suganthi",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -386,7 +410,8 @@
         },
         {
           "id": 24,
-          "name": "Mrs. Ramalakshmi B",
+          "name": "Mrs. B.Ramalakshmi",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -396,7 +421,8 @@
         },
         {
           "id": 25,
-          "name": "Mrs. Praveena A",
+          "name": "Mrs .A. Praveena ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -406,17 +432,19 @@
         },
         {
           "id": 26,
-          "name": "Dr. Senthil Singh C",
+          "name": "Dr.C. Senthil Singh",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E/M.Tech and Ph.D",
+          "education": "Ph.D and M.Tech",
           "email": "",
           "description": ""
         },
         {
           "id": 27,
-          "name": "Mr. Periyasamy P.N",
+          "name": "Mr.P.N Periyasamy ",
+          "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
@@ -426,11 +454,12 @@
         },
         {
           "id": 28,
-          "name": "Mr. Uthayakumar J",
+          "name": "Mr.J. Uthayakumar",
+           "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
-          "specialization": "",
-          "experience": "",
-          "education": "M.E/M.Tech",
+          "specialization": "Computer Science",
+          "experience": "8 years",
+          "education": "M.E",
           "email": "uthayakumar.j@hit.edu.in",
           "description": "He has 3 years of Teaching Experience in the field of Computer Science and Engineering and 5 years in industry. He received his Bachelor Degree and Master Degree from Anna University, Chennai. He has published 4 Journal papers in various international journals and conferences and 1 copyright. He has also published 5 patents, 2 text books."
         }
