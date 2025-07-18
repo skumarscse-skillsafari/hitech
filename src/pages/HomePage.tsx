@@ -17,9 +17,9 @@ import collegeData from '../data/collegeData.json';
 import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
-import hit from "../../public/hit.jpg"
+import hit from "../../public/hit.jpg";
 
-import { Award, Users, Heart, Star, Crown, Trophy, Shield, Lightbulb } from 'lucide-react';
+import { Award, Trophy } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   const allFaculty = departmentsData.departments.flatMap(dept => dept.faculty);
@@ -41,11 +41,11 @@ const HomePage: React.FC = () => {
     >
       <Hero hero={collegeData.college.hero} />
 
-      {/* ===== Inserted About The Trust Section ===== */}
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={300}>
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">{trustInfo.title}</h1>
-          <p className="text-2xl text-yellow-600 font-semibold mb-4">
+      {/* ===== About The Trust Section ===== */}
+      <SectionWrapper className="pt-6 pb-0" lazy lazyDelay={300}>
+        <div className="text-center mb-4 pt-10">
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">{trustInfo.title}</h1>
+          <p className="text-2xl text-yellow-600 font-semibold mb-2">
             {trustInfo.subtitle}
           </p>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -54,9 +54,10 @@ const HomePage: React.FC = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={500}>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+      {/* ===== About Us Section (with extra margin) ===== */}
+      <SectionWrapper lazy lazyHeight="200px" lazyDelay={500}>
+        <div className="grid lg:grid-cols-2 gap-10 items-center mt-[-100]">
+          <div className="space-y-3">
             <div className="flex items-center space-x-3 mb-6">
               <Award className="h-8 w-8 text-yellow-500" />
               <h2 className="text-3xl font-bold  text-gray-900">About Us</h2>
@@ -79,7 +80,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
 
-          {/* ===== Image Block (Moved Up) ===== */}
+          {/* ===== Image Block ===== */}
           <div className="relative -mt-10">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
@@ -92,7 +93,7 @@ const HomePage: React.FC = () => {
 
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-600">30+</div>
+                <div className="text-3xl font-bold text-yellow-600">15+</div>
                 <div className="text-sm text-gray-600">Years of Excellence</div>
               </div>
             </div>
