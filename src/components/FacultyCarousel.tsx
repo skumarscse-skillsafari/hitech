@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Mail, ExternalLink } from 'lucide-react';
 import FacultyModal from './FacultyModal';
 
@@ -16,6 +16,12 @@ interface FacultyMember {
   publications?: string;
 }
 
+const getHighestDegree = (education: string): string => {
+  const degreeOrder = ['Ph.D', 'PhD', 'D.Sc', 'M.E', 'M.Tech', 'M.Sc', 'MBA', 'MCA', 'B.E', 'B.Tech', 'B.Sc', 'BCA'];
+  const found = degreeOrder.find((degree) => education?.toUpperCase().includes(degree.toUpperCase()));
+  return found || education;
+};
+
 interface FacultyCarouselProps {
   faculty?: FacultyMember[];
   departmentName?: string;
@@ -27,19 +33,31 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
 }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [selectedMember, setSelectedMember] = useState<FacultyMember | null>(null);
-  const cardWidth = 320; // Fixed width for each card
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  const cardWidth = 368;
   const itemsToShow = 3;
+  const maxIndex = Math.max(faculty.length - itemsToShow, 0);
+  const autoScrollInterval = 2000;
 
-  const maxIndex = faculty.length - itemsToShow;
-
-  const handlePrev = () => {
-    setStartIndex((prev) => Math.max(prev - 1, 0));
+  const startAutoplay = () => {
+    stopAutoplay(); // Clear any existing
+    intervalRef.current = setInterval(() => {
+      setStartIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
+    }, autoScrollInterval);
   };
 
-  const handleNext = () => {
-    setStartIndex((prev) => Math.min(prev + 1, maxIndex));
+  const stopAutoplay = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
   };
 
+  useEffect(() => {
+    startAutoplay();
+    return () => stopAutoplay();
+  }, [maxIndex]);
+
+  const handlePrev = () => setStartIndex((prev) => Math.max(prev - 1, 0));
+  const handleNext = () => setStartIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
   const openModal = (member: FacultyMember) => setSelectedMember(member);
   const closeModal = () => setSelectedMember(null);
 
@@ -53,16 +71,10 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
         </div>
         {faculty.length > itemsToShow && (
           <div className="flex gap-2">
-            <button
-              onClick={handlePrev}
-              className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full"
-            >
+            <button onClick={handlePrev} className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full">
               <ChevronLeft className="h-5 w-5 text-gray-600" />
             </button>
-            <button
-              onClick={handleNext}
-              className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full"
-            >
+            <button onClick={handleNext} className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full">
               <ChevronRight className="h-5 w-5 text-gray-600" />
             </button>
           </div>
@@ -83,6 +95,8 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
               key={member.id}
               className="flex-shrink-0 px-2"
               style={{ width: `${cardWidth}px` }}
+              onMouseEnter={stopAutoplay}
+              onMouseLeave={startAutoplay}
             >
               <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group border border-gray-200 hover:border-yellow-300">
                 {/* Image */}
@@ -120,20 +134,27 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                     {member.name}
                   </h5>
                   {member.designation && (
-                    <p className="text-yellow-600 font-semibold text-sm">
-                      {member.designation}
-                    </p>
+                    <p className="text-yellow-600 font-semibold text-sm">{member.designation}</p>
                   )}
                   <p className="text-gray-600 text-sm">
                     <span className="font-medium text-gray-800">Specialized in:</span>{' '}
-                    {member.specialization || ''}
+                    {member.specialization || '—'}
                   </p>
                   {member.education && (
                     <p className="text-sm text-gray-600">
-                      <strong>Education:</strong> {member.education}
+                      <strong>Education:</strong> {getHighestDegree(member.education)}
                     </p>
                   )}
-
+                  {member.publications && (
+                    <p className="text-sm text-gray-600">
+                      <strong>Publications:</strong> {member.publications}
+                    </p>
+                  )}
+                  {member.patents && (
+                    <p className="text-sm text-gray-600">
+                      <strong>Patents:</strong> {member.patents}
+                    </p>
+                  )}
                   <button
                     onClick={() => openModal(member)}
                     className="text-yellow-600 hover:text-yellow-700 text-sm font-medium flex items-center space-x-1 group"
