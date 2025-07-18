@@ -13,7 +13,7 @@
         {
           "name": "B.E Computer Science & Engineering",
           "duration": "4 Years",
-          "intake": "180 Students",
+          "intake": "120 Students",
           "eligibility": "10+2 with PCM"
         },
         {
@@ -212,12 +212,12 @@
         },
         {
           "id": 6,
-          "name": "Mrs.T. Kalaiselvi T",
+          "name": "Mrs.T. Kalaiselvi ",
           "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E,M.C.A",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -226,11 +226,11 @@
           "name": "Mrs.D. Vidhya ",
           "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
-          "specialization": "Machine Learning",
-          "experience": "8 years",
-          "education": "M.E",
-          "email": "Vidhya.d@hit.edu.in",
-          "description": "D.Vidhya, currently working as Assistant Professor in Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore. She holds Master of Engineering in Computer Science and Engineering from Anna University of Technology, Coimbatore and Bachelor of Engineering in Electrical and Electronics Engineering from Bharathiyar University. She is having more than 13 years of experience in academic. She got a ellite in NPTEL course.He is a life member of ISTE. Her research interest includes Cloud Computing, Machine Learning"
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 8,
@@ -239,7 +239,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -250,7 +250,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -261,18 +261,18 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
         {
           "id": 11,
-          "name": "Mr.P.Suresh Kumar P",
+          "name": "Mr.P.Suresh Kumar ",
           "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -281,12 +281,11 @@
           "name": "Mr.M. Devendran ",
           "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
-          "specialization": "Computer Science and Engineering",
-          "experience": "12 years",
-          "education": "M.E",
-          "email": "devendran.m@hit.edu.in",
-          "description": "He is having more than 12 years of Teaching Experience in the field of Computer Science and Engineering. He received his Master Degree from Anna University, Thirnelveli from Thiagararajar College of engineering.. and also completed his Received B.Tech(IT) Degree of Madurai Kamaraj University from P.S.N.A College of engineering and technology . He has published more than 20 papers in various international journals and conferences. He has also published than 1 patent"
-
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 13,
@@ -295,7 +294,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E,M.C.A",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -306,7 +305,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -315,11 +314,11 @@
           "name": "Mrs. V. Priyanka",
           "image":"https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400",
           "designation": "Assistant Professor",
-          "specialization": "computer science",
-          "experience": "4 years",
-          "education": "M.E",
-          "email": "priyanga@hit.edu.in",
-          "description": "She completed his B.Tech Information technology in in the year 2014. She completed her M.E computer science and Engineering in the year 2016. Her area of interest was computer Networks and Software Engineering."
+          "specialization": "",
+          "experience": "",
+          "education": "M.E/M.Tech",
+          "email": "",
+          "description": ""
         },
         {
           "id": 16,
@@ -328,7 +327,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -339,7 +338,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -361,7 +360,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -372,7 +371,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.Tech",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -383,7 +382,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -394,7 +393,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E,M.C.A",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -405,7 +404,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -416,7 +415,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -427,7 +426,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.E",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },
@@ -449,7 +448,7 @@
           "designation": "Assistant Professor",
           "specialization": "",
           "experience": "",
-          "education": "M.Tech",
+          "education": "M.E/M.Tech",
           "email": "",
           "description": ""
         },

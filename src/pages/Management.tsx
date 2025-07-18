@@ -107,10 +107,12 @@ const AboutTrustPage: React.FC = () => {
       title="About The Trust - Hindusthan Institute of Technology"
       description="Learn about Hindusthan Educational and Charitable Trust, our leadership, and commitment to excellence in education since 1992."
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0px] pb-4">
+
         
         {/* Hero Section */}
-        <SectionWrapper lazy lazyHeight="400px" lazyDelay={300} className="">
+        <SectionWrapper lazy lazyHeight="px" lazyDelay={300} className="-mt-4">
+
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               About The Trust

@@ -26,7 +26,7 @@ const FacilitiesCarousel: React.FC<{ departmentName?: string }> = ({
     {
       id: 1,
       name: 'AI & Machine Learning Lab',
-      description: 'State-of-the-art lab with high-performance GPUs and advanced computing infrastructure to support AI research, machine learning development, and data-intensive computing tasks.',
+      description: 'State-of-the-art laboratory equipped with high-performance GPUs and advanced computing infrastructure for AI research and development.',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600',
       capacity: '50 Students',
       features: ['NVIDIA Tesla GPUs', 'High-speed Computing', 'Research Workstations', '24/7 Access'],
@@ -35,7 +35,7 @@ const FacilitiesCarousel: React.FC<{ departmentName?: string }> = ({
     {
       id: 2,
       name: 'Robotics Workshop',
-      description: 'Advanced robotics facility equipped with industrial robotic arms, sensors, and automation systems, offering hands-on experience in robotics, control engineering, and intelligent automation technologies.',
+      description: 'Advanced robotics facility with industrial-grade robotic arms, sensors, and automation equipment for hands-on learning.',
       image: 'https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=600',
       capacity: '30 Students',
       features: ['Robotic Arms', 'Sensor Networks', 'Automation Systems', 'Safety Equipment'],
@@ -44,7 +44,7 @@ const FacilitiesCarousel: React.FC<{ departmentName?: string }> = ({
     {
       id: 3,
       name: 'Cloud Computing Center',
-      description: 'Modern cloud infrastructure lab offering access to major cloud platforms and enterprise-level computing resources for hands-on training, application development, deployment, and cloud-based solution architecture.',
+      description: 'Modern cloud infrastructure lab with access to major cloud platforms and enterprise-level computing resources.',
       image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600',
       capacity: '60 Students',
       features: ['AWS Access', 'Azure Platform', 'Google Cloud', 'Hybrid Infrastructure'],
@@ -201,7 +201,11 @@ const FacilitiesCarousel: React.FC<{ departmentName?: string }> = ({
         ))}
       </div>
 
-     
+      <div className="mt-12 flex justify-center">
+  <button className="bg-yellow-500 text-gray-900 font-medium py-2.5 px-8 rounded-md text-base transition-colors duration-200 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2">
+    Explore Facility
+  </button>
+</div>
     </div>
   );
 };

@@ -12,8 +12,8 @@ interface FacultyMember {
   image?: string;
   email: string;
   description: string;
-  patents?: string;
   publications?: string;
+  patents?: string;
 }
 
 const getHighestDegree = (education: string): string => {
@@ -31,7 +31,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
   faculty = [],
   departmentName = 'Department',
 }) => {
-  const [startIndex, setStartIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedMember, setSelectedMember] = useState<FacultyMember | null>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -40,10 +40,15 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
   const maxIndex = Math.max(faculty.length - itemsToShow, 0);
   const autoScrollInterval = 2000;
 
+  const currentFaculty = React.useMemo(
+    () => faculty.slice(currentIndex, currentIndex + itemsToShow),
+    [faculty, currentIndex]
+  );
+
   const startAutoplay = () => {
-    stopAutoplay(); // Clear any existing
+    stopAutoplay();
     intervalRef.current = setInterval(() => {
-      setStartIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
+      setCurrentIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
     }, autoScrollInterval);
   };
 
@@ -56,17 +61,16 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
     return () => stopAutoplay();
   }, [maxIndex]);
 
-  const handlePrev = () => setStartIndex((prev) => Math.max(prev - 1, 0));
-  const handleNext = () => setStartIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
+  const handlePrev = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
+  const handleNext = () => setCurrentIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
   const openModal = (member: FacultyMember) => setSelectedMember(member);
   const closeModal = () => setSelectedMember(null);
 
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-lg overflow-hidden">
-      {/* Header */}
-      <div className="flex items-center justify-between mb-6">
+    <div className="bg-white p-8 rounded-2xl shadow-lg">
+      <div className="flex items-center justify-between mb-8">
         <div>
-          <h4 className="text-2xl font-bold text-gray-900">Meet our Faculty</h4>
+          <h4 className="text-2xl font-bold text-gray-900 mb-2">Meet our Faculty</h4>
           <p className="text-gray-600">Faculty members of {departmentName} Department</p>
         </div>
         {faculty.length > itemsToShow && (
@@ -81,16 +85,9 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
         )}
       </div>
 
-      {/* Carousel */}
-      <div className="relative overflow-hidden">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{
-            transform: `translateX(-${startIndex * cardWidth}px)`,
-            width: `${faculty.length * cardWidth}px`,
-          }}
-        >
-          {faculty.map((member) => (
+      {faculty.length > 0 ? (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {currentFaculty.map((member) => (
             <div
               key={member.id}
               className="flex-shrink-0 px-2"
@@ -98,39 +95,37 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
               onMouseEnter={stopAutoplay}
               onMouseLeave={startAutoplay}
             >
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group border border-gray-200 hover:border-yellow-300">
-                {/* Image */}
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={member.image || '/images/default-faculty.jpg'}
-                    alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = '/images/default-faculty.jpg';
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  {member.email && (
-                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <a
-                        href={`mailto:${member.email}`}
-                        className="bg-white/90 hover:bg-white p-2 rounded-full shadow-md"
-                      >
-                        <Mail className="h-4 w-4 text-gray-600" />
-                      </a>
-                    </div>
-                  )}
-                  {member.experience && (
-                    <div className="absolute bottom-4 left-4 bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
-                      {member.experience}
-                    </div>
-                  )}
-                </div>
+              <div className="relative h-64 overflow-hidden group">
+                <img
+                  src={member.image || '/images/default-faculty.jpg'}
+                  alt={member.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = '/images/default-faculty.jpg';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                {member.email && (
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a
+                      href={`mailto:${member.email}`}
+                      className="bg-white/90 hover:bg-white p-2 rounded-full shadow-md"
+                    >
+                      <Mail className="h-4 w-4 text-gray-600" />
+                    </a>
+                  </div>
+                )}
+                {member.experience && (
+                  <div className="absolute bottom-4 left-4 bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
+                    {member.experience}
+                  </div>
+                )}
+              </div>
 
-                {/* Details */}
-                <div className="p-4 space-y-2">
-                  <h5 className="text-lg font-bold text-gray-900 group-hover:text-yellow-700">
+              <div className="p-6 space-y-4">
+                <div>
+                  <h5 className="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors mb-1">
                     {member.name}
                   </h5>
                   {member.designation && (
@@ -157,7 +152,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                   )}
                   <button
                     onClick={() => openModal(member)}
-                    className="text-yellow-600 hover:text-yellow-700 text-sm font-medium flex items-center space-x-1 group"
+                    className="text-yellow-600 hover:text-yellow-700 text-sm font-medium flex items-center space-x-1 group mt-2"
                   >
                     <span>View Profile</span>
                     <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -167,9 +162,12 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
             </div>
           ))}
         </div>
-      </div>
+      ) : (
+        <div className="text-center py-12 bg-gray-50 rounded-xl">
+          <p className="text-gray-600">No faculty information available at this time</p>
+        </div>
+      )}
 
-      {/* Modal */}
       {selectedMember && <FacultyModal member={selectedMember} onClose={closeModal} />}
     </div>
   );
