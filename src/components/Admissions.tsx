@@ -178,7 +178,7 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="h-4 w-4 text-blue-600" />
-                  <span className="text-sm text-gray-700">Monday - Friday: 9:00 AM - 5:00 PM</span>
+                  <span className="text-sm text-gray-700">Monday - Saturday: 9:00 AM - 5:00 PM</span>
                 </div>
               </div>
               <button

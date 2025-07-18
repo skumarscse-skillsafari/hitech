@@ -99,7 +99,7 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ newsItems, speed = 60, pauseOnH
 
   return (
     <div
-      className={`relative z-40 bg-yellow-500 border-b border-yellow-600 transition-transform duration-300 ${
+      className={`relative z-30 bg-yellow-500 border-b border-yellow-600 transition-transform duration-300 mt-[80px] ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
@@ -126,7 +126,6 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ newsItems, speed = 60, pauseOnH
               className="scrolling-content flex items-center h-full whitespace-nowrap"
               style={{ willChange: 'transform' }}
             >
-              {/* First loop */}
               {activeNews.map((item, index) => (
                 <span key={item.id} className="inline-flex items-center">
                   <span className="flex items-center space-x-2 px-6">
@@ -145,7 +144,6 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ newsItems, speed = 60, pauseOnH
                 </span>
               ))}
 
-              {/* Spacer and second loop */}
               <span className="text-gray-700/60 px-8 text-lg">•</span>
 
               {activeNews.map((item, index) => (

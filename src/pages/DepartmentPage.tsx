@@ -3,7 +3,6 @@ import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import PageLayout from '../components/layout/PageLayout';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import DepartmentDetail from '../components/DepartmentDetail';
-
 import TeachingMethodologyCards from '../components/TeachingMethodologyCards';
 import FacultyCarousel from '../components/FacultyCarousel';
 import FacilitiesCarousel from '../components/FacilitiesCarousel';
@@ -26,14 +25,14 @@ const DepartmentPage: React.FC = () => {
       title={`${department.name} - Hindusthan Institute of Technology`}
       description={department.description}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-[112px]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
         {/* Department Header */}
         <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
           <DepartmentDetail department={department} />
         </SectionWrapper>
 
-        
+       
 
         {/* Teaching Methodologies */}
         <SectionWrapper lazy lazyHeight="500px" lazyDelay={900} className="mt-12">
@@ -51,7 +50,7 @@ const DepartmentPage: React.FC = () => {
           </div>
         </SectionWrapper>
 
-        {/* Facilities */}
+       
         <SectionWrapper lazy lazyHeight="500px" lazyDelay={1100} className="mt-12">
           <FacilitiesCarousel 
             facilities={department.facilities || []}
@@ -79,28 +78,25 @@ const DepartmentPage: React.FC = () => {
         <SectionWrapper lazy lazyHeight="400px" lazyDelay={1500} className="mt-12">
           <TabsSection departmentName={department.name} />
         </SectionWrapper>
-<div className="space-y-12"> {/* This adds vertical spacing between children */}
-   {/* Your existing tabs component */}
-  
-  {/* Add this section with the same wrapper you're using */}
-  <SectionWrapper lazy lazyHeight="200px" lazyDelay={1300} className="mt-12"> {/* Added mt-12 for top margin */}
-    <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12 rounded-2xl text-center text-white">
-      <h2 className="text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
-      <p className="text-xl mb-8 opacity-90">
-        Be part of an institution that has been shaping futures for over three decades
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-          Explore Programs
-        </button>
-        <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors">
-          Contact Us
-        </button>
+
       </div>
+         {/* Call to Action */}
+        <SectionWrapper lazy lazyHeight="200px" lazyDelay={1300} className="mb-12">
+  <div className="bg-gradient-to-r from-yellow-500 to-orange-500 px-6 py-12 sm:px-12 sm:py-16 rounded-2xl text-center text-white">
+    <h2 className="text-2xl sm:text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
+    <p className="text-lg sm:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+      Be part of an institution that has been shaping futures for over three decades
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <button className="bg-white text-gray-900 px-6 py-3 sm:px-8 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+        Explore Programs
+      </button>
+      <button className="border-2 border-white text-white px-6 py-3 sm:px-8 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200">
+        Contact Us
+      </button>
     </div>
-  </SectionWrapper>
-</div>
-      </div>
+  </div>
+</SectionWrapper>
     </PageLayout>
   );
 };
