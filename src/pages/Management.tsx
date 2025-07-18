@@ -170,7 +170,7 @@ const AboutTrustPage: React.FC = () => {
               {/* Floating Stats */}
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-600">30+</div>
+                  <div className="text-3xl font-bold text-yellow-600">15+</div>
                   <div className="text-sm text-gray-600">Years of Excellence</div>
                 </div>
               </div>
