@@ -18,7 +18,7 @@ const AboutTrustPage: React.FC = () => {
       id: 1,
       name: "Shri. T.S.R. Khannaiyann",
       position: "Chairman",
-      image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/images/chairmanhit.jpg",
       description: "In 1975, Shri.T.S.R. Khannaiyann began his career in trading Electromagnetic Equipments. Later he became a successful industrialist by manufacturing power transformers. His concentration, innovation, organization and communication skills earned him the \"Best Entrepreneur\" award. In 1992 he started \"The Hindusthan Educational and Charitable Trust\" to serve the youth and humanity and this vision is being fulfilled through the Hindusthan Educational Institutions. His outstanding caliber has rewarded him with the \"Kongu Rathna\" Award. In 2010, \"The Life Time Education Achievement Award\" was conferred on him for the service to the student community.",
       awards: ["Best Entrepreneur Award", "Kongu Rathna Award", "Life Time Education Achievement Award"],
       icon: Crown,
@@ -107,10 +107,12 @@ const AboutTrustPage: React.FC = () => {
       title="About The Trust - Hindusthan Institute of Technology"
       description="Learn about Hindusthan Educational and Charitable Trust, our leadership, and commitment to excellence in education since 1992."
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0px] pb-4">
+
         
         {/* Hero Section */}
-        <SectionWrapper lazy lazyHeight="400px" lazyDelay={300} className="">
+        <SectionWrapper lazy lazyHeight="px" lazyDelay={300} className="-mt-4">
+
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               About The Trust
