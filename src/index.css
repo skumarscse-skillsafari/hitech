@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer utilities {
-  /* Animation for recruiter logos */
-  @keyframes slide {
+  /* Animation for scrolling logos */
+  @keyframes scroll {
     0% {
       transform: translateX(0);
     }
@@ -13,8 +13,37 @@
     }
   }
 
-  .animate-slide {
-    animation: slide 30s linear infinite;
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+    display: flex;
+  }
+
+  /* Smooth transitions */
+  .smooth-transition {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Card animations */
+  .card-enter {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  
+  .card-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms ease-out;
+  }
+  
+  .card-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .card-exit-active {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 500ms ease-out;
   }
 
   /* Hide scrollbar */
@@ -63,10 +92,20 @@
   }
 }
 
-/* Ensure images don't overflow */
+/* Ensure smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image optimization */
 img {
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
 }
 
 /* Fallback styles for lazy-loaded content */

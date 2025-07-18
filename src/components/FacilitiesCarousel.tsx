@@ -201,14 +201,11 @@ const FacilitiesCarousel: React.FC<{ departmentName?: string }> = ({
         ))}
       </div>
 
-      <div className="mt-8 text-center">
-        <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200 inline-block">
-          <p className="text-gray-700">
-            <span className="font-bold text-yellow-700">{enhancedFacilities.length}</span> world-class facilities
-            supporting excellence in {departmentName}
-          </p>
-        </div>
-      </div>
+      <div className="mt-12 flex justify-center">
+  <button className="bg-yellow-500 text-gray-900 font-medium py-2.5 px-8 rounded-md text-base transition-colors duration-200 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2">
+    Explore Facility
+  </button>
+</div>
     </div>
   );
 };
