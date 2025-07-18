@@ -63,8 +63,10 @@ const LocationMap: React.FC = () => {
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Campus Address</h4>
                   <p className="text-gray-700 leading-relaxed">
                     Hindusthan Institute of Technology<br />
-                    Othakalmandapam, Coimbatore - 641 032<br />
-                    Tamil Nadu, India
+                    Valley Campus, Pollachi Main Road, Othakkalmandapam (Post),
+                    Coimbatore - 641 032
+                    Tamil Nadu, INDIA.<br />
+                  
                   </p>
                 </div>
               </div>
