@@ -1,5 +1,13 @@
 import React, { useState, useRef } from 'react';
-import { ArrowRight, Play, Pause, Volume2, VolumeX, Maximize } from 'lucide-react';
+import {
+  ArrowRight,
+  Play,
+  Pause,
+  Volume2,
+  VolumeX,
+  Maximize,
+  CreditCard,
+} from 'lucide-react';
 
 interface HeroProps {
   hero: {
@@ -38,38 +46,34 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
   };
 
   const toggleFullscreen = () => {
-    if (videoRef.current) {
-      if (videoRef.current.requestFullscreen) {
-        videoRef.current.requestFullscreen();
-      }
+    if (videoRef.current && videoRef.current.requestFullscreen) {
+      videoRef.current.requestFullscreen();
     }
   };
 
   const handleWatchCampusTour = () => {
     if (videoRef.current) {
       const video = videoRef.current;
-
       video.muted = false;
       setIsMuted(false);
-
       video.play();
       setIsPlaying(true);
 
       if (video.requestFullscreen) {
         video.requestFullscreen();
       } else if ((video as any).webkitEnterFullscreen) {
-        (video as any).webkitEnterFullscreen(); // iOS Safari
+        (video as any).webkitEnterFullscreen();
       } else if ((video as any).mozRequestFullScreen) {
-        (video as any).mozRequestFullScreen(); // Firefox
+        (video as any).mozRequestFullScreen();
       } else if ((video as any).msRequestFullscreen) {
-        (video as any).msRequestFullscreen(); // IE/Edge
+        (video as any).msRequestFullscreen();
       }
     }
   };
 
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}
@@ -89,7 +93,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Video Overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60"></div>
 
       {/* Video Controls */}
@@ -103,7 +107,6 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         >
           {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
         </button>
-        
         <button
           onClick={toggleMute}
           className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
@@ -111,7 +114,6 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         >
           {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
         </button>
-        
         <button
           onClick={toggleFullscreen}
           className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
@@ -121,23 +123,22 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         </button>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      {/* Hero Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
         <div className="space-y-8">
           <div className="animate-fadeIn">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               {hero.title}
             </h1>
           </div>
-          
           <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
             <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
               {hero.subtitle}
             </p>
           </div>
 
-          {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
             <button
               onClick={() => {
                 const contactSection = document.getElementById('contact');
@@ -150,6 +151,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
               Apply Now
               <ArrowRight className="h-5 w-5" />
             </button>
+
             <button
               onClick={handleWatchCampusTour}
               className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105"
@@ -157,6 +159,16 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
               <Play className="h-5 w-5" />
               Watch Campus Tour
             </button>
+
+            <a
+              href="https://yourcollege.edu/fees-payment"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              <CreditCard className="h-5 w-5" />
+              Fees Payment
+            </a>
           </div>
 
           {/* Stats */}
@@ -175,7 +187,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         </div>
       </div>
 
-      {/* Video Progress Bar */}
+      {/* Video Progress */}
       <div className={`absolute bottom-0 left-0 right-0 h-1 bg-white/20 transition-all duration-300 ${
         showControls ? 'opacity-100' : 'opacity-0'
       }`}>
@@ -189,12 +201,12 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         </div>
       </div>
 
-      {/* Fallback Background Image */}
-      <div 
+      {/* Fallback Image */}
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0"
-        style={{ 
+        style={{
           backgroundImage: `url(${hero.backgroundImage})`,
-          zIndex: -1
+          zIndex: -1,
         }}
         onError={() => {
           const videoElement = videoRef.current;
@@ -202,8 +214,18 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
             videoElement.style.display = 'none';
           }
         }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-800/70"></div>
+      />
+
+      {/* Vertical TNEA Code Button - Left Side */}
+      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
+        <div className="rotate-90 origin-bottom-left">
+          <button
+            className="text-sm md:text-base font-bold bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-b-xl shadow-lg transition-all duration-300 whitespace-nowrap rotate-180"
+            title="TNEA Code"
+          >
+            TNEA Code: 2708
+          </button>
+        </div>
       </div>
     </section>
   );
