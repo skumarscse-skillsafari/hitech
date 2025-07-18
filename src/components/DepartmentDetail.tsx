@@ -274,15 +274,16 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
             <p className="text-gray-700 leading-relaxed">{department.mission}</p>
           </div>
         </div>
-       {/* Program Outcomes - Unchanged */}
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={500} className="mt-12">
-        <DepartmentOutcomes 
-          psos={departmentWithDefaults.psos}
-          peos={departmentWithDefaults.peos}
-          pos={departmentWithDefaults.pos}
-          departmentName={department.name}
-        />
-      </SectionWrapper>
+     
+      {/* Program Outcomes */}
+        <SectionWrapper lazy lazyHeight="400px" lazyDelay={600} className="mt-12">
+          <DepartmentOutcomes 
+            psos={department.psos}
+            peos={department.peos}
+            pos={department.pos}
+            departmentName={department.name}
+          />
+        </SectionWrapper>
 
       {/* Enhanced OBE Philosophy Section */}
       <LazyLoadWrapper height="500px" delay={500}>

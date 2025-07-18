@@ -14,10 +14,10 @@ interface SectionWrapperProps {
 const SectionWrapper: React.FC<SectionWrapperProps> = ({
   children,
   id,
-  className = 'py-20',
+  className = 'py-10',
   containerClassName = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8',
   lazy = false,
-  lazyHeight = '400px',
+  lazyHeight = '200px',
   lazyDelay = 500
 }) => {
   const content = (
