@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import {
   X,
   Mail,
@@ -116,7 +116,7 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
             <X className="h-5 w-5" />
           </button>
 
-          {/* Faculty Image - Centered with adjusted spacing */}
+          {/* Faculty Image */}
           <div className="w-45 h-36 rounded-full overflow-hidden mx-auto border-4 border-amber-300 shadow-lg">
             <img
               src={member.image || '/images/default-faculty.jpg'}
@@ -140,7 +140,6 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
 
         {/* Content Section */}
         <div className="p-6 sm:p-8 space-y-4 text-sm text-gray-800">
-          {/* Info Sections */}
           <div className="space-y-4 divide-y divide-gray-200">
             <div className="flex items-start gap-3 pt-0">
               <GraduationCap className="h-6 w-6 text-orange-500 mt-0.5" />
