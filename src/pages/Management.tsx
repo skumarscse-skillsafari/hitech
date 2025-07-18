@@ -18,7 +18,7 @@ const AboutTrustPage: React.FC = () => {
       id: 1,
       name: "Shri. T.S.R. Khannaiyann",
       position: "Chairman",
-      image: "/images/chairmanhit.jpg",
+      image: " /images/chairmanog.jpg ",
       description: "In 1975, Shri.T.S.R. Khannaiyann began his career in trading Electromagnetic Equipments. Later he became a successful industrialist by manufacturing power transformers. His concentration, innovation, organization and communication skills earned him the \"Best Entrepreneur\" award. In 1992 he started \"The Hindusthan Educational and Charitable Trust\" to serve the youth and humanity and this vision is being fulfilled through the Hindusthan Educational Institutions. His outstanding caliber has rewarded him with the \"Kongu Rathna\" Award. In 2010, \"The Life Time Education Achievement Award\" was conferred on him for the service to the student community.",
       awards: ["Best Entrepreneur Award", "Kongu Rathna Award", "Life Time Education Achievement Award"],
       icon: Crown,
