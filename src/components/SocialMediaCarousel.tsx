@@ -11,23 +11,23 @@ const SocialMediaCarousel: React.FC = () => {
     {
       name: 'instagram',
       icon: Instagram,
-      handle: '@hit_official',
-      followers: '25.2K',
+      handle: '@hindusthan.hitech',
+      followers: '3K',
       description: 'Campus life, events, and student achievements',
       color: 'text-pink-600',
       bgColor: 'bg-gradient-to-br from-pink-50 to-purple-50 border-pink-200',
-      url: 'https://instagram.com/hit_official',
+      url: 'https://instagram.com/hindusthan.hitech',
       posts: socialMediaData.socialMedia.instagram.posts
     },
     {
       name: 'facebook',
       icon: Facebook,
-      handle: 'HIT Official',
-      followers: '45.8K',
+      handle: 'Hect Hitech',
+      followers: '300+',
       description: 'News, announcements, and community updates',
       color: 'text-blue-600',
       bgColor: 'bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200',
-      url: 'https://facebook.com/hit.official',
+      url: 'https://facebook.com/hect.hitech',
       posts: socialMediaData.socialMedia.facebook.posts
     },
     {
@@ -38,7 +38,7 @@ const SocialMediaCarousel: React.FC = () => {
       description: 'Professional network and career opportunities',
       color: 'text-blue-700',
       bgColor: 'bg-gradient-to-br from-blue-50 to-slate-50 border-blue-300',
-      url: 'https://linkedin.com/school/hindusthan-institute-technology',
+      url: 'https://linkedin.com/school/hindusthan-institute-of-tech',
       posts: socialMediaData.socialMedia.linkedin.posts
     },
     {
@@ -165,7 +165,10 @@ const SocialMediaCarousel: React.FC = () => {
               return (
                 <button
                   key={index}
-                  onClick={() => setActivePlatform(platform.name)}
+                  onClick={() => {
+                    setActivePlatform(platform.name);
+                    window.open(platform.url, '_blank'); // redirect to platform
+                  }}
                   className={`${platform.bgColor} p-6 rounded-2xl border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer text-left w-full ${
                     activePlatform === platform.name ? 'ring-2 ring-yellow-500' : ''
                   }`}
@@ -204,9 +207,6 @@ const SocialMediaCarousel: React.FC = () => {
           
         </div>
       </div>
-
-      {/* Current Posts from Selected Platform */}
-      
     </div>
   );
 };
