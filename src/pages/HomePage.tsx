@@ -59,7 +59,7 @@ const HomePage: React.FC = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3 mb-6">
               <Award className="h-8 w-8 text-yellow-500" />
-              <h2 className="text-3xl font-bold text-gray-900">About Us</h2>
+              <h2 className="text-3xl font-bold  text-gray-900">About Us</h2>
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.content}</p>
