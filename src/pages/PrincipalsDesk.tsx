@@ -7,7 +7,6 @@ const PrincipalsDesk: React.FC = () => {
     <div className="mt-8 bg-white">
       {/* Hero Section */}
       <div className="relative w-full h-[300px] md:h-[400px] bg-gradient-to-br from-yellow-100 to-yellow-300 flex items-center justify-center overflow-hidden rounded-xl shadow-inner">
-        {/* ❌ Background image removed */}
         <div className="relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-yellow-800 drop-shadow-lg">
             From the Principal's Desk
@@ -32,7 +31,6 @@ const PrincipalsDesk: React.FC = () => {
 
       {/* Message Section */}
       <section className="max-w-6xl mx-auto px-6 md:px-8 py-8 space-y-8 text-[17px] text-gray-800 text-justify leading-relaxed">
-
         <div className="bg-white rounded-xl p-6 border-l-4 border-yellow-500 shadow-sm relative hover:shadow-md hover:-translate-y-1 transition-all duration-300">
           <Quote className="absolute top-5 left-4 text-yellow-500 w-6 h-6" />
           <p className="pl-10">
@@ -48,7 +46,6 @@ const PrincipalsDesk: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-
           <div className="bg-white rounded-xl p-6 border border-yellow-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
             <h3 className="text-xl font-bold text-yellow-700 mb-2">Principal Profile</h3>
             <p>
@@ -71,6 +68,22 @@ const PrincipalsDesk: React.FC = () => {
             <p>
               As Placement Head, Dr. Natarajan developed strategic partnerships with companies like Infosys, CTS, and Accenture. He coordinated Anna University’s State Level Drives and mentored students into thriving professionals.
             </p>
+          </div>
+        </div>
+
+        {/* ✅ CTA Section */}
+        <div className="bg-gradient-to-r from-yellow-200 to-yellow-100 rounded-xl px-8 py-6 shadow-md border border-yellow-300 flex flex-col md:flex-row items-center justify-between gap-6 mt-10">
+          <div className="text-center md:text-left">
+            <h3 className="text-2xl font-bold text-yellow-800 mb-1">Connect With the Principal</h3>
+            <p className="text-gray-700 text-sm">Have questions or need guidance? Reach out directly or learn more about our vision and mission.</p>
+          </div>
+          <div className="flex gap-4">
+            <button className="bg-yellow-500 text-white px-5 py-2 rounded-xl font-medium hover:bg-yellow-600 transition-all duration-300">
+              Contact
+            </button>
+            <button className="border border-yellow-500 text-yellow-700 px-5 py-2 rounded-xl font-medium hover:bg-yellow-500 hover:text-white transition-all duration-300">
+              Know More
+            </button>
           </div>
         </div>
 

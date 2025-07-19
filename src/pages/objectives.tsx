@@ -23,7 +23,7 @@ const Objectives: React.FC = () => {
 
       {/* Content Container */}
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-16 space-y-16 text-gray-800 leading-relaxed text-justify text-[17px]">
-
+        
         {/* Our History */}
         <section className="bg-white rounded-xl shadow-xl border-l-4 border-yellow-400 p-6 md:p-10 transition-transform duration-300 hover:shadow-2xl hover:scale-[1.02]">
           <div className="flex items-center space-x-4 mb-4">
@@ -80,6 +80,22 @@ const Objectives: React.FC = () => {
             <p>
               From a humble beginning in 2007 to becoming a renowned center of education, HITECH has stayed committed to providing globally relevant, morally grounded education and lifelong values to its students.
             </p>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12 rounded-2xl text-center text-white">
+          <h2 className="text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
+          <p className="text-xl mb-8 opacity-90">
+            Be part of an institution that has been shaping futures for over three decades
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Explore Programs
+            </button>
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+              Contact Us
+            </button>
           </div>
         </section>
 
