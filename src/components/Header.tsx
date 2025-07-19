@@ -102,7 +102,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
           <Link to="/" className="flex items-center space-x-3 flex-shrink-0">
             <div className="bg-white p-1 rounded-lg shadow-md">
               <img 
-                src="Logo.jpg" 
+                src="/Logo.jpg" 
                 alt="Hindusthan Institute of Technology Logo"
                 className="h-16 w-auto object-contain"
               />
