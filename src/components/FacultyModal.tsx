@@ -20,10 +20,11 @@ interface FacultyMember {
   education: string;
   email: string;
   description: string;
-  patents?: string;
+  patents?: string | number;
   publications?: string | number;
   image?: string;
   joiningDate?: string;
+  date_of_joining?: string; // added for compatibility
 }
 
 interface FacultyModalProps {
@@ -56,35 +57,6 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
     }, 300);
   };
 
-  const getSortedEducation = (education: string) => {
-    const degreeOrder = [
-      'Ph.D',
-      'PhD',
-      'D.Sc',
-      'M.E',
-      'M.Tech',
-      'M.Sc',
-      'MBA',
-      'MCA',
-      'B.E',
-      'B.Tech',
-      'B.Sc',
-      'BCA',
-    ];
-
-    const getRank = (deg: string) =>
-      degreeOrder.findIndex((d) =>
-        deg.toUpperCase().includes(d.toUpperCase())
-      );
-
-    return education
-      ?.split(',')
-      .map((deg) => deg.trim())
-      .sort((a, b) => getRank(a) - getRank(b))
-      .reverse()
-      .join(', ');
-  };
-
   const formatDate = (dateStr?: string) => {
     if (!dateStr) return '—';
     const date = new Date(dateStr);
@@ -97,6 +69,9 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
         });
   };
 
+  // Use joiningDate or fallback to date_of_joining
+  const actualJoiningDate = member.joiningDate || member.date_of_joining;
+
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto backdrop-blur-sm px-4 py-12">
       <div
@@ -105,9 +80,8 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
           isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
         }`}
       >
-        {/* Header Section with Light Orange Background */}
+        {/* Header */}
         <div className="bg-amber-100 pb-4 pt-6 px-6 sm:px-8 relative flex flex-col items-center justify-center">
-          {/* Close Button */}
           <button
             className="absolute top-4 right-4 text-gray-600 hover:text-amber-800 transition"
             onClick={handleClose}
@@ -116,8 +90,7 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
             <X className="h-5 w-5" />
           </button>
 
-          {/* Faculty Image */}
-          <div className="w-45 h-36 rounded-full overflow-hidden mx-auto border-4 border-amber-300 shadow-lg">
+          <div className="w-50 h-36 rounded-full overflow-hidden mx-auto border-4 border-amber-300 shadow-lg">
             <img
               src={member.image || '/images/default-faculty.jpg'}
               alt={member.name}
@@ -129,7 +102,6 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
             />
           </div>
 
-          {/* Name & Designation */}
           <div className="text-center mt-3">
             <h3 className="text-2xl font-bold text-gray-900">{member.name}</h3>
             <p className="text-amber-600 text-base mt-1">
@@ -138,14 +110,14 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
           </div>
         </div>
 
-        {/* Content Section */}
+        {/* Content */}
         <div className="p-6 sm:p-8 space-y-4 text-sm text-gray-800">
           <div className="space-y-4 divide-y divide-gray-200">
             <div className="flex items-start gap-3 pt-0">
               <GraduationCap className="h-6 w-6 text-orange-500 mt-0.5" />
               <div>
                 <p className="font-semibold text-base">Education</p>
-                <p className="text-base">{getSortedEducation(member.education) || '—'}</p>
+                <p className="text-base">{member.education || '—'}</p>
               </div>
             </div>
 
@@ -169,7 +141,7 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
               <CalendarDays className="h-6 w-6 text-red-500 mt-0.5" />
               <div>
                 <p className="font-semibold text-base">Date of Joining</p>
-                <p className="text-base">{formatDate(member.joiningDate)}</p>
+                <p className="text-base">{formatDate(actualJoiningDate)}</p>
               </div>
             </div>
 
@@ -185,7 +157,9 @@ const FacultyModal: React.FC<FacultyModalProps> = ({ member, onClose }) => {
               <FileText className="h-6 w-6 text-pink-600 mt-0.5" />
               <div>
                 <p className="font-semibold text-base">Number of Publications</p>
-                <p className="text-base">{member.publications !== undefined ? member.publications : '—'}</p>
+                <p className="text-base">
+                  {member.publications !== undefined ? member.publications : '—'}
+                </p>
               </div>
             </div>
 
