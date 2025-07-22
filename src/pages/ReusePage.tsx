@@ -6,7 +6,7 @@ import DepartmentOutcomes from '../components/DepartmentOutcomes';
 import TeachingMethodologyCards from '../components/TeachingMethodologyCards';
 import FacultyCarousel from '../components/FacultyCarousel';
 import FacilitiesCarousel from '../components/FacilitiesCarousel';
-import TabsSection from '../components/TabsSection';
+import TabsSection from '../components/TabSection';
 import CustomSection from '../components/CustomSection';
 import reusePageData from '../data/reusePageData.json';
 

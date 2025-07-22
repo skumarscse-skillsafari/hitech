@@ -1,0 +1,443 @@
+{
+  "tabs": [
+    {
+      "id": "hod",
+      "name": "HOD's Desk",
+      "icon": "User",
+      "content": {
+        "title": "Message from Head of Department",
+        "items": [
+          {
+            "title": "Dr. A. Jameer Basha",
+            "description": "Welcome to the Department of Computer Science and Engineering. Our department is committed to excellence in teaching, research, and innovation. We strive to provide our students with the knowledge and skills needed to excel in the rapidly evolving field of computer science.",
+            "qualification": "Ph.D in Computer Science and Engineering",
+            "experience": "15+ years of teaching and research experience",
+            "specialization": "Artificial Intelligence, Machine Learning",
+            "email": "hod.cse@university.edu",
+            "phone": "+91 9876543210",
+            "achievements": "Published 50+ research papers, Recipient of Best Teacher Award 2023"
+          }
+        ]
+      }
+    },
+    {
+      "id": "research",
+      "name": "Research & Development",
+      "icon": "BookOpen",
+      "content": {
+        "title": "Current Research Projects",
+        "items": [
+          {
+            "title": "Dr.A.JameerBasha, Professor & Head Dr.S.Lokesh, ASP/CSE Ms.P.Jeevitha, AP/CSE",
+            "description": "Design and development of smart assistive device...",
+            "funding": "Rs.9,48,614",
+            "status": "3-years (Ongoing)",
+            "duration": "3 Years(Ongoing)",
+            "years": "2030"
+          },
+          {
+            "title": "Dr.R.Kala AP/CSE",
+            "description": "Brain Tumor Detection Using Deep CNN and FPGA Implementation",
+            "funding": "Rs.2,00,000",
+            "status": "1 year (Ongoing)",
+            "duration": "1 Year(Ongoing)",
+            "years": "2030"
+          },
+          {
+            "title": "Ms.R.T. Subhalakshmi AP/CSE",
+            "description": "Automatic segmentation and classification of COVID-19 CT image Using DCN",
+            "funding": "Rs.2,04,000",
+            "status": "1 Year (ongoing)",
+            "duration": "1 Year(Ongoing)",
+            "years": "2030"
+          },
+          {
+            "title": "Dr.S.Lokesh, ASP/CSE",
+            "description": "Nano Assistive Communication Device for Elderly and Speech Disability People",
+            "funding": "Rs.2,00,000",
+            "status": "1 Year (Completed)",
+            "duration": "1 Year(Completed)",
+            "years": "2030"
+          }
+        ]
+      }
+    },
+    {
+      "id": "student-achievements",
+      "name": "Student Achievements",
+      "icon": "Award",
+      "content": {
+        "title": "Student Accomplishments",
+        "items": [
+          {
+            "title": "National Innovation Challenge Winner",
+            "description": "Students won first prize in national innovation competition.",
+            "year": "2024",
+            "competition": "National Level",
+            "team": "Team Innovators (5 members)"
+          },
+          {
+            "title": "Hackathon Champions",
+            "description": "Won the regional hackathon with an AI-based solution for traffic management.",
+            "year": "2023",
+            "competition": "Regional Level",
+            "prize": "Rs. 1,00,000"
+          },
+          {
+            "title": "Paper Publication in IEEE",
+            "description": "Undergraduate students published research paper in IEEE conference.",
+            "year": "2024",
+            "conference": "IEEE International Conference",
+            "topic": "Machine Learning Applications"
+          }
+        ]
+      }
+    },
+    {
+      "id": "faculty-achievements",
+      "name": "Faculty Achievements",
+      "icon": "Award",
+      "content": {
+        "title": "Faculty Accomplishments",
+        "items": [
+          {
+            "title": "Best Researcher Award",
+            "description": "Recognized for outstanding contributions in AI research.",
+            "year": "2024",
+            "awardedBy": "National Science Foundation",
+            "area": "Artificial Intelligence"
+          },
+          {
+            "title": "Patent Granted",
+            "description": "Patent for innovative algorithm in image processing.",
+            "year": "2023",
+            "patentNumber": "IN345678",
+            "field": "Computer Vision"
+          },
+          {
+            "title": "Book Publication",
+            "description": "Published textbook on Advanced Machine Learning adopted by universities.",
+            "year": "2024",
+            "publisher": "Springer",
+            "subject": "Machine Learning"
+          }
+        ]
+      }
+    },
+    {
+      "id": "internship",
+      "name": "Internship ",
+      "icon": "Briefcase",
+      "content": {
+        "title": "Leading Internship Opportunities",
+        "items": [
+          {
+            "title": "Google Summer Internship",
+            "description": "Internship program focusing on software engineering and AI projects.",
+            "duration": "3 Months",
+            "stipend": "$3000/month",
+            "openings": "10 Students"
+          },
+          {
+            "title": "Microsoft Research Internship",
+            "description": "Opportunities in AI, Cloud Computing, and Quantum Computing research.",
+            "duration": "6 Months",
+            "stipend": "$3500/month",
+            "openings": "8 Students"
+          },
+          {
+            "title": "TCS Digital Internship",
+            "description": "Industry projects with mentorship from senior engineers.",
+            "duration": "4 Months",
+            "stipend": "Rs. 25,000/month",
+            "openings": "20 Students"
+          }
+        ]
+      }
+    },
+    {
+      "id": "innovations",
+      "name": "Innovations",
+      "icon": "BookOpen",
+      "content": {
+        "title": "Recent Innovations by Students & Faculty",
+        "items": [
+          {
+            "title": "Smart Farming Drone",
+            "description": "AI-powered drone for precision agriculture and crop monitoring.",
+            "year": "2024",
+            "awards": "Agritech Innovation Award"
+          },
+          {
+            "title": "AI-Powered Wheelchair",
+            "description": "Autonomous wheelchair system for differently-abled people.",
+            "year": "2023",
+            "awards": "National Assistive Tech Award"
+          },
+          {
+            "title": "IoT-Based Water Management System",
+            "description": "Smart system to monitor and optimize water usage.",
+            "year": "2024",
+            "awards": "Green Technology Innovation Prize"
+          }
+        ]
+      }
+    },
+    {
+      "id": "placements",
+      "name": "Placements",
+      "icon": "Briefcase",
+      "content": {
+        "title": "Placement Highlights",
+        "items": [
+          {
+            "title": "Placement Statistics 2024",
+            "description": "Our students have been placed in top companies with excellent packages.",
+            "placed": "95% of students placed",
+            "highest": "Rs. 42 LPA",
+            "average": "Rs. 8.5 LPA",
+            "companies": "50+ recruiters"
+          },
+          {
+            "title": "Top Recruiters",
+            "description": "Our students have been recruited by leading global companies.",
+            "list": "Google, Microsoft, Amazon, TCS, Infosys, Wipro, IBM, Accenture",
+            "visits": "Regular campus recruitment drives"
+          },
+          {
+            "title": "Placement Training",
+            "description": "Comprehensive training program to prepare students for placements.",
+            "modules": "Aptitude, Technical, Communication, Interview Skills",
+            "duration": "Year-round program",
+            "success": "90% placement rate in last 5 years"
+          }
+        ]
+      }
+    },
+    {
+      "id": "obe",
+      "name": "OBE Practices",
+      "icon": "ClipboardList",
+      "content": {
+        "title": "Outcome Based Education",
+        "items": [
+          {
+            "title": "Program Educational Objectives (PEOs)",
+            "description": "To prepare graduates who will be successful professionals in industry, government, academia, research, entrepreneurial pursuit, and consulting firms.",
+            "peo1": "Technical Competence",
+            "peo2": "Professional Skills",
+            "peo3": "Lifelong Learning"
+          },
+          {
+            "title": "Program Outcomes (POs)",
+            "description": "Engineering Graduates will be able to:",
+            "po1": "Engineering knowledge",
+            "po2": "Problem analysis",
+            "po3": "Design/development of solutions",
+            "po12": "Life-long learning"
+          },
+          {
+            "title": "Program Specific Outcomes (PSOs)",
+            "description": "Computer Science and Engineering graduates will be able to:",
+            "pso1": "Develop software solutions for real-world problems",
+            "pso2": "Apply computing knowledge to emerging technologies",
+            "pso3": "Adapt to new tools and technologies in computing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "curriculum-syllabus",
+      "name": "Curriculum & Syllabus",
+      "icon": "FileText",
+      "content": {
+        "title": "Curriculum & Syllabus Details",
+        "items": [
+          {
+            "title": "Undergraduate Program",
+            "description": "B.Tech in Computer Science and Engineering - 4 Year Program",
+            "credits": "160 Credits",
+            "semesters": "8 Semesters",
+            "focus": "Core CS subjects with electives",
+            "syllabusLink": "Download Syllabus PDF"
+          },
+          {
+            "title": "Postgraduate Program",
+            "description": "M.Tech in Computer Science and Engineering - 2 Year Program",
+            "credits": "80 Credits",
+            "semesters": "4 Semesters",
+            "specializations": "AI, Data Science, Cyber Security",
+            "syllabusLink": "Download Syllabus PDF"
+          },
+          {
+            "title": "Elective Courses",
+            "description": "Wide range of elective courses offered",
+            "areas": "AI/ML, Cloud Computing, IoT, Blockchain, Cybersecurity",
+            "options": "30+ elective courses available",
+            "syllabusLink": "Download Electives PDF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "facilities",
+      "name": "Advanced Facilities",
+      "icon": "Building",
+      "content": {
+        "title": "State-of-the-Art Infrastructure",
+        "items": [
+          {
+            "title": "High Performance Computing Lab",
+            "description": "Facility with GPU clusters for AI/ML research.",
+            "capacity": "50 Students",
+            "equipment": "NVIDIA Tesla GPUs"
+          },
+          {
+            "title": "Innovation & Incubation Center",
+            "description": "Space for startups and entrepreneurship.",
+            "capacity": "20 Startups",
+            "equipment": "3D Printers, Prototyping Tools"
+          },
+          {
+            "title": "Industry 4.0 Lab",
+            "description": "Smart manufacturing lab with IoT and automation.",
+            "capacity": "30 Students",
+            "equipment": "Robotic Arms, IoT Sensors"
+          }
+        ]
+      }
+    },
+    {
+      "id": "international",
+      "name": "Global Connections",
+      "icon": "Globe",
+      "content": {
+        "title": "International Collaborations",
+        "items": [
+          {
+            "title": "Student Exchange Program - MIT",
+            "description": "Semester exchange program with MIT.",
+            "country": "USA",
+            "students": "10 per year"
+          },
+          {
+            "title": "Research Collaboration - TU Munich",
+            "description": "Joint research with TU Munich.",
+            "country": "Germany",
+            "projects": "5 Active"
+          },
+          {
+            "title": "Dual Degree Program - Toronto",
+            "description": "Dual degree in Computer Science and Engineering.",
+            "country": "Canada",
+            "duration": "4+1 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": "professional",
+      "name": "Professional Society",
+      "icon": "Users",
+      "content": {
+        "title": "Professional Society Memberships",
+        "items": [
+          {
+            "title": "IEEE",
+            "description": "Institute of Electrical and Electronics Engineers",
+            "logo": "IEEE"
+          },
+          {
+            "title": "ICT Academy",
+            "description": "ICT Academy membership supporting faculty and students.",
+            "logo": "ict"
+          },
+          {
+            "title": "Computer Society of India",
+            "description": "Promotes IT professionals and student involvement.",
+            "logo": "csi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "collaborations",
+      "name": "Powered by Industries",
+      "icon": "Briefcase",
+      "content": {
+        "title": "Collaboration & MoU Partners",
+        "items": [
+          { "title": "IBM", "description": "Curriculum integration and delivery in AI & Data Sciences.", "logo": "ibm" },
+          { "title": "Google", "description": "Academic partner with tools and resources for digital skills.", "logo": "google" },
+          { "title": "Oracle Academy", "description": "Membership providing resources to develop computing skills.", "logo": "oracle" },
+          { "title": "Zoho", "description": "Partner for training and internships in application development.", "logo": "zoho" },
+          { "title": "Red Hat", "description": "Alliance for Linux, cloud, and development technologies.", "logo": "redhat" },
+          { "title": "Dell EMC", "description": "Center of excellence in Data Science and Big Data Analytics.", "logo": "dell" },
+          { "title": "VMware", "description": "Center of excellence in cloud infrastructure services.", "logo": "vmware" },
+          { "title": "CSS Corp", "description": "Skills training and soft skills development.", "logo": "csscorp" },
+          { "title": "Salesforce", "description": "Partner for CRM using AI and app development.", "logo": "salesforce" },
+          { "title": "NASSCOM", "description": "Supports India as a global hub for emerging technologies.", "logo": "nasscom" },
+          { "title": "UiPath", "description": "Center of Excellence in Robotic Process Automation.", "logo": "uipath" },
+          { "title": "Celonis", "description": "Center of Excellence in Process Mining and Execution.", "logo": "celonis" },
+          { "title": "Infosys Springboard", "description": "Training and reskilling in technology.", "logo": "infosys" }
+        ]
+      }
+    },
+    {
+      "id": "projects",
+      "name": "Notable Projects",
+      "icon": "BookOpen",
+      "content": {
+        "title": "Showcasing Notable Projects",
+        "items": [
+          {
+            "title": "Virtual Reality Campus Tour",
+            "description": "Interactive VR tour system for new students and visitors.",
+            "year": "2023",
+            "collaborators": "VR Lab & Design Team"
+          },
+          {
+            "title": "Smart City Traffic Management",
+            "description": "AI-based real-time traffic flow optimization solution.",
+            "year": "2024",
+            "collaborators": "Urban Tech Group"
+          },
+          {
+            "title": "Personalized Learning Platform",
+            "description": "Adaptive learning software using AI to customize courses.",
+            "year": "2024",
+            "collaborators": "EdTech Research Team"
+          }
+        ]
+      }
+    },
+    {
+      "id": "alumni",
+      "name": "Alumni Network",
+      "icon": "Users",
+      "content": {
+        "title": "Distinguished Alumni",
+        "items": [
+          {
+            "title": "Rajesh Kumar - CEO, Tech Innovations",
+            "description": "Leading a Fortune 500 tech company.",
+            "batch": "2010",
+            "company": "Tech Innovations"
+          },
+          {
+            "title": "Priya Sharma - Senior Engineer, Google",
+            "description": "Working on AI projects at Google HQ.",
+            "batch": "2015",
+            "company": "Google"
+          },
+          {
+            "title": "Amit Patel - Founder, StartupXYZ",
+            "description": "Founded successful fintech startup.",
+            "batch": "2012",
+            "company": "StartupXYZ"
+          }
+        ]
+      }
+    }
+  ]
+}
