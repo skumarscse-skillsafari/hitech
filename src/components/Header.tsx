@@ -5,10 +5,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 interface NavigationItem {
   name: string;
   href: string;
-  dropdown?: Array<{
-    name: string;
-    href: string;
-  }>;
+  dropdown?: NavigationItem[]; // recursive
 }
 
 interface HeaderProps {
@@ -23,17 +20,12 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
-  // Handle scroll effect for header background
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top when route changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
@@ -42,55 +34,65 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
     setActiveDropdown(activeDropdown === itemName ? null : itemName);
   };
 
-  // Extended navigation items for desktop
-  const extendedNavItems = [
-    ...navigationItems,
-    { 
-      name: "Research", 
-      href: "/research",
-      dropdown: [
-        { name: "Research Centers", href: "/research/centers" },
-        { name: "Publications", href: "/research/publications" },
-        { name: "Projects", href: "/research/projects" },
-        { name: "Collaborations", href: "/research/collaborations" }
-      ]
-    },
-    { 
-      name: "Student Life", 
-      href: "/student-life",
-      dropdown: [
-        { name: "Clubs & Societies", href: "/student-life/clubs" },
-        { name: "Sports", href: "/student-life/sports" },
-        { name: "Cultural Activities", href: "/student-life/cultural" },
-        { name: "Hostels", href: "/student-life/hostels" }
-      ]
-    },
-    { 
-      name: "Alumni", 
-      href: "/alumni",
-      dropdown: [
-        { name: "Alumni Network", href: "/alumni/network" },
-        { name: "Success Stories", href: "/alumni/stories" },
-        { name: "Events", href: "/alumni/events" },
-        { name: "Donations", href: "/alumni/donations" }
-      ]
-    },
-    { 
-      name: "Resources", 
-      href: "/resources",
-      dropdown: [
-        { name: "Library", href: "/resources/library" },
-        { name: "E-Learning", href: "/resources/elearning" },
-        { name: "Downloads", href: "/resources/downloads" },
-        { name: "Academic Calendar", href: "/resources/calendar" }
-      ]
-    }
-  ];
+  const renderDropdownItems = (items: NavigationItem[]) => (
+    <div className="py-2">
+      {items.map((item) => (
+        <div key={item.name} className="relative group/sub">
+          {item.dropdown ? (
+            <>
+              <button
+                className="flex justify-between items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+              >
+                <span>{item.name}</span>
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              <div className="absolute top-0 left-full w-64 bg-white border rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+                {renderDropdownItems(item.dropdown)}
+              </div>
+            </>
+          ) : (
+            <Link
+              to={item.href}
+              className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+            >
+              {item.name}
+            </Link>
+          )}
+        </div>
+      ))}
+    </div>
+  );
 
-  // Items to show on desktop (first 6 items)
-  const desktopNavItems = extendedNavItems.slice(0, 6);
-  // Items to show in hamburger menu (remaining items)
-  const hamburgerNavItems = extendedNavItems.slice(6);
+  const renderMobileDropdown = (items: NavigationItem[], level = 0) => (
+    <div className={`${level > 0 ? 'ml-4 mt-2 bg-gray-50 p-2 rounded' : ''}`}>
+      {items.map((item) => (
+        <div key={item.name}>
+          {item.dropdown ? (
+            <>
+              <button
+                onClick={() => handleDropdownToggle(item.name)}
+                className="flex items-center justify-between w-full py-2 px-2 text-sm text-gray-700 hover:text-yellow-600"
+              >
+                <span>{item.name}</span>
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''}`}
+                />
+              </button>
+              {activeDropdown === item.name && renderMobileDropdown(item.dropdown, level + 1)}
+            </>
+          ) : (
+            <Link
+              to={item.href}
+              className="block py-2 px-3 text-sm text-gray-600 hover:text-yellow-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {item.name}
+            </Link>
+          )}
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <header className={`fixed top-10 w-full z-40 transition-all duration-300 ${
@@ -98,24 +100,16 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
+          {/* Logo and Titles */}
           <Link to="/" className="flex items-center space-x-3 flex-shrink-0">
             <div className="bg-white p-1 rounded-lg shadow-md">
-              <img 
-                src="/Logo.jpg" 
-                alt="Hindusthan Institute of Technology Logo"
-                className="h-16 w-auto object-contain"
-              />
+              <img src="/Logo.jpg" alt="Logo" className="h-16 w-auto object-contain" />
             </div>
-            
-            {/* Desktop College Name */}
             <div className="hidden lg:block">
               <div className="text-xl font-bold text-yellow-600 leading-tight">{collegeName}</div>
               <div className="text-xs font-bold text-gray-600 leading-tight">{collegeSubtitle.split(";")[0]}</div>
               <div className="text-xs text-gray-600 leading-tight">{collegeSubtitle.split(";")[1]}</div>
             </div>
-            
-            {/* Mobile College Name - Enhanced */}
             <div className="lg:hidden">
               <div className="text-sm font-bold text-yellow-600 leading-tight">
                 Hindusthan Institute<br />of Technology
@@ -126,9 +120,9 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center space-x-1">
-            {desktopNavItems.map((item) => (
+            {navigationItems.map((item) => (
               <div key={item.name} className="relative group">
                 {item.dropdown ? (
                   <div className="relative">
@@ -143,27 +137,11 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                       <span>{item.name}</span>
                       <ChevronDown className="h-4 w-4" />
                     </button>
-                    
-                    {/* Dropdown Menu */}
-                    <div 
+                    <div
                       className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                       onMouseLeave={() => setActiveDropdown(null)}
                     >
-                      <div className="py-2">
-                        {item.dropdown.map((subItem) => (
-                          <Link
-                            key={subItem.name}
-                            to={subItem.href}
-                            className={`block px-4 py-3 text-sm transition-colors hover:bg-yellow-50 ${
-                              location.pathname === subItem.href
-                                ? 'text-yellow-600 bg-yellow-50 border-r-2 border-yellow-500'
-                                : 'text-gray-700 hover:text-yellow-600'
-                            }`}
-                          >
-                            {subItem.name}
-                          </Link>
-                        ))}
-                      </div>
+                      {renderDropdownItems(item.dropdown)}
                     </div>
                   </div>
                 ) : (
@@ -180,59 +158,9 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                 )}
               </div>
             ))}
-            
-            {/* Hamburger Menu for Extra Items on Desktop */}
-            {hamburgerNavItems.length > 0 && (
-              <div className="relative group">
-                <button
-                  className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
-                  title="More Options"
-                >
-                  <Menu className="h-5 w-5 text-gray-700" />
-                </button>
-                
-                {/* Desktop Hamburger Dropdown */}
-                <div className="absolute top-full right-0 mt-1 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
-                    {hamburgerNavItems.map((item) => (
-                      <div key={item.name}>
-                        {item.dropdown ? (
-                          <div className="relative group/sub">
-                            <button className="w-full flex items-center justify-between px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">
-                              <span>{item.name}</span>
-                              <ChevronDown className="h-4 w-4" />
-                            </button>
-                            <div className="absolute left-full top-0 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                              <div className="py-2">
-                                {item.dropdown.map((subItem) => (
-                                  <Link
-                                    key={subItem.name}
-                                    to={subItem.href}
-                                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
-                                  >
-                                    {subItem.name}
-                                  </Link>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-                        ) : (
-                          <Link
-                            to={item.href}
-                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
-                          >
-                            {item.name}
-                          </Link>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
           </nav>
 
-          {/* Mobile menu button */}
+          {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
@@ -247,47 +175,33 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-xl border-t max-h-96 overflow-y-auto">
+          <div className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-xl border-t max-h-[70vh] overflow-y-auto z-50">
             <nav className="px-4 py-4 space-y-2">
-              {extendedNavItems.map((item) => (
-                <div key={item.name}>
-                  {item.dropdown ? (
-                    <div>
-                      <button
-                        onClick={() => handleDropdownToggle(item.name)}
-                        className="flex items-center justify-between w-full py-3 text-gray-700 hover:text-yellow-600 font-medium transition-colors"
-                      >
-                        <span>{item.name}</span>
-                        <ChevronDown className={`h-4 w-4 transition-transform ${
-                          activeDropdown === item.name ? 'rotate-180' : ''
-                        }`} />
-                      </button>
-                      {activeDropdown === item.name && (
-                        <div className="ml-4 mt-2 space-y-2 bg-gray-50 rounded-lg p-2">
-                          {item.dropdown.map((subItem) => (
-                            <Link
-                              key={subItem.name}
-                              to={subItem.href}
-                              className="block py-2 px-3 text-sm text-gray-600 hover:text-yellow-600 hover:bg-white rounded transition-colors"
-                              onClick={() => setIsMenuOpen(false)}
-                            >
-                              {subItem.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ) : (
-                    <Link
-                      to={item.href}
-                      className="block py-3 text-gray-700 hover:text-yellow-600 font-medium transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
+              {navigationItems.map((item) =>
+                item.dropdown ? (
+                  <div key={item.name}>
+                    <button
+                      onClick={() => handleDropdownToggle(item.name)}
+                      className="flex items-center justify-between w-full py-3 text-gray-700 hover:text-yellow-600 font-medium transition-colors"
                     >
-                      {item.name}
-                    </Link>
-                  )}
-                </div>
-              ))}
+                      <span>{item.name}</span>
+                      <ChevronDown className={`h-4 w-4 transition-transform ${
+                        activeDropdown === item.name ? 'rotate-180' : ''
+                      }`} />
+                    </button>
+                    {activeDropdown === item.name && renderMobileDropdown(item.dropdown)}
+                  </div>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block py-3 text-gray-700 hover:text-yellow-600 font-medium transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
             </nav>
           </div>
         )}

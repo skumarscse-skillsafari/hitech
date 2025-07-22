@@ -13,8 +13,8 @@ const methods: Method[] = [
     image: '/images/project-based.jpg',
   },
   {
-    title: 'Flipped Classroom',
-    description: 'Students study theory at home and apply it during class.',
+    title: 'Active Learning with Technology',
+    description: 'The institution integrates technology with active learning pedagogies, fostering a learner-centric environment. They use interactive tools like Kahoot, Mentimeter, and Poll Everywhere for real-time assessment, virtual labs, and coding platforms for interactive learning. These tools promote active participation, problem-solving, and critical thinking, enhancing attention, motivation, and retention.',
     image: '/images/flipped-classroom.jpg',
   },
   {
