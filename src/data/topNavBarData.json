@@ -13,51 +13,58 @@
         "href": "/erp",
         "external": true
       },
-      {
-        "name": "IQAC",
-        "href": "/iqac",
-        "dropdown": [
-          { "name": "About IQAC", "href": "/iqac/about" },
-          { "name": "IQAC Committee", "href": "/iqac/committee" },
-          { "name": "IQAC Reports", "href": "/iqac/reports" },
-          { "name": "Quality Initiatives", "href": "/iqac/initiatives" },
-          { "name": "Statutory", "href": "/iqac/audit" },
-          { "name": "Non Statutory", "href": "/iqac/audit" },
-          { "name": "Best Practices", "href": "/iqac/best-practices" }
-        ]
-      },
-      {
-        "name": "NIRF",
-        "href": "/nirf",
-        "dropdown": [
-          { "name": "NIRF Ranking", "href": "/nirf/ranking" },
-          { "name": "NIRF Data", "href": "/nirf/data" },
-          { "name": "NIRF Reports", "href": "/nirf/reports" },
-          { "name": "Performance Metrics", "href": "/nirf/metrics" }
-        ]
-      },
-      {
-        "name": "NAAC",
-        "href": "/naac",
-        "dropdown": [
-          { "name": "NAAC Accreditation", "href": "/naac/accreditation" },
-          { "name": "Self Study Report", "href": "/naac/ssr" },
-          { "name": "NAAC Certificate", "href": "/naac/certificate" },
-          { "name": "Quality Assurance", "href": "/naac/quality-assurance" },
-          { "name": "NAAC Guidelines", "href": "/naac/guidelines" }
-        ]
-      },
-      {
-        "name": "NBA",
-        "href": "/nba",
-        "dropdown": [
-          { "name": "NBA Accreditation", "href": "/nba/accreditation" },
-          { "name": "Accredited Programs", "href": "/nba/programs" },
-          { "name": "NBA Reports", "href": "/nba/reports" },
-          { "name": "Quality Standards", "href": "/nba/standards" },
-          { "name": "NBA Guidelines", "href": "/nba/guidelines" }
-        ]
-      },
+{
+  "name": "Accreditation",
+  "href": "/accred",
+  "dropdown": [
+    {
+      "name": "IQAC",
+      "href": "/accred/iqac",
+      "dropdown": [
+        { "name": "About IQAC", "href": "/accred/iqac/about" },
+        { "name": "IQAC Reports", "href": "/accred/iqac/reports" },
+        { "name": "Quality Initiatives", "href": "/accred/iqac/initiatives" },
+        { "name": "Statutory", "href": "/accred/iqac/statutory" },
+        { "name": "Non-Statutory", "href": "/accred/iqac/nonstatutory" },
+        { "name": "Best Practices", "href": "/accred/iqac/best-practices" }
+      ]
+    },
+        {
+      "name": "NIRF",
+      "href": "/accred/nirf",
+      "dropdown": [
+        { "name": "NIRF Ranking", "href": "/accred/nirf/nirfrank" },
+        { "name": "NIRF Data", "href": "/accred/nirf/nirfdata" },
+        { "name": "NIRF Reports", "href": "/accred/nirf/nirfreports" },
+        { "name": "Performance Metrics", "href": "/accred/nirf/performmetrics" }
+      ]
+    },
+        {
+      "name": "NAAC",
+      "href": "/accred/naac",
+      "dropdown": [
+        { "name": "NAAC Accreditation", "href": "/accred/naac/naacacc" },
+        { "name": "Self Study Report", "href": "/accred/naac/selfstudy" },
+        { "name": "NAAC Certificate", "href": "/accred/naac/certific" },
+        { "name": "Quality Assurance", "href": "/accred/naac/quality" },
+        { "name": "NAAC Guidelines", "href": "/accred/naac/guidelines" }
+      ]
+    },
+        {
+      "name": "NBA",
+      "href": "/accred/nba",
+      "dropdown": [
+        { "name": "NBA Accreditations", "href": "/accred/nba/nbaaccred" },
+        { "name": "Accredited Programs", "href": "/accred/nba/prog" },
+        { "name": "NBA Reports", "href": "/accred/nba/nbareports" },
+        { "name": "Quality Standards", "href": "/accred/nba/quality" },
+        { "name": "NBA Guidelines", "href": "/accred/nba/nbaguidelines" }
+      ]
+    },
+    { "name": "ARIIA", "href": "/accred/ariia" }
+  ]
+},
+
       {
         "name": "AICTE",
         "href": "/aicte",
