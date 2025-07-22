@@ -7,7 +7,6 @@ import DepartmentCards from '../components/DepartmentCards';
 import Gallery from '../components/Gallery';
 import Placements from '../components/Placements';
 import FacultyCarousel from '../components/FacultyCarousel';
-import SocialMediaCarousel from '../components/SocialMediaCarousel';
 import NewsEventsSection from '../components/NewsEventsSection';
 import Admissions from '../components/Admissions';
 import FAQ from '../components/FAQ';
@@ -18,7 +17,7 @@ import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg";
-
+import DataTable from '../DataTable';
 import { Award, Trophy } from 'lucide-react';
 
 const HomePage: React.FC = () => {
@@ -123,11 +122,6 @@ const HomePage: React.FC = () => {
           }))}
         />
       </SectionWrapper>
-
-      <SectionWrapper className="py-20 bg-white" lazy lazyHeight="600px" lazyDelay={1000}>
-        <SocialMediaCarousel />
-      </SectionWrapper>
-
       <SectionWrapper lazy lazyHeight="400px" lazyDelay={1100}>
         <Gallery gallery={collegeData.gallery} />
       </SectionWrapper>
@@ -150,6 +144,7 @@ const HomePage: React.FC = () => {
 
       <SectionWrapper lazy lazyHeight="400px" lazyDelay={2300}>
         <Contact contact={collegeData.contact} />
+        
       </SectionWrapper>
     </PageLayout>
   );
