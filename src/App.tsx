@@ -18,7 +18,6 @@ import InnovativeMethods from './pages/InnovativeMethods';
 import Objectives from './pages/objectives';
 import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
-import BoardOfGovernors from './pages/BoardOfGovernance';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
 
@@ -27,7 +26,7 @@ import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
-
+import DataTable from './DataTable';
 function App() {
   return (
     <HelmetProvider>
@@ -74,6 +73,8 @@ function App() {
                 <Route path="/leadership" element={<PrincipalsDesk />} />
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
+                <Route path="/datatable" element={<DataTable />} />
+                
               </Routes>
             </main>
 
