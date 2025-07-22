@@ -113,7 +113,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                   <img
                     src={member.image || '/images/default-faculty.jpg'}
                     alt={`Faculty photo of ${member.name}`}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = '/images/default-faculty.jpg';
