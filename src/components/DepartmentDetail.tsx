@@ -3,6 +3,7 @@ import { Monitor, Radio, Settings, Building, ArrowRight, Users, BookOpen, Award,
 import LazyLoadWrapper from './LazyLoadWrapper';
 import DepartmentOutcomes from '../components/DepartmentOutcomes';
 import SectionWrapper from './layout/SectionWrapper';
+import ObeInput from '../pages/ObeInputs';
 
 interface Department {
   id: string;
@@ -285,10 +286,34 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
           />
         </SectionWrapper>
 
+ {/* Programs Offered - Unchanged */}
+      <LazyLoadWrapper height="300px" delay={500}>
+        <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <h4 className="text-2xl font-bold text-gray-900 mb-6">Programs Offered</h4>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {department.programs.map((program, index) => (
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group">
+                <h5 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">{program.name}</h5>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <div><span className="font-medium">Duration:</span> {program.duration}</div>
+                  <div><span className="font-medium">Intake:</span> {program.intake}</div>
+                  <div><span className="font-medium">Eligibility:</span> {program.eligibility}</div>
+                </div>
+                <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
+                  <span>Learn More</span>
+                  <ArrowRight className="h-3 w-3" />
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </LazyLoadWrapper>
+
       {/* Enhanced OBE Philosophy Section */}
       <LazyLoadWrapper height="500px" delay={500}>
-        <div className="bg-white p-12 rounded-2xl shadow-lg">
-          <h4 className="text-2xl font-bold text-gray-900 mb-6">OBE Philosophy</h4>
+        <div className="bg-white p-12 rounded-2xl shadow-lg text-center mb-12">
+          <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">OBE Philosophy</h4>
+           <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
           <p className="text-gray-700 mb-8 leading-relaxed">
             {departmentWithDefaults.obePhilosophy.description}
           </p>
@@ -329,11 +354,15 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
         </div>
       </LazyLoadWrapper>
 </LazyLoadWrapper>
+
+ <LazyLoadWrapper height="400px" delay={500}> 
+  <ObeInput />
+ </LazyLoadWrapper>
       {/* New Centre of Excellence Section */}
       <LazyLoadWrapper height="400px" delay={500}>
-        <div className="bg-white p-8 rounded-2xl shadow-lg">
-          <h4 className="text-2xl font-bold text-gray-900 mb-6">Centres of Excellence</h4>
-          
+        <div className="bg-white p-12 rounded-2xl shadow-lg text-center mb-12">
+          <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Centres of Excellence</h4>
+          <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
           <div className="relative">
             {/* Carousel */}
             <div 
@@ -389,28 +418,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 
      
 
-      {/* Programs Offered - Unchanged */}
-      <LazyLoadWrapper height="300px" delay={500}>
-        <div className="bg-white p-8 rounded-2xl shadow-lg">
-          <h4 className="text-2xl font-bold text-gray-900 mb-6">Programs Offered</h4>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {department.programs.map((program, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group">
-                <h5 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">{program.name}</h5>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <div><span className="font-medium">Duration:</span> {program.duration}</div>
-                  <div><span className="font-medium">Intake:</span> {program.intake}</div>
-                  <div><span className="font-medium">Eligibility:</span> {program.eligibility}</div>
-                </div>
-                <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
-                  <span>Learn More</span>
-                  <ArrowRight className="h-3 w-3" />
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </LazyLoadWrapper>
+     
       {/* Specializations - Unchanged */}
       <LazyLoadWrapper height="150px" delay={500}>
         <div className="bg-white p-8 rounded-2xl shadow-lg">

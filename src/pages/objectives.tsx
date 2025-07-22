@@ -4,6 +4,7 @@ import { Award, Eye, Target, Landmark, Sparkles } from 'lucide-react';
 const Objectives: React.FC = () => {
   return (
     <div className="mt-0 bg-white">
+     
       {/* Hero Section */}
       <div className="relative w-full h-[280px] md:h-[360px] bg-gradient-to-r from-yellow-50 to-yellow-100 flex items-center justify-center overflow-hidden rounded-xl shadow-inner">
         <img
@@ -100,6 +101,7 @@ const Objectives: React.FC = () => {
         </section>
 
       </div>
+      
     </div>
   );
 };
