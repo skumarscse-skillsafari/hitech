@@ -18,7 +18,7 @@ import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg";
-
+import DataTable from '../DataTable';
 import { Award, Trophy } from 'lucide-react';
 
 const HomePage: React.FC = () => {
@@ -150,6 +150,7 @@ const HomePage: React.FC = () => {
 
       <SectionWrapper lazy lazyHeight="400px" lazyDelay={2300}>
         <Contact contact={collegeData.contact} />
+        
       </SectionWrapper>
     </PageLayout>
   );
