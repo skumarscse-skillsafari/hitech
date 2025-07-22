@@ -103,7 +103,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
       </div>
 
       {/* Slider section */}
-      {faculty.length > 0 ? (
+       {faculty.length > 0 ? (
         <Slider ref={sliderRef} {...sliderSettings}>
           {faculty.map((member) => (
             <div key={member.id} className="px-3">
@@ -151,8 +151,9 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                       <p className="text-yellow-600 font-semibold text-sm">{member.designation}</p>
                     )}
 
-                    <div className="flex items-start gap-2 text-sm text-gray-600 mt-2">
-                      <Brain className="h-4 w-4 text-purple-600 mt-0.5" />
+                    {/* Fixed size specialization icon with consistent alignment */}
+                    <div className="flex items-center gap-2 text-sm text-gray-600 mt-2">
+                      <Brain className="flex-shrink-0 h-5 w-5 text-purple-600" />
                       <span>
                         <span className="font-medium text-gray-800">Specialization:</span>{' '}
                         {member.specialization || '—'}
@@ -160,8 +161,8 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                     </div>
 
                     {member.education && (
-                      <div className="flex items-start gap-2 text-sm text-gray-600 mt-2">
-                        <GraduationCap className="h-4 w-4 text-blue-600 mt-0.5" />
+                      <div className="flex items-center gap-2 text-sm text-gray-600 mt-2">
+                        <GraduationCap className="flex-shrink-0 h-5 w-5 text-blue-600" />
                         <span>
                           <strong>Education:</strong> {getHighestDegree(member.education)}
                         </span>
