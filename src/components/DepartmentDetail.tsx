@@ -414,7 +414,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
       {/* Specializations - Unchanged */}
       <LazyLoadWrapper height="150px" delay={500}>
         <div className="bg-white p-8 rounded-2xl shadow-lg">
-          <h4 className="text-2xl font-bold text-gray-900 mb-6">Key Specializations</h4>
+          <h4 className="text-2xl font-bold text-gray-900 mb-6">Key Specialized in</h4>
           <div className="flex flex-wrap gap-3">
             {department.specializations.map((spec, index) => (
               <span key={index} className="bg-yellow-50 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium border border-yellow-200 hover:bg-yellow-100 transition-colors">

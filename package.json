@@ -13,6 +13,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
+    "browser-image-compression": "^2.0.2",
     "framer-motion": "^12.23.2",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
