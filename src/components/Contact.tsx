@@ -1,5 +1,14 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Globe, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Youtube
+} from 'lucide-react';
 
 interface ContactProps {
   contact: {
@@ -34,7 +43,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -46,7 +55,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          
+
           {/* Contact Form */}
           <div className="bg-gray-50 p-8 rounded-2xl">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
@@ -56,8 +65,8 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     First Name *
                   </label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Enter your first name"
                   />
@@ -66,8 +75,8 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Last Name *
                   </label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Enter your last name"
                   />
@@ -78,8 +87,8 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Email Address *
                 </label>
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Enter your email address"
                 />
@@ -89,8 +98,8 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Phone Number
                 </label>
-                <input 
-                  type="tel" 
+                <input
+                  type="tel"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Enter your phone number"
                 />
@@ -114,7 +123,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Message *
                 </label>
-                <textarea 
+                <textarea
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Enter your message"
@@ -129,7 +138,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            
+
             {/* Main Contact Info */}
             <div className="bg-blue-50 p-6 rounded-2xl">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
@@ -138,11 +147,11 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                   <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
                     <span className="text-gray-700 block">{contact.address}</span>
-                    <a 
+                    <a
                       href={`https://${contact.website}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-700 text-sm font-medium mt-1 inline-block"
+                      className="text-blue-600 hover:text-blue-700 text-sm font-medium mt-1 inline-block break-all"
                     >
                       {contact.website}
                     </a>
@@ -162,21 +171,23 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
             {/* Social Media */}
             <div className="bg-gray-50 p-6 rounded-2xl">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Follow Us</h3>
-              <div className="grid grid-cols-2 gap-4">
-                {Object.entries(contact.socialMedia).map(([platform, handle]) => {
-                  const IconComponent = socialIcons[platform as keyof typeof socialIcons];
-                  if (!IconComponent) return null;
-                  
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {Object.entries(contact.socialMedia).map(([platform, url]) => {
+                  const Icon = socialIcons[platform as keyof typeof socialIcons];
+                  if (!Icon) return null;
+
                   return (
                     <a
                       key={platform}
-                      href={`#${handle}`}
-                      className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex items-center space-x-3 group"
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex items-center space-x-3 group w-full h-full"
                     >
-                      <IconComponent className="h-6 w-6 text-blue-600 group-hover:text-blue-700" />
+                      <Icon className="h-6 w-6 text-blue-600 group-hover:text-blue-700" />
                       <div>
                         <div className="font-medium text-gray-900 capitalize">{platform}</div>
-                        <div className="text-sm text-gray-600">@{handle}</div>
+                        <div className="text-sm text-gray-600 break-all">{url}</div>
                       </div>
                     </a>
                   );
