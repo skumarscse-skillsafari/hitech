@@ -103,7 +103,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
       </div>
 
       {/* Slider section */}
-      {faculty.length > 0 ? (
+       {faculty.length > 0 ? (
         <Slider ref={sliderRef} {...sliderSettings}>
           {faculty.map((member) => (
             <div key={member.id} className="px-3">
