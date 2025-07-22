@@ -171,7 +171,7 @@
     },
     {
       "id": 2,
-      "image": "...",
+      "image": "/images/Dr. N.B. Mahesh Kumar .jpg",
       "name": "Dr.N.B Mahesh Kumar ",
       "designation": "Professor",
       "specialization": "Computer Science And Engineering",
@@ -199,7 +199,7 @@
     },
     {
       "id": 4,
-      "image": "...",
+      "image": "/images/subhalakshmi.jpg",
       "name": "Dr.R.T. Subhalaskhmi ",
       "designation": "Assistant Professor",
       "specialization": "Medical Image Analysis, Deep Learning and Machine Learning.",
@@ -213,7 +213,7 @@
     },
     {
       "id": 5,
-      "image": "...",
+      "image": "/images/senthilkumar.jpg",
       "name": "Dr.R.Senthil Kumar ",
       "designation": "Assistant Professor",
       "specialization": "IoT Technology and AI with Machine Learning Techniques",
@@ -241,7 +241,7 @@
     },
     {
       "id": 7,
-      "image": "...",
+      "image": "/images/vidhya D.jpg",
       "name": "Dr.D.Vidhya ",
       "designation": "Assistant Professor",
       "specialization": "Machine Learning ",
@@ -255,7 +255,7 @@
     },
     {
       "id": 8,
-      "image": "...",
+      "image": "/images/banupriya.jpg",
       "name": "Mrs.M. Banupriya ",
       "designation": "Assistant Professor",
       "specialization": "Computer Science And Engineering",
@@ -269,7 +269,7 @@
     },
     {
       "id": 9,
-      "image": "...",
+      "image": "/images/rajaprabha.jpg",
       "name": "Mrs. C.E. Rajaprabha",
       "designation": "Assistant Professor",
       "specialization": "Networks and Artificial intelligence",
@@ -283,7 +283,7 @@
     },
     {
       "id": 10,
-      "image": "...",
+      "image": "/images/NIshanandhini.jpg",
       "name": "Mrs.A. Nishanandhini",
       "designation": "Assistant Professor",
       "specialization": "Networks",
@@ -297,7 +297,7 @@
     },
     {
       "id": 11,
-      "image": "...",
+      "image": "/images/sureshkumar.jpg",
       "name": "Dr.P.Suresh Kumar ",
       "designation": "Assistant Professor",
       "specialization": "cloud computing",
@@ -311,7 +311,7 @@
     },
     {
       "id": 12,
-      "image": "...",
+      "image": "/images/devendran.jpg",
       "name": "Mr.M. Devendran ",
       "designation": "Assistant Professor",
       "specialization": "",
@@ -325,7 +325,7 @@
     },
     {
       "id": 13,
-      "image": "...",
+      "image": "/images/murugan.jpg",
       "name": "Mr.K. Murugan",
       "designation": "Assistant Professor",
       "specialization": "Computer Science And Engineering",
@@ -339,7 +339,7 @@
     },
     {
       "id": 14,
-      "image": "...",
+      "image": "/images/uma maheshwar.jpg",
       "name": "Ms. P.Uma Maheswari ",
       "designation": "Assistant Professor",
       "specialization": "Computer Science And Engineering",
@@ -353,7 +353,7 @@
     },
     {
       "id": 15,
-      "image": "...",
+      "image": "/images/priyanka.jpeg",
       "name": "Mrs. V. Priyanka",
       "designation": "Assistant Professor",
       "specialization": "AIML networks",
@@ -381,7 +381,7 @@
     },
     {
       "id": 17,
-      "image": "...",
+      "image": "/images/udhayakumar j.jpg",
       "name": "Mr.T. Udhayakumar",
       "designation": "Assistant Professor",
       "specialization": "Internet of Things ",
@@ -395,7 +395,7 @@
     },
     {
       "id": 18,
-      "image": "...",
+      "image": "/images/jayaprakash.jpg",
       "name": "Mr.S. Jayaprakash ",
       "designation": "Assistant Professor",
       "specialization": "Networks,DBMS",
@@ -409,7 +409,7 @@
     },
     {
       "id": 19,
-      "image": "...",
+      "image": "/images/abinaya.jpg",
       "name": "Mrs. N. Abinaya",
       "designation": "Assistant Professor",
       "specialization": "Machine learning,Deep learning,Natural language Processing",
@@ -423,7 +423,7 @@
     },
     {
       "id": 20,
-      "image": "...",
+      "image": "/images/Johny.jpg",
       "name": "Mr. Johny Sebastine",
       "designation": "Assistant Professor",
       "specialization": "Computer Science And Engineering",
@@ -437,7 +437,7 @@
     },
     {
       "id": 21,
-      "image": "...",
+      "image": "/images/Pavithra j.jpg",
       "name": "Ms. J. Pavithra",
       "designation": "Assistant Professor",
       "specialization": "Computer Science And Engineering",
@@ -451,7 +451,7 @@
     },
     {
       "id": 22,
-      "image": "...",
+      "image": "/images/mookhambika.jpeg",
       "name": "Mrs.N. Mookhambika ",
       "designation": "Assistant Professor",
       "specialization": "Green WirelessSensor Networks",
@@ -465,7 +465,7 @@
     },
     {
       "id": 23,
-      "image": "...",
+      "image": "/images/suganthi.jpg",
       "name": "Mrs.D. Suganthi",
       "designation": "Assistant Professor",
       "specialization": "Wireless Sensor Networks",
@@ -479,7 +479,7 @@
     },
     {
       "id": 24,
-      "image": "...",
+      "image": "/images/Ramalakshmi B - RAMALAKSHMI B.jpg",
       "name": "Mrs. B.Ramalakshmi",
       "designation": "Assistant Professor",
       "specialization": "Machine Learning ",
@@ -493,7 +493,7 @@
     },
     {
       "id": 25,
-      "image": "...",
+      "image": "/images/praveena.jpg",
       "name": "Mrs .A. Praveena ",
       "designation": "Assistant Professor",
       "specialization": "Image processing,Machine Learning,Deep learning",
@@ -521,7 +521,7 @@
     },
     {
       "id": 27,
-      "image": "...",
+      "image": "/images/periyasamy pn.JPG",
       "name": "Mr.P.N Periyasamy ",
       "designation": "Assistant Professor",
       "specialization": "Network security",
@@ -535,7 +535,7 @@
     },
     {
       "id": 28,
-      "image": "...",
+      "image": "/images/uthayakumar j.jpg",
       "name": "Mr.J. Uthayakumar",
       "designation": "Assistant Professor",
       "specialization": "Computer Science",
