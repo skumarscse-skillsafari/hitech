@@ -10,6 +10,7 @@ import FacilitiesCarousel from '../components/FacilitiesCarousel';
 import TabsSection from '../components/TabSection';
 
 import departmentsData from '../data/departmentsData.json';
+import StudentClubs from './StuClub';
 
 const DepartmentPage: React.FC = () => {
   const { departmentId } = useParams<{ departmentId: string }>();
@@ -32,6 +33,11 @@ const DepartmentPage: React.FC = () => {
         <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
           <DepartmentDetail department={department} />
         </SectionWrapper>
+
+        <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
+          <StudentClubs />
+        </SectionWrapper>
+
 
         {/* Teaching Methodologies */}
         <SectionWrapper lazy lazyHeight="500px" lazyDelay={900} className="mt-12">
