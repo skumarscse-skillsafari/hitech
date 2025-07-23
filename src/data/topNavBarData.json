@@ -61,7 +61,16 @@
         { "name": "NBA Guidelines", "href": "/accred/nba/nbaguidelines" }
       ]
     },
-    { "name": "ARIIA", "href": "/accred/ariia" }
+            {
+      "name": "ARIIA",
+      "href": "/accred/ariia",
+      "dropdown": [
+        { "name": "ARIIA Ranking", "href": "/accred/ariia/ariiarank" },
+        { "name": "ARIIA Data", "href": "/accred/ariia/ariiadata" },
+        { "name": "ARIIA Reports", "href": "/accred/ariia/ariiareports" },
+        { "name": "Performance Metrics", "href": "/accred/ariia/performmetrics" }
+      ]
+    }
   ]
 },
 
