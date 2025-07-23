@@ -217,7 +217,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       />
 
       {/* Vertical TNEA Code Button - Left Side */}
-      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
+      <div className="fixed left-0 top-1/3 transform -translate-y-1/2 z-50">
         <div className="rotate-90 origin-bottom-left">
           <button
             className="text-sm md:text-base font-bold bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-b-xl shadow-lg transition-all duration-300 whitespace-nowrap rotate-180"
