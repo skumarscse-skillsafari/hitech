@@ -40,15 +40,31 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
     youtube: Youtube,
   };
 
+  const getFullURL = (platform: string, url: string): string => {
+    if (url.startsWith("http")) return url;
+
+    const baseUrls: Record<string, string> = {
+      facebook: "https://facebook.com/",
+      twitter: "https://twitter.com/",
+      linkedin: "https://linkedin.com/school/",
+      instagram: "https://instagram.com/",
+      youtube: "https://youtube.com/@"
+    };
+
+    return `${baseUrls[platform] || "https://"}${url}`;
+  };
+
+  const getDisplayName = (url: string): string => {
+    if (url.includes('/')) return url.split('/').pop() || url;
+    return url;
+  };
+
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Get in Touch
-          </h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to begin your engineering journey? Contact us for admissions, programs, or any other inquiries
           </p>
@@ -62,9 +78,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name *
-                  </label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
                   <input
                     type="text"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -72,9 +86,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name *
-                  </label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
                   <input
                     type="text"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -84,9 +96,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address *
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
                 <input
                   type="email"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -95,9 +105,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
                 <input
                   type="tel"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -106,9 +114,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject *
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Subject *</label>
                 <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                   <option value="">Select a subject</option>
                   <option value="admissions">Admissions Inquiry</option>
@@ -120,9 +126,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Message *</label>
                 <textarea
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -136,10 +140,9 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
             </form>
           </div>
 
-          {/* Contact Information */}
+          {/* Contact Info */}
           <div className="space-y-8">
 
-            {/* Main Contact Info */}
             <div className="bg-blue-50 p-6 rounded-2xl">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
               <div className="space-y-4">
@@ -179,7 +182,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                   return (
                     <a
                       key={platform}
-                      href={url}
+                      href={getFullURL(platform, url)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex items-center space-x-3 group w-full h-full"
@@ -187,7 +190,7 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                       <Icon className="h-6 w-6 text-blue-600 group-hover:text-blue-700" />
                       <div>
                         <div className="font-medium text-gray-900 capitalize">{platform}</div>
-                        <div className="text-sm text-gray-600 break-all">{url}</div>
+                        <div className="text-sm text-gray-600 break-all">{getDisplayName(url)}</div>
                       </div>
                     </a>
                   );
@@ -197,7 +200,6 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
 
           </div>
         </div>
-
       </div>
     </section>
   );
