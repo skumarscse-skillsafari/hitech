@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   ArrowRight,
   Play,
@@ -27,47 +27,60 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
   const [showControls, setShowControls] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      const handleResizeFix = () => {
+        // Force a reflow in case of any zoom-related layout shift
+        video.style.display = 'none';
+        void video.offsetHeight;
+        video.style.display = '';
+      };
+
+      window.addEventListener('resize', handleResizeFix);
+      return () => window.removeEventListener('resize', handleResizeFix);
+    }
+  }, []);
+
   const togglePlay = () => {
-    if (videoRef.current) {
+    const video = videoRef.current;
+    if (video) {
       if (isPlaying) {
-        videoRef.current.pause();
+        video.pause();
       } else {
-        videoRef.current.play();
+        video.play();
       }
       setIsPlaying(!isPlaying);
     }
   };
 
   const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
+    const video = videoRef.current;
+    if (video) {
+      video.muted = !isMuted;
       setIsMuted(!isMuted);
     }
   };
 
   const toggleFullscreen = () => {
-    if (videoRef.current && videoRef.current.requestFullscreen) {
-      videoRef.current.requestFullscreen();
+    const video = videoRef.current;
+    if (video?.requestFullscreen) {
+      video.requestFullscreen();
     }
   };
 
   const handleWatchCampusTour = () => {
-    if (videoRef.current) {
-      const video = videoRef.current;
+    const video = videoRef.current;
+    if (video) {
       video.muted = false;
       setIsMuted(false);
       video.play();
       setIsPlaying(true);
 
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if ((video as any).webkitEnterFullscreen) {
-        (video as any).webkitEnterFullscreen();
-      } else if ((video as any).mozRequestFullScreen) {
-        (video as any).mozRequestFullScreen();
-      } else if ((video as any).msRequestFullscreen) {
-        (video as any).msRequestFullscreen();
-      }
+      if (video.requestFullscreen) video.requestFullscreen();
+      else if ((video as any).webkitEnterFullscreen) (video as any).webkitEnterFullscreen();
+      else if ((video as any).mozRequestFullScreen) (video as any).mozRequestFullScreen();
+      else if ((video as any).msRequestFullscreen) (video as any).msRequestFullscreen();
     }
   };
 
@@ -88,8 +101,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         playsInline
         poster={hero.backgroundImage}
       >
-        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-        <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
+        <source src="/drone_og.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -102,22 +114,22 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       }`}>
         <button
           onClick={togglePlay}
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
           title={isPlaying ? 'Pause video' : 'Play video'}
+          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
         >
           {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
         </button>
         <button
           onClick={toggleMute}
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
           title={isMuted ? 'Unmute video' : 'Mute video'}
+          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
         >
           {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
         </button>
         <button
           onClick={toggleFullscreen}
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
           title="Fullscreen"
+          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
         >
           <Maximize className="h-5 w-5" />
         </button>
@@ -216,7 +228,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         }}
       />
 
-      {/* Vertical TNEA Code Button - Left Side */}
+      {/* Vertical TNEA Code Button */}
       <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
         <div className="rotate-90 origin-bottom-left">
           <button
