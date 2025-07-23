@@ -97,14 +97,16 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
             
             {/* Social Media */}
             <div className="flex space-x-4">
-              {Object.entries(contact.socialMedia).map(([platform, handle]) => {
+              {Object.entries(contact.socialMedia).map(([platform, url]) => {
                 const IconComponent = socialIcons[platform as keyof typeof socialIcons];
                 if (!IconComponent) return null;
-                
+
                 return (
                   <a
                     key={platform}
-                    href={`#${handle}`}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gray-800 hover:bg-blue-600 p-2 rounded-lg transition-colors duration-300"
                   >
                     <IconComponent className="h-5 w-5" />
