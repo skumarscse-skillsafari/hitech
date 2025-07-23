@@ -65,7 +65,7 @@ const LocationMap: React.FC = () => {
                     Hindusthan Institute of Technology<br />
                     Valley Campus, Pollachi Main Road, Othakkalmandapam (Post),
                     Coimbatore - 641 032
-                    Tamil Nadu, INDIA.<br />
+                    Tamil Nadu, India.<br />
                   
                   </p>
                 </div>
