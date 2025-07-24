@@ -1,3 +1,4 @@
+
 {
   "departments": [
     {
@@ -109,38 +110,15 @@
         }
       ],
       
-      "teachingMethodologies": [
-        {
-          "id": 1,
-          "title": "Active Learning with Technology",
-          "description": "Students engage in hands-on learning using interactive tools, virtual labs, and coding platforms in ICT-enabled classrooms.",
-          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-          "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
-        },
-        {
-          "id": 2,
-          "title": "Problem-Based Learning with Digital Tools",
-          "description": "Students solve real-world problems using collaboration tools, project management platforms, and cloud-based deployment resources.",
-          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-          "image": "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400"
-        },
-        {
-          "id": 3,
-          "title": "Flipped Classrooms with Online Resources",
-          "description": "Flipped Classroom enhances learning via digital content, discussions, expert talks, and active student engagement.",
-          
-          "image": "public\flippedcls.jpg"
-        }
-        
-      ],
-      
+    
+
   "faculty": [
   {
     "id": 1,
     "image": "...",
     "name": "Dr. A.Jameer Basha ",
     "designation": "Professor",
-    "specialization": "machine learning, deep learning, and generative AI.",
+    "specialization": "Machine learning, Deep learning, and Generative AI.",
     "experience": "18 years",
     "education": "Ph.D,M.Tech",
     "email": "jameer@hit.edu.in",
@@ -168,10 +146,10 @@
     "image": "...",
     "name": "Dr. S.Ramasamy",
     "designation": "Associate Professor",
-    "specialization": "cloud computing",
+    "specialization": "Cloud Computing",
     "experience": "12 years",
     "education": "Ph.D,M.E",
-    "email": "Ramasamy.s@hit.edu.in",
+    "email": "ramasamy.s@hit.edu.in",
     "date_of_joining": "2011-06-20",
     "patents": 0,
     "publications": 0,
@@ -182,7 +160,7 @@
     "image": "/images/subhalakshmi.jpg",
     "name": "Dr.R.T. Subhalaskhmi ",
     "designation": "Assistant Professor",
-    "specialization": "Medical Image Analysis, Deep Learning and Machine Learning.",
+    "specialization": "Computer Science And Engineering",
     "experience": "11 years",
     "education": "Ph.D,M.Tech",
     "email": "subhalakshmi.rt@hit.edu.in",
@@ -252,7 +230,7 @@
     "image": "/images/rajaprabha.jpg",
     "name": "Mrs. C.E. Rajaprabha",
     "designation": "Assistant Professor",
-    "specialization": "Networks and Artificial intelligence",
+    "specialization": "Networks and Artificial Intelligence",
     "experience": "4 years",
     "education": "Ph.D,M.E",
     "email": "rajaprabha.ce@hit.edu.in",
@@ -280,7 +258,7 @@
     "image": "/images/sureshkumar.jpg",
     "name": "Dr.P.Suresh Kumar ",
     "designation": "Assistant Professor",
-    "specialization": "cloud computing",
+    "specialization": "Cloud Computing",
     "experience": "18 years",
     "education": "Ph.D,M.E",
     "email": "psureshkumar2007@gmail.com",
@@ -347,17 +325,17 @@
   },
   {
     "id": 16,
-    "image": "...",
+    "image": "/images/sathish.jpg",
     "name": "Mr. S.Sathishkumar",
     "designation": "Assistant Professor",
-    "specialization": "",
-    "experience": "",
+    "specialization": "ML, Full-stack Development, Generative AI ",
+    "experience": "11 years",
     "education": "M.E/M.Tech",
-    "email": "",
+    "email": "skumarscse@gmail.com",
     "date_of_joining": "2024-08-12",
     "patents": 0,
     "publications": 0,
-    "description": ""
+    "description": "Mr. S. Sathish Kumar has 11 years of experience, including 10 years in academia and over a year in industry. He is currently pursuing a Ph.D. in Computer Science and Engineering at Bharath University. He completed his M.E. in CSE from Sri Krishna Engineering College and B.E. in CSE from KSR College of Engineering, both under Anna University. His specialization includes Machine Learning, Full-Stack Web Development, Generative AI, Prompt Engineering, Data Science, and Analytics. His areas of interest cover electric vehicle optimization, healthcare analytics, and secure AI applications. He has published 3 journal papers, presented 6 papers at international conferences, and attended over 20 FDPs, STTPs, and workshops. He is a member of ISRD, IAENG, and IFERP, and currently serves as an Assistant Professor in the Department of Computer Science and Engineering at Hindusthan Institute of Technology, Coimbatore."
   },
   {
     "id": 17,
@@ -476,7 +454,7 @@
     "image": "/images/praveena.jpg",
     "name": "Mrs .A. Praveena ",
     "designation": "Assistant Professor",
-    "specialization": "Image processing,Machine Learning,Deep learning",
+    "specialization": "Image processing,Machine Learning,Deep Learning",
     "experience": "3 years",
     "education": "M.E",
     "email": "praveenaayyasamy@hit.edu.in",
