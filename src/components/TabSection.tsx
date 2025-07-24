@@ -7,7 +7,7 @@ import {
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import hodPhoto from "../../public/hod-photo.jpg";
+import hodPhoto from "../../public/HOD.png";
 import IEEE from "../../public/IEEE.png";
 import ict from "../../public/ict.png";
 import csi from "../../public/csi_logo.png";
@@ -105,20 +105,25 @@ const TabsSection: React.FC = () => {
             <div className="flex justify-between items-center">
               <h3 className="text-xl md:text-2xl font-bold text-gray-900">{activeTabData.content.title}</h3>
               {activeTab !== 'hod' && (
-  <button className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit">
-    <span className="hidden sm:inline">View more</span>
-    <ChevronRight className="h-4 w-4" />
-  </button>
-)}
-
+                <button className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit">
+                  <span className="hidden sm:inline">View more</span>
+                  <ChevronRight className="h-4 w-4" />
+                </button>
+              )}
             </div>
 
             {activeTab === 'hod' ? (
               <div className="bg-gray-50 p-8 rounded-xl border border-gray-200">
                 <div className="flex flex-col md:flex-row gap-8">
                   <div className="md:w-1/3 flex flex-col items-center">
-                    <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500 shadow-md mb-4">
-                      <img src={hodPhoto} alt="HOD" className="w-full h-full object-cover" />
+                    <div className="w-48 h-48 rounded-lg overflow-hidden border-4 border-yellow-500 shadow-lg mb-4 relative group">
+                      <img 
+                        src={hodPhoto} 
+                        alt="HOD" 
+                        className="w-full h-full object-cover absolute inset-0"
+                        style={{ objectPosition: 'top center' }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <h4 className="font-semibold text-xl text-center text-gray-900 mb-1">
                       {activeTabData.content.items[0].title}
@@ -135,28 +140,28 @@ const TabsSection: React.FC = () => {
                       {activeTabData.content.items[0].description}
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="bg-white p-4 rounded-lg shadow-sm border">
+                      <div className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
                         <h5 className="text-base md:text-lg font-bold text-gray-700 mb-2 flex items-center">
                           <GraduationCap className="h-5 w-5 mr-2 text-yellow-600" />
                           Qualifications
                         </h5>
                         <p className="text-sm md:text-base text-gray-700">{activeTabData.content.items[0].qualification}</p>
                       </div>
-                      <div className="bg-white p-4 rounded-lg shadow-sm border">
+                      <div className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
                         <h5 className="text-base md:text-lg font-bold text-gray-700 mb-2 flex items-center">
                           <Briefcase className="h-5 w-5 mr-2 text-yellow-600" />
                           Experience
                         </h5>
                         <p className="text-sm md:text-base text-gray-700">{activeTabData.content.items[0].experience}</p>
                       </div>
-                      <div className="bg-white p-4 rounded-lg shadow-sm border">
+                      <div className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
                         <h5 className="text-base md:text-lg font-bold text-gray-700 mb-2 flex items-center">
                           <Award className="h-5 w-5 mr-2 text-yellow-600" />
                           Specialization
                         </h5>
                         <p className="text-sm md:text-base text-gray-700">{activeTabData.content.items[0].specialization}</p>
                       </div>
-                      <div className="bg-white p-4 rounded-lg shadow-sm border">
+                      <div className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
                         <h5 className="text-base md:text-lg font-bold text-gray-700 mb-2 flex items-center">
                           <BookOpen className="h-5 w-5 mr-2 text-yellow-600" />
                           Key Achievements
@@ -164,7 +169,7 @@ const TabsSection: React.FC = () => {
                         <p className="text-sm md:text-base text-gray-700">{activeTabData.content.items[0].achievements}</p>
                       </div>
                     </div>
-                    <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-1">
+                    <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-1 transition-colors duration-200">
                       <span>View Full Profile</span>
                       <ChevronRight className="h-4 w-4" />
                     </button>
@@ -173,50 +178,48 @@ const TabsSection: React.FC = () => {
               </div>
             ) : (
               <Slider {...sliderSettings}>
-  {activeTabData.content.items.map((item: any, index: number) => (
-    <div key={index} className="px-2 md:px-4">
-      <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between">
-        <div>
-          <h4 className="font-semibold text-lg md:text-2xl text-gray-800 mb-4">
-            {item.title}
-          </h4>
-          <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
-            {item.description}
-          </p>
+                {activeTabData.content.items.map((item: any, index: number) => (
+                  <div key={index} className="px-2 md:px-4">
+                    <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between">
+                      <div>
+                        <h4 className="font-semibold text-lg md:text-2xl text-gray-800 mb-4">
+                          {item.title}
+                        </h4>
+                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+                          {item.description}
+                        </p>
 
-          {item.logo && (
-            <div className="flex justify-center mb-6">
-              <img
-                src={item.logo}
-                alt={item.title || 'Card logo'}
-                className="h-20 md:h-24 object-contain"
-              />
-            </div>
-          )}
+                        {item.logo && (
+                          <div className="flex justify-center mb-6">
+                            <img
+                              src={item.logo}
+                              alt={item.title || 'Card logo'}
+                              className="h-20 md:h-24 object-contain"
+                            />
+                          </div>
+                        )}
 
-          <div className="space-y-3 text-sm md:text-base text-gray-700">
-            {Object.entries(item).map(([key, value]) => {
-              if (["title", "description", "logo"].includes(key)) return null;
-              return (
-                <div key={key} className="flex justify-between">
-                  <span className="capitalize font-medium">{key}:</span>
-                  <span className="text-gray-800">{value}</span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+                        <div className="space-y-3 text-sm md:text-base text-gray-700">
+                          {Object.entries(item).map(([key, value]) => {
+                            if (["title", "description", "logo"].includes(key)) return null;
+                            return (
+                              <div key={key} className="flex justify-between">
+                                <span className="capitalize font-medium">{key}:</span>
+                                <span className="text-gray-800">{value}</span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
 
-        <button className="mt-6 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-2 transition-colors duration-200">
-          <span>Learn More</span>
-          <ChevronRight className="h-4 w-4" />
-        </button>
-      </div>
-    </div>
-  ))}
-</Slider>
-
-
+                      <button className="mt-6 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-2 transition-colors duration-200">
+                        <span>Learn More</span>
+                        <ChevronRight className="h-4 w-4" />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </Slider>
             )}
           </div>
         )}
