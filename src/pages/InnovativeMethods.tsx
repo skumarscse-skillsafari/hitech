@@ -1,5 +1,10 @@
 import React from 'react';
-
+import col from "../../public/Collaborative Learning with Digital Collaboration Tools.jpg";
+import com from "../../public/Competency-Based Learning with Online Assessments.jpg"
+import Life from "../../public/Lifelong Learning with Micro-Credentials.jpg"
+import online from "../../public/Online and Blended Learning with LMS Integration.jpg.png"
+import Multi from "../../public/Multimedia and Visualization with Digital Content.jpg"
+import Indust from "../../public/Industry-Aligned Courses and Professional Development.jpg"
 interface Method {
   title: string;
   description: string;
@@ -10,32 +15,32 @@ const methods: Method[] = [
   {
     title: 'Collaborative Learning with Digital Collaboration Tools',
     description: 'Students build teamwork skills via collaborative tools, coding platforms, whiteboards, and expert-guided group activities.',
-    image: '/images/project-based.jpg',
+    image:col,
   },
   {
     title: 'Competency-Based Learning with Online Assessments',
     description: 'The department emphasizes skill mastery through practical projects, online assessments, coding challenges, and industry training.',
-    image: '/images/flipped-classroom.jpg',
+    image:com ,
   },
   {
     title: 'Lifelong Learning with Micro-Credentials',
     description: 'Students pursue certifications via MOOCs, industry courses, and visits, promoting continuous, lifelong, and specialized learning.',
-    image: '/images/gamification.jpg',
+    image: Life ,
   },
   {
     title: 'Online and Blended Learning with LMS Integration',
     description: 'Blended learning combines LMS, live sessions, self-paced modules, and industry input for flexible, enriched education.',
-    image: '/images/group-discussion.jpg',
+    image: online,
   },
   {
     title: 'Multimedia and Visualization with Digital Content',
     description: 'Visual aids and tools enhance concept clarity, with expert-led sessions demonstrating real-world data visualization applications.',
-    image: '/images/case-study.jpg',
+    image: Multi,
   },
   {
     title: 'Industry-Aligned Courses and Professional Development',
     description: 'Industry collaboration offers specialized training, real-world exposure, and expert insights, boosting students career readiness.',
-    image: '/images/roleplay.jpg',
+    image: Indust,
   },
 ];
 

@@ -7,7 +7,7 @@
     "description": "Leading the future of engineering education with cutting-edge research, world-class faculty, and industry partnerships.",
     "logo": "/api/placeholder/120/60",
     "hero": {
-      "title": "Shape Tomorrow's Technology Today",
+      "title": "Get the Best in Everything",
       "subtitle": "Join 2500+ alumni who are transforming industries worldwide through innovative engineering solutions.",
       "backgroundImage": "https://images.pexels.com/photos/159306/building-architecture-sky-blue-159306.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "stats": [
@@ -312,19 +312,19 @@
         "name": "Campus",
         "images": [
           {
-            "url": "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "url": "/hit.jpg",
             "caption": "Main Campus Building"
           },
           {
-            "url": "https://images.pexels.com/photos/159306/building-architecture-sky-blue-159306.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "url": "/academic.jpg",
             "caption": "Academic Block"
           },
           {
-            "url": "https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "url": "/library.jpg",
             "caption": "Library Building"
           },
           {
-            "url": "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "url": "/hostel.png",
             "caption": "Student Hostel"
           }
         ]
@@ -333,24 +333,60 @@
         "name": "Laboratories",
         "images": [
           {
-            "url": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "url": "/cslab.jpg",
             "caption": "Computer Science Lab"
           },
           {
-            "url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=800",
-            "caption": "Electronics Lab"
-          },
-           {
-            "url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "url": "/rdmslab.jpg",
             "caption": "RDBMS Lab"
           },
            {
-            "url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "url": "/networklab.jpg",
+            "caption": "Network  Lab"
+          },
+           {
+            "url": "/oslab.jpg",
+            "caption": "Operating System Lab"
+          },
+          {
+            "url": "/electricallab.jpg",
+            "caption": "Electrical Lab"
+          },
+          {
+            "url": "/electronicslab.jpg",
             "caption": "Electronics Lab"
           },
           {
-            "url": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800",
-            "caption": "Mechanical Workshop"
+            "url": "/microlab.jpg",
+            "caption": "MicroProcesssor Lab"
+          },
+          {
+            "url": "/comulab.jpg",
+            "caption": "Communication Lab"
+          },
+          {
+            "url": "/aerolab.jpg",
+            "caption": "Aircraft System Lab"
+          },
+           {
+            "url": "/aerostrlab.jpg",
+            "caption": "Aircraft Structure Lab"
+          },
+           {
+            "url": "/aerodynlab.jpg",
+            "caption": "Aerodynamics Lab"
+          },
+          {
+            "url": "/propullab.jpg",
+            "caption": "Propulsion Lab"
+          },
+           {
+            "url": "/vmlab.jpg",
+            "caption": "VM Lab"
+          },
+          {
+            "url": "/automolab.jpg",
+            "caption": "Automotive Components Lab"
           }
         ]
       },
