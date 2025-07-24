@@ -129,7 +129,10 @@
           { "name": "Contact Directory", "href": "/contact-directory" },
           { "name": "Campus Map", "href": "/campus-map" }
         ]
-      }
+      },
+              {
+      "name": "Contact Us",
+      "href": "/contactus"}
     ]
   }
 }
