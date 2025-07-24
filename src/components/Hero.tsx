@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   ArrowRight,
   Play,
@@ -27,47 +27,60 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
   const [showControls, setShowControls] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      const handleResizeFix = () => {
+        // Force a reflow in case of any zoom-related layout shift
+        video.style.display = 'none';
+        void video.offsetHeight;
+        video.style.display = '';
+      };
+
+      window.addEventListener('resize', handleResizeFix);
+      return () => window.removeEventListener('resize', handleResizeFix);
+    }
+  }, []);
+
   const togglePlay = () => {
-    if (videoRef.current) {
+    const video = videoRef.current;
+    if (video) {
       if (isPlaying) {
-        videoRef.current.pause();
+        video.pause();
       } else {
-        videoRef.current.play();
+        video.play();
       }
       setIsPlaying(!isPlaying);
     }
   };
 
   const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
+    const video = videoRef.current;
+    if (video) {
+      video.muted = !isMuted;
       setIsMuted(!isMuted);
     }
   };
 
   const toggleFullscreen = () => {
-    if (videoRef.current && videoRef.current.requestFullscreen) {
-      videoRef.current.requestFullscreen();
+    const video = videoRef.current;
+    if (video?.requestFullscreen) {
+      video.requestFullscreen();
     }
   };
 
   const handleWatchCampusTour = () => {
-    if (videoRef.current) {
-      const video = videoRef.current;
+    const video = videoRef.current;
+    if (video) {
       video.muted = false;
       setIsMuted(false);
       video.play();
       setIsPlaying(true);
 
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if ((video as any).webkitEnterFullscreen) {
-        (video as any).webkitEnterFullscreen();
-      } else if ((video as any).mozRequestFullScreen) {
-        (video as any).mozRequestFullScreen();
-      } else if ((video as any).msRequestFullscreen) {
-        (video as any).msRequestFullscreen();
-      }
+      if (video.requestFullscreen) video.requestFullscreen();
+      else if ((video as any).webkitEnterFullscreen) (video as any).webkitEnterFullscreen();
+      else if ((video as any).mozRequestFullScreen) (video as any).mozRequestFullScreen();
+      else if ((video as any).msRequestFullscreen) (video as any).msRequestFullscreen();
     }
   };
 
@@ -88,8 +101,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         playsInline
         poster={hero.backgroundImage}
       >
-        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-        <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
+        <source src="/og_drone.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -102,22 +114,22 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       }`}>
         <button
           onClick={togglePlay}
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
           title={isPlaying ? 'Pause video' : 'Play video'}
+          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
         >
           {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
         </button>
         <button
           onClick={toggleMute}
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
           title={isMuted ? 'Unmute video' : 'Mute video'}
+          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
         >
           {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
         </button>
         <button
           onClick={toggleFullscreen}
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
           title="Fullscreen"
+          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
         >
           <Maximize className="h-5 w-5" />
         </button>
@@ -126,19 +138,30 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
         <div className="space-y-8">
-          <div className="animate-fadeIn">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {hero.title}
-            </h1>
-          </div>
-          <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
-            <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
-              {hero.subtitle}
-            </p>
-          </div>
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
+  <div className="space-y-8">
+    <div className="animate-fadeIn">
+     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight">
+  {hero.title}
+</h1>
+
+<p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
+  Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
+</p>
+
+    </div>
+
+    <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
+      <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
+        {hero.subtitle}
+      </p>
+    </div>
+  </div>
+</div>
+
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
             <button
               onClick={() => {
                 const contactSection = document.getElementById('contact');
