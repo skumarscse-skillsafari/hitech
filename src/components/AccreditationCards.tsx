@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import {
-  Award,
-  Shield,
-  Star,
-  Trophy,
-  CheckCircle,
   ChevronDown,
   ChevronUp,
   ChevronRight,
@@ -23,11 +18,10 @@ import indiaToday from '../../public/india_today.jpg';
 import csr from '../../public/csr.jpg';
 import times from '../../public/times.jpg';
 import aicte from '../../public/aicte.jpg';
-import annaUniv from '../../public/annauniversity.jpg';
 import nba from '../../public/nba.jpg';
-import nirf from '../../public/nirf_logo.jpg';
 import naac from '../../public/naac.jpg';
-import iso from '../../public/isoo.jpg';
+import nirf from '../../public/nirf_logo.jpg';
+
 import dqEmployPopup from '../../public/data/dq_employ.png';
 import dqTSchoolPopup from '../../public/data/dq_tschool_popup.png';
 import heRankPopup from '../../public/data/he_popup.png';
@@ -42,7 +36,6 @@ interface Accreditation {
   rankings: string[];
   logo: string;
   color: string;
-  
   popupImage?: string;
   popupDescription?: string;
 }
@@ -52,9 +45,9 @@ const CustomNextArrow = (props: any) => {
   return (
     <div
       onClick={onClick}
-      className="absolute right-[-15px] md:right-[-35px] top-1/2 transform -translate-y-1/2 bg-[#fdeedb] hover:bg-[#fcd3a1] rounded-full shadow-lg w-8 h-8 md:w-12 md:h-12 flex items-center justify-center cursor-pointer z-10 transition-all duration-300"
+      className="absolute right-[-25px] md:right-[-27px] top-1/2 transform -translate-y-1/2 bg-[#fdeedb] hover:bg-[#fcd3a1] rounded-full shadow-lg w-10 h-10 md:w-8 md:h-8 flex items-center justify-center cursor-pointer z-20 transition-all duration-300"
     >
-      <ChevronRight className="text-[#f59e0b] w-4 h-4 md:w-6 md:h-6" />
+      <ChevronRight className="text-[#f59e0b] w-5 h-5 md:w-7 md:h-7" />
     </div>
   );
 };
@@ -64,16 +57,14 @@ const CustomPrevArrow = (props: any) => {
   return (
     <div
       onClick={onClick}
-      className="absolute left-[-15px] md:left-[-35px] top-1/2 transform -translate-y-1/2 bg-[#fdeedb] hover:bg-[#fcd3a1] rounded-full shadow-lg w-8 h-8 md:w-12 md:h-12 flex items-center justify-center cursor-pointer z-10 transition-all duration-300"
+      className="absolute left-[-25px] md:left-[-27px] top-1/2 transform -translate-y-1/2 bg-[#fdeedb] hover:bg-[#fcd3a1] rounded-full shadow-lg w-10 h-10 md:w-8 md:h-8 flex items-center justify-center cursor-pointer z-20 transition-all duration-300"
     >
-      <ChevronLeft className="text-[#f59e0b] w-4 h-4 md:w-6 md:h-6" />
+      <ChevronLeft className="text-[#f59e0b] w-5 h-5 md:w-7 md:h-7" />
     </div>
   );
 };
 
 const AccreditationCards: React.FC = () => {
-  const iconMap = { Award, Shield, Star, Trophy, CheckCircle };
-
   const accreditations: Accreditation[] = [
     {
       name: 'DATA QUEST',
@@ -84,10 +75,9 @@ const AccreditationCards: React.FC = () => {
       ],
       logo: dqEmploy,
       color: 'from-blue-50 to-blue-100',
-      
       popupImage: dqEmployPopup,
       popupDescription:
-        'HiTech is ranked <span class="font-bold text-orange-500">"48"</span> Under All Over India - Private Engineering Colleges, Ranked <span class="font-bold text-orange-500">"55"</span> Under All Over India - Both Government and Private Engineering Colleges by <span class="font-semibold text-blue-600">DATA QUEST Employability Index Ranking - 2025</span>',
+        'HiTech is ranked <span class="font-bold text-orange-500">"48"</span> ...',
     },
     {
       name: 'Data Quest',
@@ -98,10 +88,9 @@ const AccreditationCards: React.FC = () => {
       ],
       logo: dqTSchool,
       color: 'from-green-50 to-green-100',
-      
       popupImage: dqTSchoolPopup,
       popupDescription:
-        'HiTech is ranked <span class="font-bold text-orange-500">"68"</span> Under All Over India - Private Engineering Colleges, Ranked <span class="font-bold text-orange-500">"74"</span> Under All Over India - Both Government and Private Engineering Colleges by <span class="font-semibold text-blue-600">Data Quest Best T-Schools 2025</span>',
+        'HiTech is ranked <span class="font-bold text-orange-500">"68"</span> ...',
     },
     {
       name: 'HE Ranking',
@@ -109,10 +98,9 @@ const AccreditationCards: React.FC = () => {
       rankings: ['Ranked 71 – Best International Level Universities and Colleges'],
       logo: heRank,
       color: 'from-purple-50 to-purple-100',
-      
       popupImage: heRankPopup,
       popupDescription:
-        'HiTech is ranked <span class="font-bold text-orange-500">"71"</span> Under Best International Level Universities And Colleges by <span class="font-semibold text-blue-600">HE Higher Education Ranking-2024</span>',
+        'HiTech is ranked <span class="font-bold text-orange-500">"71"</span> ...',
     },
     {
       name: 'The Week',
@@ -126,10 +114,9 @@ const AccreditationCards: React.FC = () => {
       ],
       logo: theWeek,
       color: 'from-yellow-50 to-amber-100',
-      
       popupImage: theWeekPopup,
       popupDescription:
-        'HiTech is ranked <span class="font-bold text-orange-500">"139"</span> in All India Engineering Colleges, <span class="font-bold text-orange-500">"113"</span> in Private Engineering Colleges, and <span class="font-bold text-orange-500">"17"</span> in Emerging Engineering Colleges by <span class="font-semibold text-blue-600">The Week Engineering Survey 2025</span>',
+        'HiTech is ranked <span class="font-bold text-orange-500">"139"</span> ...',
     },
     {
       name: 'India Today',
@@ -142,10 +129,9 @@ const AccreditationCards: React.FC = () => {
       ],
       logo: indiaToday,
       color: 'from-orange-50 to-orange-100',
-      
       popupImage: indiaTodayPopup,
       popupDescription:
-        'HiTech is ranked <span class="font-bold text-orange-500">"161"</span> Under Top Engineering Colleges in India, Ranked <span class="font-bold text-orange-500">"131"</span> Under Top Engineering (Pvt) Colleges in India, Ranked <span class="font-bold text-orange-500">"51"</span> Under Emerging Engineering Colleges in India, Ranked <span class="font-bold text-orange-500">"40"</span> Under Emerging Engineering (Pvt) Colleges in India, by <span class="font-semibold text-blue-600">India Today Survey 2025</span>',
+        'HiTech is ranked <span class="font-bold text-orange-500">"161"</span> ...',
     },
     {
       name: 'CSR Review',
@@ -157,10 +143,9 @@ const AccreditationCards: React.FC = () => {
       ],
       logo: csr,
       color: 'from-red-50 to-red-100',
-    
       popupImage: csrPopup,
       popupDescription:
-        'HiTech is ranked <span class="font-bold text-orange-500">"2"</span> Under Top Emerging Engineering Colleges of Super Excellence, Ranked <span class="font-bold text-orange-500">"6"</span> Under Top Engineering Colleges in Tamilnadu, Ranked <span class="font-bold text-orange-500">"17"</span> Under Top 20 Engineering Colleges Ranked by Faculty, Research, Consultancy, EDP & Other Programmes by <span class="font-semibold text-blue-600">Competition Success Review Engineering Colleges Survey 2025</span>',
+        'HiTech is ranked <span class="font-bold text-orange-500">"2"</span> ...',
     },
     {
       name: 'Times Ranking',
@@ -168,10 +153,9 @@ const AccreditationCards: React.FC = () => {
       rankings: ['Ranked 135 – Top 175 Engineering Institute Rankings 2025'],
       logo: times,
       color: 'from-indigo-50 to-indigo-100',
- 
       popupImage: timesPopup,
       popupDescription:
-        'HiTech is ranked <span class="font-bold text-orange-500">"135"</span> Under Top 175 Engineering Institute Rankings 2025, by <span class="font-semibold text-blue-600">Times Annual Top Engineering Institute Ranking Survey 2025</span>',
+        'HiTech is ranked <span class="font-bold text-orange-500">"135"</span> ...',
     },
   ];
 
@@ -189,7 +173,6 @@ const AccreditationCards: React.FC = () => {
     }
   };
 
-  // Only these four logos will be displayed
   const staticLogos = [
     { src: aicte, alt: "AICTE" },
     { src: nba, alt: "NBA" },
@@ -209,22 +192,9 @@ const AccreditationCards: React.FC = () => {
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     responsive: [
-      { 
-        breakpoint: 1024, 
-        settings: { 
-          settings: { slidesToShow: 3 },
-        } 
-      },
-      { 
-        breakpoint: 768, 
-      
-          settings: { slidesToShow: 2 },
-        
-      },
-       {
-          breakpoint: 480,
-          settings: { slidesToShow: 1 },
-        },
+      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } },
     ],
   };
 
@@ -239,7 +209,6 @@ const AccreditationCards: React.FC = () => {
           </p>
         </div>
 
-        {/* Updated static logos section */}
         <div className="flex justify-center items-center py-8 mb-12 bg-white rounded-2xl shadow-lg">
           <div className="flex space-x-8 md:space-x-12">
             {staticLogos.map((logo, idx) => (
@@ -254,15 +223,14 @@ const AccreditationCards: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-2xl overflow-visible">
           <div className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 p-6 md:p-8">
             <h3 className="text-2xl md:text-3xl font-bold text-white text-center">National Rankings Overview</h3>
           </div>
 
-          <div className="p-4 md:p-8 relative">
+          <div className="p-4 md:p-8 relative overflow-visible">
             <Slider {...sliderSettings}>
               {accreditations.map((accred, index) => {
-              
                 const isExpanded = expandedIndex === index;
                 const hasMore = accred.rankings.length > 1;
                 const hasPopup = !!accred.popupImage;
@@ -280,10 +248,8 @@ const AccreditationCards: React.FC = () => {
                               src={accred.logo}
                               alt={accred.name}
                               className="w-full h-full object-cover rounded-full"
-                              style={{ objectPosition: 'center' }}
                             />
                           </div>
-                          
                         </div>
                         <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">{accred.name}</h4>
                         <p className="text-xs md:text-sm text-gray-600 font-medium leading-relaxed">{accred.fullName}</p>
@@ -294,26 +260,27 @@ const AccreditationCards: React.FC = () => {
                           <div className="bg-white/80 backdrop-blur-sm px-3 py-2 md:px-4 md:py-3 rounded-xl shadow-sm border border-white/40">
                             <p className="text-xs md:text-sm font-semibold text-gray-700 leading-relaxed">{accred.rankings[0]}</p>
                           </div>
-                          {isExpanded && accred.rankings.slice(1).map((ranking, i) => (
-                            <div key={i} className="bg-white/80 backdrop-blur-sm px-3 py-2 md:px-4 md:py-3 rounded-xl shadow-sm border border-white/40 animate-fadeIn" style={{ animationDelay: `${i * 100}ms` }}>
-                              <p className="text-xs md:text-sm font-semibold text-gray-700 leading-relaxed">{ranking}</p>
-                            </div>
-                          ))}
+                          {isExpanded &&
+                            accred.rankings.slice(1).map((ranking, i) => (
+                              <div key={i} className="bg-white/80 backdrop-blur-sm px-3 py-2 md:px-4 md:py-3 rounded-xl shadow-sm border border-white/40 animate-fadeIn">
+                                <p className="text-xs md:text-sm font-semibold text-gray-700 leading-relaxed">{ranking}</p>
+                              </div>
+                            ))}
                         </div>
+
                         {hasMore && (
                           <div className="mt-4 md:mt-6 text-center">
                             <button
                               onClick={(e) => handleShowMoreClick(index, e)}
-                              className="inline-flex items-center gap-1 md:gap-2 px-2 py-1 md:px-3 md:py-1.5 bg-white/90 hover:bg-white text-gray-700 text-xs md:text-sm font-semibold rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105"
+                              className="inline-flex items-center gap-1 text-[#d38b03] hover:text-[#f59e0b] font-semibold text-sm md:text-base transition-colors duration-300"
                             >
                               {isExpanded ? (
                                 <>
-                                  Show Less <ChevronUp className="h-3 w-3 md:h-4 md:w-4" />
+                                  Show Less <ChevronUp className="h-4 w-4" />
                                 </>
                               ) : (
                                 <>
-                                  Show More ({accred.rankings.length - 1} more){' '}
-                                  <ChevronDown className="h-3 w-3 md:h-4 md:w-4" />
+                                  Show More <ChevronDown className="h-4 w-4" />
                                 </>
                               )}
                             </button>
@@ -360,27 +327,6 @@ const AccreditationCards: React.FC = () => {
         }
         .animate-fadeIn {
           animation: fadeIn 0.5s ease-out forwards;
-        }
-        .slick-dots {
-          bottom: -35px !important;
-          margin-top: 20px;
-        }
-        .slick-dots li button:before {
-          font-size: 10px;
-          color: #f59e0b;
-          opacity: 0.5;
-        }
-        .slick-dots li.slick-active button:before {
-          opacity: 1;
-          color: #f59e0b;
-        }
-        .slick-slider {
-          padding: 0 20px;
-        }
-        @media (max-width: 768px) {
-          .slick-dots {
-            bottom: -30px !important;
-          }
         }
       `}</style>
     </section>
