@@ -391,22 +391,28 @@
         "title": "Showcasing Notable Projects",
         "items": [
           {
-            "title": "Virtual Reality Campus Tour",
-            "description": "Interactive VR tour system for new students and visitors.",
-            "year": "2023",
-            "collaborators": "VR Lab & Design Team"
+            "title": "Integrated Healthcare Solution For Mothers And Newborns",
+            "domain": "Artificial Intelligence",
+            "guide": "Mr Uthayakumar J, AP/CSE",
+            "students": "Jeevananthan RMohamed ,Jiyath A, Naveen, Rsarveshwaran L"
           },
           {
-            "title": "Smart City Traffic Management",
-            "description": "AI-based real-time traffic flow optimization solution.",
-            "year": "2024",
-            "collaborators": "Urban Tech Group"
+            "title": "SingleWindow Platform To Streamline Approvals And Empower Entrepreneurial Success",
+            "domain": "Information/Communication Technology",
+            "guide": "Mr.Devendran , AP/CSE",
+            "students": "Harish Keerthi V, Harish S, Hari Haran S, Mahalingeshvara, Nathan Nl"
           },
           {
-            "title": "Personalized Learning Platform",
-            "description": "Adaptive learning software using AI to customize courses.",
-            "year": "2024",
-            "collaborators": "EdTech Research Team"
+            "title": "Field Visit Tracker: GeoTagged Inspections With Digital Signatures And Authentication",
+            "domain": "Information/Communication Technology",
+            "guide": "Dr.R.T.Subhalakshmi",
+            "students": "Thiru Kumaran Rp, Sriram B, Uday Ram S, Sunil Kumar D"
+          },
+          {
+            "title": "AI-Enhanced Iot Based Waste Management System For Real-Time Drainage Maintenance And Monitoring",
+            "domain": "Solid waste / Bio-waste /E-waste",
+            "guide": "Mr.K. Murugan",
+            "students": "Kamaleshwari, R Akshaya E, Kaviyasri J"
           }
         ]
       }
