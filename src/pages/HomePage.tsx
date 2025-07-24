@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
       <Hero hero={collegeData.college.hero} />
 
       {/* ===== About The Trust Section ===== */}
-      <SectionWrapper className="pt-6 pb-0" lazy lazyDelay={300}>
+      <SectionWrapper className="pt-6 pb-0" lazy lazyDelay={200}>
         <div className="text-center mb-4 pt-10">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">{trustInfo.title}</h1>
           <p className="text-2xl text-yellow-600 font-semibold mb-2">
@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
       </SectionWrapper>
 
       {/* ===== About Us Section (with extra margin) ===== */}
-      <SectionWrapper lazy lazyHeight="200px" lazyDelay={500}>
+      <SectionWrapper lazy lazyHeight="200px" lazyDelay={200}>
         <div className="grid lg:grid-cols-2 gap-10 items-center mt-[-100]">
           <div className="space-y-3">
             <div className="flex items-center space-x-3 mb-6">
@@ -100,15 +100,15 @@ const HomePage: React.FC = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="300px" lazyDelay={600}>
+      <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
         <AccreditationCards accreditations={[]} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="600px" lazyDelay={700}>
+      <SectionWrapper lazy lazyHeight="600px" lazyDelay={300}>
         <NewsEventsSection news={newsEventsData.news} events={newsEventsData.events} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={900}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={400}>
         <DepartmentCards
           departments={departmentsData.departments.map((dept: any) => ({
             ...dept,
@@ -122,27 +122,27 @@ const HomePage: React.FC = () => {
           }))}
         />
       </SectionWrapper>
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={1100}>
+      <SectionWrapper lazy lazyHeight="400px" lazyDelay={500}>
         <Gallery gallery={collegeData.gallery} />
       </SectionWrapper>
 
-      <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={1300}>
+      <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={500}>
         <Placements placements={collegeData.placements} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={1700}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={500}>
         <Admissions admissions={collegeData.admissions} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="600px" lazyDelay={1900}>
+      <SectionWrapper lazy lazyHeight="600px" lazyDelay={600}>
         <FAQ />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={2100}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={700}>
         <LocationMap />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={2300}>
+      <SectionWrapper lazy lazyHeight="400px" lazyDelay={800}>
         <Contact contact={collegeData.contact} />
         
       </SectionWrapper>
