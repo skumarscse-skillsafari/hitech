@@ -7,7 +7,7 @@
     "description": "Leading the future of engineering education with cutting-edge research, world-class faculty, and industry partnerships.",
     "logo": "/api/placeholder/120/60",
     "hero": {
-      "title": "Get Best in Everything",
+      "title": "Get the Best in Everything",
       "subtitle": "Join 2500+ alumni who are transforming industries worldwide through innovative engineering solutions.",
       "backgroundImage": "https://images.pexels.com/photos/159306/building-architecture-sky-blue-159306.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "stats": [
@@ -602,8 +602,8 @@
     }
   },
   "contact": {
-    "address": "Valley Campus, Pollachi Main Road, Othakkalmandapam (Post), Coimbatore - 641 032 ,Tamil Nadu, INDIA",
-    "phone": "+91 97152 601184",
+    "address": "Valley Campus, Pollachi Main Road, Othakkalmandapam (Post), Coimbatore - 641 032 ,Tamil Nadu, India",
+    "phone": "+91 97152 60118",
     "email": "hit.office@hindusthan.net",
     "website": "www.hit.edu.in",
     "socialMedia": {
