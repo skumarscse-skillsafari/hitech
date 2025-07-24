@@ -1,11 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react'; // No need for useState, useRef, useEffect if only a static image
 import {
   ArrowRight,
   Play,
-  Pause,
-  Volume2,
-  VolumeX,
-  Maximize,
   CreditCard,
 } from 'lucide-react';
 
@@ -13,7 +9,7 @@ interface HeroProps {
   hero: {
     title: string;
     subtitle: string;
-    backgroundImage: string;
+    // backgroundImage: string; // We'll hardcode the path, so this prop is not strictly needed for the background image anymore
     stats: Array<{
       number: string;
       label: string;
@@ -22,143 +18,47 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ hero }) => {
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
-  const [showControls, setShowControls] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      const handleResizeFix = () => {
-        // Force a reflow in case of any zoom-related layout shift
-        video.style.display = 'none';
-        void video.offsetHeight;
-        video.style.display = '';
-      };
-
-      window.addEventListener('resize', handleResizeFix);
-      return () => window.removeEventListener('resize', handleResizeFix);
-    }
-  }, []);
-
-  const togglePlay = () => {
-    const video = videoRef.current;
-    if (video) {
-      if (isPlaying) {
-        video.pause();
-      } else {
-        video.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
-  const toggleMute = () => {
-    const video = videoRef.current;
-    if (video) {
-      video.muted = !isMuted;
-      setIsMuted(!isMuted);
-    }
-  };
-
-  const toggleFullscreen = () => {
-    const video = videoRef.current;
-    if (video?.requestFullscreen) {
-      video.requestFullscreen();
-    }
-  };
-
   const handleWatchCampusTour = () => {
-    const video = videoRef.current;
-    if (video) {
-      video.muted = false;
-      setIsMuted(false);
-      video.play();
-      setIsPlaying(true);
-
-      if (video.requestFullscreen) video.requestFullscreen();
-      else if ((video as any).webkitEnterFullscreen) (video as any).webkitEnterFullscreen();
-      else if ((video as any).mozRequestFullScreen) (video as any).mozRequestFullScreen();
-      else if ((video as any).msRequestFullscreen) (video as any).msRequestFullscreen();
-    }
+    console.log('Initiating campus tour. You would typically open a video player here.');
+    // Example: window.open('https://yourcollege.edu/campus-tour-video', '_blank');
   };
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      onMouseEnter={() => setShowControls(true)}
-      onMouseLeave={() => setShowControls(false)}
     >
-      {/* Background Video */}
-      <video
-        ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster={hero.backgroundImage}
-      >
-        <source src="/og_drone.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* Background Image from public folder */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url('/clg.jpg')` }} // Directly referencing the image in public folder
+      ></div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60"></div>
-
-      {/* Video Controls */}
-      <div className={`absolute top-6 right-6 flex items-center space-x-3 transition-all duration-300 ${
-        showControls ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
-      }`}>
-        <button
-          onClick={togglePlay}
-          title={isPlaying ? 'Pause video' : 'Play video'}
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
-        >
-          {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
-        </button>
-        <button
-          onClick={toggleMute}
-          title={isMuted ? 'Unmute video' : 'Mute video'}
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
-        >
-          {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
-        </button>
-        <button
-          onClick={toggleFullscreen}
-          title="Fullscreen"
-          className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
-        >
-          <Maximize className="h-5 w-5" />
-        </button>
-      </div>
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
         <div className="space-y-8">
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
-  <div className="space-y-8">
-    <div className="animate-fadeIn">
-     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight">
-  {hero.title}
-</h1>
+            <div className="space-y-8">
+              <div className="animate-fadeIn">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight">
+                  {hero.title}
+                </h1>
 
-<p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
-  Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
-</p>
+                <p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
+                  Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
+                </p>
+              </div>
 
-    </div>
-
-    <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
-      <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
-        {hero.subtitle}
-      </p>
-    </div>
-  </div>
-</div>
-
+              <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
+                <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
+                  {hero.subtitle}
+                </p>
+              </div>
+            </div>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
@@ -210,34 +110,12 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         </div>
       </div>
 
-      {/* Video Progress */}
-      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-white/20 transition-all duration-300 ${
-        showControls ? 'opacity-100' : 'opacity-0'
-      }`}>
-        <div className="h-full bg-yellow-500 w-0 animate-pulse"></div>
-      </div>
-
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-
-      {/* Fallback Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0"
-        style={{
-          backgroundImage: `url(${hero.backgroundImage})`,
-          zIndex: -1,
-        }}
-        onError={() => {
-          const videoElement = videoRef.current;
-          if (videoElement) {
-            videoElement.style.display = 'none';
-          }
-        }}
-      />
 
       {/* Vertical TNEA Code Button - Left Side */}
       <div className="fixed left-0 top-1/3 transform -translate-y-1/2 z-50">
