@@ -1,6 +1,5 @@
-// TopNavBar.tsx
-
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Facebook, Twitter, Linkedin, Instagram, Youtube,
   ExternalLink, ChevronDown, ChevronRight, Menu, X
@@ -35,7 +34,13 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
   const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const socialIcons = { facebook: Facebook, twitter: Twitter, linkedin: Linkedin, instagram: Instagram, youtube: Youtube };
+  const socialIcons = {
+    facebook: Facebook,
+    twitter: Twitter,
+    linkedin: Linkedin,
+    instagram: Instagram,
+    youtube: Youtube,
+  };
 
   const toggleDropdown = (name: string) => setActiveDropdown(activeDropdown === name ? null : name);
   const toggleSubDropdown = (name: string) => setActiveSubDropdown(activeSubDropdown === name ? null : name);
@@ -45,6 +50,8 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
     setActiveDropdown(null);
     setActiveSubDropdown(null);
   };
+
+  const isExternal = (href: string) => href.startsWith('http');
 
   return (
     <nav className="relative z-[999] bg-yellow-500 text-gray-900 border-b border-yellow-600">
@@ -84,25 +91,50 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                       >
                         {item.dropdown.map((subItem) => (
                           <div key={subItem.name} className="relative group">
-                            <a
-                              href={subItem.href}
-                              onMouseEnter={() => setActiveSubDropdown(subItem.name)}
-                              className="block px-4 py-2 text-sm hover:bg-yellow-100 border-b last:border-b-0"
-                            >
-                              {subItem.name}
-                              {subItem.dropdown && <ChevronRight className="float-right h-3 w-3 mt-1" />}
-                            </a>
+                            {isExternal(subItem.href) ? (
+                              <a
+                                href={subItem.href}
+                                onMouseEnter={() => setActiveSubDropdown(subItem.name)}
+                                className="block px-4 py-2 text-sm hover:bg-yellow-100 border-b last:border-b-0"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {subItem.name}
+                                {subItem.dropdown && <ChevronRight className="float-right h-3 w-3 mt-1" />}
+                              </a>
+                            ) : (
+                              <Link
+                                to={subItem.href}
+                                onMouseEnter={() => setActiveSubDropdown(subItem.name)}
+                                className="block px-4 py-2 text-sm hover:bg-yellow-100 border-b last:border-b-0"
+                              >
+                                {subItem.name}
+                                {subItem.dropdown && <ChevronRight className="float-right h-3 w-3 mt-1" />}
+                              </Link>
+                            )}
                             {subItem.dropdown && activeSubDropdown === subItem.name && (
                               <div className="absolute top-0 left-full w-56 bg-white border shadow-lg rounded-lg z-50">
-                                {subItem.dropdown.map((nested) => (
-                                  <a
-                                    key={nested.name}
-                                    href={nested.href}
-                                    className="block px-4 py-2 text-sm hover:bg-yellow-100 border-b last:border-b-0"
-                                  >
-                                    {nested.name}
-                                  </a>
-                                ))}
+                                {subItem.dropdown.map((nested) =>
+                                  isExternal(nested.href) ? (
+                                    <a
+                                      key={nested.name}
+                                      href={nested.href}
+                                      className="block px-4 py-2 text-sm hover:bg-yellow-100 border-b last:border-b-0"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      {nested.name}
+                                    </a>
+                                  ) : (
+                                    <Link
+                                      key={nested.name}
+                                      to={nested.href}
+                                      className="block px-4 py-2 text-sm hover:bg-yellow-100 border-b last:border-b-0"
+                                    >
+                                      {nested.name}
+                                    </Link>
+                                  )
+                                )}
                               </div>
                             )}
                           </div>
@@ -110,7 +142,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                       </div>
                     )}
                   </>
-                ) : (
+                ) : isExternal(item.href) ? (
                   <a
                     href={item.href}
                     target={item.external ? '_blank' : undefined}
@@ -120,6 +152,13 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                     {item.name}
                     {item.external && <ExternalLink className="h-4 w-4 ml-1" />}
                   </a>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className="flex items-center px-4 py-2 text-sm font-medium hover:bg-yellow-600 border-r border-yellow-600 last:border-r-0 h-10 transition"
+                  >
+                    {item.name}
+                  </Link>
                 )}
               </div>
             ))}
@@ -184,16 +223,29 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                               </button>
                               {subItem.dropdown && activeSubDropdown === subItem.name && (
                                 <div className="ml-4 mt-1 space-y-1">
-                                  {subItem.dropdown.map((nested) => (
-                                    <a
-                                      key={nested.name}
-                                      href={nested.href}
-                                      onClick={closeMobileMenu}
-                                      className="block text-sm text-gray-700 py-1 px-3 rounded hover:bg-yellow-300 hover:text-yellow-900 transition"
-                                    >
-                                      {nested.name}
-                                    </a>
-                                  ))}
+                                  {subItem.dropdown.map((nested) =>
+                                    isExternal(nested.href) ? (
+                                      <a
+                                        key={nested.name}
+                                        href={nested.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={closeMobileMenu}
+                                        className="block text-sm text-gray-700 py-1 px-3 rounded hover:bg-yellow-300 hover:text-yellow-900 transition"
+                                      >
+                                        {nested.name}
+                                      </a>
+                                    ) : (
+                                      <Link
+                                        key={nested.name}
+                                        to={nested.href}
+                                        onClick={closeMobileMenu}
+                                        className="block text-sm text-gray-700 py-1 px-3 rounded hover:bg-yellow-300 hover:text-yellow-900 transition"
+                                      >
+                                        {nested.name}
+                                      </Link>
+                                    )
+                                  )}
                                 </div>
                               )}
                             </div>
@@ -201,14 +253,24 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                         </div>
                       )}
                     </>
-                  ) : (
+                  ) : isExternal(item.href) ? (
                     <a
                       href={item.href}
                       onClick={closeMobileMenu}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block text-sm text-gray-900 hover:text-yellow-700 py-2"
                     >
                       {item.name}
                     </a>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      onClick={closeMobileMenu}
+                      className="block text-sm text-gray-900 hover:text-yellow-700 py-2"
+                    >
+                      {item.name}
+                    </Link>
                   )}
                 </div>
               ))}
