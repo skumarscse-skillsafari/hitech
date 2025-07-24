@@ -30,7 +30,7 @@ const Placements: React.FC = () => {
     },
     {
       name: 'Microsoft',
-      logo: '/logos/microsoft.png',
+      logo: '/logos/microsof.png',
       package: '28–40 LPA',
     },
     {

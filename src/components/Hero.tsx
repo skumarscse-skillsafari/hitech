@@ -101,7 +101,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         playsInline
         poster={hero.backgroundImage}
       >
-        <source src="/drone_og.mp4" type="video/mp4" />
+        <source src="/og_drone.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
