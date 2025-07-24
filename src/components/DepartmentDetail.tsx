@@ -276,38 +276,41 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
           </div>
         </div>
      
-      {/* Program Outcomes */}
-        <SectionWrapper lazy lazyHeight="400px" lazyDelay={600} className="mt-12">
-          <DepartmentOutcomes 
-            psos={department.psos}
-            peos={department.peos}
-            pos={department.pos}
-            departmentName={department.name}
-          />
-        </SectionWrapper>
+  {/* Program Outcomes */}
+<SectionWrapper lazyHeight="400px" lazyDelay={600} className="mt-16 mb-4">
+  <DepartmentOutcomes 
+    psos={department.psos}
+    peos={department.peos}
+    pos={department.pos}
+    departmentName={department.name}
+  />
+</SectionWrapper>
 
- {/* Programs Offered - Unchanged */}
-      <LazyLoadWrapper height="300px" delay={500}>
-        <div className="bg-white p-8 rounded-2xl shadow-lg">
-          <h4 className="text-2xl font-bold text-gray-900 mb-6">Programs Offered</h4>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {department.programs.map((program, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group">
-                <h5 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">{program.name}</h5>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <div><span className="font-medium">Duration:</span> {program.duration}</div>
-                  <div><span className="font-medium">Intake:</span> {program.intake}</div>
-                  <div><span className="font-medium">Eligibility:</span> {program.eligibility}</div>
-                </div>
-                <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
-                  <span>Learn More</span>
-                  <ArrowRight className="h-3 w-3" />
-                </button>
-              </div>
-            ))}
+{/* Programs Offered */}
+<SectionWrapper className="mt-0 mb-12">
+  <LazyLoadWrapper height="300px" delay={500}>
+    <div className="bg-white p-8 rounded-2xl shadow-lg">
+      <h4 className="text-2xl font-bold text-gray-900 mb-6">Programs Offered</h4>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {department.programs.map((program, index) => (
+          <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group">
+            <h5 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">{program.name}</h5>
+            <div className="space-y-2 text-sm text-gray-600">
+              <div><span className="font-medium">Duration:</span> {program.duration}</div>
+              <div><span className="font-medium">Intake:</span> {program.intake}</div>
+              <div><span className="font-medium">Eligibility:</span> {program.eligibility}</div>
+            </div>
+            <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
+              <span>Learn More</span>
+              <ArrowRight className="h-3 w-3" />
+            </button>
           </div>
-        </div>
-      </LazyLoadWrapper>
+        ))}
+      </div>
+    </div>
+  </LazyLoadWrapper>
+</SectionWrapper>
+
 
       {/* Enhanced OBE Philosophy Section */}
       <LazyLoadWrapper height="500px" delay={500}>
