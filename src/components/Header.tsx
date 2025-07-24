@@ -5,7 +5,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 interface NavigationItem {
   name: string;
   href: string;
-  dropdown?: NavigationItem[]; // recursive
+  dropdown?: NavigationItem[];
 }
 
 interface HeaderProps {
@@ -40,9 +40,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
         <div key={item.name} className="relative group/sub">
           {item.dropdown ? (
             <>
-              <button
-                className="flex justify-between items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
-              >
+              <button className="flex justify-between items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">
                 <span>{item.name}</span>
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
@@ -95,9 +93,11 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
   );
 
   return (
-    <header className={`fixed top-10 w-full z-40 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg top-0' : 'bg-white/95 backdrop-blur-sm shadow-lg'
-    }`}>
+    <header
+      className={`fixed top-10 w-full z-40 transition-all duration-300 ${
+        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg top-0' : 'bg-white/95 backdrop-blur-sm shadow-lg'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo and Titles */}
@@ -107,16 +107,16 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
             </div>
             <div className="hidden lg:block">
               <div className="text-xl font-bold text-yellow-600 leading-tight">{collegeName}</div>
-              <div className="text-xs font-bold text-gray-600 leading-tight">{collegeSubtitle.split(";")[0]}</div>
-              <div className="text-xs text-gray-600 leading-tight">{collegeSubtitle.split(";")[1]}</div>
+              <div className="text-xs font-bold text-gray-600 leading-tight">{collegeSubtitle.split(';')[0]}</div>
+              <div className="text-xs text-gray-600 leading-tight">{collegeSubtitle.split(';')[1]}</div>
             </div>
             <div className="lg:hidden">
               <div className="text-sm font-bold text-yellow-600 leading-tight">
-                Hindusthan Institute<br />of Technology
+                Hindusthan Institute
+                <br />
+                of Technology
               </div>
-              <div className="text-xs font-semibold text-gray-500 leading-tight">
-                An Autonomous Institution
-              </div>
+              <div className="text-xs font-semibold text-gray-500 leading-tight">An Autonomous Institution</div>
             </div>
           </Link>
 
@@ -128,7 +128,8 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                   <div className="relative">
                     <button
                       className={`flex items-center space-x-1 px-4 py-2 rounded-lg font-medium transition-all duration-200 whitespace-nowrap ${
-                        location.pathname === item.href || item.dropdown.some(sub => location.pathname === sub.href)
+                        location.pathname === item.href ||
+                        item.dropdown.some((sub) => location.pathname === sub.href)
                           ? 'text-yellow-600 bg-yellow-50'
                           : 'text-gray-700 hover:text-yellow-600 hover:bg-yellow-50'
                       }`}
@@ -158,6 +159,14 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                 )}
               </div>
             ))}
+
+            {/* Desktop Hamburger Menu at the end */}
+            <button
+              className="ml-4 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              onClick={() => alert('Hamburger menu clicked')}
+            >
+              <Menu className="h-6 w-6 text-gray-700" />
+            </button>
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -185,9 +194,11 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                       className="flex items-center justify-between w-full py-3 text-gray-700 hover:text-yellow-600 font-medium transition-colors"
                     >
                       <span>{item.name}</span>
-                      <ChevronDown className={`h-4 w-4 transition-transform ${
-                        activeDropdown === item.name ? 'rotate-180' : ''
-                      }`} />
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform ${
+                          activeDropdown === item.name ? 'rotate-180' : ''
+                        }`}
+                      />
                     </button>
                     {activeDropdown === item.name && renderMobileDropdown(item.dropdown)}
                   </div>
