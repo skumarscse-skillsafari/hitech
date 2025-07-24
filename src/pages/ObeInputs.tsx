@@ -78,7 +78,7 @@ const ObeInput = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b  py-14 px-4 md:px-8 font-sans">
+    <div className="bg-gradient-to-b py-14 px-4 md:px-8 font-sans">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl border border-yellow-100 px-6 sm:px-10 py-10">
         {/* Title */}
         <div className="text-center mb-10">
@@ -107,22 +107,19 @@ const ObeInput = () => {
           </button>
         </div>
 
-        {/* Slider Cards */}
+        {/* Cards */}
         <Slider ref={(slider) => (sliderRef = slider)} {...sliderSettings}>
           {obeInputCards.map((item, index) => {
             const isExpanded = expandedCards[index] || false;
-            const shortDescription =
-              item.description.length > 100
-                ? item.description.substring(0, 100) + (isExpanded ? '' : '...')
-                : item.description;
+            const fullSentences = item.description.split('. ');
+            const visibleText = fullSentences.slice(0, 2).join('. ') + (fullSentences.length > 2 ? '.' : '');
+            const hiddenText = fullSentences.slice(2).join('. ').trim();
 
             return (
-              <div key={index} className="px-3 focus:outline-none">
-                <div
-                  className={`bg-yellow-50 border border-yellow-100 rounded-2xl shadow-md overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg`}
-                >
+              <div key={index} className="px-3 focus:outline-none h-full">
+                <div className="bg-yellow-50 border border-yellow-100 rounded-2xl shadow-md hover:shadow-lg flex flex-col h-full min-h-[520px] transition-all duration-300">
                   {/* Image */}
-                  <div className="h-[160px] bg-white flex items-center justify-center p-4 relative">
+                  <div className="h-[160px] bg-white flex items-center justify-center p-4">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -140,17 +137,18 @@ const ObeInput = () => {
                     <h5 className="text-lg font-semibold text-center text-yellow-700 mb-3">
                       {item.title}
                     </h5>
-                    <p className="text-sm text-gray-700">
-                      {shortDescription}
-                      {isExpanded && item.description.length > 100 && (
-                        <span className="block mt-2">{item.description.substring(100)}</span>
-                      )}
-                    </p>
 
-                    {item.description.length > 100 && (
+                    <div className="text-sm text-gray-700 mb-4">
+                      <p>{visibleText}</p>
+                      {isExpanded && hiddenText && (
+                        <p className="mt-2">{hiddenText.endsWith('.') ? hiddenText : hiddenText + '.'}</p>
+                      )}
+                    </div>
+
+                    {hiddenText && (
                       <button
                         onClick={() => toggleExpand(index)}
-                        className="mt-4 text-yellow-600 text-sm font-medium flex items-center justify-center hover:text-yellow-700 transition"
+                        className="mt-auto text-yellow-600 text-sm font-medium flex items-center justify-center hover:text-yellow-700 transition"
                       >
                         {isExpanded ? 'Show Less' : 'Show More'}
                         <ChevronDown
