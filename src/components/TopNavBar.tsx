@@ -1,13 +1,15 @@
+// TopNavBar.tsx
+
 import React, { useState } from 'react';
-import { Facebook, Twitter, Linkedin, Instagram, Youtube, ExternalLink, ChevronDown, ChevronRight, Menu, X } from 'lucide-react';
+import {
+  Facebook, Twitter, Linkedin, Instagram, Youtube,
+  ExternalLink, ChevronDown, ChevronRight, Menu, X
+} from 'lucide-react';
 
 interface SubMenuItem {
   name: string;
   href: string;
-  dropdown?: Array<{
-    name: string;
-    href: string;
-  }>;
+  dropdown?: Array<{ name: string; href: string }>;
 }
 
 interface MenuItem {
@@ -33,34 +35,10 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
   const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const socialIcons = {
-    facebook: Facebook,
-    twitter: Twitter,
-    linkedin: Linkedin,
-    instagram: Instagram,
-    youtube: Youtube,
-  };
+  const socialIcons = { facebook: Facebook, twitter: Twitter, linkedin: Linkedin, instagram: Instagram, youtube: Youtube };
 
-  const handleDropdownToggle = (itemName: string) => {
-    setActiveDropdown(activeDropdown === itemName ? null : itemName);
-  };
-
-  const handleSubDropdownToggle = (subItemName: string) => {
-    setActiveSubDropdown(activeSubDropdown === subItemName ? null : subItemName);
-  };
-
-  const handleMouseEnter = (itemName: string) => {
-    if (window.innerWidth >= 1024) {
-      setActiveDropdown(itemName);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (window.innerWidth >= 1024) {
-      setActiveDropdown(null);
-      setActiveSubDropdown(null);
-    }
-  };
+  const toggleDropdown = (name: string) => setActiveDropdown(activeDropdown === name ? null : name);
+  const toggleSubDropdown = (name: string) => setActiveSubDropdown(activeSubDropdown === name ? null : name);
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
@@ -69,142 +47,137 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
   };
 
   return (
-    <div className="relative z-10 bg-yellow-500 text-gray-900 border-b border-yellow-600">
+    <nav className="relative z-[999] bg-yellow-500 text-gray-900 border-b border-yellow-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-10">
+        <div className="flex justify-between items-center h-12 md:h-10">
           {/* Mobile Menu Button */}
           <button
+            aria-label="Toggle mobile menu"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 hover:bg-yellow-600 rounded transition-colors"
+            className="lg:hidden p-2 hover:bg-yellow-600 rounded"
           >
-            {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
 
-          {/* Desktop Menu Items */}
+          {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-0">
             {menuItems.map((item) => (
               <div key={item.name} className="relative group">
                 {item.dropdown ? (
-                  <div className="relative">
+                  <>
                     <button
-                      className="flex items-center space-x-1 px-4 py-2 hover:bg-yellow-600 transition-colors h-10 border-r border-yellow-600 last:border-r-0 text-sm font-medium"
-                      onMouseEnter={() => handleMouseEnter(item.name)}
-                      onClick={() => handleDropdownToggle(item.name)}
+                      onMouseEnter={() => setActiveDropdown(item.name)}
+                      onClick={() => toggleDropdown(item.name)}
+                      className="flex items-center space-x-1 px-4 py-2 text-sm font-medium hover:bg-yellow-600 border-r border-yellow-600 last:border-r-0 h-10 transition"
                     >
                       <span>{item.name}</span>
-                      <ChevronDown className="h-3 w-3" />
+                      <ChevronDown className="h-4 w-4" />
                     </button>
 
-                    {/* Dropdown */}
                     {activeDropdown === item.name && (
                       <div
-                        className="absolute top-full left-0 w-56 bg-white text-gray-800 shadow-xl rounded-b-lg border border-gray-200 z-50"
-                        onMouseLeave={handleMouseLeave}
+                        onMouseLeave={() => {
+                          setActiveDropdown(null);
+                          setActiveSubDropdown(null);
+                        }}
+                        className="absolute top-full left-0 w-56 bg-white text-gray-900 shadow-xl border rounded-b-lg z-50"
                       >
-                        <div className="py-2">
-                          {item.dropdown.map((subItem) => (
-                            <div key={subItem.name} className="relative group">
-                              <a
-                                href={subItem.href}
-                                onMouseEnter={() => setActiveSubDropdown(subItem.name)}
-                                className="block px-4 py-2 text-sm hover:bg-yellow-50 hover:text-yellow-700 transition-colors border-b border-gray-100 last:border-b-0"
-                              >
-                                {subItem.name}
-                                {subItem.dropdown && (
-                                  <ChevronRight className="inline-block float-right h-3 w-3 mt-1" />
-                                )}
-                              </a>
-
-                              {/* Nested Sub Dropdown */}
-                              {subItem.dropdown && activeSubDropdown === subItem.name && (
-                                <div className="absolute top-0 left-full w-56 bg-white border border-gray-200 shadow-xl rounded-lg z-50">
-                                  {subItem.dropdown.map((nestedItem) => (
-                                    <a
-                                      key={nestedItem.name}
-                                      href={nestedItem.href}
-                                      className="block px-4 py-2 text-sm hover:bg-yellow-100 transition-colors border-b border-gray-100 last:border-b-0"
-                                    >
-                                      {nestedItem.name}
-                                    </a>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                          ))}
-                        </div>
+                        {item.dropdown.map((subItem) => (
+                          <div key={subItem.name} className="relative group">
+                            <a
+                              href={subItem.href}
+                              onMouseEnter={() => setActiveSubDropdown(subItem.name)}
+                              className="block px-4 py-2 text-sm hover:bg-yellow-100 border-b last:border-b-0"
+                            >
+                              {subItem.name}
+                              {subItem.dropdown && <ChevronRight className="float-right h-3 w-3 mt-1" />}
+                            </a>
+                            {subItem.dropdown && activeSubDropdown === subItem.name && (
+                              <div className="absolute top-0 left-full w-56 bg-white border shadow-lg rounded-lg z-50">
+                                {subItem.dropdown.map((nested) => (
+                                  <a
+                                    key={nested.name}
+                                    href={nested.href}
+                                    className="block px-4 py-2 text-sm hover:bg-yellow-100 border-b last:border-b-0"
+                                  >
+                                    {nested.name}
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
                       </div>
                     )}
-                  </div>
+                  </>
                 ) : (
                   <a
                     href={item.href}
-                    className="flex items-center px-4 py-2 hover:bg-yellow-600 transition-colors h-10 border-r border-yellow-600 last:border-r-0 text-sm font-medium"
-                    target={item.external ? "_blank" : undefined}
-                    rel={item.external ? "noopener noreferrer" : undefined}
+                    target={item.external ? '_blank' : undefined}
+                    rel={item.external ? 'noopener noreferrer' : undefined}
+                    className="flex items-center px-4 py-2 text-sm font-medium hover:bg-yellow-600 border-r border-yellow-600 last:border-r-0 h-10 transition"
                   >
-                    <span>{item.name}</span>
-                    {item.external && <ExternalLink className="h-3 w-3 ml-1" />}
+                    {item.name}
+                    {item.external && <ExternalLink className="h-4 w-4 ml-1" />}
                   </a>
                 )}
               </div>
             ))}
           </div>
 
-          {/* Social Media */}
-          <div className="flex items-center space-x-3">
-            <span className="text-gray-800 hidden md:block font-medium text-xs">Follow us:</span>
-            <div className="flex items-center space-x-2">
-              {Object.entries(socialMedia).map(([platform, url]) => {
-                const IconComponent = socialIcons[platform as keyof typeof socialIcons];
-                return (
-                  <a
-                    key={platform}
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:bg-yellow-600 transition-all duration-200 p-1.5 rounded hover:scale-110"
-                    title={`Follow us on ${platform}`}
-                  >
-                    <IconComponent className="h-3.5 w-3.5" />
-                  </a>
-                );
-              })}
-            </div>
+          {/* Social Media Icons */}
+          <div className="flex items-center space-x-2">
+            <span className="text-xs font-medium hidden md:inline-block">Follow us:</span>
+            {Object.entries(socialMedia).map(([platform, url]) => {
+              const Icon = socialIcons[platform as keyof typeof socialIcons];
+              return (
+                <a
+                  key={platform}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={`Follow us on ${platform}`}
+                  className="p-1.5 rounded hover:bg-yellow-600 hover:scale-110 transition"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              );
+            })}
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-10 left-0 right-0 bg-yellow-500 border-t border-yellow-600 shadow-xl z-50 max-h-[70vh] overflow-y-auto">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-yellow-500 border-t border-yellow-600 shadow-xl max-h-[70vh] overflow-y-auto z-50">
             <div className="px-4 py-4 space-y-2">
               {menuItems.map((item) => (
                 <div key={item.name}>
                   {item.dropdown ? (
-                    <div>
+                    <>
                       <button
-                        onClick={() => handleDropdownToggle(item.name)}
-                        className="flex items-center justify-between w-full py-3 text-gray-900 hover:text-yellow-700 font-medium transition-colors text-sm"
+                        onClick={() => toggleDropdown(item.name)}
+                        className="flex items-center justify-between w-full text-sm font-medium py-2 text-left text-gray-900 hover:text-yellow-700"
                       >
                         <span>{item.name}</span>
                         <ChevronDown
                           className={`h-4 w-4 transition-transform ${
-                            activeDropdown === item.name ? "rotate-180" : ""
+                            activeDropdown === item.name ? 'rotate-180' : ''
                           }`}
                         />
                       </button>
                       {activeDropdown === item.name && (
-                        <div className="ml-4 mt-2 space-y-2 bg-yellow-400 rounded-lg p-2">
+                        <div className="ml-4 mt-1 space-y-2 bg-yellow-400 rounded p-2">
                           {item.dropdown.map((subItem) => (
                             <div key={subItem.name}>
                               <button
-                                onClick={() => handleSubDropdownToggle(subItem.name)}
-                                className="flex justify-between w-full text-left py-2 px-2 text-sm text-gray-800 hover:text-yellow-900"
+                                onClick={() => toggleSubDropdown(subItem.name)}
+                                className="flex items-center justify-between w-full text-sm text-gray-800 hover:text-yellow-900 py-2"
                               >
                                 {subItem.name}
                                 {subItem.dropdown && (
                                   <ChevronRight
                                     className={`h-4 w-4 transition-transform ${
-                                      activeSubDropdown === subItem.name ? "rotate-90" : ""
+                                      activeSubDropdown === subItem.name ? 'rotate-90' : ''
                                     }`}
                                   />
                                 )}
@@ -216,7 +189,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                                       key={nested.name}
                                       href={nested.href}
                                       onClick={closeMobileMenu}
-                                      className="block py-1 px-3 text-sm text-gray-700 hover:text-yellow-800 hover:bg-yellow-300 rounded transition-colors"
+                                      className="block text-sm text-gray-700 py-1 px-3 rounded hover:bg-yellow-300 hover:text-yellow-900 transition"
                                     >
                                       {nested.name}
                                     </a>
@@ -227,12 +200,12 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                           ))}
                         </div>
                       )}
-                    </div>
+                    </>
                   ) : (
                     <a
                       href={item.href}
                       onClick={closeMobileMenu}
-                      className="block py-3 text-sm text-gray-900 hover:text-yellow-700"
+                      className="block text-sm text-gray-900 hover:text-yellow-700 py-2"
                     >
                       {item.name}
                     </a>
@@ -243,7 +216,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 

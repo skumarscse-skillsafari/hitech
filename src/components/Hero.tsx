@@ -138,19 +138,30 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
         <div className="space-y-8">
-          <div className="animate-fadeIn">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {hero.title}
-            </h1>
-          </div>
-          <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
-            <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
-              {hero.subtitle}
-            </p>
-          </div>
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
+  <div className="space-y-8">
+    <div className="animate-fadeIn">
+     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight">
+  {hero.title}
+</h1>
+
+<p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
+  Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
+</p>
+
+    </div>
+
+    <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
+      <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
+        {hero.subtitle}
+      </p>
+    </div>
+  </div>
+</div>
+
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
             <button
               onClick={() => {
                 const contactSection = document.getElementById('contact');
@@ -228,8 +239,8 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         }}
       />
 
-      {/* Vertical TNEA Code Button */}
-      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
+      {/* Vertical TNEA Code Button - Left Side */}
+      <div className="fixed left-0 top-1/3 transform -translate-y-1/2 z-50">
         <div className="rotate-90 origin-bottom-left">
           <button
             className="text-sm md:text-base font-bold bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-b-xl shadow-lg transition-all duration-300 whitespace-nowrap rotate-180"
