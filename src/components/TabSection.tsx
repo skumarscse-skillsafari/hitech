@@ -105,12 +105,11 @@ const TabsSection: React.FC = () => {
             <div className="flex justify-between items-center">
               <h3 className="text-xl md:text-2xl font-bold text-gray-900">{activeTabData.content.title}</h3>
               {activeTab !== 'hod' && (
-  <button className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit">
-    <span className="hidden sm:inline">View more</span>
-    <ChevronRight className="h-4 w-4" />
-  </button>
-)}
-
+                <button className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit">
+                  <span className="hidden sm:inline">View more</span>
+                  <ChevronRight className="h-4 w-4" />
+                </button>
+              )}
             </div>
 
             {activeTab === 'hod' ? (
@@ -172,7 +171,7 @@ const TabsSection: React.FC = () => {
                 </div>
               </div>
             ) : (
-              <Slider {...sliderSettings}>
+            <Slider {...sliderSettings}>
   {activeTabData.content.items.map((item: any, index: number) => (
     <div key={index} className="px-2 md:px-4">
       <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between">
@@ -198,9 +197,11 @@ const TabsSection: React.FC = () => {
             {Object.entries(item).map(([key, value]) => {
               if (["title", "description", "logo"].includes(key)) return null;
               return (
-                <div key={key} className="flex justify-between">
-                  <span className="capitalize font-medium">{key}:</span>
-                  <span className="text-gray-800">{value}</span>
+                <div key={key} className="flex justify-between gap-4">
+                  <span className="capitalize font-medium text-gray-700">{key}:</span>
+                  <span className="text-right text-gray-800 flex-1">
+                    {Array.isArray(value) ? value.join(', ') : value}
+                  </span>
                 </div>
               );
             })}
@@ -215,7 +216,6 @@ const TabsSection: React.FC = () => {
     </div>
   ))}
 </Slider>
-
 
             )}
           </div>
