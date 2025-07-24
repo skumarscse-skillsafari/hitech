@@ -189,19 +189,22 @@ const AccreditationCards: React.FC = () => {
     }
   };
 
-  const allLogos = [
-    dqEmploy, dqTSchool, heRank, theWeek, indiaToday,
-    csr, times, aicte, annaUniv, nba, nirf, naac, iso,
+  // Only these four logos will be displayed
+  const staticLogos = [
+    { src: aicte, alt: "AICTE" },
+    { src: nba, alt: "NBA" },
+    { src: naac, alt: "NAAC" },
+    { src: nirf, alt: "NIRF" }
   ];
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
@@ -209,18 +212,19 @@ const AccreditationCards: React.FC = () => {
       { 
         breakpoint: 1024, 
         settings: { 
-          slidesToShow: 2,
-          slidesToScroll: 1
+          settings: { slidesToShow: 3 },
         } 
       },
       { 
         breakpoint: 768, 
-        settings: { 
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false
-        } 
+      
+          settings: { slidesToShow: 2 },
+        
       },
+       {
+          breakpoint: 480,
+          settings: { slidesToShow: 1 },
+        },
     ],
   };
 
@@ -235,14 +239,15 @@ const AccreditationCards: React.FC = () => {
           </p>
         </div>
 
-        <div className="overflow-hidden py-8 mb-12 bg-white rounded-2xl shadow-lg">
-          <div className="flex animate-scroll space-x-12">
-            {[...allLogos, ...allLogos].map((logo, idx) => (
+        {/* Updated static logos section */}
+        <div className="flex justify-center items-center py-8 mb-12 bg-white rounded-2xl shadow-lg">
+          <div className="flex space-x-8 md:space-x-12">
+            {staticLogos.map((logo, idx) => (
               <div key={idx} className="flex-shrink-0">
                 <img
-                  src={logo}
-                  alt={`Accreditation ${idx}`}
-                  className="h-16 w-16 object-cover rounded-full shadow-md hover:scale-110 transition-transform duration-300"
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-16 w-16 md:h-20 md:w-20 object-contain hover:scale-110 transition-transform duration-300"
                 />
               </div>
             ))}
@@ -278,9 +283,7 @@ const AccreditationCards: React.FC = () => {
                               style={{ objectPosition: 'center' }}
                             />
                           </div>
-                          <div className="absolute -top-2 -right-2 bg-gradient-to-r from-yellow-400 to-orange-400 p-2 rounded-full shadow-lg">
                           
-                          </div>
                         </div>
                         <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">{accred.name}</h4>
                         <p className="text-xs md:text-sm text-gray-600 font-medium leading-relaxed">{accred.fullName}</p>
@@ -301,7 +304,7 @@ const AccreditationCards: React.FC = () => {
                           <div className="mt-4 md:mt-6 text-center">
                             <button
                               onClick={(e) => handleShowMoreClick(index, e)}
-                              className="inline-flex items-center gap-1 md:gap-2 px-4 py-2 md:px-6 md:py-3 bg-white/90 hover:bg-white text-gray-700 text-sm md:text-base font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                              className="inline-flex items-center gap-1 md:gap-2 px-2 py-1 md:px-3 md:py-1.5 bg-white/90 hover:bg-white text-gray-700 text-xs md:text-sm font-semibold rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105"
                             >
                               {isExpanded ? (
                                 <>
@@ -309,7 +312,8 @@ const AccreditationCards: React.FC = () => {
                                 </>
                               ) : (
                                 <>
-                                  Show More ({accred.rankings.length - 1} more) <ChevronDown className="h-3 w-3 md:h-4 md:w-4" />
+                                  Show More ({accred.rankings.length - 1} more){' '}
+                                  <ChevronDown className="h-3 w-3 md:h-4 md:w-4" />
                                 </>
                               )}
                             </button>
@@ -350,17 +354,17 @@ const AccreditationCards: React.FC = () => {
       )}
 
       <style jsx>{`
-        @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(10px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        .animate-scroll { animation: scroll 30s linear infinite; }
-        .animate-fadeIn { animation: fadeIn 0.5s ease-out forwards; }
-        .slick-dots { bottom: -40px; }
+        .animate-fadeIn {
+          animation: fadeIn 0.5s ease-out forwards;
+        }
+        .slick-dots {
+          bottom: -35px !important;
+          margin-top: 20px;
+        }
         .slick-dots li button:before {
           font-size: 10px;
           color: #f59e0b;
@@ -370,8 +374,13 @@ const AccreditationCards: React.FC = () => {
           opacity: 1;
           color: #f59e0b;
         }
+        .slick-slider {
+          padding: 0 20px;
+        }
         @media (max-width: 768px) {
-          .slick-dots { bottom: -30px; }
+          .slick-dots {
+            bottom: -30px !important;
+          }
         }
       `}</style>
     </section>
