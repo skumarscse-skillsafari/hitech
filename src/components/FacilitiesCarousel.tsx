@@ -174,7 +174,7 @@ const FacilitiesCarousel: React.FC<{ departmentName?: string }> = ({
                 <h5 className="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors mb-2">
                   {facility.name}
                 </h5>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 mb-4">
                   {facility.description}
                 </p>
               </div>
