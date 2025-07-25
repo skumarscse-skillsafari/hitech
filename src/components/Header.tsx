@@ -160,13 +160,47 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
               </div>
             ))}
 
-            {/* Desktop Hamburger Menu at the end */}
-            <button
-              className="ml-4 p-2 rounded-lg hover:bg-gray-100 transition-colors"
-              onClick={() => alert('Hamburger menu clicked')}
-            >
-              <Menu className="h-6 w-6 text-gray-700" />
-            </button>
+            {/* Desktop Hamburger Dropdown Menu */}
+            <div className="relative ml-4">
+              <button
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                onClick={() => handleDropdownToggle('hamburger')}
+              >
+                <Menu className="h-6 w-6 text-gray-700" />
+              </button>
+              {activeDropdown === 'hamburger' && (
+                <div className="absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-xl z-50">
+                  <Link
+                    to="/online-fees"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                    onClick={() => setActiveDropdown(null)}
+                  >
+                    Online Fees Payment
+                  </Link>
+                  <Link
+                    to="/clubs"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                    onClick={() => setActiveDropdown(null)}
+                  >
+                    Clubs and Societies
+                  </Link>
+                  <Link
+                    to="/ecampus"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                    onClick={() => setActiveDropdown(null)}
+                  >
+                    E-Campus Login
+                  </Link>
+                  <Link
+                    to="/media"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                    onClick={() => setActiveDropdown(null)}
+                  >
+                    Media
+                  </Link>
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* Mobile Menu Toggle */}
