@@ -116,16 +116,17 @@ const TabsSection: React.FC = () => {
               <div className="bg-gray-50 p-8 rounded-xl border border-gray-200">
                 <div className="flex flex-col md:flex-row gap-8">
                   <div className="md:w-1/3 flex flex-col items-center">
-                    <div className="w-48 h-48 rounded-lg overflow-hidden border-4 border-yellow-500 shadow-lg mb-4 relative group">
-                      <img 
-                        src={hodPhoto} 
-                        alt="HOD" 
-                        className="w-full h-full object-cover absolute inset-0"
-                        style={{ objectPosition: 'top center' }}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="w-48 relative" style={{ width: '218px' ,height: '334px'}}>
+                      <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg ring-4 ring-black/60 ring-offset-2 ring-offset-white">
+                        <img
+                          src={hodPhoto}
+                          alt="HOD"
+                          className="w-full h-full object-contain"
+                          style={{ objectPosition: 'top center' }}
+                        />
+                      </div>
                     </div>
-                    <h4 className="font-semibold text-xl text-center text-gray-900 mb-1">
+                    <h4 className="font-semibold text-xl text-center text-gray-900 mb-1 mt-4">
                       {activeTabData.content.items[0].title}
                     </h4>
                     <p className="text-yellow-600 text-sm font-medium mb-4">Head of Department</p>
@@ -177,52 +178,51 @@ const TabsSection: React.FC = () => {
                 </div>
               </div>
             ) : (
-            <Slider {...sliderSettings}>
-  {activeTabData.content.items.map((item: any, index: number) => (
-    <div key={index} className="px-2 md:px-4">
-      <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between">
-        <div>
-          <h4 className="font-semibold text-lg md:text-2xl text-gray-800 mb-4">
-            {item.title}
-          </h4>
-          <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
-            {item.description}
-          </p>
+              <Slider {...sliderSettings}>
+                {activeTabData.content.items.map((item: any, index: number) => (
+                  <div key={index} className="px-2 md:px-4">
+                    <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between">
+                      <div>
+                        <h4 className="font-semibold text-lg md:text-2xl text-gray-800 mb-4">
+                          {item.title}
+                        </h4>
+                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+                          {item.description}
+                        </p>
 
-          {item.logo && (
-            <div className="flex justify-center mb-6">
-              <img
-                src={item.logo}
-                alt={item.title || 'Card logo'}
-                className="h-20 md:h-24 object-contain"
-              />
-            </div>
-          )}
+                        {item.logo && (
+                          <div className="flex justify-center mb-6">
+                            <img
+                              src={item.logo}
+                              alt={item.title || 'Card logo'}
+                              className="h-20 md:h-24 object-contain"
+                            />
+                          </div>
+                        )}
 
-          <div className="space-y-3 text-sm md:text-base text-gray-700">
-            {Object.entries(item).map(([key, value]) => {
-              if (["title", "description", "logo"].includes(key)) return null;
-              return (
-                <div key={key} className="flex justify-between gap-4">
-                  <span className="capitalize font-medium text-gray-700">{key}:</span>
-                  <span className="text-right text-gray-800 flex-1">
-                    {Array.isArray(value) ? value.join(', ') : value}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+                        <div className="space-y-3 text-sm md:text-base text-gray-700">
+                          {Object.entries(item).map(([key, value]) => {
+                            if (["title", "description", "logo"].includes(key)) return null;
+                            return (
+                              <div key={key} className="flex justify-between gap-4">
+                                <span className="capitalize font-medium text-gray-700">{key}:</span>
+                                <span className="text-right text-gray-800 flex-1">
+                                  {Array.isArray(value) ? value.join(', ') : value}
+                                </span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
 
-        <button className="mt-6 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-2 transition-colors duration-200">
-          <span>Learn More</span>
-          <ChevronRight className="h-4 w-4" />
-        </button>
-      </div>
-    </div>
-  ))}
-</Slider>
-
+                      <button className="mt-6 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-2 transition-colors duration-200">
+                        <span>Learn More</span>
+                        <ChevronRight className="h-4 w-4" />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </Slider>
             )}
           </div>
         )}
