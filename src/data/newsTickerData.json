@@ -9,7 +9,7 @@
     "newsItems": [
       {
         "id": 1,
-        "text": "Admissions Open for Academic Year 2025-26! Apply now for B.Tech, M.Tech & Ph.D programs",
+        "text": "Admissions Open for Academic Year 2025-26! Apply now for B.E / B.Tech & M.E ",
         "type": "announcement",
         "url": "/admissions",
         "isActive": true
