@@ -17,7 +17,7 @@ import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg";
-import DataTable from '../DataTable';
+import DataTable from './DataTable';
 import { Award, Trophy } from 'lucide-react';
 
 const HomePage: React.FC = () => {
