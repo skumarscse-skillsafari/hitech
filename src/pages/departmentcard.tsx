@@ -21,36 +21,18 @@ const DepartmentCard: React.FC<DepartmentCardProps> = ({ department }) => {
   };
 
   return (
-    <div 
-      className="department-card"
+    <div
       onClick={handleClick}
-      style={{
-        cursor: 'pointer',
-        border: '1px solid #ddd',
-        borderRadius: '8px',
-        padding: '16px',
-        margin: '16px',
-        maxWidth: '300px',
-        transition: 'transform 0.2s',
-        ':hover': {
-          transform: 'scale(1.03)',
-          boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
-        }
-      }}
+      className="cursor-pointer border border-gray-200 rounded-xl p-4 m-4 max-w-sm w-full hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 bg-white"
     >
-      <img 
-        src={department.image} 
+      <img
+        src={department.image}
         alt={department.name}
-        style={{
-          width: '100%',
-          height: '180px',
-          objectFit: 'cover',
-          borderRadius: '4px'
-        }}
+        className="w-full h-40 object-cover rounded-md mb-4"
       />
-      <h2>{department.name}</h2>
-      <p>{department.shortName}</p>
-      <p>{department.description}</p>
+      <h2 className="text-lg font-semibold text-gray-800 mb-1">{department.name}</h2>
+      <p className="text-sm text-gray-500 font-medium mb-2">{department.shortName}</p>
+      <p className="text-sm text-gray-600 line-clamp-3">{department.description}</p>
     </div>
   );
 };
