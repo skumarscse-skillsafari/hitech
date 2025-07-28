@@ -19,7 +19,6 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ hero }) => {
   const handleWatchCampusTour = () => {
     console.log('Initiating campus tour. You would typically open a video player here.');
-    // Example: window.open('https://yourcollege.edu/campus-tour-video', '_blank');
   };
 
   return (
@@ -27,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image from public folder */}
+      {/* Background Image */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url('/clg.jpg')` }} 
@@ -37,26 +36,24 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
-        <div className="space-y-8">
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 -mt-[192px]">
-            <div className="space-y-8">
-              <div className="animate-fadeIn">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-400 leading-tight">
-                  {hero.title}
-                </h1>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-34 pb-20">
+        <div className="space-y-10 text-center">
+          {/* Title + Tagline */}
+          <div className="animate-fadeIn">
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-yellow-400 leading-tight">
+              {hero.title}
+            </h1>
 
-                <p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
-                  Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
-                </p>
-              </div>
+            <p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
+              Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
+            </p>
+          </div>
 
-              <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
-                <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
-                  {hero.subtitle}
-                </p>
-              </div>
-            </div>
+          {/* Subtitle */}
+          <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
+            <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
+              {hero.subtitle}
+            </p>
           </div>
 
           {/* CTA Buttons */}
@@ -116,7 +113,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         </div>
       </div>
 
-      {/* Vertical TNEA Code Button - Left Side */}
+      {/* Vertical TNEA Code Button */}
       <div className="fixed left-0 top-1/3 transform -translate-y-1/2 z-50">
         <div className="rotate-90 origin-bottom-left">
           <button

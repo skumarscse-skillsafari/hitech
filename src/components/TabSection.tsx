@@ -127,16 +127,17 @@ const TabsSection: React.FC = () => {
               <div className="bg-gray-50 p-8 rounded-xl border border-gray-200">
                 <div className="flex flex-col md:flex-row gap-8">
                   <div className="md:w-1/3 flex flex-col items-center">
-                    <div className="w-48 h-48 rounded-lg overflow-hidden border-4 border-yellow-500 shadow-lg mb-4 relative group">
-                      <img 
-                        src={hodPhoto} 
-                        alt="HOD" 
-                        className="w-full h-full object-cover absolute inset-0"
-                        style={{ objectPosition: 'top center' }}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="w-48 relative" style={{ width: '218px' ,height: '334px'}}>
+                      <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg ring-4 ring-black/60 ring-offset-2 ring-offset-white">
+                        <img
+                          src={hodPhoto}
+                          alt="HOD"
+                          className="w-full h-full object-contain"
+                          style={{ objectPosition: 'top center' }}
+                        />
+                      </div>
                     </div>
-                    <h4 className="font-semibold text-xl text-center text-gray-900 mb-1">
+                    <h4 className="font-semibold text-xl text-center text-gray-900 mb-1 mt-4">
                       {activeTabData.content.items[0].title}
                     </h4>
                     <p className="text-yellow-600 text-sm font-medium mb-4">Head of Department</p>
