@@ -50,7 +50,7 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">How to Apply</h3>
             <div className="space-y-6">
-              {admissions.process.map((step, index) => (
+              {admissions.process.map((step) => (
                 <div key={step.step} className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold">
@@ -65,9 +65,6 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
                       {step.description}
                     </p>
                   </div>
-                  {index < admissions.process.length - 1 && (
-                    <div className="absolute left-5 mt-10 w-0.5 h-8 bg-gray-300"></div>
-                  )}
                 </div>
               ))}
             </div>
@@ -166,7 +163,6 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
               <p className="text-gray-700 mb-6">
                 Our admissions counselors are here to help you with any questions about programs, eligibility, or the application process.
               </p>
-              {/* contact info blocks */}
               <div className="space-y-4 mb-6">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-blue-600" />
@@ -189,7 +185,6 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </section>
