@@ -1,0 +1,66 @@
+[
+  {
+    "faculty": ["Dr.A.JameerBasha, Professor & Head", "Dr.S.Lokesh, ASP/CSE", "Ms.P.Jeevitha, AP/CSE"],
+    "project_title": "Design and development of smart assistive device with integration of hybrid blockchain and augmented reality to shape the future mobile healthcare system for post covid challenges and diagnosis system",
+    "project_type": "Research",
+    "funding_agency": "AICTE - Research Promotion Scheme AQIS Application Id: 1-9335652751",
+    "amount": "Rs.9,48,614",
+    "duration": "3 Years (ongoing)"
+  },
+  {
+    "faculty": ["Dr.A.JameerBasha, Professor & Head"],
+    "project_title": "Scheme for Promoting Interests, Creativity and Ethics among Students (SPICES)",
+    "project_type": "Research",
+    "funding_agency": "AICTE",
+    "amount": "Rs.1,00,000",
+    "duration": "1 Year (ongoing)"
+  },
+  {
+    "faculty": ["Ms.P.Jeevitha, AP/CSE"],
+    "project_title": "Intelligent Support System for diagnosis of covid 19 and captioning of x ray images using LSTM and RNN with explainability",
+    "project_type": "Research",
+    "funding_agency": "Hindusthan Educational and Charitable Trust",
+    "amount": "Rs.2,35,000",
+    "duration": "1 Year (ongoing)"
+  },
+  {
+    "faculty": ["Dr.R.Kala, AP/CSE"],
+    "project_title": "Brain Tumor Detection Using Deep Convolutional Neural Network And Its Application Using FPGA Implementation",
+    "project_type": "Research",
+    "funding_agency": "Hindusthan Educational and Charitable Trust",
+    "amount": "Rs.2,00,000",
+    "duration": "1 Year (ongoing)"
+  },
+  {
+    "faculty": ["Ms.R.T. Subhalakshmi, AP/CSE"],
+    "project_title": "Automatic segmentation and classification of COVID-19 CT image Using DCN",
+    "project_type": "Research",
+    "funding_agency": "Hindusthan Educational and Charitable Trust",
+    "amount": "Rs.2,04,000",
+    "duration": "1 Year (ongoing)"
+  },
+  {
+    "faculty": ["Dr.A.JameerBasha, Professor & Head"],
+    "project_title": "Application of Artificial Intelligence in Waste Water Management",
+    "project_type": "Research",
+    "funding_agency": "Hindusthan Educational and Charitable Trust",
+    "amount": "Rs.2,40,000",
+    "duration": "1 Year (Completed)"
+  },
+  {
+    "faculty": ["Dr.S.Lokesh, ASP/CSE"],
+    "project_title": "Nano Assistive Communication Device for Elderly and Speech Disability People after Stroke",
+    "project_type": "Research",
+    "funding_agency": "Hindusthan Educational and Charitable Trust",
+    "amount": "Rs.2,10,000",
+    "duration": "1 Year (Completed)"
+  },
+  {
+    "faculty": ["Mr.Arun, AP/CSE"],
+    "project_title": "Social Vulnerability in context to natural disaster using Machine learning",
+    "project_type": "Research",
+    "funding_agency": "Hindusthan Educational and Charitable Trust",
+    "amount": "Rs.2,08,000",
+    "duration": "1 Year (Completed)"
+  }
+]
