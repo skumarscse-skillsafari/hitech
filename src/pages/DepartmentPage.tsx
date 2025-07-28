@@ -27,7 +27,7 @@ const DepartmentPage: React.FC = () => {
       title={`${department.name} - Hindusthan Institute of Technology`}
       description={department.description}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-[-150px]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-[-120px] sm:mt-[-150px]">
 
         {/* Department Header */}
         <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
@@ -38,7 +38,6 @@ const DepartmentPage: React.FC = () => {
           <StudentClubs />
         </SectionWrapper>
 
-
         {/* Teaching Methodologies */}
         <SectionWrapper lazy lazyHeight="500px" lazyDelay={900} className="mt-12">
           <TeachingMethodologyCards
@@ -48,7 +47,7 @@ const DepartmentPage: React.FC = () => {
           <div className="text-center mt-8">
             <button
               onClick={() => navigate('/innovative-methods')}
-              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 w-full sm:w-auto"
             >
               View all Innovative Teaching Methodologies
             </button>
@@ -65,9 +64,11 @@ const DepartmentPage: React.FC = () => {
 
         {/* Faculty Members */}
         <SectionWrapper lazy lazyHeight="600px" lazyDelay={1300} className="mt-12">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Faculty Members</h3>
-            <p className="text-gray-600">
+          <div className="text-center mb-8 px-2">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-4">
+              Faculty Members
+            </h3>
+            <p className="text-sm sm:text-base text-gray-600">
               Distinguished faculty contributing to excellence in {department.name}
             </p>
           </div>
@@ -84,16 +85,18 @@ const DepartmentPage: React.FC = () => {
 
         {/* Call to Action */}
         <SectionWrapper lazy lazyHeight="200px" lazyDelay={1700} className="mb-12 mt-16">
-          <div className="bg-gradient-to-r from-yellow-500 to-orange-500 px-6 py-12 sm:px-12 sm:py-16 rounded-2xl text-center text-white">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
-            <p className="text-lg sm:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-r from-yellow-500 to-orange-500 px-4 py-10 sm:px-12 sm:py-16 rounded-2xl text-center text-white">
+            <h2 className="text-xl sm:text-3xl font-bold mb-3 sm:mb-4">
+              Join Our Educational Legacy
+            </h2>
+            <p className="text-sm sm:text-lg mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
               Be part of an institution that has been shaping futures for over three decades
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-gray-900 px-6 py-3 sm:px-8 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-200 w-full sm:w-auto">
                 Explore Programs
               </button>
-              <button className="border-2 border-white text-white px-6 py-3 sm:px-8 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200">
+              <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition duration-200 w-full sm:w-auto">
                 Contact Us
               </button>
             </div>
