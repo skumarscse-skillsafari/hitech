@@ -325,7 +325,7 @@
   },
   {
     "id": 16,
-    "image": "/images/sathish.jpg",
+    "image": "/images/sathish.jpeg",
     "name": "Mr. S.Sathishkumar",
     "designation": "Assistant Professor",
     "specialization": "ML, Full-stack Development, Generative AI ",
@@ -465,7 +465,7 @@
   },
   {
     "id": 26,
-    "image": "...",
+    "image": "/images/senthilsign.jpeg",
     "name": "Dr.C. Senthil Singh",
     "designation": "Professor",
     "specialization": "",
