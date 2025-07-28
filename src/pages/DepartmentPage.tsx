@@ -50,7 +50,7 @@ const DepartmentPage: React.FC = () => {
               onClick={() => navigate('/innovative-methods')}
               className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
             >
-              View More Innovative Teaching Methodologies
+              View all Innovative Teaching Methodologies
             </button>
           </div>
         </SectionWrapper>
