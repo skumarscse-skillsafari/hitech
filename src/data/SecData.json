@@ -1,0 +1,109 @@
+{
+  "internships": [
+    {
+      "name": "Kousika S",
+      "company": "CSR Initiative by Microsoft and SAP",
+      "internshipDetails": "Artificial Intelligence and Machine Learning - An AI-Powered Healthcare Chatbot assists users by providing medical advice, symptom analysis, appointment scheduling, and health monitoring."
+    },
+    {
+      "name": "Jeyasuba M",
+      "company": "Infosys (MoU)",
+      "internshipDetails": "Data Visualisation - A Power BI Dashboard for AQI and Integrate Streamlit for Demo."
+    },
+    {
+      "name": "Krishna Prabhu E",
+      "company": "Infosys (MoU)",
+      "internshipDetails": "Python full stack development - Unified Family Expense Tracker"
+    },
+    {
+      "name": "Lathika K",
+      "company": "Infosys (MoU)",
+      "internshipDetails": "Data Visualization - Visualization of GDP and productivity of indian cities."
+    },
+    {
+      "name": "Priyadharsan V K",
+      "company": "Infosys (MoU)",
+      "internshipDetails": "Python full stack development - Rapidxcel Logistics web application using python stack technology"
+    },
+    {
+      "name": "Karthic V",
+      "company": "GT Software",
+      "internshipDetails": "MERN STACK - Online Ecommerce And Student Management Using MERN"
+    },
+    {
+      "name": "Podapati Jahnavi",
+      "company": "Skillforge",
+      "internshipDetails": "Machine Learning - Disease Prediction Using Machine Learning In Python"
+    },
+    {
+      "name": "Aidan Herold J",
+      "company": "Marpu Foundation",
+      "internshipDetails": "Designing - Tools and Applications were used to Design& Create Various innovation ideas"
+    },
+    {
+      "name": "Anbarasu K",
+      "company": "DotN.",
+      "internshipDetails": "Artificial Intelligence and Python Programming - AI Development Project Were Used to Analysis the Model of AI Bot"
+    },
+    {
+      "name": "Anshith Nandha",
+      "company": "Infotech",
+      "internshipDetails": "UI/UX Designs - Agriculture Based Website and Crested Logos for Various Models"
+    },
+    {
+      "name": "Kaviarasan.D",
+      "company": "Emglitz Technology",
+      "internshipDetails": "Data Science - Fake News Protection that detects and prevents the spread of fake news using machine learning."
+    }
+  ],
+  "miniProjects": [
+    {
+      "academicYear": "2024–25",
+      "batchDetails": "DEVASRI K S, HARINI D, BRUNDHA B, AARTHI G",
+      "courseCode": "22TP708",
+      "objective": "Design an affordable automated device to regulate poultry temperature and reduce manual intervention. Enhance bird health and productivity with IoT-based control."
+    },
+    {
+      "academicYear": "2024–25",
+      "batchDetails": "Aishwarya S, Asmitha S, Anju Merin Jacob, Harini K",
+      "courseCode": "22TP708",
+      "objective": "Develop AI-powered device using ESP32-CAM and TensorFlow Lite to detect and deter wild animals. Protect crops and enable real-time alerts and wildlife management."
+    },
+    {
+      "academicYear": "2023–24",
+      "batchDetails": "Akshaya C, Brindha K, Dhanalakshmi N, Gomathi R",
+      "courseCode": "21TP708",
+      "objective": "Develop Android app using CNN and VGG-16 to diagnose plant diseases. Enable farmers to take preventive measures for healthier crops and reduced losses."
+    },
+    {
+      "academicYear": "2023–24",
+      "batchDetails": "Dhaarani K, Ishwarya K, Kaviya B, Lavanya S",
+      "courseCode": "21TP708",
+      "objective": "Create an IoT-based baby monitoring system with sensors and voice module. Ensure baby’s safety and health by providing real-time alerts."
+    },
+    {
+      "academicYear": "2022–23",
+      "batchDetails": "Harini T, Dharshini S, Keerthana K, Mohanapriya A",
+      "courseCode": "20TP708",
+      "objective": "Build an Android app to identify Indian medicinal plants and their uses. Help revive traditional medicine with accessible, accurate information."
+    },
+    {
+      "academicYear": "2022–23",
+      "batchDetails": "Nandhini R, Sneha K, Surya D, Varshini P",
+      "courseCode": "20TP708",
+      "objective": "Design a secure smart helmet using RFID, MQ gas sensor, and GPS. Enhance road safety by monitoring rider condition and vehicle activity."
+    },
+    {
+      "academicYear": "2021–22",
+      "batchDetails": "Harshini R, Deepika M, Rithika K, Yazhini M",
+      "courseCode": "19TP708",
+      "objective": "Automate a drip irrigation system using Arduino to reduce water waste. Empower farmers with efficient, cost-effective farming practices."
+    },
+    {
+      "academicYear": "2021–22",
+      "batchDetails": "Lavanya P, Jeevitha S, Sushmitha K, Saranya R",
+      "courseCode": "19TP708",
+      "objective": "Develop a student monitoring system with RFID and Wi-Fi. Improve attendance tracking and enhance communication between students and management."
+    }
+  ]
+}

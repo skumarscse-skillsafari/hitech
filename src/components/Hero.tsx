@@ -1,4 +1,4 @@
-import React from 'react'; // No need for useState, useRef, useEffect if only a static image
+import React from 'react'; 
 import {
   ArrowRight,
   Play,
@@ -9,7 +9,6 @@ interface HeroProps {
   hero: {
     title: string;
     subtitle: string;
-    // backgroundImage: string; // We'll hardcode the path, so this prop is not strictly needed for the background image anymore
     stats: Array<{
       number: string;
       label: string;
@@ -31,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       {/* Background Image from public folder */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/clg.jpg')` }} // Directly referencing the image in public folder
+        style={{ backgroundImage: `url('/clg.jpg')` }} 
       ></div>
 
       {/* Overlay */}
