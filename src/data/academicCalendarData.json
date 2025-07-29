@@ -1,0 +1,26 @@
+[
+  {
+    "title": "First Year",
+    "startDate": "July 1, 2025",
+    "endDate": "Nov 30, 2025",
+    "workingDays": 95,
+    "nextSemester": "Jan 2, 2026",
+    "pdfUrl": "/pdfs/first-year-calendar.pdf"
+  },
+  {
+    "title": "Second Year",
+    "startDate": "June 20, 2025",
+    "endDate": "Nov 25, 2025",
+    "workingDays": 102,
+    "nextSemester": "Jan 3, 2026",
+    "pdfUrl": "/pdfs/second-year-calendar.pdf"
+  },
+  {
+    "title": "Third & Fourth Year",
+    "startDate": "June 23, 2025",
+    "endDate": "Oct 30, 2025",
+    "workingDays": 108,
+    "nextSemester": "Dec 12, 2025",
+    "pdfUrl": "/pdfs/third-fourth-year-calendar.pdf"
+  }
+]

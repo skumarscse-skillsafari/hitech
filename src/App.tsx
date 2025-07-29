@@ -20,6 +20,7 @@ import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
+import AcademicCalendar from './pages/AcademicCalendar'; // ✅ NEW
 
 // JSON data imports
 import topNavBarData from './data/topNavBarData.json';
@@ -80,9 +81,9 @@ function App() {
               </Routes>
             </main>
 
-            <Footer 
-              collegeName={headerData.header.collegeName} 
-              contact={contactData.contact} 
+            <Footer
+              collegeName={headerData.header.collegeName}
+              contact={contactData.contact}
             />
           </div>
         </Router>
