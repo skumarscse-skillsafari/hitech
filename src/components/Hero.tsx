@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-34 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 transform -translate-y-[0.5in]">
         <div className="space-y-10 text-center">
           {/* Title + Tagline */}
           <div className="animate-fadeIn">
