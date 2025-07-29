@@ -1,0 +1,290 @@
+{ 
+  "internships": [
+  {
+    "sno": 1,
+    "name": "Kousika S (720822103090)",
+    "year": "2024-25",
+    "company": "CSR Initiative by Microsoft and SAP"
+  },
+  {
+    "sno": 2,
+    "name": "Jeyasuba M (720822103075)",
+    "year": "2024-25",
+    "company": "Infosys (MoU)"
+  },
+  {
+    "sno": 3,
+    "name": "Krishna Prabhu E (720822103092)",
+    "year": "2024-25",
+    "company": "Infosys (MoU)"
+  },
+  {
+    "sno": 4,
+    "name": "Lathika K (720822103093)",
+    "year": "2024-25",
+    "company": "Infosys (MoU)"
+  },
+  {
+    "sno": 5,
+    "name": "Priyadharsan V K (720822108045)",
+    "year": "2024-25",
+    "company": "Infosys (MoU)"
+  },
+  {
+    "sno": 6,
+    "name": "Karthic V (720821103047)",
+    "year": "2024-25",
+    "company": "GT Software"
+  },
+  {
+    "sno": 7,
+    "name": "Podapati Jahnavi (720821103080)",
+    "year": "2024-25",
+    "company": "Skillforge"
+  },
+  {
+    "sno": 8,
+    "name": "Aidan Herold J (720822103009)",
+    "year": "2024-25",
+    "company": "Marpu Foundation"
+  },
+  {
+    "sno": 9,
+    "name": "Anbarasu K (720822103012)",
+    "year": "2024-25",
+    "company": "DotN."
+  },
+  {
+    "sno": 10,
+    "name": "Anshith Nandha (720822103016)",
+    "year": "2024-25",
+    "company": "Infotech"
+  },
+  {
+    "sno": 11,
+    "name": "Kaviarasan D (720822103081)",
+    "year": "2024-25",
+    "company": "Emglitz Technology"
+  },
+  {
+    "sno": 12,
+    "name": "Anitha V (720821103011)",
+    "year": "2023-24",
+    "company": "Visaithalam Solution (Alumni)"
+  },
+  {
+    "sno": 13,
+    "name": "Deepthi S (720821103017)",
+    "year": "2023-24",
+    "company": "Visaithalam Solutions (Alumni)"
+  },
+  {
+    "sno": 14,
+    "name": "Santhoshkumar S (720821103096)",
+    "year": "2023-24",
+    "company": "Forage in association with Cognizant"
+  },
+  {
+    "sno": 15,
+    "name": "Ravichandran R (720821103088)",
+    "year": "2023-24",
+    "company": "Ilife Technologies"
+  },
+  {
+    "sno": 16,
+    "name": "Pandinila M (720822103118)",
+    "year": "2023-24",
+    "company": "Skill dragon"
+  },
+  {
+    "sno": 17,
+    "name": "Vinoth Kumar D (720822103179)",
+    "year": "2023-24",
+    "company": "Technohacks"
+  },
+  {
+    "sno": 18,
+    "name": "Tharun V (720822103163)",
+    "year": "2023-24",
+    "company": "Octanet Services Private Limited"
+  },
+  {
+    "sno": 19,
+    "name": "Nithya Dharshini S (720821103077)",
+    "year": "2023-24",
+    "company": "Techies Around"
+  },
+  {
+    "sno": 20,
+    "name": "Margreat Pavithra. A (720821103065)",
+    "year": "2023-24",
+    "company": "Gateway Software Solutions"
+  },
+  {
+    "sno": 21,
+    "name": "Mruthul P (720821103068)",
+    "year": "2023-24",
+    "company": "NoviTech"
+  },
+  {
+    "sno": 22,
+    "name": "S. Agarshana (720820103008)",
+    "year": "2022-23",
+    "company": "Accenture"
+  },
+  {
+    "sno": 23,
+    "name": "Kiran Kumar Reddy (720820103024)",
+    "year": "2022-23",
+    "company": "Seattle Technologies, Coimbatore"
+  },
+  {
+    "sno": 24,
+    "name": "I. Leela Christy (720820103057)",
+    "year": "2022-23",
+    "company": "Techvolt Software Pvt. Ltd, Coimbatore"
+  },
+  {
+    "sno": 25,
+    "name": "V. Bharath (720820103021)",
+    "year": "2022-23",
+    "company": "Braineryspot Technology, Coimbatore"
+  },
+  {
+    "sno": 26,
+    "name": "R. Chandrasekar (720820103023)",
+    "year": "2022-23",
+    "company": "Codebind Technologies, Trichy"
+  },
+  {
+    "sno": 27,
+    "name": "M. Logeshwaran (720820103059)",
+    "year": "2022-23",
+    "company": "Elysium Academy, Coimbatore"
+  },
+  {
+    "sno": 28,
+    "name": "S. Arun (720820103015)",
+    "year": "2022-23",
+    "company": "Neelvath Software Solutions, Coimbatore"
+  },
+  {
+    "sno": 29,
+    "name": "G. Abishek (720820103005)",
+    "year": "2022-23",
+    "company": "Fantasy Solution, Trichy"
+  },
+  {
+    "sno": 30,
+    "name": "Kavin Kumar (720820103050)",
+    "year": "2022-23",
+    "company": "Think Next Technologies Private Limited"
+  },
+  {
+    "sno": 31,
+    "name": "R. Karthick (720820103047)",
+    "year": "2022-23",
+    "company": "Technofly Solutions, Bangalore"
+  }
+],
+ "prototypes": [
+    {
+      "sno": 1,
+      "teamMembers": [
+        "SIKHA G JAYAN (720819104104)",
+        "SHILPA K P (720819104102)",
+        "SHINAS (720819104103)",
+        "VAISHNAV P (720819104120)"
+      ],
+      "batch": "8th Semester (2019-2023)",
+      "topic": "HYDROPONIC GREEN HOUSE FARMING SYSTEM",
+      "qualityOfCompletedProjects": "The project received a financial grant of Rs. 7,500 under the TNSCST (Tamil Nadu State Council for Science and Technology) Student Project Scheme."
+    },
+    {
+      "sno": 2,
+      "teamMembers": [
+        "KAMALESHWARI R (720821103046)",
+        "AKSHAYA E (720821103009)",
+        "KAVIYASRI J (720821103054)"
+      ],
+      "batch": "8th Semester (2021-2025)",
+      "topic": "AI-Enhanced IoT based Waste Management System for Real-Time Drainage Maintenance and Monitoring",
+      "qualityOfCompletedProjects": "The project received a financial grant of Rs.10,000  under the Naan Mudhalvan-Niral Thiruvizha (Tamilnadu Skill development corporation) Student Project Scheme."
+    },
+    {
+      "sno": 3,
+      "teamMembers": [
+        "HARISH KEERTHI V (720821103036)",
+        "HARI HARAN S (720821103031)",
+        "HARISH S (720821103037)",
+        "MAHALINGESHVARANATHAN N L (720821103037)"
+      ],
+      "batch": "8th Semester (2021-2025)",
+      "topic": "Single-Window Platform to Streamline Approvals and Empower Entrepreneurial Success",
+      "qualityOfCompletedProjects": "The project received a financial grant of Rs.10,000  under the Naan Mudhalvan-Niral Thiruvizha (Tamilnadu Skill development corporation) Student Project Scheme."
+    }
+  ],
+ "miniProjects": [
+    {
+      "sno": 1,
+      "teamMembers": "DEVASRI K S-720822103039, HARINI D-720822103061, BRUNDHA B-720822103035, AARTHI G-720822103002",
+      "batch": "4th Semester / 2024 – 25",
+      "Title": "Design an affordable device to automatically regulate temperature in poultry farms. It ensures optimal bird health, reduces manual water spraying, and prevents heat stress."
+    },
+    {
+      "sno": 2,
+      "teamMembers": "Aishwarya S – 720822103010, Asmitha S --720822103024, Anju Merin Jacob – 720822103015, Harini K – 720822103062",
+      "batch": "4th Semester / 2024 – 25",
+      "Title": "Develop a cost-effective AI-based device using ESP32-CAM to detect wild animals near farms. It alerts locals and deters intrusion using ultrasound, enhancing crop and wildlife protection."
+    },
+    {
+      "sno": 3,
+      "teamMembers": "JAGAN A (720821103041), KARTHICK S (720821103049), KISHORE R (720821103056)",
+      "batch": "4th Semester / 2023 – 24",
+      "Title": "An IoT-based solar-powered grass cutter using smart sensors. It automates cutting, adjusts speed, and sends updates via a mobile app for eco-friendly lawn maintenance."
+    },
+    {
+      "sno": 4,
+      "teamMembers": "SYED MOHAMMAD MURSHID S (720821103111), SIVA V (720821103103), PRAJITH P (720821103081)",
+      "batch": "4th Semester / 2023 – 24",
+      "Title": "AI-based Legal Documentation Assistant that automates legal document generation. It supports intent detection, ethical use, scheduling, and real-time expert connections."
+    },
+    {
+      "sno": 5,
+      "teamMembers": "AGARSHANA (720820103008), JENESHA (720820103042), KAVIYA (720820103051), LAM AMULYA (720820103056)",
+      "batch": "4th Semester / 2021 – 22",
+      "Title": "Develop an AI system for handwritten digit recognition. It uses deep learning to classify digits in real time from various sources like forms or scanned documents."
+    },
+    {
+      "sno": 6,
+      "teamMembers": "KIRAN KUMAR REDDY (720820103024), SAI SANTHOSH (720820103029), SURYA SASANKA (720820103043), AKSHAY KUMAR GUPTA (720820103046)",
+      "batch": "4th Semester / 2022 – 23",
+      "Title": "Gesture-based game controller using OpenCV and ML. Enables real-time gameplay by detecting physical movements instead of traditional controls."
+    }
+  ],
+
+  "micro_projects": [
+    {
+      "sno": 1,
+      "semester": "4th Semester",
+      "title": "Web Programming",
+      "problemStatement": "Online Grocery Management"
+    },
+    {
+      "sno": 2,
+      "semester": "4th Semester",
+      "title": "Java Programming",
+      "problemStatement": "Library Management using Java"
+    },
+    {
+      "sno": 3,
+      "semester": "4th Semester",
+      "title": "Database Management system",
+      "problemStatement": "Student Management System"
+    }
+  ]
+
+}
+
+
+
