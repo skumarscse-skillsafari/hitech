@@ -20,6 +20,7 @@ import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
+import AcademicCalendar from './pages/AcademicCalendar'; // ✅ NEW
 
 // JSON data imports
 import topNavBarData from './data/topNavBarData.json';
@@ -27,6 +28,7 @@ import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
 import DataTable from './DataTable';
+
 function App() {
   return (
     <HelmetProvider>
@@ -74,13 +76,13 @@ function App() {
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable" element={<DataTable />} />
-                
+                <Route path="/students/calendar" element={<AcademicCalendar />} /> {/* ✅ NEW */}
               </Routes>
             </main>
 
-            <Footer 
-              collegeName={headerData.header.collegeName} 
-              contact={contactData.contact} 
+            <Footer
+              collegeName={headerData.header.collegeName}
+              contact={contactData.contact}
             />
           </div>
         </Router>
