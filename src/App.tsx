@@ -15,7 +15,7 @@ import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
 import InnovativeMethods from './pages/InnovativeMethods';
-import Objectives from './pages/objectives';
+import Objectives from './pages/Objectives';
 import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
@@ -27,7 +27,8 @@ import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
-import DataTable from './DataTable';
+
+import DataTable from './pages/DataTable'; 
 
 function App() {
   return (
@@ -75,8 +76,8 @@ function App() {
                 <Route path="/leadership" element={<PrincipalsDesk />} />
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
-                <Route path="/datatable" element={<DataTable />} />
-                <Route path="/students/calendar" element={<AcademicCalendar />} /> {/* ✅ NEW */}
+                <Route path="/datatable/:section" element={<DataTable />} />
+
               </Routes>
             </main>
 
