@@ -16,43 +16,19 @@ interface PlacementProcess {
 
 const Placements: React.FC = () => {
   const placementStats: PlacementStats = {
-    placementRate: '95%',
-    averagePackage: '7.2 LPA',
-    highestPackage: '45 LPA',
+    placementRate: '90%',
+    averagePackage: '4.5 LPA',
+    highestPackage: '42 LPA',
     companiesVisited: '150+',
   };
 
   const topRecruiters = [
-   {
-      name: 'Google',
-      logo: '/logos/googl.png',
-      package: '35–45 LPA',
-    },
-    {
-      name: 'Microsoft',
-      logo: '/logos/microsof.png',
-      package: '28–40 LPA',
-    },
-    {
-      name: 'Amazon',
-      logo: '/logos/amazon.png',
-      package: '25–35 LPA',
-    },
-    {
-      name: 'TCS',
-      logo: '/logos/tcs.png',
-      package: '4–8 LPA',
-    },
-    {
-      name: 'Infosys',
-      logo: '/logos/infosys.png',
-      package: '4–7 LPA',
-    },
-    {
-      name: 'Wipro',
-      logo: '/logos/wipro.png',
-      package: '4–6 LPA',
-    },
+    { name: 'Google', logo: '/logos/googl.png', package: '35–45 LPA' },
+    { name: 'Microsoft', logo: '/logos/microsof.png', package: '28–40 LPA' },
+    { name: 'Amazon', logo: '/logos/amazon.png', package: '25–35 LPA' },
+    { name: 'TCS', logo: '/logos/tcs.png', package: '4–8 LPA' },
+    { name: 'Infosys', logo: '/logos/infosys.png', package: '4–7 LPA' },
+    { name: 'Wipro', logo: '/logos/wipro.png', package: '4–6 LPA' },
   ];
 
   const placementProcess: PlacementProcess[] = [
@@ -133,9 +109,9 @@ const Placements: React.FC = () => {
           {/* Top Recruiters */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">Top Recruiters</h3>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {topRecruiters.map((recruiter, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div key={index} className="bg-white p-4 md:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                   <div className="flex items-center space-x-4">
                     <img
                       src={recruiter.logo}
@@ -156,7 +132,7 @@ const Placements: React.FC = () => {
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">Placement Process</h3>
             <div className="space-y-6">
-              {placementProcess.map((step, index) => (
+              {placementProcess.map((step) => (
                 <div key={step.step} className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 bg-yellow-500 text-gray-900 rounded-full flex items-center justify-center font-bold">
@@ -167,9 +143,6 @@ const Placements: React.FC = () => {
                     <h4 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h4>
                     <p className="text-gray-600">{step.description}</p>
                   </div>
-                  {index < placementProcess.length - 1 && (
-                    <div className="absolute left-5 mt-10 w-0.5 h-8 bg-gray-300"></div>
-                  )}
                 </div>
               ))}
             </div>
