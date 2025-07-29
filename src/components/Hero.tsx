@@ -1,5 +1,9 @@
-import React from 'react';
-import { ArrowRight, Play, CreditCard } from 'lucide-react';
+import React from 'react'; 
+import {
+  ArrowRight,
+  Play,
+  CreditCard,
+} from 'lucide-react';
 
 interface HeroProps {
   hero: {
@@ -25,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       {/* Background Image */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/clg.jpg')` }}
+        style={{ backgroundImage: `url('/clg.jpg')` }} 
       ></div>
 
       {/* Overlay */}

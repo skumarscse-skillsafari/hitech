@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom';
 import {
   BookOpen, Users, Award, Building, Briefcase, Globe, ChevronRight,
   User, GraduationCap, ClipboardList, FileText
@@ -38,6 +39,7 @@ const logoMap: any = {
 const TabsSection: React.FC = () => {
   const [tabs, setTabs] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<string>('hod');
+  const navigate = useNavigate();
 
   useEffect(() => {
     import('../data/tabsData.json').then((data) => {
@@ -73,6 +75,12 @@ const TabsSection: React.FC = () => {
     ]
   };
 
+  const handleViewMore = () => {
+    navigate(`/datatable/${activeTab}`);
+  };
+
+
+
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="border-b border-gray-200">
@@ -103,7 +111,10 @@ const TabsSection: React.FC = () => {
             <div className="flex justify-between items-center">
               <h3 className="text-xl md:text-2xl font-bold text-gray-900">{activeTabData.content.title}</h3>
               {activeTab !== 'hod' && (
-                <button className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit">
+                <button
+                  onClick={handleViewMore}
+                  className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit"
+                >
                   <span className="hidden sm:inline">View more</span>
                   <ChevronRight className="h-4 w-4" />
                 </button>
