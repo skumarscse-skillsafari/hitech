@@ -28,7 +28,7 @@ const DepartmentPage: React.FC = () => {
       description={department.description}
     >
       {/* Custom Arrow Button with Tooltip */}
-      <div className="fixed top-[190px] left-4 z-50">
+      <div className="fixed top-[200px] left-9 z-50">
         <div
           className="group relative w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
           onClick={() => navigate(-1)}
