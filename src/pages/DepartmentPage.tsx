@@ -28,8 +28,31 @@ const DepartmentPage: React.FC = () => {
       title={`${department.name} - Hindusthan Institute of Technology`}
       description={department.description}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-[-120px] sm:mt-[-150px]">
+      {/* Custom Arrow Button with Tooltip */}
+      <div className="fixed top-[200px] left-9 z-50">
+        <div
+          className="group relative w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+          onClick={() => navigate(-1)}
+        >
+          {/* Arrow Icon */}
+          <svg
+            className="w-5 h-5 text-black"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
 
+          {/* Tooltip Text */}
+          <div className="absolute left-full ml-2 top-1/2 transform -translate-y-1/2 px-2 py-1 rounded bg-black text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+            Back
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-[-120px] sm:mt-[-150px]">
         {/* Department Header */}
         <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
           <DepartmentDetail department={department} />
@@ -50,7 +73,7 @@ const DepartmentPage: React.FC = () => {
               onClick={() => navigate('/innovative-methods')}
               className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 w-full sm:w-auto"
             >
-              View all Innovative Teaching Methodologies
+              View all Innovative Teaching Methodologies →
             </button>
           </div>
         </SectionWrapper>
