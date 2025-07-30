@@ -20,15 +20,14 @@ import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
-import AcademicCalendar from './pages/AcademicCalendar'; // ✅ NEW
+import DataTable from './pages/DataTable';
+import CseLatestEvents from './pages/CseLatestEvents'; // ✅ NEW
 
 // JSON data imports
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
-
-import DataTable from './pages/DataTable'; 
 
 function App() {
   return (
@@ -77,7 +76,7 @@ function App() {
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
-
+                <Route path="/departments/cse/latest-events" element={<CseLatestEvents />} /> {/* ✅ NEW */}
               </Routes>
             </main>
               <Footer
