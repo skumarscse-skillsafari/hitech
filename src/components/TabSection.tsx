@@ -85,7 +85,7 @@ const TabsSection: React.FC = () => {
       notable: 'notable'
     };   
     const route = routeMap[activeTab] || activeTab;
-    console.log(route)
+   
     navigate(`/datatable/${route}`);
   };
   return (
