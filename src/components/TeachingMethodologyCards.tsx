@@ -40,7 +40,7 @@ const defaultMethodologies: TeachingMethodology[] = jsonMethodologies;
 const methodologyDetails: Record<number, React.ReactNode> = {
   1: (
     <div className="space-y-3">
-      <h4 className="text-lg font-semibold text-gray-800">Key Features</h4>
+      
       <ul className="list-disc list-inside text-gray-600">
         <li>Our institution is dedicated to creating a learner-centric environment by integrating technology with active learning pedagogies...</li>
       </ul>
@@ -48,7 +48,7 @@ const methodologyDetails: Record<number, React.ReactNode> = {
   ),
   2: (
     <div className="space-y-3">
-      <h4 className="text-lg font-semibold text-gray-800">Tools Used</h4>
+      
       <ul className="list-disc list-inside text-gray-600">
         <li>Our institution adopts Problem-Based Learning (PBL) supported by digital tools...</li>
       </ul>
@@ -56,7 +56,7 @@ const methodologyDetails: Record<number, React.ReactNode> = {
   ),
   3: (
     <div className="space-y-3">
-      <h4 className="text-lg font-semibold text-gray-800">Approach</h4>
+     
       <ul className="list-disc list-inside text-gray-600">
         <li>Our department implements the Flipped Classroom model to promote active, student-centered learning...</li>
       </ul>
