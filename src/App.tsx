@@ -79,11 +79,10 @@ function App() {
                 <Route path="/departments/cse/latest-events" element={<CseLatestEvents />} /> {/* ✅ NEW */}
               </Routes>
             </main>
-
-            <Footer
-              collegeName={headerData.header.collegeName}
-              contact={contactData.contact}
-            />
+              <Footer
+                  collegeName={headerData.header.collegeName}
+                  contact={contactData.contact} 
+              />
           </div>
         </Router>
       </CMSProvider>
