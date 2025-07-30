@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import col from "../../public/Collaborative Learning with Digital Collaboration Tools.jpg";
-import com from "../../public/Competency-Based Learning with Online Assessments.jpg"
-import Life from "../../public/Lifelong Learning with Micro-Credentials.jpg"
-import online from "../../public/Online and Blended Learning with LMS Integration.jpg.png"
-import Multi from "../../public/Multimedia and Visualization with Digital Content.jpg"
-import Indust from "../../public/Industry-Aligned Courses and Professional Development.jpg"
+import com from "../../public/Competency-Based Learning with Online Assessments.jpg";
+import Life from "../../public/Lifelong Learning with Micro-Credentials.jpg";
+import online from "../../public/Online and Blended Learning with LMS Integration.jpg.png";
+import Multi from "../../public/Multimedia and Visualization with Digital Content.jpg";
+import Indust from "../../public/Industry-Aligned Courses and Professional Development.jpg";
 
 // Add first 3 card data manually as static entries
 const extraMethods = [
@@ -94,20 +94,20 @@ const InnovativeMethods: React.FC = () => {
         {methods.map((method, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
           >
             <img
               src={method.image}
               alt={method.title}
               className="h-48 w-full object-cover"
             />
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
               <h2 className="text-xl font-semibold mb-2">{method.title}</h2>
-              <p className="text-gray-600 text-sm mb-4">{method.description}</p>
-              <div className="flex justify-end">
+              <p className="text-gray-600 text-sm mb-4 flex-grow">{method.description}</p>
+              <div className="flex justify-end mt-auto">
                 <button
                   onClick={() => setSelectedMethod(method)}
-                  className="bg-yellow-500 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-yellow-600 transition"
+                  className="bg-[#e6b200] text-black text-sm font-semibold px-6 py-2 rounded-md hover:brightness-95 transition"
                 >
                   View More
                 </button>
