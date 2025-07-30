@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import { useNavigate } from 'react-router-dom';
 import {
   BookOpen, Users, Award, Building, Briefcase, Globe, ChevronRight,
   User, GraduationCap, ClipboardList, FileText, CalendarDays
@@ -26,11 +25,13 @@ import uipath from "../../public/uipath.png";
 import celonis from "../../public/celonis.png";
 import infosys from "../../public/infosys.png";
 
+// ICON MAPPING
 const iconMap: any = {
   BookOpen, Users, Award, Building, Briefcase, Globe,
   User, GraduationCap, ClipboardList, FileText, CalendarDays
 };
 
+// IMAGE MAPPING
 const logoMap: any = {
   IEEE, ict, csi, ibm, google, oracle, zoho, redhat, dell,
   vmware, csscorp, salesforce, nasscom, uipath, celonis, infosys
@@ -41,7 +42,6 @@ const defaultIcon = FileText;
 const TabsSection: React.FC = () => {
   const [tabs, setTabs] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<string>('hod');
-  const navigate = useNavigate();
 
   useEffect(() => {
     import('../data/tabsData.json').then((data) => {
@@ -113,10 +113,7 @@ const TabsSection: React.FC = () => {
                 {activeTabData.content.title}
               </h3>
               {activeTab !== 'hod' && (
-                <button
-                  onClick={handleViewMore}
-                  className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit"
-                >
+                <button className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit">
                   <span className="hidden sm:inline">View more</span>
                   <ChevronRight className="h-4 w-4" />
                 </button>
@@ -127,7 +124,7 @@ const TabsSection: React.FC = () => {
               <div className="bg-gray-50 p-8 rounded-xl border border-gray-200">
                 <div className="flex flex-col md:flex-row gap-8">
                   <div className="md:w-1/3 flex flex-col items-center">
-                    <div className="w-48 relative" style={{ width: '218px', height: '334px' }}>
+                    <div className="w-48 relative" style={{ width: '218px' ,height: '334px'}}>
                       <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg ring-4 ring-black/60 ring-offset-2 ring-offset-white">
                         <img
                           src={hodPhoto}
@@ -142,8 +139,8 @@ const TabsSection: React.FC = () => {
                     </h4>
                     <p className="text-yellow-600 text-sm font-medium mb-4">Head of Department</p>
                     <div className="text-center space-y-2 text-sm text-gray-700">
-                      <p><span className="font-semibold text-yellow-600">Email:</span> {activeTabData.content.items[0].email}</p>
-                      <p><span className="font-semibold text-yellow-600">Phone:</span> {activeTabData.content.items[0].phone}</p>
+                      <p><span className="font-semibold">Email:</span> {activeTabData.content.items[0].email}</p>
+                      <p><span className="font-semibold">Phone:</span> {activeTabData.content.items[0].phone}</p>
                     </div>
                   </div>
 
