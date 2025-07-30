@@ -103,7 +103,7 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
               <span className="text-xl font-bold">{collegeName}</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Shaping tomorrow's engineers through excellence in education, research, and innovation since 1995.
+              Shaping tomorrow's engineers through excellence in education, research, and innovation since 2007.
             </p>
 
             {/* Social Media */}
@@ -165,15 +165,20 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 flex-shrink-0 mt-1" />
-                <span className="text-gray-300 text-sm">{contact.address}</span>
+                <span className="text-gray-300 text-sm">
+                  <div>Valley Campus, Pollachi Main Road, Othakkalmandapam (Post), </div>
+                  <div>Coimbatore - 641 032, Tamil Nadu, India</div>
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">{contact.phone}</span>
+                <span className="text-gray-300 text-sm">
+                  +91 97152 601184, +91 97151 29797, +91 94438 45599, +91 90470 10006
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">{contact.email}</span>
+                <span className="text-gray-300 text-sm">hit.office@hindusthan.net</span>
               </div>
             </div>
 
@@ -192,7 +197,6 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Bottom Bar */}
