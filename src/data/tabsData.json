@@ -63,6 +63,35 @@
       }
     },
     {
+  "id": "latest-events",
+  "name": "Latest Events",
+  "icon": "CalendarDays",
+  "content": {
+    "title": "Department Events & Activities",
+    "items": [
+      {
+        "title": "Internal Smart India Hackathon – 2022",
+        "date": "10.03.2022",
+        "description": "Total of 56 teams were participated under different themes, among them Software is 45 and Hardware 11.",
+        "participants": " 300"
+      },
+      {
+        "title": "One day technical talk on 'Latest trends in software testing'",
+        "date": "15.03.2022",
+        "description": "Delivered by Mr. M. Sabarinathan, CEO, Gateway Software Solution.",
+        "participants": " 60"
+      },
+      {
+        "title": "Pitching Event for PoCs & Mentorship Support",
+        "date": "16.02.2022",
+        "description": "Pitching Event for PoCs developed & linkage with Innovation Ambassadors for mentorship support.",
+        "participants": "40"
+      }
+    ]
+  }
+},
+
+    {
       "id": "student-achievements",
       "name": "Student Achievements",
       "icon": "Award",
