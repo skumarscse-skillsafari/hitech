@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import {
   ChevronLeft,
   ChevronRight,
-  Mail,
   ExternalLink,
   GraduationCap,
   Brain,
@@ -121,17 +120,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
-                  {/* Email */}
-                  {member.email && (
-                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <a
-                        href={`mailto:${member.email}`}
-                        className="bg-white/90 hover:bg-white p-2 rounded-full shadow-md"
-                      >
-                        <Mail className="h-4 w-4 text-gray-600" />
-                      </a>
-                    </div>
-                  )}
+                 
 
                   {/* Experience */}
                   {member.experience && (
