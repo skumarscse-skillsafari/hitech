@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "title": "Internal Smart India Hackathon – 2022",
+      "date": "10.03.2022",
+      "description": "Total of 56 teams participated under different themes, among them Software is 45 and Hardware 11.",
+      "participants": "Approximately 300",
+      "image": "/images/events/sih-2022.jpg"
+    },
+    {
+      "title": "One day technical talk on 'Latest trends in software testing'",
+      "date": "15.03.2022",
+      "description": "Delivered by Mr. M. Sabarinathan, CEO, Gateway Software Solution.",
+      "participants": "Approximately 60",
+      "image": "/images/events/software-testing-talk.jpg"
+    },
+    {
+      "title": "Pitching Event for PoCs & Mentorship Support",
+      "date": "16.02.2022",
+      "description": "Pitching Event for PoCs developed & linkage with Innovation Ambassadors for mentorship support.",
+      "participants": "Approximately 40",
+      "image": "/images/events/pitching-event.jpg"
+    }
+  ]
+}
