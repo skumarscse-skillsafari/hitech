@@ -8,6 +8,7 @@ import {
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
 import hodPhoto from "../../public/HOD.png";
 import IEEE from "../../public/IEEE.png";
 import ict from "../../public/ict.png";
@@ -43,17 +44,24 @@ const TabsSection: React.FC = () => {
 
   useEffect(() => {
     import('../data/tabsData.json').then((data) => {
-      const enrichedTabs = data.tabs.map((tab: any) => ({
-        ...tab,
-        icon: iconMap[tab.icon],
-        content: {
-          ...tab.content,
-          items: tab.content.items.map((item: any) => ({
-            ...item,
-            logo: item.logo ? logoMap[item.logo] : undefined
-          }))
-        }
-      }));
+      const enrichedTabs = data.tabs
+        .filter((tab: any) => {
+          const isValid = iconMap[tab.icon];
+          if (!isValid) console.warn(`⚠️ Invalid icon: ${tab.icon}`);
+          return isValid;
+        })
+        .map((tab: any) => ({
+          ...tab,
+          icon: iconMap[tab.icon],
+          content: {
+            ...tab.content,
+            items: tab.content.items.map((item: any) => ({
+              ...item,
+              logo: item.logo ? logoMap[item.logo] : undefined
+            }))
+          }
+        }));
+
       setTabs(enrichedTabs);
     });
   }, []);
@@ -78,16 +86,16 @@ const TabsSection: React.FC = () => {
   const handleViewMore = () => {
     const routeMap: Record<string, string> = {
       internships: 'internships',
-     
       micro: 'micro_projects',
       prototypes: 'prototypes',
       research: 'research',
       notable: 'notable'
-    };   
+    };
     const route = routeMap[activeTab] || activeTab;
-   
+    console.log("Navigating to:", route);
     navigate(`/datatable/${route}`);
   };
+
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="border-b border-gray-200">
@@ -116,7 +124,9 @@ const TabsSection: React.FC = () => {
         {activeTabData && (
           <div className="space-y-6">
             <div className="flex justify-between items-center">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900">{activeTabData.content.title}</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                {activeTabData.content.title}
+              </h3>
               {activeTab !== 'hod' && (
                 <button
                   onClick={handleViewMore}
@@ -206,7 +216,6 @@ const TabsSection: React.FC = () => {
                           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
                             {item.description}
                           </p>
-
                           {item.logo && (
                             <div className="flex justify-center mb-6">
                               <img
@@ -216,7 +225,6 @@ const TabsSection: React.FC = () => {
                               />
                             </div>
                           )}
-
                           <div className="space-y-3 text-sm md:text-base text-gray-700">
                             {Object.entries(item).map(([key, value]) => {
                               if (["title", "description", "logo"].includes(key)) return null;
