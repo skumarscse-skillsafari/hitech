@@ -79,9 +79,8 @@ function App() {
 
               </Routes>
             </main>
-
-            <Footer 
-              collegeName={headerData.header.collegeName} 
+<Footer
+collegeName={headerData.header.collegeName}
               contact={contactData.contact} 
             />
           </div>
