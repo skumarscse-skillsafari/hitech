@@ -1,4 +1,5 @@
-[
+{
+  "research_data":[
   {
     "faculty": ["Dr.A.JameerBasha, Professor & Head", "Dr.S.Lokesh, ASP/CSE", "Ms.P.Jeevitha, AP/CSE"],
     "project_title": "Design and development of smart assistive device with integration of hybrid blockchain and augmented reality to shape the future mobile healthcare system for post covid challenges and diagnosis system",
@@ -64,3 +65,4 @@
     "duration": "1 Year (Completed)"
   }
 ]
+}

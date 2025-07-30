@@ -103,7 +103,7 @@ const DepartmentPage: React.FC = () => {
         </SectionWrapper>
 
         {/* Tabs Section */}
-        <SectionWrapper lazy lazyHeight="400px" lazyDelay={1500} className="mt-12">
+        <SectionWrapper lazy lazyHeight="400px" lazyDelay={600} className="mt-12">
           <TabsSection departmentName={department.name} />
         </SectionWrapper>
 
