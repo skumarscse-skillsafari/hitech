@@ -80,11 +80,10 @@ function App() {
 
               </Routes>
             </main>
-
-            <Footer
-              collegeName={headerData.header.collegeName}
-              contact={contactData.contact}
-            />
+              <Footer
+                  collegeName={headerData.header.collegeName}
+                  contact={contactData.contact} 
+              />
           </div>
         </Router>
       </CMSProvider>
