@@ -22,13 +22,13 @@ import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
 import AcademicCalendar from './pages/AcademicCal';
 import CalendarDetails from './pages/CalendarDetails'; // ✅ NEW
+import DataTable from './pages/DataTable';
+import CseLatestEvents from './pages/CseLatestEvents'; // ✅ NEW
 
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
-
-import DataTable from './pages/DataTable';
 
 function App() {
   return (
@@ -82,11 +82,10 @@ function App() {
                 <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
               </Routes>
             </main>
-
-            <Footer
-              collegeName={headerData.header.collegeName}
-              contact={contactData.contact}
-            />
+              <Footer
+                  collegeName={headerData.header.collegeName}
+                  contact={contactData.contact} 
+              />
           </div>
         </Router>
       </CMSProvider>
