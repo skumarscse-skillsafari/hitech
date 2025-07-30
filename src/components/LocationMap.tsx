@@ -5,7 +5,7 @@ const LocationMap: React.FC = () => {
   return (
     <section id="location" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
@@ -19,16 +19,16 @@ const LocationMap: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          
+        <div className="lg:flex lg:gap-12">
+
           {/* Google Map */}
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex-1 flex flex-col">
             <div className="p-6 border-b border-gray-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Campus Location</h3>
               <p className="text-gray-600">Hindusthan Institute of Technology, Coimbatore</p>
             </div>
-            
-            <div className="relative h-96">
+
+            <div className="relative flex-1 min-h-[300px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31343.270009689997!2d76.96502354550023!3d10.894539137441964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85abaa31dcfa9%3A0x72d5daed0d228046!2sHindusthan%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1752210144684!5m2!1sen!2sin"
                 width="100%"
@@ -41,7 +41,7 @@ const LocationMap: React.FC = () => {
                 className="w-full h-full"
               ></iframe>
             </div>
-            
+
             <div className="p-6 bg-gray-50">
               <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
                 <Navigation className="h-5 w-5" />
@@ -51,9 +51,9 @@ const LocationMap: React.FC = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-6">
-            
-            {/* Address Card */}
+          <div className="space-y-6 mt-12 lg:mt-0 flex-1">
+
+            {/* Campus Address */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start space-x-4">
                 <div className="bg-yellow-100 p-3 rounded-lg">
@@ -63,10 +63,8 @@ const LocationMap: React.FC = () => {
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Campus Address</h4>
                   <p className="text-gray-700 leading-relaxed">
                     Hindusthan Institute of Technology<br />
-                    Valley Campus, Pollachi Main Road, Othakkalmandapam (Post),
-                    Coimbatore - 641 032
-                    Tamil Nadu, India.<br />
-                  
+                    Valley Campus, Pollachi Main Road, Othakkalmandapam (Post),<br />
+                    Coimbatore - 641 032, Tamil Nadu, India.
                   </p>
                 </div>
               </div>
@@ -92,9 +90,7 @@ const LocationMap: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900">Email</h4>
-                    <p className="text-gray-700"> hit.office@hindusthan.net
-                      </p>
-                    <p className="text-gray-700"></p>
+                    <p className="text-gray-700">hit.office@hindusthan.net</p>
                   </div>
                 </div>
 
@@ -113,7 +109,7 @@ const LocationMap: React.FC = () => {
               </div>
             </div>
 
-            {/* Transportation */}
+            {/* How to Reach */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <h4 className="text-xl font-bold text-gray-900 mb-4">How to Reach</h4>
               <div className="space-y-4">
