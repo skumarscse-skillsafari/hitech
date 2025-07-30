@@ -20,10 +20,11 @@ import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
+import AcademicCalendar from './pages/AcademicCal';
+import CalendarDetails from './pages/CalendarDetails'; // ✅ NEW
 import DataTable from './pages/DataTable';
 import CseLatestEvents from './pages/CseLatestEvents'; // ✅ NEW
 
-// JSON data imports
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
@@ -58,7 +59,6 @@ function App() {
             />
           </div>
 
-          {/* Main content offset */}
           <div className="pt-[150px] flex flex-col min-h-screen bg-white">
             <main className="flex-grow">
               <Routes>
@@ -76,7 +76,10 @@ function App() {
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
-                <Route path="/departments/cse/latest-events" element={<CseLatestEvents />} /> {/* ✅ NEW */}
+
+                {/* ✅ Calendar Routes */}
+                <Route path="/academic-calendar" element={<AcademicCalendar />} />
+                <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
               </Routes>
             </main>
               <Footer
