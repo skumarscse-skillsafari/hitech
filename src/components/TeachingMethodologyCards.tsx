@@ -42,25 +42,25 @@ const defaultMethodologies: TeachingMethodology[] = jsonMethodologies;
 const methodologyDetails: Record<number, React.ReactNode> = {
   1: (
     <div className="space-y-3">
-      <h4 className="text-lg font-semibold text-gray-800">Key Features</h4>
+      
       <ul className="list-disc list-inside text-gray-600">
-        <li>Our institution is dedicated to creating a learner-centric environment by integrating technology with active learning pedagogies. We utilize interactive tools like Kahoot, Mentimeter, and Poll Everywhere to foster engagement, real-time feedback, and reflection. Virtual labs such as Infosys Springboard, Amrita Virtual Labs, and Cisco Packet Tracer provide hands-on experience, bridging theory and practice. Coding platforms like HackerRank, LeetCode, and Codecademy develop programming skills, logical reasoning, and problem-solving abilities. These tools transform traditional classrooms into collaborative, data-driven learning spaces that encourage continuous assessment, peer interaction, and self-paced learning—empowering students to take ownership of their education and preparing them for future careers.</li>
+        Our institution is dedicated to creating a learner-centric environment by integrating technology with active learning pedagogies. We utilize interactive tools like Kahoot, Mentimeter, and Poll Everywhere to foster engagement, real-time feedback, and reflection. Virtual labs such as Infosys Springboard, Amrita Virtual Labs, and Cisco Packet Tracer provide hands-on experience, bridging theory and practice. Coding platforms like HackerRank, LeetCode, and Codecademy develop programming skills, logical reasoning, and problem-solving abilities. These tools transform traditional classrooms into collaborative, data-driven learning spaces that encourage continuous assessment, peer interaction, and self-paced learning—empowering students to take ownership of their education and preparing them for future careers.
       </ul>
     </div>
   ),
   2: (
     <div className="space-y-3">
-      <h4 className="text-lg font-semibold text-gray-800">Tools Used</h4>
+      
       <ul className="list-disc list-inside text-gray-600">
-        <li>Our institution adopts Problem-Based Learning (PBL) supported by digital tools to empower students as real-world problem solvers. Learners collaborate using Google Workspace and Microsoft Teams, manage projects via Trello and Asana, and deploy solutions on platforms like AWS, GCP, and GitHub. This approach promotes critical thinking, teamwork, and project execution in realistic, technology-driven environments. Students gain hands-on experience with industry-standard tools, fostering digital fluency, self-directed learning, and professional readiness. By solving open-ended, interdisciplinary challenges, they develop into innovative thinkers and effective collaborators, equipped to lead and drive meaningful impact in today’s complex, fast-evolving professional landscape.</li>
+        Our institution adopts Problem-Based Learning (PBL) supported by digital tools to empower students as real-world problem solvers. Learners collaborate using Google Workspace and Microsoft Teams, manage projects via Trello and Asana, and deploy solutions on platforms like AWS, GCP, and GitHub. This approach promotes critical thinking, teamwork, and project execution in realistic, technology-driven environments. Students gain hands-on experience with industry-standard tools, fostering digital fluency, self-directed learning, and professional readiness. By solving open-ended, interdisciplinary challenges, they develop into innovative thinkers and effective collaborators, equipped to lead and drive meaningful impact in today’s complex, fast-evolving professional landscape.
       </ul>
     </div>
   ),
   3: (
     <div className="space-y-3">
-      <h4 className="text-lg font-semibold text-gray-800">Approach</h4>
+     
       <ul className="list-disc list-inside text-gray-600">
-        <li>Our department implements the Flipped Classroom model to promote active, student-centered learning. Students engage with pre-recorded lectures and materials via YouTube, Google Drive, and the LMS before class, enabling in-class time for collaborative discussions, problem-solving, and interactive activities. Platforms like Google Classroom, Zoom, and Google Meet support ongoing communication and engagement. Weekly expert talks provide real-world context, linking theory to industry practice. This approach enhances participation, conceptual clarity, digital fluency, and self-directed learning. By reversing traditional teaching, the department creates a dynamic academic environment that better prepares students for professional challenges and evolving technological landscapes.</li>
+        Our department implements the Flipped Classroom model to promote active, student-centered learning. Students engage with pre-recorded lectures and materials via YouTube, Google Drive, and the LMS before class, enabling in-class time for collaborative discussions, problem-solving, and interactive activities. Platforms like Google Classroom, Zoom, and Google Meet support ongoing communication and engagement. Weekly expert talks provide real-world context, linking theory to industry practice. This approach enhances participation, conceptual clarity, digital fluency, and self-directed learning. By reversing traditional teaching, the department creates a dynamic academic environment that better prepares students for professional challenges and evolving technological landscapes.
       </ul>
     </div>
   )
@@ -163,7 +163,7 @@ const TeachingMethodologyCards: React.FC<TeachingMethodologyCardsProps> = ({
               </div>
               <div className="text-right">
                 <button
-                  className="text-sm px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition"
+                  className="bg-[#e6b200] text-black text-sm font-semibold px-6 py-2 rounded-md hover:brightness-95 transition"
                   onClick={() => setSelectedMethodology(methodology)}
                 >
                   View More
