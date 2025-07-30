@@ -9,6 +9,7 @@ import FacultyCarousel from '../components/FacultyCarousel';
 import FacilitiesCarousel from '../components/FacilitiesCarousel';
 import TabsSection from '../components/TabSection';
 
+
 import departmentsData from '../data/departmentsData.json';
 import StudentClubs from './StuClub';
 
@@ -78,7 +79,7 @@ const DepartmentPage: React.FC = () => {
           />
         </SectionWrapper>
 
-        {/* Department Tabs Section */}
+        {/* Tabs Section */}
         <SectionWrapper lazy lazyHeight="400px" lazyDelay={1500} className="mt-12">
           <TabsSection departmentName={department.name} />
         </SectionWrapper>
