@@ -59,37 +59,41 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
 
   return (
     <div className="bg-white rounded-3xl shadow-xl border border-gray-200 max-w-7xl mx-auto mt-6">
-      {/* Title */}
-      <div className="px-6 pt-6">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{title}</h2>
-      </div>
+      
 
-      {/* Tabs + Search */}
+      {/* Category Tabs + Search Bar */}
       <div className="px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
         {/* Category Tabs */}
         {showCategory && categoryOptions.length > 0 && (
-          <div className="flex flex-wrap gap-2">
-            {categoryOptions.map((option) => {
-              const key = typeof option === 'string' ? option : option.key;
-              const label =
-                typeof option === 'string'
-                  ? option.charAt(0).toUpperCase() + option.slice(1).replace(/([A-Z])/g, ' $1')
-                  : option.label;
+          <div className="flex flex-wrap border-b border-gray-300 w-full sm:w-auto gap-2 sm:gap-4">
+            {categoryOptions
+              .filter((option) => {
+                const key = typeof option === 'string' ? option : option.key;
+                return key.toLowerCase() !== 'notable';
+              })
+              .map((option) => {
+                const key = typeof option === 'string' ? option : option.key;
+                const label =
+                  typeof option === 'string'
+                    ? option.charAt(0).toUpperCase() + option.slice(1).replace(/([A-Z])/g, ' $1')
+                    : option.label;
 
-              return (
-                <button
-                  key={key}
-                  onClick={() => handleCategoryChange(key)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition ${
-                    selectedCategory === key
-                      ? 'bg-amber-500 text-white shadow'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  {label}
-                </button>
-              );
-            })}
+                const isActive = selectedCategory === key;
+
+                return (
+                  <button
+                    key={key}
+                    onClick={() => handleCategoryChange(key)}
+                    className={`px-6 py-2.5 text-base font-semibold rounded-t-xl transition-all duration-200 ${
+                      isActive
+                        ? 'bg-amber-500 text-white shadow-md'
+                        : 'bg-gray-100 text-gray-700 hover:bg-amber-100 hover:text-amber-700'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                );
+              })}
           </div>
         )}
 
