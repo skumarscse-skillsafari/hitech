@@ -108,7 +108,7 @@
         "href": "/students",
         "dropdown": [
           { "name": "Student Portal", "href": "/students/portal" },
-          { "name": "Academic Calendar", "href": "/students/calendar" },
+          { "name": "Academic Calendar", "href": "/academic-calendar" },
           { "name": "Examination", "href": "/students/examination" },
           { "name": "Results", "href": "/students/results" },
           { "name": "Time Table", "href": "/students/timetable" },
