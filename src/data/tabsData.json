@@ -1,4 +1,5 @@
-{
+{ 
+
   "tabs": [
     {
       "id": "hod",
@@ -125,7 +126,7 @@
       }
     },
     {
-      "id": "internship",
+      "id": "internships",
       "name": "Internship ",
       "icon": "Briefcase",
       "content": {
@@ -384,7 +385,7 @@
       }
     },
     {
-      "id": "projects",
+      "id": "notable",
       "name": "Notable Projects",
       "icon": "BookOpen",
       "content": {
