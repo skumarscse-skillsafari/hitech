@@ -295,7 +295,7 @@
   
   "research_data":[
   {
-    "faculty": ["Dr.A.JameerBasha, Professor & Head", "Dr.S.Lokesh, ASP/CSE", "Ms.P.Jeevitha, AP/CSE"],
+    "faculty name": ["Dr.A.JameerBasha, Professor & Head", "Dr.S.Lokesh, ASP/CSE", "Ms.P.Jeevitha, AP/CSE"],
     "project_title": "Design and development of smart assistive device with integration of hybrid blockchain and augmented reality to shape the future mobile healthcare system for post covid challenges and diagnosis system",
     "project_type": "Research",
     "funding_agency": "AICTE - Research Promotion Scheme AQIS Application Id: 1-9335652751",
@@ -303,7 +303,7 @@
     "duration": "3 Years (ongoing)"
   },
   {
-    "faculty": ["Dr.A.JameerBasha, Professor & Head"],
+    "faculty name": ["Dr.A.JameerBasha, Professor & Head"],
     "project_title": "Scheme for Promoting Interests, Creativity and Ethics among Students (SPICES)",
     "project_type": "Research",
     "funding_agency": "AICTE",
@@ -311,7 +311,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
-    "faculty": ["Ms.P.Jeevitha, AP/CSE"],
+    "faculty name": ["Ms.P.Jeevitha, AP/CSE"],
     "project_title": "Intelligent Support System for diagnosis of covid 19 and captioning of x ray images using LSTM and RNN with explainability",
     "project_type": "Research",
     "funding_agency": "Hindusthan Educational and Charitable Trust",
@@ -319,7 +319,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
-    "faculty": ["Dr.R.Kala, AP/CSE"],
+    "faculty name": ["Dr.R.Kala, AP/CSE"],
     "project_title": "Brain Tumor Detection Using Deep Convolutional Neural Network And Its Application Using FPGA Implementation",
     "project_type": "Research",
     "funding_agency": "Hindusthan Educational and Charitable Trust",
@@ -327,7 +327,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
-    "faculty": ["Ms.R.T. Subhalakshmi, AP/CSE"],
+    "faculty name": ["Ms.R.T. Subhalakshmi, AP/CSE"],
     "project_title": "Automatic segmentation and classification of COVID-19 CT image Using DCN",
     "project_type": "Research",
     "funding_agency": "Hindusthan Educational and Charitable Trust",
@@ -335,7 +335,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
-    "faculty": ["Dr.A.JameerBasha, Professor & Head"],
+    "faculty name": ["Dr.A.JameerBasha, Professor & Head"],
     "project_title": "Application of Artificial Intelligence in Waste Water Management",
     "project_type": "Research",
     "funding_agency": "Hindusthan Educational and Charitable Trust",
@@ -343,7 +343,7 @@
     "duration": "1 Year (Completed)"
   },
   {
-    "faculty": ["Dr.S.Lokesh, ASP/CSE"],
+    "faculty name": ["Dr.S.Lokesh, ASP/CSE"],
     "project_title": "Nano Assistive Communication Device for Elderly and Speech Disability People after Stroke",
     "project_type": "Research",
     "funding_agency": "Hindusthan Educational and Charitable Trust",
@@ -351,12 +351,1649 @@
     "duration": "1 Year (Completed)"
   },
   {
-    "faculty": ["Mr.Arun, AP/CSE"],
+    "faculty name": ["Mr.Arun, AP/CSE"],
     "project_title": "Social Vulnerability in context to natural disaster using Machine learning",
     "project_type": "Research",
     "funding_agency": "Hindusthan Educational and Charitable Trust",
     "amount": "Rs.2,08,000",
     "duration": "1 Year (Completed)"
   }
+],
+"powered_industry":[
+  {
+    "s.no.": 1,
+    "companyName": "Infosys Springboard",
+    "certificationCourse": "Machine Learning Foundation Certification"
+  },
+  {
+    "s.no.": 2,
+    "companyName": "Infosys Springboard",
+    "certificationCourse": "Java Foundation Certification"
+  },
+  {
+    "s.no.": 3,
+    "companyName": "Infosys Springboard",
+    "certificationCourse": "Principles of Generative AI Certification"
+  },
+  {
+    "s.no.": 4,
+    "companyName": "Infosys Springboard",
+    "certificationCourse": "SB_Python Programmer Certification"
+  },
+  {
+    "s.no.": 5,
+    "companyName": "Infosys Springboard",
+    "certificationCourse": "Springboard AI Primer Certification"
+  },
+  {
+    "s.no.": 6,
+    "companyName": "Infosys Springboard",
+    "certificationCourse": "Springboard Artificial Intelligence Foundation Certification"
+  },
+  {
+    "s.no.": 7,
+    "companyName": "Infosys Springboard",
+    "certificationCourse": "TechA Power BI Data Analytics Certification"
+  },
+  {
+    "s.no.": 8,
+    "companyName": "Infosys Springboard",
+    "certificationCourse": "TechA_Ethical Hacking Python Programmer Certification"
+  },
+  {
+    "s.no.": 9,
+    "companyName": "LinkedIn Learning",
+    "certificationCourse": "Operating System Forensics"
+  },
+  {
+    "s.no.": 10,
+    "companyName": "Oracle",
+    "certificationCourse": "Cloud Infrastructure"
+  },
+  {
+    "s.no.": 11,
+    "companyName": "Udemy",
+    "certificationCourse": "Mastering AWS"
+  },
+  {
+    "s.no.": 12,
+    "companyName": "Udemy",
+    "certificationCourse": "Wordpress website developer"
+  },
+  {
+    "s.no.": 13,
+    "companyName": "Udemy",
+    "certificationCourse": "Complete Python"
+  },
+  {
+    "s.no.": 14,
+    "companyName": "Coursera",
+    "certificationCourse": "Getting started with front end and web development"
+  },
+  {
+    "s.no.": 15,
+    "companyName": "Coursera",
+    "certificationCourse": "Preparing Data for Analysis with Microsoft Excel"
+  },
+  {
+    "s.no.": 16,
+    "companyName": "Coursera",
+    "certificationCourse": "Data Analysis and Visualization with Power BI"
+  }
+],
+
+"International": [
+{
+"s.no.": 1,
+"faculty name": "Dr. S. Lokesh",
+"journal": "Recent Developments in Medicine and Medical Research",
+"indexing": "Scopus",
+"title": "Secure and Authenticate Indexing of Medical Images Using Region of Non-Interest",
+"volumeIssuePage": "Vol. 6 V6/434",
+"date": "2021"
+},
+{
+"s.no.": 2,
+"faculty name": "Ms. P. Gomathi",
+"journal": "International Journal of Engineering Applied Sciences and Technology",
+"indexing": "UGC",
+"title": "Better And Smarter Emergency Medical Assistance During Road Accident And Vehicle Impact",
+"volumeIssuePage": "6,6,258-265",
+"date": "2021"
+},
+{
+"s.no.": 3,
+"faculty name": "Mr. P. Arun",
+"journal": "International Journal of Community Medicine and Public Health",
+"indexing": "Scopus",
+"title": "Experiences of online learning during COVID-19 pandemic lockdown period: a cross-sectional survey among the college students in India",
+"doi": "https://dx.doi.org/10.18203/2394-6040.ijcmph20212309",
+"date": "2021"
+},
+{
+"s.no.": 4,
+"faculty name": "Dr. A. Jameer Basha",
+"journal": "MDPI Sensors",
+"indexing": "SCI",
+"title": "Chaotic Harris Hawks Optimization with Quasi-Reflection-Based Learning: An Application to Enhance CNN Design",
+"volumeIssuePage": "Sensors 2021, 21, 6654",
+"doi": "https://doi.org/10.3390/s21196654",
+"date": "2021"
+},
+{
+"s.no.": 5,
+"faculty name": "K. Murugan",
+"journal": "International Journal for Research in Applied Science & Engineering Technology (IJRASET)",
+"indexing": "UGC",
+
+"title": "A Survey on New Security improvement in Internet of Things utilized by Software Defined Networking (SDN)",
+"volumeIssuePage": "10, VII |1717-1620",
+"date": "July 2022"
+},
+{
+"s.no.": 6,
+"faculty name": "Mr. R. Senthilkumar",
+"journal": "International Journal of Environmental Protection and Ecology",
+"indexing": "SCI",
+"title": "Gray-level co-occurrence matrix with oriented fast and rotated brief algorithm for diabetic retinopathy prediction",
+"volumeIssuePage": "23,07,3089-3097",
+"date": "July 2022"
+},
+{
+"s.no.": 7,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "ICTACT Journal on Image and Video Processing",
+"indexing": "UGC Care",
+"title": "An Improvised Ensemble CNN Algorithm for detecting video stream in multimedia",
+"volumeIssuePage": "13,02,2860–2864",
+"date": "November 2022"
+},
+{
+"s.no.": 8,
+"faculty name": "Biju Balakrishnan",
+"journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+"indexing": "UGC Care",
+"title": "Semantic Web Mining With Latent Semantic Domain Clustered Web User Applications Maps",
+"volumeIssuePage": "9,4,119-128",
+"date": "November 2022"
+},
+{
+"s.no.": 9,
+"faculty name": "P. Gomathi",
+"journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+"indexing": "UGC Care",
+"title": "Advanced Leaf Disease Detection System using Machine Learning",
+"volumeIssuePage": "9,4,148-153",
+"date": "November 2022"
+},
+{
+"s.no.": 10,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "GIS SCIENCE JOURNAL",
+
+"indexing": "UGC Care",
+"title": "Interpretation of Vegitation Using AI in QGIS (Quantum Geographic Information System)",
+"volumeIssuePage": "09,12,793–804",
+"date": "Dec 2022"
+},
+{
+"s.no.": 11,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "ICTACT Journal on Image and Video Processing",
+"indexing": "UGC Care",
+"title": "An Improvised Ensemble CNN Algorithm for detecting video stream in multimedia",
+"volumeIssuePage": "13,02,2860–2864",
+"date": "November 2022"
+},
+{
+"s.no.": 12,
+"faculty name": "Biju Balakrishnan",
+"journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+"indexing": "UGC Care",
+"title": "Semantic Web Mining With Latent Semantic Domain Clustered Web User Applications Maps",
+"volumeIssuePage": "9,4,119-128",
+"date": "November 2022"
+},
+{
+"s.no.": 13,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "GIS SCIENCE JOURNAL",
+"indexing": "UGC Care",
+"title": "Interpretation of Vegitation Using AI in QGIS (Quantum Geographic Information System)",
+"volumeIssuePage": "09,12,793–804",
+"date": "Dec 2022"
+},
+{
+"s.no.": 14,
+"faculty name": "S. Lokesh",
+"journal": "International Journal of Health Sciences",
+"indexing": "SCI",
+"title": "CNN based deep learning methods for precise analysis of cardiac arrhythmias",
+"volumeIssuePage": "6(S1), 10808–10819",
+"date": "2022"
+},
+{
+"s.no.": 15,
+"faculty name": "S. Lokesh",
+
+"journal": "International Journal of Health Sciences",
+"indexing": "SCI",
+"title": "Classification of EEG signals using machine learning and deep learning techniques",
+"volumeIssuePage": "6(S1), 10794–10807",
+"date": "2022"
+},
+{
+"s.no.": 16,
+"faculty name": "M. Manicka Raja",
+"journal": "Intelligent Automation & Soft Computing",
+"indexing": "SCI",
+"title": "Aggregated PSO for Secure Data Transmission in WSN Using Fog Server",
+"doi": "https://doi.org/10.32604/iasc.2022.025665",
+"date": "2022"
+},
+{
+"s.no.": 17,
+"faculty name": "S. Lokesh",
+"journal": "International Journal of Health Sciences",
+"indexing": "SCI",
+"title": "CNN based deep learning methods for precise analysis of cardiac arrhythmias",
+"volumeIssuePage": "6(S1), 10808–10819",
+"date": "2022"
+},
+
+
+
+{
+"s.no.": 18,
+"faculty name": "K. Murugan",
+"journal": "International Journal for Research in Applied Science & Engineering Technology (IJRASET)",
+"indexing": "UGC",
+"title": "A Survey on New Security improvement in Internet of Things utilized by Software Defined Networking (SDN)",
+"volumeIssuePage": "Volume 10, Issue VII, 1717–1620",
+"doi": "https://doi.org/10.22214/ijraset.2022.45417",
+"date": "July 2022"
+},
+{
+"s.no.": 19,
+"faculty name": "Mr. R. Senthilkumar",
+"journal": "International Journal of Environmental Protection and Ecology",
+"indexing": "SCI",
+"title": "Gray-level co-occurrence matrix with oriented fast and rotated brief algorithm for diabetic retinopathy prediction",
+
+"volumeIssuePage": "Volume 23, Issue 07, 3089–3097",
+"date": "July 2022"
+},
+{
+"s.no.": 20,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "ICTACT Journal on Image and Video Processing",
+"indexing": "UGC Care",
+"title": "An Improvised Ensemble CNN Algorithm for detecting video stream in multimedia",
+"volumeIssuePage": "Volume 13, Issue 02, 2860–2864",
+"date": "Nov 2022"
+},
+{
+"s.no.": 21,
+"faculty name": "Biju Balakrishnan",
+"journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+"indexing": "UGC Care",
+"title": "Semantic Web Mining With Latent Semantic Domain Clustered Web User Applications Maps",
+"volumeIssuePage": "Volume 9, Issue 4, 119–128",
+"date": "Nov 2022"
+},
+{
+"s.no.": 22,
+"faculty name": "P. Gomathi",
+"journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+"indexing": "UGC Care",
+"title": "Advanced Leaf Disease Detection System using Machine Learning",
+"volumeIssuePage": "Volume 9, Issue 4, 148–153",
+"date": "Nov 2022"
+},
+{
+"s.no.": 23,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "GIS SCIENCE JOURNAL",
+"indexing": "UGC Care",
+"title": "Interpretation of Vegitation Using AI in QGIS (Quantum Geographic Information System)",
+"volumeIssuePage": "Volume 09, Issue 12, 793–804",
+"date": "Dec 2022"
+},
+{
+"s.no.": 24,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "Journal of Intelligent and Fuzzy Systems",
+"indexing": "SCI",
+"title": "Real time multi view image based FPC plant management with SS data security and low rate attack detection for efficient smart agriculture in WSN",
+"volumeIssuePage": "Volume 44, Issue 02, 91–100",
+"doi": "10.3233/JIFS-220594",
+"date": "Jan 2023"
+},
+{
+"s.no.": 25,
+"faculty name": "Mr. R. Senthilkumar",
+"journal": "Multimedia Tools and Applications",
+"indexing": "SCI",
+"title": "Fully convolutional neural networks for LIDAR-camera fusion for pedestrian detection in autonomous vehicle.",
+"volumeIssuePage": "Volume 82, Issue 16, 25107–25130",
+"doi": "https://doi.org/10.1007/s11042-023-",
+"date": "Feb 2023"
+},
+{
+"s.no.": 26,
+"faculty name": "Mr. Murugan K",
+"journal": "International Journal of All Research Education & Scientific Methods",
+"indexing": "UGC",
+"title": "IOT Empowered Automated Solar Grass Cutter",
+"volumeIssuePage": "Volume 11, Issue 3",
+"date": "Mar 2023"
+},
+{
+"s.no.": 27,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "ICTACT Journal on Communication Technology",
+"indexing": "UGC Care",
+"title": "An Intelligent Res Nets Resource Allocation Framework for 5G Networks",
+"volumeIssuePage": "Volume 14, Issue 01, 2837–2842",
+"date": "Mar 2023"
+},
+{
+"s.no.": 11,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "International Journal of All Research Education and Scientific Methods (IJARESM)",
+"indexing": "UGC Care",
+"title": "Analyzing and Detecting the Boundary in Medical Images and Utilizing Big Data",
+"volumeIssuePage": "Volume 11, Issue 03, 989–992",
+"date": "Mar 2023"
+},
+{
+"s.no.": 28,
+"faculty name": "Mrs. R. Gnanakumari",
+
+"journal": "Intelligent Automation & Soft Computing, Tech Science Press",
+"indexing": "Annexure I & Scopus",
+"title": "Generalized Jaccard Similarity Based Recurrent DNN for Virtualizing Social Network Communities",
+"volumeIssuePage": "Volume 36, Issue 3, 2719–2730",
+"date": "Mar 2023"
+},
+{
+"s.no.": 29,
+"faculty name": "Mr. P. Suresh Kumar",
+"journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+"indexing": "UGC",
+"title": "An Integrated IOT System for Monitoring and Managing Water Quality in WWTP",
+"volumeIssuePage": "Volume 10, Issue 1, 949–953",
+"date": "Mar 2023"
+},
+{
+"s.no.": 30,
+"faculty name": "Mr. P. Suresh Kumar",
+"journal": "International Journal for Multidisciplinary Research",
+"indexing": "UGC",
+"title": "Smart Agriculture using IOT",
+"volumeIssuePage": "Volume 5, Issue 2, 1–8",
+"date": "Mar–Apr 2023"
+},
+{
+"s.no.": 31,
+"faculty name": "Biju Balakrishnan",
+"journal": "Journal of the Balkan Tribological Association / Design and Calculation of Tribosystems",
+"indexing": "Scopus/WoS",
+"title": "Piecewise Regressive B-Tree Indexing based Linkage Clustered User Profile Mapping for Semantic web mining",
+"volumeIssuePage": "Volume 29, No 1, 66–86",
+"date": "2023"
+},
+{
+"s.no.": 32,
+"faculty name": "Dr. A. Jameer Basha",
+"journal": "Computer System Science and Engineering",
+"indexing": "SCI",
+"title": "PSO – DBNet for Peak-to-Average Power Ratio Reduction Using Deep Belief Network",
+"volumeIssuePage": "Volume 45, No.2, 1483–1493",
+"doi": "10.32604/csse.2023.021540",
+"date": "2023"
+},
+
+
+
+{
+"s.no.": 33,
+"faculty name": "Dr. N.B. Mahesh Kumar",
+"journal": "Biomedical Signal Processing and Control (Elsevier-ScienceDirect)",
+"indexing": "Scopus, WoS, SCI",
+"title": "Lung disease detection using Self-Attention Generative Adversarial Capsule network optimized with sun flower Optimization Algorithm",
+"volumeIssuePage": "79, Part 2",
+"date": "2023"
+},
+{
+"s.no.": 34,
+"faculty name": "Dr. N.B. Mahesh Kumar",
+"journal": "Optical and Quantum Electronics (Springer)",
+"indexing": "WoS, SCI, Scopus",
+"title": "Enhancing low latency and high performance in clustered-based wireless sensor network routing using genetic algorithm for 5G networks",
+"volumeIssuePage": "55, 1048",
+"date": "Sep 2023"
+},
+{
+"s.no.": 35,
+"faculty name": "S. Tamizharasu",
+"journal": "Wireless Networks",
+"indexing": "SCI",
+"title": "An intelligent AODV routing with energy efficient weight-based clustering algorithm (EEWCA) in wireless Ad hoc network (WANET)",
+"volumeIssuePage": "29, 6, 2703–2716",
+"date": "2023"
+},
+{
+"s.no.": 36,
+"faculty name": "P. N. Periyasamy",
+"journal": "ICTACT Journal on Communication Technology",
+"indexing": "UGC",
+"title": "An Intelligent Resnets Resource Allocation Framework For 5G Networks",
+"volumeIssuePage": "Volume 14, Issue 01",
+"date": "2023"
+},
+{
+"s.no.": 37,
+"faculty name": "P. N. Periyasamy",
+"journal": "International Journal of All Research Education and Scientific Methods (IJARESM)",
+"indexing": "UGC",
+
+"title": "Analyzing and Detecting the Boundary in Medical Images and Utilizing Big Data",
+"volumeIssuePage": "Volume 11, Issue 3",
+"date": "2023"
+},
+{
+"s.no.": 38,
+"faculty name": "Mrs. R. Gnanakumari",
+"journal": "Intelligent Automation & Soft Computing, Tech Science Press",
+"indexing": "Annexure I, Scopus",
+"title": "Generalized Jaccard Similarity Based Recurrent DNN for Virtualizing Social Network Communities",
+"volumeIssuePage": "Volume 36, Issue 3",
+"date": "2023"
+},
+{
+"s.no.": 39,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "International Journal of Intelligent Systems and Applications in Engineering",
+"indexing": "Scopus",
+"title": "Deep Learning Based Brain Tumor Analysis with Manual Layer Selection",
+"volumeIssuePage": "Volume 12, Issue 7s",
+"date": "2023"
+},
+{
+"s.no.": 40,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "International Journal of Intelligent Systems and Applications in Engineering",
+"indexing": "Scopus",
+"title": "Deep Learning Based Brain Tumor Analysis with Manual Layer Selection",
+"volumeIssuePage": "12(7s), 20–25",
+"date": "Jan 2024"
+},
+{
+"s.no.": 41,
+"faculty name": "Dr. D. Jayasutha",
+"journal": "International Journal of Communication Systems",
+"indexing": "SCI",
+"title": "DIWGAN-WBSN: A novel health monitoring approach for wireless bod sensor networks",
+"doi": "https://onlinelibrary.wiley.com/doi/10.1002/dac.5934",
+"date": "Aug 2024"
+},
+{
+"s.no.": 42,
+"faculty name": "Dr. D. Jayasutha",
+
+"journal": "Journal of Cyber Security and Information Management (JCIM)",
+"indexing": "Scopus",
+"title": "Development of Digital Twin Technology in Hydraulics Based on Simulating and Enhancing System Performance",
+"volumeIssuePage": "Vol 13-2, 50–65",
+"date": "June 2024"
+},
+{
+"s.no.": 43,
+"faculty name": "Dr. D. Jayasutha",
+"journal": "South Eastern European Journal of Public Health",
+"indexing": "Scopus",
+"title": "Integration of Fuzzy Logic and Deep Learning for Medical Image Analysis in Neuroimaging",
+"volumeIssuePage": "Vol 1",
+"date": "July 2024"
+},
+{
+"s.no.": 44,
+"faculty name": "Dr. A. Jameer Basha",
+"journal": "Plasmonics",
+"indexing": "SCI",
+"title": "UltraSensitive Photonic Crystal Fiber–Based SPR Sensor for Cancer Detection Utilizing Hybrid Nanocomposite Layers",
+"doi": "https://doi.org/10.1007/s11468-024-02584-y",
+"date": "Nov 2024"
+},
+{
+"s.no.": 45,
+"faculty name": "Dr. R. Senthilkumar",
+"journal": "Computer Standards & Interfaces",
+"indexing": "SCI",
+"title": "Performance analysis of multiple-input multiple-output orthogonal frequency division multiplexing system using arithmetic optimization algorithm",
+"doi": "https://doi.org/10.1016/j.csi.2024.103934",
+"date": "Oct 2024"
+},
+{
+"s.no.": 46,
+"faculty name": "Dr. S. Ramasamy",
+"journal": "Ingénierie des Systèmes d’Information",
+"indexing": "Scopus",
+"title": "Adaptive Rendezvous Based Congestion Control Using Optimized Bio-Inspired Algorithm for Clustered WSN",
+"volumeIssuePage": "Vol. 29, No. 6, pp. 2391–2398",
+"date": "Dec 2024"
+},
+{
+"s.no.": 47,
+"faculty name": "J. Uthayalumar",
+
+"journal": "The Bioscan",
+"indexing": "WoS",
+"title": "Utilizing Machine Learning for Predicting Diabetes in Pregnant Women: A Comparative Analysis of Logistic Regression, Random Forest, and Naive Bayes Models",
+"volumeIssuePage": "19(2): S.I (1), 590–596",
+"date": "Dec 2024"
+},
+{
+"s.no.": 48,
+"faculty name": "Rathika Prabhu",
+"journal": "International Journal of Computational and Experimental Science and Engineering (IJCESEN)",
+"indexing": "Scopus",
+"title": "Developing an AI-Powered Interactive Virtual Tutor for Enhanced Learning Experiences",
+"volumeIssuePage": "Vol. 10, No. 4, pp. 1594–1600",
+"date": "Dec 2024"
+}
+],
+
+"International_Confrense": [
+{
+"s.no.": 1,
+"faculty name": "Dr. R.T. Subhalakshmi",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Utilizing Convolutional Neural Networks For Accurate and Efficient Classification Of Paddy Leaf Diseases",
+"date": "Nov 2023"
+},
+{
+"s.no.": 2,
+"faculty name": "Dr. M. Thangamani",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Exploring The Mental Health Depression Of Youth And Adult Using Machine Learning And Artificial Intelligence Approaches",
+"date": "Nov 2023"
+},
+{
+"s.no.": 3,
+"faculty name": "Dr. M. Thangamani",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Automatic Neuron Reconstruction From 3D Microscope Images using Deep Learning",
+"date": "Nov 2023"
+},
+{
+"s.no.": 4,
+"faculty name": "Dr. A. Jameer Basha",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Interactive Medical Assistance With Generative Pre-Trained Transformer Using Gen AI",
+"date": "Nov 2023"
+},
+{
+"s.no.": 5,
+"faculty name": "Dr. D. Jayasutha",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Monitoring The Progress Of Labor From Remote Area Using LoRaWAN",
+"date": "Nov 2023"
+},
+{
+"s.no.": 6,
+"faculty name": "Mr. G. Jeevanantham",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Integrating An Autonomous Emergency Braking System With a Medical Assistant Using Machine Learning Techniques",
+"date": "Nov 2023"
+},
+{
+"s.no.": 7,
+"faculty name": "Mr. K. Murugan",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "AI-Based Approach For IoT Integrated Programmed Solar Power Humorless Grassland Mower",
+"date": "Nov 2023"
+},
+{
+"s.no.": 8,
+"faculty name": "Mrs. A. Nishanandhini",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Malware Detection And Encryption Using Artificial Intelligence Techniques",
+
+"date": "Nov 2023"
+},
+{
+"s.no.": 9,
+"faculty name": "Mrs. C.E. Rajaprabha",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Tumour Detection And Quantification Using ANN Algorithm In Artificial Intelligence",
+"date": "Nov 2023"
+},
+{
+"s.no.": 10,
+"faculty name": "Dr. S. Ramasamy",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Enhancing Security With Keystroke Dynamics: A Memetic Algorithm Approach For Preprocessing Technique Evaluation",
+"date": "Nov 2023"
+},
+{
+"s.no.": 11,
+"faculty name": "Dr. S. Ramasamy",
+"conference title": "2023 International Conference on Disruptive Technologies (ICDT)",
+"indexedIn": "IEEE",
+"title": "An Early Detection of Ovarian Cancer and The Accurate Spreading Range in Human Body by Using Deep Medical Learning Model",
+"date": "Nov 2023"
+},
+{
+"s.no.": 12,
+"faculty name": "Dr. N.B. Mahesh Kumar",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "A Literature Review On Forest Fire Detection Using IoT and Artificial Intelligence",
+"date": "Nov 2023"
+},
+{
+"s.no.": 13,
+"faculty name": "Dr. N.B. Mahesh Kumar",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Self-Powered Wearable Device For Continuous Health Monitoring",
+"date": "Nov 2023"
+
+},
+{
+"s.no.": 14,
+"faculty name": "Mrs. D. Vidhya",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Enhancing Skin Cancer Diagnosis Through Deep Learning: Accurate Classification Using Advanced Techniques",
+"date": "Nov 2023"
+},
+{
+"s.no.": 15,
+"faculty name": "Mr. D. Vikkiramapandian",
+"conference title": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+"indexedIn": "TESS-2023 Proceedings",
+"paper title": "Cardiovascular Risk Analysis Using Machine Learning Approach",
+"date": "Nov 2023"
+},
+{
+"s.no.": 16,
+"faculty name": "Mrs. S. Saranya",
+"conference title": "International Conference on Advanced Computing and Innovative Technologies in Engineering (ICACITE)",
+"indexedIn": "IEEE",
+"paper title": "Analysis of Software Defect Prediction Using Machine Learning Techniques",
+"date": "2023"
+},
+{
+"s.no.": 17,
+"faculty name": "Mr. Arun",
+"conference title": "2023 Winter Summit on Smart Computing and Networks (WiSSCoN)",
+"indexedIn": "IEEE",
+"paper title": "Hybrid Artificial Neural Network with Advanced Noctiluca Optimization for Activity Monitoring and Prognostic Study of Signals Using EEG Signals",
+"date": "2023"
+}
+],
+
+"National_journals": [
+{
+"s.no.": 1
+},
+{
+  "s.no.": 2
+},
+{
+  "s.no.": 3
+},
+{
+  "s.no.": 4
+},
+{
+  "s.no.": 5
+},
+{
+  "s.no.": 6
+},
+{
+  "s.no.": 7
+},
+{
+  "s.no.": 8
+},
+{
+  "s.no.": 9
+},
+{
+  "s.no.": 10
+}
+],
+"National_confrence": [
+{"s.no.": 1
+},
+{"s.no.": 2
+},
+{"s.no.": 3
+},
+{"s.no.": 4
+},
+{"s.no.": 5
+},
+{"s.no.": 6
+},
+{"s.no.": 7
+},
+{"s.no.": 8
+},
+{"s.no.": 9
+},
+{"s.no.": 10
+}
+],
+"Books": [
+{"s.no.": 1
+},
+{"s.no.": 2
+},
+{"s.no.": 3
+},
+{"s.no.": 4
+},
+{"s.no.": 5
+},
+{"s.no.": 6
+},
+{"s.no.": 7
+},
+{"s.no.": 8
+},
+{"s.no.": 9
+},
+{"s.no.": 10
+}
+],
+"Books_chapters": [
+{"s.no.": 1
+},
+{"s.no.": 2
+},
+{"s.no.": 3
+},
+{"s.no.": 4
+},
+{"s.no.": 5
+},
+{"s.no.": 6
+},
+{"s.no.": 7
+},
+{"s.no.": 8
+},
+{"s.no.": 9
+},
+{"s.no.": 10
+}
+],
+"participations": [
+    {
+      "sno": 1,
+      "students": ["Harish B"],
+      "event": "Technical quiz",
+      "organizer": "Dept of Computer Science, Sri Krishna Arts and Science College",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "I Place"
+    },
+    {
+      "sno": 2,
+      "students": ["Harish P"],
+      "event": "Technical quiz",
+      "organizer": "Dept of Computer Science, Sri Krishna Arts and Science College",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "I Place"
+    },
+    {
+      "sno": 3,
+      "students": ["Sanjay V V", "Sankara Narayanan V"],
+      "event": "Project Expo",
+      "organizer": "Karpagam Institutions",
+      "level": "National",
+      "date": "22.05.2024",
+      "award": "1st Prize"
+    },
+    {
+      "sno": 4,
+      "students": ["Rohith P, Sridhar S"],
+      "event": "Uyir Hackathon",
+      "organizer": "Sri Krishna College of Engineering and Technology",
+      "level": "National",
+      "date": "08.02.2025",
+      "award": "Participated"
+    },
+    {
+      "sno": 5,
+      "students": ["Mohamed Halif A"],
+      "event": "Code in Chos",
+      "organizer": "Information Technology Association, Madras Institute of Technology",
+      "level": "National",
+      "date": "16.03.2024 & 17.03.2024",
+      "award": "Runner"
+    },
+    {
+      "sno": 6,
+      "students": ["Hariprasad R S"],
+      "event": "Code in Chos",
+      "organizer": "Information Technology Association, Madras Institute of Technology",
+      "level": "National",
+      "date": "16.03.2024 & 17.03.2024",
+      "award": "Runner"
+    },
+    {
+      "sno": 7,
+      "students": ["Kamaleshwari R"],
+      "event": "NCIIPC-AICTE Pentathon 2024",
+      "organizer": "St. Joseph's College of Engineering",
+      "level": "National",
+      "date": "04.02.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 8,
+      "students": ["Karthic S"],
+      "event": "NCIIPC-AICTE Pentathon 2024",
+      "organizer": "St. Joseph's College of Engineering",
+      "level": "National",
+      "date": "04.02.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 9,
+      "students": ["Karthick S"],
+      "event": "EDII's Hackathon 2024",
+      "organizer": "EDII-TN",
+      "level": "State",
+      "date": "16.03.2024 - 17.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 10,
+      "students": ["Kishore R"],
+      "event": "EDII's Hackathon 2024",
+      "organizer": "EDII-TN",
+      "level": "State",
+      "date": "16.03.2024 - 17.03.2025",
+      "award": "Participated"
+    },
+    {
+      "sno": 11,
+      "students": ["Jagan A"],
+      "event": "EDII's Hackathon 2024",
+      "organizer": "EDII-TN",
+      "level": "State",
+      "date": "16.03.2024 - 17.03.2026",
+      "award": "Participated"
+    },
+    {
+      "sno": 12,
+      "students": ["Kishore R"],
+      "event": "RAISEathon 2024",
+      "organizer": "AIC Raise",
+      "level": "State",
+      "date": "16.03.2024 - 17.03.2026",
+      "award": "Participated"
+    },
+    {
+      "sno": 13,
+      "students": ["Jagan A"],
+      "event": "RAISEathon 2024",
+      "organizer": "AIC Raise",
+      "level": "State",
+      "date": "16.03.2024 - 17.03.2026",
+      "award": "Participated"
+    },
+    {
+      "sno": 14,
+      "students": ["Dharani R"],
+      "event": "RAISEathon 2024",
+      "organizer": "AIC Raise",
+      "level": "State",
+      "date": "16.03.2024 - 17.03.2026",
+      "award": "Participated"
+    },
+    {
+      "sno": 15,
+      "students": ["Akashaya E"],
+      "event": "RAISEathon 2024",
+      "organizer": "AIC Raise",
+      "level": "State",
+      "date": "16.03.2024 - 17.03.2026",
+      "award": "Participated"
+    },
+    {
+      "sno": 16,
+      "students": ["Vishwa K"],
+      "event": "Paper Presentation",
+      "organizer": "Coimbatore Institute of Technology",
+      "level": "National",
+      "date": "24.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 17,
+      "students": ["Rohini Priya P"],
+      "event": "Young India Hackathon 2023",
+      "organizer": "KGISL",
+      "level": "National",
+      "date": "13.11.2023",
+      "award": "Participated"
+    },
+    {
+      "sno": 18,
+      "students": ["Veronika K S"],
+      "event": "Young India Hackathon 2023",
+      "organizer": "KGISL",
+      "level": "National",
+      "date": "13.11.2023",
+      "award": "Participated"
+    },
+    {
+      "sno": 19,
+      "students": ["Thillai Gowri"],
+      "event": "Young India Hackathon 2023",
+      "organizer": "KGISL",
+      "level": "National",
+      "date": "13.11.2023",
+      "award": "Participated"
+    },
+    {
+      "sno": 20,
+      "students": ["Suguna"],
+      "event": "Young India Hackathon 2023",
+      "organizer": "KGISL",
+      "level": "National",
+      "date": "13.11.2023",
+      "award": "Participated"
+    },
+    {
+      "sno": 21,
+      "students": ["Kavsith Raja K"],
+      "event": "Technical Events",
+      "organizer": "Dept of CSE, Coimbatore Institute of Technology",
+      "level": "National",
+      "date": "02.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 22,
+      "students": ["Krishna Prabhu E"],
+      "event": "Technical Events",
+      "organizer": "Dept of CSE, Coimbatore Institute of Technology",
+      "level": "National",
+      "date": "02.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 23,
+      "students": ["Jeevithkaran D"],
+      "event": "Technical Events",
+      "organizer": "Dept of CSE, Coimbatore Institute of Technology",
+      "level": "National",
+      "date": "02.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 24,
+      "students": ["Jeyasuba M"],
+      "event": "Technical Events",
+      "organizer": "Dr.N.G.P. Institute of Technology",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 25,
+      "students": ["Kalaivani C"],
+      "event": "Technical Events",
+      "organizer": "Dr.N.G.P. Institute of Technology",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 26,
+      "students": ["Kamali Sri"],
+      "event": "Technical Events",
+      "organizer": "Dr.N.G.P. Institute of Technology",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 27,
+      "students": ["Nivitha Y"],
+      "event": "Technical Events",
+      "organizer": "Dr.N.G.P. Institute of Technology",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 28,
+      "students": ["Princela R"],
+      "event": "Technical Events",
+      "organizer": "Dr.N.G.P. Institute of Technology",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 29,
+      "students": ["Jaya Prakash S"],
+      "event": "Technical quiz",
+      "organizer": "Dept of Computer Science, Sri Krishna Arts and Science College",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 30,
+      "students": ["Joshua J"],
+      "event": "Technical quiz",
+      "organizer": "Dept of Computer Science, Sri Krishna Arts and Science College",
+      "level": "National",
+      "date": "04.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 31,
+      "students": ["Mithun Raj"],
+      "event": "Project Emporium",
+      "organizer": "Dept of AI & ML, Bannari Amman Institute of Technology",
+      "level": "National",
+      "date": "07.03.2024 & 08.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 32,
+      "students": ["Nauffal Ahamed K"],
+      "event": "Technical Events",
+      "organizer": "Sri Krishna College of Technology",
+      "level": "National",
+      "date": "08.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 33,
+      "students": ["Maheshpraveen E"],
+      "event": "Technical Events",
+      "organizer": "Sri Krishna College of Technology",
+      "level": "National",
+      "date": "08.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 34,
+      "students": ["Mridul P"],
+      "event": "Technical Events",
+      "organizer": "Sri Krishna College of Technology",
+      "level": "National",
+      "date": "08.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 35,
+      "students": ["Mithun Raj M"],
+      "event": "Project Expo",
+      "organizer": "Dept of Mechatronics Engg, Thiagarajar College of Engineering",
+      "level": "National",
+      "date": "14.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 36,
+      "students": ["Nisha S"],
+      "event": "Code Combat",
+      "organizer": "CSI KEC Student Branch, Kongu Engineering College",
+      "level": "National",
+      "date": "15.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 37,
+      "students": ["Lathika K"],
+      "event": "Code Combat",
+      "organizer": "CSI KEC Student Branch, Kongu Engineering College",
+      "level": "National",
+      "date": "15.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 38,
+      "students": ["Jayesh Ram P K"],
+      "event": "Technical Events",
+      "organizer": "Dept of IT, Nehru Institute of Technology",
+      "level": "National",
+      "date": "15.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 39,
+      "students": ["Praveen S"],
+      "event": "Technical Events",
+      "organizer": "Dept of IT, Nehru Institute of Technology",
+      "level": "National",
+      "date": "15.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 40,
+      "students": ["Mohamed Irfan M"],
+      "event": "Technical Events",
+      "organizer": "Dept of IT, Nehru Institute of Technology",
+      "level": "National",
+      "date": "15.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 41,
+      "students": ["Pragin Barath M"],
+      "event": "Technical Events",
+      "organizer": "Dept of IT, Nehru Institute of Technology",
+      "level": "National",
+      "date": "15.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 42,
+      "students": ["Mohamed Halif A"],
+      "event": "Ninja Coding, Let's C, Language Geek & Learn Code Unleash",
+      "organizer": "Information Technology Association, Madras Institute of Technology",
+      "level": "National",
+      "date": "16.03.2024 & 17.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 43,
+      "students": ["Kousika S"],
+      "event": "Ninja Coding, Let's C, Language Geek & Learn Code Unleash",
+      "organizer": "Information Technology Association, Madras Institute of Technology",
+      "level": "National",
+      "date": "16.03.2024 & 17.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 44,
+      "students": ["Madan Prasath S"],
+      "event": "Ninja Coding, Let's C, Language Geek & Learn Code Unleash",
+      "organizer": "Information Technology Association, Madras Institute of Technology",
+      "level": "National",
+      "date": "16.03.2024 & 17.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 45,
+      "students": ["Hariprasad R S"],
+      "event": "Ninja Coding, Let's C, Language Geek & Learn Code Unleash",
+      "organizer": "Information Technology Association, Madras Institute of Technology",
+      "level": "National",
+      "date": "16.03.2024 & 17.03.2024",
+      "award": "Participated"
+    },
+    {
+      "sno": 46,
+      "students": [
+        "Machavarapu Achyuth",
+        "Vettori Fernando",
+        "Kanamarlapudi Akshay kumar",
+        "Gupta Chintalapalli kiran Kumar Reddy"
+      ],
+      "event": "TECH ZEAL 2023 (Hackathon) Sona College of Technology",
+      "level": "National",
+      "date": "10.02.2023 & 11.02.2023",
+      "award": "First Prize - Cash Prize of Rs.10,000"
+    },
+    {
+      "sno": 47,
+      "students": ["Pranav P"],
+      "event": "Paper Presentation JFINAGLES",
+      "level": "National",
+      "date": "27.04.2023",
+      "award": "1st Prize"
+    },
+    {
+      "sno": 48,
+      "students": ["Sudhrsan L", "Sreerag M"],
+      "event": "Paper Presentation Sri Ramakrishna Engineering College",
+      "level": "National",
+      "date": "02.11.2022",
+      "award": "2nd Prize"
+    },
+    {
+      "sno": 49,
+      "students": ["Sreerag M"],
+      "event": "Paper Presentation Debugging",
+      "level": "National",
+      "date": "26.04.2023",
+      "award": "3rd Prize"
+    },
+    {
+      "sno": 50,
+      "students": ["Pathakoti Venkata Linga Rao"],
+      "event": "Quize - TECHAZURA 23 Hindusthan College of Engineering and Technology",
+      "level": "State",
+      "date": "27.11.2022",
+      "award": "1st Prize"
+    },
+    {
+      "sno": 51,
+      "students": ["Pranav P", "Vettori Fernando M"],
+      "event": "Hackathon",
+      "level": "State",
+      "date": "07.03.2023",
+      "award": "Participated"
+    },
+    {
+      "sno": 52,
+      "students": ["Sudhrsan L", "Sreerag M", "Snowin J", "Yuvaraaj S", "Agarshana S"],
+      "event": "Smart India Hackathon Grand Finale-2022",
+      "level": "National",
+      "date": "25.08.2022 - 26.08.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 53,
+      "students": ["Mohammed Yehia Nisha"],
+      "event": "Paper Presentation Sri Ramakrishna Engineering College",
+      "level": "National",
+      "date": "02.11.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 54,
+      "students": ["Vani L", "Madhulika M"],
+      "event": "Paper Presentation Sri Ramakrishna Engineering College",
+      "level": "National",
+      "date": "02.11.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 55,
+      "students": ["Ananya G", "Nanthakumaran"],
+      "event": "Paper Presentation Sri Ramakrishna Engineering College",
+      "level": "National",
+      "date": "02.11.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 56,
+      "students": ["Siva V"],
+      "event": "Intel FPGAs - NIT, Trichy",
+      "level": "National",
+      "date": "25.03.2023",
+      "award": "Participated"
+    },
+    {
+      "sno": 57,
+      "students": ["S. Rishika"],
+      "event": "Paper Presentation Kongu Engineering College",
+      "level": "National",
+      "date": "05.04.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 58,
+      "students": ["Lokesh M.P.T"],
+      "event": "Debugging Kongu Engineering College",
+      "level": "National",
+      "date": "05.04.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 59,
+      "students": ["Pachigulla Deepthi"],
+      "event": "Googling",
+      "level": "National",
+      "date": "27.11.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 60,
+      "students": ["Russel Gabriel Thomas"],
+      "event": "Paper Presentation",
+      "level": "National",
+      "date": "05.04.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 61,
+      "students": ["Nelaturi Sudha Mani"],
+      "event": "Paper Presentation Kongu Engineering College",
+      "level": "National",
+      "date": "05.04.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 62,
+      "students": ["Rajalakshmi R"],
+      "event": "Debugging Kongu Engineering College",
+      "level": "National",
+      "date": "05.04.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 63,
+      "students": ["Pranav P"],
+      "event": "Paper Presentation",
+      "level": "National",
+      "date": "27.11.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 64,
+      "students": ["Dungala Mohana Priyanka"],
+      "event": "Debugging Kongu Engineering College",
+      "level": "National",
+      "date": "05.04.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 65,
+      "students": ["Sreerag M", "Snowin J", "Yuvaraaj S", "Agarshana S"],
+      "event": "Intelligent Innovators (I2H 2022) Sri Eshwar College of Engineering",
+      "level": "National",
+      "date": "04.11.2022 – 05.11.2022",
+      "award": "Participated"
+    },
+    {
+      "sno": 66,
+      "students": ["Pachigulla"],
+      "event": "Paper Presentation",
+      "level": "National",
+      "date": "27.04.2023",
+      "award": "Participated"
+    },
+    {
+      "sno": 67,
+      "students": ["Deepthi"],
+      "event": "JCT College of Engineering and Technology",
+      "level": "National",
+      "date": "2023",
+      "award": "Participated"
+    },
+    {
+      "sno": 68,
+      "students": ["Kalaivani M", "Kolla Venkatasathish", "Chinthalapalli Kiran Kumar Reddy"],
+      "event": "CSE Texxtreme 2021 Paper Presentation",
+      "organizer": "Chalapathi Institute of Engineering and Technology, Guntur",
+      "level": "National",
+      "date": "17.12.2021 – 18.12.2021",
+      "award": "Third Prize"
+    },
+    {
+      "sno": 69,
+      "students": ["Nhasik Mohammed N", "Nirmal Dev M", "Muthukumar M"],
+      "event": "Krizren 21 Paper Presentation",
+      "organizer": "Sri Krishna College of Engineering and Technology",
+      "level": "National",
+      "date": "12.09.2021 – 15.09.2021",
+      "award": "Third Prize"
+    },
+    {
+      "sno": 70,
+      "students": ["Abhisha Divyadharshini F R", "Leela Christy I"],
+      "event": "TEKSPARK 21 Project Presentation",
+      "organizer": "Karpagam Institute of Technology",
+      "level": "State",
+      "date": "29.10.2021 – 31.10.2021",
+      "award": "Second Prize"
+    },
+    {
+      "sno": 71,
+      "students": ["Agarshana S", "Iswarya K", "Jenesha J"],
+      "event": "Krizren 21 Paper Presentation",
+      "organizer": "Sri Krishna College of Engineering and Technology",
+      "level": "National",
+      "date": "12.09.2021 – 15.09.2021",
+      "award": "Participated"
+    },
+    {
+      "sno": 72,
+      "students": ["Abisheik G", "Adithyan S"],
+      "event": "MEQNZO 2021",
+      "organizer": "SRM Valliammai Engineering College, Kattankulathur",
+      "level": "National",
+      "date": "04.09.2021",
+      "award": "Participated"
+    },
+    {
+      "sno": 73,
+      "students": ["Kaviya S", "Kanamarlapudi Akshay Kumar Gupta"],
+      "event": "Workshop on Information Storage Security Practices",
+      "organizer": "PSG College of Technology",
+      "level": "National",
+      "date": "26.11.2021",
+      "award": "Participated"
+    },
+    {
+      "sno": 74,
+      "students": ["Nandhakumaran R T", "Vani.L", "Madhulika M"],
+      "event": "Paper Presentation SRISHTI 2K21",
+      "organizer": "PSG College of Technology",
+      "level": "National",
+      "date": "30.10.2021 – 31.10.2021",
+      "award": "Participated"
+    },
+    {
+      "sno": 75,
+      "students": ["Mohamed Yehia M", "Nisha S", "Shakthipriya S"],
+      "event": "National Seminar on Ethical Hacking and Cyber Security",
+      "organizer": "AVC College of Engineering",
+      "level": "National",
+      "date": "18.12.2021",
+      "award": "Participated"
+    },
+    {
+      "sno": 76,
+      "students": ["Rammohan P", "Mohamed Riyas S", "Mohamedirfan K"],
+      "event": "Paper Presentation SRISHTI 2K21",
+      "organizer": "PSG College of Technology",
+      "level": "National",
+      "date": "30.10.2021 – 31.10.2021",
+      "award": "Participated"
+    },
+    {
+      "sno": 77,
+      "students": ["Jagatheeshwaran S", "Jaya Ancy R", "Kaviarasan R"],
+      "event": "Paper Presentation SRISHTI 2K21",
+      "organizer": "PSG College of Technology",
+      "level": "National",
+      "date": "30.10.2021 – 31.10.2021",
+      "award": "Participated"
+    },
+    {
+      "sno": 78,
+      "students": [
+        "Kavin Vignesh T", "Jenke Subba Reddy", "Kurapati Gowthami", 
+        "Deena Sankar V", "Chottai Varusai Gani H"
+      ],
+      "event": "National Seminar on Ethical Hacking and Cyber Security",
+      "organizer": "AVC College of Engineering",
+      "level": "National",
+      "date": "18.12.2021",
+      "award": "Participated"
+    }
+  ],
+  "stu_International_Confrense":[
+    {
+      "s.no.":1
+    },
+    {
+      "s.no.":2
+    },
+    {
+      "s.no.":3
+    },
+    {
+      "s.no.":4
+    },
+    {
+      "s.no.":5
+    },
+    {
+      "s.no.":6
+    },
+    {
+      "s.no.":7
+    },
+    {
+      "s.no.":8
+    },
+    {
+      "s.no.":9
+    },
+    {
+      "s.no.":10
+    }
+  ],
+  "stu_National_journals":[
+    {
+      "s.no.":1
+    },
+    {
+      "s.no.":2
+    },
+    {
+      "s.no.":3
+    },
+    {
+      "s.no.":4
+    },
+    {
+      "s.no.":5
+    },
+    {
+      "s.no.":6
+    },
+    {
+      "s.no.":7
+    },
+    {
+      "s.no.":8
+    },
+    {
+      "s.no.":9
+    },
+    {
+      "s.no.":10
+}
+],
+ "stu_National_confrence":[
+    {
+      "s.no.":1
+    },
+    {
+      "s.no.":2
+    },
+    {
+      "s.no.":3
+    },
+    {
+      "s.no.":4
+    },
+    {
+      "s.no.":5
+    },
+    {
+      "s.no.":6
+    },
+    {
+      "s.no.":7
+    },
+    {
+      "s.no.":8
+    },
+    {
+      "s.no.":9
+    },
+    {
+      "s.no.":10
+}
+ ],
+
+"stu_Books":[
+    {
+      "s.no.":1
+    },
+    {
+      "s.no.":2
+    },
+    {
+      "s.no.":3
+    },
+    {
+      "s.no.":4
+    },
+    {
+      "s.no.":5
+    },
+    {
+      "s.no.":6
+    },
+    {
+      "s.no.":7
+    },
+    {
+      "s.no.":8
+    },
+    {
+      "s.no.":9
+    },
+    {
+      "s.no.":10
+}
+],
+"hackathon":[
+    {
+      "s.no.":1
+    },
+    {
+      "s.no.":2
+    },
+    {
+      "s.no.":3
+    },
+    {
+      "s.no.":4
+    },
+    {
+      "s.no.":5
+    },
+    {
+      "s.no.":6
+    },
+    {
+      "s.no.":7
+    },
+    {
+      "s.no.":8
+    },
+    {
+      "s.no.":9
+    },
+    {
+      "s.no.":10
+}
 ]
 }
+
