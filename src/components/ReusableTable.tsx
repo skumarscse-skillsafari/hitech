@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Search, ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface CategoryOption {
   label: string;
@@ -9,6 +10,7 @@ interface CategoryOption {
 interface ReusableTableProps {
   data: Record<string, any>[];
   title?: string;
+  description?: string;
   showCategory?: boolean;
   categoryOptions?: (string | CategoryOption)[];
   onCategoryChange?: (category: string) => void;
@@ -18,6 +20,7 @@ interface ReusableTableProps {
 const ReusableTable: React.FC<ReusableTableProps> = ({
   data,
   title,
+  description,
   showCategory = false,
   categoryOptions = [],
   onCategoryChange,
@@ -59,11 +62,17 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
 
   return (
     <div className="bg-white rounded-3xl shadow-xl border border-gray-200 max-w-7xl mx-auto mt-6">
-      
+      {title && (
+        <div className="px-6 pt-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800">{title}</h2>
+          <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4"></div>
+          {description && (
+            <p className="mt-2 text-base md:text-lg text-gray-600">{description}</p>
+          )}
+        </div>
+      )}
 
-      {/* Category Tabs + Search Bar */}
-      <div className="px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
-        {/* Category Tabs */}
+      <div className="px-6 mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
         {showCategory && categoryOptions.length > 0 && (
           <div className="flex flex-wrap border-b border-gray-300 w-full sm:w-auto gap-2 sm:gap-4">
             {categoryOptions
@@ -75,7 +84,8 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                 const key = typeof option === 'string' ? option : option.key;
                 const label =
                   typeof option === 'string'
-                    ? option.charAt(0).toUpperCase() + option.slice(1).replace(/([A-Z])/g, ' $1')
+                    ? option.charAt(0).toUpperCase() +
+                      option.slice(1).replace(/([A-Z])/g, ' $1')
                     : option.label;
 
                 const isActive = selectedCategory === key;
@@ -97,7 +107,6 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
           </div>
         )}
 
-        {/* Search Bar (always right aligned) */}
         <div className="flex justify-end sm:ml-auto w-full sm:w-auto">
           {showSearch ? (
             <div className="flex items-center bg-gray-100 rounded-md px-3 py-1 w-full sm:w-64">
@@ -130,20 +139,25 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
         </div>
       </div>
 
-      {/* Table */}
       <div className="px-4 sm:px-6 pb-6 overflow-x-auto">
-        <div className="overflow-hidden rounded-2xl mt-0 border border-gray-200">
+        <div className="overflow-hidden rounded-2xl border border-gray-200">
           <table className="w-full table-auto border-collapse text-sm md:text-base">
             <thead>
               <tr className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 text-white">
                 {columns.map((col, idx) => (
                   <th
                     key={idx}
-                    className={`px-4 py-3 text-center font-semibold uppercase whitespace-normal break-words ${
+                    className={`px-4 py-3 text-center font-semibold uppercase break-words ${
                       col.toLowerCase().includes('sno')
                         ? 'w-16'
                         : col.toLowerCase().includes('batch')
                         ? 'min-w-[8rem]'
+                        : col.toLowerCase().includes('faculty')
+                        ? 'min-w-[250px] break-words'
+                        : col.toLowerCase().includes('journal')
+                        ? 'min-w-[300px]'
+                        : col.toLowerCase().includes('title')
+                        ? 'min-w-[350px]'
                         : ''
                     }`}
                   >
@@ -162,7 +176,9 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                     {columns.map((col, colIndex) => (
                       <td
                         key={colIndex}
-                        className="px-4 py-3 text-center break-words whitespace-normal align-top"
+                        className={`px-4 py-3 text-center align-top break-words whitespace-normal ${
+                          col.toLowerCase().includes('faculty') ? 'text-sm' : ''
+                        }`}
                       >
                         {Array.isArray(row[col])
                           ? row[col].join(', ')
@@ -185,7 +201,6 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
         </div>
       </div>
 
-      {/* Pagination */}
       <div className="bg-gray-50 px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-3 border-t border-gray-200 rounded-b-3xl">
         <div className="text-sm text-gray-700">
           Showing{' '}
@@ -203,7 +218,6 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
           >
             <ChevronLeft size={16} />
           </button>
-
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index}
@@ -217,7 +231,6 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
               {index + 1}
             </button>
           ))}
-
           <button
             onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
             disabled={currentPage === totalPages}
@@ -226,6 +239,15 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
             <ChevronRight size={16} />
           </button>
         </div>
+      </div>
+
+      <div className="text-center pt-4">
+        <Link to="/department/cse">
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 mx-auto shadow-lg">
+            <span>Learn More About CSE</span>
+            <ArrowRight className="h-5 w-5" />
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -9,6 +9,24 @@ const categoryOptions = [
   { label: 'Prototypes', key: 'prototypes' },
 ];
 
+const facultyCategoryOptions = [
+  { label: 'International Journals', key: 'International' },
+  { label: 'International Conference', key: 'International_Confrense' },
+  { label: 'National Journals', key: 'National_journals' },
+  { label: 'National Conference', key: 'National_confrence' },
+  { label: 'Books', key: 'Books' },
+  { label: 'Book Chapters', key: 'Books_chapters' },
+];
+
+const stuCategoryOptions = [
+  { label: 'Participations', key: 'participations' },
+  { label: 'International Conference', key: 'stu_International_Confrense' },
+  { label: 'National Journals', key: 'stu_National_journals' },
+  { label: 'National Conference', key: 'stu_National_confrence' },
+  { label: 'Books', key: 'stu_Books' },
+  { label: 'Hackathon', key: 'hackathon' },
+];
+
 const sectionDataKeyMap: Record<string, string> = {
   internships: 'internships',
   micro: 'micro_projects',
@@ -16,6 +34,10 @@ const sectionDataKeyMap: Record<string, string> = {
   research: 'research_data',
   notable: 'notable',
   project: 'notable',
+  collaborations: 'powered_industry',
+  powered_industry: 'powered_industry',
+  faculty_achievements: 'International',
+  student_achievements: 'participations',
 };
 
 const sectionTitleMap: Record<string, string> = {
@@ -25,6 +47,16 @@ const sectionTitleMap: Record<string, string> = {
   prototypes: 'Prototypes',
   research_data: 'Research Projects',
   notable: 'Notable Projects',
+  powered_industry: 'Powered by Industry',
+  faculty_achievements: 'Faculty Achievements',
+  student_achievements: 'Student Achievements',
+  International: 'International Journals',
+  International_Confrense: 'International Conference',
+  National_journals: 'National Journals',
+  National_confrence: 'National Conference',
+  Books: 'Books',
+  Books_chapters: 'Book Chapters',
+  participations: 'Event Participations',
 };
 
 const sectionDescriptions: Record<string, string> = {
@@ -34,54 +66,58 @@ const sectionDescriptions: Record<string, string> = {
   prototypes: 'Funded and recognized student prototype projects.',
   research_data: 'Ongoing and completed faculty research initiatives.',
   notable: 'Notable student projects across different categories.',
+  powered_industry: 'Projects done in collaboration with industry partners.',
+  International: 'Faculty publications in reputed international journals.',
+  International_Confrense: 'Presentations at international conferences.',
+  National_journals: 'Publications in national journals.',
+  National_confrence: 'Presentations at national conferences.',
+  Books: 'Books published by faculty or students.',
+  Books_chapters: 'Book chapters contributed by faculty or students.',
+  participations: 'Students participating in various events and conferences.',
 };
 
 const DataTable: React.FC = () => {
   const { section } = useParams<{ section: string }>();
   const normalizedSection = section?.toLowerCase() || '';
-  const isNotableSection = normalizedSection === 'notable';
 
-  const defaultCategory = isNotableSection
-    ? 'miniProjects'
-    : sectionDataKeyMap[normalizedSection] || 'miniProjects';
+  const isNotable = normalizedSection === 'notable';
+  const isFaculty = normalizedSection === 'faculty_achievements';
+  const isStudent = normalizedSection === 'student_achievements';
 
-  const [activeCategory, setActiveCategory] = useState<keyof typeof secData>(defaultCategory as keyof typeof secData);
+  const [selectedCategoryKey, setSelectedCategoryKey] = useState(() => {
+    if (isNotable) return 'miniProjects';
+    if (isFaculty) return 'International';
+    if (isStudent) return 'participations';
+    return sectionDataKeyMap[normalizedSection] || 'internships';
+  });
 
-  const handleCategoryChange = (categoryKey: string) => {
-    setActiveCategory(categoryKey as keyof typeof secData);
-  };
+  const data = secData[selectedCategoryKey] || [];
+  const title =
+    sectionTitleMap[selectedCategoryKey] ||
+    sectionTitleMap[normalizedSection] ||
+    'Section';
+  const description =
+    sectionDescriptions[selectedCategoryKey] ||
+    sectionDescriptions[normalizedSection] ||
+    '';
 
-  const data = secData[activeCategory] || [];
-  const title = isNotableSection
-    ? sectionTitleMap['notable']
-    : sectionTitleMap[activeCategory] || 'Data Table';
-  const description = isNotableSection
-    ? sectionDescriptions['notable']
-    : sectionDescriptions[activeCategory] || 'Here is the detailed data.';
+  const showCategoryDropdown = isNotable || isFaculty || isStudent;
+  const dropdownOptions = isFaculty
+    ? facultyCategoryOptions
+    : isStudent
+    ? stuCategoryOptions
+    : categoryOptions;
 
   return (
-    <div className="p-6 w-full max-w-screen-2xl mx-auto bg-white rounded-lg shadow mt-6 mb-10 font-sans">
-      <div className="mb-8 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-2">{title}</h2>
-        <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-4"></div>
-        <p className="text-gray-600 text-base">{description}</p>
-      </div>
-
-      {data && Array.isArray(data) && data.length > 0 ? (
-        <ReusableTable
-          data={data}
-          title={title}
-          showCategory={isNotableSection}
-          categoryOptions={isNotableSection ? categoryOptions : []}
-          onCategoryChange={isNotableSection ? handleCategoryChange : undefined}
-          selectedCategoryKey={activeCategory}
-        />
-      ) : (
-        <div className="bg-gray-50 rounded-lg p-8 text-center border border-dashed border-gray-300">
-          <p className="text-gray-500 text-lg">No data available for this section.</p>
-        </div>
-      )}
-    </div>
+    <ReusableTable
+      data={data}
+      title={title}
+      description={description}
+      showCategory={showCategoryDropdown}
+      categoryOptions={dropdownOptions}
+      selectedCategoryKey={selectedCategoryKey}
+      onCategoryChange={setSelectedCategoryKey}
+    />
   );
 };
 

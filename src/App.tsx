@@ -21,9 +21,8 @@ import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
 import AcademicCalendar from './pages/AcademicCal';
-import CalendarDetails from './pages/CalendarDetails'; // ✅ NEW
+import CalendarDetails from './pages/CalendarDetails'; 
 import DataTable from './pages/DataTable';
-
 
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
