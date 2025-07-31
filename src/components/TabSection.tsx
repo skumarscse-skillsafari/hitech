@@ -92,24 +92,26 @@ const TabsSection: React.FC = () => {
     ]
   };
 
-  const handleViewMore = () => {
+ const handleViewMore = () => {
   const routeMap: Record<string, string> = {
     internships: 'internships',
     micro: 'micro_projects',
     prototypes: 'prototypes',
     research: 'research',
     notable: 'notable',
+    faculty_ach: 'faculty_achievements',
     'latest-events': 'latest-event'
   };
-  
+
   const route = routeMap[activeTab] || activeTab;
-  
+
   if (activeTab === 'latest-events') {
-    navigate(`/${route}`);  // Navigates to /latest-event
+    navigate(`/${route}`);
   } else {
     navigate(`/datatable/${route}`);
   }
 };
+
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="border-b border-gray-200">
