@@ -1,25 +1,65 @@
-{
-  "events": [
-    {
-      "title": "Internal Smart India Hackathon – 2022",
-      "date": "10.03.2022",
-      "description": "Total of 56 teams participated under different themes, among them Software is 45 and Hardware 11.",
-      "participants": "Approximately 300",
-      "image": "/images/events/sih-2022.jpg"
-    },
-    {
-      "title": "One day technical talk on 'Latest trends in software testing'",
-      "date": "15.03.2022",
-      "description": "Delivered by Mr. M. Sabarinathan, CEO, Gateway Software Solution.",
-      "participants": "Approximately 60",
-      "image": "/images/events/software-testing-talk.jpg"
-    },
-    {
-      "title": "Pitching Event for PoCs & Mentorship Support",
-      "date": "16.02.2022",
-      "description": "Pitching Event for PoCs developed & linkage with Innovation Ambassadors for mentorship support.",
-      "participants": "Approximately 40",
-      "image": "/images/events/pitching-event.jpg"
-    }
-  ]
-}
+[
+  {
+    "title": "Internal Smart India Hackathon – 2022",
+    "date": "10.03.2022",
+    "participants": "56 teams (45 Software, 11 Hardware)",
+    "description": "An internal hackathon held to shortlist teams under software and hardware categories for Smart India Hackathon. A total of 56 teams participated.",
+    "image": "file-J9BVu9zM8oDHyhLN6xHPWx"
+  },
+  {
+    "title": "Technical Talk on Latest Trends in Software Testing",
+    "date": "15.03.2022",
+    "participants": "Students and faculty of Hindusthan Institute of Technology",
+    "description": "A one-day technical session on 'Latest trends in software testing' by Mr. M. Sabarinathan, CEO of Gateway Software Solution.",
+    "image": "file-J9BVu9zM8oDHyhLN6xHPWx"
+  },
+  {
+    "title": "Pitching Event for PoCs & Innovation Mentorship",
+    "date": "16.02.2022",
+    "participants": "PoC developers and Innovation Ambassadors",
+    "description": "Pitching event to link student PoC developers with Innovation Ambassadors for mentorship support.",
+    "image": "file-J9BVu9zM8oDHyhLN6xHPWx"
+  },
+  {
+    "title": "Orientation Session on IIC 4.0 & Features",
+    "date": "24.01.2022",
+    "participants": "IIC members and faculty",
+    "description": "Orientation conducted to introduce features of IIC 4.0 by Mr. Dipak Kumar Sahu, Asst. Innovation Director, MHRD Innovation Cell.",
+    "image": "file-LSj37azmiY5Pc65232ZVmW"
+  },
+  {
+    "title": "Hindusthan Innovation Contest (HIC) – 2022",
+    "date": "05.01.2022",
+    "participants": "Students under AICTE-SPICES Scheme",
+    "description": "An innovation contest sponsored by AICTE under SPICES, aimed at promoting interests, creativity, and ethics. Chief Guest: Dr. Senthil Raja CS, Manager, Virtusa.",
+    "image": "file-LSj37azmiY5Pc65232ZVmW"
+  },
+  {
+    "title": "Problem Solving & Ideation Workshop",
+    "date": "17.12.2021",
+    "participants": "Students of Hindusthan Institute of Technology",
+    "description": "A workshop aimed at sparking innovation and creativity through problem-solving and ideation sessions.",
+    "image": "file-LSj37azmiY5Pc65232ZVmW"
+  },
+  {
+    "title": "Participation in Smart India Hackathon (Final)",
+    "date": "25.08.2022 to 29.08.2022",
+    "participants": "Team STARK from CSE, Hindusthan Institute of Technology",
+    "description": "Team STARK from CSE participated in the Smart India Hackathon Grand Finale (software category) conducted by AICTE and MoE, Govt. of India. The team developed a web-based application for CVRDE Lab, Chennai (DRDO).",
+    "image": "file-PvpLe9Jq7twhCq7NFN9nS5"
+  },
+  {
+    "title": "One Day Seminar on Career Development and Future Opportunities",
+    "date": "18.07.2022",
+    "participants": "Students of Hindusthan Institute of Technology",
+    "description": "A seminar was conducted on 'Career Development and Future Opportunities' to guide students in choosing their career paths. Keynote by Mr. Mohamed Salman, Co-Founder & CEO of Codilar Technologies.",
+    "image": "file-PvpLe9Jq7twhCq7NFN9nS5"
+  },
+  {
+    "title": "Entrepreneurship Awareness Drive – 2022",
+    "date": "04.07.2022",
+    "participants": "Students of Hindusthan Institute of Technology",
+    "description": "Entrepreneurship Awareness Drive was conducted to promote entrepreneurial thinking among students, featuring successful startup founders and alumni entrepreneurs.",
+    "image": "file-PvpLe9Jq7twhCq7NFN9nS5"
+  }
+]
