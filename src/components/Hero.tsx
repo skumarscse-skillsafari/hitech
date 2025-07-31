@@ -1,9 +1,10 @@
-import React from 'react'; 
+import React from 'react';
 import {
   ArrowRight,
   Play,
   CreditCard,
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 interface HeroProps {
   hero: {
@@ -17,6 +18,12 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ hero }) => {
+  const navigate = useNavigate();
+
+  const handleApplyNow = () => {
+    navigate('/#footer'); // trigger scroll in HomePage
+  };
+
   const handleWatchCampusTour = () => {
     console.log('Initiating campus tour. You would typically open a video player here.');
   };
@@ -29,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       {/* Background Image */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/clg.jpg')` }} 
+        style={{ backgroundImage: `url('/clg.jpg')` }}
       ></div>
 
       {/* Overlay */}
@@ -38,33 +45,24 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 transform -translate-y-[0.5in]">
         <div className="space-y-10 text-center">
-          {/* Title + Tagline */}
           <div className="animate-fadeIn">
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-yellow-400 leading-tight">
               {hero.title}
             </h1>
-
             <p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
               Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
             </p>
           </div>
 
-          {/* Subtitle */}
           <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
             <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
               {hero.subtitle}
             </p>
           </div>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.6s' }}>
             <button
-              onClick={() => {
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              onClick={handleApplyNow}
               className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
             >
               Apply Now
@@ -90,30 +88,25 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
             </a>
           </div>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 animate-fadeIn" style={{ animationDelay: '0.9s' }}>
             {hero.stats.map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </div>
-                <div className="text-gray-100 font-medium">
-                  {stat.label}
-                </div>
+                <div className="text-gray-100 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
 
-      {/* Vertical TNEA Code Button */}
       <div className="fixed left-0 top-1/3 transform -translate-y-1/2 z-50">
         <div className="rotate-90 origin-bottom-left">
           <button
@@ -129,3 +122,4 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
 };
 
 export default Hero;
+ 
