@@ -93,7 +93,7 @@
 },
 
     {
-      "id": "student-achievements",
+      "id": "student_achievements",
       "name": "Student Achievements",
       "icon": "Award",
       "content": {
@@ -124,7 +124,7 @@
       }
     },
     {
-      "id": "faculty-achievements",
+      "id": "faculty_achievements",
       "name": "Faculty Achievements",
       "icon": "Award",
       "content": {
