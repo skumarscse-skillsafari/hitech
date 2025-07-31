@@ -120,7 +120,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
             className="text-sm md:text-base font-bold bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-b-xl shadow-lg transition-all duration-300 whitespace-nowrap rotate-180"
             title="TNEA Code"
           >
-            TNEA: 2708
+            TNEA: 2740
           </button>
         </div>
       </div>
