@@ -89,7 +89,9 @@ const TabsSection: React.FC = () => {
       micro: 'micro_projects',
       prototypes: 'prototypes',
       research: 'research',
-      notable: 'notable'
+      notable: 'notable',
+      faculty_ach: 'faculty_achievements'
+     
     };
     const route = routeMap[activeTab] || activeTab;
     console.log("Navigating to:", route);
