@@ -1,10 +1,24 @@
 import React from 'react';
-import { Award, Eye, Target, Landmark, Sparkles } from 'lucide-react';
+import { Award, Eye, Target, Landmark, Sparkles, ChevronLeft } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Objectives: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="mt-0 bg-white">
-     
+    <div className="relative mt-0 bg-white">
+      {/* Back Button (larger size) */}
+      <button
+        onClick={() => navigate(-1)}
+        className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+        aria-label="Back"
+      >
+        <ChevronLeft className="w-6 h-6 text-black" strokeWidth={3} />
+        <span className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 px-3 py-1 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+          Back
+        </span>
+      </button>
+
       {/* Hero Section */}
       <div className="relative w-full h-[280px] md:h-[360px] bg-gradient-to-r from-yellow-50 to-yellow-100 flex items-center justify-center overflow-hidden rounded-xl shadow-inner">
         <img
@@ -99,9 +113,7 @@ const Objectives: React.FC = () => {
             </button>
           </div>
         </section>
-
       </div>
-      
     </div>
   );
 };
