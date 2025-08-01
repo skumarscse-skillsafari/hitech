@@ -57,8 +57,24 @@ const AcademicCalendar = () => {
               </div>
             ))}
           </div>
+          
         </div>
       ))}
+      <section className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12 rounded-2xl text-center text-white">
+          <h2 className="text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
+          <p className="text-xl mb-8 opacity-90">
+            Be part of an institution that has been shaping futures for over three decades
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Explore Programs
+            </button>
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+              Contact Us
+            </button>
+          </div>
+        </section>
+
     </div>
   );
 };
