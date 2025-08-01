@@ -56,7 +56,7 @@
       "dropdown": [
         { "name": "NBA Accreditations", "href": "/accred/nba/nbaaccred" },
         { "name": "Accredited Programs", "href": "/accred/nba/prog" },
-        { "name": "NBA Reports", "href":  "/public/pdf/NAAC.pdf","external":true  },
+        { "name": "NBA Reports", "href":  "public/pdf/NAAC.pdf","external":true  },
         { "name": "Quality Standards", "href": "/accred/nba/quality" },
         { "name": "NBA Guidelines", "href": "/accred/nba/nbaguidelines" }
       ]
