@@ -149,7 +149,7 @@ const AccreditationCards: React.FC = () => {
     },
     {
       name: 'Times Ranking',
-      fullName: 'Annual Top Engineering Institute Ranking Survey - 2025',
+      fullName: 'Engineering Institute Ranking Survey 2025',
       rankings: ['Ranked 135 – Top 175 Engineering Institute Rankings 2025'],
       logo: times,
       color: 'from-indigo-50 to-indigo-100',
@@ -232,14 +232,12 @@ const AccreditationCards: React.FC = () => {
             <Slider {...sliderSettings}>
               {accreditations.map((accred, index) => {
                 const isExpanded = expandedIndex === index;
-                const hasMore = accred.rankings.length > 1;
-                const hasPopup = !!accred.popupImage;
 
                 return (
                   <div key={index} className="px-2 md:px-3">
                     <div
                       className={`bg-gradient-to-br ${accred.color} rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white/20 overflow-hidden min-h-[300px]`}
-                      onClick={() => hasPopup && handleCardClick(index)}
+                      onClick={() => accred.popupImage && handleCardClick(index)}
                     >
                       <div className="p-4 md:p-6 text-center cursor-pointer">
                         <div className="relative mx-auto w-20 h-20 md:w-24 md:h-24 mb-4">
@@ -268,24 +266,22 @@ const AccreditationCards: React.FC = () => {
                             ))}
                         </div>
 
-                        {hasMore && (
-                          <div className="mt-4 md:mt-6 text-center">
-                            <button
-                              onClick={(e) => handleShowMoreClick(index, e)}
-                              className="inline-flex items-center gap-1 text-[#d38b03] hover:text-[#f59e0b] font-semibold text-sm md:text-base transition-colors duration-300"
-                            >
-                              {isExpanded ? (
-                                <>
-                                  Show Less <ChevronUp className="h-4 w-4" />
-                                </>
-                              ) : (
-                                <>
-                                  Show More <ChevronDown className="h-4 w-4" />
-                                </>
-                              )}
-                            </button>
-                          </div>
-                        )}
+                        <div className="mt-4 md:mt-6 text-center">
+                          <button
+                            onClick={(e) => handleShowMoreClick(index, e)}
+                            className="inline-flex items-center gap-1 text-[#d38b03] hover:text-[#f59e0b] font-semibold text-sm md:text-base transition-colors duration-300"
+                          >
+                            {isExpanded ? (
+                              <>
+                                Show Less <ChevronUp className="h-4 w-4" />
+                              </>
+                            ) : (
+                              <>
+                                Show More <ChevronDown className="h-4 w-4" />
+                              </>
+                            )}
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
