@@ -24,11 +24,13 @@ import AcademicCalendar from './pages/AcademicCal';
 import CalendarDetails from './pages/CalendarDetails'; 
 import DataTable from './pages/DataTable';
 
+
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
 import CseLatestEvents from './pages/CseLatestEvents';
+import ControllerOfExaminationsPage from './pages/ControllerOfExaminationsPage';
 
 
 function App() {
@@ -82,6 +84,7 @@ function App() {
                 <Route path="/academic-calendar" element={<AcademicCalendar />} />
                 <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
                 <Route path="/latest-event" element={<CseLatestEvents />} />
+                <Route path="/c" element={<ControllerOfExaminationsPage />} />
               </Routes>
             </main>
               <Footer
