@@ -6,7 +6,8 @@ import TopNavBar from './components/TopNavBar';
 import Header from './components/Header';
 import NewsTicker from './components/NewsTicker';
 import Footer from './components/Footer';
-
+import NewsEventsCards from './pages//NewsEventsCards';
+import { news, events } from './data/newsEventsData.json';
 import HomePage from './pages/HomePage';
 import DepartmentPage from './pages/DepartmentPage';
 import GalleryPage from './pages/GalleryPage';
@@ -77,8 +78,10 @@ function App() {
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
-                <Route path="/campus-life/innovation/innovationpolicy" element={<InnovationPolicy />} />
+                 <Route path="/news-events" element={<NewsEventsCards news={news} events={events} />} />
 
+
+                <Route path="/contactus" element={<ContactPage/>}/>
 
                 {/* ✅ Calendar Routes */}
                 <Route path="/academic-calendar" element={<AcademicCalendar />} />
