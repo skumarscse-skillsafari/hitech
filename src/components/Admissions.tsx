@@ -31,9 +31,9 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
   };
 
   return (
-    <section id="admissions" className="py-20 bg-gray-50">
+    <section id="admissions" className="-mt-48 px py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -45,7 +45,7 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          
+
           {/* Admission Process */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">How to Apply</h3>
