@@ -1,4 +1,5 @@
-import React from 'react';
+// HomePage.tsx
+import React, { useEffect, useRef } from 'react';
 import PageLayout from '../components/layout/PageLayout';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import Hero from '../components/Hero';
@@ -17,11 +18,22 @@ import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg";
-import DataTable from './DataTable';
 import { Award, Trophy } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const HomePage: React.FC = () => {
   const allFaculty = departmentsData.departments.flatMap(dept => dept.faculty);
+  const contactRef = useRef<HTMLDivElement | null>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#contact' && contactRef.current) {
+      // Give time for content to render before scrolling
+      setTimeout(() => {
+        contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }, 500);
+    }
+  }, [location]);
 
   const trustInfo = {
     title: "Welcome to HiTECH",
@@ -40,20 +52,14 @@ const HomePage: React.FC = () => {
     >
       <Hero hero={collegeData.college.hero} />
 
-      {/* ===== About The Trust Section ===== */}
       <SectionWrapper className="pt-6 pb-0" lazy lazyDelay={200}>
         <div className="text-center mb-4 pt-10">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">{trustInfo.title}</h1>
-          <p className="text-2xl text-yellow-600 font-semibold mb-2">
-            {trustInfo.subtitle}
-          </p>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            {trustInfo.description}
-          </p>
+          <p className="text-2xl text-yellow-600 font-semibold mb-2">{trustInfo.subtitle}</p>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">{trustInfo.description}</p>
         </div>
       </SectionWrapper>
 
-      {/* ===== About Us Section (with extra margin) ===== */}
       <SectionWrapper lazy lazyHeight="200px" lazyDelay={200}>
         <div className="grid lg:grid-cols-2 gap-10 items-center mt-[-100]">
           <div className="space-y-3">
@@ -61,10 +67,8 @@ const HomePage: React.FC = () => {
               <Award className="h-8 w-8 text-yellow-500" />
               <h2 className="text-3xl font-bold  text-gray-900">About Us</h2>
             </div>
-
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.content}</p>
             <p className="text-lg text-gray-700 leading-relaxed">{trustInfo.managementContent}</p>
-
             <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200">
               <h3 className="font-bold text-gray-900 mb-3 flex items-center space-x-2">
                 <Trophy className="h-5 w-5 text-yellow-600" />
@@ -78,18 +82,11 @@ const HomePage: React.FC = () => {
               </ul>
             </div>
           </div>
-
-          {/* ===== Image Block ===== */}
           <div className="relative -mt-10">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img
-                src={hit}
-                alt="Trust Campus"
-                className="w-full h-96 object-cover"
-              />
+              <img src={hit} alt="Trust Campus" className="w-full h-96 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
-
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border">
               <div className="text-center">
                 <div className="text-3xl font-bold text-yellow-600">15+</div>
@@ -122,6 +119,7 @@ const HomePage: React.FC = () => {
           }))}
         />
       </SectionWrapper>
+
       <SectionWrapper lazy lazyHeight="400px" lazyDelay={500}>
         <Gallery gallery={collegeData.gallery} />
       </SectionWrapper>
@@ -143,8 +141,9 @@ const HomePage: React.FC = () => {
       </SectionWrapper>
 
       <SectionWrapper lazy lazyHeight="400px" lazyDelay={800}>
-        <Contact contact={collegeData.contact} />
-        
+        <div ref={contactRef}>
+          <Contact contact={collegeData.contact} />
+        </div>
       </SectionWrapper>
     </PageLayout>
   );

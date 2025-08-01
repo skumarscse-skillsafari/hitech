@@ -77,7 +77,7 @@ function App() {
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
-
+                <Route path="/contactus" element={<ContactPage/>}/>
                 {/* ✅ Calendar Routes */}
                 <Route path="/academic-calendar" element={<AcademicCalendar />} />
                 <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
