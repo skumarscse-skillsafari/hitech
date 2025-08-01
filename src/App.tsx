@@ -30,6 +30,7 @@ import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
 import CseLatestEvents from './pages/CseLatestEvents';
+import ControllerOfExaminationsPage from './pages/ControllerOfExaminationsPage';
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
                 <Route path="/academic-calendar" element={<AcademicCalendar />} />
                 <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
                 <Route path="/latest-event" element={<CseLatestEvents />} />
+                <Route path="/coe" element={<ControllerOfExaminationsPage />} />
               </Routes>
             </main>
               <Footer
