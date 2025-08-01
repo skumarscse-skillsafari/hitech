@@ -1,10 +1,26 @@
 import React from 'react';
 import pb from "../../public/principal.jpg";
-import { GraduationCap, Quote, Sparkles } from 'lucide-react';
+import { GraduationCap, Quote, Sparkles, ChevronLeft } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const PrincipalsDesk: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="mt-8 bg-white">
+    <div className="relative mt-0 bg-white">
+
+      {/* Back Button (standardized size) */}
+      <button
+        onClick={() => navigate(-1)}
+        className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+        aria-label="Back"
+      >
+        <ChevronLeft className="w-6 h-6 text-black" strokeWidth={3} />
+        <span className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 px-3 py-1 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+          Back
+        </span>
+      </button>
+
       {/* Hero Section */}
       <div className="relative w-full h-[300px] md:h-[400px] bg-gradient-to-br from-yellow-100 to-yellow-300 flex items-center justify-center overflow-hidden rounded-xl shadow-inner">
         <div className="relative z-10 text-center">
@@ -71,7 +87,7 @@ const PrincipalsDesk: React.FC = () => {
           </div>
         </div>
 
-        {/* ✅ CTA Section */}
+        {/* CTA Section */}
         <div className="bg-gradient-to-r from-yellow-200 to-yellow-100 rounded-xl px-8 py-6 shadow-md border border-yellow-300 flex flex-col md:flex-row items-center justify-between gap-6 mt-10">
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold text-yellow-800 mb-1">Connect With the Principal</h3>
