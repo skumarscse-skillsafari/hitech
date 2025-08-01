@@ -170,9 +170,11 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                     <button
   onClick={() => {
     const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  if (contactSection) {
+    const yOffset = -80; // Adjust for navbar height
+    const y = contactSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
   }}
   className="flex items-center px-4 py-2 text-sm font-medium hover:bg-yellow-600 border-r border-yellow-600 last:border-r-0 h-10 transition"
 >
