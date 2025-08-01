@@ -116,7 +116,7 @@
   {
     "id": 1,
     "image": "...",
-    "name": "Dr. A.Jameer Basha ",
+    "name": "Dr.A.Jameer Basha ",
     "designation": "Professor",
     "specialization": "Machine learning, Deep learning, and Generative AI.",
     "experience": "18 years",
@@ -130,7 +130,7 @@
   {
     "id": 2,
     "image": "/images/Dr. N.B. Mahesh Kumar .jpg",
-    "name": "Dr.N.B Mahesh Kumar ",
+    "name": "Dr.N.B.Mahesh Kumar ",
     "designation": "Professor",
     "specialization": "Computer Science And Engineering",
     "experience": "17 years",
@@ -144,7 +144,7 @@
   {
     "id": 3,
     "image": "...",
-    "name": "Dr. S.Ramasamy",
+    "name": "Dr.S.Ramasamy",
     "designation": "Associate Professor",
     "specialization": "Cloud Computing",
     "experience": "12 years",
@@ -158,7 +158,7 @@
   {
     "id": 4,
     "image": "/images/subhalakshmi.jpg",
-    "name": "Dr.R.T. Subhalaskhmi ",
+    "name": "Dr.R.T.Subhalaskhmi ",
     "designation": "Assistant Professor",
     "specialization": "Computer Science And Engineering",
     "experience": "11 years",
@@ -186,7 +186,7 @@
   {
     "id": 6,
     "image": "...",
-    "name": "Mrs.T. Kalaiselvi ",
+    "name": "Mrs.T.Kalaiselvi ",
     "designation": "Assistant Professor",
     "specialization": "",
     "experience": "",
@@ -214,7 +214,7 @@
   {
     "id": 8,
     "image": "/images/banupriya.jpg",
-    "name": "Mrs.M. Banupriya ",
+    "name": "Mrs.M.Banupriya ",
     "designation": "Assistant Professor",
     "specialization": "Computer Science And Engineering",
     "experience": "9 years",
@@ -228,7 +228,7 @@
   {
     "id": 9,
     "image": "/images/rajaprabha.jpg",
-    "name": "Mrs. C.E. Rajaprabha",
+    "name": "Mrs.C.E.Rajaprabha",
     "designation": "Assistant Professor",
     "specialization": "Networks and Artificial Intelligence",
     "experience": "4 years",
@@ -242,7 +242,7 @@
   {
     "id": 10,
     "image": "/images/NIshanandhini.jpg",
-    "name": "Mrs.A. Nishanandhini",
+    "name": "Mrs.A.Nishanandhini",
     "designation": "Assistant Professor",
     "specialization": "Networks",
     "experience": "9 years",
@@ -270,7 +270,7 @@
   {
     "id": 12,
     "image": "/images/devendran.jpg",
-    "name": "Mr.M. Devendran ",
+    "name": "Mr.M.Devendran ",
     "designation": "Assistant Professor",
     "specialization": "Computer Science And Engineering",
     "experience": "15 Years",
@@ -284,7 +284,7 @@
   {
     "id": 13,
     "image": "/images/murugan.jpg",
-    "name": "Mr.K. Murugan",
+    "name": "Mr.K.Murugan",
     "designation": "Assistant Professor",
     "specialization": "Computer Science And Engineering",
     "experience": "24 years",
@@ -298,7 +298,7 @@
   {
     "id": 14,
     "image": "/images/uma maheshwar.jpg",
-    "name": "Ms. P.Uma Maheswari ",
+    "name": "Ms.P.Uma Maheswari ",
     "designation": "Assistant Professor",
     "specialization": "Computer Science And Engineering",
     "experience": "6 years",
@@ -312,7 +312,7 @@
   {
     "id": 15,
     "image": "/images/priyanka.jpeg",
-    "name": "Mrs. V. Priyanka",
+    "name": "Mrs.V.Priyanka",
     "designation": "Assistant Professor",
     "specialization": "AIML , Networks",
     "experience": "1 year",
@@ -326,7 +326,7 @@
   {
     "id": 16,
     "image": "/images/sathish.jpeg",
-    "name": "Mr. S.Sathishkumar",
+    "name": "Mr.S.Sathishkumar",
     "designation": "Assistant Professor",
     "specialization": "ML, Full-stack Development, Generative AI ",
     "experience": "11 years",
@@ -340,7 +340,7 @@
   {
     "id": 17,
     "image": "/images/udhayakumar j.jpg",
-    "name": "Mr.T. Udhayakumar",
+    "name": "Mr.T.Udhayakumar",
     "designation": "Assistant Professor",
     "specialization": "Internet of Things ",
     "experience": "13 years",
@@ -354,7 +354,7 @@
   {
     "id": 18,
     "image": "/images/jayaprakash.jpg",
-    "name": "Mr.S. Jayaprakash ",
+    "name": "Mr.S.Jayaprakash ",
     "designation": "Assistant Professor",
     "specialization": "Networks,DBMS",
     "experience": "11 years",
@@ -368,7 +368,7 @@
   {
     "id": 19,
     "image": "/images/abinaya.jpg",
-    "name": "Mrs. N. Abinaya",
+    "name": "Mrs.N.Abinaya",
     "designation": "Assistant Professor",
     "specialization": "Machine learning,Deep learning,Natural language Processing",
     "experience": "10 years",
@@ -382,7 +382,7 @@
   {
     "id": 20,
     "image": "/images/Johny.jpg",
-    "name": "Mr. Johny Sebastine",
+    "name": "Mr.Johny Sebastine",
     "designation": "Assistant Professor",
     "specialization": "Computer Science And Engineering",
     "experience": "3 years",
@@ -396,7 +396,7 @@
   {
     "id": 21,
     "image": "/images/Pavithra j.jpg",
-    "name": "Ms. J. Pavithra",
+    "name": "Ms.J.Pavithra",
     "designation": "Assistant Professor",
     "specialization": "Computer Science And Engineering",
     "experience": "11 years",
@@ -410,7 +410,7 @@
   {
     "id": 22,
     "image": "/images/mookhambika.jpeg",
-    "name": "Mrs.N. Mookhambika ",
+    "name": "Mrs.N.Mookhambika ",
     "designation": "Assistant Professor",
     "specialization": "Wireless Sensor Networks",
     "experience": "14 years",
@@ -424,7 +424,7 @@
   {
     "id": 23,
     "image": "/images/suganthi.jpg",
-    "name": "Mrs.D. Suganthi",
+    "name": "Mrs.D.Suganthi",
     "designation": "Assistant Professor",
     "specialization": "Wireless Sensor Networks",
     "experience": "19 years",
@@ -438,7 +438,7 @@
   {
     "id": 24,
     "image": "/images/Ramalakshmi B - RAMALAKSHMI B.jpg",
-    "name": "Mrs. B.Ramalakshmi",
+    "name": "Mrs.B.Ramalakshmi",
     "designation": "Assistant Professor",
     "specialization": "Machine Learning ",
     "experience": "7 years",
@@ -452,7 +452,7 @@
   {
     "id": 25,
     "image": "/images/praveena.jpg",
-    "name": "Mrs .A. Praveena ",
+    "name": "Mrs.A.Praveena ",
     "designation": "Assistant Professor",
     "specialization": "Image processing,Machine Learning,Deep Learning",
     "experience": "3 years",
@@ -466,7 +466,7 @@
   {
     "id": 26,
     "image": "/imagessenthilsign.jpeg",
-    "name": "Dr.C. Senthil Singh",
+    "name": "Dr.C.Senthil Singh",
     "designation": "Professor",
     "specialization": "",
     "experience": "",
@@ -494,7 +494,7 @@
   {
     "id": 28,
     "image": "/images/uthayakumar j.jpg",
-    "name": "Mr.J. Uthayakumar",
+    "name": "Mr.J.Uthayakumar",
     "designation": "Assistant Professor",
     "specialization": "Computer Science",
     "experience": "4 years",
