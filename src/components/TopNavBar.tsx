@@ -168,12 +168,20 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                       {item.external && <ExternalLink className="h-4 w-4 ml-1" />}
                     </a>
                   ) : (
-                    <Link
-                      to={item.href}
-                      className="flex items-center px-4 py-2 text-sm font-medium hover:bg-yellow-600 border-r border-yellow-600 last:border-r-0 h-10 transition"
-                    >
-                      {item.name}
-                    </Link>
+                    <button
+  onClick={() => {
+    const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    const yOffset = -80; // Adjust for navbar height
+    const y = contactSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+  }}
+  className="flex items-center px-4 py-2 text-sm font-medium hover:bg-yellow-600 border-r border-yellow-600 last:border-r-0 h-10 transition"
+>
+  {item.name}
+</button>
+
                   )}
                 </div>
               ))}
