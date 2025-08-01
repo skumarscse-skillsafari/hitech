@@ -60,11 +60,11 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-0 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 ">Get in Touch</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to begin your engineering journey? Contact us for admissions, programs, or any other inquiries
           </p>
