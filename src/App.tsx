@@ -23,7 +23,7 @@ import GoverningCouncilPage from './pages/GoverningCouncilPage';
 import AcademicCalendar from './pages/AcademicCal';
 import CalendarDetails from './pages/CalendarDetails'; 
 import DataTable from './pages/DataTable';
-
+import InnovationPolicy from './pages/InnovationPolicy';
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
@@ -77,7 +77,13 @@ function App() {
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
+<<<<<<< HEAD
+                <Route path="/campus-life/innovation/innovationpolicy" element={<InnovationPolicy />} />
+
+
+=======
                 <Route path="/contactus" element={<ContactPage/>}/>
+>>>>>>> 2d7f7dae4c6aa5d3cccfa2db9b42b4bb461ab3fd
                 {/* ✅ Calendar Routes */}
                 <Route path="/academic-calendar" element={<AcademicCalendar />} />
                 <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
