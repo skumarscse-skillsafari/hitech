@@ -52,6 +52,7 @@ const HomePage: React.FC = () => {
     >
       <Hero hero={collegeData.college.hero} />
 
+      {/* ===== About The Trust Section ===== */}
       <SectionWrapper className="pt-6 pb-0" lazy lazyDelay={200}>
         <div className="text-center mb-4 pt-10">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">{trustInfo.title}</h1>
@@ -60,6 +61,7 @@ const HomePage: React.FC = () => {
         </div>
       </SectionWrapper>
 
+      {/* ===== About Us Section (with extra margin) ===== */}
       <SectionWrapper lazy lazyHeight="200px" lazyDelay={200}>
         <div className="grid lg:grid-cols-2 gap-10 items-center mt-[-100]">
           <div className="space-y-3">
@@ -119,7 +121,6 @@ const HomePage: React.FC = () => {
           }))}
         />
       </SectionWrapper>
-
       <SectionWrapper lazy lazyHeight="400px" lazyDelay={500}>
         <Gallery gallery={collegeData.gallery} />
       </SectionWrapper>
@@ -132,7 +133,7 @@ const HomePage: React.FC = () => {
         <Admissions admissions={collegeData.admissions} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="600px" lazyDelay={600}>
+      <SectionWrapper lazy lazyHeight="600px" lazyDelay={700}>
         <FAQ />
       </SectionWrapper>
 
@@ -140,11 +141,13 @@ const HomePage: React.FC = () => {
         <LocationMap />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="400px" lazyDelay={800}>
-        <div ref={contactRef}>
-          <Contact contact={collegeData.contact} />
-        </div>
-      </SectionWrapper>
+      <div id="contact">
+  <SectionWrapper>
+    <Contact contact={collegeData.contact} />
+  </SectionWrapper>
+</div>
+
+
     </PageLayout>
   );
 };
