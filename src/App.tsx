@@ -6,7 +6,8 @@ import TopNavBar from './components/TopNavBar';
 import Header from './components/Header';
 import NewsTicker from './components/NewsTicker';
 import Footer from './components/Footer';
-
+import NewsEventsCards from './pages//NewsEventsCards';
+import { news, events } from './data/newsEventsData.json';
 import HomePage from './pages/HomePage';
 import DepartmentPage from './pages/DepartmentPage';
 import GalleryPage from './pages/GalleryPage';
@@ -23,8 +24,7 @@ import GoverningCouncilPage from './pages/GoverningCouncilPage';
 import AcademicCalendar from './pages/AcademicCal';
 import CalendarDetails from './pages/CalendarDetails'; 
 import DataTable from './pages/DataTable';
-
-
+import InnovationPolicy from './pages/InnovationPolicy';
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
@@ -79,12 +79,16 @@ function App() {
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
+                 <Route path="/news-events" element={<NewsEventsCards news={news} events={events} />} />
+
+
+                <Route path="/contactus" element={<ContactPage/>}/>
 
                 {/* ✅ Calendar Routes */}
                 <Route path="/academic-calendar" element={<AcademicCalendar />} />
                 <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
                 <Route path="/latest-event" element={<CseLatestEvents />} />
-                <Route path="/c" element={<ControllerOfExaminationsPage />} />
+                <Route path="/coe" element={<ControllerOfExaminationsPage />} />
               </Routes>
             </main>
               <Footer
