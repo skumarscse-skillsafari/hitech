@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ChevronLeft } from 'lucide-react';
+
 import col from "../../public/Collaborative Learning with Digital Collaboration Tools.jpg";
 import com from "../../public/Competency-Based Learning with Online Assessments.jpg";
 import Life from "../../public/Lifelong Learning with Micro-Credentials.jpg";
@@ -6,7 +9,6 @@ import online from "../../public/Online and Blended Learning with LMS Integratio
 import Multi from "../../public/Multimedia and Visualization with Digital Content.jpg";
 import Indust from "../../public/Industry-Aligned Courses and Professional Development.jpg";
 
-// Add first 3 card data manually as static entries
 const extraMethods = [
   {
     title: "Active Learning with Technology",
@@ -80,65 +82,80 @@ const methods: Method[] = [
 
 const InnovativeMethods: React.FC = () => {
   const [selectedMethod, setSelectedMethod] = useState<Method | null>(null);
+  const navigate = useNavigate();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 relative">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-        Innovative Teaching Methodologies
-      </h1>
-      <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        These modern methods enhance engagement, creativity, and practical understanding among students.
-      </p>
+    <div className="relative mt-0 bg-white">
+      {/* Back Button */}
+      <button
+        onClick={() => navigate(-1)}
+        className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+        aria-label="Back"
+      >
+        <ChevronLeft className="w-6 h-6 text-black" strokeWidth={3} />
+        <span className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 px-3 py-1 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+          Back
+        </span>
+      </button>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {methods.map((method, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
-          >
-            <img
-              src={method.image}
-              alt={method.title}
-              className="h-48 w-full object-cover"
-            />
-            <div className="p-6 flex flex-col flex-grow">
-              <h2 className="text-xl font-semibold mb-2">{method.title}</h2>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">{method.description}</p>
-              <div className="flex justify-end mt-auto">
-                <button
-                  onClick={() => setSelectedMethod(method)}
-                  className="bg-[#e6b200] text-black text-sm font-semibold px-6 py-2 rounded-md hover:brightness-95 transition"
-                >
-                  View More
-                </button>
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+          Innovative Teaching Methodologies
+        </h1>
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          These modern methods enhance engagement, creativity, and practical understanding among students.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {methods.map((method, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
+            >
+              <img
+                src={method.image}
+                alt={method.title}
+                className="h-48 w-full object-cover"
+              />
+              <div className="p-6 flex flex-col flex-grow">
+                <h2 className="text-xl font-semibold mb-2">{method.title}</h2>
+                <p className="text-gray-600 text-sm mb-4 flex-grow">{method.description}</p>
+                <div className="flex justify-end mt-auto">
+                  <button
+                    onClick={() => setSelectedMethod(method)}
+                    className="bg-[#e6b200] text-black text-sm font-semibold px-6 py-2 rounded-md hover:brightness-95 transition"
+                  >
+                    View More
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Modal */}
-      {selectedMethod && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white rounded-xl shadow-2xl max-w-4xl w-full p-8 relative overflow-y-auto max-h-[90vh]">
-            <button
-              onClick={() => setSelectedMethod(null)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
-            >
-              ×
-            </button>
-            <h2 className="text-3xl font-semibold mb-6">{selectedMethod.title}</h2>
-            <img
-              src={selectedMethod.image}
-              alt={selectedMethod.title}
-              className="w-full h-64 object-cover rounded-md mb-6"
-            />
-            <p className="text-gray-700 text-base leading-relaxed">
-              {selectedMethod.moreInfo || selectedMethod.description}
-            </p>
-          </div>
+          ))}
         </div>
-      )}
+
+        {/* Modal */}
+        {selectedMethod && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+            <div className="bg-white rounded-xl shadow-2xl max-w-4xl w-full p-8 relative overflow-y-auto max-h-[90vh]">
+              <button
+                onClick={() => setSelectedMethod(null)}
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
+              >
+                ×
+              </button>
+              <h2 className="text-3xl font-semibold mb-6">{selectedMethod.title}</h2>
+              <img
+                src={selectedMethod.image}
+                alt={selectedMethod.title}
+                className="w-full h-64 object-cover rounded-md mb-6"
+              />
+              <p className="text-gray-700 text-base leading-relaxed">
+                {selectedMethod.moreInfo || selectedMethod.description}
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
