@@ -44,7 +44,7 @@
       "href": "/accred/naac",
       "dropdown": [
         { "name": "NAAC Accreditation", "href": "/accred/naac/naacacc" },
-        { "name": "Self Study Report", "href": "/accred/naac/selfstudy" },
+        { "name": "Self Study Report", "href": "/public/pdf/NAAC.pdf","external":true   },
         { "name": "NAAC Certificate", "href": "/accred/naac/certific" },
         { "name": "Quality Assurance", "href": "/accred/naac/quality" },
         { "name": "NAAC Guidelines", "href": "/accred/naac/guidelines" }
@@ -56,7 +56,7 @@
       "dropdown": [
         { "name": "NBA Accreditations", "href": "/accred/nba/nbaaccred" },
         { "name": "Accredited Programs", "href": "/accred/nba/prog" },
-        { "name": "NBA Reports", "href": "/accred/nba/nbareports" },
+        { "name": "NBA Reports", "href":  "/public/pdf/NAAC.pdf","external":true  },
         { "name": "Quality Standards", "href": "/accred/nba/quality" },
         { "name": "NBA Guidelines", "href": "/accred/nba/nbaguidelines" }
       ]
@@ -67,7 +67,7 @@
       "dropdown": [
         { "name": "ARIIA Ranking", "href": "/accred/ariia/ariiarank" },
         { "name": "ARIIA Data", "href": "/accred/ariia/ariiadata" },
-        { "name": "ARIIA Reports", "href": "/accred/ariia/ariiareports" },
+        { "name": "ARIIA Reports", "href": "/public/pdf/ARI-C-37046.pdf","external":true },
         { "name": "Performance Metrics", "href": "/accred/ariia/performmetrics" }
       ]
     }
@@ -79,7 +79,7 @@
         "href": "/aicte",
         "dropdown": [
           { "name": "AICTE Approval", "href": "/aicte/approval" },
-          { "name": "Mandatory Disclosures", "href": "/aicte/disclosures" },
+          { "name": "Mandatory Disclosures", "href": "/public/pdf/mandt_disclo.pdf","external":true },
           { "name": "AICTE Reports", "href": "/aicte/reports" },
           { "name": "Compliance", "href": "/aicte/compliance" }
         ]
@@ -98,7 +98,7 @@
         "name": "CoE",
         "href": "/admissions",
         "dropdown": [
-          { "name": "Examination", "href": "/admissions/process" },
+          { "name": "Examination", "href": "/pages/ControllerOfExaminationsPage"},
           { "name": "Exam Time Table", "href": "/admissions/eligibility" },
           { "name": "Exam Fees", "href": "/admissions/application" }
         ]
@@ -109,11 +109,10 @@
         "dropdown": [
           { "name": "Student Portal", "href": "/students/portal" },
           { "name": "Academic Calendar", "href": "/academic-calendar" },
-          { "name": "Examination", "href": "/students/examination" },
-          { "name": "Results", "href": "/students/results" },
-          { "name": "Time Table", "href": "/students/timetable" },
+      
           { "name": "Student Activities", "href": "/students/activities" },
-          { "name": "Grievance Cell", "href": "/students/grievance" }
+          { "name": "Grievance Cell", "href": "/students/grievance" },
+          { "name": "Student Testimonials","href":"/public/pdf/StudentTestimonials.pdf","external":true}
         ]
       },
       {
