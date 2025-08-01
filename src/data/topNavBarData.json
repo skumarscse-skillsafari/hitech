@@ -98,7 +98,7 @@
         "name": "CoE",
         "href": "/admissions",
         "dropdown": [
-          { "name": "Examination", "href": "/pages/ControllerOfExaminationsPage"},
+          { "name": "Examination", "href": "/coe"},
           { "name": "Exam Time Table", "href": "/admissions/eligibility" },
           { "name": "Exam Fees", "href": "/admissions/application" }
         ]
