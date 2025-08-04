@@ -21,14 +21,15 @@ import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
 import AcademicCalendar from './pages/AcademicCal';
-import CalendarDetails from './pages/CalendarDetails'; // ✅ NEW
+import CalendarDetails from './pages/CalendarDetails'; 
 import DataTable from './pages/DataTable';
-import CseLatestEvents from './pages/CseLatestEvents'; // ✅ NEW
 
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
 import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
+import CseLatestEvents from './pages/CseLatestEvents';
+
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
                 {/* ✅ Calendar Routes */}
                 <Route path="/academic-calendar" element={<AcademicCalendar />} />
                 <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
+                <Route path="/latest-event" element={<CseLatestEvents />} />
               </Routes>
             </main>
               <Footer
