@@ -74,12 +74,14 @@ function App() {
                 <Route path="/reuse" element={<ReusePage />} />
                 <Route path="/innovative-methods" element={<InnovativeMethods />} />
                 <Route path="/about/objectives" element={<Objectives />} />
+                <Route path="/about/management" element={<Management />} />
                 <Route path="/vision-mission" element={<Management />} />
                 <Route path="/leadership" element={<PrincipalsDesk />} />
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
                  <Route path="/news-events" element={<NewsEventsCards news={news} events={events} />} />
+                <Route path="/innovation/innovation-policy" element={<InnovationPolicy />} />
 
 
                 <Route path="/contactus" element={<ContactPage/>}/>
