@@ -209,19 +209,20 @@ const AccreditationCards: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center py-8 mb-12 bg-white rounded-2xl shadow-lg">
-          <div className="flex space-x-8 md:space-x-12">
-            {staticLogos.map((logo, idx) => (
-              <div key={idx} className="flex-shrink-0">
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="h-16 w-16 md:h-20 md:w-20 object-contain hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+<div className="flex justify-center items-center py-8 mb-12 bg-white rounded-2xl shadow-lg">
+  <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 px-4">
+    {staticLogos.map((logo, idx) => (
+      <div key={idx} className="flex justify-center">
+        <img
+          src={logo.src}
+          alt={logo.alt}
+          className="h-14 w-14 sm:h-20 sm:w-20 object-contain hover:scale-110 transition-transform duration-300"
+        />
+      </div>
+    ))}
+  </div>
+</div>
+
 
         <div className="bg-white rounded-3xl shadow-2xl overflow-visible">
           <div className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 p-6 md:p-8">
