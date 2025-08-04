@@ -1,19 +1,15 @@
 import React from 'react';
-import {
-  ArrowRight,
-  Play,
-  CreditCard,
-} from 'lucide-react';
+import { ArrowRight, Play, CreditCard } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 interface HeroProps {
   hero: {
     title: string;
     subtitle: string;
-    stats: Array<{
+    stats: {
       number: string;
       label: string;
-    }>;
+    }[];
   };
 }
 
@@ -31,8 +27,17 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
 
 
   const handleWatchCampusTour = () => {
-    console.log('Initiating campus tour. You would typically open a video player here.');
+    console.log('Initiating campus tour.');
   };
+
+  const splitTitle = (title: string) => {
+    const words = title.trim().split(' ');
+    const lastWord = words.pop();
+    const firstPart = words.join(' ');
+    return [firstPart, lastWord];
+  };
+
+  const [firstLine, lastWord] = splitTitle(hero.title);
 
   return (
     <section
@@ -49,12 +54,14 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 transform -translate-y-[0.5in]">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 transform sm:-translate-y-16 md:-translate-y-[0.5in] lg:translate-y-6">
         <div className="space-y-10 text-center">
           <div className="animate-fadeIn">
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-yellow-400 leading-tight">
-              {hero.title}
-            </h1>
+            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-yellow-400 leading-[1.1] text-center break-words max-w-[90%] sm:max-w-3xl mx-auto mt-6 sm:mt-0 px-2 sm:px-4">
+              <span className="block sm:inline">{firstLine}</span>
+              <br className="block" />
+              <span className="block sm:inline -mt-2 sm:mt-0">{lastWord}</span>
+            </div>
             <p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
               Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
             </p>
@@ -107,12 +114,14 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         </div>
       </div>
 
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
 
+      {/* TNEA Code */}
       <div className="fixed left-0 top-1/3 transform -translate-y-1/2 z-50">
         <div className="rotate-90 origin-bottom-left">
           <button
@@ -128,4 +137,3 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
 };
 
 export default Hero;
- 
