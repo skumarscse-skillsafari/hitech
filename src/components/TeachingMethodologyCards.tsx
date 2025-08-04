@@ -126,9 +126,10 @@ const TeachingMethodologyCards: React.FC<TeachingMethodologyCardsProps> = ({
     <div className="bg-white p-8 rounded-2xl shadow-lg relative">
       {/* Header */}
       <div className="text-center mb-12">
-        <h4 className="text-2xl font-bold text-gray-900 mb-4">
+        <h4 className="text-3xl md:text-5xl font-bold text-gray-900">
           Innovative Teaching Methodologies
         </h4>
+        <div className="w-36 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
         <p className="text-gray-600 max-w-3xl mx-auto">
           Discover our cutting-edge teaching approaches that bridge theory and practice,
           preparing students for real-world challenges in {departmentName}.
