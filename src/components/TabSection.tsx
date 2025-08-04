@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
 import {
   BookOpen, Users, Award, Building, Briefcase, Globe, ChevronRight,
-  User, GraduationCap, ClipboardList, FileText
+  User, GraduationCap, ClipboardList, FileText, CalendarDays
 } from 'lucide-react';
 
 import 'slick-carousel/slick/slick.css';
@@ -27,14 +27,29 @@ import uipath from "../../public/uipath.png";
 import celonis from "../../public/celonis.png";
 import infosys from "../../public/infosys.png";
 
-const iconMap: any = {
-  BookOpen, Users, Award, Building, Briefcase, Globe,
-  User, GraduationCap, ClipboardList, FileText
+const iconMap = {
+  BookOpen: BookOpen,
+  Users: Users,
+  Award: Award,
+  Building: Building,
+  Briefcase: Briefcase,
+  Globe: Globe,
+  User: User,
+  GraduationCap: GraduationCap,
+  ClipboardList: ClipboardList,
+  FileText: FileText,
+  Calendar: CalendarDays
 };
 
-const logoMap: any = {
+const logoMap = {
   IEEE, ict, csi, ibm, google, oracle, zoho, redhat, dell,
   vmware, csscorp, salesforce, nasscom, uipath, celonis, infosys
+};
+
+const eventImageMap = {
+  'file-J9BVu9zM8oDHyhLN6xHPWx': 'hackathon.jpg',
+  'file-LSj37azmiY5Pc65232ZVmW': 'workshop.jpg',
+  'file-PvpLe9Jq7twhCq7NFN9nS5': 'seminar.jpg'
 };
 
 const TabsSection: React.FC = () => {
@@ -44,24 +59,18 @@ const TabsSection: React.FC = () => {
 
   useEffect(() => {
     import('../data/tabsData.json').then((data) => {
-      const enrichedTabs = data.tabs
-        .filter((tab: any) => {
-          const isValid = iconMap[tab.icon];
-          if (!isValid) console.warn(`⚠️ Invalid icon: ${tab.icon}`);
-          return isValid;
-        })
-        .map((tab: any) => ({
-          ...tab,
-          icon: iconMap[tab.icon],
-          content: {
-            ...tab.content,
-            items: tab.content.items.map((item: any) => ({
-              ...item,
-              logo: item.logo ? logoMap[item.logo] : undefined
-            }))
-          }
-        }));
-
+      const enrichedTabs = data.tabs.map((tab: any) => ({
+        ...tab,
+        icon: iconMap[tab.icon as keyof typeof iconMap] || CalendarDays,
+        content: {
+          ...tab.content,
+          items: tab.content.items.map((item: any) => ({
+            ...item,
+            logo: item.logo ? logoMap[item.logo as keyof typeof logoMap] : undefined,
+            image: item.image ? eventImageMap[item.image as keyof typeof eventImageMap] : undefined
+          }))
+        }
+      }));
       setTabs(enrichedTabs);
     });
   }, []);
@@ -83,40 +92,44 @@ const TabsSection: React.FC = () => {
     ]
   };
 
-  const handleViewMore = () => {
-    const routeMap: Record<string, string> = {
-      internships: 'internships',
-      micro: 'micro_projects',
-      prototypes: 'prototypes',
-      research: 'research',
-      notable: 'notable'
-    };
-    const route = routeMap[activeTab] || activeTab;
-    console.log("Navigating to:", route);
-    navigate(`/datatable/${route}`);
+ const handleViewMore = () => {
+  const routeMap: Record<string, string> = {
+    internships: 'internships',
+    micro: 'micro_projects',
+    prototypes: 'prototypes',
+    research: 'research',
+    notable: 'notable',
+    faculty_ach: 'faculty_achievements',
+    'latest-events': 'latest-event'
   };
+
+  const route = routeMap[activeTab] || activeTab;
+
+  if (activeTab === 'latest-events') {
+    navigate(`/${route}`);
+  } else {
+    navigate(`/datatable/${route}`);
+  }
+};
 
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="border-b border-gray-200">
         <div className="flex flex-wrap">
-          {tabs.map((tab) => {
-            const IconComponent = tab.icon;
-            return (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 ${
-                  activeTab === tab.id
-                    ? 'text-yellow-600 border-yellow-500 bg-yellow-50'
-                    : 'text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50'
-                }`}
-              >
-                <IconComponent className="h-5 w-5" />
-                <span className="hidden sm:block">{tab.name}</span>
-              </button>
-            );
-          })}
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex items-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 ${
+                activeTab === tab.id
+                  ? 'text-yellow-600 border-yellow-500 bg-yellow-50'
+                  : 'text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50'
+              }`}
+            >
+              {tab.icon && <tab.icon className="h-5 w-5" />}
+              <span className="hidden sm:block">{tab.name}</span>
+            </button>
+          ))}
         </div>
       </div>
 
@@ -203,6 +216,43 @@ const TabsSection: React.FC = () => {
                   </div>
                 </div>
               </div>
+            ) : activeTab === 'latest-events' ? (
+              <div className="overflow-visible">
+                <Slider {...sliderSettings}>
+                  {activeTabData.content.items.map((item: any, index: number) => (
+                    <div key={index} className="px-2 md:px-4 overflow-visible">
+                      <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[0.93] hover:z-10 hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between relative">
+                        <div>
+                          <h4 className="font-semibold text-lg md:text-2xl text-yellow-600 mb-4">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+                            {item.description}
+                          </p>
+                          <div className="space-y-3 text-sm md:text-base text-gray-700">
+                            <div className="flex justify-between gap-4">
+                              <span className="font-medium text-yellow-600">Date:</span>
+                              <span className="text-right text-gray-800 flex-1">
+                                {item.date}
+                              </span>
+                            </div>
+                            <div className="flex justify-between gap-4">
+                              <span className="font-medium text-yellow-600">Participants:</span>
+                              <span className="text-right text-gray-800 flex-1">
+                                {item.participants}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <button className="mt-6 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-2 transition-colors duration-200">
+                          <span>Learn More</span>
+                          <ChevronRight className="h-4 w-4" />
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              </div>
             ) : (
               <div className="overflow-visible">
                 <Slider {...sliderSettings}>
@@ -227,7 +277,7 @@ const TabsSection: React.FC = () => {
                           )}
                           <div className="space-y-3 text-sm md:text-base text-gray-700">
                             {Object.entries(item).map(([key, value]) => {
-                              if (["title", "description", "logo"].includes(key)) return null;
+                              if (["title", "description", "logo", "image"].includes(key)) return null;
                               return (
                                 <div key={key} className="flex justify-between gap-4">
                                   <span className="capitalize font-medium text-yellow-600">{key}:</span>
