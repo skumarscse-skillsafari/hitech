@@ -31,9 +31,9 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
   };
 
   return (
-    <section id="admissions" className="py-20 bg-gray-50">
+    <section id="admissions" className="-mt-48 px py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -45,7 +45,7 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          
+
           {/* Admission Process */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">How to Apply</h3>
@@ -145,14 +145,19 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
                   <Calendar className="h-4 w-4 text-yellow-600" />
                   <span className="text-sm text-gray-700">Advance booking recommended</span>
                 </div>
-              </div>
-              <button
-                onClick={() => navigate('/contact')}
-                className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105"
-              >
-                Book Campus Tour
-              </button>
-            </div>
+                </div>
+                  <button
+                    onClick={() => {
+                    const section = document.getElementById('contact');
+                       if (section) {
+                       section.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                          className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105"
+                          >
+                           Book Campus Tour
+                  </button>
+                </div>
 
             {/* Contact Admissions */}
             <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
@@ -178,11 +183,17 @@ const Admissions: React.FC<AdmissionsProps> = ({ admissions }) => {
                 </div>
               </div>
               <button
-                onClick={() => navigate('/contact')}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105"
-              >
-                Contact Admissions Team
-              </button>
+  onClick={() => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+  className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105"
+>
+  Contact Admissions Team
+</button>
+
             </div>
           </div>
         </div>

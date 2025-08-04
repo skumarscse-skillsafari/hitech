@@ -36,29 +36,39 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
 
   const renderDropdownItems = (items: NavigationItem[]) => (
     <div className="py-2">
-      {items.map((item) => (
-        <div key={item.name} className="relative group/sub">
-          {item.dropdown ? (
-            <>
-              <button className="flex justify-between items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">
-                <span>{item.name}</span>
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute top-0 left-full w-64 bg-white border rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
-                {renderDropdownItems(item.dropdown)}
-              </div>
-            </>
-          ) : (
-            <Link
-              to={item.href}
-              className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
-            >
-              {item.name}
-            </Link>
-          )}
-        </div>
-      ))}
-    </div>
+    {items.map((item) => (
+      <div key={item.name} className="relative group/sub">
+        {item.dropdown ? (
+          <>
+            <button className="flex justify-between items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">
+              <span>{item.name}</span>
+              <ChevronDown className="ml-1 h-4 w-4" />
+            </button>
+            <div className="absolute top-0 left-full w-64 bg-white border rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              {renderDropdownItems(item.dropdown)}
+            </div>
+          </>
+        ) : item.external ? (
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+          >
+            {item.name}
+          </a>
+        ) : (
+          <Link
+            to={item.href}
+            className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+          >
+            {item.name}
+          </Link>
+        )}
+      </div>
+    ))}
+  </div>
+    
   );
 
   const renderMobileDropdown = (items: NavigationItem[], level = 0) => (
