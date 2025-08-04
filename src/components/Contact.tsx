@@ -29,9 +29,10 @@ interface ContactProps {
       email: string;
     }>;
   };
+  id?: string; // ✅ Added id prop for navigability
 }
 
-const Contact: React.FC<ContactProps> = ({ contact }) => {
+const Contact: React.FC<ContactProps> = ({ contact, id }) => {
   const socialIcons = {
     facebook: Facebook,
     twitter: Twitter,
@@ -60,11 +61,10 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
   };
 
   return (
-    <section id="contact" className="py-0 bg-white">
+    <section id={id} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 ">Get in Touch</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to begin your engineering journey? Contact us for admissions, programs, or any other inquiries
           </p>
@@ -142,7 +142,6 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
 
           {/* Contact Info */}
           <div className="space-y-8">
-
             <div className="bg-blue-50 p-6 rounded-2xl">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
               <div className="space-y-4">
@@ -197,7 +196,6 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
                 })}
               </div>
             </div>
-
           </div>
         </div>
       </div>
