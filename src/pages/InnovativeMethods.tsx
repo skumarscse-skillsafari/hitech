@@ -99,13 +99,15 @@ const InnovativeMethods: React.FC = () => {
       </button>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <div className="text-center mb-12">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800">
           Innovative Teaching Methodologies
         </h1>
+        <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4"></div>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           These modern methods enhance engagement, creativity, and practical understanding among students.
         </p>
-
+</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {methods.map((method, index) => (
             <div
