@@ -69,7 +69,7 @@
             "name": "Innovation",
             "href": "/innovation",
             "dropdown": [
-              { "name": "Incubation Lab", "href": "/campus-life/innovation/innovationpolicy" },
+              { "name": "Incubation Lab", "href": "#innovationpolicy" },
               { "name": "AICTE Idea Lab", "href": "/aicte-lab" }
             ]
           }
