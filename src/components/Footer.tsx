@@ -94,18 +94,22 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
 
           {/* College Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-3 mb-6 mt-8">
               <img
                 src="public/Logo_footer.jpg"
                 alt="College Logo"
-                className="h-10 w-10 object-contain rounded-lg"
+                className="h-10 w-10 object-contain rounded-lg p-100"
               />
+              </div>
+              <div>
               <span className="text-xl font-bold">{collegeName}</span>
+            </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Shaping tomorrow's engineers through excellence in education, research, and innovation since 2007.
             </p>
-
+          
             {/* Social Media */}
             <div className="flex space-x-4">
               {Object.entries(contact.socialMedia).map(([platform, url]) => {
