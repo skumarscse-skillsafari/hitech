@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-
 import { CMSProvider } from './components/admin/CMSProvider';
 import TopNavBar from './components/TopNavBar';
 import Header from './components/Header';
 import NewsTicker from './components/NewsTicker';
 import Footer from './components/Footer';
-import NewsEventsCards from './pages//NewsEventsCards';
-import { news, events } from './data/newsEventsData.json';
+import NewsCards from './pages/NewsCards';
+import EventsCards from './pages/EventsCards';
+import newsEventsData from './data/newsEventsData.json';
 import HomePage from './pages/HomePage';
 import DepartmentPage from './pages/DepartmentPage';
 import GalleryPage from './pages/GalleryPage';
@@ -32,6 +32,8 @@ import contactData from './data/contactData.json';
 import CseLatestEvents from './pages/CseLatestEvents';
 import ControllerOfExaminationsPage from './pages/ControllerOfExaminationsPage';
 
+const news = newsEventsData.news;
+const events = newsEventsData.events;
 
 function App() {
   return (
@@ -80,7 +82,8 @@ function App() {
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
-                 <Route path="/news-events" element={<NewsEventsCards news={news} events={events} />} />
+                <Route path="/news" element={<NewsCards news={news} />} />
+                <Route path="/events" element={<EventsCards events={events} />} />
                 <Route path="/innovation/innovation-policy" element={<InnovationPolicy />} />
 
 

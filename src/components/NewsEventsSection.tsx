@@ -161,7 +161,7 @@ const NewsEventsSection: React.FC<NewsEventsSectionProps> = ({ news, events }) =
 
             <div className="text-center">
               <button
-                onClick={() => navigate('/news-events')}
+                onClick={() => navigate('/news')}
                 className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
               >
                 View All News
@@ -228,7 +228,7 @@ const NewsEventsSection: React.FC<NewsEventsSectionProps> = ({ news, events }) =
 
               <div className="p-4 bg-gray-50 border-t border-gray-200">
                 <button
-                  onClick={() => navigate('/NewsEventsCards')}
+                  onClick={() => navigate('/events')}
                   className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-2 rounded-lg transition-colors text-sm"
                 >
                   View All Events
