@@ -48,7 +48,7 @@ const sectionTitleMap: Record<string, string> = {
   micro_projects: 'Micro Projects',
   prototypes: 'Prototypes',
   research_data: 'Research Projects',
-  research: 'Research and Development', 
+  research: 'Research and Development',
   notable: 'Notable Projects',
   powered_industry: 'Powered by Industry',
   collaborations: 'Industry Collaborations',
@@ -56,9 +56,9 @@ const sectionTitleMap: Record<string, string> = {
   student_achievements: 'Student Achievements',
   obe_practices: 'OBE Practices',
   obe: 'OBE Practices',
- innovations: 'Innovations',
- placements: 'Placements',
-"curriculum-syllabus": 'Curriculum and Syllabus',
+  innovations: 'Innovations',
+  placements: 'Placements',
+  "curriculum-syllabus": 'Curriculum and Syllabus',
   International: 'International Journals',
   International_Confrense: 'International Conference',
   National_journals: 'National Journals',
@@ -72,7 +72,6 @@ const sectionTitleMap: Record<string, string> = {
   stu_Books: 'Student Books',
   hackathon: 'Student Hackathon Events',
 };
-
 
 const sectionDescriptions: Record<string, string> = {
   internships: 'A collection of student internships with various companies across years.',
@@ -113,7 +112,7 @@ const DataTable: React.FC = () => {
   });
 
   const data = secData[selectedCategoryKey] || [];
- const title = sectionTitleMap[normalizedSection] || 'Section';
+  const title = sectionTitleMap[normalizedSection] || 'Section';
 
   const description =
     sectionDescriptions[selectedCategoryKey] ||
@@ -129,17 +128,19 @@ const DataTable: React.FC = () => {
 
   return (
     <div className="relative mt-0 bg-white">
-      {/* Back Button */}
-      <button
-        onClick={() => navigate(-1)}
-        className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
-        aria-label="Back"
-      >
-        <ChevronLeft className="w-6 h-6 text-black" strokeWidth={3} />
-        <span className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 px-3 py-1 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
-          Back
-        </span>
-      </button>
+      {/* Back Button - visible only on md+ screens */}
+      <div className="hidden md:flex">
+        <button
+          onClick={() => navigate(-1)}
+          className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+          aria-label="Back"
+        >
+          <ChevronLeft className="w-6 h-6 text-black" strokeWidth={3} />
+          <span className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 px-3 py-1 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+            Back
+          </span>
+        </button>
+      </div>
 
       {/* Table */}
       <ReusableTable
