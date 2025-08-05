@@ -66,6 +66,7 @@ const Placements: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Placement Excellence</h2>
+          <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our strong industry partnerships and comprehensive training programs ensure exceptional career opportunities for our graduates.
           </p>
@@ -151,11 +152,12 @@ const Placements: React.FC = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 mx-auto">
-            <span>View Detailed Placement Report</span>
-            <ArrowRight className="h-5 w-5" />
-          </button>
-        </div>
+  <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 text-base px-6 py-3 rounded-md font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 w-fit mx-auto">
+    <span>View Detailed Placement Report</span>
+    <ArrowRight className="h-5 w-5" />
+  </button>
+</div>
+
       </div>
     </section>
   );
