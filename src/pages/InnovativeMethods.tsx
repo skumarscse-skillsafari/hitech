@@ -99,13 +99,15 @@ const InnovativeMethods: React.FC = () => {
       </button>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <div className="text-center mb-12">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800">
           Innovative Teaching Methodologies
         </h1>
+        <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4"></div>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           These modern methods enhance engagement, creativity, and practical understanding among students.
         </p>
-
+</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {methods.map((method, index) => (
             <div
@@ -155,6 +157,20 @@ const InnovativeMethods: React.FC = () => {
             </div>
           </div>
         )}
+                <section className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12 rounded-2xl text-center text-white">
+          <h2 className="text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
+          <p className="text-xl mb-8 opacity-90">
+            Be part of an institution that has been shaping futures for over three decades
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Explore Programs
+            </button>
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+              Contact Us
+            </button>
+          </div>
+        </section>
       </div>
     </div>
   );
