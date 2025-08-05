@@ -905,7 +905,7 @@
       "shortName": "MECH",
       "description": "Engineering innovative mechanical solutions for manufacturing, automation, and sustainable technologies—enhancing productivity, promoting eco-friendly practices, and driving technological advancement across industries for a smarter, greener future.",
       "icon": "Settings",
-      "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "image": "public/mech.jpg",
       "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
       "mission": "To provide comprehensive mechanical engineering education, promote innovation in manufacturing and design, and develop competent engineers for industry and research.",
       "programs": [
