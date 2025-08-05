@@ -295,6 +295,7 @@
   
   "research_data":[
   {
+    "s.no.": 1,
     "faculty name": ["Dr.A.JameerBasha, Professor & Head", "Dr.S.Lokesh, ASP/CSE", "Ms.P.Jeevitha, AP/CSE"],
     "project_title": "Design and development of smart assistive device with integration of hybrid blockchain and augmented reality to shape the future mobile healthcare system for post covid challenges and diagnosis system",
     "project_type": "Research",
@@ -303,6 +304,7 @@
     "duration": "3 Years (ongoing)"
   },
   {
+    "s.no.": 2,
     "faculty name": ["Dr.A.JameerBasha, Professor & Head"],
     "project_title": "Scheme for Promoting Interests, Creativity and Ethics among Students (SPICES)",
     "project_type": "Research",
@@ -311,6 +313,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
+    "s.no.": 3,
     "faculty name": ["Ms.P.Jeevitha, AP/CSE"],
     "project_title": "Intelligent Support System for diagnosis of covid 19 and captioning of x ray images using LSTM and RNN with explainability",
     "project_type": "Research",
@@ -319,6 +322,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
+    "s.no.": 4,
     "faculty name": ["Dr.R.Kala, AP/CSE"],
     "project_title": "Brain Tumor Detection Using Deep Convolutional Neural Network And Its Application Using FPGA Implementation",
     "project_type": "Research",
@@ -327,6 +331,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
+    "s.no.": 5,
     "faculty name": ["Ms.R.T. Subhalakshmi, AP/CSE"],
     "project_title": "Automatic segmentation and classification of COVID-19 CT image Using DCN",
     "project_type": "Research",
@@ -335,6 +340,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
+    "s.no.": 6,
     "faculty name": ["Dr.A.JameerBasha, Professor & Head"],
     "project_title": "Application of Artificial Intelligence in Waste Water Management",
     "project_type": "Research",
@@ -343,6 +349,7 @@
     "duration": "1 Year (Completed)"
   },
   {
+    "s.no.": 7,
     "faculty name": ["Dr.S.Lokesh, ASP/CSE"],
     "project_title": "Nano Assistive Communication Device for Elderly and Speech Disability People after Stroke",
     "project_type": "Research",
@@ -351,6 +358,7 @@
     "duration": "1 Year (Completed)"
   },
   {
+    "s.no.": 8,
     "faculty name": ["Mr.Arun, AP/CSE"],
     "project_title": "Social Vulnerability in context to natural disaster using Machine learning",
     "project_type": "Research",
