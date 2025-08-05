@@ -217,16 +217,12 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            aria-label="Toggle Menu"
           >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-900" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-900" />
-            )}
+            {isMenuOpen ? <X className="h-6 w-6 text-gray-900" /> : <Menu className="h-6 w-6 text-gray-900" />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-xl border-t max-h-[70vh] overflow-y-auto z-50">
             <nav className="px-4 py-4 space-y-2">
