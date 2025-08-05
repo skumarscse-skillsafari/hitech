@@ -151,7 +151,9 @@ const FAQ: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900">
               Frequently Asked Questions
             </h2>
+            
           </div>
+          <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Find answers to common questions about admissions, academics, facilities, and campus life
           </p>

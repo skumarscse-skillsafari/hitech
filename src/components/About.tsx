@@ -71,6 +71,7 @@ const About: React.FC<AboutProps> = ({ about }) => {
           {/* Text Section */}
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-gray-900">{about.title}</h2>
+             <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
             <p className="text-lg text-gray-700 leading-relaxed">{about.content}</p>
 
             <div>

@@ -14,6 +14,7 @@ const LocationMap: React.FC = () => {
               Visit Our Campus
             </h2>
           </div>
+          <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Located in the heart of Coimbatore, our campus is easily accessible and surrounded by excellent infrastructure
           </p>

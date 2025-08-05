@@ -28,6 +28,7 @@ const Faculty: React.FC<FacultyProps> = ({ faculty }) => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Faculty Members
           </h2>
+          
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Learn from renowned experts and researchers who are shaping the future of engineering education
           </p>

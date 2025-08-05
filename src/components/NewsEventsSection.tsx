@@ -72,6 +72,7 @@ const NewsEventsSection: React.FC<NewsEventsSectionProps> = ({ news, events }) =
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Latest News & Events
           </h2>
+           <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Stay updated with the latest achievements, announcements, and upcoming events at our institution
           </p>

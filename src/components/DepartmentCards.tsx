@@ -56,6 +56,7 @@ const DepartmentCards: React.FC<DepartmentCardsProps> = ({ departments }) => {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Academic Departments
           </h2>
+           <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
           <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Explore our world-class departments with cutting-edge curriculum, distinguished faculty, and state-of-the-art facilities
           </p>
@@ -173,6 +174,7 @@ const DepartmentCards: React.FC<DepartmentCardsProps> = ({ departments }) => {
             <h3 className="text-lg font-bold text-gray-900 mb-4">
               Explore All Departments
             </h3>
+            
             <p className="text-base text-gray-600 mb-4">
               Discover detailed information about our programs, faculty, and facilities
             </p>
