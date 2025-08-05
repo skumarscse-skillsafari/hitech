@@ -6,7 +6,9 @@ import {
   Settings,
   FileText,
   Download,
+  ChevronLeft,
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import PageLayout from '../components/layout/PageLayout';
 
@@ -30,7 +32,7 @@ const RegulationList: React.FC<{ title: string; regulations: RegulationItem[] }>
     <div className="space-y-3">
       {regulations.map(({ name, file }) => (
         <a
-          key={file} // use file path as stable key
+          key={file}
           href={file}
           target="_blank"
           rel="noopener noreferrer"
@@ -71,7 +73,7 @@ const FacultyTable: React.FC<{ faculty: FacultyMember[] }> = ({ faculty }) => (
       <tbody className="text-gray-700">
         {faculty.map(({ name, role, qualification }, i) => (
           <tr
-            key={`${name}-${i}`} // stable composite key
+            key={`${name}-${i}`}
             className="border-t border-gray-100 hover:bg-yellow-50"
           >
             <td className="py-3 px-4 font-medium">{i + 1}</td>
@@ -86,6 +88,8 @@ const FacultyTable: React.FC<{ faculty: FacultyMember[] }> = ({ faculty }) => (
 );
 
 const ControllerOfExaminationsPage: React.FC = () => {
+  const navigate = useNavigate();
+
   const title = 'Controller of Examinations';
   const subtitle = 'Autonomous Examination Cell - HIT';
   const description =
@@ -158,6 +162,20 @@ const ControllerOfExaminationsPage: React.FC = () => {
       title="Controller of Examinations - Hindusthan Institute of Technology"
       description="Explore exam reforms, faculty, and academic governance under autonomous status at HIT."
     >
+      {/* Back Button */}
+      <div className="hidden md:flex">
+        <button
+          onClick={() => navigate(-1)}
+          className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+          aria-label="Back"
+        >
+          <ChevronLeft className="w-6 h-6 text-black" strokeWidth={3} />
+          <span className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 px-3 py-1 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+            Back
+          </span>
+        </button>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <SectionWrapper lazy className="-mt-6 mb-16 text-center" role="banner" aria-label="Page header">
           <h1 className="text-5xl font-bold text-gray-900 mb-3 leading-tight">{title}</h1>
@@ -165,7 +183,7 @@ const ControllerOfExaminationsPage: React.FC = () => {
           <p className="text-md text-gray-600 max-w-3xl mx-auto mt-3">{description}</p>
         </SectionWrapper>
 
-        {/* News Section */}
+        {/* News */}
         <SectionWrapper lazy className="mb-16" role="region" aria-label="Latest News">
           <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-200 shadow flex items-center justify-center">
             <ScrollText className="mr-3 text-yellow-600 w-6 h-6" />
@@ -173,7 +191,7 @@ const ControllerOfExaminationsPage: React.FC = () => {
           </div>
         </SectionWrapper>
 
-        {/* Regulations Section */}
+        {/* Regulations */}
         <section aria-labelledby="regulations-heading" className="mb-20">
           <SectionWrapper lazy>
             <h2
@@ -199,7 +217,7 @@ const ControllerOfExaminationsPage: React.FC = () => {
               <ClipboardList className="h-7 w-7 text-yellow-600 mr-2" /> Responsibilities
             </h2>
             <div className="grid md:grid-cols-2 gap-6" role="list">
-              {responsibilities.map((item, i) => (
+              {responsibilities.map((item) => (
                 <ResponsibilityItem key={item} text={item} />
               ))}
             </div>
@@ -216,7 +234,7 @@ const ControllerOfExaminationsPage: React.FC = () => {
               <Settings className="h-7 w-7 text-yellow-600 mr-2" /> Examination Reforms
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
-              {reforms.map((reform, i) => (
+              {reforms.map((reform) => (
                 <ReformItem key={reform} text={reform} />
               ))}
             </div>
