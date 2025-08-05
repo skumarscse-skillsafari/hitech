@@ -232,30 +232,36 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
   return (
     <div className="space-y-8">
       {/* Department Header - Unchanged */}
-      <LazyLoadWrapper height="300px" delay={500}>
-        <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div className="relative h-64 overflow-hidden">
-            <img 
-              src={department.image} 
-              alt={department.name}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-            
-            <div className="absolute top-6 left-6 bg-white/90 p-4 rounded-lg">
-              <IconComponent className="h-8 w-8 text-gray-600" />
-            </div>
-            
-            <div className="absolute bottom-6 left-6 text-white">
-              <div className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold mb-2 inline-block">
-                {department.shortName}
-              </div>
-              <h1 className="text-3xl font-bold mb-2">{department.name}</h1>
-              <p className="text-gray-200 w-full">{department.description}</p>
-            </div>
-          </div>
+     <LazyLoadWrapper height="300px" delay={500}>
+  <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+    <div className="relative h-[400px] sm:h-[300px]">
+      {/* Background Image with Overlay */}
+      <img 
+        src={department.image} 
+        alt={department.name}
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+
+      {/* Top-left Icon */}
+      <div className="absolute top-4 left-4 bg-white/90 p-3 rounded-lg">
+        <IconComponent className="h-6 w-6 text-gray-600 sm:h-8 sm:w-8" />
+      </div>
+
+      {/* Bottom Content */}
+      <div className="absolute inset-x-4 bottom-4 text-white space-y-2">
+        <div className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold inline-block ">
+          {department.shortName}
         </div>
-      </LazyLoadWrapper>
+        <h1 className="text-xl sm:text-2xl font-bold">{department.name}</h1>
+        <p className="text-sm sm:text-base text-gray-200">
+          {department.description}
+        </p>
+      </div>
+    </div>
+  </div>
+</LazyLoadWrapper>
+
 
       {/* Vision & Mission - Unchanged */}
       <LazyLoadWrapper height="200px" delay={500}>
