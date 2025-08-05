@@ -1,5 +1,4 @@
-{ 
-
+{
   "tabs": [
     {
       "id": "hod",
@@ -22,6 +21,44 @@
       }
     },
     {
+      "id": "latest-events",
+      "name": "Latest Events",
+      "icon": "Calendar",
+      "content": {
+        "title": "Latest Events & Activities",
+        "items": [
+          {
+            "title": "Internal Smart India Hackathon – 2022",
+            "date": "10.03.2022",
+            "participants": "56 teams (45 Software, 11 Hardware)",
+            "description": "An internal hackathon held to shortlist teams under software and hardware categories for Smart India Hackathon. A total of 56 teams participated.",
+            "logo": ""
+          },
+          {
+            "title": "Technical Talk on Latest Trends in Software Testing",
+            "date": "15.03.2022",
+            "participants": "Students and faculty of Hindusthan Institute of Technology",
+            "description": "A one-day technical session on 'Latest trends in software testing' by Mr. M. Sabarinathan, CEO of Gateway Software Solution.",
+            "logo": ""
+          },
+          {
+            "title": "Pitching Event for PoCs & Innovation Mentorship",
+            "date": "16.02.2022",
+            "participants": "PoC developers and Innovation Ambassadors",
+            "description": "Pitching event to link student PoC developers with Innovation Ambassadors for mentorship support.",
+            "logo": ""
+          },
+          {
+            "title": "Entrepreneurship Awareness Drive – 2022",
+            "date": "04.07.2022",
+            "participants": "Students of Hindusthan Institute of Technology",
+            "description": "Entrepreneurship Awareness Drive was conducted to promote entrepreneurial thinking among students, featuring successful startup founders and alumni entrepreneurs.",
+            "logo": ""
+          }
+        ]
+      }
+    },
+    {
       "id": "research",
       "name": "Research & Development",
       "icon": "BookOpen",
@@ -32,7 +69,7 @@
             "title": "Dr.A.JameerBasha, Professor & Head Dr.S.Lokesh, ASP/CSE Ms.P.Jeevitha, AP/CSE",
             "description": "Design and development of smart assistive device...",
             "funding": "Rs.9,48,614",
-            "status": "3-years (Ongoing)",
+            "status": "3‑years (Ongoing)",
             "duration": "3 Years(Ongoing)",
             "years": "2030"
           },
@@ -46,7 +83,7 @@
           },
           {
             "title": "Ms.R.T. Subhalakshmi AP/CSE",
-            "description": "Automatic segmentation and classification of COVID-19 CT image Using DCN",
+            "description": "Automatic segmentation and classification of COVID‑19 CT image Using DCN",
             "funding": "Rs.2,04,000",
             "status": "1 Year (ongoing)",
             "duration": "1 Year(Ongoing)",
@@ -63,37 +100,10 @@
         ]
       }
     },
-    {
-  "id": "latest-events",
-  "name": "Latest Events",
-  "icon": "CalendarDays",
-  "content": {
-    "title": "Department Events & Activities",
-    "items": [
-      {
-        "title": "Internal Smart India Hackathon – 2022",
-        "date": "10.03.2022",
-        "description": "Total of 56 teams were participated under different themes, among them Software is 45 and Hardware 11.",
-        "participants": " 300"
-      },
-      {
-        "title": "One day technical talk on 'Latest trends in software testing'",
-        "date": "15.03.2022",
-        "description": "Delivered by Mr. M. Sabarinathan, CEO, Gateway Software Solution.",
-        "participants": " 60"
-      },
-      {
-        "title": "Pitching Event for PoCs & Mentorship Support",
-        "date": "16.02.2022",
-        "description": "Pitching Event for PoCs developed & linkage with Innovation Ambassadors for mentorship support.",
-        "participants": "40"
-      }
-    ]
-  }
-},
+    
 
     {
-      "id": "student-achievements",
+      "id": "student_achievements",
       "name": "Student Achievements",
       "icon": "Award",
       "content": {
@@ -108,7 +118,7 @@
           },
           {
             "title": "Hackathon Champions",
-            "description": "Won the regional hackathon with an AI-based solution for traffic management.",
+            "description": "Won the regional hackathon with an AI‑based solution for traffic management.",
             "year": "2023",
             "competition": "Regional Level",
             "prize": "Rs. 1,00,000"
@@ -124,7 +134,7 @@
       }
     },
     {
-      "id": "faculty-achievements",
+      "id": "faculty_achievements",
       "name": "Faculty Achievements",
       "icon": "Award",
       "content": {
@@ -200,12 +210,12 @@
           },
           {
             "title": "AI-Powered Wheelchair",
-            "description": "Autonomous wheelchair system for differently-abled people.",
+            "description": "Autonomous wheelchair system for differently‑abled people.",
             "year": "2023",
             "awards": "National Assistive Tech Award"
           },
           {
-            "title": "IoT-Based Water Management System",
+            "title": "IoT‑Based Water Management System",
             "description": "Smart system to monitor and optimize water usage.",
             "year": "2024",
             "awards": "Green Technology Innovation Prize"
@@ -238,7 +248,7 @@
             "title": "Placement Training",
             "description": "Comprehensive training program to prepare students for placements.",
             "modules": "Aptitude, Technical, Communication, Interview Skills",
-            "duration": "Year-round program",
+            "duration": "Year‑round program",
             "success": "90% placement rate in last 5 years"
           }
         ]
@@ -264,12 +274,12 @@
             "po1": "Engineering knowledge",
             "po2": "Problem analysis",
             "po3": "Design/development of solutions",
-            "po12": "Life-long learning"
+            "po12": "Life‑long learning"
           },
           {
             "title": "Program Specific Outcomes (PSOs)",
             "description": "Computer Science and Engineering graduates will be able to:",
-            "pso1": "Develop software solutions for real-world problems",
+            "pso1": "Develop software solutions for real‑world problems",
             "pso2": "Apply computing knowledge to emerging technologies",
             "pso3": "Adapt to new tools and technologies in computing"
           }
@@ -439,8 +449,8 @@
             "students": "Thiru Kumaran Rp, Sriram B, Uday Ram S, Sunil Kumar D"
           },
           {
-            "title": "AI-Enhanced Iot Based Waste Management System For Real-Time Drainage Maintenance And Monitoring",
-            "domain": "Solid waste / Bio-waste /E-waste",
+            "title": "AI-Enhanced Iot Based Waste Management System For Real‑Time Drainage Maintenance And Monitoring",
+            "domain": "Solid waste / Bio‑waste /E‑waste",
             "guide": "Mr.K. Murugan",
             "students": "Kamaleshwari, R Akshaya E, Kaviyasri J"
           }
