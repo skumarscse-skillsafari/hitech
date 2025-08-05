@@ -107,7 +107,7 @@ const HomePage: React.FC = () => {
         <NewsEventsSection news={newsEventsData.news} events={newsEventsData.events} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={400}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={700}>
         <DepartmentCards
           departments={departmentsData.departments.map((dept: any) => ({
             ...dept,
@@ -137,7 +137,7 @@ const HomePage: React.FC = () => {
         <FAQ />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={700}>
+      <SectionWrapper lazy lazyHeight="500px" lazyDelay={900}>
         <LocationMap />
       </SectionWrapper>
 
@@ -145,7 +145,7 @@ const HomePage: React.FC = () => {
   <SectionWrapper>
     <Contact contact={collegeData.contact} />
   </SectionWrapper>
-</div>
+      </div>
 
 
     </PageLayout>
