@@ -28,17 +28,8 @@ import celonis from "../../public/celonis.png";
 import infosys from "../../public/infosys.png";
 
 const iconMap = {
-  BookOpen: BookOpen,
-  Users: Users,
-  Award: Award,
-  Building: Building,
-  Briefcase: Briefcase,
-  Globe: Globe,
-  User: User,
-  GraduationCap: GraduationCap,
-  ClipboardList: ClipboardList,
-  FileText: FileText,
-  Calendar: CalendarDays
+  BookOpen, Users, Award, Building, Briefcase, Globe,
+  User, GraduationCap, ClipboardList, FileText, Calendar: CalendarDays
 };
 
 const logoMap = {
@@ -51,6 +42,8 @@ const eventImageMap = {
   'file-LSj37azmiY5Pc65232ZVmW': 'workshop.jpg',
   'file-PvpLe9Jq7twhCq7NFN9nS5': 'seminar.jpg'
 };
+
+// ... imports (same as yours)
 
 const TabsSection: React.FC = () => {
   const [tabs, setTabs] = useState<any[]>([]);
@@ -87,30 +80,29 @@ const TabsSection: React.FC = () => {
     autoplaySpeed: 3000,
     pauseOnHover: true,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 1 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } }
+      { breakpoint: 640, settings: { slidesToShow: 1 } }
     ]
   };
 
- const handleViewMore = () => {
-  const routeMap: Record<string, string> = {
-    internships: 'internships',
-    micro: 'micro_projects',
-    prototypes: 'prototypes',
-    research: 'research',
-    notable: 'notable',
-    faculty_ach: 'faculty_achievements',
-    'latest-events': 'latest-event'
+  const handleViewMore = () => {
+    const routeMap: Record<string, string> = {
+      internships: 'internships',
+      micro: 'micro_projects',
+      prototypes: 'prototypes',
+      research: 'research',
+      notable: 'notable',
+      faculty_ach: 'faculty_achievements',
+      'latest-events': 'latest-event'
+    };
+
+    const route = routeMap[activeTab] || activeTab;
+
+    if (activeTab === 'latest-events') {
+      navigate(`/${route}`);
+    } else {
+      navigate(`/datatable/${route}`);
+    }
   };
-
-  const route = routeMap[activeTab] || activeTab;
-
-  if (activeTab === 'latest-events') {
-    navigate(`/${route}`);
-  } else {
-    navigate(`/datatable/${route}`);
-  }
-};
 
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
@@ -120,7 +112,7 @@ const TabsSection: React.FC = () => {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 ${
+              className={`flex items-center space-x-2 px-4 sm:px-6 py-3 sm:py-4 font-medium transition-all duration-200 border-b-2 ${
                 activeTab === tab.id
                   ? 'text-yellow-600 border-yellow-500 bg-yellow-50'
                   : 'text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50'
@@ -133,17 +125,17 @@ const TabsSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-8">
+      <div className="p-4 sm:p-8">
         {activeTabData && (
           <div className="space-y-6">
-            <div className="flex justify-between items-center">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+              <h3 className="text-lg sm:text-2xl font-bold text-gray-900">
                 {activeTabData.content.title}
               </h3>
               {activeTab !== 'hod' && (
                 <button
                   onClick={handleViewMore}
-                  className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 min-w-fit"
+                  className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
                 >
                   <span className="hidden sm:inline">View more</span>
                   <ChevronRight className="h-4 w-4" />
@@ -152,10 +144,10 @@ const TabsSection: React.FC = () => {
             </div>
 
             {activeTab === 'hod' ? (
-              <div className="bg-gray-50 p-8 rounded-xl border border-gray-200">
+              <div className="bg-gray-50 p-4 sm:p-8 rounded-xl border border-gray-200">
                 <div className="flex flex-col md:flex-row gap-8">
                   <div className="md:w-1/3 flex flex-col items-center">
-                    <div className="w-48 relative" style={{ width: '218px', height: '334px' }}>
+                    <div className="w-40 sm:w-48 relative" style={{ height: '320px' }}>
                       <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg ring-4 ring-black/60 ring-offset-2 ring-offset-white">
                         <img
                           src={hodPhoto}
@@ -165,11 +157,11 @@ const TabsSection: React.FC = () => {
                         />
                       </div>
                     </div>
-                    <h4 className="font-semibold text-xl text-center text-gray-900 mb-1 mt-4">
+                    <h4 className="font-semibold text-lg sm:text-xl text-center text-gray-900 mt-4">
                       {activeTabData.content.items[0].title}
                     </h4>
                     <p className="text-yellow-600 text-sm font-medium mb-4">Head of Department</p>
-                    <div className="text-center space-y-2 text-sm text-gray-700">
+                    <div className="text-center space-y-1 text-sm text-gray-700">
                       <p><span className="font-semibold text-yellow-600">Email:</span> {activeTabData.content.items[0].email}</p>
                       <p><span className="font-semibold text-yellow-600">Phone:</span> {activeTabData.content.items[0].phone}</p>
                     </div>
@@ -180,34 +172,19 @@ const TabsSection: React.FC = () => {
                       {activeTabData.content.items[0].description}
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
-                        <h5 className="text-base md:text-lg font-bold text-gray-700 mb-2 flex items-center">
-                          <GraduationCap className="h-5 w-5 mr-2 text-yellow-600" />
-                          Qualifications
-                        </h5>
-                        <p className="text-sm md:text-base text-gray-700">{activeTabData.content.items[0].qualification}</p>
-                      </div>
-                      <div className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
-                        <h5 className="text-base md:text-lg font-bold text-gray-700 mb-2 flex items-center">
-                          <Briefcase className="h-5 w-5 mr-2 text-yellow-600" />
-                          Experience
-                        </h5>
-                        <p className="text-sm md:text-base text-gray-700">{activeTabData.content.items[0].experience}</p>
-                      </div>
-                      <div className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
-                        <h5 className="text-base md:text-lg font-bold text-gray-700 mb-2 flex items-center">
-                          <Award className="h-5 w-5 mr-2 text-yellow-600" />
-                          Specialization
-                        </h5>
-                        <p className="text-sm md:text-base text-gray-700">{activeTabData.content.items[0].specialization}</p>
-                      </div>
-                      <div className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
-                        <h5 className="text-base md:text-lg font-bold text-gray-700 mb-2 flex items-center">
-                          <BookOpen className="h-5 w-5 mr-2 text-yellow-600" />
-                          Key Achievements
-                        </h5>
-                        <p className="text-sm md:text-base text-gray-700">{activeTabData.content.items[0].achievements}</p>
-                      </div>
+                      {['qualification', 'experience', 'specialization', 'achievements'].map((key, i) => {
+                        const Icon = [GraduationCap, Briefcase, Award, BookOpen][i];
+                        const titles = ['Qualifications', 'Experience', 'Specialization', 'Key Achievements'];
+                        return (
+                          <div key={key} className="bg-white p-4 rounded-lg shadow-sm border hover:shadow-md transition-all">
+                            <h5 className="text-base font-bold text-gray-700 mb-2 flex items-center">
+                              <Icon className="h-5 w-5 mr-2 text-yellow-600" />
+                              {titles[i]}
+                            </h5>
+                            <p className="text-sm text-gray-700">{activeTabData.content.items[0][key]}</p>
+                          </div>
+                        );
+                      })}
                     </div>
                     <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-1 transition-colors duration-200">
                       <span>View Full Profile</span>
@@ -216,54 +193,17 @@ const TabsSection: React.FC = () => {
                   </div>
                 </div>
               </div>
-            ) : activeTab === 'latest-events' ? (
-              <div className="overflow-visible">
-                <Slider {...sliderSettings}>
-                  {activeTabData.content.items.map((item: any, index: number) => (
-                    <div key={index} className="px-2 md:px-4 overflow-visible">
-                      <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[0.93] hover:z-10 hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between relative">
-                        <div>
-                          <h4 className="font-semibold text-lg md:text-2xl text-yellow-600 mb-4">
-                            {item.title}
-                          </h4>
-                          <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
-                            {item.description}
-                          </p>
-                          <div className="space-y-3 text-sm md:text-base text-gray-700">
-                            <div className="flex justify-between gap-4">
-                              <span className="font-medium text-yellow-600">Date:</span>
-                              <span className="text-right text-gray-800 flex-1">
-                                {item.date}
-                              </span>
-                            </div>
-                            <div className="flex justify-between gap-4">
-                              <span className="font-medium text-yellow-600">Participants:</span>
-                              <span className="text-right text-gray-800 flex-1">
-                                {item.participants}
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <button className="mt-6 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-2 transition-colors duration-200">
-                          <span>Learn More</span>
-                          <ChevronRight className="h-4 w-4" />
-                        </button>
-                      </div>
-                    </div>
-                  ))}
-                </Slider>
-              </div>
             ) : (
               <div className="overflow-visible">
                 <Slider {...sliderSettings}>
                   {activeTabData.content.items.map((item: any, index: number) => (
-                    <div key={index} className="px-2 md:px-4 overflow-visible">
-                      <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[0.93] hover:z-10 hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between relative">
+                    <div key={index} className="px-2 sm:px-4">
+                      <div className="bg-white p-4 sm:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[0.93] hover:z-10 hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between relative">
                         <div>
-                          <h4 className="font-semibold text-lg md:text-2xl text-yellow-600 mb-4">
+                          <h4 className="font-semibold text-lg sm:text-2xl text-yellow-600 mb-4">
                             {item.title}
                           </h4>
-                          <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+                          <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6">
                             {item.description}
                           </p>
                           {item.logo && (
@@ -271,11 +211,11 @@ const TabsSection: React.FC = () => {
                               <img
                                 src={item.logo}
                                 alt={item.title || 'Card logo'}
-                                className="h-20 md:h-24 object-contain"
+                                className="h-16 sm:h-24 object-contain"
                               />
                             </div>
                           )}
-                          <div className="space-y-3 text-sm md:text-base text-gray-700">
+                          <div className="space-y-3 text-sm sm:text-base text-gray-700">
                             {Object.entries(item).map(([key, value]) => {
                               if (["title", "description", "logo", "image"].includes(key)) return null;
                               return (
@@ -307,3 +247,4 @@ const TabsSection: React.FC = () => {
 };
 
 export default TabsSection;
+
