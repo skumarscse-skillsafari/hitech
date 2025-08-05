@@ -52,6 +52,7 @@ const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Campus Gallery
           </h2>
+           <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Take a visual tour of our beautiful campus, modern facilities, and vibrant student life
           </p>
