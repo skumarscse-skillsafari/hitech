@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
+// ✅ Updated to include `external` flag
 interface NavigationItem {
   name: string;
   href: string;
-  dropdown?: NavigationItem[]; // recursive type for nested dropdowns
+  external?: boolean;
+  dropdown?: NavigationItem[];
 }
 
 interface HeaderProps {
@@ -15,8 +17,8 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({
-  collegeName = "Hindusthan Institute of Technology",
-  collegeSubtitle = "(An Autonomous Institution); Approved by AICTE New Delhi, Affiliated to Anna University, Chennai.",
+  collegeName = 'Hindusthan Institute of Technology',
+  collegeSubtitle = '(An Autonomous Institution); Approved by AICTE New Delhi, Affiliated to Anna University, Chennai.',
   navigationItems = [],
 }) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -38,11 +40,20 @@ const Header: React.FC<HeaderProps> = ({
                   <span>{item.name}</span>
                   <ChevronRightIcon />
                 </button>
-                {/* Sub-dropdown */}
                 <div className="absolute top-0 left-full w-56 bg-white rounded-md shadow-lg z-50 border border-gray-200 hidden group-hover/sub:block">
                   {renderDropdown(item.dropdown)}
                 </div>
               </>
+            ) : item.external ? (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
+                onClick={() => setOpenDropdown(null)}
+              >
+                {item.name}
+              </a>
             ) : (
               <Link
                 to={item.href}
@@ -98,6 +109,15 @@ const Header: React.FC<HeaderProps> = ({
                     </button>
                     {openDropdown === item.name && renderDropdown(item.dropdown)}
                   </>
+                ) : item.external ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-3 text-gray-700 hover:text-yellow-600 font-medium transition-colors"
+                  >
+                    {item.name}
+                  </a>
                 ) : (
                   <Link
                     to={item.href}
@@ -115,6 +135,7 @@ const Header: React.FC<HeaderProps> = ({
   );
 };
 
+// Chevron icon for nested dropdowns
 const ChevronRightIcon: React.FC = () => (
   <svg
     className="ml-2 h-4 w-4 text-gray-400 group-hover:text-yellow-600 transition-colors"
