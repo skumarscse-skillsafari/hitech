@@ -24,6 +24,7 @@ import GoverningCouncilPage from './pages/GoverningCouncilPage';
 import AcademicCalendar from './pages/AcademicCal';
 import CalendarDetails from './pages/CalendarDetails'; 
 import DataTable from './pages/DataTable';
+import gallery from './pages/GalleryPage';
 import InnovationPolicy from './pages/InnovationPolicy';
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
@@ -84,7 +85,8 @@ function App() {
                 <Route path="/datatable/:section" element={<DataTable />} />
                 <Route path="/news" element={<NewsCards news={news} />} />
                 <Route path="/events" element={<EventsCards events={events} />} />
-                <Route path="/innovation/innovation-policy" element={<InnovationPolicy />} />
+                <Route path="/innovation/innovationpolicy" element={<InnovationPolicy />} />
+                <Route path="/gallery" element={<GalleryPage />} />
 
 
 
