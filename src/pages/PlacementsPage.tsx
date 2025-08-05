@@ -16,10 +16,11 @@ const PlacementsPage: React.FC = () => {
         
         {/* Page Header */}
         <SectionWrapper lazy lazyHeight="200px" lazyDelay={300} className="">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 mt-4">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Placement Excellence
             </h1>
+            <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Our comprehensive placement program ensures exceptional career opportunities through 
               strong industry partnerships, rigorous training, and personalized career guidance.
@@ -70,16 +71,16 @@ const PlacementsPage: React.FC = () => {
 
         {/* Call to Action */}
      <div className="text-center">
-      <a
-        href="/pdf/Placed0.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-10 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-3 mx-auto shadow-lg text-lg"
-      >
-        <span>View Detailed Placement Report</span>
-        <ArrowRight className="h-6 w-6" />
-      </a>
-    </div>
+  <a
+    href="/pdf/Placed0.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-5 py-2.5 rounded-md font-semibold transition-all duration-300 hover:scale-105 flex items-center gap-2 w-fit mx-auto shadow-md text-base"
+  >
+    <span>View Detailed Placement Report</span>
+    <ArrowRight className="h-5 w-5" />
+  </a>
+</div>
 
       </div>
     </PageLayout>
