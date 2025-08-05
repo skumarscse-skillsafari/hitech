@@ -61,10 +61,12 @@ const Contact: React.FC<ContactProps> = ({ contact, id }) => {
   };
 
   return (
+    
     <section id={id} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+          <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to begin your engineering journey? Contact us for admissions, programs, or any other inquiries
           </p>
