@@ -75,16 +75,17 @@ const CseLatestEvents: React.FC = () => {
                   </h5>
                   <p className="text-gray-600 mb-4">{event.description}</p>
                 </div>
-                <div className="flex justify-between text-sm">
-                  <span className="flex items-center gap-2 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">
-                    <CalendarDays size={16} />
-                    {event.date}
-                  </span>
-                  <span className="flex items-center gap-2 bg-gray-200 text-gray-700 px-3 py-1 rounded-full">
-                    <Users size={16} />
-                    {event.participants}
-                  </span>
-                </div>
+               <div className="flex flex-wrap gap-2 mt-4">
+  <span className="flex items-center gap-2 bg-yellow-500 text-black font-semibold text-sm px-4 py-1.5 rounded-full shadow-sm">
+    <CalendarDays size={16} />
+    {event.date}
+  </span>
+  <span className="flex items-center gap-2 bg-gray-100 text-gray-800 font-medium text-sm px-4 py-1.5 rounded-full shadow-sm">
+    <Users size={16} />
+    {event.participants}
+  </span>
+</div>
+
               </div>
             </div>
           ))}
@@ -118,16 +119,17 @@ const CseLatestEvents: React.FC = () => {
                 }}
               />
               <p className="text-gray-700 mb-4">{selectedEvent.description}</p>
-              <div className="flex justify-between text-sm text-gray-600">
-                <span className="flex items-center gap-2 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">
-                  <CalendarDays size={16} />
-                  {selectedEvent.date}
-                </span>
-                <span className="flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-full">
-                  <Users size={16} />
-                  {selectedEvent.participants}
-                </span>
-              </div>
+             <div className="flex flex-wrap gap-2 mt-4">
+  <span className="flex items-center gap-2 bg-yellow-500 text-black font-semibold text-sm px-4 py-1.5 rounded-full shadow-sm">
+    <CalendarDays size={16} />
+    {selectedEvent.date}
+  </span>
+  <span className="flex items-center gap-2 bg-gray-100 text-gray-800 font-medium text-sm px-4 py-1.5 rounded-full shadow-sm">
+    <Users size={16} />
+    {selectedEvent.participants}
+  </span>
+</div>
+
             </div>
           </div>
         )}
