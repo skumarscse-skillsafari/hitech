@@ -148,7 +148,7 @@ const TabsSection: React.FC = () => {
                 <div className="flex flex-col md:flex-row gap-8">
                   <div className="md:w-1/3 flex flex-col items-center">
                     <div className="w-40 sm:w-48 relative" style={{ height: '320px' }}>
-                      <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg ring-4 ring-black/60 ring-offset-2 ring-offset-white">
+                      <div className="absolute inset-0 rounded-lg overflow-hidden ">
                         <img
                           src={hodPhoto}
                           alt="HOD"
