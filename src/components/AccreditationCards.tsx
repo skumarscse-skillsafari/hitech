@@ -225,9 +225,10 @@ const AccreditationCards: React.FC = () => {
 
 
         <div className="bg-white rounded-3xl shadow-2xl overflow-visible">
-          <div className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 p-6 md:p-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-white text-center">National Rankings Overview</h3>
-          </div>
+<div className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 p-6 md:p-8 rounded-t-3xl">
+  <h3 className="text-2xl md:text-3xl font-bold text-white text-center">National Rankings Overview</h3>
+</div>
+
 
           <div className="p-4 md:p-8 relative overflow-visible">
             <Slider {...sliderSettings}>
