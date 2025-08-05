@@ -17,8 +17,14 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
   const navigate = useNavigate();
 
   const handleApplyNow = () => {
-    navigate('/#footer');
-  };
+  setTimeout(() => {
+    const section = document.getElementById('contact');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 300); // adjust delay based on load time
+};
+
 
   const handleWatchCampusTour = () => {
     console.log('Initiating campus tour.');
