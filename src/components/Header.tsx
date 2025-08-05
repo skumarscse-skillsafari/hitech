@@ -23,17 +23,14 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
-  // Handle scroll effect for header background
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top when route changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
@@ -42,11 +39,10 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
     setActiveDropdown(activeDropdown === itemName ? null : itemName);
   };
 
-  // Extended navigation items for desktop
   const extendedNavItems = [
     ...navigationItems,
-    { 
-      name: "Research", 
+    {
+      name: "Research",
       href: "/research",
       dropdown: [
         { name: "Research Centers", href: "/research/centers" },
@@ -55,8 +51,8 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
         { name: "Collaborations", href: "/research/collaborations" }
       ]
     },
-    { 
-      name: "Student Life", 
+    {
+      name: "Student Life",
       href: "/student-life",
       dropdown: [
         { name: "Clubs & Societies", href: "/student-life/clubs" },
@@ -65,8 +61,8 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
         { name: "Hostels", href: "/student-life/hostels" }
       ]
     },
-    { 
-      name: "Alumni", 
+    {
+      name: "Alumni",
       href: "/alumni",
       dropdown: [
         { name: "Alumni Network", href: "/alumni/network" },
@@ -75,8 +71,8 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
         { name: "Donations", href: "/alumni/donations" }
       ]
     },
-    { 
-      name: "Resources", 
+    {
+      name: "Resources",
       href: "/resources",
       dropdown: [
         { name: "Library", href: "/resources/library" },
@@ -87,46 +83,38 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
     }
   ];
 
-  // Items to show on desktop (first 6 items)
   const desktopNavItems = extendedNavItems.slice(0, 6);
-  // Items to show in hamburger menu (remaining items)
   const hamburgerNavItems = extendedNavItems.slice(6);
 
   return (
-    <header className={`fixed top-10 w-full z-40 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg top-0' : 'bg-white/95 backdrop-blur-sm shadow-lg'
+    <header className={`fixed w-full z-40 transition-all duration-300 ${
+      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg top-0' : 'bg-white/95 backdrop-blur-sm shadow-lg top-10'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 flex-shrink-0">
             <div className="bg-white p-1 rounded-lg shadow-md">
-              <img 
-                src="Logo.jpg" 
+              <img
+                src="Logo.jpg"
                 alt="Hindusthan Institute of Technology Logo"
-                className="h-16 w-auto object-contain"
+                className="h-14 md:h-16 w-auto object-contain"
               />
             </div>
-            
-            {/* Desktop College Name */}
-            <div className="hidden lg:block">
-              <div className="text-xl font-bold text-yellow-600 leading-tight">{collegeName}</div>
-              <div className="text-xs font-bold text-gray-600 leading-tight">{collegeSubtitle.split(";")[0]}</div>
-              <div className="text-xs text-gray-600 leading-tight">{collegeSubtitle.split(";")[1]}</div>
+            <div className="hidden lg:block leading-tight">
+              <div className="text-base xl:text-xl font-bold text-yellow-600">{collegeName}</div>
+              <div className="text-xs xl:text-sm font-semibold text-gray-600">{collegeSubtitle.split(";")[0]}</div>
+              <div className="text-xs xl:text-sm text-gray-600">{collegeSubtitle.split(";")[1]}</div>
             </div>
-            
-            {/* Mobile College Name - Enhanced */}
-            <div className="lg:hidden">
-              <div className="text-sm font-bold text-yellow-600 leading-tight">
+            <div className="lg:hidden leading-tight">
+              <div className="text-xs sm:text-sm font-bold text-yellow-600">
                 Hindusthan Institute<br />of Technology
               </div>
-              <div className="text-xs font-semibold text-gray-500 leading-tight">
+              <div className="text-xs sm:text-sm font-semibold text-gray-500">
                 An Autonomous Institution
               </div>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
             {desktopNavItems.map((item) => (
               <div key={item.name} className="relative group">
@@ -143,9 +131,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                       <span>{item.name}</span>
                       <ChevronDown className="h-4 w-4" />
                     </button>
-                    
-                    {/* Dropdown Menu */}
-                    <div 
+                    <div
                       className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                       onMouseLeave={() => setActiveDropdown(null)}
                     >
@@ -180,18 +166,11 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                 )}
               </div>
             ))}
-            
-            {/* Hamburger Menu for Extra Items on Desktop */}
             {hamburgerNavItems.length > 0 && (
               <div className="relative group">
-                <button
-                  className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
-                  title="More Options"
-                >
+                <button className="p-2 rounded-lg hover:bg-gray-100 transition-colors" title="More Options">
                   <Menu className="h-5 w-5 text-gray-700" />
                 </button>
-                
-                {/* Desktop Hamburger Dropdown */}
                 <div className="absolute top-full right-0 mt-1 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                   <div className="py-2">
                     {hamburgerNavItems.map((item) => (
@@ -232,23 +211,18 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
             )}
           </nav>
 
-          {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            aria-label="Toggle Menu"
           >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-900" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-900" />
-            )}
+            {isMenuOpen ? <X className="h-6 w-6 text-gray-900" /> : <Menu className="h-6 w-6 text-gray-900" />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-xl border-t max-h-96 overflow-y-auto">
-            <nav className="px-4 py-4 space-y-2">
+          <div className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-xl border-t max-h-[calc(100vh-5rem)] overflow-y-auto">
+            <nav className="px-4 py-4 space-y-2 text-sm sm:text-base">
               {extendedNavItems.map((item) => (
                 <div key={item.name}>
                   {item.dropdown ? (
