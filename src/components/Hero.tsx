@@ -54,18 +54,19 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 transform sm:-translate-y-16 md:-translate-y-[0.5in] lg:translate-y-6">
-        <div className="space-y-10 text-center">
-          <div className="animate-fadeIn">
-            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-yellow-400 leading-[1.1] text-center break-words max-w-[90%] sm:max-w-3xl mx-auto mt-6 sm:mt-0 px-2 sm:px-4">
-              <span className="block sm:inline">{firstLine}</span>
-              <br className="block" />
-              <span className="block sm:inline -mt-2 sm:mt-0">{lastWord}</span>
-            </div>
-            <p className="mt-4 text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
-              Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
-            </p>
-          </div>
+<div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 transform sm:-translate-y-16 md:-translate-y-[0.5in] lg:translate-y-6">
+  <div className="space-y-10 text-center">
+    {/* Title */}
+    <div className="animate-fadeIn">
+      <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-yellow-400 leading-snug text-center mx-auto mt-6 sm:mt-0 px-2 sm:px-4 break-words">
+        Get The Best In Everything
+      </div>
+      <p className="mt-4 text-base sm:text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
+        Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
+      </p>
+    </div>
+
+
 
           <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
             <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
