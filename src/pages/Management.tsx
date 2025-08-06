@@ -111,10 +111,10 @@ const AboutTrustPage: React.FC = () => {
 
         
         {/* Hero Section */}
-        <SectionWrapper lazy lazyHeight="px" lazyDelay={300} className="-mt-4">
+        <SectionWrapper lazy lazyHeight="px" lazyDelay={300} className="-mt-[8rem]">
 
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-5xl font-bold text-gray-900 mb-6 ">
               About The Trust
             </h1>
             <p className="text-2xl text-yellow-600 font-semibold mb-4">

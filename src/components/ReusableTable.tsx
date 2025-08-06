@@ -202,16 +202,17 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                   paginatedData.map((row, rowIndex) => (
                     <tr key={rowIndex} className="even:bg-gray-50 hover:bg-amber-50 transition duration-150">
                       {columns.map((col, colIndex) => (
-                        <td
-                          key={colIndex}
-                          className="px-3 sm:px-4 py-2 sm:py-3 text-center align-top break-words mt-2 text-xs sm:text-sm md:text-base text-gray-600"
-                        >
-                          {Array.isArray(row[col])
-                            ? row[col].join(', ')
-                            : typeof row[col] === 'object' && row[col] !== null
-                            ? JSON.stringify(row[col])
-                            : row[col]}
-                        </td>
+                       <td
+  key={colIndex}
+  className="px-3 sm:px-4 py-2 sm:py-3 text-center align-top break-words text-[11px] sm:text-xs md:text-sm text-gray-600"
+>
+  {Array.isArray(row[col])
+    ? row[col].join(', ')
+    : typeof row[col] === 'object' && row[col] !== null
+    ? JSON.stringify(row[col])
+    : row[col]}
+</td>
+
                       ))}
                     </tr>
                   ))
