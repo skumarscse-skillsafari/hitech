@@ -27,24 +27,22 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
   };
 
   const renderOutcomes = (outcomes: Outcome[], columns: number = 2) => (
-    <div className={`grid md:grid-cols-${columns} gap-6`}>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {outcomes.map((outcome) => (
         <div
           key={outcome.id}
           className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group"
         >
-          <div className="flex items-start space-x-4">
-            <div className="bg-yellow-500 text-white px-3 py-1 rounded-full font-bold text-sm flex-shrink-0">
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="bg-yellow-500 text-white px-3 py-1 rounded-full font-bold text-sm">
               {outcome.id}
             </div>
-            <div className="flex-1">
-              <h4 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">
-                {outcome.title}
-              </h4>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                {outcome.description}
-              </p>
-            </div>
+            <h4 className="font-bold text-gray-900 group-hover:text-yellow-700 transition-colors break-words">
+              {outcome.title}
+            </h4>
+            <p className="text-gray-600 leading-relaxed text-sm break-words">
+              {outcome.description}
+            </p>
           </div>
         </div>
       ))}
@@ -52,9 +50,9 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
   );
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden ">
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="p-8">
-        {/* ✅ Full-width heading */}
+        {/* Heading */}
         <div className="mb-8">
           <h3 className="text-2xl font-bold text-gray-900 text-center">
             Program Outcomes & Educational Objectives
@@ -62,7 +60,7 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
         </div>
 
         <div className="space-y-6">
-          {/* 🔹 PSOs and PEOs */}
+          {/* PSOs & PEOs */}
           <div className="grid md:grid-cols-2 gap-8">
             {/* PSOs */}
             <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
@@ -90,18 +88,16 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
                         key={pso.id}
                         className="bg-blue-50 p-4 rounded-lg border border-blue-200"
                       >
-                        <div className="flex items-start space-x-3">
-                          <div className="bg-blue-500 text-white px-2 py-1 rounded font-bold text-xs">
+                        <div className="flex flex-col items-center text-center space-y-3">
+                          <div className="bg-blue-500 text-white px-3 py-1 rounded-full font-bold text-xs">
                             {pso.id}
                           </div>
-                          <div>
-                            <h5 className="font-semibold text-gray-900 mb-2">
-                              {pso.title}
-                            </h5>
-                            <p className="text-gray-700 text-sm leading-relaxed">
-                              {pso.description}
-                            </p>
-                          </div>
+                          <h5 className="font-semibold text-gray-900 break-words">
+                            {pso.title}
+                          </h5>
+                          <p className="text-gray-700 text-sm leading-relaxed break-words">
+                            {pso.description}
+                          </p>
                         </div>
                       </div>
                     ))}
@@ -136,18 +132,16 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
                         key={peo.id}
                         className="bg-green-50 p-4 rounded-lg border border-green-200"
                       >
-                        <div className="flex items-start space-x-3">
-                          <div className="bg-green-500 text-white px-2 py-1 rounded font-bold text-xs">
+                        <div className="flex flex-col items-center text-center space-y-3">
+                          <div className="bg-green-500 text-white px-3 py-1 rounded-full font-bold text-xs">
                             {peo.id}
                           </div>
-                          <div>
-                            <h5 className="font-semibold text-gray-900 mb-2">
-                              {peo.title}
-                            </h5>
-                            <p className="text-gray-700 text-sm leading-relaxed">
-                              {peo.description}
-                            </p>
-                          </div>
+                          <h5 className="font-semibold text-gray-900 break-words">
+                            {peo.title}
+                          </h5>
+                          <p className="text-gray-700 text-sm leading-relaxed break-words">
+                            {peo.description}
+                          </p>
                         </div>
                       </div>
                     ))}
@@ -157,7 +151,7 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
             </div>
           </div>
 
-          {/* 🔸 POs Full Width */}
+          {/* POs */}
           <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
             <button
               onClick={() => toggleAccordion('pos')}
