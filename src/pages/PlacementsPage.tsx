@@ -74,7 +74,7 @@ const PlacementsPage: React.FC = () => {
         href="/pdf/Placed0.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-10 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-3 mx-auto shadow-lg text-lg"
+        className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-5 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-3 mx-auto shadow-lg text-lg"
       >
         <span>View Detailed Placement Report</span>
         <ArrowRight className="h-6 w-6" />

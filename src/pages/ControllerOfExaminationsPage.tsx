@@ -95,12 +95,12 @@ const ControllerOfExaminationsPage: React.FC = () => {
 
   const regulations = {
     UG: [
-      { name: 'R 2020', file: 'public/pdf/Regulations.pdf' },
-      { name: 'Revised 2020 A', file: 'public/pdf/revised.pdf' },
-      { name: 'Amendments in R2020 A', file: 'public/pdf/Amendents.pdf' },
-      { name: 'R 2022', file: 'public/pdf/R2022.pdf' },
+      { name: 'R 2020', file: '/pdf/Regulations.pdf' },
+      { name: 'Revised 2020 A', file: '/pdf/revised.pdf' },
+      { name: 'Amendments in R2020 A', file: '/pdf/Amendents.pdf' },
+      { name: 'R 2022', file: '/pdf/R2022.pdf' },
     ],
-    PG: [{ name: 'R 2022', file: 'public/pdf/PG-Regulation 2022.pdf' }],
+    PG: [{ name: 'R 2022', file: '/pdf/PG-Regulation 2022.pdf' }],
   };
 
   const responsibilities = [
@@ -236,6 +236,22 @@ const ControllerOfExaminationsPage: React.FC = () => {
           </SectionWrapper>
         </section>
       </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Call to Action */}
+        <SectionWrapper lazy className="mb-16 text-center">
+          <div className="bg-yellow-50 p-6 rounded-xl shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Need More Information?</h2>
+            <p className="text-gray-700 mb-6">For any queries regarding examinations, please contact us.</p>
+            <a
+              href="/contactus"
+              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+            >
+              Contact Examination Cell
+            </a>
+          </div>
+        </SectionWrapper>
+</div>
+        
     </PageLayout>
   );
 };
