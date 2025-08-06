@@ -122,5 +122,4 @@ const InnovationPolicy: React.FC = () => {
     </div>
   );
 };
-
 export default InnovationPolicy;

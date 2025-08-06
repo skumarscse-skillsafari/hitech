@@ -30,8 +30,17 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
   const [showSearch, setShowSearch] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState(selectedCategoryKey);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const itemsPerPage = 10;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -60,196 +69,245 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
 
   const columns = data.length > 0 ? Object.keys(data[0]) : [];
 
+  const isMobile = windowWidth < 768;
+  const isTablet = windowWidth >= 768 && windowWidth < 1024;
+  const isDesktop = windowWidth >= 1024;
+
+  const getColumnWidth = (columnName: string) => {
+    const col = columnName.toLowerCase();
+    if (col.includes('sno')) return 'w-16';
+    if (col.includes('date')) return 'w-24';
+    if (col.includes('conference')) {
+      if (isMobile) return 'min-w-[180px]';
+      if (isTablet) return 'min-w-[220px]';
+      return 'min-w-[300px]';
+    }
+    if (col.includes('indexed') || col.includes('journal')) {
+      if (isMobile) return 'min-w-[120px]';
+      if (isTablet) return 'min-w-[150px]';
+      return 'min-w-[200px]';
+    }
+    if (col.includes('paper') || col.includes('title')) {
+      if (isMobile) return 'min-w-[200px]';
+      if (isTablet) return 'min-w-[250px]';
+      return 'min-w-[350px]';
+    }
+    return 'min-w-[100px]';
+  };
+
   return (
-    <div className="bg-white rounded-3xl shadow-xl border border-gray-200 max-w-7xl mx-auto mt-6">
+    <>
+      {/* Title & Description OUTSIDE table */}
       {title && (
-        <div className="px-6 pt-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800">{title}</h2>
+        <div className="px-4 sm:px-6 pt-6 text-center mt-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-800">{title}</h2>
           <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4"></div>
           {description && (
-            <p className="mt-2 text-base md:text-lg text-gray-600">{description}</p>
+            <p className="mt-2 text-sm sm:text-base md:text-lg text-gray-600">{description}</p>
           )}
         </div>
       )}
 
-      <div className="px-6 mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
-        {showCategory && categoryOptions.length > 0 && (
-          <div className="flex flex-wrap border-b border-gray-300 w-full sm:w-auto gap-2 sm:gap-4">
-            {categoryOptions
-              .filter((option) => {
-                const key = typeof option === 'string' ? option : option.key;
-                return key.toLowerCase() !== 'notable';
-              })
-              .map((option) => {
-                const key = typeof option === 'string' ? option : option.key;
-                const label =
-                  typeof option === 'string'
-                    ? option.charAt(0).toUpperCase() +
-                      option.slice(1).replace(/([A-Z])/g, ' $1')
-                    : option.label;
+      {/* Table container */}
+      <div className="bg-white rounded-3xl shadow-xl border border-gray-200 w-full mx-auto mt-6 max-w-screen-xl">
+        <div className="px-4 sm:px-6 mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
+          {showCategory && categoryOptions.length > 0 && (
+            <div className="flex flex-wrap border-b border-gray-300 w-full sm:w-auto gap-2 sm:gap-4 overflow-x-auto pb-2 sm:overflow-visible">
+              {categoryOptions
+                .filter((option) => {
+                  const key = typeof option === 'string' ? option : option.key;
+                  return key.toLowerCase() !== 'notable';
+                })
+                .map((option) => {
+                  const key = typeof option === 'string' ? option : option.key;
+                  const label =
+                    typeof option === 'string'
+                      ? option.charAt(0).toUpperCase() +
+                        option.slice(1).replace(/([A-Z])/g, ' $1')
+                      : option.label;
 
-                const isActive = selectedCategory === key;
+                  const isActive = selectedCategory === key;
 
-                return (
-                  <button
-                    key={key}
-                    onClick={() => handleCategoryChange(key)}
-                    className={`px-6 py-2.5 text-base font-semibold rounded-t-xl transition-all duration-200 ${
-                      isActive
-                        ? 'bg-amber-500 text-white shadow-md'
-                        : 'bg-gray-100 text-gray-700 hover:bg-amber-100 hover:text-amber-700'
-                    }`}
-                  >
-                    {label}
-                  </button>
-                );
-              })}
-          </div>
-        )}
-
-        <div className="flex justify-end sm:ml-auto w-full sm:w-auto">
-          {showSearch ? (
-            <div className="flex items-center bg-gray-100 rounded-md px-3 py-1 w-full sm:w-64">
-              <Search className="text-gray-500 mr-2" size={18} />
-              <input
-                type="text"
-                placeholder="Search..."
-                className="bg-transparent border-none focus:outline-none w-full text-sm"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-              <button
-                onClick={() => {
-                  setSearchTerm('');
-                  setShowSearch(false);
-                }}
-                className="ml-2 text-gray-400 hover:text-red-400 text-sm"
-              >
-                ✕
-              </button>
+                  return (
+                    <button
+                      key={key}
+                      onClick={() => handleCategoryChange(key)}
+                      className={`px-4 sm:px-6 py-2 text-sm sm:text-base font-semibold rounded-t-xl transition-all duration-200 ${
+                        isActive
+                          ? 'bg-amber-500 text-white shadow-md'
+                          : 'bg-gray-100 text-gray-700 hover:bg-amber-100 hover:text-amber-700'
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  );
+                })}
             </div>
-          ) : (
-            <button
-              onClick={() => setShowSearch(true)}
-              className="p-2 rounded-full hover:bg-gray-100"
-            >
-              <Search className="text-gray-500" size={20} />
-            </button>
           )}
-        </div>
-      </div>
 
-      <div className="px-4 sm:px-6 pb-6 overflow-x-auto">
-        <div className="overflow-hidden rounded-2xl border border-gray-200">
-          <table className="w-full table-auto border-collapse text-sm md:text-base">
-            <thead>
-              <tr className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 text-white">
-                {columns.map((col, idx) => (
-                  <th
-                    key={idx}
-                    className={`px-4 py-3 text-center font-semibold uppercase break-words ${
-                      col.toLowerCase().includes('sno')
-                        ? 'w-16'
-                        : col.toLowerCase().includes('batch')
-                        ? 'min-w-[8rem]'
-                        : col.toLowerCase().includes('faculty')
-                        ? 'min-w-[250px] break-words'
-                        : col.toLowerCase().includes('journal')
-                        ? 'min-w-[300px]'
-                        : col.toLowerCase().includes('title')
-                        ? 'min-w-[350px]'
-                        : ''
+          <div className="flex justify-end sm:ml-auto w-full sm:w-auto">
+            {showSearch ? (
+              <div className="flex items-center bg-gray-100 rounded-md px-3 py-1 w-full sm:w-64">
+                <Search className="text-gray-500 mr-2" size={18} />
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="bg-transparent border-none focus:outline-none w-full text-sm"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                />
+                <button
+                  onClick={() => {
+                    setSearchTerm('');
+                    setShowSearch(false);
+                  }}
+                  className="ml-2 text-gray-400 hover:text-red-400 text-sm"
+                >
+                  ✕
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => setShowSearch(true)}
+                className="p-2 rounded-full hover:bg-gray-100"
+              >
+                <Search className="text-gray-500" size={20} />
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Table */}
+        <div className={`px-2 sm:px-4 md:px-6 pb-6 ${isDesktop ? 'w-full' : 'overflow-x-auto'}`}>
+          <div className={`${isDesktop ? 'w-full' : 'inline-block min-w-full'} rounded-2xl border border-gray-200`}>
+            <table className={`w-full table-fixed border-collapse text-sm md:text-base ${isDesktop ? 'min-w-full' : 'min-w-[800px]'}`}>
+              <thead>
+    <tr className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 text-white">
+      {columns.map((col, idx) => (
+        <th
+          key={idx}
+          className={`px-3 sm:px-4 py-2 sm:py-3 text-center font-semibold uppercase break-words 
+            ${getColumnWidth(col)} 
+            ${isMobile ? 'text-xs' : ''} 
+            ${idx === 0 ? 'rounded-tl-2xl' : ''} 
+            ${idx === columns.length - 1 ? 'rounded-tr-2xl' : ''}`}
+        >
+          {col.replace(/([A-Z])/g, ' $1')}
+        </th>
+      ))}
+    </tr>
+  </thead>
+              <tbody>
+                {paginatedData.length > 0 ? (
+                  paginatedData.map((row, rowIndex) => (
+                    <tr key={rowIndex} className="even:bg-gray-50 hover:bg-amber-50 transition duration-150">
+                      {columns.map((col, colIndex) => (
+                        <td
+                          key={colIndex}
+                          className="px-3 sm:px-4 py-2 sm:py-3 text-center align-top break-words mt-2 text-xs sm:text-sm md:text-base text-gray-600"
+                        >
+                          {Array.isArray(row[col])
+                            ? row[col].join(', ')
+                            : typeof row[col] === 'object' && row[col] !== null
+                            ? JSON.stringify(row[col])
+                            : row[col]}
+                        </td>
+                      ))}
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={columns.length} className="py-6 text-center text-gray-500">
+                      No data available
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Pagination */}
+        <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row justify-between items-center gap-3 rounded-b-3xl">
+          <div className="text-xs sm:text-sm text-gray-700">
+            Showing{' '}
+            <span className="font-medium">{(currentPage - 1) * itemsPerPage + 1}</span> to{' '}
+            <span className="font-medium">
+              {Math.min(currentPage * itemsPerPage, filteredData.length)}
+            </span>{' '}
+            of <span className="font-medium">{filteredData.length}</span> results
+          </div>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+              disabled={currentPage === 1}
+              className="p-1 sm:p-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
+            >
+              <ChevronLeft size={isMobile ? 14 : 16} />
+            </button>
+            {Array.from({ length: Math.min(totalPages, isMobile ? 3 : 5) }, (_, index) => {
+              let pageNum;
+              if (totalPages <= (isMobile ? 3 : 5)) {
+                pageNum = index + 1;
+              } else if (currentPage <= Math.ceil((isMobile ? 3 : 5) / 2)) {
+                pageNum = index + 1;
+              } else if (currentPage >= totalPages - Math.floor((isMobile ? 3 : 5) / 2)) {
+                pageNum = totalPages - ((isMobile ? 3 : 5) - index - 1);
+              } else {
+                pageNum = currentPage - Math.floor((isMobile ? 3 : 5) / 2) + index;
+              }
+
+              return (
+                <button
+                  key={index}
+                  onClick={() => setCurrentPage(pageNum)}
+                  className={`px-2 sm:px-3 py-1 text-xs sm:text-sm font-medium rounded-md ${
+                    currentPage === pageNum
+                      ? 'bg-amber-100 text-amber-700 border border-amber-400'
+                      : 'text-gray-600 hover:bg-gray-100 border border-transparent'
+                  }`}
+                >
+                  {pageNum}
+                </button>
+              );
+            })}
+            {totalPages > (isMobile ? 3 : 5) &&
+              currentPage < totalPages - Math.floor((isMobile ? 3 : 5) / 2) && (
+                <>
+                  <span className="px-1 text-gray-500">...</span>
+                  <button
+                    onClick={() => setCurrentPage(totalPages)}
+                    className={`px-2 sm:px-3 py-1 text-xs sm:text-sm font-medium rounded-md ${
+                      currentPage === totalPages
+                        ? 'bg-amber-100 text-amber-700 border border-amber-400'
+                        : 'text-gray-600 hover:bg-gray-100 border border-transparent'
                     }`}
                   >
-                    {col.replace(/([A-Z])/g, ' $1')}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {paginatedData.length > 0 ? (
-                paginatedData.map((row, rowIndex) => (
-                  <tr
-                    key={rowIndex}
-                    className="even:bg-gray-50 hover:bg-amber-50 transition duration-150"
-                  >
-                    {columns.map((col, colIndex) => (
-                      <td
-                        key={colIndex}
-                        className={`px-4 py-3 text-center align-top break-words whitespace-normal ${
-                          col.toLowerCase().includes('faculty') ? 'text-sm' : ''
-                        }`}
-                      >
-                        {Array.isArray(row[col])
-                          ? row[col].join(', ')
-                          : typeof row[col] === 'object' && row[col] !== null
-                          ? JSON.stringify(row[col])
-                          : row[col]}
-                      </td>
-                    ))}
-                  </tr>
-                ))
-              ) : (
-                <tr>
-                  <td colSpan={columns.length} className="py-6 text-center text-gray-500">
-                    No data available
-                  </td>
-                </tr>
+                    {totalPages}
+                  </button>
+                </>
               )}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div className="bg-gray-50 px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-3 border-t border-gray-200 rounded-b-3xl">
-        <div className="text-sm text-gray-700">
-          Showing{' '}
-          <span className="font-medium">{(currentPage - 1) * itemsPerPage + 1}</span> to{' '}
-          <span className="font-medium">
-            {Math.min(currentPage * itemsPerPage, filteredData.length)}
-          </span>{' '}
-          of <span className="font-medium">{filteredData.length}</span> results
-        </div>
-        <div className="flex items-center gap-1">
-          <button
-            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-            disabled={currentPage === 1}
-            className="p-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
-          >
-            <ChevronLeft size={16} />
-          </button>
-          {Array.from({ length: totalPages }, (_, index) => (
             <button
-              key={index}
-              onClick={() => setCurrentPage(index + 1)}
-              className={`px-3 py-1 text-sm font-medium rounded-md ${
-                currentPage === index + 1
-                  ? 'bg-amber-100 text-amber-700 border border-amber-400'
-                  : 'text-gray-600 hover:bg-gray-100 border border-transparent'
-              }`}
+              onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+              disabled={currentPage === totalPages}
+              className="p-1 sm:p-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
             >
-              {index + 1}
+              <ChevronRight size={isMobile ? 14 : 16} />
             </button>
-          ))}
-          <button
-            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-            disabled={currentPage === totalPages}
-            className="p-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
-          >
-            <ChevronRight size={16} />
-          </button>
+          </div>
         </div>
       </div>
 
-      <div className="text-center pt-4">
+      {/* CTA Button OUTSIDE table box */}
+      <div className="text-center pt-6 sm:pt-8 pb-6 sm:pb-8">
         <Link to="/department/cse">
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 mx-auto shadow-lg">
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 mx-auto shadow-lg text-sm sm:text-base">
             <span>Learn More About CSE</span>
-            <ArrowRight className="h-5 w-5" />
+            <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
           </button>
         </Link>
       </div>
-    </div>
+    </>
   );
 };
 

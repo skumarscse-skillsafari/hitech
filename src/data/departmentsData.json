@@ -5,7 +5,7 @@
       "id": "cse",
       "name": "Computer Science & Engineering",
       "shortName": "CSE",
-      "description": "Empowering future innovators with industry-aligned programs in AI, ML, Data Science, and Software Engineering. ",
+      "description": "We empower future innovators through industry-aligned programs in AI, ML, Data Science, and Software Engineering. By integrating theoretical foundations with hands-on learning and real-world projects, we equip learners with the practical expertise, problem-solving skills, and confidence needed to shape and lead the digital future.",
       "icon": "Monitor",
       "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To be a leading department in computer science education and research, producing innovative engineers who drive technological advancement.",
@@ -513,7 +513,7 @@
       "id": "ai",
       "name": "Artificial Intelligence & Data Science",
       "shortName": "AI & DS",
-      "description": "Empowering future AI and Data Science experts with innovative curriculum, practical training, and cutting-edge research to tackle complex, real-world challenges and drive impactful solutions",
+      "description": "We empower future AI and Data Science experts with an innovative curriculum, hands-on training, and advanced research, enabling them to solve complex real-world problems and deliver impactful, data-driven solutions across industries and global communities.",
       "icon": "Brain",
       "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To be a leading department in AI and data science education, producing innovative professionals who drive technological advancements.",
@@ -761,7 +761,7 @@
       "id": "ece",
       "name": "Electronics & Communication Engineering",
       "shortName": "ECE",
-      "description": "Advancing communication technologies and embedded systems for the connected world.",
+      "description": "Electronics Engineering combines physics, mathematics, and practical skills to design and develop electronic systems used in robotics, automation, communication, and embedded technologies.",
       "icon": "Radio",
       "image": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600",
       "vision": "To excel in electronics and communication engineering education and research, creating innovative solutions for emerging technologies.",
@@ -905,7 +905,7 @@
       "shortName": "MECH",
       "description": "Engineering innovative mechanical solutions for manufacturing, automation, and sustainable technologies—enhancing productivity, promoting eco-friendly practices, and driving technological advancement across industries for a smarter, greener future.",
       "icon": "Settings",
-      "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "image": "public/mech.jpg",
       "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
       "mission": "To provide comprehensive mechanical engineering education, promote innovation in manufacturing and design, and develop competent engineers for industry and research.",
       "programs": [
@@ -917,6 +917,149 @@
         },
         {
           "name": "M.Tech Mechanical Engineering",
+          "duration": "2 Years",
+          "intake": "30 Students",
+          "eligibility": "B.Tech ME, GATE"
+        }
+      ],
+      "specializations": ["Robotics & Automation", "Thermal Engineering", "Manufacturing", "Design Engineering", "Renewable Energy"],
+      "facilities": ["CAD/CAM Lab", "Thermal Lab", "Manufacturing Lab", "Robotics Workshop", "Materials Testing Lab"],
+      "psos": [
+        {
+          "id": "PSO1",
+          "title": "Mechanical System Design",
+          "description": "Graduates will be able to design and analyze mechanical systems for various industrial applications."
+        },
+        {
+          "id": "PSO2",
+          "title": "Manufacturing Excellence",
+          "description": "Graduates will demonstrate expertise in modern manufacturing processes and automation technologies."
+        }
+      ],
+      "peos": [
+        {
+          "id": "PEO1",
+          "title": "Engineering Leadership",
+          "description": "Graduates will assume leadership roles in mechanical engineering and related fields."
+        },
+        {
+          "id": "PEO2",
+          "title": "Sustainable Innovation",
+          "description": "Graduates will contribute to sustainable engineering solutions and environmental conservation."
+        }
+      ],
+      "pos": [
+        {
+          "id": "PO1",
+          "title": "Engineering Knowledge",
+          "description": "Apply knowledge of mathematics, science, and engineering fundamentals to solve complex engineering problems."
+        },
+        {
+          "id": "PO2",
+          "title": "Problem Analysis",
+          "description": "Identify, formulate, and analyze complex engineering problems using first principles of mathematics and engineering sciences."
+        },
+        {
+          "id": "PO3",
+          "title": "Design/Development of Solutions",
+          "description": "Design solutions for complex engineering problems considering public health, safety, and cultural, societal, and environmental considerations."
+        },
+        {
+          "id": "PO4",
+          "title": "Conduct Investigations",
+          "description": "Use research-based knowledge and methods including design of experiments, analysis and interpretation of data to provide valid conclusions."
+        },
+        {
+          "id": "PO5",
+          "title": "Modern Tool Usage",
+          "description": "Create, select, and apply appropriate techniques, resources, and modern engineering tools including prediction and modeling."
+        },
+        {
+          "id": "PO6",
+          "title": "The Engineer and Society",
+          "description": "Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal and cultural issues."
+        },
+        {
+          "id": "PO7",
+          "title": "Environment and Sustainability",
+          "description": "Understand the impact of professional engineering solutions in societal and environmental contexts and demonstrate sustainable development."
+        },
+        {
+          "id": "PO8",
+          "title": "Ethics",
+          "description": "Apply ethical principles and commit to professional ethics and responsibilities and norms of engineering practice."
+        },
+        {
+          "id": "PO9",
+          "title": "Individual and Team Work",
+          "description": "Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+        },
+        {
+          "id": "PO10",
+          "title": "Communication",
+          "description": "Communicate effectively on complex engineering activities with the engineering community and society at large."
+        },
+        {
+          "id": "PO11",
+          "title": "Project Management",
+          "description": "Demonstrate knowledge and understanding of engineering and management principles and apply these to one's own work."
+        },
+        {
+          "id": "PO12",
+          "title": "Life-long Learning",
+          "description": "Recognize the need for, and have the preparation and ability to engage in independent and life-long learning."
+        }
+      ],
+      "teachingMethodologies": [
+        {
+          "id": 1,
+          "title": "Design Thinking Approach",
+          "description": "Human-centered approach to innovation and problem-solving in mechanical design.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400"
+        },
+        {
+          "id": 2,
+          "title": "Industry-Integrated Projects",
+          "description": "Real industry projects to bridge the gap between theory and practice.",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400"
+        }
+      ],
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Amit Patel",
+          "designation": "Professor & Head",
+          "specialization": "Robotics, Manufacturing Engineering",
+          "experience": "16 years",
+          "education": "Ph.D from IIT Kanpur",
+          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "amit.patel@hit.edu",
+          "publications": 42,
+          "researchAreas": ["Industrial Robotics", "Advanced Manufacturing", "Automation"]
+        }
+        
+      ]
+    },
+    {
+      "id": "aero",
+      "name": "Aeronautical Engineering",
+      "shortName": "AERO",
+      "description": "Aeronautical engineering focuses on the design, development, testing, and maintenance of aircraft. It combines principles of aerodynamics, propulsion, materials science, and structural analysis to create efficient, safe, and high-performance flying machines.",
+      "icon": "Award",
+      "image": "/public/aero.jpg",
+      "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
+      "mission": "To advance the science and technology of flight through innovative research, design, and development of aircraft systems, ensuring safety, efficiency, and sustainability in aerospace transportation for the benefit of society.",
+      "programs": [
+        {
+          "name": "B.Tech Aeronautical Engineering",
+          "duration": "4 Years",
+          "intake": "120 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Aeronautical Engineering",
           "duration": "2 Years",
           "intake": "30 Students",
           "eligibility": "B.Tech ME, GATE"
