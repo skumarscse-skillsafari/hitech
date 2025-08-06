@@ -1,77 +1,125 @@
 import React from 'react';
-const InnovationPolicy: React.FC = () => {
-return (
-<div className="min-h-screen bg-white pt-12 px-4 md:px-12 lg:px-24 font-sans">
-{/* Heading */}
-<div className="text-center mb-8">
-<h1 className="text-4xl md:text-5xl font-semibold italic text-black">
-<span className="text-black">INNOVATION</span>{' '}
-<span className="text-yellow-500">&</span>{' '}
-<span className="text-black">START-UP POLICY</span>
-</h1>
-{/* Underline */}
-<div className="mt-4 flex justify-center">
-<div className="h-1 w-20 bg-yellow-500 rounded-full" />
-</div>
-{/* Description */}
-<p className="mt-4 text-[17px] text-gray-700 max-w-3xl mx-auto">
-Hindusthan Institute of Technology promotes a thriving culture of
-innovation and entrepreneurship. These policies support both students and faculty
-in exploring and executing their creative ideas.
-</p>
-</div>
-{/* Policy Box */}
-<div className="relative bg-gray-50 border-t-[6px] border-yellow-500
-rounded-lg shadow-md p-6 max-w-4xl mx-auto">
-{/* Pushpin Emoji */}
-<div className="absolute -top-5 left-1/2 transform -translate-x-1/2
-text-2xl">
-📌
-</div>
-{/* List */}
-<ul className="list-disc space-y-5 mt-6 text-[17px] text-black pl-6">
-<li>
-<a
-href="\pdf\Hitech Policy_new.pdf"
-target="_blank"
-rel="noopener noreferrer"
-className="font-semibold hover:text-yellow-600 transition"
->
-HINDUSTHAN INSTITUTE OF TECHNOLOGY INNOVATION & START-UP POLICY AND
-GUIDELINES 2021 FOR FACULTY AND STUDENTS
-</a>
-</li>
-<li>
-<a
+import { FileText } from 'lucide-react';
+import startupImage from '../../public/images/startup_policy.jpg';
+import nationalPolicyImage from '../../public/images/national_policy.jpg';
 
-href="\pdf\startup_policy.pdf"
-target="_blank"
-rel="noopener noreferrer"
-className="font-semibold hover:text-yellow-600 transition"
->
-National INNOVATION and STARTUP Policy 2019 for Students and Faculty
-</a>
-</li>
-</ul>
-</div>
-<section className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12
-rounded-2xl text-center text-white mt-[0.5in]">
-<h2 className="text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
-<p className="text-xl mb-8 opacity-90">
-Be part of an institution that has been shaping futures for over three decades
-</p>
-<div className="flex flex-col sm:flex-row gap-4 justify-center">
-<button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold
-hover:bg-gray-100 transition-colors">
-Explore Programs
-</button>
-<button className="border-2 border-white text-white px-8 py-3 rounded-lg
-font-semibold hover:bg-white hover:text-gray-900 transition-colors">
-Contact Us
-</button>
-</div>
-</section>
-</div>
-);
+const InnovationPolicy: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-white pt-12 px-4 sm:px-6 md:px-10 lg:px-20 font-sans">
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold text-gray-900 mb-3 leading-tight">
+          <span className="text-slate-900">Innovation</span>{' '}
+          <span className="text-black-300">&</span>{' '}
+          <span className="text-slate-900">Start-Up Policy</span>
+        </h1>
+        <div className="mt-4 flex justify-center">
+          <div className="h-1 w-28 bg-yellow-500 rounded-full" />
+        </div>
+        <p className="mt-6 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+          At Hindusthan Institute of Technology, we champion a vibrant ecosystem of innovation,
+          ideation, and entrepreneurial growth. Our policies are meticulously designed to empower
+          students and faculty alike to explore, develop, and implement transformative ideas with
+          real-world impact.
+        </p>
+      </div>
+
+      {/* First Card: Image on Right */}
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-8 max-w-5xl mx-auto mb-12">
+        {/* Left - Description */}
+        <div className="w-full lg:w-[58%] max-w-[500px]">
+          <div className="flex items-start gap-4 mb-4">
+            <div className="p-2 rounded-lg bg-yellow-100 text-yellow-600">
+              <FileText className="w-6 h-6" />
+            </div>
+            <div>
+              <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+                HITECH Innovation & Start-Up Policy 2021
+              </h3>
+              <p className="text-gray-800 text-[15.5px] leading-relaxed mb-4">
+               This comprehensive policy serves as a guiding framework for both faculty and students who aspire to transform their innovative ideas into successful entrepreneurial ventures. It clearly outlines the institutional structure, incubation processes, and strategic mechanisms in place to support the launch and growth of startups from within the college ecosystem. From ideation to execution, the policy provides detailed insights into funding opportunities, mentorship access, resource allocation, legal guidance, and collaboration channels. By encouraging innovation-driven entrepreneurship, the institution empowers individuals to navigate the startup journey confidently, bridging the gap between academic knowledge and real-world application with sustained institutional support.
+              </p>
+              <a
+                href="/pdf/startup.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-700 font-semibold hover:underline"
+              >
+                View Full Policy →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Right - Image Card */}
+        <div className="bg-[#FFFBEA] border border-yellow-300 rounded-2xl p-3 shadow-md w-full lg:w-[40%] max-w-[450px]">
+          <img
+            src={startupImage}
+            alt="HITECH Startup Policy"
+            className="w-full h-auto object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* Second Card: Image on Left (Reversed Layout) */}
+      <div className="flex flex-col lg:flex-row-reverse items-start justify-between gap-8 max-w-5xl mx-auto">
+        {/* Right (reversed) - Description */}
+        <div className="w-full lg:w-[58%] max-w-[500px]">
+          <div className="flex items-start gap-4 mb-4">
+            <div className="p-2 rounded-lg bg-yellow-100 text-yellow-600">
+              <FileText className="w-6 h-6" />
+            </div>
+            <div>
+              <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+                National Innovation & Startup Policy 2019
+              </h3>
+              <p className="text-gray-800 text-[15.5px] leading-relaxed mb-4">
+                Issued by the Ministry of Education, this comprehensive framework is designed to align institutional efforts with the broader national goals of fostering innovation, entrepreneurship, and technological advancement. It lays the foundation for a structured and strategic approach to nurturing startups and research-driven ventures within academic environments. The framework emphasizes the importance of establishing robust incubation centers, streamlining access to funding opportunities, and implementing effective intellectual property (IP) management systems. By integrating these key components, the policy encourages institutions to become catalysts for socio-economic growth and self-reliance, supporting students and faculty in transforming their ideas into impactful, market-ready solutions.
+
+
+              </p>
+              <a
+                href="/pdf/national_policy.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-700 font-semibold hover:underline"
+              >
+                Read National Policy →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Left (reversed) - Image Card */}
+        <div className="bg-[#FFFBEA] border border-yellow-300 rounded-2xl p-3 shadow-md w-full lg:w-[40%] max-w-[450px]">
+          <img
+            src={nationalPolicyImage}
+            alt="National Startup Policy"
+            className="w-full h-auto object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-r from-yellow-500 to-orange-500 p-8 sm:p-12 rounded-2xl text-center text-white mt-20 mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
+        <p className="text-base sm:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+          Be part of an institution that has been shaping futures through innovation and academic
+          excellence for over three decades.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/pages/departmentcard"
+            className="bg-white text-slate-900 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+          >
+            Explore Programs
+          </a>
+          <button className="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors">
+            Contact Us
+          </button>
+        </div>
+      </section>
+    </div>
+  );
 };
 export default InnovationPolicy;
