@@ -42,7 +42,7 @@
           { "name": "Admission Process", "href": "/admissions" },
           { "name": "Eligibility", "href": "/eligibility" },
           { "name": "Application form", "href": "/appform" },
-          { "name": "Prospectus", "href": "public/pdf/Prospect.pdf", "external": true },
+          { "name": "Prospectus", "href": "/pdf/Prospect.pdf", "external": true },
           { "name": "Scholarships", "href": "/scholarships" }
         ]
       },
