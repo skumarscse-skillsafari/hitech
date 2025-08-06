@@ -12,11 +12,11 @@ const PlacementsPage: React.FC = () => {
       title="Placements - Hindusthan Institute of Technology"
       description="Discover our excellent placement record with top companies. View placement statistics, top recruiters, and success stories."
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-32">
         
         {/* Page Header */}
-        <SectionWrapper lazy lazyHeight="200px" lazyDelay={300} className="">
-          <div className="text-center mb-16 mt-4">
+        <SectionWrapper lazy lazyHeight="200px" lazyDelay={300} className="-mt-12">
+          <div className="text-center mb-16 mt-4 ">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Placement Excellence
             </h1>
