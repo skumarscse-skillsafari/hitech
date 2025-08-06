@@ -40,7 +40,7 @@ const InnovationPolicy: React.FC = () => {
                This comprehensive policy serves as a guiding framework for both faculty and students who aspire to transform their innovative ideas into successful entrepreneurial ventures. It clearly outlines the institutional structure, incubation processes, and strategic mechanisms in place to support the launch and growth of startups from within the college ecosystem. From ideation to execution, the policy provides detailed insights into funding opportunities, mentorship access, resource allocation, legal guidance, and collaboration channels. By encouraging innovation-driven entrepreneurship, the institution empowers individuals to navigate the startup journey confidently, bridging the gap between academic knowledge and real-world application with sustained institutional support.
               </p>
               <a
-                href="/pdfs/startup.pdf"
+                href="/pdf/startup.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-700 font-semibold hover:underline"
@@ -79,7 +79,7 @@ const InnovationPolicy: React.FC = () => {
 
               </p>
               <a
-                href="/pdfs/National-Innovation-Policy-2019.pdf"
+                href="/pdf/national_policy.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-700 font-semibold hover:underline"
