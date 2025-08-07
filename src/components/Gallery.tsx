@@ -66,8 +66,8 @@ const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
               onClick={() => setSelectedCategory(category.name)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 selectedCategory === category.name
-                  ? 'bg-gray-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-yellow-500 text-gray-700'
+                  : 'bg-gray-100 text-gray-700 hover:bg-yellow-500'
               }`}
             >
               {category.name}
