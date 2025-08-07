@@ -9,7 +9,7 @@ import {
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import hodPhoto from "../../public/HOD.png";
+
 import IEEE from "../../public/IEEE.png";
 import ict from "../../public/ict.png";
 import csi from "../../public/csi_logo.png";
@@ -150,7 +150,7 @@ const TabsSection: React.FC = () => {
                     <div className="w-40 sm:w-48 relative" style={{ height: '320px' }}>
                       <div className="absolute inset-0 rounded-lg overflow-hidden ">
                         <img
-                          src={hodPhoto}
+                          src="/images/HOD.jpg"
                           alt="HOD"
                           className="w-full h-full object-contain"
                           style={{ objectPosition: 'top center' }}
