@@ -100,10 +100,10 @@ const InnovativeMethods: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800">
+        <h1 className="text-5xl font-bold text-gray-900 mb-6">
           Innovative Teaching Methodologies
         </h1>
-        <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4"></div>
+        <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-2"></div>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           These modern methods enhance engagement, creativity, and practical understanding among students.
         </p>
@@ -157,7 +157,7 @@ const InnovativeMethods: React.FC = () => {
             </div>
           </div>
         )}
-                <section className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12 rounded-2xl text-center text-white">
+                <section className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12 rounded-2xl text-center text-white mt-8 -mb-[2rem]">
           <h2 className="text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
           <p className="text-xl mb-8 opacity-90">
             Be part of an institution that has been shaping futures for over three decades
