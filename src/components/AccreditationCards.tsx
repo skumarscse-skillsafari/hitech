@@ -294,9 +294,16 @@ const AccreditationCards: React.FC = () => {
         </div>
       </div>
 
-      {showModal !== null && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl max-w-3xl w-full shadow-xl relative max-h-[90vh] overflow-y-auto">
+     {showModal !== null && (
+  <div
+    className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-4"
+    onClick={() => setShowModal(null)} // close on background click
+  >
+    <div
+      className="bg-white rounded-3xl max-w-3xl w-full shadow-xl relative max-h-[90vh] overflow-y-auto mt-12"
+      onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside modal
+    >
+
             <button
               onClick={() => setShowModal(null)}
               className="absolute top-3 right-4 text-gray-600 hover:text-gray-900 text-2xl font-bold"
