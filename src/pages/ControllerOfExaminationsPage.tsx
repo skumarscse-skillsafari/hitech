@@ -178,7 +178,7 @@ const ControllerOfExaminationsPage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <SectionWrapper lazy className="-mt-6 mb-16 text-center" role="banner" aria-label="Page header">
-          <h1 className="text-5xl font-bold text-gray-900 mb-3 leading-tight">{title}</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-3 leading-tight -mt-[8rem]">{title}</h1>
           <p className="text-xl text-yellow-600 font-semibold">{subtitle}</p>
           <p className="text-md text-gray-600 max-w-3xl mx-auto mt-3">{description}</p>
         </SectionWrapper>
@@ -192,7 +192,7 @@ const ControllerOfExaminationsPage: React.FC = () => {
         </SectionWrapper>
 
         {/* Regulations */}
-        <section aria-labelledby="regulations-heading" className="mb-20">
+        <section aria-labelledby="regulations-heading" className="mb-12 -mt-[8rem] ">
           <SectionWrapper lazy>
             <h2
               id="regulations-heading"
