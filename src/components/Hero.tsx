@@ -47,10 +47,11 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 transform sm:-translate-y-16 md:-translate-y-[0.5in] lg:translate-y-6">
   <div className="space-y-10 text-center">
     {/* Title */}
-    <div className="animate-fadeIn">
-      <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-yellow-400 leading-snug text-center mx-auto mt-6 sm:mt-0 px-2 sm:px-4 break-words">
-        Get The Best In Everything
-      </div>
+      <div className="animate-fadeIn">
+        <div className="text-[clamp(2rem,6vw,5.5rem)] font-bold text-yellow-400 leading-snug text-center mx-auto mt-6 sm:mt-0 px-2 sm:px-4 break-words">
+  Get The Best In Everything
+</div>
+
       <p className="mt-4 text-base sm:text-lg md:text-xl font-medium tracking-wide pt-4 text-gray-200">
         Education <span className="mx-2 text-yellow-400">|</span> Ethics <span className="mx-2 text-yellow-400">|</span> Excellence
       </p>
