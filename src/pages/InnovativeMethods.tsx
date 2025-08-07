@@ -13,14 +13,14 @@ const extraMethods = [
   {
     title: "Active Learning with Technology",
     description: "Students engage in hands-on learning using interactive tools, virtual labs, and coding platforms in ICT-enabled classrooms.",
-    image: "/Collaborative Learning with Digital Collaboration Tools.jpg",
+    image: "public/activebas.jpg.png",
     moreInfo:
       "Our institution is dedicated to creating a learner-centric environment by integrating technology with active learning pedagogies. We utilize interactive tools like Kahoot, Mentimeter, and Poll Everywhere to foster engagement, real-time feedback, and reflection. Virtual labs such as Infosys Springboard, Amrita Virtual Labs, and Cisco Packet Tracer provide hands-on experience, bridging theory and practice. Coding platforms like HackerRank, LeetCode, and Codecademy develop programming skills, logical reasoning, and problem-solving abilities. These tools transform traditional classrooms into collaborative, data-driven learning spaces that encourage continuous assessment, peer interaction, and self-paced learning—empowering students to take ownership of their education and preparing them for future careers.",
   },
   {
     title: "Problem-Based Learning with Digital Tools",
     description: "Students solve real-world problems using collaboration tools, project management platforms, and cloud-based deployment resources.",
-    image: "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "public/problembas.jpg.png",
     moreInfo:
       "Our institution adopts Problem-Based Learning (PBL) supported by digital tools to empower students as real-world problem solvers. Learners collaborate using Google Workspace and Microsoft Teams, manage projects via Trello and Asana, and deploy solutions on platforms like AWS, GCP, and GitHub. This approach promotes critical thinking, teamwork, and project execution in realistic, technology-driven environments. Students gain hands-on experience with industry-standard tools, fostering digital fluency, self-directed learning, and professional readiness. By solving open-ended, interdisciplinary challenges, they develop into innovative thinkers and effective collaborators, equipped to lead and drive meaningful impact in today’s complex, fast-evolving professional landscape.",
   },
@@ -45,37 +45,37 @@ const methods: Method[] = [
   {
     title: 'Collaborative Learning with Digital Collaboration Tools',
     description: 'Students build teamwork skills via collaborative tools, coding platforms, whiteboards, and expert-guided group activities.',
-    image: col,
+    image:"public/colab.jpg.png",
     moreInfo: 'The department fosters collaborative learning through team-based projects, peer reviews, and assignments using tools like Google Workspace, Microsoft Teams, and Slack. Platforms such as GitHub and GitLab support collaborative coding and version control, while virtual whiteboards like Miro and Jamboard enhance brainstorming and planning. Students gain real-time experience in communication, teamwork, and project coordination, reflecting industry practices. Regular mentorship from industry professionals adds valuable feedback and insight. This approach builds workplace-ready skills, promotes peer learning, and prepares students to thrive in collaborative, technology-driven environments essential for modern careers.',
   },
   {
     title: 'Competency-Based Learning with Online Assessments',
     description: 'The department emphasizes skill mastery through practical projects, online assessments, coding challenges, and industry training.',
-    image: com,
+    image:"public/colab.jpg.png",
     moreInfo: 'The department adopts a Competency-Based Learning (CBL) model that emphasizes practical skill mastery through real-world tasks and continuous assessments. Digital platforms like Google Forms, Moodle, and the internal LMS track progress, while coding platforms such as Infosys Springboard, LeetCode, and HackerRank test programming proficiency. Students engage in hands-on assignments, coding challenges, and industry-relevant projects. Weekly expert-led training sessions offer insights into real-world applications. This approach boosts student engagement, aligns with academic outcomes, and cultivates job-ready skills. By focusing on skill acquisition over rote learning, the department ensures students are well-prepared for placements, internships, and technical careers.',
   },
   {
     title: 'Lifelong Learning with Micro-Credentials',
     description: 'Students pursue certifications via MOOCs, industry courses, and visits, promoting continuous, lifelong, and specialized learning.',
-    image: Life,
+    image: "public/lifelon.jpg.png",
     moreInfo: 'Our department promotes lifelong learning by integrating micro-credentialing and online certifications into the academic experience. Students engage with MOOC platforms like Coursera, edX, and NPTEL for credit transfer and certification, while LinkedIn Learning and Udemy support personalized skill development. Industry-endorsed platforms such as Infosys Springboard and ServiceNow offer structured, job-ready training. Industry visits, expert talks, and alumni interactions reinforce the value of continuous upskilling. This approach cultivates self-directed learning, builds strong portfolios of micro-credentials, and enhances employability. Our students graduate with current, industry-relevant skills that support long-term career success in an evolving tech landscape.',
   },
   {
     title: 'Online and Blended Learning with LMS Integration',
     description: 'Blended learning combines LMS, live sessions, self-paced modules, and industry input for flexible, enriched education.',
-    image: online,
+    image:"public/online.jpg.png",
     moreInfo: 'Our department adopts a blended learning approach by integrating online tools with face-to-face teaching, supported by a robust Learning Management System (LMS). The LMS centralizes course materials, assessments, and communication. Synchronous tools like Zoom enable live sessions, while asynchronous resources such as recorded lectures and discussion forums promote self-paced learning. The flipped classroom model enhances classroom engagement through pre-shared materials and active learning. Infosys Springboard extends learning beyond the curriculum with industry-aligned modules and certifications. This approach fosters flexibility, critical thinking, and continuous learning, aligning with NEP 2020 and preparing students for hybrid work environments and real-world collaboration.',
   },
   {
     title: 'Multimedia and Visualization with Digital Content',
     description: 'Visual aids and tools enhance concept clarity, with expert-led sessions demonstrating real-world data visualization applications.',
-    image: Multi,
+    image: "public/multimed.jpg.png",
     moreInfo: 'Our department integrates multimedia and visualization tools to enhance teaching effectiveness and student engagement. Faculty use Canva, Adobe Spark, and PowerPoint to simplify complex concepts through infographics and animated content. Tools like Tableau, Matplotlib, and Seaborn aid data visualization, while Blender and Unity support 3D modeling and simulation. Students gain hands-on experience with industry-standard platforms in coursework and projects. Guest lectures by industry experts demonstrate real-world applications, bridging classroom learning with professional practice. This approach fosters critical thinking, creativity, technical fluency, and prepares students for modern, visually-driven, and cross-disciplinary work environments.',
   },
   {
     title: 'Industry-Aligned Courses and Professional Development',
     description: 'Industry collaboration offers specialized training, real-world exposure, and expert insights, boosting students career readiness.',
-    image: Indust,
+    image: "public/industryall.jpg.png",
     moreInfo: 'Our department partners with industry leaders to provide students with specialized training and certifications in high-demand technologies. Programs include MongoDB for NoSQL database management, ServiceNow for IT service workflows, and Infosys Springboard for coding and emerging tech skills. Guest lectures by professionals offer real-world insights, while industry visits expose students to live production environments. These initiatives help bridge academic learning with workplace expectations, enhance employability, and build confidence in applying technical knowledge. With practical experience and recognized certifications, our graduates are equipped to meet industry demands and transition seamlessly into technology-driven careers.',
   },
 ];
