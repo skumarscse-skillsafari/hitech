@@ -183,7 +183,7 @@ const DepartmentCards: React.FC<DepartmentCardsProps> = ({ departments }) => {
                 <Link
                   key={dept.id}
                   to={`/department/${dept.id}`}
-                  className="bg-gray-100 hover:bg-yellow-100 text-gray-700 hover:text-yellow-700 px-4 py-2 rounded-lg font-medium transition-colors text-sm"
+                  className="bg-gray-100 hover:bg-yellow-500 text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg font-medium transition-colors text-sm"
                 >
                   {dept.shortName}
                 </Link>
