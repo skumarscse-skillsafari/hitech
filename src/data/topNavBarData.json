@@ -119,7 +119,12 @@
         "name": "Quick Links",
         "href": "/quick-links",
         "dropdown": [
-          { "name": "Library", "href": "/library" },
+{
+  "name": "AUERC",
+  "href": "https://library.annauniv.edu/auerc_home.php",
+  "external": true
+},
+
           { "name": "E-Learning", "href": "/e-learning" },
           { "name": "Faculty Portal", "href": "/faculty-portal" },
           { "name": "Alumni Portal", "href": "/alumni-portal" },
