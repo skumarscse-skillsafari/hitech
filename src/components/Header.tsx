@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
       <div key={item.name} className="relative group/sub">
         {item.dropdown ? (
           <>
-            <button className="flex justify-between items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">
+            <button className="flex justify-between items-center w-full px-4 py-3 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600">
               <span>{item.name}</span>
               <ChevronDown className="ml-1 h-4 w-4" />
             </button>
@@ -53,14 +53,14 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+            className="block px-4 py-3 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600"
           >
             {item.name}
           </a>
         ) : (
           <Link
             to={item.href}
-            className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+            className="block px-4 py-3 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600"
           >
             {item.name}
           </Link>
@@ -79,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
             <>
               <button
                 onClick={() => handleDropdownToggle(item.name)}
-                className="flex items-center justify-between w-full py-2 px-2 text-sm text-gray-700 hover:text-yellow-600"
+                className="flex items-center justify-between w-full py-2 px-2 text-sm text-gray-900 hover:text-yellow-600"
               >
                 <span>{item.name}</span>
                 <ChevronDown
@@ -141,7 +141,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                         location.pathname === item.href ||
                         item.dropdown.some((sub) => location.pathname === sub.href)
                           ? 'text-yellow-600 bg-yellow-50'
-                          : 'text-gray-700 hover:text-yellow-600 hover:bg-yellow-50'
+                          : 'text-gray-900 hover:text-yellow-600 hover:bg-yellow-50'
                       }`}
                       onMouseEnter={() => setActiveDropdown(item.name)}
                     >
@@ -161,7 +161,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                     className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 whitespace-nowrap ${
                       location.pathname === item.href
                         ? 'text-yellow-600 bg-yellow-50'
-                        : 'text-gray-700 hover:text-yellow-600 hover:bg-yellow-50'
+                        : 'text-gray-900 hover:text-yellow-600 hover:bg-yellow-50'
                     }`}
                   >
                     {item.name}
@@ -176,34 +176,34 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                 className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
                 onClick={() => handleDropdownToggle('hamburger')}
               >
-                <Menu className="h-6 w-6 text-gray-700" />
+                <Menu className="h-6 w-6 text-gray-900" />
               </button>
               {activeDropdown === 'hamburger' && (
                 <div className="absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-xl z-50">
                   <Link
                     to="/online-fees"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600"
                     onClick={() => setActiveDropdown(null)}
                   >
                     Online Fees Payment
                   </Link>
                   <Link
                     to="/clubs"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600"
                     onClick={() => setActiveDropdown(null)}
                   >
                     Clubs and Societies
                   </Link>
                   <Link
                     to="/ecampus"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600"
                     onClick={() => setActiveDropdown(null)}
                   >
                     E-Campus Login
                   </Link>
                   <Link
                     to="/media"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600"
+                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600"
                     onClick={() => setActiveDropdown(null)}
                   >
                     Media
@@ -231,7 +231,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                   <div key={item.name}>
                     <button
                       onClick={() => handleDropdownToggle(item.name)}
-                      className="flex items-center justify-between w-full py-3 text-gray-700 hover:text-yellow-600 font-medium transition-colors"
+                      className="flex items-center justify-between w-full py-3 text-gray-900 hover:text-yellow-600 font-medium transition-colors"
                     >
                       <span>{item.name}</span>
                       <ChevronDown
@@ -246,7 +246,7 @@ const Header: React.FC<HeaderProps> = ({ collegeName, collegeSubtitle, navigatio
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="block py-3 text-gray-700 hover:text-yellow-600 font-medium transition-colors"
+                    className="block py-3 text-gray-900 hover:text-yellow-600 font-medium transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
