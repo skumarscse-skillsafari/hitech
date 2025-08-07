@@ -106,7 +106,7 @@ const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
               {/* Close Button */}
               <button
                 onClick={closeLightbox}
-                className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-10"
+                className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-20"
               >
                 <X className="h-6 w-6" />
               </button>
@@ -116,13 +116,13 @@ const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
                 <>
                   <button
                     onClick={() => navigateImage('prev')}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors"
+                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-20"
                   >
                     <ChevronLeft className="h-6 w-6" />
                   </button>
                   <button
                     onClick={() => navigateImage('next')}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors"
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-20"
                   >
                     <ChevronRight className="h-6 w-6" />
                   </button>
@@ -133,7 +133,7 @@ const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
               <img 
                 src={selectedImage.url} 
                 alt={selectedImage.caption}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-contain relative z-0"
               />
 
               {/* Caption */}
