@@ -20,6 +20,7 @@ import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg";
 import { Award, Trophy } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const HomePage: React.FC = () => {
   const allFaculty = departmentsData.departments.flatMap(dept => dept.faculty);
@@ -54,12 +55,31 @@ const HomePage: React.FC = () => {
 
       {/* ===== About The Trust Section ===== */}
       <SectionWrapper className="pt-6 pb-0" lazy lazyDelay={200}>
-        <div className="text-center mb-4 pt-10">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">{trustInfo.title}</h1>
-          <p className="text-2xl text-yellow-600 font-semibold mb-2">{trustInfo.subtitle}</p>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">{trustInfo.description}</p>
-        </div>
-      </SectionWrapper>
+  <div className="text-center mb-4 pt-10">
+    <div className="overflow-hidden mb-4 text-center">
+  {trustInfo.title.split(" ").map((word, index) => (
+    <motion.span
+      key={index}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.15, duration: 0.6, ease: "easeOut" }}
+      className="inline-block text-5xl sm:text-6xl font-extrabold text-gray-900 hover:text-yellow-500 transition-colors duration-300"
+    >
+      {word}&nbsp;
+    </motion.span>
+  ))}
+</div>
+
+
+    <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
+    <p className="text-2xl text-yellow-600 font-semibold mb-2">{trustInfo.subtitle}</p>
+    <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+      {trustInfo.description}
+    </p>
+  </div>
+</SectionWrapper>
+
+
 
       {/* ===== About Us Section (with extra margin) ===== */}
       <SectionWrapper lazy lazyHeight="200px" lazyDelay={200}>
