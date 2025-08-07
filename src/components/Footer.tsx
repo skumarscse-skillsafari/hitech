@@ -40,26 +40,78 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
 
   const academicLinks = [
     { name: 'Academic Calendar', href: '#calendar' },
-    { name: 'Examination', href: '#exam' },
+    { name: 'Examination', href: '/coe' },
     { name: 'Results', href: '#results' },
-    { name: 'Library', href: '#library' },
+    { name: 'Library',   "href": "https://library.annauniv.edu/auerc_home.php",
+  "external": true},
     { name: 'E-Learning', href: '#elearning' },
     { name: 'Student Portal', href: '#portal' },
   ];
 
   const institutions = [
-    { name: 'Arts and Science', color: 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:scale-105' },
-    { name: 'Engineering', color: 'bg-pink-100 text-pink-700 hover:bg-pink-200 hover:scale-105' },
-    { name: 'Institute of Technology', color: 'bg-orange-100 text-orange-700 hover:bg-orange-200 hover:scale-105' },
-    { name: 'College of Education', color: 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:scale-105' },
-    { name: 'Architecture', color: 'bg-green-100 text-green-700 hover:bg-green-200 hover:scale-105' },
-    { name: 'Polytechnic', color: 'bg-blue-100 text-blue-700 hover:bg-blue-200 hover:scale-105' },
-    { name: 'HR Sec. School', color: 'bg-cyan-100 text-cyan-700 hover:bg-cyan-200 hover:scale-105' },
-    { name: 'International School', color: 'bg-red-100 text-red-700 hover:bg-red-200 hover:scale-105' },
-    { name: 'Health Science', color: 'bg-green-100 text-green-700 hover:bg-green-200 hover:scale-105' },
-    { name: 'College of Science', color: 'bg-orange-100 text-orange-700 hover:bg-orange-200 hover:scale-105' },
-    { name: 'Nursing', color: 'bg-cyan-100 text-cyan-700 hover:bg-cyan-200 hover:scale-105' },
-    { name: 'Advanced Studies', color: 'bg-orange-100 text-orange-700 hover:bg-orange-200 hover:scale-105' },
+ 
+  {
+    name: 'Arts and Science',
+    color: 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:scale-105',
+    href: 'https://hicas.ac.in/'
+  },
+  {
+    name: 'Engineering',
+    color: 'bg-pink-100 text-pink-700 hover:bg-pink-200 hover:scale-105',
+    href: 'https://hindusthan.net/hice/index.php'
+  },
+  {
+    name: 'Institute of Technology',
+    color: 'bg-orange-100 text-orange-700 hover:bg-orange-200 hover:scale-105',
+    href: 'https://example.com/institute-of-technology'
+  },
+  {
+    name: 'College of Education',
+    color: 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:scale-105',
+    href: 'https://hindusthan.net/hce/'
+  },
+  {
+    name: 'Architecture',
+    color: 'bg-green-100 text-green-700 hover:bg-green-200 hover:scale-105',
+    href: 'https://hsoa.ac.in/'
+  },
+  {
+    name: 'Polytechnic',
+    color: 'bg-blue-100 text-blue-700 hover:bg-blue-200 hover:scale-105',
+    href: 'https://hpc.ac.in/'
+  },
+  {
+    name: 'HR Sec. School',
+    color: 'bg-cyan-100 text-cyan-700 hover:bg-cyan-200 hover:scale-105',
+    href: 'https://hindusthan.net/hschool/'
+  },
+  {
+    name: 'International School',
+    color: 'bg-red-100 text-red-700 hover:bg-red-200 hover:scale-105',
+    href: 'https://his.ac.in/'
+  },
+  {
+    name: 'Health Science',
+    color: 'bg-green-100 text-green-700 hover:bg-green-200 hover:scale-105',
+    href: 'http://hindusthan.net/hichs/'
+  },
+  {
+    name: 'Kangaroo Kids',
+    color: 'bg-orange-100 text-orange-700 hover:bg-orange-200 hover:scale-105',
+    href: 'https://example.com/college-of-science'
+  },
+  {
+    name: 'Nursing',
+    color: 'bg-cyan-100 text-cyan-700 hover:bg-cyan-200 hover:scale-105',
+    href: 'http://www.hindusthan.net/hicon/'
+  },
+  {
+    name: 'Advanced Studies',
+    color: 'bg-orange-100 text-orange-700 hover:bg-orange-200 hover:scale-105',
+    href: 'https://example.com/advanced-studies'
+  }
+
+
   ];
 
   const socialIcons = {
@@ -79,12 +131,16 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
           <h3 className="text-2xl font-bold mb-6 text-center">Our Institutions</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {institutions.map((institution, index) => (
-              <span
-                key={index}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer transform ${institution.color}`}
-              >
-                {institution.name}
-              </span>
+              <a
+  key={index}
+  href={institution.href}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 transform ${institution.color}`}
+>
+  {institution.name}
+</a>
+
             ))}
           </div>
         </div>

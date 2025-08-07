@@ -152,11 +152,17 @@ const Placements: React.FC = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-  <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 text-base px-6 py-3 rounded-md font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 w-fit mx-auto">
+  <a
+    href="/pdf/Placed0.pdf" // Place your PDF in public folder or give full URL
+    target="_blank"               // Opens in a new tab
+    rel="noopener noreferrer"
+    className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 text-base px-6 py-3 rounded-md font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 w-fit mx-auto"
+  >
     <span>View Detailed Placement Report</span>
     <ArrowRight className="h-5 w-5" />
-  </button>
+  </a>
 </div>
+
 
       </div>
     </section>
