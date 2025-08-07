@@ -115,7 +115,7 @@
   "faculty": [
   {
     "id": 1,
-    "image": "...",
+    "image": "/images/HOD.jpg",
     "name": "Dr.A.Jameer Basha ",
     "designation": "Professor",
     "specialization": "Machine learning, Deep learning, and Generative AI.",
@@ -143,7 +143,7 @@
   },
   {
     "id": 3,
-    "image": "...",
+    "image": "/images/Ramasamy.jpg",
     "name": "Dr.S.Ramasamy",
     "designation": "Associate Professor",
     "specialization": "Cloud Computing",
@@ -465,7 +465,7 @@
   },
   {
     "id": 26,
-    "image": "/imagessenthilsign.jpeg",
+    "image": "/images/senthilsigh.jpg",
     "name": "Dr.C.Senthil Singh",
     "designation": "Professor",
     "specialization": "",
