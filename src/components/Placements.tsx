@@ -1,11 +1,19 @@
 import React from 'react';
-import { TrendingUp, Award, Building, Trophy, ArrowRight } from 'lucide-react';
+import {
+  TrendingUp,
+  Award,
+  Building,
+  Trophy,
+  ArrowRight
+} from 'lucide-react';
+import CountUp from 'react-countup';
+import { motion } from 'framer-motion';
 
 interface PlacementStats {
-  placementRate: string;
-  averagePackage: string;
-  highestPackage: string;
-  companiesVisited: string;
+  placementRate: number;
+  averagePackage: number;
+  highestPackage: number;
+  companiesVisited: number;
 }
 
 interface PlacementProcess {
@@ -16,10 +24,10 @@ interface PlacementProcess {
 
 const Placements: React.FC = () => {
   const placementStats: PlacementStats = {
-    placementRate: '90%',
-    averagePackage: '4.5 LPA',
-    highestPackage: '42 LPA',
-    companiesVisited: '150+',
+    placementRate: 90,
+    averagePackage: 4.5,
+    highestPackage: 42,
+    companiesVisited: 150,
   };
 
   const topRecruiters = [
@@ -59,10 +67,18 @@ const Placements: React.FC = () => {
     },
   ];
 
+  const statVariants = {
+    hidden: { opacity: 0, y: 50 },
+    show: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.2, duration: 0.6 },
+    }),
+  };
+
   return (
     <section id="placements" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Placement Excellence</h2>
@@ -72,47 +88,71 @@ const Placements: React.FC = () => {
           </p>
         </div>
 
-        {/* Placement Stats */}
+        {/* Placement Stats with Animation */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="bg-yellow-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-              <TrendingUp className="h-8 w-8 text-yellow-600" />
-            </div>
-            <div className="text-3xl font-bold text-gray-900 mb-2">{placementStats.placementRate}</div>
-            <div className="text-gray-600 font-medium">Placement Rate</div>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="bg-yellow-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-              <Award className="h-8 w-8 text-yellow-600" />
-            </div>
-            <div className="text-3xl font-bold text-gray-900 mb-2">{placementStats.averagePackage}</div>
-            <div className="text-gray-600 font-medium">Average Package</div>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="bg-yellow-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-              <Trophy className="h-8 w-8 text-yellow-600" />
-            </div>
-            <div className="text-3xl font-bold text-gray-900 mb-2">{placementStats.highestPackage}</div>
-            <div className="text-gray-600 font-medium">Highest Package</div>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="bg-yellow-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-              <Building className="h-8 w-8 text-yellow-600" />
-            </div>
-            <div className="text-3xl font-bold text-gray-900 mb-2">{placementStats.companiesVisited}</div>
-            <div className="text-gray-600 font-medium">Companies Visited Current Year</div>
-          </div>
+          {[
+            {
+              Icon: TrendingUp,
+              value: placementStats.placementRate,
+              suffix: '%',
+              label: 'Placement Rate',
+            },
+            {
+              Icon: Award,
+              value: placementStats.averagePackage,
+              suffix: ' LPA',
+              label: 'Average Package',
+            },
+            {
+              Icon: Trophy,
+              value: placementStats.highestPackage,
+              suffix: ' LPA',
+              label: 'Highest Package',
+            },
+            {
+              Icon: Building,
+              value: placementStats.companiesVisited,
+              suffix: '+',
+              label: 'Companies Visited Current Year',
+            },
+          ].map(({ Icon, value, suffix, label }, i) => (
+            <motion.div
+              key={i}
+              custom={i}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              variants={statVariants}
+              className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow"
+            >
+              <div className="bg-yellow-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <Icon className="h-8 w-8 text-yellow-600" />
+              </div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">
+                <CountUp end={value} duration={2} enableScrollSpy scrollSpyDelay={300} />
+                {suffix}
+              </div>
+              <div className="text-gray-600 font-medium">{label}</div>
+            </motion.div>
+          ))}
         </div>
 
         {/* Recruiters and Process */}
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-
           {/* Top Recruiters */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-2xl font-bold text-gray-900 mb-8">Top Recruiters</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {topRecruiters.map((recruiter, index) => (
-                <div key={index} className="bg-white p-4 md:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div
+                  key={index}
+                  className="bg-white p-4 md:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+                >
                   <div className="flex items-center space-x-4">
                     <img
                       src={recruiter.logo}
@@ -127,10 +167,15 @@ const Placements: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Placement Process */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-2xl font-bold text-gray-900 mb-8">Placement Process</h3>
             <div className="space-y-6">
               {placementProcess.map((step) => (
@@ -147,23 +192,27 @@ const Placements: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
-  <a
-    href="/pdf/Placed0.pdf" // Place your PDF in public folder or give full URL
-    target="_blank"               // Opens in a new tab
-    rel="noopener noreferrer"
-    className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 text-base px-6 py-3 rounded-md font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 w-fit mx-auto"
-  >
-    <span>View Detailed Placement Report</span>
-    <ArrowRight className="h-5 w-5" />
-  </a>
-</div>
-
-
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <a
+            href="/pdf/Placed0.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 text-base px-6 py-3 rounded-md font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 w-fit mx-auto"
+          >
+            <span>View Detailed Placement Report</span>
+            <ArrowRight className="h-5 w-5" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
