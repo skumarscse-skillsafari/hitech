@@ -44,11 +44,17 @@ const LocationMap: React.FC = () => {
             </div>
 
             <div className="p-6 bg-gray-50">
-              <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
-                <Navigation className="h-5 w-5" />
-                <span>Get Directions</span>
-              </button>
-            </div>
+  <a
+    href="https://www.google.com/maps/dir//Hindusthan+Institute+of+Technology+NH+83+Malumichampatti,+Tamil+Nadu+641028/@10.8945458,76.9970671,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba85abaa31dcfa9:0x72d5daed0d228046!2m2!1d76.9970675!2d10.8945403?entry=ttu&g_ep=EgoyMDI1MDgwNC4wIKXMDSoASAFQAw%3D%3D"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
+  >
+    <Navigation className="h-5 w-5" />
+    <span>Get Directions</span>
+  </a>
+</div>
+
           </div>
 
           {/* Contact Information */}
