@@ -157,7 +157,11 @@ const InnovativeMethods: React.FC = () => {
             </div>
           </div>
         )}
-                <section className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12 rounded-2xl text-center text-white">
+                <section
+  className="bg-gradient-to-r from-yellow-500 to-orange-500 p-12 rounded-2xl text-center text-white"
+  style={{ marginTop: '48px' }}
+>
+
           <h2 className="text-3xl font-bold mb-4">Join Our Educational Legacy</h2>
           <p className="text-xl mb-8 opacity-90">
             Be part of an institution that has been shaping futures for over three decades
