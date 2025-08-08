@@ -20,13 +20,13 @@ const jsonMethodologies: TeachingMethodology[] = [
     id: 1,
     title: "Active Learning with Technology",
     description: "Students engage in hands-on learning using interactive tools, virtual labs, and coding platforms in ICT-enabled classrooms.",
-    image: "/Collaborative Learning with Digital Collaboration Tools.jpg"
+    image: "public/activebas.jpg.png"
   },
   {
     id: 2,
     title: "Problem-Based Learning with Digital Tools",
     description: "Students solve real-world problems using collaboration tools, project management platforms, and cloud-based deployment resources.",
-    image: "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400"
+    image: "public/problembas.jpg.png"
   },
   {
     id: 3,
