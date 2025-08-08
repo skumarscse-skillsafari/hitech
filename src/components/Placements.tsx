@@ -35,7 +35,7 @@ const Placements: React.FC = () => {
     { name: 'Microsoft', logo: '/logos/microsof.png', package: '28–40 LPA' },
     { name: 'Amazon', logo: '/logos/amazon.png', package: '25–35 LPA' },
     { name: 'TCS', logo: '/logos/tcs.png', package: '4–8 LPA' },
-    { name: 'Infosys', logo: '/logos/infosys.png', package: '4–7 LPA' },
+    { name: 'Infosys', logo: '/logos/infosys.jpg', package: '4–7 LPA' },
     { name: 'Wipro', logo: '/logos/wipro.png', package: '4–6 LPA' },
   ];
 
