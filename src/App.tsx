@@ -32,6 +32,8 @@ import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
 import CseLatestEvents from './pages/CseLatestEvents';
 import ControllerOfExaminationsPage from './pages/ControllerOfExaminationsPage';
+import CategoryGallery from './pages/CategoryGallery';
+
 
 const news = newsEventsData.news;
 const events = newsEventsData.events;
@@ -87,6 +89,7 @@ function App() {
                 <Route path="/events" element={<EventsCards events={events} />} />
                 <Route path="/innovation/innovationpolicy" element={<InnovationPolicy />} />
                 <Route path="/gallery" element={<GalleryPage />} />
+                <Route path="/Gallery/:categoryName" element={<CategoryGallery />} />
 
 
 
