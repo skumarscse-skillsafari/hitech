@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react';
+import galleryData from '../data/galleryData.json';
 
 interface GalleryImage {
   url: string;
@@ -11,144 +13,180 @@ interface GalleryCategory {
   images: GalleryImage[];
 }
 
-interface GalleryProps {
-  gallery: {
-    categories: GalleryCategory[];
+const Gallery: React.FC = () => {
+  const navigate = useNavigate();
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const categories = galleryData.categories || [];
+
+  // Auto-scroll carousel
+  useEffect(() => {
+    if (isPaused || categories.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % categories.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isPaused, categories.length]);
+
+  // Scroll to current slide
+  useEffect(() => {
+    if (carouselRef.current) {
+      const slideWidth = carouselRef.current.offsetWidth;
+      carouselRef.current.scrollTo({
+        left: currentSlide * slideWidth,
+        behavior: 'smooth'
+      });
+    }
+  }, [currentSlide]);
+
+  const navigateToCategory = (categoryName: string) => {
+    const formattedName = categoryName.toLowerCase().replace(/\s+/g, '-');
+    navigate(`/gallery/${formattedName}`);
   };
-}
 
-const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
-  const [selectedCategory, setSelectedCategory] = useState(gallery.categories[0]?.name || 'Campus');
-  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const currentCategory = gallery.categories.find(cat => cat.name === selectedCategory);
-  const currentImages = currentCategory?.images || [];
-
-  const openLightbox = (image: GalleryImage, index: number) => {
-    setSelectedImage(image);
-    setCurrentImageIndex(index);
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+    setIsPaused(true);
+    setTimeout(() => setIsPaused(false), 5000);
   };
 
-  const closeLightbox = () => {
-    setSelectedImage(null);
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % categories.length);
+    setIsPaused(true);
+    setTimeout(() => setIsPaused(false), 5000);
   };
 
-  const navigateImage = (direction: 'prev' | 'next') => {
-    const newIndex = direction === 'prev' 
-      ? (currentImageIndex - 1 + currentImages.length) % currentImages.length
-      : (currentImageIndex + 1) % currentImages.length;
-    
-    setCurrentImageIndex(newIndex);
-    setSelectedImage(currentImages[newIndex]);
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + categories.length) % categories.length);
+    setIsPaused(true);
+    setTimeout(() => setIsPaused(false), 5000);
   };
 
   return (
-    <section id="gallery" className="py-0 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+    <div className="min-h-screen bg-gray-50">
+      {/* Header Section - Matching HIT Theme */}
+      <div className="bg-white/30 text-gray-900 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
             Campus Gallery
-          </h2>
-           <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          </h1>
+          <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mb-6"></div>
+          <p className="text-xl md:text-2xl text-gray-800 max-w-3xl mx-auto">
             Take a visual tour of our beautiful campus, modern facilities, and vibrant student life
           </p>
         </div>
+      </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {gallery.categories.map((category) => (
-            <button
-              key={category.name}
-              onClick={() => setSelectedCategory(category.name)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                selectedCategory === category.name
-                  ? 'bg-yellow-500 text-gray-700'
-                  : 'bg-gray-100 text-gray-700 hover:bg-yellow-500'
-              }`}
-            >
-              {category.name}
-            </button>
-          ))}
-        </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Main Carousel */}
+        <div className="relative mb-16">
+          {/* Navigation Arrows */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-yellow-500 hover:bg-yellow-400 text-gray-900 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+          >
+            <ChevronLeft className="h-6 w-6" />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-yellow-500 hover:bg-yellow-400 text-gray-900 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+          >
+            <ChevronRight className="h-6 w-6" />
+          </button>
 
-        {/* Image Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {currentImages.map((image, index) => (
-            <div 
-              key={index}
-              className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-              onClick={() => openLightbox(image, index)}
-            >
-              <div className="aspect-w-4 aspect-h-3">
-                <img 
-                  src={image.url} 
-                  alt={image.caption}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-white font-medium text-sm">{image.caption}</p>
+          {/* Carousel */}
+          <div 
+            ref={carouselRef}
+            className="flex overflow-x-hidden scroll-smooth rounded-2xl shadow-2xl"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            {categories.map((category) => (
+              <div
+                key={category.name}
+                className="w-full flex-shrink-0"
+              >
+                <div className="relative group cursor-pointer overflow-hidden">
+                  <div className="relative">
+                    <img 
+                      src={category.images[0]?.url || '/api/placeholder/1200/600'} 
+                      alt={category.name}
+                      className="w-full h-96 md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+                      <div className="max-w-2xl">
+                        <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">{category.name}</h3>
+                        <p className="text-white/90 text-lg mb-6">
+                          {category.images.length} image{category.images.length !== 1 ? 's' : ''}
+                        </p>
+                        <button
+                          onClick={() => navigateToCategory(category.name)}
+                          className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                        >
+                          View Collection
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
+
+          {/* Dots Indicator */}
+          <div className="flex justify-center mt-8 space-x-3">
+            {categories.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide 
+                    ? 'bg-yellow-500 w-12' 
+                    : 'bg-gray-300 hover:bg-gray-400 w-3'
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Category Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {categories.map((category) => (
+            <div
+              key={category.name}
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white"
+            >
+              <div className="relative">
+                <img 
+                  src={category.images[0]?.url || '/api/placeholder/400/300'} 
+                  alt={category.name}
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent group-hover:from-black/80 transition-all duration-300"></div>
+              </div>
+              
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h4 className="text-white font-bold text-lg mb-1">{category.name}</h4>
+                <p className="text-white/80 text-sm mb-3">
+                  {category.images.length} photos
+                </p>
+                <button
+                  onClick={() => navigateToCategory(category.name)}
+                  className="w-full bg-yellow-500 hover:bg-yellow-400 text-gray-900 py-2 px-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                >
+                  Explore
+                </button>
+              </div>
             </div>
           ))}
         </div>
-
-        {/* Lightbox */}
-        {selectedImage && (
-          <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-            <div className="relative max-w-4xl max-h-full">
-              {/* Close Button */}
-              <button
-                onClick={closeLightbox}
-                className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-20"
-              >
-                <X className="h-6 w-6" />
-              </button>
-
-              {/* Navigation Buttons */}
-              {currentImages.length > 1 && (
-                <>
-                  <button
-                    onClick={() => navigateImage('prev')}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-20"
-                  >
-                    <ChevronLeft className="h-6 w-6" />
-                  </button>
-                  <button
-                    onClick={() => navigateImage('next')}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-20"
-                  >
-                    <ChevronRight className="h-6 w-6" />
-                  </button>
-                </>
-              )}
-
-              {/* Image */}
-              <img 
-                src={selectedImage.url} 
-                alt={selectedImage.caption}
-                className="max-w-full max-h-full object-contain relative z-0"
-              />
-
-              {/* Caption */}
-              <div className="absolute bottom-4 left-4 right-4 bg-black/50 text-white p-4 rounded-lg">
-                <p className="text-center font-medium">{selectedImage.caption}</p>
-                <p className="text-center text-sm text-gray-300 mt-1">
-                  {currentImageIndex + 1} of {currentImages.length}
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-
       </div>
-    </section>
+    </div>
   );
 };
 
