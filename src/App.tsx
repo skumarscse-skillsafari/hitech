@@ -5,6 +5,7 @@ import TopNavBar from './components/TopNavBar';
 import Header from './components/Header';
 import NewsTicker from './components/NewsTicker';
 import Footer from './components/Footer';
+import Library from './components/Library';
 import NewsCards from './pages/NewsCards';
 import EventsCards from './pages/EventsCards';
 import newsEventsData from './data/newsEventsData.json';
@@ -71,6 +72,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/department/:departmentId" element={<DepartmentPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
+                <Route path="/campus-life/facilities/library" element={<Library />} />
                 <Route path="/placements" element={<PlacementsPage />} />
                 <Route path="/admissions" element={<AdmissionsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
