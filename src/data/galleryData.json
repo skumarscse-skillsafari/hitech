@@ -1,0 +1,103 @@
+{
+  "categories": [
+    {
+      "name": "Campus",
+      "images": [
+        {
+          "url": "/hit.jpg",
+          "caption": "Main Campus Building"
+        },
+        {
+          "url": "/academic.jpg",
+          "caption": "Academic Block"
+        },
+        {
+          "url": "/library.jpg",
+          "caption": "Library Building"
+        },
+        {
+          "url": "/hostel.png",
+          "caption": "Student Hostel"
+        }
+      ]
+    },
+    {
+      "name": "Laboratories",
+      "images": [
+        {
+          "url": "/cslab.jpg",
+          "caption": "Computer Science Lab"
+        },
+        {
+          "url": "/rdmslab.jpg",
+          "caption": "RDBMS Lab"
+        },
+        {
+          "url": "/networklab.jpg",
+          "caption": "Network Lab"
+        },
+        {
+          "url": "/oslab.jpg",
+          "caption": "Operating System Lab"
+        },
+        {
+          "url": "/electricallab.jpg",
+          "caption": "Electrical Lab"
+        },
+        {
+          "url": "/electronicslab.jpg",
+          "caption": "Electronics Lab"
+        },
+        {
+          "url": "/microlab.jpg",
+          "caption": "MicroProcessor Lab"
+        },
+        {
+          "url": "/comulab.jpg",
+          "caption": "Communication Lab"
+        },
+        {
+          "url": "/aerolab.jpg",
+          "caption": "Aircraft System Lab"
+        },
+        {
+          "url": "/aerostrlab.jpg",
+          "caption": "Aircraft Structure Lab"
+        },
+        {
+          "url": "/aerodynlab.jpg",
+          "caption": "Aerodynamics Lab"
+        },
+        {
+          "url": "/propullab.jpg",
+          "caption": "Propulsion Lab"
+        },
+        {
+          "url": "/vmlab.jpg",
+          "caption": "VM Lab"
+        },
+        {
+          "url": "/automolab.jpg",
+          "caption": "Automotive Components Lab"
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "caption": "TechFest 2024"
+        },
+        {
+          "url": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "caption": "Industry Interaction"
+        },
+        {
+          "url": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "caption": "Research Conference"
+        }
+      ]
+    }
+  ]
+}
