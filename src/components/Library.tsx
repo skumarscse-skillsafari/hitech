@@ -96,7 +96,8 @@ const Library: React.FC = () => {
       Library Hours
     </button>
     <button className="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors">
-      Digital Catalog
+      Digital Catalogue
+      
     </button>
   </div>
 </div>
