@@ -471,7 +471,7 @@ const navigate = useNavigate();
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-6xl font-bold text-gray-900 mb-4">
+          <h2 className="text-6xl font-bold text-gray-900 mb-4 mt-10">
             Campus Gallery
           </h2>
           <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
