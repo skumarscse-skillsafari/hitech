@@ -58,7 +58,7 @@
             "dropdown": [
               { "name": "Hostel", "href": "/hostel" },
               { "name": "Cafeteria", "href": "/cafeteria" },
-              { "name": "Library", "href": "/library" },
+              { "name": "Library", "href": "/campus-life/facilities/library" },
               { "name": "ATM", "href": "/atm" },
               { "name": "GYM", "href": "/gym" },
               { "name": "Sports", "href": "/sports" },
