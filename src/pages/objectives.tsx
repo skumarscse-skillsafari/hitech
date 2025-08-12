@@ -46,7 +46,7 @@ const Objectives: React.FC = () => {
             <h2 className="text-3xl font-bold text-yellow-700">Our History</h2>
           </div>
           <p>
-            Hindusthan Institute of Technology (HITECH) was established in 2007 by the visionary industrialist Thiru.T.S.R. Khannaiyann. As an autonomous institution, HITECH strives to empower students with knowledge, character, and leadership in the fields of engineering, technology, and management. 
+            Hindusthan Institute of Technology (HITECH) was established in 2007 by the visionary industrialist Thiru.T.S.R. Khannaiyann. As an autonomous institution, HITECH strives to empower students with knowledge, character, and leadership in the fields of engineering, technology, and the management. 
           </p>
           <p className="mt-4">
             Our institution is equipped with modern infrastructure, well-stocked libraries, digital resources like IIT-NPTEL, and lush green campuses with excellent sports and recreational facilities. Our emphasis goes beyond academics to focus on grooming future leaders who are grounded in Indian values and global outlooks.
