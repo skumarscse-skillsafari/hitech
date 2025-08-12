@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayout from '../components/layout/PageLayout';
-import Gallery from '../components/Gallery';
+import Gallery from './Gallery';
 import collegeData from '../data/collegeData.json';
 import { useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';

@@ -5,7 +5,7 @@ import SectionWrapper from '../components/layout/SectionWrapper';
 import Hero from '../components/Hero';
 import AccreditationCards from '../components/AccreditationCards';
 import DepartmentCards from '../components/DepartmentCards';
-import Gallery from '../components/Gallery';
+import Gallery from '../pages/GalleryPage';
 import Placements from '../components/Placements';
 import FacultyCarousel from '../components/FacultyCarousel';
 import NewsEventsSection from '../components/NewsEventsSection';
@@ -21,7 +21,7 @@ import hit from "../../public/hit.jpg";
 import { Award, Trophy } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 const HomePage: React.FC = () => {
   const allFaculty = departmentsData.departments.flatMap(dept => dept.faculty);
   const contactRef = useRef<HTMLDivElement | null>(null);

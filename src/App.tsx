@@ -10,7 +10,6 @@ import EventsCards from './pages/EventsCards';
 import newsEventsData from './data/newsEventsData.json';
 import HomePage from './pages/HomePage';
 import DepartmentPage from './pages/DepartmentPage';
-import GalleryPage from './pages/GalleryPage';
 import PlacementsPage from './pages/PlacementsPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
@@ -24,7 +23,8 @@ import GoverningCouncilPage from './pages/GoverningCouncilPage';
 import AcademicCalendar from './pages/AcademicCal';
 import CalendarDetails from './pages/CalendarDetails'; 
 import DataTable from './pages/DataTable';
-import gallery from './pages/GalleryPage';
+import Gallery from './pages/Gallery';
+
 import InnovationPolicy from './pages/InnovationPolicy';
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
@@ -32,8 +32,6 @@ import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
 import CseLatestEvents from './pages/CseLatestEvents';
 import ControllerOfExaminationsPage from './pages/ControllerOfExaminationsPage';
-import CategoryGallery from './pages/CategoryGallery';
-
 
 const news = newsEventsData.news;
 const events = newsEventsData.events;
@@ -72,7 +70,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/department/:departmentId" element={<DepartmentPage />} />
-                <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/placements" element={<PlacementsPage />} />
                 <Route path="/admissions" element={<AdmissionsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
@@ -88,8 +85,8 @@ function App() {
                 <Route path="/news" element={<NewsCards news={news} />} />
                 <Route path="/events" element={<EventsCards events={events} />} />
                 <Route path="/innovation/innovationpolicy" element={<InnovationPolicy />} />
-                <Route path="/gallery" element={<GalleryPage />} />
-                <Route path="/Gallery/:categoryName" element={<CategoryGallery />} />
+                <Route path="/gallery" element={<Gallery />} />
+
 
 
 
