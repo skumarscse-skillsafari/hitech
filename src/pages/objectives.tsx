@@ -7,7 +7,6 @@ const Objectives: React.FC = () => {
 
   return (
     <div className="relative mt-0 bg-white">
-      {/* Back Button (larger size) */}
       <button
         onClick={() => navigate(-1)}
         className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
@@ -19,7 +18,7 @@ const Objectives: React.FC = () => {
         </span>
       </button>
 
-      {/* Hero Section */}
+  
       <div className="relative w-full h-[280px] md:h-[360px] bg-gradient-to-r from-yellow-50 to-yellow-100 flex items-center justify-center overflow-hidden rounded-xl shadow-inner">
         <img
           src="/images/college-photo.jpg"
@@ -57,7 +56,7 @@ const Objectives: React.FC = () => {
         <section className="bg-gradient-to-br from-yellow-50 to-white rounded-xl p-6 md:p-10 border border-yellow-100 shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.02]">
           <div className="flex items-center space-x-4 mb-4">
             <Eye className="text-yellow-600 w-6 h-6" />
-            <h2 className="text-3xl font-bold text-yellow-700">Our Vision</h2>
+            <h2 className="text-3xl font-bold text-yellow-700"> Our Vision </h2>
           </div>
           <div className="text-center">
             <h3 className="text-xl font-bold text-gray-800 mb-2">“INITIATE, INNOVATE, INCULCATE”</h3>
@@ -67,7 +66,6 @@ const Objectives: React.FC = () => {
           </div>
         </section>
 
-        {/* Mission */}
         <section className="bg-gradient-to-br from-yellow-50 to-white rounded-xl p-6 md:p-10 border border-yellow-100 shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.02]">
           <div className="flex items-center space-x-4 mb-4">
             <Target className="text-yellow-600 w-6 h-6" />
