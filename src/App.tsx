@@ -5,6 +5,7 @@ import TopNavBar from './components/TopNavBar';
 import Header from './components/Header';
 import NewsTicker from './components/NewsTicker';
 import Footer from './components/Footer';
+import Library from './components/Library';
 import NewsCards from './pages/NewsCards';
 import EventsCards from './pages/EventsCards';
 import newsEventsData from './data/newsEventsData.json';
@@ -24,7 +25,7 @@ import AcademicCalendar from './pages/AcademicCal';
 import CalendarDetails from './pages/CalendarDetails'; 
 import DataTable from './pages/DataTable';
 import Gallery from './pages/Gallery';
-
+import GalleryPage from './pages/GalleryPage'
 import InnovationPolicy from './pages/InnovationPolicy';
 import topNavBarData from './data/topNavBarData.json';
 import headerData from './data/headerData.json';
@@ -70,6 +71,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/department/:departmentId" element={<DepartmentPage />} />
+                <Route path="/gallerypage" element={<GalleryPage />} />
+                <Route path="/campus-life/facilities/library" element={<Library />} />
                 <Route path="/placements" element={<PlacementsPage />} />
                 <Route path="/admissions" element={<AdmissionsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
