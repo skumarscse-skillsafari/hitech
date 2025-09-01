@@ -55,11 +55,25 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
     onCategoryChange?.(value);
   };
 
-  const filteredData = data.filter((item) =>
-    Object.values(item).some((val) =>
-      val?.toString().toLowerCase().includes(searchTerm.toLowerCase())
+  const parseDate = (dateStr: string) => {
+    if (!dateStr) return new Date(0);
+    const [day, month, year] = dateStr.split('-').map(Number);
+    return new Date(year, month - 1, day);
+  };
+
+  const filteredData = data
+    .filter((item) =>
+      Object.values(item).some((val) =>
+        val?.toString().toLowerCase().includes(searchTerm.toLowerCase())
+      )
     )
-  );
+    .sort((a, b) => {
+      const dateCol = Object.keys(a).find((col) =>
+        col.toLowerCase().includes('date')
+      );
+      if (!dateCol) return 0;
+      return parseDate(b[dateCol]) - parseDate(a[dateCol]); // descending
+    });
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const paginatedData = filteredData.slice(
@@ -182,37 +196,36 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
           <div className={`${isDesktop ? 'w-full' : 'inline-block min-w-full'} rounded-2xl border border-gray-200`}>
             <table className={`w-full table-fixed border-collapse text-sm md:text-base ${isDesktop ? 'min-w-full' : 'min-w-[800px]'}`}>
               <thead>
-    <tr className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 text-white">
-      {columns.map((col, idx) => (
-        <th
-          key={idx}
-          className={`px-3 sm:px-4 py-2 sm:py-3 text-center font-semibold uppercase break-words 
-            ${getColumnWidth(col)} 
-            ${isMobile ? 'text-xs' : ''} 
-            ${idx === 0 ? 'rounded-tl-2xl' : ''} 
-            ${idx === columns.length - 1 ? 'rounded-tr-2xl' : ''}`}
-        >
-          {col.replace(/([A-Z])/g, ' $1')}
-        </th>
-      ))}
-    </tr>
-  </thead>
+                <tr className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 text-white">
+                  {columns.map((col, idx) => (
+                    <th
+                      key={idx}
+                      className={`px-3 sm:px-4 py-2 sm:py-3 text-center font-semibold uppercase break-words 
+                        ${getColumnWidth(col)} 
+                        ${isMobile ? 'text-xs' : ''} 
+                        ${idx === 0 ? 'rounded-tl-2xl' : ''} 
+                        ${idx === columns.length - 1 ? 'rounded-tr-2xl' : ''}`}
+                    >
+                      {col.replace(/([A-Z])/g, ' $1')}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
               <tbody>
                 {paginatedData.length > 0 ? (
                   paginatedData.map((row, rowIndex) => (
                     <tr key={rowIndex} className="even:bg-gray-50 hover:bg-amber-50 transition duration-150">
                       {columns.map((col, colIndex) => (
-                       <td
-  key={colIndex}
-  className="px-3 sm:px-4 py-2 sm:py-3 text-center align-top break-words text-[11px] sm:text-xs md:text-sm text-gray-600"
->
-  {Array.isArray(row[col])
-    ? row[col].join(', ')
-    : typeof row[col] === 'object' && row[col] !== null
-    ? JSON.stringify(row[col])
-    : row[col]}
-</td>
-
+                        <td
+                          key={colIndex}
+                          className="px-3 sm:px-4 py-2 sm:py-3 text-center align-top break-words text-[11px] sm:text-xs md:text-sm text-gray-600"
+                        >
+                          {Array.isArray(row[col])
+                            ? row[col].join(', ')
+                            : typeof row[col] === 'object' && row[col] !== null
+                            ? JSON.stringify(row[col])
+                            : row[col]}
+                        </td>
                       ))}
                     </tr>
                   ))
