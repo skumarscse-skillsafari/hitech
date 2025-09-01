@@ -2,100 +2,445 @@
   "categories": [
     {
       "name": "Campus",
-      "images": [
+      "subcategories": [
         {
-          "url": "/hit.jpg",
-          "caption": "Main Campus Building"
+          "name": "Main Campus Building",
+          "images": [
+            {
+              "url": "/hit.jpg",
+              "caption": "Front View of Main Campus"
+            },
+            {
+              "url": "/hit.jpg",
+              "caption": "Main Entrance Gate"
+            },
+            {
+              "url": "/hit.jpg",
+              "caption": "Campus Courtyard"
+            },
+            {
+              "url": "/hit.jpg",
+              "caption": "Administrative Block"
+            }
+          ]
         },
         {
-          "url": "/academic.jpg",
-          "caption": "Academic Block"
+          "name": "Academic Block",
+          "images": [
+            {
+              "url": "/academic.jpg",
+              "caption": "Academic Building Exterior"
+            },
+            {
+              "url": "/academic.jpg",
+              "caption": "Lecture Halls"
+            },
+            {
+              "url": "/academic.jpg",
+              "caption": "Faculty Offices"
+            },
+            {
+              "url": "/academic.jpg",
+              "caption": "Academic Corridors"
+            }
+          ]
         },
         {
-          "url": "/library.jpg",
-          "caption": "Library Building"
+          "name": "Library Building",
+          "images": [
+            {
+              "url": "/library.jpg",
+              "caption": "Library Exterior"
+            },
+            {
+              "url": "/library.jpg",
+              "caption": "Reading Hall"
+            },
+            {
+              "url": "/library.jpg",
+              "caption": "Book Collection"
+            },
+            {
+              "url": "/library.jpg",
+              "caption": "Digital Library Section"
+            }
+          ]
         },
         {
-          "url": "/hostel.png",
-          "caption": "Student Hostel"
+          "name": "Student Hostel",
+          "images": [
+            {
+              "url": "/hostel.png",
+              "caption": "Hostel Building"
+            },
+            {
+              "url": "/hostel.png",
+              "caption": "Student Rooms"
+            },
+            {
+              "url": "/hostel.png",
+              "caption": "Common Areas"
+            },
+            {
+              "url": "/hostel.png",
+              "caption": "Hostel Facilities"
+            }
+          ]
         }
       ]
     },
     {
       "name": "Laboratories",
-      "images": [
+      "subcategories": [
         {
-          "url": "/cslab.jpg",
-          "caption": "Computer Science Lab"
+          "name": "Computer Science Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/cs1.JPG",
+              "caption": "Computer Science Lab Overview"
+            },
+            {
+              "url": "public/GalleryImages/Labs/cs2.JPG",
+              "caption": "Programming Workstations"
+            },
+            {
+              "url": "public/GalleryImages/Labs/cs3.JPG",
+              "caption": "Advanced Computing Setup"
+            }
+          ]
         },
         {
-          "url": "/rdmslab.jpg",
-          "caption": "RDBMS Lab"
+          "name": "RDBMS Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/rdbms1.JPG",
+              "caption": "Database Management Lab"
+            },
+            {
+              "url": "public/GalleryImages/Labs/rdbms2.JPG",
+              "caption": "Server Room"
+            },
+            {
+              "url": "public/GalleryImages/Labs/rdbms3.JPG",
+              "caption": "Database Workstations"
+            }
+          ]
         },
         {
-          "url": "/networklab.jpg",
-          "caption": "Network Lab"
+          "name": "Network Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/net1.JPG",
+              "caption": "Network Infrastructure Lab"
+            },
+            {
+              "url": "public/GalleryImages/Labs/net2.JPG",
+              "caption": "Cisco Equipment"
+            },
+            {
+              "url": "public/GalleryImages/Labs/net3.JPG",
+              "caption": "Network Testing Setup"
+            }
+          ]
         },
         {
-          "url": "/oslab.jpg",
-          "caption": "Operating System Lab"
+          "name": "Operating System Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/os1.JPG",
+              "caption": "OS Lab Overview"
+            },
+            {
+              "url": "/oslab.jpg",
+              "caption": "public/GalleryImages/Labs/cs1.JPG"
+            },
+            {
+              "url": "public/GalleryImages/Labs/rdbms1.JPG",
+              "caption": "Virtual Machine Environment"
+            },
+            {
+              "url": "public/GalleryImages/Labs/net1.JPG",
+              "caption": "Linux Workstations"
+            }
+          ]
         },
         {
-          "url": "/electricallab.jpg",
-          "caption": "Electrical Lab"
+          "name": "Electrical Lab",
+          "images": [
+            {
+              "url": "/electricallab.jpg",
+              "caption": "Electrical Engineering Lab"
+            },
+            {
+              "url": "/electricallab.jpg",
+              "caption": "Power Systems Equipment"
+            },
+            {
+              "url": "/electricallab.jpg",
+              "caption": "Circuit Analysis Setup"
+            },
+            {
+              "url": "/electricallab.jpg",
+              "caption": "Measurement Instruments"
+            }
+          ]
         },
         {
-          "url": "/electronicslab.jpg",
-          "caption": "Electronics Lab"
+          "name": "Electronics Lab",
+          "images": [
+            {
+              "url": "/electronicslab.jpg",
+              "caption": "Electronics Lab Overview"
+            },
+            {
+              "url": "/electronicslab.jpg",
+              "caption": "PCB Design Station"
+            },
+            {
+              "url": "/electronicslab.jpg",
+              "caption": "Component Testing Area"
+            },
+            {
+              "url": "/electronicslab.jpg",
+              "caption": "Oscilloscope Setup"
+            }
+          ]
         },
         {
-          "url": "/microlab.jpg",
-          "caption": "MicroProcessor Lab"
+          "name": "MicroProcessor Lab",
+          "images": [
+            {
+              "url": "/microlab.jpg",
+              "caption": "Microprocessor Lab"
+            },
+            {
+              "url": "/microlab.jpg",
+              "caption": "Embedded Systems Setup"
+            },
+            {
+              "url": "/microlab.jpg",
+              "caption": "Development Boards"
+            },
+            {
+              "url": "/microlab.jpg",
+              "caption": "Programming Interface"
+            }
+          ]
         },
         {
-          "url": "/comulab.jpg",
-          "caption": "Communication Lab"
+          "name": "Communication Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/comm1.JPG",
+              "caption": "Communication Systems Lab"
+            },
+            {
+              "url": "public/GalleryImages/Labs/comm2.JPG",
+              "caption": "Signal Processing Equipment"
+            },
+            {
+              "url": "/comulab.jpg",
+              "caption": "Antenna Testing Setup"
+            },
+            {
+              "url": "public/GalleryImages/Labs/comm1.JPG",
+              "caption": "RF Measurement Tools"
+            }
+          ]
         },
         {
-          "url": "/aerolab.jpg",
-          "caption": "Aircraft System Lab"
+          "name": "Aircraft System Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/air1.JPG",
+              "caption": "Aircraft Systems Laboratory"
+            },
+            {
+              "url": "public/GalleryImages/Labs/air2.JPG",
+              "caption": "Avionics Equipment"
+            },
+            {
+              "url": "public/GalleryImages/Labs/air3.JPG",
+              "caption": "Flight Simulation Setup"
+            },
+            {
+              "url": "public/GalleryImages/Labs/air4.JPG",
+              "caption": "Navigation Systems"
+            }
+          ]
         },
         {
-          "url": "/aerostrlab.jpg",
-          "caption": "Aircraft Structure Lab"
+          "name": "Aircraft Structure Lab",
+          "images": [
+            {
+              "url": "/aerostrlab.jpg",
+              "caption": "Aircraft Structure Lab"
+            },
+            {
+              "url": "/aerostrlab.jpg",
+              "caption": "Material Testing Equipment"
+            },
+            {
+              "url": "/aerostrlab.jpg",
+              "caption": "Composite Materials Section"
+            },
+            {
+              "url": "/aerostrlab.jpg",
+              "caption": "Stress Analysis Setup"
+            }
+          ]
         },
         {
-          "url": "/aerodynlab.jpg",
-          "caption": "Aerodynamics Lab"
+          "name": "Aerodynamics Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/aero1.JPG",
+              "caption": "Aerodynamics Laboratory"
+            },
+            {
+              "url": "public/GalleryImages/Labs/aero2.JPG",
+              "caption": "Wind Tunnel Facility"
+            },
+            {
+              "url": "public/GalleryImages/Labs/aero3.JPG",
+              "caption": "Flow Visualization Setup"
+            },
+            {
+              "url": "/aerodynlab.jpg",
+              "caption": "Pressure Measurement System"
+            }
+          ]
         },
         {
-          "url": "/propullab.jpg",
-          "caption": "Propulsion Lab"
+          "name": "Propulsion Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/propul1.JPG",
+              "caption": "Propulsion Systems Lab"
+            },
+            {
+              "url": "public/GalleryImages/Labs/propul2.JPG",
+              "caption": "Engine Testing Facility"
+            },
+            {
+              "url": "public/GalleryImages/Labs/propul3.JPG",
+              "caption": "Turbine Components"
+            },
+            {
+              "url": "/propullab.jpg",
+              "caption": "Performance Analysis Setup"
+            }
+          ]
         },
         {
-          "url": "/vmlab.jpg",
-          "caption": "VM Lab"
+          "name": "VM Lab",
+          "images": [
+            {
+              "url": "/vmlab.jpg",
+              "caption": "Virtual Machine Laboratory"
+            },
+            {
+              "url": "/vmlab.jpg",
+              "caption": "Cloud Computing Setup"
+            },
+            {
+              "url": "/vmlab.jpg",
+              "caption": "Virtualization Infrastructure"
+            },
+            {
+              "url": "/vmlab.jpg",
+              "caption": "Container Management"
+            }
+          ]
         },
         {
-          "url": "/automolab.jpg",
-          "caption": "Automotive Components Lab"
+          "name": "Automotive Components Lab",
+          "images": [
+            {
+              "url": "public/GalleryImages/Labs/auto1.JPG",
+              "caption": "Automotive Lab Overview"
+            },
+            {
+              "url": "public/GalleryImages/Labs/auto2.JPG",
+              "caption": "Engine Components"
+            },
+            {
+              "url": "/automolab.jpg",
+              "caption": "Vehicle Systems Testing"
+            },
+            {
+              "url": "/automolab.jpg",
+              "caption": "Diagnostic Equipment"
+            }
+          ]
         }
       ]
     },
     {
       "name": "Events",
-      "images": [
+      "subcategories": [
         {
-          "url": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=800",
-          "caption": "TechFest 2024"
+          "name": "TechFest 2024",
+          "images": [
+            {
+              "url": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "TechFest Opening Ceremony"
+            },
+            {
+              "url": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Technical Competitions"
+            },
+            {
+              "url": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Innovation Showcase"
+            },
+            {
+              "url": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Award Ceremony"
+            }
+          ]
         },
         {
-          "url": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-          "caption": "Industry Interaction"
+          "name": "Industry Interaction",
+          "images": [
+            {
+              "url": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Industry Expert Session"
+            },
+            {
+              "url": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Corporate Presentations"
+            },
+            {
+              "url": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Networking Session"
+            },
+            {
+              "url": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Industry Partnership"
+            }
+          ]
         },
         {
-          "url": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-          "caption": "Research Conference"
+          "name": "Research Conference",
+          "images": [
+            {
+              "url": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Research Paper Presentations"
+            },
+            {
+              "url": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Academic Discussions"
+            },
+            {
+              "url": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Poster Sessions"
+            },
+            {
+              "url": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+              "caption": "Conference Networking"
+            }
+          ]
         }
       ]
     }
