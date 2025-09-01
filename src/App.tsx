@@ -16,7 +16,7 @@ import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
 import InnovativeMethods from './pages/InnovativeMethods';
-import Objectives from './pages/Objectives';
+import Objectives from './pages/objectives';
 import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
