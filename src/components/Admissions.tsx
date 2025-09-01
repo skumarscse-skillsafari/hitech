@@ -1,5 +1,3 @@
-// src/pages/Admissions.tsx
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Calendar, FileText, CheckCircle2, Clock, MapPin, Phone, Mail } from 'lucide-react';
