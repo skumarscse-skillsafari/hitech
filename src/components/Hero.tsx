@@ -75,7 +75,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
         playsInline
       ></video>
 
-     {/* Video Controls - Top Right, Responsive */}
+     {/* Video Controls-Top Right, Responsive*/}
 <div
   className="absolute top-[max(1rem,env(safe-area-inset-top))] sm:top-6 md:top-8 right-3 sm:right-4 z-20 flex items-center gap-2 sm:gap-3"
 >
