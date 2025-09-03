@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, X, ArrowLeft } from 'lucide-react';
 import galleryData from '../data/galleryData.json';
 import { useNavigate } from 'react-router-dom';
-
+import { motion } from 'framer-motion';
 interface GalleryImage {
   url: string;
   caption: string;
@@ -142,6 +142,7 @@ const navigate = useNavigate();
                   <img 
                     src={image.url} 
                     alt={image.caption}
+                    loading="lazy"
                     className="w-full h-80 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 via-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -202,63 +203,133 @@ const navigate = useNavigate();
           </div>
         </div>
 
-        {/* Enhanced Lightbox */}
-        {selectedImage && (
-          <div className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4">
-            <div className="relative max-w-5xl max-h-full">
-              <button
-                onClick={closeLightbox}
-                className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 z-20"
-              >
-                <X className="h-6 w-6" />
-              </button>
+       {/* Improved Lightbox */}
+{selectedImage && (
+  <div
+    className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-6"
+    onClick={closeLightbox} // Close when clicking outside
+  >
+    <div
+      className="relative w-full max-w-6xl max-h-[90vh] flex flex-col items-center"
+      onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+    >
+      {/* Close Button */}
+      <button
+        onClick={closeLightbox}
+        className="absolute top-6 right-6 bg-yellow-500 hover:bg-yellow-400 text-gray-900 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-[60]"
+      >
+        <X className="h-6 w-6" />
+      </button>
 
-              {currentImages.length > 1 && (
-                <>
-                  <button
-                    onClick={() => navigateImage('prev')}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 z-20"
-                  >
-                    <ChevronLeft className="h-6 w-6" />
-                  </button>
-                  <button
-                    onClick={() => navigateImage('next')}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 z-20"
-                  >
-                    <ChevronRight className="h-6 w-6" />
-                  </button>
-                </>
-              )}
+      {/* Navigation Arrows */}
+      {currentImages.length > 1 && (
+        <>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              navigateImage('prev');
+            }}
+            className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-yellow-500/40 hover:bg-yellow-500 text-white p-5 rounded-full shadow-xl transition-all duration-300 hover:scale-110 z-[60] pointer-events-auto"
+          >
+            <ChevronLeft className="h-7 w-7" />
+          </button>
 
-              <img 
-                src={selectedImage.url} 
-                alt={selectedImage.caption}
-                className="max-w-full max-h-full object-contain relative z-0 rounded-lg"
-              />
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              navigateImage('next');
+            }}
+            className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-yellow-500/40 hover:bg-yellow-500 text-white p-5 rounded-full shadow-xl transition-all duration-300 hover:scale-110 z-[60] pointer-events-auto"
+          >
+            <ChevronRight className="h-7 w-7" />
+          </button>
+        </>
+      )}
 
-              <div className="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-sm text-white p-6 rounded-xl">
-                <p className="text-center font-semibold text-lg">{selectedImage.caption}</p>
-                <div className="flex items-center justify-center gap-4 mt-3">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                    <span className="text-sm text-gray-300">
-                      {currentImageIndex + 1} of {currentImages.length}
-                    </span>
-                  </div>
-                  <div className="w-px h-4 bg-gray-500"></div>
-                  <span className="text-sm text-gray-300">{selectedSubcategory}</span>
-                </div>
-              </div>
-            </div>
+      {/* Image */}
+      <div className="flex justify-center items-center w-full max-h-[80vh] overflow-hidden">
+        <img
+          src={selectedImage.url}
+          alt={selectedImage.caption}
+          loading="lazy"
+          className="max-w-full max-h-[80vh] object-contain transition-transform duration-500 rounded-xl pointer-events-none"
+        />
+      </div>
+
+      {/* Caption Section */}
+      <div className="mt-4 bg-black/70 backdrop-blur-sm text-white px-6 py-4 rounded-xl max-w-xl w-full text-center shadow-md">
+        <p className="font-semibold text-lg">{selectedImage.caption}</p>
+        <div className="flex items-center justify-center gap-4 mt-2 text-sm text-gray-300">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+            <span>
+              {currentImageIndex + 1} of {currentImages.length}
+            </span>
           </div>
-        )}
+          <div className="w-px h-4 bg-gray-600"></div>
+          <span>{selectedSubcategory}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+
       </section>
     );
   }
 
   // Category View (Labs Grid)
     
-  
+  if (currentView === 'category') {
+  return (
+    <section className="py-0 bg-white min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 pt-8">
+          <h2 className="text-5xl font-bold text-gray-900 mb-4">
+            {selectedCategory}
+          </h2>
+          <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Select a lab to explore its resources
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {currentCategoryData?.subcategories?.map((sub, index) => (
+            <div
+              key={index}
+              onClick={() => navigateToSubcategory(sub.name)}
+              className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+            >
+              <div className="aspect-w-16 aspect-h-12">
+                <img
+                  src={sub.images?.[0]?.url || '/api/placeholder/400/300'}
+                  alt={sub.name}
+                  loading="lazy"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent transition-all duration-300 flex items-end">
+                <h3 className="text-white font-bold text-lg p-4">{sub.name}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={goBackToCarousel}
+            className="mb-6 px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full font-semibold transition-all duration-300"
+          >
+            Back to Gallery
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
   // Main Carousel View
   return (
@@ -279,17 +350,19 @@ const navigate = useNavigate();
         <div className="relative mb-16">
           {/* Navigation Arrows */}
           <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
-          >
-            <ChevronRight className="h-6 w-6" />
-          </button>
+  onClick={prevSlide}
+  className="absolute -left-16 top-1/2 transform -translate-y-1/2 z-20 bg-yellow-400 hover:bg-yellow-500 text-gray-700 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+>
+  <ChevronLeft className="h-6 w-6" />
+</button>
+
+<button
+  onClick={nextSlide}
+  className="absolute -right-16 top-1/2 transform -translate-y-1/2 z-20 bg-yellow-400 hover:bg-yellow-500 text-gray-700 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+>
+  <ChevronRight className="h-6 w-6" />
+</button>
+
 
           {/* Carousel */}
           <div 
@@ -312,6 +385,7 @@ const navigate = useNavigate();
                       <img 
                         src={previewImage} 
                         alt={category.name}
+                        loading="lazy"
                         className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
@@ -366,6 +440,7 @@ const navigate = useNavigate();
                   <img 
                     src={previewImage} 
                     alt={category.name}
+                    loading="lazy"
                     className="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
