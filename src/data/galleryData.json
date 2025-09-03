@@ -70,7 +70,7 @@
           "name": "Student Hostel",
           "images": [
             {
-              "url": "/hostel.png",
+              "url": "/hostel.webp",
               "caption": "Hostel Building"
             },
             {
@@ -96,15 +96,15 @@
           "name": "Computer Science Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/cs1.JPG",
+              "url": "GalleryImages/Labs/cs1.webp",
               "caption": "Computer Science Lab Overview"
             },
             {
-              "url": "public/GalleryImages/Labs/cs2.JPG",
+              "url": "/GalleryImages/Labs/cs2.webp",
               "caption": "Programming Workstations"
             },
             {
-              "url": "public/GalleryImages/Labs/cs3.JPG",
+              "url": "/GalleryImages/Labs/cs3.webp",
               "caption": "Advanced Computing Setup"
             }
           ]
@@ -113,15 +113,15 @@
           "name": "RDBMS Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/rdbms1.JPG",
+              "url": "/GalleryImages/Labs/rdbms1.webp",
               "caption": "Database Management Lab"
             },
             {
-              "url": "public/GalleryImages/Labs/rdbms2.JPG",
+              "url": "/GalleryImages/Labs/rdbms2.webp",
               "caption": "Server Room"
             },
             {
-              "url": "public/GalleryImages/Labs/rdbms3.JPG",
+              "url": "/GalleryImages/Labs/rdbms3.webp",
               "caption": "Database Workstations"
             }
           ]
@@ -130,15 +130,15 @@
           "name": "Network Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/net1.JPG",
+              "url": "/GalleryImages/Labs/net1.webp",
               "caption": "Network Infrastructure Lab"
             },
             {
-              "url": "public/GalleryImages/Labs/net2.JPG",
+              "url": "/GalleryImages/Labs/net2.webp",
               "caption": "Cisco Equipment"
             },
             {
-              "url": "public/GalleryImages/Labs/net3.JPG",
+              "url": "/GalleryImages/Labs/net3.webp",
               "caption": "Network Testing Setup"
             }
           ]
@@ -147,19 +147,19 @@
           "name": "Operating System Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/os1.JPG",
+              "url": "/GalleryImages/Labs/os1.webp",
               "caption": "OS Lab Overview"
             },
             {
               "url": "/oslab.jpg",
-              "caption": "public/GalleryImages/Labs/cs1.JPG"
+              "caption": "/GalleryImages/Labs/cs1.webp"
             },
             {
-              "url": "public/GalleryImages/Labs/rdbms1.JPG",
+              "url": "/GalleryImages/Labs/rdbms1.webp",
               "caption": "Virtual Machine Environment"
             },
             {
-              "url": "public/GalleryImages/Labs/net1.JPG",
+              "url": "/GalleryImages/Labs/net1.webp",
               "caption": "Linux Workstations"
             }
           ]
@@ -231,11 +231,11 @@
           "name": "Communication Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/comm1.JPG",
+              "url": "/GalleryImages/Labs/comm1.webp",
               "caption": "Communication Systems Lab"
             },
             {
-              "url": "public/GalleryImages/Labs/comm2.JPG",
+              "url": "/GalleryImages/Labs/comm2.webp",
               "caption": "Signal Processing Equipment"
             },
             {
@@ -243,7 +243,7 @@
               "caption": "Antenna Testing Setup"
             },
             {
-              "url": "public/GalleryImages/Labs/comm1.JPG",
+              "url": "/GalleryImages/Labs/comm1.webp",
               "caption": "RF Measurement Tools"
             }
           ]
@@ -252,19 +252,19 @@
           "name": "Aircraft System Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/air1.JPG",
+              "url": "/GalleryImages/Labs/air1.webp",
               "caption": "Aircraft Systems Laboratory"
             },
             {
-              "url": "public/GalleryImages/Labs/air2.JPG",
+              "url": "/GalleryImages/Labs/air2.webp",
               "caption": "Avionics Equipment"
             },
             {
-              "url": "public/GalleryImages/Labs/air3.JPG",
+              "url": "/GalleryImages/Labs/air3.webp",
               "caption": "Flight Simulation Setup"
             },
             {
-              "url": "public/GalleryImages/Labs/air4.JPG",
+              "url": "/GalleryImages/Labs/air4.webp",
               "caption": "Navigation Systems"
             }
           ]
@@ -294,15 +294,15 @@
           "name": "Aerodynamics Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/aero1.JPG",
+              "url": "/GalleryImages/Labs/aero1.webp",
               "caption": "Aerodynamics Laboratory"
             },
             {
-              "url": "public/GalleryImages/Labs/aero2.JPG",
+              "url": "/GalleryImages/Labs/aero2.webp",
               "caption": "Wind Tunnel Facility"
             },
             {
-              "url": "public/GalleryImages/Labs/aero3.JPG",
+              "url": "/GalleryImages/Labs/aero3.webp",
               "caption": "Flow Visualization Setup"
             },
             {
@@ -315,15 +315,15 @@
           "name": "Propulsion Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/propul1.JPG",
+              "url": "/GalleryImages/Labs/propul1.webp",
               "caption": "Propulsion Systems Lab"
             },
             {
-              "url": "public/GalleryImages/Labs/propul2.JPG",
+              "url": "/GalleryImages/Labs/propul2.webp",
               "caption": "Engine Testing Facility"
             },
             {
-              "url": "public/GalleryImages/Labs/propul3.JPG",
+              "url": "/GalleryImages/Labs/propul3.webp",
               "caption": "Turbine Components"
             },
             {
@@ -357,11 +357,11 @@
           "name": "Automotive Components Lab",
           "images": [
             {
-              "url": "public/GalleryImages/Labs/auto1.JPG",
+              "url": "/GalleryImages/Labs/auto1.webp",
               "caption": "Automotive Lab Overview"
             },
             {
-              "url": "public/GalleryImages/Labs/auto2.JPG",
+              "url": "/GalleryImages/Labs/auto2.webp",
               "caption": "Engine Components"
             },
             {
