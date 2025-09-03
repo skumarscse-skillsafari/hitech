@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Search, ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { Search, ChevronLeft, ChevronRight, ArrowRight, ArrowUp, ArrowDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface CategoryOption {
@@ -31,6 +31,10 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState(selectedCategoryKey);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [sortConfig, setSortConfig] = useState<{
+    key: string;
+    direction: 'ascending' | 'descending';
+  } | null>(null);
 
   const itemsPerPage = 10;
 
@@ -61,19 +65,51 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
     return new Date(year, month - 1, day);
   };
 
-  const filteredData = data
+  const handleSort = (key: string) => {
+    let direction: 'ascending' | 'descending' = 'ascending';
+    
+    if (sortConfig && sortConfig.key === key) {
+      direction = sortConfig.direction === 'ascending' ? 'descending' : 'ascending';
+    }
+    
+    setSortConfig({ key, direction });
+  };
+
+  const sortedData = React.useMemo(() => {
+    let sortableItems = [...data];
+    
+    if (sortConfig !== null) {
+      sortableItems.sort((a, b) => {
+        // Check if the column is a date column
+        const isDateColumn = sortConfig.key.toLowerCase().includes('date');
+        
+        let aValue = a[sortConfig.key];
+        let bValue = b[sortConfig.key];
+        
+        if (isDateColumn) {
+          aValue = parseDate(aValue);
+          bValue = parseDate(bValue);
+        }
+        
+        if (aValue < bValue) {
+          return sortConfig.direction === 'ascending' ? -1 : 1;
+        }
+        if (aValue > bValue) {
+          return sortConfig.direction === 'ascending' ? 1 : -1;
+        }
+        return 0;
+      });
+    }
+    
+    return sortableItems;
+  }, [data, sortConfig]);
+
+  const filteredData = sortedData
     .filter((item) =>
       Object.values(item).some((val) =>
         val?.toString().toLowerCase().includes(searchTerm.toLowerCase())
       )
-    )
-    .sort((a, b) => {
-      const dateCol = Object.keys(a).find((col) =>
-        col.toLowerCase().includes('date')
-      );
-      if (!dateCol) return 0;
-      return parseDate(b[dateCol]) - parseDate(a[dateCol]); // descending
-    });
+    );
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const paginatedData = filteredData.slice(
@@ -204,9 +240,26 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                         ${getColumnWidth(col)} 
                         ${isMobile ? 'text-xs' : ''} 
                         ${idx === 0 ? 'rounded-tl-2xl' : ''} 
-                        ${idx === columns.length - 1 ? 'rounded-tr-2xl' : ''}`}
+                        ${idx === columns.length - 1 ? 'rounded-tr-2xl' : ''}
+                        ${col.toLowerCase().includes('date') ? 'cursor-pointer hover:bg-amber-600' : ''}`}
+                      onClick={() => col.toLowerCase().includes('date') && handleSort(col)}
                     >
-                      {col.replace(/([A-Z])/g, ' $1')}
+                      <div className="flex items-center justify-center">
+                        {col.replace(/([A-Z])/g, ' $1')}
+                        {col.toLowerCase().includes('date') && (
+                          <span className="ml-1">
+                            {sortConfig && sortConfig.key === col ? (
+                              sortConfig.direction === 'ascending' ? (
+                                <ArrowUp size={14} />
+                              ) : (
+                                <ArrowDown size={14} />
+                              )
+                            ) : (
+                              <ArrowUp size={14} className="opacity-50" />
+                            )}
+                          </span>
+                        )}
+                      </div>
                     </th>
                   ))}
                 </tr>
