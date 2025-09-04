@@ -369,7 +369,7 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
       <div className="text-center pt-6 sm:pt-8 pb-6 sm:pb-8">
         <Link to="/department/cse">
           <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 mx-auto shadow-lg text-sm sm:text-base">
-            <span>Learn More About CSE</span>
+            <span>Learn More About CSE</span>5
             <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
           </button>
         </Link>
