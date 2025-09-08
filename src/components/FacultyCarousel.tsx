@@ -86,14 +86,14 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
             <button
               onClick={() => sliderRef.current?.slickPrev()}
               aria-label="Previous"
-              className="w-9 h-9 rounded-full bg-gray-100 hover:bg-yellow-200 flex items-center justify-center"
+              className="w-9 h-9 rounded-full bg-gray-100 hover:bg-yellow-500 flex items-center justify-center"
             >
               <ChevronLeft className="h-5 w-5 text-gray-600" />
             </button>
             <button
               onClick={() => sliderRef.current?.slickNext()}
               aria-label="Next"
-              className="w-9 h-9 rounded-full bg-gray-100 hover:bg-yellow-200 flex items-center justify-center"
+              className="w-9 h-9 rounded-full bg-gray-100 hover:bg-yellow-500 flex items-center justify-center"
             >
               <ChevronRight className="h-5 w-5 text-gray-600" />
             </button>

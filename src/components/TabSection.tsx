@@ -67,17 +67,25 @@ const TabsSection: React.FC = () => {
   }, []);
 
   const activeTabData = tabs.find(tab => tab.id === activeTab);
+  // ✅ Dynamically set slidesToShow based on item count
+  const getSlidesToShow = () => {
+    if (!activeTabData) return 1;
+    const count = activeTabData.content.items.length;
+    if (count >= 4) return 4;
+    return count;
+  };
 
   const sliderSettings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: getSlidesToShow(),
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
     responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
       { breakpoint: 640, settings: { slidesToShow: 1 } }
     ]
   };
@@ -215,16 +223,16 @@ const TabsSection: React.FC = () => {
                 </div>
               </div>
             ) : (
-              <div className="overflow-visible">
+              <div className="overflow-visible pb-8">
                 <Slider {...sliderSettings}>
                   {activeTabData.content.items.map((item: any, index: number) => (
-                    <div key={index} className="px-2 sm:px-4">
-                      <div className="bg-white p-4 sm:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[0.93] hover:z-10 hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between relative">
+                    <div key={index} className="px-2 sm:px-3 lg:px-4 h-full flex mb-6">
+                     <div className="bg-white p-4 sm:p-6 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[0.93] hover:z-10 hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between relative min-h-[420px]">
                         <div>
-                          <h4 className="font-semibold text-lg sm:text-2xl text-yellow-600 mb-4">
+                          <h4 className="font-semibold text-lg sm:text-2xl text-yellow-600 mb-4 break-words">
                             {item.title}
                           </h4>
-                          <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6">
+                          <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6 break-words">
                             {item.description}
                           </p>
                           {item.logo && (
@@ -242,9 +250,10 @@ const TabsSection: React.FC = () => {
                               return (
                                 <div key={key} className="flex justify-between gap-4">
                                   <span className="capitalize font-medium text-yellow-600">{key}:</span>
-                                  <span className="text-right text-gray-800 flex-1">
-                                    {Array.isArray(value) ? value.join(', ') : String(value)}
+                                  <span className="text-right text-gray-800 flex-1 break-words whitespace-normal">
+                                  {Array.isArray(value) ? value.join(', ') : String(value)}
                                   </span>
+
                                 </div>
                               );
                             })}
