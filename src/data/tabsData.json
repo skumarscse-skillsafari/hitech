@@ -58,6 +58,102 @@
         ]
       }
     },
+     {
+      "id": "obe",
+      "name": "OBE Practices",
+      "icon": "ClipboardList",
+      "content": {
+        "title": "Outcome Based Education",
+        "items": [
+          {
+            "title": "Program Educational Objectives (PEOs)",
+            "description": "To prepare graduates who will be successful professionals in industry, government, academia, research, entrepreneurial pursuit, and consulting firms.",
+            "peo1": "Technical Competence",
+            "peo2": "Professional Skills",
+            "peo3": "Lifelong Learning"
+          },
+          {
+            "title": "Program Outcomes (POs)",
+            "description": "Engineering Graduates will be able to:",
+            "po1": "Engineering knowledge",
+            "po2": "Problem analysis",
+            "po3": "Design/development of solutions",
+            "po12": "Life‑long learning"
+          },
+          {
+            "title": "Program Specific Outcomes (PSOs)",
+            "description": "Computer Science and Engineering graduates will be able to:",
+            "pso1": "Develop software solutions for real‑world problems",
+            "pso2": "Apply computing knowledge to emerging technologies",
+            "pso3": "Adapt to new tools and technologies in computing"
+          }
+        ]
+      }
+    },
+      {
+      "id": "curriculum_syllabus",
+      "name": "Curriculum & Syllabus",
+      "icon": "FileText",
+      "content": {
+        "title": "Curriculum & Syllabus Details",
+        "items": [
+          {
+            "title": "Undergraduate Program",
+            "description": "B.Tech in Computer Science and Engineering - 4 Year Program",
+            "credits": "160 Credits",
+            "semesters": "8 Semesters",
+            "focus": "Core CS subjects with electives",
+            "syllabusLink": "Download Syllabus PDF"
+          },
+          {
+            "title": "Postgraduate Program",
+            "description": "M.Tech in Computer Science and Engineering - 2 Year Program",
+            "credits": "80 Credits",
+            "semesters": "4 Semesters",
+            "specializations": "AI, Data Science, Cyber Security",
+            "syllabusLink": "Download Syllabus PDF"
+          },
+          {
+            "title": "Elective Courses",
+            "description": "Wide range of elective courses offered",
+            "areas": "AI/ML, Cloud Computing, IoT, Blockchain, Cybersecurity",
+            "options": "30+ elective courses available",
+            "syllabusLink": "Download Electives PDF"
+          }
+        ]
+      }
+    },
+    {
+  "id": "academic_calendar",
+  "name": "Academic Calendar",
+  "icon": "Calendar",
+  "content": {
+    "title": "Academic Calendar Events",
+    "items": [
+      {
+        "title": "Semester I Commencement",
+        "date": "2025-07-15",
+        "description": "Start of classes for Semester I."
+      },
+      {
+        "title": "Mid-Semester Examinations",
+        "date": "2025-09-20",
+        "description": "Scheduled internal assessments for all departments."
+      },
+      {
+        "title": "Cultural Fest",
+        "date": "2025-11-05",
+        "description": "Annual cultural festival with student competitions and events."
+      },
+      {
+        "title": "End Semester Examinations",
+        "date": "2025-12-10",
+        "description": "Final exams for all undergraduate and postgraduate courses."
+      }
+    ]
+  }
+},
+
     {
       "id": "research",
       "name": "Research & Development",
@@ -100,7 +196,37 @@
         ]
       }
     },
-    
+     {
+      "id": "faculty_achievements",
+      "name": "Faculty Achievements",
+      "icon": "Award",
+      "content": {
+        "title": "Faculty Accomplishments",
+        "items": [
+          {
+            "title": "Best Researcher Award",
+            "description": "Recognized for outstanding contributions in AI research.",
+            "year": "2024",
+            "awardedBy": "National Science Foundation",
+            "area": "Artificial Intelligence"
+          },
+          {
+            "title": "Patent Granted",
+            "description": "Patent for innovative algorithm in image processing.",
+            "year": "2023",
+            "patentNumber": "IN345678",
+            "field": "Computer Vision"
+          },
+          {
+            "title": "Book Publication",
+            "description": "Published textbook on Advanced Machine Learning adopted by universities.",
+            "year": "2024",
+            "publisher": "Springer",
+            "subject": "Machine Learning"
+          }
+        ]
+      }
+    },
 
     {
       "id": "student_achievements",
@@ -134,39 +260,43 @@
       }
     },
     {
-      "id": "faculty_achievements",
-      "name": "Faculty Achievements",
-      "icon": "Award",
+      "id": "notable",
+      "name": "Notable Projects",
+      "icon": "BookOpen",
       "content": {
-        "title": "Faculty Accomplishments",
+        "title": "Showcasing Notable Projects",
         "items": [
           {
-            "title": "Best Researcher Award",
-            "description": "Recognized for outstanding contributions in AI research.",
-            "year": "2024",
-            "awardedBy": "National Science Foundation",
-            "area": "Artificial Intelligence"
+            "title": "Integrated Healthcare Solution For Mothers And Newborns",
+            "domain": "Artificial Intelligence",
+            "guide": "Mr Uthayakumar J, AP/CSE",
+            "students": "Jeevananthan R, Mohamed ,Jiyath A, Naveen, Rsarveshwaran L"
           },
           {
-            "title": "Patent Granted",
-            "description": "Patent for innovative algorithm in image processing.",
-            "year": "2023",
-            "patentNumber": "IN345678",
-            "field": "Computer Vision"
+            "title": "SingleWindow Platform To Streamline Approvals And Empower Entrepreneurial Success",
+            "domain": "Information/Communication Technology",
+            "guide": "Mr.Devendran , AP/CSE",
+            "students": "Harish Keerthi V, Harish S, Hari Haran S, Mahalingeshvara, Nathan Nl"
           },
           {
-            "title": "Book Publication",
-            "description": "Published textbook on Advanced Machine Learning adopted by universities.",
-            "year": "2024",
-            "publisher": "Springer",
-            "subject": "Machine Learning"
+            "title": "Field Visit Tracker: GeoTagged Inspections With Digital Signatures And Authentication",
+            "domain": "Information/Communication Technology",
+            "guide": "Dr.R.T.Subhalakshmi",
+            "students": "Thiru Kumaran Rp, Sriram B, Uday Ram S, Sunil Kumar D"
+          },
+          {
+            "title": "AI-Enhanced Iot Based Waste Management System For Real‑Time Drainage Maintenance And Monitoring",
+            "domain": "Solid waste / Bio‑waste /E‑waste",
+            "guide": "Mr.K. Murugan",
+            "students": "Kamaleshwari, R Akshaya E, Kaviyasri J"
           }
         ]
       }
     },
+   
     {
       "id": "internships",
-      "name": "Internship ",
+      "name": "Notable Internship ",
       "icon": "Briefcase",
       "content": {
         "title": "Leading Internship Opportunities",
@@ -254,71 +384,7 @@
         ]
       }
     },
-    {
-      "id": "obe",
-      "name": "OBE Practices",
-      "icon": "ClipboardList",
-      "content": {
-        "title": "Outcome Based Education",
-        "items": [
-          {
-            "title": "Program Educational Objectives (PEOs)",
-            "description": "To prepare graduates who will be successful professionals in industry, government, academia, research, entrepreneurial pursuit, and consulting firms.",
-            "peo1": "Technical Competence",
-            "peo2": "Professional Skills",
-            "peo3": "Lifelong Learning"
-          },
-          {
-            "title": "Program Outcomes (POs)",
-            "description": "Engineering Graduates will be able to:",
-            "po1": "Engineering knowledge",
-            "po2": "Problem analysis",
-            "po3": "Design/development of solutions",
-            "po12": "Life‑long learning"
-          },
-          {
-            "title": "Program Specific Outcomes (PSOs)",
-            "description": "Computer Science and Engineering graduates will be able to:",
-            "pso1": "Develop software solutions for real‑world problems",
-            "pso2": "Apply computing knowledge to emerging technologies",
-            "pso3": "Adapt to new tools and technologies in computing"
-          }
-        ]
-      }
-    },
-    {
-      "id": "curriculum-syllabus",
-      "name": "Curriculum & Syllabus",
-      "icon": "FileText",
-      "content": {
-        "title": "Curriculum & Syllabus Details",
-        "items": [
-          {
-            "title": "Undergraduate Program",
-            "description": "B.Tech in Computer Science and Engineering - 4 Year Program",
-            "credits": "160 Credits",
-            "semesters": "8 Semesters",
-            "focus": "Core CS subjects with electives",
-            "syllabusLink": "Download Syllabus PDF"
-          },
-          {
-            "title": "Postgraduate Program",
-            "description": "M.Tech in Computer Science and Engineering - 2 Year Program",
-            "credits": "80 Credits",
-            "semesters": "4 Semesters",
-            "specializations": "AI, Data Science, Cyber Security",
-            "syllabusLink": "Download Syllabus PDF"
-          },
-          {
-            "title": "Elective Courses",
-            "description": "Wide range of elective courses offered",
-            "areas": "AI/ML, Cloud Computing, IoT, Blockchain, Cybersecurity",
-            "options": "30+ elective courses available",
-            "syllabusLink": "Download Electives PDF"
-          }
-        ]
-      }
-    },
+    
     {
       "id": "facilities",
       "name": "Advanced Facilities",
@@ -348,7 +414,89 @@
       }
     },
     {
-      "id": "international",
+      "id": "professional",
+      "name": "Professional Society",
+      "icon": "Users",
+      "content": {
+        "title": "Professional Society Memberships",
+        "items": [
+          {
+            "title": "IEEE",
+            "description": "Institute of Electrical and Electronics Engineers",
+            "logo": "IEEE"
+          },
+          {
+            "title": "ICT Academy",
+            "description": "ICT Academy membership supporting faculty and students.",
+            "logo": "ict"
+          },
+          {
+            "title": "Computer Society of India",
+            "description": "Promotes IT professionals and student involvement.",
+            "logo": "csi"
+          }
+        ]
+      }
+    },
+    
+    {
+  "id": "sdgs",
+  "name": "SDG Initiatives",
+  "icon": "Globe",
+  "content": {
+    "title": "Our Contribution to SDGs",
+    "items": [
+      {
+        "goal": "SDG 4",
+        "title": "Quality Education",
+        "description": "Implemented inclusive teaching methodologies and scholarship programs.",
+        "year": "2024",
+        "initiatives": ["Digital Classrooms", "Faculty Training Programs"]
+      },
+      {
+        "goal": "SDG 7",
+        "title": "Affordable and Clean Energy",
+        "description": "Installed solar panels on campus reducing 30% energy dependency.",
+        "year": "2023",
+        "initiatives": ["Green Campus Initiative", "Energy Audits"]
+      },
+      {
+        "goal": "SDG 13",
+        "title": "Climate Action",
+        "description": "Organized plantation drives and sustainability awareness campaigns.",
+        "year": "2024",
+        "initiatives": ["Tree Plantation", "Waste Management Program"]
+      }
+    ]
+  }
+},
+ {
+      "id": "collaborations",
+      "name": "Powered by Industries",
+      "icon": "Briefcase",
+      "content": {
+        "title": "Collaboration & MoU Partners",
+        "items": [
+          { "title": "IBM", "description": "Curriculum integration and delivery in AI & Data Sciences.", "logo": "ibm" },
+          { "title": "Google", "description": "Academic partner with tools and resources for digital skills.", "logo": "google" },
+          { "title": "Oracle Academy", "description": "Membership providing resources to develop computing skills.", "logo": "oracle" },
+          { "title": "Zoho", "description": "Partner for training and internships in application development.", "logo": "zoho" },
+          { "title": "Red Hat", "description": "Alliance for Linux, cloud, and development technologies.", "logo": "redhat" },
+          { "title": "Dell EMC", "description": "Center of excellence in Data Science and Big Data Analytics.", "logo": "dell" },
+          { "title": "VMware", "description": "Center of excellence in cloud infrastructure services.", "logo": "vmware" },
+          { "title": "CSS Corp", "description": "Skills training and soft skills development.", "logo": "csscorp" },
+          { "title": "Salesforce", "description": "Partner for CRM using AI and app development.", "logo": "salesforce" },
+          { "title": "NASSCOM", "description": "Supports India as a global hub for emerging technologies.", "logo": "nasscom" },
+          { "title": "UiPath", "description": "Center of Excellence in Robotic Process Automation.", "logo": "uipath" },
+          { "title": "Celonis", "description": "Center of Excellence in Process Mining and Execution.", "logo": "celonis" },
+          { "title": "Infosys Springboard", "description": "Training and reskilling in technology.", "logo": "infosys" }
+        ]
+      }
+    },
+    
+  
+    {
+      "id": "global_connections",
       "name": "Global Connections",
       "icon": "Globe",
       "content": {
@@ -375,88 +523,8 @@
         ]
       }
     },
-    {
-      "id": "professional",
-      "name": "Professional Society",
-      "icon": "Users",
-      "content": {
-        "title": "Professional Society Memberships",
-        "items": [
-          {
-            "title": "IEEE",
-            "description": "Institute of Electrical and Electronics Engineers",
-            "logo": "IEEE"
-          },
-          {
-            "title": "ICT Academy",
-            "description": "ICT Academy membership supporting faculty and students.",
-            "logo": "ict"
-          },
-          {
-            "title": "Computer Society of India",
-            "description": "Promotes IT professionals and student involvement.",
-            "logo": "csi"
-          }
-        ]
-      }
-    },
-    {
-      "id": "collaborations",
-      "name": "Powered by Industries",
-      "icon": "Briefcase",
-      "content": {
-        "title": "Collaboration & MoU Partners",
-        "items": [
-          { "title": "IBM", "description": "Curriculum integration and delivery in AI & Data Sciences.", "logo": "ibm" },
-          { "title": "Google", "description": "Academic partner with tools and resources for digital skills.", "logo": "google" },
-          { "title": "Oracle Academy", "description": "Membership providing resources to develop computing skills.", "logo": "oracle" },
-          { "title": "Zoho", "description": "Partner for training and internships in application development.", "logo": "zoho" },
-          { "title": "Red Hat", "description": "Alliance for Linux, cloud, and development technologies.", "logo": "redhat" },
-          { "title": "Dell EMC", "description": "Center of excellence in Data Science and Big Data Analytics.", "logo": "dell" },
-          { "title": "VMware", "description": "Center of excellence in cloud infrastructure services.", "logo": "vmware" },
-          { "title": "CSS Corp", "description": "Skills training and soft skills development.", "logo": "csscorp" },
-          { "title": "Salesforce", "description": "Partner for CRM using AI and app development.", "logo": "salesforce" },
-          { "title": "NASSCOM", "description": "Supports India as a global hub for emerging technologies.", "logo": "nasscom" },
-          { "title": "UiPath", "description": "Center of Excellence in Robotic Process Automation.", "logo": "uipath" },
-          { "title": "Celonis", "description": "Center of Excellence in Process Mining and Execution.", "logo": "celonis" },
-          { "title": "Infosys Springboard", "description": "Training and reskilling in technology.", "logo": "infosys" }
-        ]
-      }
-    },
-    {
-      "id": "notable",
-      "name": "Notable Projects",
-      "icon": "BookOpen",
-      "content": {
-        "title": "Showcasing Notable Projects",
-        "items": [
-          {
-            "title": "Integrated Healthcare Solution For Mothers And Newborns",
-            "domain": "Artificial Intelligence",
-            "guide": "Mr Uthayakumar J, AP/CSE",
-            "students": "Jeevananthan R, Mohamed ,Jiyath A, Naveen, Rsarveshwaran L"
-          },
-          {
-            "title": "SingleWindow Platform To Streamline Approvals And Empower Entrepreneurial Success",
-            "domain": "Information/Communication Technology",
-            "guide": "Mr.Devendran , AP/CSE",
-            "students": "Harish Keerthi V, Harish S, Hari Haran S, Mahalingeshvara, Nathan Nl"
-          },
-          {
-            "title": "Field Visit Tracker: GeoTagged Inspections With Digital Signatures And Authentication",
-            "domain": "Information/Communication Technology",
-            "guide": "Dr.R.T.Subhalakshmi",
-            "students": "Thiru Kumaran Rp, Sriram B, Uday Ram S, Sunil Kumar D"
-          },
-          {
-            "title": "AI-Enhanced Iot Based Waste Management System For Real‑Time Drainage Maintenance And Monitoring",
-            "domain": "Solid waste / Bio‑waste /E‑waste",
-            "guide": "Mr.K. Murugan",
-            "students": "Kamaleshwari, R Akshaya E, Kaviyasri J"
-          }
-        ]
-      }
-    },
+    
+   
     {
       "id": "alumni",
       "name": "Alumni Network",
