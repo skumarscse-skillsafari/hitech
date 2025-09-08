@@ -52,4 +52,4 @@ const DepartmentCard: React.FC<DepartmentCardProps> = ({ department }) => {
   );
 };
 
-export default DepartmentCard;
+export default DepartmentCard; 
