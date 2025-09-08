@@ -2,14 +2,20 @@
 {
   "departments": [
     {
-      "id": "cse",
-      "name": "Computer Science & Engineering",
-      "shortName": "CSE",
-      "description": "We empower future innovators through industry-aligned programs in AI, ML, Data Science, and Software Engineering. By integrating theoretical foundations with hands-on learning and real-world projects, we equip learners with the practical expertise, problem-solving skills, and confidence needed to shape and lead the digital future.",
-      "icon": "Monitor",
-      "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "vision": "To be a leading department in computer science education and research, producing innovative engineers who drive technological advancement.",
-      "mission": "To provide comprehensive education in computer science, foster research and innovation, and develop ethical professionals for the global technology industry.",
+      
+  "id": "cse",
+  "name": "Computer Science & Engineering",
+  "shortName": "CSE",
+  "description": "We empower future innovators through industry-aligned programs in AI, ML, Data Science, and Software Engineering. By integrating theoretical foundations with hands-on learning and real-world projects, we equip learners with the practical expertise, problem-solving skills, and confidence needed to shape and lead the digital future.",
+  "icon": "Monitor",
+  "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "vision": "To nurture competent Computer Science Engineers who possess the ability to contribute to global projects and collaborations with an emphasis on fostering innovation, research, and development through the pursuit of academic excellence and high standards of teaching and research focusing on ethical conduct and social responsibility, integrating sustainability principles and instill a passion lifelong learning.",
+  "mission": [
+    "MD1: To deliver Academic Excellence through the implementation of outcome-based education, extensive research, and the adoption of innovative practices.",
+    "MD2: To provide best practical experience through Interdisciplinary Approach, Industrial Collaborations and State-of-the-Art Facilities.",
+    "MD3: To produce socially responsible engineering graduates by providing them with value-based education and fostering their continuous professional development."
+  ],
+
       "programs": [
         {
           "name": "B.E Computer Science & Engineering",
@@ -45,13 +51,18 @@
       "peos": [
         {
           "id": "PEO1",
-          "title": "Professional Excellence",
-          "description": "Graduates will establish themselves as competent computer science professionals, demonstrating technical expertise, leadership skills, and ethical practices in their chosen careers."
+          "title": "",
+          "description": "Graduates will demonstrate proficiency in core computer science concepts, theories, and principles to analyze, design, and develop innovative solutions to complex engineering problems to succeed in diverse computing industry sectors adapting to emerging technological trends."
         },
         {
           "id": "PEO2",
-          "title": "Innovation and Research",
-          "description": "Graduates will engage in continuous learning, research, and innovation to contribute to technological advancement and societal development."
+          "title": "",
+          "description": "Graduates will uphold high ethical standards and demonstrate social responsibility in their engineering practice, function effectively in multidisciplinary teams to collaborate and achieve common goals and engage in continuous learning and professional development."
+        },
+        {
+          "id": "PEO3",
+          "title": "",
+          "description": "Graduates will exhibit an entrepreneurial mindset, actively pursuing opportunities to develop innovative computer science solutions, services, and products as well as effectively lead and manage projects in the field."
         }
       ],
       "pos": [
@@ -87,28 +98,28 @@
         },
         {
           "id": "PO7",
-          "title": "ENVIRONMENT & SUSTAINABILITY",
-          "description": "Ability to assess the impact of engineering practices on societal and environmental sustainability."
+          "title": "ETHICS",
+          "description": " Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws."
         },
         {
           "id": "PO8",
-          "title": "ETHICS",
-          "description": "Apply ethical principles and uphold professional, ethical, security, social issues and responsibilities."
+          "title": "INDIVIDUAL AND COLLABORATIVE TEAM WORK",
+          "description": " Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams."
         },
         {
           "id": "PO9",
-          "title": "INDIVIDUAL AND COLLABORATIVE TEAM WORK",
-          "description": "Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams."
+          "title": "COMMUNICATION",
+          "description": " Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences."
         },
         {
           "id": "PO10",
-          "title": "COMMUNICATION",
-          "description": "Communicate effectively and inclusively within the engineering community and with society at large such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences."
+          "title": "PROJECT MANAGEMENT AND FINANCE",
+          "description": "Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments."
         },
         {
           "id": "PO11",
-          "title": "PROJECT MANAGEMENT AND FINANCE",
-          "description": "Apply knowledge and understanding of engineering and management principles to one’s own work, as a member and leader in a team, and to manage projects in multidisciplinary environments."
+          "title": "LIFE LONG LEARNING:",
+          "description": " Recognize the need for, and have the preparation and ability for i) Independent and life-long learning ii) adaptability to new and emerging technologies and iii)critical thinking in the broadest context of technological change. "
         }
       ],
       
