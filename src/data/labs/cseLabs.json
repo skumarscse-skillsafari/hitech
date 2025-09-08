@@ -2,9 +2,9 @@
   "name": "Laboratories",
   "subcategories": [
     {
-      "name": "Computer Science Lab",
+      "name": "Web Programming Lab",
       "images": [
-        { "url": "/GalleryImages/Labs/cs1.webp", "caption": "Computer Science Lab Overview" },
+        { "url": "/GalleryImages/Labs/cs1.webp", "caption": "Web Programming Lab Overview" },
         { "url": "/GalleryImages/Labs/cs2.webp", "caption": "Programming Workstations" },
         { "url": "/GalleryImages/Labs/cs3.webp", "caption": "Advanced Computing Setup" }
       ]
@@ -20,7 +20,7 @@
     {
       "name": "Network Lab",
       "images": [
-        { "url": "/GalleryImages/Labs/net1.webp", "caption": "Network Infrastructure Lab" },
+        { "url": "/GalleryImages/Labs/net1.webp", "caption": "Network Lab" },
         { "url": "/GalleryImages/Labs/net2.webp", "caption": "Cisco Equipment" },
         { "url": "/GalleryImages/Labs/net3.webp", "caption": "Network Testing Setup" }
       ]
