@@ -294,7 +294,7 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
           </div>
         </div>
 
-        {/* Pagination */}
+       
         <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row justify-between items-center gap-3 rounded-b-3xl">
           <div className="text-xs sm:text-sm text-gray-700">
             Showing{' '}
@@ -364,8 +364,7 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
           </div>
         </div>
       </div>
-
-      {/* CTA Button OUTSIDE table box */}
+      
       <div className="text-center pt-6 sm:pt-8 pb-6 sm:pb-8">
         <Link to="/department/cse">
           <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 mx-auto shadow-lg text-sm sm:text-base">
