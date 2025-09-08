@@ -230,7 +230,7 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
         {/* Table */}
         <div className={`px-2 sm:px-4 md:px-6 pb-6 ${isDesktop ? 'w-full' : 'overflow-x-auto'}`}>
           <div className={`${isDesktop ? 'w-full' : 'inline-block min-w-full'} rounded-2xl border border-gray-200`}>
-            <table className={`w-full table-fixed border-collapse text-sm md:text-base ${isDesktop ? 'min-w-full' : 'min-w-[800px]'}`}>
+            <table className={`w-full table-fixed border-collapsed text-sm md:text-base ${isDesktop ? 'min-w-full' : 'min-w-[800px]'}`}>
               <thead>
                 <tr className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 text-white">
                   {columns.map((col, idx) => (
@@ -368,7 +368,7 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
       <div className="text-center pt-6 sm:pt-8 pb-6 sm:pb-8">
         <Link to="/department/cse">
           <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 mx-auto shadow-lg text-sm sm:text-base">
-            <span>Learn More About CSE</span>5
+            <span>Learn More About CSE</span>
             <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
           </button>
         </Link>
