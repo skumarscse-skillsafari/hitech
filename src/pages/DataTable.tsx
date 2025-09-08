@@ -39,6 +39,7 @@ const stuCategoryOptions = [
 ];
 
 
+
 const sectionDataKeyMap: Record<string, string> = {
   internships: 'internships',
   micro: 'micro_projects',
@@ -50,6 +51,7 @@ const sectionDataKeyMap: Record<string, string> = {
   powered_industry: 'powered_industry',
   faculty_achievements: 'International',
   student_achievements: 'participations',
+  
 };
 
 const sectionTitleMap: Record<string, string> = {
