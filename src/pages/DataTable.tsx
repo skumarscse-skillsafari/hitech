@@ -112,13 +112,13 @@ const sectionDescriptions: Record<string, string> = {
   stu_International_Confrense: 'Students presenting at international conferences.',
   stu_National_journals: 'Student publications in national journals.',
   stu_National_confrence: 'Student presentations at national conferences.',
-stu_nptel: 'NPTEL courses successfully completed by students to enhance their knowledge.',
+   stu_nptel: 'NPTEL courses successfully completed by students to enhance their knowledge.',
  stu_international_journal: 'Research articles published by students in reputed international journals.',
  stu_mini: 'Mini projects developed by student teams showcasing innovation and technical skills.',
   stu_micro: 'Micro projects carried out by students focusing on practical problem-solving.',
   stu_Books: 'Books published by students.',
   hackathon: 'Hackathon events participated by students.',
-   stu_nptel: 'NPTEL courses successfully completed by students to enhance their knowledge.',
+  stu_nptel: 'NPTEL courses successfully completed by students to enhance their knowledge.',
 };
 
 const DataTable: React.FC = () => {
