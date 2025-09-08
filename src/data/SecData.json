@@ -1,4 +1,60 @@
 {
+  "fac_participation":[
+{
+      "s.no.": 1,
+      "faculty_name": "Dr. ABC",
+      "event_title": "Faculty Development Program on AI",
+      "organizer": "IIT Madras",
+      "status": "Completed",
+      "date(s)": "15-07-2024 to 20-07-2024",
+      "duration": "6 Days"
+    },
+    {
+      "s.no.": 2,
+      "faculty_name": "",
+      "event_title": "",
+      "organizer": "",
+      "status": "",
+      "date(s)": "",
+      "duration": ""
+    },
+    {
+      "s.no.": 3,
+      "faculty_name": "",
+      "event_title": "",
+      "organizer": "",
+      "status": "",
+      "date(s)": "",
+      "duration": ""
+    }
+],
+"fac_patents":[
+{
+      "s.no.": 1,
+      "faculty_name": "Dr. ABC",
+      "patent_title": "AI-Based Traffic Management System",
+      "year_of_publication": "2024",
+      "category": "Utility Patent",
+      "status": "Published"
+    },
+    {
+      "s.no.": 2,
+      "faculty_name": "",
+      "patent_title": "",
+      "year_of_publication": "",
+      "category": "",
+      "status": ""
+    },
+    {
+      "s.no.": 3,
+      "faculty_name": "",
+      "patent_title": "",
+      "year_of_publication": "",
+      "category": "",
+      "status": ""
+    }
+],
+
   "internships": [
     {
       "s.no.": 1,
@@ -1028,61 +1084,6 @@
     "doi": "https://doi.org/10.3390/s21196654",
     "DOI": "2021"
   }
-],
-"fac_participation":[
-{
-      "s.no.": 1,
-      "faculty_name": "Dr. ABC",
-      "event_title": "Faculty Development Program on AI",
-      "organizer": "IIT Madras",
-      "status": "Completed",
-      "date(s)": "15-07-2024 to 20-07-2024",
-      "duration": "6 Days"
-    },
-    {
-      "s.no.": 2,
-      "faculty_name": "",
-      "event_title": "",
-      "organizer": "",
-      "status": "",
-      "date(s)": "",
-      "duration": ""
-    },
-    {
-      "s.no.": 3,
-      "faculty_name": "",
-      "event_title": "",
-      "organizer": "",
-      "status": "",
-      "date(s)": "",
-      "duration": ""
-    }
-],
-"fac_patents":[
-{
-      "s.no.": 1,
-      "faculty_name": "Dr. ABC",
-      "patent_title": "AI-Based Traffic Management System",
-      "year_of_publication": "2024",
-      "category": "Utility Patent",
-      "status": "Published"
-    },
-    {
-      "s.no.": 2,
-      "faculty_name": "",
-      "patent_title": "",
-      "year_of_publication": "",
-      "category": "",
-      "status": ""
-    },
-    {
-      "s.no.": 3,
-      "faculty_name": "",
-      "patent_title": "",
-      "year_of_publication": "",
-      "category": "",
-      "status": ""
-    }
 ],
 "fac_nptel":[
   {
