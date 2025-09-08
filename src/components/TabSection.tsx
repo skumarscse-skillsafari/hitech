@@ -43,8 +43,6 @@ const eventImageMap = {
   'file-PvpLe9Jq7twhCq7NFN9nS5': 'seminar.jpg'
 };
 
-// ... imports (same as yours)
-
 const TabsSection: React.FC = () => {
   const [tabs, setTabs] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<string>('hod');
@@ -104,6 +102,27 @@ const TabsSection: React.FC = () => {
     }
   };
 
+  // 🔹 Short & descriptive button labels
+  const buttonLabels: Record<string, string> = {
+    'latest-events': 'More Events',
+    research: 'More Research',
+    student_achievements: 'More Achievements',
+    faculty_achievements: 'More Achievements',
+    internships: 'More Internships',
+    innovations: 'More Innovations',
+    placements: 'More Placements',
+    sdgs: 'More SDGs',
+    academic_calendar: 'More Calendar',
+    obe: 'More OBE',
+    curriculum_syllabus: 'More Curriculum',
+    facilities: 'More Facilities',
+    global_connections: 'More Connections',
+    professional: 'More Society',
+    collaborations: 'More Industries',
+    notable: 'More Projects',
+    alumni: 'More Alumni'
+  };
+
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="border-b border-gray-200">
@@ -137,7 +156,9 @@ const TabsSection: React.FC = () => {
                   onClick={handleViewMore}
                   className="bg-yellow-500 text-black hover:bg-yellow-600 font-medium text-sm md:text-base px-3 md:px-5 py-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
                 >
-                  <span className="hidden sm:inline">View more</span>
+                  <span className="hidden sm:inline">
+                    {buttonLabels[activeTab] || 'More'}
+                  </span>
                   <ChevronRight className="h-4 w-4" />
                 </button>
               )}
@@ -247,4 +268,3 @@ const TabsSection: React.FC = () => {
 };
 
 export default TabsSection;
-
