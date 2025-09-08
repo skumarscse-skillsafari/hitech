@@ -8,8 +8,7 @@ import TeachingMethodologyCards from '../components/TeachingMethodologyCards';
 import FacultyCarousel from '../components/FacultyCarousel';
 import FacilitiesCarousel from '../components/FacilitiesCarousel';
 import TabsSection from '../components/TabSection';
-
-
+import LabSection from '../components/LabSection'; // Now uses its own cseLabsData
 import departmentsData from '../data/departmentsData.json';
 import StudentClubs from './StuClub';
 
@@ -28,13 +27,12 @@ const DepartmentPage: React.FC = () => {
       title={`${department.name} - Hindusthan Institute of Technology`}
       description={department.description}
     >
-      {/* Custom Arrow Button with Tooltip */}
+      {/* Back Button */}
       <div className="fixed top-[200px] left-9 z-50">
         <div
           className="group relative w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
           onClick={() => navigate(-1)}
         >
-          {/* Arrow Icon */}
           <svg
             className="w-5 h-5 text-black"
             fill="none"
@@ -44,8 +42,6 @@ const DepartmentPage: React.FC = () => {
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
-
-          {/* Tooltip Text */}
           <div className="absolute left-full ml-2 top-1/2 transform -translate-y-1/2 px-2 py-1 rounded bg-black text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
             Back
           </div>
@@ -84,6 +80,11 @@ const DepartmentPage: React.FC = () => {
             facilities={department.facilities || []}
             departmentName={department.name}
           />
+        </SectionWrapper>
+
+        {/* Laboratory Section */}
+        <SectionWrapper lazy lazyHeight="600px" lazyDelay={1200} className="mt-12">
+          <LabSection departmentName={department.name} />
         </SectionWrapper>
 
         {/* Faculty Members */}
