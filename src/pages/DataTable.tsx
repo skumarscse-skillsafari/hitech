@@ -13,7 +13,7 @@ const categoryOptions = [
 
 const facultyCategoryOptions = [
   { label: 'Participations/FDP', key: 'fac_participation' },
-  { label: 'International Conference', key: 'International_Confrense' },
+  { label: 'International Conference', key: 'International_Conference' },
    { label: 'National Conference', key: 'National_confrence' },
   { label: 'International Journals', key: 'International' },
     { label: 'National/UGC Journals', key: 'National_journals' },
