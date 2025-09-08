@@ -65,10 +65,7 @@ const LabCard: React.FC<LabCardProps> = ({
           </div>
         </div>
 
-        <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-black py-3 px-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-2 group-hover:bg-yellow-600">
-          Explore Facility
-          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-        </button>
+        
       </div>
     </div>
   );

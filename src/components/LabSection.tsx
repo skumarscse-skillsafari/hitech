@@ -45,10 +45,10 @@ const LabSection: React.FC<LabSectionProps> = ({ departmentName }) => {
 
   const getStudentCapacity = (labName: string): number => {
     const capacities: Record<string, number> = {
-      'Computer Science Lab': 40,
-      'RDBMS Lab': 30,
-      'Network Lab': 25,
-      'Operating System Lab': 35,
+      'Web Programming Lab': 75,
+      'RDBMS Lab': 75,
+      'Network Lab': 75,
+      'Operating System Lab': 75,
     };
     return capacities[labName] ?? 30;
   };
