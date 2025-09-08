@@ -90,7 +90,7 @@ const DepartmentPage: React.FC = () => {
         {/* Faculty Members */}
         <SectionWrapper lazy lazyHeight="600px" lazyDelay={1300} className="mt-12">
           <div className="text-center mb-8 px-2">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-4">
+            <h2 className="text-xl sm:text-5xl font-bold text-gray-900 mb-2 sm:mb-4">
               Faculty Members
             </h2>
             <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
