@@ -266,21 +266,33 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
       {/* Vision & Mission - Unchanged */}
       <LazyLoadWrapper height="200px" delay={500}>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-            <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center space-x-2">
-              <Award className="h-5 w-5 text-yellow-500" />
-              <span>Vision</span>
-            </h4>
-            <p className="text-gray-700 leading-relaxed">{department.vision}</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-            <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center space-x-2">
-              <BookOpen className="h-5 w-5 text-yellow-500" />
-              <span>Mission</span>
-            </h4>
-            <p className="text-gray-700 leading-relaxed">{department.mission}</p>
-          </div>
-        </div>
+  <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+    <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center space-x-2">
+      <Award className="h-5 w-5 text-yellow-500" />
+      <span>Vision</span>
+    </h4>
+    <p className="text-gray-700 leading-relaxed">{department.vision}</p>
+  </div>
+
+  <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+    <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center space-x-2">
+      <BookOpen className="h-5 w-5 text-yellow-500" />
+      <span>Mission</span>
+    </h4>
+
+    <div className="text-gray-700 leading-relaxed space-y-3">
+      {department.mission.map((point: string, index: number) => {
+        const [label, ...rest] = point.split(":");
+        return (
+          <p key={index} className="text-sm">
+            <span className="font-semibold">{label}:</span> {rest.join(":").trim()}
+          </p>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
      
   {/* Program Outcomes */}
 <SectionWrapper lazyHeight="400px" lazyDelay={600} className="mt-16 mb-4">
