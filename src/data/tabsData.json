@@ -162,33 +162,37 @@
         "title": "Current Research Projects",
         "items": [
           {
-            "title": "Dr.A.JameerBasha, Professor & Head Dr.S.Lokesh, ASP/CSE Ms.P.Jeevitha, AP/CSE",
-            "description": "Design and development of smart assistive device...",
+            "description": "Dr.A.JameerBasha, Professor & Head Dr.S.Lokesh, ASP/CSE Ms.P.Jeevitha, AP/CSE",
+            "title": "Design and development of smart assistive device...",
             "funding": "Rs.9,48,614",
+            "funding_agency": "AICTE - Research Promotion Scheme AQIS Application Id: 1-9335652751",
             "status": "3‑years (Ongoing)",
             "duration": "3 Years(Ongoing)",
             "years": "2030"
           },
           {
-            "title": "Dr.R.Kala AP/CSE",
-            "description": "Brain Tumor Detection Using Deep CNN and FPGA Implementation",
+            "description": "Dr.R.Kala AP/CSE",
+            "title": "Brain Tumor Detection Using Deep CNN and FPGA Implementation",
             "funding": "Rs.2,00,000",
+            "funding_agency": "Hindusthan Educational and Charitable Trust",
             "status": "1 year (Ongoing)",
             "duration": "1 Year(Ongoing)",
             "years": "2030"
           },
           {
-            "title": "Ms.R.T. Subhalakshmi AP/CSE",
-            "description": "Automatic segmentation and classification of COVID‑19 CT image Using DCN",
+            "description": "Ms.R.T. Subhalakshmi AP/CSE",
+            "title": "Automatic segmentation and classification of COVID‑19 CT image Using DCN",
             "funding": "Rs.2,04,000",
+            "funding_agency": "Hindusthan Educational and Charitable Trust",
             "status": "1 Year (ongoing)",
             "duration": "1 Year(Ongoing)",
             "years": "2030"
           },
           {
-            "title": "Dr.S.Lokesh, ASP/CSE",
-            "description": "Nano Assistive Communication Device for Elderly and Speech Disability People",
+            "description": "Dr.S.Lokesh, ASP/CSE",
+            "title": "Nano Assistive Communication Device for Elderly and Speech Disability People",
             "funding": "Rs.2,00,000",
+            "funding_agency": "Hindusthan Educational and Charitable Trust",
             "status": "1 Year (Completed)",
             "duration": "1 Year(Completed)",
             "years": "2030"
@@ -274,13 +278,13 @@
           },
           {
             "title": "SingleWindow Platform To Streamline Approvals And Empower Entrepreneurial Success",
-            "domain": "Information/Communication Technology",
+            "domain": "Information / Communication Technology",
             "guide": "Mr.Devendran , AP/CSE",
             "students": "Harish Keerthi V, Harish S, Hari Haran S, Mahalingeshvara, Nathan Nl"
           },
           {
             "title": "Field Visit Tracker: GeoTagged Inspections With Digital Signatures And Authentication",
-            "domain": "Information/Communication Technology",
+            "domain": "Information /Communication Technology",
             "guide": "Dr.R.T.Subhalakshmi",
             "students": "Thiru Kumaran Rp, Sriram B, Uday Ram S, Sunil Kumar D"
           },
