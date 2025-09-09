@@ -170,7 +170,8 @@ const TabsSection: React.FC = () => {
       research: 'research',
       notable: 'notable',
       faculty_ach: 'faculty_achievements',
-      'latest-events': 'latest-event'
+      'latest-events': 'latest-event',
+      
     };
 
     const route = routeMap[activeTab] || activeTab;
