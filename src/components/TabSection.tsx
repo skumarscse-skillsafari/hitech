@@ -99,7 +99,8 @@ const TabsSection: React.FC = () => {
       notable: 'notable',
       faculty_ach: 'faculty_achievements',
       'latest-events': 'latest-event',
-      
+      innovations: 'innovations',
+      placements_tab: 'placements_tab',
     };
 
     const route = routeMap[activeTab] || activeTab;
@@ -114,7 +115,7 @@ const TabsSection: React.FC = () => {
   // 🔹 Short & descriptive button labels
   const buttonLabels: Record<string, string> = {
     'latest-events': 'More Events',
-    research: 'More Research',
+    research: 'More Proposals',
     student_achievements: 'More Achievements',
     faculty_achievements: 'More Achievements',
     internships: 'More Internships',
