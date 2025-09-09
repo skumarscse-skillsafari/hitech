@@ -9,8 +9,8 @@ const years = [
 ];
 
 const semesters = [
-  { title: 'Odd Semester' },
-  { title: 'Even Semester' },
+  { title: 'ODD Semester' },
+  { title: 'EVEN Semester' },
 ];
 
 const yearWiseData = years.map(({ year }) => ({
@@ -18,9 +18,9 @@ const yearWiseData = years.map(({ year }) => ({
   semesters: semesters.map(({ title }) => ({
     title,
     calendars: [
-      { label: '1st Year Academic Calendar' },
-      { label: '2nd Year Academic Calendar' },
-      { label: '3rd & 4th Year Academic Calendar' },
+      { label: 'I Year Academic Calendar' },
+      { label: 'II Year Academic Calendar' },
+      { label: 'III & IV Year Academic Calendar' },
     ],
   })),
 }));
