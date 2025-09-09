@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
 import {
   BookOpen, Users, Award, Building, Briefcase, Globe, ChevronRight,
-  User, GraduationCap, ClipboardList, FileText, CalendarDays
+  User, GraduationCap, ClipboardList, FileText, CalendarDays,
+  ArrowRight, Calendar, DollarSign, Building2, Clock
 } from 'lucide-react';
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import IEEE from "../../public/IEEE.png";
 import ict from "../../public/ict.png";
@@ -43,6 +43,100 @@ const eventImageMap = {
   'file-PvpLe9Jq7twhCq7NFN9nS5': 'seminar.jpg'
 };
 
+// Enhanced Card Component with dynamic field rendering
+function TabCard({ item }: { item: any }) {
+  const fieldIconMap: Record<string, any> = {
+    funding: DollarSign,
+    fundingAgency: Building2,
+    funding_agency: Building2,
+    status: Clock,
+    duration: Calendar,
+    years: BookOpen,
+    date: Calendar,
+    venue: Building,
+    organizer: Users,
+    participants: Users,
+    company: Building2,
+    position: Briefcase,
+    salary: DollarSign,
+    location: Building,
+    department: Building,
+    experience: Briefcase,
+    qualification: GraduationCap,
+    specialization: Award,
+    achievements: Award
+  };
+
+  const excludeFields = ["title", "description", "logo", "image", "authors", "author"];
+
+  return (
+    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-yellow-200 group">
+      <div className="mb-4">
+        <h3 className="text-xl font-bold text-yellow-500 leading-tight mb-3 group-hover:text-yellow-600 transition-colors">
+          {item.title}
+        </h3>
+        
+        <div className="space-y-2 text-gray-600">
+          {item.authors ? (
+            item.authors.map((author: string, idx: number) => (
+              <p key={idx} className="text-sm font-medium">{author}</p>
+            ))
+          ) : (
+            item.author && (
+              <p className="text-sm font-medium">
+                {item.author} {item.department && item.department}
+              </p>
+            )
+          )}
+        </div>
+      </div>
+
+      {item.description && (
+        <p className="text-sm text-gray-600 leading-relaxed mb-4">{item.description}</p>
+      )}
+
+      {item.logo && (
+        <div className="flex justify-center mb-4">
+          <img
+            src={item.logo}
+            alt={item.title || 'Card logo'}
+            className="h-16 sm:h-20 object-contain"
+          />
+        </div>
+      )}
+
+      <div className="space-y-3">
+        {Object.entries(item).map(([key, value]) => {
+          if (excludeFields.includes(key) || !value) return null;
+          
+          const Icon = fieldIconMap[key] || FileText;
+          const displayKey = key.replace(/_/g, ' ').replace(/([A-Z])/g, ' $1').trim();
+          const capitalizedKey = displayKey.charAt(0).toUpperCase() + displayKey.slice(1);
+          
+          return (
+            <div key={key} className="flex items-start gap-2">
+              <Icon className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
+              <div className="flex-1">
+                <span className="text-sm font-semibold text-yellow-600">{capitalizedKey}:</span>
+                <p className="text-sm text-gray-700 mt-1 leading-relaxed break-words">
+                  {Array.isArray(value) ? value.join(', ') : String(value)}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="mt-6 pt-4 border-t border-gray-100">
+        <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-yellow-500 text-black font-medium rounded-lg hover:bg-yellow-600 transition-all duration-200 group-hover:shadow-md">
+          <span>Learn More</span>
+          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+        </button>
+      </div>
+    </div>
+  );
+}
+
 const TabsSection: React.FC = () => {
   const [tabs, setTabs] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<string>('hod');
@@ -67,28 +161,6 @@ const TabsSection: React.FC = () => {
   }, []);
 
   const activeTabData = tabs.find(tab => tab.id === activeTab);
-  // ✅ Dynamically set slidesToShow based on item count
-  const getSlidesToShow = () => {
-    if (!activeTabData) return 1;
-    const count = activeTabData.content.items.length;
-    if (count >= 4) return 4;
-    return count;
-  };
-
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: getSlidesToShow(),
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } }
-    ]
-  };
 
   const handleViewMore = () => {
     const routeMap: Record<string, string> = {
@@ -110,7 +182,6 @@ const TabsSection: React.FC = () => {
     }
   };
 
-  // 🔹 Short & descriptive button labels
   const buttonLabels: Record<string, string> = {
     'latest-events': 'More Events',
     research: 'More Research',
@@ -137,14 +208,15 @@ const TabsSection: React.FC = () => {
         <div className="flex flex-wrap">
           {tabs.map((tab) => (
             <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center space-x-2 px-4 sm:px-6 py-3 sm:py-4 font-medium transition-all duration-200 border-b-2 ${
-                activeTab === tab.id
-                  ? 'text-yellow-600 border-yellow-500 bg-yellow-50'
-                  : 'text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50'
-              }`}
-            >
+  key={tab.id}
+  onClick={() => setActiveTab(tab.id)}
+  className={`flex items-center justify-center min-w-[200px] space-x-2 px-4 sm:px-6 py-3 sm:py-4 font-medium transition-all duration-200 border-b-2 ${
+    activeTab === tab.id
+      ? 'text-yellow-600 border-yellow-500 bg-yellow-50'
+      : 'text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50'
+  }`}
+>
+
               {tab.icon && <tab.icon className="h-5 w-5" />}
               <span className="hidden sm:block">{tab.name}</span>
             </button>
@@ -174,6 +246,7 @@ const TabsSection: React.FC = () => {
 
             {activeTab === 'hod' ? (
               <div className="bg-gray-50 p-4 sm:p-8 rounded-xl border border-gray-200">
+                {/* HOD block unchanged */}
                 <div className="flex flex-col md:flex-row gap-8">
                   <div className="md:w-1/3 flex flex-col items-center">
                     <div className="w-40 sm:w-48 relative" style={{ height: '320px' }}>
@@ -215,7 +288,7 @@ const TabsSection: React.FC = () => {
                         );
                       })}
                     </div>
-                    <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-1 transition-colors duration-200">
+                    <button className="mt-4 text-yellow-500 hover:text-yellow-600 font-semibold text-sm flex items-center space-x-1 transition-colors duration-200">
                       <span>View Full Profile</span>
                       <ChevronRight className="h-4 w-4" />
                     </button>
@@ -223,51 +296,36 @@ const TabsSection: React.FC = () => {
                 </div>
               </div>
             ) : (
-              <div className="overflow-visible pb-8">
-                <Slider {...sliderSettings}>
-                  {activeTabData.content.items.map((item: any, index: number) => (
-                    <div key={index} className="px-2 sm:px-3 lg:px-4 h-full flex mb-6">
-                     <div className="bg-white p-4 sm:p-6 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-[0.93] hover:z-10 hover:shadow-xl hover:border-yellow-400 h-full flex flex-col justify-between relative min-h-[420px]">
-                        <div>
-                          <h4 className="font-semibold text-lg sm:text-2xl text-yellow-600 mb-4 break-words">
-                            {item.title}
-                          </h4>
-                          <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6 break-words">
-                            {item.description}
-                          </p>
-                          {item.logo && (
-                            <div className="flex justify-center mb-6">
-                              <img
-                                src={item.logo}
-                                alt={item.title || 'Card logo'}
-                                className="h-16 sm:h-24 object-contain"
-                              />
-                            </div>
-                          )}
-                          <div className="space-y-3 text-sm sm:text-base text-gray-700">
-                            {Object.entries(item).map(([key, value]) => {
-                              if (["title", "description", "logo", "image"].includes(key)) return null;
-                              return (
-                                <div key={key} className="flex justify-between gap-4">
-                                  <span className="capitalize font-medium text-yellow-600">{key}:</span>
-                                  <span className="text-right text-gray-800 flex-1 break-words whitespace-normal">
-                                  {Array.isArray(value) ? value.join(', ') : String(value)}
-                                  </span>
-
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                        <button className="mt-6 text-yellow-600 hover:text-yellow-700 font-semibold text-sm flex items-center space-x-2 transition-colors duration-200">
-                          <span>Learn More</span>
-                          <ChevronRight className="h-4 w-4" />
-                        </button>
+              <>
+                {activeTabData.content.items.length <= 4 ? (
+                  // Normal 2x2 grid
+                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8">
+                    {activeTabData.content.items.map((item: any, index: number) => (
+                      <TabCard key={index} item={item} />
+                    ))}
+                  </div>
+                ) : (
+                  // Carousel for more than 4
+                  <Slider
+                    dots={true}
+                    infinite={true}
+                    autoplay={true}
+                    autoplaySpeed={3000}
+                    slidesToShow={2}
+                    slidesToScroll={2}
+                    responsive={[
+                      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 2 } },
+                      { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } }
+                    ]}
+                  >
+                    {activeTabData.content.items.map((item: any, index: number) => (
+                      <div key={index} className="px-4 mb-6">
+                        <TabCard item={item} />
                       </div>
-                    </div>
-                  ))}
-                </Slider>
-              </div>
+                    ))}
+                  </Slider>
+                )}
+              </>
             )}
           </div>
         )}
