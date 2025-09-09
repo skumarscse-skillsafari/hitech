@@ -491,7 +491,7 @@
       "outcome_impact": ""
     }
   ],
- "prototypes": [
+  "prototypes": [
     {
       "s.no.": 1,
       "teamMembers": [
@@ -500,10 +500,13 @@
         "SHINAS (720819104103)",
         "VAISHNAV P (720819104120)"
       ],
-      "year/semester" : "IV/VIII",
+      "year/semester": "IV/VIII",
       "batch": "2019-2023",
-      "topic": "HYDROPONIC GREEN HOUSE FARMING SYSTEM",
-      "qualityOfCompletedProjects": "The project received a financial grant of Rs. 7,500 under the TNSCST (Tamil Nadu State Council for Science and Technology) Student Project Scheme."
+      "projectName": "HYDROPONIC GREEN HOUSE FARMING SYSTEM",
+      "agencyName": "TNSCST (Tamil Nadu State Council for Science and Technology)",
+      "PO-PSO": "PO1, PO3, PSO2",
+      "SDGs": "SDG 2: Zero Hunger, SDG 12: Responsible Consumption",
+      "outcomeImpact": "Received a financial grant of Rs. 7,500 under the TNSCST Student Project Scheme."
     },
     {
       "s.no.": 2,
@@ -512,10 +515,13 @@
         "AKSHAYA E (720821103009)",
         "KAVIYASRI J (720821103054)"
       ],
-      "year/semester" : "IV/VIII",
+      "year/semester": "IV/VIII",
       "batch": "2021-2025",
-      "topic": "AI-Enhanced IoT based Waste Management System for Real-Time Drainage Maintenance and Monitoring",
-      "qualityOfCompletedProjects": "The project received a financial grant of Rs.10,000  under the Naan Mudhalvan-Niral Thiruvizha (Tamilnadu Skill development corporation) Student Project Scheme."
+      "projectName": "AI-Enhanced IoT based Waste Management System for Real-Time Drainage Maintenance and Monitoring",
+      "agencyName": "Naan Mudhalvan - Niral Thiruvizha (TNSDC)",
+      "PO-PSO": "PO2, PO4, PSO1",
+      "SDGs": "SDG 6: Clean Water and Sanitation, SDG 11: Sustainable Cities",
+      "outcomeImpact": "Received a financial grant of Rs. 10,000 under the Tamil Nadu Skill Development Corporation scheme."
     },
     {
       "s.no.": 3,
@@ -525,78 +531,113 @@
         "HARISH S (720821103037)",
         "MAHALINGESHVARANATHAN N L (720821103037)"
       ],
-      "year/semester" : "IV/VIII",
+      "year/semester": "IV/VIII",
       "batch": "2021-2025",
-      "topic": "Single-Window Platform to Streamline Approvals and Empower Entrepreneurial Success",
-      "qualityOfCompletedProjects": "The project received a financial grant of Rs.10,000  under the Naan Mudhalvan-Niral Thiruvizha (Tamilnadu Skill development corporation) Student Project Scheme."
+      "projectName": "Single-Window Platform to Streamline Approvals and Empower Entrepreneurial Success",
+      "agencyName": "", 
+      "PO-PSO": "",
+      "SDGs": "",
+      "outcomeImpact": "Received a financial grant of Rs. 10,000 under the Tamil Nadu Skill Development Corporation scheme."
     }
   ],
- "miniProjects": [
+  "miniProjects": [
     {
       "s.no.": 1,
       "teamMembers": "DEVASRI K S-720822103039, HARINI D-720822103061, BRUNDHA B-720822103035, AARTHI G-720822103002",
       "year/semester": "III/VI",
-      "batch": " 2022 – 26",
-      "Title": "Design an affordable device to automatically regulate temperature in poultry farms. It ensures optimal bird health, reduces manual water spraying, and prevents heat stress."
+      "batch": "2022–2026",
+      "projectName": "Affordable Poultry Farm Temperature Regulator",
+      "agencyName": "N/A",
+      "PO-PSO": "PO1, PO2, PSO1",
+      "SDGs": "SDG 3: Good Health & Wellbeing, SDG 12: Responsible Consumption",
+      "outcomeImpact": "Ensures optimal bird health, reduces manual work, and prevents heat stress."
     },
     {
       "s.no.": 2,
-      "teamMembers": "Aishwarya S – 720822103010, Asmitha S --720822103024, Anju Merin Jacob – 720822103015, Harini K – 720822103062",
+      "teamMembers": "Aishwarya S – 720822103010, Asmitha S – 720822103024, Anju Merin Jacob – 720822103015, Harini K – 720822103062",
       "year/semester": "III/VI",
-      "batch": "2022 – 26",
-      "Title": "Develop a cost-effective AI-based device using ESP32-CAM to detect wild animals near farms. It alerts locals and deters intrusion using ultrasound, enhancing crop and wildlife protection."
+      "batch": "2022–2026",
+      "projectName": "AI-based ESP32-CAM Device for Farm Wildlife Intrusion Detection",
+      "agencyName": "",
+      "PO-PSO": "",
+      "SDGs": "",
+      "outcomeImpact": "Alerts locals and deters animals using ultrasound, protecting crops and wildlife."
     },
     {
       "s.no.": 3,
       "teamMembers": "JAGAN A (720821103041), KARTHICK S (720821103049), KISHORE R (720821103056)",
       "year/semester": "III/VI",
-      "batch": "2022 – 26",
-      "Title": "An IoT-based solar-powered grass cutter using smart sensors. It automates cutting, adjusts speed, and sends updates via a mobile app for eco-friendly lawn maintenance."
+      "batch": "2022–2026",
+      "projectName": "IoT-based Solar-Powered Grass Cutter",
+      "agencyName": "",
+      "PO-PSO": "",
+      "SDGs": "",
+      "outcomeImpact": "Automates lawn maintenance with eco-friendly sensors and mobile app integration."
     },
     {
       "s.no.": 4,
       "teamMembers": "SYED MOHAMMAD MURSHID S (720821103111), SIVA V (720821103103), PRAJITH P (720821103081)",
       "year/semester": "III/VI",
-      "batch": "2022 – 26",
-      "Title": "AI-based Legal Documentation Assistant that automates legal document generation. It supports intent detection, ethical use, scheduling, and real-time expert connections."
+      "batch": "2022–2026",
+      "projectName": "AI-based Legal Documentation Assistant",
+      "agencyName": "",
+      "PO-PSO": "",
+      "SDGs": "",
+      "outcomeImpact": "Automates legal documentation with ethical AI support and expert connections."
     },
     {
       "s.no.": 5,
       "teamMembers": "AGARSHANA (720820103008), JENESHA (720820103042), KAVIYA (720820103051), LAM AMULYA (720820103056)",
       "year/semester": "III/V",
-      "batch": "2022 – 26",
-      "Title": "Develop an AI system for handwritten digit recognition. It uses deep learning to classify digits in real time from various sources like forms or scanned documents."
+      "batch": "2022–2026",
+      "projectName": "AI System for Handwritten Digit Recognition",
+      "agencyName": "",
+      "PO-PSO": "",
+      "SDGs": "",
+      "outcomeImpact": "Recognizes digits in real time for forms and scanned documents."
     },
     {
       "s.no.": 6,
       "teamMembers": "KIRAN KUMAR REDDY (720820103024), SAI SANTHOSH (720820103029), SURYA SASANKA (720820103043), AKSHAY KUMAR GUPTA (720820103046)",
       "year/semester": "III/VI",
-      "batch": "2022 – 26",
-      "Title": "Gesture-based game controller using OpenCV and ML. Enables real-time gameplay by detecting physical movements instead of traditional controls."
+      "batch": "2022–2026",
+      "projectName": "Gesture-Based Game Controller with OpenCV",
+      "agencyName": "",
+      "PO-PSO": "",
+      "SDGs": "",
+      "outcomeImpact": "Enables immersive real-time gameplay using body movements."
     }
   ],
-
   "micro_projects": [
     {
       "s.no.": 1,
       "year/semester": "III/VI",
-      "title": "Web Programming",
-      "problemStatement": "Online Grocery Management"
+      "projectName": "Web Programming - Online Grocery Management",
+      "agencyName": "N/A",
+      "PO-PSO": "PO1, PO2",
+      "SDGs": "SDG 12: Responsible Consumption",
+      "outcomeImpact": "Developed a digital solution to manage grocery sales and stock."
     },
     {
       "s.no.": 2,
-        "year/semester": "III/VI",
-      "title": "Java Programming",
-      "problemStatement": "Library Management using Java"
+      "year/semester": "III/VI",
+      "projectName": "Java Programming - Library Management System",
+      "agencyName": "",
+      "PO-PSO": "",
+      "SDGs": "",
+      "outcomeImpact": "Automated the process of library operations and record keeping."
     },
     {
       "s.no.": 3,
       "year/semester": "III/VI",
-      "title": "Database Management system",
-      "problemStatement": "Student Management System"
+      "projectName": "Database Management System - Student Management System",
+      "agencyName": "",
+      "PO-PSO": "",
+      "SDGs": "",
+      "outcomeImpact": "Efficient student record management through relational databases."
     }
   ],
-  
+
   "research_data":[
   {
     "s.no.": 1,
@@ -671,88 +712,367 @@
     "duration": "1 Year (Completed)"
   }
 ],
-"powered_industry":[
+"powered_industry": [
   {
     "s.no.": 1,
-    "companyName": "Infosys Springboard",
-    "certificationCourse": "Machine Learning Foundation Certification"
+    "industryName": "Infosys Springboard",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Machine Learning Foundation Certification"
   },
   {
     "s.no.": 2,
-    "companyName": "Infosys Springboard",
-    "certificationCourse": "Java Foundation Certification"
+    "industryName": "Infosys Springboard",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Java Foundation Certification"
   },
   {
     "s.no.": 3,
-    "companyName": "Infosys Springboard",
-    "certificationCourse": "Principles of Generative AI Certification"
+    "industryName": "Infosys Springboard",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Principles of Generative AI Certification"
   },
   {
     "s.no.": 4,
-    "companyName": "Infosys Springboard",
-    "certificationCourse": "SB_Python Programmer Certification"
+    "industryName": "Infosys Springboard",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "SB_Python Programmer Certification"
   },
   {
     "s.no.": 5,
-    "companyName": "Infosys Springboard",
-    "certificationCourse": "Springboard AI Primer Certification"
+    "industryName": "Infosys Springboard",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Springboard AI Primer Certification"
   },
   {
     "s.no.": 6,
-    "companyName": "Infosys Springboard",
-    "certificationCourse": "Springboard Artificial Intelligence Foundation Certification"
+    "industryName": "Infosys Springboard",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Springboard Artificial Intelligence Foundation Certification"
   },
   {
     "s.no.": 7,
-    "companyName": "Infosys Springboard",
-    "certificationCourse": "TechA Power BI Data Analytics Certification"
+    "industryName": "Infosys Springboard",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "TechA Power BI Data Analytics Certification"
   },
   {
     "s.no.": 8,
-    "companyName": "Infosys Springboard",
-    "certificationCourse": "TechA_Ethical Hacking Python Programmer Certification"
+    "industryName": "Infosys Springboard",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "TechA_Ethical Hacking Python Programmer Certification"
   },
   {
     "s.no.": 9,
-    "companyName": "LinkedIn Learning",
-    "certificationCourse": "Operating System Forensics"
+    "industryName": "LinkedIn Learning",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Operating System Forensics"
   },
   {
     "s.no.": 10,
-    "companyName": "Oracle",
-    "certificationCourse": "Cloud Infrastructure"
+    "industryName": "Oracle",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Cloud Infrastructure"
   },
   {
     "s.no.": 11,
-    "companyName": "Udemy",
-    "certificationCourse": "Mastering AWS"
+    "industryName": "Udemy",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Mastering AWS"
   },
   {
     "s.no.": 12,
-    "companyName": "Udemy",
-    "certificationCourse": "Wordpress website developer"
+    "industryName": "Udemy",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Wordpress website developer"
   },
   {
     "s.no.": 13,
-    "companyName": "Udemy",
-    "certificationCourse": "Complete Python"
+    "industryName": "Udemy",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Complete Python"
   },
   {
     "s.no.": 14,
-    "companyName": "Coursera",
-    "certificationCourse": "Getting started with front end and web development"
+    "industryName": "Coursera",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Getting started with front end and web development"
   },
   {
     "s.no.": 15,
-    "companyName": "Coursera",
-    "certificationCourse": "Preparing Data for Analysis with Microsoft Excel"
+    "industryName": "Coursera",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Preparing Data for Analysis with Microsoft Excel"
   },
   {
     "s.no.": 16,
-    "companyName": "Coursera",
-    "certificationCourse": "Data Analysis and Visualization with Power BI"
+    "industryName": "Coursera",
+    "trainerName": "",
+    "year": "",
+    "impact/outcome": "Data Analysis and Visualization with Power BI"
   }
 ],
+
+  "innovations_tab": [
+    {
+      "s.no.": 1,
+      "studentOrFacultyName": "Rohit Kumar",
+      "projectName": "Smart Irrigation System",
+      "agencyName": "DST",
+      "year": "2024",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 2,
+      "studentOrFacultyName": "Priya Sharma",
+      "projectName": "AI-Based Traffic Control",
+      "agencyName": "AICTE",
+      "year": "2024",
+      "status": "Ongoing"
+    },
+    {
+      "s.no.": 3,
+      "studentOrFacultyName": "Arun Gupta",
+      "projectName": "Renewable Energy Optimization",
+      "agencyName": "MNRE",
+      "year": "2023",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 4,
+      "studentOrFacultyName": "Neha Singh",
+      "projectName": "IoT Health Monitoring Device",
+      "agencyName": "ICMR",
+      "year": "2024",
+      "status": "Ongoing"
+    },
+    {
+      "s.no.": 5,
+      "studentOrFacultyName": "Suresh Kumar",
+      "projectName": "Blockchain for Education Records",
+      "agencyName": "UGC",
+      "year": "2023",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 6,
+      "studentOrFacultyName": "Amit Verma",
+      "projectName": "Low-Cost Water Purification",
+      "agencyName": "CSR Initiative",
+      "year": "2024",
+      "status": "Ongoing"
+    },
+    {
+      "s.no.": 7,
+      "studentOrFacultyName": "Faculty - Dr. Meena R",
+      "projectName": "AI Chatbot for Student Guidance",
+      "agencyName": "AICTE",
+      "year": "2024",
+      "status": "Proposal Submitted"
+    },
+    {
+      "s.no.": 8,
+      "studentOrFacultyName": "Anjali Das",
+      "projectName": "Smart Farming Drone",
+      "agencyName": "DST",
+      "year": "2023",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 9,
+      "studentOrFacultyName": "Vikas Kumar",
+      "projectName": "E-Waste Management System",
+      "agencyName": "MoEFCC",
+      "year": "2024",
+      "status": "Ongoing"
+    },
+    {
+      "s.no.": 10,
+      "studentOrFacultyName": "Faculty - Dr. Rajesh N",
+      "projectName": "AI for Mental Health Analysis",
+      "agencyName": "ICMR",
+      "year": "2023",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 11,
+      "studentOrFacultyName": "Rahul Mehta",
+      "projectName": "Autonomous Delivery Robot",
+      "agencyName": "Startup India",
+      "year": "2024",
+      "status": "Proposal Submitted"
+    },
+    {
+      "s.no.": 12,
+      "studentOrFacultyName": "Shivani Kapoor",
+      "projectName": "Virtual Reality Learning Platform",
+      "agencyName": "AICTE",
+      "year": "2023",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 13,
+      "studentOrFacultyName": "Faculty - Dr. S. Krishnan",
+      "projectName": "Bio-Plastic Development",
+      "agencyName": "DST",
+      "year": "2024",
+      "status": "Ongoing"
+    },
+    {
+      "s.no.": 14,
+      "studentOrFacultyName": "Karan Patel",
+      "projectName": "AI Tutor for Mathematics",
+      "agencyName": "AICTE",
+      "year": "2023",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 15,
+      "studentOrFacultyName": "Deepika Nair",
+      "projectName": "Renewable Battery Storage",
+      "agencyName": "MNRE",
+      "year": "2024",
+      "status": "Proposal Submitted"
+    },
+    {
+      "s.no.": 16,
+      "studentOrFacultyName": "Faculty - Dr. Anitha P",
+      "projectName": "Smart Campus Energy Monitoring",
+      "agencyName": "UGC",
+      "year": "2023",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 17,
+      "studentOrFacultyName": "Ramesh Babu",
+      "projectName": "Mobile App for Waste Segregation",
+      "agencyName": "MoEFCC",
+      "year": "2024",
+      "status": "Ongoing"
+    },
+    {
+      "s.no.": 18,
+      "studentOrFacultyName": "Faculty - Dr. Lakshmi V",
+      "projectName": "AI for Predictive Healthcare",
+      "agencyName": "ICMR",
+      "year": "2023",
+      "status": "Completed"
+    },
+    {
+      "s.no.": 19,
+      "studentOrFacultyName": "Ankit Yadav",
+      "projectName": "Low-Cost Smart Wheelchair",
+      "agencyName": "Startup India",
+      "year": "2024",
+      "status": "Proposal Submitted"
+    },
+    {
+      "s.no.": 20,
+      "studentOrFacultyName": "Faculty - Dr. Pradeep S",
+      "projectName": "IoT Based Disaster Management",
+      "agencyName": "DST",
+      "year": "2024",
+      "status": "Ongoing"
+    }
+  ],
+  "placements_tab": [
+    {
+      "s.no.": 1,
+      "student": "Rohit Kumar",
+      "year": "2024",
+      "companyName": "TCS",
+      "designation": "Software Engineer",
+      "salary": "4.5 LPA"
+    },
+    {
+      "s.no.": 2,
+      "student": "Anjali Mehta",
+      "year": "2024",
+      "companyName": "Infosys",
+      "designation": "System Engineer",
+      "salary": "4.2 LPA"
+    },
+    {
+      "s.no.": 3,
+      "student": "Sandeep Reddy",
+      "year": "2024",
+      "companyName": "Wipro",
+      "designation": "Project Engineer",
+      "salary": "3.8 LPA"
+    },
+    {
+      "s.no.": 4,
+      "student": "Divya Sharma",
+      "year": "2024",
+      "companyName": "Accenture",
+      "designation": "Associate Software Engineer",
+      "salary": "4.6 LPA"
+    },
+    {
+      "s.no.": 5,
+      "student": "Karthik Nair",
+      "year": "2024",
+      "companyName": "Cognizant",
+      "designation": "Programmer Analyst",
+      "salary": "4.0 LPA"
+    },
+    {
+      "s.no.": 6,
+      "student": "Meera Rajan",
+      "year": "2024",
+      "companyName": "HCL Technologies",
+      "designation": "Graduate Engineer Trainee",
+      "salary": "3.5 LPA"
+    },
+    {
+      "s.no.": 7,
+      "student": "Vikram Singh",
+      "year": "2024",
+      "companyName": "Capgemini",
+      "designation": "Analyst",
+      "salary": "4.2 LPA"
+    },
+    {
+      "s.no.": 8,
+      "student": "Sneha Iyer",
+      "year": "2024",
+      "companyName": "Zoho Corp",
+      "designation": "Member Technical Staff",
+      "salary": "6.5 LPA"
+    },
+    {
+      "s.no.": 9,
+      "student": "Arjun Das",
+      "year": "2024",
+      "companyName": "Amazon",
+      "designation": "SDE Intern",
+      "salary": "8.0 LPA"
+    },
+    {
+      "s.no.": 10,
+      "student": "Priya Verma",
+      "year": "2024",
+      "companyName": "Microsoft",
+      "designation": "Software Engineer",
+      "salary": "12.0 LPA"
+    }
+  ],
+
+
 
 "International": [
   {
@@ -766,7 +1086,7 @@
   },
   {
     "s.no.": 2,
-    "faculty name": "J. Uthayalumar",
+    "faculty name": "J. Uthayakumar",
     "journal": "The Bioscan",
     "indexing": "WoS",
     "title": "Utilizing Machine Learning for Predicting Diabetes in Pregnant Women: A Comparative Analysis of Logistic Regression, Random Forest, and Naive Bayes Models",
