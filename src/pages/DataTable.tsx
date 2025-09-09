@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 import secData from '../data/SecData.json';
 import ReusableTable from '../components/ReusableTable';
-import InnovationPolicy from './InnovationPolicy';
 
 const categoryOptions = [
   { label: 'Mini Projects', key: 'miniProjects' },
@@ -49,9 +48,12 @@ const sectionDataKeyMap: Record<string, string> = {
   project: 'notable',
   collaborations: 'powered_industry',
   powered_industry: 'powered_industry',
-  faculty_achievements: 'International',
+  faculty_achievements: 'fac_participation',
   student_achievements: 'participations',
-  
+  innovations: 'innovations_tab',
+  innovations_tab: 'innovations_tab',
+  placements: 'placements_tab',
+  placements_tab: 'placements_tab',
 };
 
 const sectionTitleMap: Record<string, string> = {
@@ -64,12 +66,12 @@ const sectionTitleMap: Record<string, string> = {
   notable: 'Notable Projects',
   powered_industry: 'Powered by Industry',
   collaborations: 'Industry Collaborations',
+  innovations: 'Innovations',
+  placements: 'Placements',
   faculty_achievements: 'Faculty Achievements',
   student_achievements: 'Student Achievements',
   obe_practices: 'OBE Practices',
   obe: 'OBE Practices',
-  innovations: 'Innovations',
-  placements: 'Placements',
   "curriculum-syllabus": 'Curriculum and Syllabus',
   fac_participation: "Participations / FDP",
   fac_patents: "Patents",
@@ -101,6 +103,8 @@ const sectionDescriptions: Record<string, string> = {
   research_data: 'Ongoing and completed faculty research initiatives.',
   notable: 'Notable student projects across different categories.',
   powered_industry: 'Projects done in collaboration with industry partners.',
+  innovations: 'Innovative projects and solutions developed by students and faculty.',
+  placements_tab: 'Details of student placements in various companies.',
   International: 'Faculty publications in reputed international journals.',
   International_Confrense: 'Presentations at international conferences.',
   National_journals: 'Publications in national journals.',
@@ -134,7 +138,7 @@ const DataTable: React.FC = () => {
 
   const [selectedCategoryKey, setSelectedCategoryKey] = useState(() => {
     if (isNotable) return 'miniProjects';
-    if (isFaculty) return 'International';
+    if (isFaculty) return 'fac_participation';
     if (isStudent) return 'participations';
     return sectionDataKeyMap[normalizedSection] || 'internships';
   });
