@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import { ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronDown, X } from 'lucide-react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -69,6 +69,7 @@ const sliderSettings = {
 
 const ObeInput = () => {
   const [expandedCards, setExpandedCards] = useState<Record<number, boolean>>({});
+  const [selectedCard, setSelectedCard] = useState<any>(null);
 
   const toggleExpand = (index: number) => {
     setExpandedCards((prev) => ({
@@ -79,7 +80,7 @@ const ObeInput = () => {
 
   return (
     <div className="bg-gradient-to-b py-14 px-4 md:px-8 font-sans">
-      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl border border-yellow-100 px-6 sm:px-10 py-10">
+      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl border border-yellow-100 px-6 sm:px-10 py-10 ">
         {/* Title */}
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold text-gray-900">
@@ -113,14 +114,18 @@ const ObeInput = () => {
             const isExpanded = expandedCards[index] || false;
 
             return (
-              <div key={index} className="px-3 focus:outline-none">
-                <div className="bg-yellow-50 border border-yellow-100 rounded-2xl shadow-md overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg">
+              <div
+                key={index}
+                className="px-3 focus:outline-none cursor-pointer"
+                onClick={() => setSelectedCard(item)}
+              >
+                <div className="bg-yellow-50 border border-yellow-100 rounded-2xl shadow-md overflow-hidden flex flex-col h-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                   {/* Image */}
                   <div className="h-[160px] bg-white flex items-center justify-center p-4 relative">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="max-h-[120px] object-contain transition-transform duration-300 hover:scale-105"
+                      className="max-h-[120px] object-contain transition-transform duration-300 hover:scale-110"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = '/placeholder-image.png';
@@ -144,7 +149,10 @@ const ObeInput = () => {
 
                     {item.description.length > 100 && (
                       <button
-                        onClick={() => toggleExpand(index)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleExpand(index);
+                        }}
                         className="mt-4 text-yellow-600 text-sm font-medium flex items-center justify-center hover:text-yellow-700 transition"
                       >
                         {isExpanded ? 'Show Less' : 'Show More'}
@@ -162,6 +170,33 @@ const ObeInput = () => {
           })}
         </Slider>
       </div>
+
+      {/* Popup Modal */}
+      {selectedCard && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-12 relative animate-fadeIn">
+            <button
+              onClick={() => setSelectedCard(null)}
+              className="absolute top-3 right-3 text-gray-600 hover:text-red-500 transition"
+            >
+              <X size={24} />
+            </button>
+
+            {/* Image Placeholder */}
+            <div className="w-full h-52 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+              <img
+                src={selectedCard.image || '/placeholder-image.png'}
+                alt={selectedCard.title}
+                className="max-h-full object-contain"
+              />
+            </div>
+
+            {/* Title + Description */}
+            <h3 className="text-xl font-semibold text-yellow-700 mb-2">{selectedCard.title}</h3>
+            <p className="text-gray-700">{selectedCard.description}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
