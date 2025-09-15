@@ -1,33 +1,251 @@
 {
-  "fac_participation":[
-{
-      "s.no.": 1,
-      "faculty_name": "Dr. ABC",
-      "event_title": "Faculty Development Program on AI",
-      "organizer": "IIT Madras",
-      "status": "Completed",
-      "date(s)": "15-07-2024 to 20-07-2024",
-      "duration": "6 Days"
-    },
-    {
-      "s.no.": 2,
-      "faculty_name": "",
-      "event_title": "",
-      "organizer": "",
-      "status": "",
-      "date(s)": "",
-      "duration": ""
-    },
-    {
-      "s.no.": 3,
-      "faculty_name": "",
-      "event_title": "",
-      "organizer": "",
-      "status": "",
-      "date(s)": "",
-      "duration": ""
-    }
+  "fac_participation":
+  [
+  {
+    "s.no.": 1,
+    "faculty_name": "Dr. Karunakaran.K, Dr. V. Evelyn Brindha, Dr. Gowri Sankar.C, Dr. Sethuraman M.G, Mr. Lourdusamy.A",
+    "event_title": "FDP on Outcome Based Education (OBE) and Enhancing Quality of Teaching Learning Process",
+    "organizer": "Hindusthan Educational Institutions, Karunya Institute of Technology and Sciences, K.S.R College of Engineering, The Gandhigram Rural Institute, St. Xavier’s College",
+    "status": "Completed",
+    "date(s)": "17-07-2023 to 21-07-2023",
+    "duration": "5 Days"
+  },
+  {
+    "s.no.": 2,
+    "faculty_name": "Ms. Abitha P",
+    "event_title": "FDP on Microsoft Azure AI Engineer Associate",
+    "organizer": "ICT Academy, Tamilnadu",
+    "status": "Completed",
+    "date(s)": "19-02-2024 to 23-02-2024",
+    "duration": "5 Days"
+  },
+  {
+    "s.no.": 3,
+    "faculty_name": "Prof. Karthikeyan K.N, Mr. Murali Ganesan, Dr. Balamurugan.S, Dr. Arulkumaran G, Mr. Sai Venkateshwaran",
+    "event_title": "FDP on Generative AI and Cyber Security Challenges",
+    "organizer": "Coimbatore Institute of Technology, Zerplabs India Pvt. Ltd., Amirtha Vishwapeedam, Reva University, Standard Chartered Global Business Services",
+    "status": "Completed",
+    "date(s)": "08-08-2022 to 12-08-2022",
+    "duration": "5 Days"
+  },
+  {
+    "s.no.": 4,
+    "faculty_name": "Mr. Dinesh Gandhi",
+    "event_title": "Faculty Development Program on Curriculum Design and Development",
+    "organizer": "ICT Academy, Tamilnadu",
+    "status": "Completed",
+    "date(s)": "13-03-2023 to 17-03-2023",
+    "duration": "5 Days"
+  },
+  {
+    "s.no.": 5,
+    "faculty_name": "Mr. Jayachandran.J, Dr. Kanthimathi.M, Dr. Ushadevi.G, Mr. P. Raju, Dr. S. Mathivanan",
+    "event_title": "STTP on IoT Enabled Techniques For Industrial Automation Processes",
+    "organizer": "Trinetra Wireless Pvt Ltd, Sri Sairam Engineering College, VIT Vellore, Team Tweaks Technologies Pvt Ltd, Government College of Technology",
+    "status": "Completed",
+    "date(s)": "20-09-2021 to 24-09-2021",
+    "duration": "5 Days"
+  },
+  {
+    "s.no.": 6,
+    "faculty_name": "Dr. Rajeshkumar.N, Dr. Senthilkumar.S, Dr. Priya.S, Dr. Ezhumalai.P, Dr. Parthasarathy.M",
+    "event_title": "National-Level Faculty Development Program on Demystifying Outcome-Based Education (OBE)",
+    "organizer": "Sathayabhama Institute of Science and Technology, Bharathidasan University, Coimbatore Institute of Technology, SSN College of Engineering, Bharathiar University",
+    "status": "Completed",
+    "date(s)": "16-05-2022 to 20-05-2022",
+    "duration": "5 Days"
+  },
+  {
+    "s.no.": 7,
+    "faculty_name": "Dr. Jameer Basha.A",
+    "event_title": "Emerging Technologies for Next Generation Networks",
+    "organizer": "United Institute of Technology, Coimbatore",
+    "status": "Completed",
+    "date(s)": "18-07-2023",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 8,
+    "faculty_name": "Dr. Ramasamy.S",
+    "event_title": "Cyber Security Threats and Vulnerabilities",
+    "organizer": "Surya Engineering College, Erode",
+    "status": "Completed",
+    "date(s)": "25-08-2023",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 9,
+    "faculty_name": "Dr. Subhalakshmi.R.T",
+    "event_title": "FDP on Blockchain Technologies and its Applications",
+    "organizer": "Adithya Institute of Technology, Coimbatore",
+    "status": "Completed",
+    "date(s)": "13-09-2023",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 10,
+    "faculty_name": "Dr. Senthil Kumar.R",
+    "event_title": "One Day Workshop on Recent Trends in AI/ML",
+    "organizer": "Erode Sengunthar Engineering College, Perundurai",
+    "status": "Completed",
+    "date(s)": "10-07-2023",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 11,
+    "faculty_name": "Dr. Senthil Kumar.R",
+    "event_title": "Seminar on Artificial Intelligence",
+    "organizer": "Government Arts and Science College for Women, Coimbatore",
+    "status": "Completed",
+    "date(s)": "11-10-2023",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 12,
+    "faculty_name": "Dr. Thangamani.T",
+    "event_title": "Hands on Session to Unleash the Power of Data Exploration",
+    "organizer": "M.A.M College of Engineering and Technology, Trichy",
+    "status": "Completed",
+    "date(s)": "06-11-2023",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 13,
+    "faculty_name": "Mr. Tamizharasu.T",
+    "event_title": "Security and Privacy Issues in Wireless Networks",
+    "organizer": "Sri Sai Ranganathar Institute of Technology, Coimbatore",
+    "status": "Completed",
+    "date(s)": "22-02-2024",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 14,
+    "faculty_name": "Mr. Murugan.M",
+    "event_title": "FDP on Artificial Intelligence (AI) Enabled Internet of Things (IoT)",
+    "organizer": "RVS Technical Campus, Coimbatore",
+    "status": "Completed",
+    "date(s)": "28-05-2024",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 15,
+    "faculty_name": "Dr. Jameer Basha.A",
+    "event_title": "Preparation of IQAC and SSR for NAAC",
+    "organizer": "Indira Ganesan College of Engineering, Tiruchirapalli",
+    "status": "Completed",
+    "date(s)": "16-04-2024",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 16,
+    "faculty_name": "Dr. Jameer Basha.A",
+    "event_title": "FDP on Outcome Based Education (OBE) Awareness Program",
+    "organizer": "Indira Ganesan College of Engineering, Coimbatore",
+    "status": "Completed",
+    "date(s)": "11-07-2022",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 17,
+    "faculty_name": "Dr. Jameer Basha.A",
+    "event_title": "Orientation Towards Autonomous Curriculum Framing and its Process",
+    "organizer": "United Institute of Technology, Coimbatore",
+    "status": "Completed",
+    "date(s)": "12-08-2022",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 18,
+    "faculty_name": "Dr. Jameer Basha.A",
+    "event_title": "Technology in Teaching Methodology",
+    "organizer": "Yuva Guru College of Arts and Science, Coimbatore",
+    "status": "Completed",
+    "date(s)": "14-10-2022",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 19,
+    "faculty_name": "Mr. Sureshkumar.P",
+    "event_title": "Edge Computing Applications in Medical Big Data",
+    "organizer": "Angel College of Engineering and Technology, Tirupur",
+    "status": "Completed",
+    "date(s)": "05-09-2022",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 20,
+    "faculty_name": "Dr. Uma.S",
+    "event_title": "Empirical Data Science and its Applications",
+    "organizer": "Pollachi Institute of Engineering and Technology",
+    "status": "Completed",
+    "date(s)": "05-10-2022",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 21,
+    "faculty_name": "Dr. Senthilsingh.C",
+    "event_title": "FDP on Big Data and Business Analytics",
+    "organizer": "Jai Sriram Engineering College, Tirupur",
+    "status": "Completed",
+    "date(s)": "20-10-2022",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 22,
+    "faculty_name": "Dr. Ramasamy.S",
+    "event_title": "Foundations of Cyber Security and Physical Systems",
+    "organizer": "Dhanalakshmi Srinivasan College of Engineering, Coimbatore",
+    "status": "Completed",
+    "date(s)": "02-03-2023",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 23,
+    "faculty_name": "Mrs. Jeevitha.P",
+    "event_title": "FDP on Intelligent Internet of Things (IoT) Computing and Applications",
+    "organizer": "Akshaya College of Engineering and Technology, Coimbatore",
+    "status": "Completed",
+    "date(s)": "12-04-2023",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 24,
+    "faculty_name": "Dr. Jameer Basha.A",
+    "event_title": "Blockchain Technology in Medical Application",
+    "organizer": "Jansons Institute of Technology, Coimbatore",
+    "status": "Completed",
+    "date(s)": "29-07-2021",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 25,
+    "faculty_name": "Dr. Uma.S",
+    "event_title": "FDP Advanced Database Technology",
+    "organizer": "PA College of Engineering and Technology, Pollachi",
+    "status": "Completed",
+    "date(s)": "05-08-2021",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 26,
+    "faculty_name": "Dr. Lokesh.S",
+    "event_title": "FDP on Emerging Applications in Image Processing",
+    "organizer": "Dr.NGP Institute of Technology, Coimbatore",
+    "status": "Completed",
+    "date(s)": "17-09-2021",
+    "duration": "1 Day"
+  },
+  {
+    "s.no.": 27,
+    "faculty_name": "Mrs. Jeevitha.P",
+    "event_title": "Research Insights in Machine Learning",
+    "organizer": "Dr. Kalaignar Karunanidhi Institute of Technology, Coimbatore",
+    "status": "Completed",
+    "date(s)": "27-10-2021",
+    "duration": "1 Day"
+  }
 ],
+
 "fac_patents":[
 {
       "s.no.": 1,
@@ -1562,162 +1780,467 @@
 
 ],
 "International_Conference": [
-{
-"s.no.": 1,
-"faculty name": "Dr. R.T. Subhalakshmi",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Utilizing Convolutional Neural Networks For Accurate and Efficient Classification Of Paddy Leaf Diseases",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  {
+    "s.no.": 1,
+    "faculty name": "Dr. R.T. Subhalakshmi",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Utilizing Convolutional Neural Networks For Accurate and Efficient Classification Of Paddy Leaf Diseases",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 2,
+    "faculty name": "Dr. M. Thangamani",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Exploring The Mental Health Depression Of Youth And Adult Using Machine Learning And Artificial Intelligence Approaches",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 3,
+    "faculty name": "Dr. M. Thangamani",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Automatic Neuron Reconstruction From 3D Microscope Images using Deep Learning",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 4,
+    "faculty name": "Dr. A. Jameer Basha",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Interactive Medical Assistance With Generative Pre-Trained Transformer Using Gen AI",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 5,
+    "faculty name": "Dr. D. Jayasutha",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Monitoring The Progress Of Labor From Remote Area Using LoRaWAN",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 6,
+    "faculty name": "Mr. G. Jeevanantham",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Integrating An Autonomous Emergency Braking System With a Medical Assistant Using Machine Learning Techniques",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 7,
+    "faculty name": "Mr. K. Murugan",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "AI-Based Approach For IoT Integrated Programmed Solar Power Humorless Grassland Mower",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 8,
+    "faculty name": "Mrs. A. Nishanandhini",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Malware Detection And Encryption Using Artificial Intelligence Techniques",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 9,
+    "faculty name": "Mrs. C.E. Rajaprabha",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Tumour Detection And Quantification Using ANN Algorithm In Artificial Intelligence",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 10,
+    "faculty name": "Dr. S. Ramasamy",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Enhancing Security With Keystroke Dynamics: A Memetic Algorithm Approach For Preprocessing Technique Evaluation",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 11,
+    "faculty name": "Dr. S. Ramasamy",
+    "conference Name": "2023 International Conference on Disruptive Technologies (ICDT)",
+    "indexing": "IEEE",
+    "title": "An Early Detection of Ovarian Cancer and The Accurate Spreading Range in Human Body by Using Deep Medical Learning Model",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 12,
+    "faculty name": "Dr. N.B. Mahesh Kumar",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "A Literature Review On Forest Fire Detection Using IoT and Artificial Intelligence",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 13,
+    "faculty name": "Dr. N.B. Mahesh Kumar",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Self-Powered Wearable Device For Continuous Health Monitoring",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 14,
+    "faculty name": "Mrs. D. Vidhya",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Enhancing Skin Cancer Diagnosis Through Deep Learning: Accurate Classification Using Advanced Techniques",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 15,
+    "faculty name": "Mr. D. Vikkiramapandian",
+    "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+    "indexing": "TESS-2023 Proceedings",
+    "title": "Cardiovascular Risk Analysis Using Machine Learning Approach",
+    "volume/issue/pageno.": "",
+    "doi": "Nov 2023"
+  },
+  {
+    "s.no.": 16,
+    "faculty name": "Mrs. S. Saranya",
+    "conference Name": "International Conference on Advanced Computing and Innovative Technologies in Engineering (ICACITE)",
+    "indexing": "IEEE",
+    "title": "Analysis of Software Defect Prediction Using Machine Learning Techniques",
+    "volume/issue/pageno.": "",
+    "doi": "2023"
+  },
+  {
+    "s.no.": 17,
+    "faculty name": "Mr. Arun",
+    "conference Name": "2023 Winter Summit on Smart Computing and Networks (WiSSCoN)",
+    "indexing": "IEEE",
+    "title": "Hybrid Artificial Neural Network with Advanced Noctiluca Optimization for Activity Monitoring and Prognostic Study of Signals Using EEG Signals",
+    "volume/issue/pageno.": "",
+    "doi": "2023"
+  },
+  {
+    "s.no.": 18,
+    "faculty name": "Dr. Maheshkumar N.B",
+    "conference Name": "4th International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)",
+    "indexing": "Proceedings in ICACITE",
+    "title": "A Way to Protect the Surveillance Data Stored in the Cloud Using FC and SVM Methods",
+    "volume/issue/pageno.": "",
+    "doi": "May 2024"
+  },
+  {
+    "s.no.": 19,
+    "faculty name": "N. Abinaya",
+    "conference Name": "15th International Conference on Computing Communication and Networking Technologies (ICCCNT)",
+    "indexing": "Proceedings in ICCCNT",
+    "title": "Enhancing Dysarthria Diagnosis With Deep Learning Techniques",
+    "volume/issue/pageno.": "",
+    "doi": "June 2024"
+  },
+  {
+    "s.no.": 20,
+    "faculty name": "N. Abinaya",
+    "conference Name": "15th International Conference on Computing Communication and Networking Technologies (ICCCNT)",
+    "indexing": "Proceedings in ICCCNT",
+    "title": "Navigating Risk: Deep Learning Approaches for Lane Change Safety and Lane Departure Warning Systems",
+    "volume/issue/pageno.": "",
+    "doi": "June 2024"
+  },
+  {
+    "s.no.": 21,
+    "faculty name": "N. Abinaya",
+    "conference Name": "15th International Conference on Computing Communication and Networking Technologies (ICCCNT)",
+    "indexing": "Proceedings in ICCCNT",
+    "title": "Advancing Stress Detection through Deep Learning in Human-Machine Interactions with Speech Signals Analysis",
+    "volume/issue/pageno.": "",
+    "doi": "June 2024"
+  },
+  {
+    "s.no.": 22,
+    "faculty name": "N. Abinaya",
+    "conference Name": "15th International Conference on Computing Communication and Networking Technologies (ICCCNT)",
+    "indexing": "Proceedings in ICCCNT",
+    "title": "EEG Based Identification of Learning Disabilities using Deep Learning Algorithms",
+    "volume/issue/pageno.": "",
+    "doi": "June 2024"
+  },
+  {
+    "s.no.": 23,
+    "faculty name": "Dr. R. Senthilkumar",
+    "conference Name": "9th International Conference on Computing Sciences (ICCS-2024)",
+    "indexing": "Proceedings in ICCS-2024",
+    "title": "Detecting Packet Dropping Attacks in MANET Using Dolphin Echolocation and Machine Learning",
+    "volume/issue/pageno.": "",
+    "doi": "Oct 2024"
+  },
+  {
+  "s.no.": 24,
+  "faculty name": "Ms. Jeevitha.P",
+  "conference Name": "International Conference on Frontiers in Engineering, Management and Applied Science (FEMAS 2021)",
+  "indexing": "Proceedings in FEMAS 2021",
+  "title": "Challenges And Opportunities Of Healthcare Management Post Covid-19",
+  "volume/issue/pageno.": "",
+  "doi": "June 2021"
 },
 {
-"s.no.": 2,
-"faculty name": "Dr. M. Thangamani",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Exploring The Mental Health Depression Of Youth And Adult Using Machine Learning And Artificial Intelligence Approaches",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 25,
+  "faculty name": "Mr. Pradeep.M",
+  "conference Name": "3rd International Conference on Multidisciplinary Innovation in Academic Research",
+  "indexing": "Proceedings in 3rd International Conference on Multidisciplinary Innovation in Academic Research",
+  "title": "Identification of Brain Tumor with the Help of Convolution Neural Networks",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2021"
 },
 {
-"s.no.": 3,
-"faculty name": "Dr. M. Thangamani",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Automatic Neuron Reconstruction From 3D Microscope Images using Deep Learning",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 26,
+  "faculty name": "Mrs. Sofiyabanu.M",
+  "conference Name": "3rd International Conference on Multidisciplinary Innovation in Academic Research",
+  "indexing": "Proceedings in 3rd International Conference on Multidisciplinary Innovation in Academic Research",
+  "title": "Early Prediction of Brain Disorders by Machine Learning Classifiers",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2021"
 },
 {
-"s.no.": 4,
-"faculty name": "Dr. A. Jameer Basha",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Interactive Medical Assistance With Generative Pre-Trained Transformer Using Gen AI",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 27,
+  "faculty name": "Mr. Govindaraju.M",
+  "conference Name": "3rd International Conference on Multidisciplinary Innovation in Academic Research",
+  "indexing": "Proceedings in 3rd International Conference on Multidisciplinary Innovation in Academic Research",
+  "title": "Diagnosis of ECG Signal for Signal Quality using Convolutional Neural Networks",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2021"
 },
 {
-"s.no.": 5,
-"faculty name": "Dr. D. Jayasutha",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Monitoring The Progress Of Labor From Remote Area Using LoRaWAN",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 28,
+  "faculty name": "Mr. Babu Thirumangaialwar.E",
+  "conference Name": "International Conference On Newer Engineering Concepts And Technology (ICONNECT-2022)",
+  "indexing": "Proceedings in ICONNECT-2022",
+  "title": "Smart Voting System using Deep Learning Techniques and Facial Authentication",
+  "volume/issue/pageno.": "",
+  "doi": "July 2022"
 },
 {
-"s.no.": 6,
-"faculty name": "Mr. G. Jeevanantham",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Integrating An Autonomous Emergency Braking System With a Medical Assistant Using Machine Learning Techniques",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 29,
+  "faculty name": "Mrs. Kalaiselvi.T",
+  "conference Name": "International Conference On Newer Engineering Concepts And Technology (ICONNECT-2022)",
+  "indexing": "Proceedings in ICONNECT-2022",
+  "title": "Reading Assistant for Blind People using Artificial Intelligence",
+  "volume/issue/pageno.": "",
+  "doi": "July 2022"
 },
 {
-"s.no.": 7,
-"faculty name": "Mr. K. Murugan",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "AI-Based Approach For IoT Integrated Programmed Solar Power Humorless Grassland Mower",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 30,
+  "faculty name": "Mrs. Jeevitha.P",
+  "conference Name": "International Conference on Emerging Trends in Engineering Design & Manufacturing",
+  "indexing": "Proceedings in International Conference on Emerging Trends in Engineering Design & Manufacturing",
+  "title": "Plant Leaf Disease Detection using Deep Learning",
+  "volume/issue/pageno.": "",
+  "doi": "Aug 2022"
 },
 {
-"s.no.": 8,
-"faculty name": "Mrs. A. Nishanandhini",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Malware Detection And Encryption Using Artificial Intelligence Techniques",
-
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 31,
+  "faculty name": "K.S. Pavithra",
+  "conference Name": "1st International Conference on Cognitive Computing and Intelligent Communication Systems (CCICS 2022)",
+  "indexing": "Proceedings in CCICS 2022",
+  "title": "A Wearable Device for Fall Detection and Heart Stroke Prediction using IoT and Machine Learning",
+  "volume/issue/pageno.": "",
+  "doi": "Sep 2022"
 },
 {
-"s.no.": 9,
-"faculty name": "Mrs. C.E. Rajaprabha",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Tumour Detection And Quantification Using ANN Algorithm In Artificial Intelligence",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 32,
+  "faculty name": "Mr. Govindaraju.M",
+  "conference Name": "International Conference on Emerging Trends in Engineering, Management and Technology (ICETEMT-2022)",
+  "indexing": "Proceedings in ICETEMT-2022",
+  "title": "Price Drop Alert System Using Python Language: Web Scraping Technique",
+  "volume/issue/pageno.": "",
+  "doi": "Sep 2022"
 },
 {
-"s.no.": 10,
-"faculty name": "Dr. S. Ramasamy",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Enhancing Security With Keystroke Dynamics: A Memetic Algorithm Approach For Preprocessing Technique Evaluation",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 33,
+  "faculty name": "Mr. Bijubalakrishnan",
+  "conference Name": "International Conference on Recent Trends in Computer Science and Information Technology (RTCSIT-2023)",
+  "indexing": "Proceedings in RTCSIT-2023",
+  "title": "Student Information System",
+  "volume/issue/pageno.": "",
+  "doi": "Jan 2023"
 },
 {
-"s.no.": 11,
-"faculty name": "Dr. S. Ramasamy",
-"conference Name": "2023 International Conference on Disruptive Technologies (ICDT)",
-"indexing": "IEEE",
-"title": "An Early Detection of Ovarian Cancer and The Accurate Spreading Range in Human Body by Using Deep Medical Learning Model",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 34,
+  "faculty name": "Mrs. Sasipriya.S",
+  "conference Name": "International Conference on Recent Trends in Computer Science and Information Technology (RTCSIT-2023)",
+  "indexing": "Proceedings in RTCSIT-2023",
+  "title": "Multiple Face Detection Attendance System",
+  "volume/issue/pageno.": "",
+  "doi": "Jan 2023"
 },
 {
-"s.no.": 12,
-"faculty name": "Dr. N.B. Mahesh Kumar",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "A Literature Review On Forest Fire Detection Using IoT and Artificial Intelligence",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 35,
+  "faculty name": "Mr. Arun R",
+  "conference Name": "2023 Winter Summit on Smart Computing and Networks (WiSSCoN)",
+  "indexing": "Proceedings of WiSSCoN 2023",
+  "title": "Hybrid Artificial Neural Network with Advanced Noctiluca Optimization for Activity Monitoring and Prognostic Study of Signals Using EEG Signals",
+  "volume/issue/pageno.": "",
+  "doi": "Mar 2023"
 },
 {
-"s.no.": 13,
-"faculty name": "Dr. N.B. Mahesh Kumar",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Self-Powered Wearable Device For Continuous Health Monitoring",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
-
+  "s.no.": 36,
+  "faculty name": "Mrs. Saranya S",
+  "conference Name": "3rd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)",
+  "indexing": "Proceedings in ICACITE",
+  "title": "Analysis Of Software Defect Prediction Using Machine-Learning Techniques",
+  "volume/issue/pageno.": "",
+  "doi": "May 2023"
 },
 {
-"s.no.": 14,
-"faculty name": "Mrs. D. Vidhya",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Enhancing Skin Cancer Diagnosis Through Deep Learning: Accurate Classification Using Advanced Techniques",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 37,
+  "faculty name": "Dr. R.T. Subhalakshmi",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Utilizing Convolutional Neural Networks For Accurate And Efficient Classification Of Paddy Leaf Diseases",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
 },
 {
-"s.no.": 15,
-"faculty name": "Mr. D. Vikkiramapandian",
-"conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
-"indexing": "TESS-2023 Proceedings",
-"title": "Cardiovascular Risk Analysis Using Machine Learning Approach",
-"volume/issue/pageno.":"",
-"doi": "Nov 2023"
+  "s.no.": 38,
+  "faculty name": "Dr. M. Thangamani",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Exploring The Mental Health Depression Of Youth And Adult Using Machine Learning And Artificial Intelligence Approaches",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
 },
 {
-"s.no.": 16,
-"faculty name": "Mrs. S. Saranya",
-"conference Name": "International Conference on Advanced Computing and Innovative Technologies in Engineering (ICACITE)",
-"indexing": "IEEE",
-"title": "Analysis of Software Defect Prediction Using Machine Learning Techniques",
-"volume/issue/pageno.":"",
-"doi": "2023"
+  "s.no.": 39,
+  "faculty name": "Dr. A. Jameer Basha",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Interactive Medical Assistance With Generative Pre-Trained Transformer Using Gen AI",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
 },
 {
-"s.no.": 17,
-"faculty name": "Mr. Arun",
-"conference Name": "2023 Winter Summit on Smart Computing and Networks (WiSSCoN)",
-"indexing": "IEEE",
-"title": "Hybrid Artificial Neural Network with Advanced Noctiluca Optimization for Activity Monitoring and Prognostic Study of Signals Using EEG Signals",
-"volume/issue/pageno.":"",
-"doi": "2023"
+  "s.no.": 40,
+  "faculty name": "Dr. D. Jayasutha",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Monitoring The Progress Of Labour From Remote Area Using LoRaWAN",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 41,
+  "faculty name": "Mr. Jeevanantham G",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Integrating An Autonomous Emergency Braking System With A Medical Assistant Using Machine Learning Techniques",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 42,
+  "faculty name": "Mr. Murugan.K",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "AI-Based Approach For IoT Integrated Programmed Solar Power Humorless Grassland Mower",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 43,
+  "faculty name": "Mrs. Nishanandhini.S",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Malware Detection And Encryption Using Artificial Intelligence Techniques",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 44,
+  "faculty name": "Mrs. Rajaprabha C.E",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Tumour Detection And Quantification Using ANN Algorithm In Artificial Intelligence",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 45,
+  "faculty name": "Dr. Ramasamy S",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Enhancing Security With Keystroke Dynamics: A Memetic Algorithm Approach For Preprocessing Technique Evaluation",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 46,
+  "faculty name": "Dr. Mahesh Kumar N.B",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "A Literature Review On Forest Fire Detection Using IoT and Artificial Intelligence",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 47,
+  "faculty name": "Mrs. Vidhya.D",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Enhancing Skin Cancer Diagnosis Through Deep Learning: Accurate Classification Using Advanced Techniques",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 48,
+  "faculty name": "Mr. Vikkiramapandian.D",
+  "conference Name": "International Conference on Transforming Engineering Systems for Sustainability (TESS-2023)",
+  "indexing": "Proceedings in TESS-2023",
+  "title": "Cardiovascular Risk Analysis Using Machine Learning Approach",
+  "volume/issue/pageno.": "",
+  "doi": "Nov 2023"
+},
+{
+  "s.no.": 49,
+  "faculty name": "Dr. Ramasamy S",
+  "conference Name": "International Conference on Disruptive Technologies (ICDT)",
+  "indexing": "Proceedings in ICDT",
+  "title": "An Early Detection of Ovarian Cancer and The Accurate Spreading Range in Human Body by Using Deep Medical Learning Model",
+  "volume/issue/pageno.": "",
+  "doi": "July 2023"
+},
+{
+  "s.no.": 50,
+  "faculty name": "Mrs. Saranya S",
+  "conference Name": "3rd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)",
+  "indexing": "Proceedings in ICACITE",
+  "title": "Analysis Of Software Defect Prediction Using Machine-Learning Techniques",
+  "volume/issue/pageno.": "",
+  "doi": "Mar 2023"
+},
+{
+  "s.no.": 51,
+  "faculty name": "Mr. Arun R",
+  "conference Name": "2023 Winter Summit on Smart Computing and Networks (WiSSCoN)",
+  "indexing": "Proceedings of WiSSCoN 2023",
+  "title": "Hybrid Artificial Neural Network with Advanced Noctiluca Optimization for Activity Monitoring and Prognostic Study of Signals Using EEG Signals",
+  "volume/issue/pageno.": "",
+  "doi": "May 2023"
 }
 ],
+
 
 "National_journals": [
     {
