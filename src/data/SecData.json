@@ -2519,34 +2519,344 @@
     }
  ],
   "stu_international_journal": [
-
     {
-      "s.no.": 1,
-      "student_name": "Name (Register No.)",
-      "journal_name": "Journal Title",
-      "indexing": "Scopus / WoS / UGC / Others",
-      "title": "Paper Title",
-      "volume_issue_page": "Vol. X, Issue Y, pp. Z",
-      "doi": "https://doi.org/..."
+      "S.N.": 1,
+      "Students": ["C. Suresh krishna", "R. Srikrishnan", "B. Noufia Firthous", "S. Nisha"],
+      "Publisher": "International Journal For Multidisciplinary Research",
+      "Journal_Conference": "International Journal For Multidisciplinary Research",
+      "Title": "Web Scraping Based Site For Product Analysis",
+      "Volume_Issue": "Volume 6, Issue 3, May 2024",
+      "Award": "-"
     },
     {
-      "s.no.": 2,
-      "student_name": "",
-      "journal_name": "",
-      "indexing": "",
-      "title": "",
-      "volume_issue_page": "",
-      "doi": ""
+      "S.N.": 2,
+      "Students": ["Charan Gopi", "Yerramsetty Naresh Kumar", "Tadimari Sai Bhargav", "Tadimari Pavan Kumar Sanku"],
+      "Publisher": "Journal of Theoretical and Computationsl Advances in Scientific Research (JTCASR)",
+      "Journal_Conference": "Journal of Theoretical and Computationsl Advances in Scientific Research (JTCASR)",
+      "Title": "Accident Detection with CCTV Using Convolutional Neural Network",
+      "Volume_Issue": "Volume 1, Issue 1, April 2024",
+      "Award": "-"
     },
     {
-      "s.no.": 3,
-      "student_name": "",
-      "journal_name": "",
-      "indexing": "",
-      "title": "",
-      "volume_issue_page": "",
-      "doi": ""
+      "S.N.": 3,
+      "Students": ["Adithyan S", "Amrith Dinesh", "Ashwin M"],
+      "Publisher": "Journal of Science Technology and Research",
+      "Journal_Conference": "Journal of Science Technology and Research",
+      "Title": "Food Quantity Prediction Using Machine Learning Algorithms",
+      "Volume_Issue": "Volume 2, Issue 2, April 2024",
+      "Award": "-"
+    },
+    {
+      "S.N.": 4,
+      "Students": ["Ananya G", "Abhisha Divyadharshini FR", "Kalaivani M", "Leela Christy I"],
+      "Publisher": "Journal of Artificial Intelligence and Cyber Security",
+      "Journal_Conference": "Journal of Artificial Intelligence and Cyber Security",
+      "Title": "Predictive Routing Optimization Technology Based On Event Traffic Prediction",
+      "Volume_Issue": "Volume 2, Issue 2, April 2024",
+      "Award": "-"
+    },
+    {
+      "S.N.": 5,
+      "Students": ["Linjurajan", "Boppana Pravallika"],
+      "Publisher": "Journal of Artificial Intelligence and Cyber Security",
+      "Journal_Conference": "Journal of Artificial Intelligence and Cyber Security",
+      "Title": "AI – Based Tool For Preliminary Diagnosis Of Dermatological Manifestation",
+      "Volume_Issue": "Volume 2, Issue 2, April 2024",
+      "Award": "-"
+    },
+    {
+      "S.N.": 6,
+      "Students": ["Suresh Krishna C", "Srikrishnan R", "Nisha S", "Noufia Firthous S"],
+      "Publisher": "Journal of Theoretical and Computationsl Advances in Scientific Research (JTCASR)",
+      "Journal_Conference": "Journal of Theoretical and Computationsl Advances in Scientific Research (JTCASR)",
+      "Title": "Web scraping Based Site For Product Analysis",
+      "Volume_Issue": "Volume 1, Issue 1, April 2024",
+      "Award": "-"
+    },
+    {
+      "S.N.": 7,
+      "Students": ["Anitha V", "Kamaleshwari R"],
+      "Publisher": "Conference Proceedings Venue: Taylor University, Kuala Lampur, Malaysia",
+      "Journal_Conference": "International Conference On Transforming Engineering Systems For Sustainability (Tess-2023)",
+      "Title": "Integrating Autonomous emergency banking system with medical assistant using machine learning techniques",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 8,
+      "Students": ["Birundhadevi R", "Deepthi S", "Imayasri A"],
+      "Publisher": "Conference Proceedings Venue: Taylor University, Kuala Lampur, Malaysia",
+      "Journal_Conference": "International Conference On Transforming Engineering Systems For Sustainability (Tess-2023)",
+      "Title": "Malware detection using artificial intelligence",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 9,
+      "Students": ["Linjurajan", "Boppana Pravallika"],
+      "Publisher": "Conference Proceedings Venue: Taylor University, Kuala Lampur, Malaysia",
+      "Journal_Conference": "International Conference On Transforming Engineering Systems For Sustainability (Tess-2023)",
+      "Title": "Smart security system for women protection",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 10,
+      "Students": ["Dharani R", "Harishma M", "Kaviyasri J", "Akshaya E"],
+      "Publisher": "Conference Proceedings Venue: Taylor University, Kuala Lampur, Malaysia",
+      "Journal_Conference": "International Conference On Transforming Engineering Systems For Sustainability (Tess-2023)",
+      "Title": "AI enhanced motion detection for comprehensive home security",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 11,
+      "Students": ["Karthick S", "Kishore R", "Jagan A"],
+      "Publisher": "Conference Proceedings Venue: Taylor University, Kuala Lampur, Malaysia",
+      "Journal_Conference": "International Conference On Transforming Engineering Systems For Sustainability (Tess-2023)",
+      "Title": "AI-Based approach for IOT integrated Programmed solar power Humorless grassland mower",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 12,
+      "Students": ["S. Kishore", "E. Dhansekar", "L. Vani", "S. Pradeep Kumar"],
+      "Publisher": "Conference Proceedings Venue: Nandha College of Technology, April 2024",
+      "Journal_Conference": "National Conference on Application of Artificial Intelligence (AI) in Libraries (NCAAIL 2024)",
+      "Title": "Sustainable waste classification and detection using deep learning",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 13,
+      "Students": ["Kiran Kumar Reddy C", "Achyuth M", "Akshay Kumar Gupta K", "EswaraRao D"],
+      "Publisher": "Conference Proceedings Venue: Info Institute of Engineering, April 2024",
+      "Journal_Conference": "National Conference on Advances in Science, Technology and Management (NCASTM '24)",
+      "Title": "WEBHUB: A Centralized Platform for JavaScript-Based Web Applications and Voice control of web",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "Best Paper Award"
+    },
+    {
+      "S.N.": 14,
+      "Students": ["P. Sanjai", "B. Sree Manikandan", "R. Sree mathi", "S. Vikram"],
+      "Publisher": "Conference Proceedings Venue: Kalaignar Karunanidhi Institute of Technology, Jan 2024",
+      "Journal_Conference": "National Conference On Prospects Of Biotechnology In Agriculture (NCPBA'24)",
+      "Title": "Crop Recommendation System Using Machine Learning",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 15,
+      "Students": ["P. Dawood khan", "M. Abhishek", "P. Satish Kumar Reddy", "M. Tharun kumar"],
+      "Publisher": "Conference Proceedings Venue: Bannari Amman Institute of Technology, March 2024",
+      "Journal_Conference": "National Conference on innovations in information and Communication Technologies (NCIICT-2024)",
+      "Title": "Safe path prediction using RFCNN Algorithm",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 16,
+      "Students": ["Saravana S"],
+      "Publisher": "Conference Proceedings Venue: Bannari Amman Institute of Technology, May 2024",
+      "Journal_Conference": "National Conference on Recent Advancements in Science, Engineering and Technologies (RASET-2024)",
+      "Title": "Autonomous Driving Simulator",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "Best Paper Award"
+    },
+    {
+      "S.N.": 17,
+      "Students": ["Mohammed Yehia M", "Nanthakumar R T", "Padmasree S", "Vijay anand S"],
+      "Publisher": "Conference Proceedings Venue: Nandha College of Technology, April 2024",
+      "Journal_Conference": "National Conference on Application of Artificial Intelligence (AI) in Libraries (NCAAIL 2024)",
+      "Title": "Advance eagle eye Surveillance",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 18,
+      "Students": ["Yuvraaj Arun"],
+      "Publisher": "Conference Proceedings Venue: Bannari Amman Institute of Technology, May 2024",
+      "Journal_Conference": "National Conference on Recent Advancements in Science, Engineering and Technologies (RASET-2024)",
+      "Title": "Legal Documentation Using AI Assistant",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 19,
+      "Students": ["Rishi Bala M", "Vanisri MS", "Snowin J", "Swetha P"],
+      "Publisher": "Conference Proceedings Venue: Nandha College of Technology, April 2024",
+      "Journal_Conference": "National Conference on Application of Artificial Intelligence (AI) in Libraries (NCAAIL 2024)",
+      "Title": "CogniGuide - Your AI Learning Advisor",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 20,
+      "Students": ["Poonthamilan M", "Santhosh M", "Siva Shankaran E", "Subin Prabha V"],
+      "Publisher": "Conference Proceedings Venue: Info Institute of Engineering, April 2024",
+      "Journal_Conference": "National Conference on Advances in Science, Technology and Management (NCASTM '24)",
+      "Title": "Traffic Monitoring System",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 21,
+      "Students": ["Abisheik G", "Babu N", "Bharath V", "Gokula Kannan A"],
+      "Publisher": "Conference Proceedings Venue: Sri Ramakrishna College of Arts and Science, March 2024",
+      "Journal_Conference": "National Conference on Data Science and Analytics (NCDA'24)",
+      "Title": "Personality Analysis Chatbot-AI",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
     }
+  ],
+  "CAY_m2_2022_2023": [
+    {
+      "S.N.": 1,
+      "Students": ["Rishika S", "Vyshakh VS", "Udhaya M"],
+      "Publisher": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "Journal_Conference": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "Title": "Advanced AI Based Cosmetic Suggestion System",
+      "Volume_Issue": "Vol.03, Issue 04, April 2023, Pp:461-463",
+      "Award": "-"
+    },
+    {
+      "S.N.": 2,
+      "Students": ["S Venkata Balaji", "N Aneel", "N Jagadeesh"],
+      "Publisher": "International Journal For Multidisciplinary Research (IJFMR)",
+      "Journal_Conference": "International Journal For Multidisciplinary Research (IJFMR)",
+      "Title": "Liver Disease Prediction Using Machine Learning",
+      "Volume_Issue": "Volume 5, Issue 3, May-June 2023",
+      "Award": "-"
+    },
+    {
+      "S.N.": 3,
+      "Students": ["Prem K", "Prakash Raja P", "Manikandan M"],
+      "Publisher": "International Journal For Multidisciplinary Research (IJFMR)",
+      "Journal_Conference": "International Journal For Multidisciplinary Research (IJFMR)",
+      "Title": "A Framework To Make Voting System Transparent Using Blockchain Technology",
+      "Volume_Issue": "Volume 5, Issue 2, March-April 2023",
+      "Award": "-"
+    },
+    {
+      "S.N.": 4,
+      "Students": ["Sikha G Jayan", "Shilpa KP", "Shinas Vaishnav"],
+      "Publisher": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "Journal_Conference": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "Title": "Automatic Monitoring And Control System In Hydroponics Plant Agriculture",
+      "Volume_Issue": "Vol.03, Issue 05, May 2023, Pp-293",
+      "Award": "-"
+    },
+    {
+      "S.N.": 5,
+      "Students": ["Pradeep K", "Santhosh C", "Sedhu Madhavan K", "Saranya S"],
+      "Publisher": "International Journal For Multidisciplinary Research (IJFMR)",
+      "Journal_Conference": "International Journal For Multidisciplinary Research (IJFMR)",
+      "Title": "A Web -Based Platform That Enables Small Businesses To Set Up An Online Store And Sell Their Products",
+      "Volume_Issue": "Volume 5, Issue 3, May 2023",
+      "Award": "-"
+    },
+    {
+      "S.N.": 6,
+      "Students": ["Lokesh M.P.T.", "Ponduri Manogna", "Vengadesh J"],
+      "Publisher": "International Journal For Multidisciplinary Research (IJFMR)",
+      "Journal_Conference": "International Journal For Multidisciplinary Research (IJFMR)",
+      "Title": "Smart Agriculture Using IoT",
+      "Volume_Issue": "Volume 5, Issue 2, March-April 2023",
+      "Award": "-"
+    },
+    {
+      "S.N.": 7,
+      "Students": ["Rajalakshmi R", "Reena J", "Sivanesan M"],
+      "Publisher": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "Journal_Conference": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "Title": "Driver Drowsiness Detection With Open CV and Keras",
+      "Volume_Issue": "Vol.03, Issue 05, May 2023, Pp-45-51",
+      "Award": "-"
+    },
+    {
+      "S.N.": 8,
+      "Students": ["Mohammed Nishad S", "Russel Gabriel Thomas", "Sreerag M"],
+      "Publisher": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "Journal_Conference": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "Title": "Traffic Prediction For Intelligent Transportation System",
+      "Volume_Issue": "Vol.03, Issue 05, May 2023, Pp-267-271",
+      "Award": "-"
+    },
+    {
+      "S.N.": 9,
+      "Students": ["Jenke Subbareddy", "Chejarla Srihitha", "Gurrala Sirisha"],
+      "Publisher": "Conference Proceedings Venue: Karpagam Institute of Technology, April 2023",
+      "Journal_Conference": "National E-Conference on Artificial Intelligence, Cyber Security, IoT and Computing Technologies (NASICT 2023)",
+      "Title": "Smart Parking Android Application",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "Best Paper Award"
+    },
+    {
+      "S.N.": 10,
+      "Students": ["Kaviarasan R", "Irfan Rahim Z", "Imran Khan S"],
+      "Publisher": "Conference Proceedings Venue: SRM TRP Engineering College, Trichirappalli",
+      "Journal_Conference": "National Conference on Recent Advances in Communicative Electronics (NCRACE 2023)",
+      "Title": "Heart Disease Prediction using Machine Learning",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 11,
+      "Students": ["Gokul B", "Kavirajan S", "Gokul S"],
+      "Publisher": "Conference Proceedings Venue: SRM TRP Engineering College, Trichirappalli",
+      "Journal_Conference": "National Conference on Recent Advances in Communicative Electronics (NCRACE 2023)",
+      "Title": "Personal Expenses Tracker application using cloud",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+  
+    {
+      "S.N.": 1,
+      "Students": ["Haritha MP", "Sreeyuktha R", "Vishnuprasad R"],
+      "Publisher": "International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)",
+      "Journal_Conference": "International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)",
+      "Title": "Double Layered Security System for Smart ATM by Fingerprint and RF Technology",
+      "Volume_Issue": "Volume 2, Issue 3, May 2022",
+      "Award": "-"
+    },
+    {
+      "S.N.": 2,
+      "Students": ["Priyadharshini S", "Madhubala R", "Sivashankar M", "Yeshwanth C"],
+      "Publisher": "International Journal of Research in Engineering and Science (IJRES)",
+      "Journal_Conference": "International Journal of Research in Engineering and Science (IJRES)",
+      "Title": "Blockchain Based Cloud Smart Healthcare System with Dual Assses Control Framework",
+      "Volume_Issue": "Volume 10, Issue 5, 2022",
+      "Award": "-"
+    },
+    {
+      "S.N.": 3,
+      "Students": ["Leobin Joseph", "Ajay Krishna", "Maschio Berty Pramod P", "Velusamy A"],
+      "Publisher": "International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)",
+      "Journal_Conference": "International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)",
+      "Title": "Advanced Parking Slot Management System Using Machine Learning",
+      "Volume_Issue": "Volume 2, Issue 3, April 2022",
+      "Award": "-"
+    },
+    {
+      "S.N.": 4,
+      "Students": ["Haritha M P", "Sreeyuktha R", "Vishnuprasad R"],
+      "Publisher": "Conference Proceedings Venue: Bannari Amman Institute of Technology, Erode",
+      "Journal_Conference": "National Conference on innovations in information and Communication Technologies (NCIICT 2022)",
+      "Title": "Fingerprint Based ATM Security System",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    },
+    {
+      "S.N.": 5,
+      "Students": ["Fazil Rehman A", "Karthik R", "Muralidar M", "Nishanth K M"],
+      "Publisher": "Conference Proceedings Venue: Bannari Amman Institute of Technology, Erode",
+      "Journal_Conference": "National Conference on innovations in information and Communication Technologies (NCIICT 2022)",
+      "Title": "Advanced Leaf Disease Detection Using Neural Network",
+      "Volume_Issue": "Conference Proceedings",
+      "Award": "-"
+    }
+
+
 ],
   "stu_internships": [
     {
