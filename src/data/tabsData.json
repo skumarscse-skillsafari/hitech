@@ -112,13 +112,6 @@
             "semesters": "4 Semesters",
             "specializations": "AI, Data Science, Cyber Security",
             "syllabusLink": "Download Syllabus PDF"
-          },
-          {
-            "title": "Elective Courses",
-            "description": "Wide range of elective courses offered",
-            "areas": "AI/ML, Cloud Computing, IoT, Blockchain, Cybersecurity",
-            "options": "30+ elective courses available",
-            "syllabusLink": "Download Electives PDF"
           }
         ]
       }
