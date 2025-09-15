@@ -1538,7 +1538,555 @@
     "volumeIssuePage": "Sensors 2021, 21, 6654",
     "doi": "https://doi.org/10.3390/s21196654",
     "DOI": "2021"
-  }
+  },
+  {
+      "s.no.": 37,
+      "faculty name": "K. Murugan",
+      "journal": "International Journal for Research in Applied Science & Engineering Technology (IJRASET)",
+      "indexing": "UGC",
+      "title": "A Survey on New Security improvement in Internet of Things utilized by Software Defined Networking (SDN)",
+      "volumeIssuePage": "Volume 10 Issue VII | 1717-1620",
+      "DOI": "https://doi.org/10.22214/ijraset.2022.45417",
+      "year": "2022"
+    },
+    {
+      "s.no.": 38,
+      "faculty name": "Mr. R. Senthilkumar",
+      "journal": "International Journal of Environmental Protection and Ecology",
+      "indexing": "SCI",
+      "title": "Gray-level co-occurrence matrix with oriented fast and rotated brief algorithm for diabetic retinopathy prediction",
+      "volumeIssuePage": "Vol. 23, Issue 07, pp. 3089-3097",
+      "DOI": "",
+      "year": "2022"
+    },
+    {
+      "s.no.": 39,
+      "faculty name": "Dr. S. Ramasamy",
+      "journal": "ICTACT Journal on Image and Video Processing",
+      "indexing": "UGC",
+      "title": "An Improvised Ensemble CNN Algorithm for detecting video stream in multimedia",
+      "volumeIssuePage": "Vol. 13, Issue 02, pp. 2860–2864",
+      "DOI": "",
+      "year": "2022"
+    },
+    {
+      "s.no.": 40,
+      "faculty name": "P. Gomathi",
+      "journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+      "indexing": "UGC",
+      "title": "Advanced Leaf Disease Detection System using Machine Learning",
+      "volumeIssuePage": "Vol. 9, Issue 4, pp. 148-153",
+      "DOI": "",
+      "year": "2022"
+    },
+    {
+      "s.no.": 41,
+      "faculty name": "Biju Balakrishnan",
+      "journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+      "indexing": "UGC",
+      "title": "Semantic Web Mining With Latent Semantic Domain Clustered Web User Applications Maps",
+      "volumeIssuePage": "Vol. 9, Issue 4, pp. 119-128",
+      "DOI": "",
+      "year": "2022"
+    },
+    {
+      "s.no.": 42,
+      "faculty name": "Dr. S. Ramasamy",
+      "journal": "GIS Science Journal",
+      "indexing": "UGC",
+      "title": "Interpretation of Vegetation Using AI in QGIS (Quantum Geographic Information System)",
+      "volumeIssuePage": "Vol. 09, Issue 12, pp. 793–804",
+      "DOI": "",
+      "year": "2022"
+    },
+    {
+      "s.no.": 43,
+      "faculty name": "Dr. S. Ramasamy",
+      "journal": "Journal of Intelligent and Fuzzy Systems",
+      "indexing": "SCI",
+      "title": "Real time multi view image based FPC plant management with SS data security and low rate attack detection for efficient smart agriculture in WSN",
+      "volumeIssuePage": "Vol. 44, Issue 02, pp. 91–100",
+      "DOI": "10.3233/JIFS-220594",
+      "year": "2023"
+    },
+    {
+      "s.no.": 44,
+      "faculty name": "Dr. A. Jameer Basha",
+      "journal": "Computer System Science and Engineering",
+      "indexing": "SCI",
+      "title": "PSO – DBNet for Peak-to-Average Power Ratio Reduction Using Deep Belief Network",
+      "volumeIssuePage": "Vol. 45, No. 2, pp. 1483–1493",
+      "DOI": "10.32604/csse.2023.021540",
+      "year": "2023"
+    },
+    {
+      "s.no.": 45,
+      "faculty name": "Mr. R. Senthilkumar",
+      "journal": "Multimedia Tools and Applications",
+      "indexing": "SCI",
+      "title": "Fully convolutional neural networks for LIDAR-camera fusion for pedestrian detection in autonomous vehicle",
+      "volumeIssuePage": "Vol. 82, Issue 16, pp. 25107–25130",
+      "DOI": "https://doi.org/10.1007/s11042-023-14417-x",
+      "year": "2023"
+    },
+    {
+      "s.no.": 46,
+      "faculty name": "Mr. Murugan K",
+      "journal": "International Journal of All Research Education & Scientific Methods",
+      "indexing": "UGC",
+      "title": "IOT Empowered Automated Solar Grass Cutter",
+      "volumeIssuePage": "Vol. 11, Issue 3",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 47,
+      "faculty name": "Dr. S. Ramasamy",
+      "journal": "ICTACT Journal on Communication Technology",
+      "indexing": "UGC",
+      "title": "An Intelligent Res Nets Resource Allocation Framework for 5G Networks",
+      "volumeIssuePage": "Vol. 14, Issue 01, pp. 2837–2842",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 48,
+      "faculty name": "Dr. S. Ramasamy",
+      "journal": "International Journal of All Research Education and Scientific Methods (IJARESM)",
+      "indexing": "UGC",
+      "title": "Analyzing and Detecting the Boundary in Medical Images and Utilizing Big Data",
+      "volumeIssuePage": "Vol. 11, Issue 03, pp. 989–992",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 49,
+      "faculty name": "Mrs. R. Gnanakumari",
+      "journal": "Intelligent Automation & Soft Computing (Tech Science Press)",
+      "indexing": "Scopus",
+      "title": "Generalized Jaccard Similarity Based Recurrent DNN for Virtualizing Social Network Communities",
+      "volumeIssuePage": "Vol. 36, Issue 3, pp. 2719–2730",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 50,
+      "faculty name": "Mr. P. Suresh Kumar",
+      "journal": "International Journal of Research and Analytical Reviews (IJRAR)",
+      "indexing": "UGC",
+      "title": "An Integrated IOT System for Monitoring and Managing Water Quality in WWTP",
+      "volumeIssuePage": "Vol. 10, Issue 1, pp. 949–953",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 51,
+      "faculty name": "Mr. P. Suresh Kumar",
+      "journal": "International Journal for Multidisciplinary Research",
+      "indexing": "UGC",
+      "title": "Smart Agriculture using IOT",
+      "volumeIssuePage": "Vol. 5, Issue 2, pp. 1–8",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 52,
+      "faculty name": "Mr. P. Suresh Kumar",
+      "journal": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "indexing": "UGC",
+      "title": "Advanced AI Based Cosmetic Suggestion System",
+      "volumeIssuePage": "Vol. 03, Issue 04, pp. 461–463",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 53,
+      "faculty name": "Mr. S. Tamizharasu",
+      "journal": "Wireless Networks",
+      "indexing": "SCI",
+      "title": "An intelligent AODV routing with energy efficient weight based clustering algorithm (EEWCA) in wireless Ad hoc network (WANET)",
+      "volumeIssuePage": "Vol. 29, pp. 2703–2716",
+      "DOI": "https://doi.org/10.1007/s11276-023-03321-9",
+      "year": "2023"
+    },
+    {
+      "s.no.": 54,
+      "faculty name": "Mr. P. Suresh Kumar",
+      "journal": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+      "indexing": "UGC",
+      "title": "Automatic Monitoring And Control System In Hydroponics Plant Agriculture",
+      "volumeIssuePage": "Vol. 03, Issue 05, pp. 290–293",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 55,
+      "faculty name": "Biju Balakrishnan",
+      "journal": "International Journal of Advanced Information Science and Technology (IJAIST)",
+      "indexing": "UGC",
+      "title": "IoT-Based Framework For Predicting Covid-19 Using Neural Algorithms",
+      "volumeIssuePage": "Vol. 12, No. 6",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 56,
+      "faculty name": "Biju Balakrishnan",
+      "journal": "Journal of the Balkan Tribological Association",
+      "indexing": "Scopus/WoS",
+      "title": "Piecewise Regressive B-Tree Indexing based Linkage Clustered User Profile Mapping for Semantic web mining",
+      "volumeIssuePage": "Vol. 29, No. 1, pp. 66–86",
+      "DOI": "",
+      "year": "2023"
+    },
+     {
+      "s.no.": 57,
+      "faculty name": "Mr. P. Arun",
+      "journal": "International Journal of Community Medicine and Public Health",
+      "indexing": "Scopus",
+      "title": "Experiences of online learning during COVID-19 pandemic lockdown period: a cross-sectional survey among the college students in India",
+      "volumeIssuePage": "",
+      "DOI": "https://dx.doi.org/10.18203/23946040.ijcmph20212309",
+      "year": "2021"
+    },
+    {
+      "s.no.": 58,
+      "faculty name": "Ms. P. Gomathi",
+      "journal": "International Journal of Engineering Applied Sciences and Technology",
+      "indexing": "UGC",
+      "title": "Better And Smarter Emergency Medical Assistance During Road Accident And Vehicle Impact",
+      "volumeIssuePage": "Vol. 6, Issue 6, pp. 258-265",
+      "DOI": "",
+      "year": "2021"
+    },
+    {
+      "s.no.": 59,
+      "faculty name": "Dr. A. Jameer Basha",
+      "journal": "MDPI Sensors",
+      "indexing": "SCI",
+      "title": "Chaotic Harris Hawks Optimization with Quasi Reflection-Based Learning: An Application to Enhance CNN Design",
+      "volumeIssuePage": "Sensors 2021, 21, 6654",
+      "DOI": "https://doi.org/10.3390/s21196654",
+      "year": "2021"
+    },
+    {
+      "s.no.": 60,
+      "faculty name": "Dr. S. Uma",
+      "journal": "International Journal of Creative Research Thoughts",
+      "indexing": "UGC",
+      "title": "Skin Disease Image Recognition Using Deep Learning Techniques",
+      "volumeIssuePage": "Vol. 9, Issue 10",
+      "DOI": "",
+      "year": "2021"
+    },
+    {
+      "s.no.": 61,
+      "faculty name": "Dr. S. Lokesh",
+      "journal": "Recent Developments in Medicine and Medical Research",
+      "indexing": "Scopus",
+      "title": "Secure and Authenticate Indexing of Medical Images Using Region of Non-Interest",
+      "volumeIssuePage": "Vol. 6 V6/434",
+      "DOI": "",
+      "year": "2021"
+    },
+    {
+      "s.no.": 62,
+      "faculty name": "Mr. M. Manicka Raja",
+      "journal": "Intelligent Automation & Soft Computing",
+      "indexing": "SCI",
+      "title": "Aggregated PSO for Secure Data Transmission in WSN Using Fog Server",
+      "volumeIssuePage": "",
+      "DOI": "10.32604/iasc.2022.025665",
+      "year": "2022"
+    },
+    {
+      "s.no.": 63,
+      "faculty name": "Mr. P. Arun",
+      "journal": "International Journal of Creative Research Thoughts",
+      "indexing": "UGC",
+      "title": "Real Time And Video Segmentation Using Machine Learning",
+      "volumeIssuePage": "Vol. 10, Issue 4",
+      "DOI": "",
+      "year": "2022"
+    },
+    {
+      "s.no.": 64,
+      "faculty name": "Dr. S. Lokesh",
+      "journal": "International Journal of Health Sciences",
+      "indexing": "SCI",
+      "title": "CNN Based Deep Learning Methods for Precise analysis of cardiac arrhythmias",
+      "volumeIssuePage": "Vol. 6(s1), pp. 10808-10819",
+      "DOI": "",
+      "year": "2022"
+    },
+    {
+      "s.no.": 65,
+      "faculty name": "Dr. S. Lokesh",
+      "journal": "International Journal of Health Sciences",
+      "indexing": "SCI",
+      "title": "Classification of EEG signals using machine learning and deep learning techniques",
+      "volumeIssuePage": "Vol. 6(s1), pp. 10794-10807",
+      "DOI": "",
+      "year": "2022"
+    }, {
+      "s.no.": 66,
+      "faculty name": "Dr. M. Thangamani",
+      "journal": "SSRG Journal of Electronics and Communication Engineering",
+      "indexing": "SCI",
+      "title": "GLCM Features Fuzzy C Means Clustering based Brain Tumor Detection in MR Images",
+      "volumeIssuePage": "Vol. 10.7, pp. 13-22",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 67,
+      "faculty name": "Dr. N. B. Mahesh Kumar",
+      "journal": "Optical and Quantum Electronics",
+      "indexing": "SCI",
+      "title": "Enhancing low latency and high performance in clustered based wireless sensor network routing using genetic algorithm for 5G networks",
+      "volumeIssuePage": "Vol. 55, 1048",
+      "DOI": "https://doi.org/10.1007/s11082-023-05379-3",
+      "year": "2023"
+    },
+    {
+      "s.no.": 68,
+      "faculty name": "Dr. S. Ramasamy",
+      "journal": "International Journal of Intelligent Systems and Applications in Engineering",
+      "indexing": "Scopus",
+      "title": "Deep Learning Based Brain Tumor Analysis with Manual Layer Selection",
+      "volumeIssuePage": "Vol. 12(7s), pp. 20–25",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 69,
+      "faculty name": "Dr. M. Thangamani",
+      "journal": "Optical and Quantum Electronics",
+      "indexing": "SCI",
+      "title": "Data Analysis algorithm for IoT based on federated learning with optical technologies",
+      "volumeIssuePage": "",
+      "DOI": "https://doi.org/10.1007/s1082-023-05972-6",
+      "year": "2023"
+    },
+    {
+      "s.no.": 70,
+      "faculty name": "Mr. Biju Balakrishnan",
+      "journal": "BioGecko",
+      "indexing": "UGC",
+      "title": "Web Behavioural Pattern Mining In Social Media Networks Using Multi Objective Optimisation",
+      "volumeIssuePage": "Vol. 12, Issue 2, pp. 4419-4428",
+      "DOI": "",
+      "year": "2023"
+    },
+    {
+      "s.no.": 71,
+      "faculty name": "Dr. D. Jayasutha",
+      "journal": "Journal of Cyber Security and Information Management (JCIM)",
+      "indexing": "Scopus",
+      "title": "Development of Digital Twin Technology in Hydraulics Based on Simulating and Enhancing System Performance",
+      "volumeIssuePage": "Vol. 13, pp. 50-65",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 72,
+      "faculty name": "Mr. K. Murugan",
+      "journal": "Journal of Advanced Zoology",
+      "indexing": "UGC",
+      "title": "Revolutionizing Lawn Care: AI-Driven Solar-Powered Humorless Grassland Mower With IoT Integration",
+      "volumeIssuePage": "Vol. 45, Issue 3, pp. 892-898",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 73,
+      "faculty name": "Mrs. Sofiyabanu M",
+      "journal": "International Journal for Multidisciplinary Research (IJFMR)",
+      "indexing": "UGC",
+      "title": "Enhancing Human-Machine Interaction: An In-depth Analysis of ChatGPT's Technological Evolution and Societal Impact",
+      "volumeIssuePage": "Vol. 6, Issue 2, pp. 1-4",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 74,
+      "faculty name": "Mrs. Midhun Prabha M P",
+      "journal": "International Journal for Multidisciplinary Research (IJFMR)",
+      "indexing": "UGC",
+      "title": "Sustainable Farming with IoT: A Case Study of Smart Agriculture Practices in Rural India",
+      "volumeIssuePage": "Vol. 6, Issue 1",
+      "DOI": "",
+      "year": "2024"
+    }, {
+      "s.no.": 75,
+      "faculty name": "Dr. D. Jayasutha",
+      "journal": "South Eastern European Journal of Public Health",
+      "indexing": "Scopus",
+      "title": "Integration Of Fuzzy Logic And Deep Learning For Medical Image Analysis In Neuroimaging",
+      "volumeIssuePage": "Page: 24-34",
+      "DOI": "https://doi.org/10.70135/seejph.vi.891",
+      "year": "2024"
+    },
+    {
+      "s.no.": 76,
+      "faculty name": "Dr. D. Jayasutha",
+      "journal": "International Journal of Communication Systems",
+      "indexing": "Scopus",
+      "title": "DIWGAN-WBSN: A novel health monitoring approach for wireless body sensor networks",
+      "volumeIssuePage": "Vol. 37, Issue 17",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 77,
+      "faculty name": "Dr. Jameer Basha A",
+      "journal": "Plasmonics",
+      "indexing": "SCI",
+      "title": "Ultra-Sensitive Photonic Crystal Fiber–Based SPR Sensor for Cancer Detection Utilizing Hybrid Nanocomposite Layers",
+      "volumeIssuePage": "1557-1955",
+      "DOI": "https://doi.org/10.1007/s11468-024-02584y",
+      "year": "2024"
+    },
+    {
+      "s.no.": 78,
+      "faculty name": "Dr. N. B. Mahesh Kumar",
+      "journal": "Journal of Advancements in Robotics",
+      "indexing": "UGC",
+      "title": "Intelligent Medical Devices and Robotics in Modern Health Care: Technological Advancements and Economic Considerations",
+      "volumeIssuePage": "Vol. 11, Issue 03",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 79,
+      "faculty name": "Dr. N. B. Mahesh Kumar",
+      "journal": "International Journal of Wireless Security and Networks",
+      "indexing": "UGC",
+      "title": "Comprehensive Security Frameworks for 6G Wireless Networks: Analysis and Insights",
+      "volumeIssuePage": "Vol. 02, Issue 02, pp. 35-41",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 80,
+      "faculty name": "Dr. N. B. Mahesh Kumar",
+      "journal": "International Journal of Mobile Computing Technology",
+      "indexing": "UGC",
+      "title": "The Evolution of Payments: Traditional Bill Methods Compared to Mobile Innovations",
+      "volumeIssuePage": "Vol. 03, Issue 01, pp. 17-28",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 81,
+      "faculty name": "Dr. D. Jayasutha",
+      "journal": "International Journal of Computational and Experimental Science and Engineering",
+      "indexing": "Scopus",
+      "title": "Remote Monitoring and Early Detection of Labor Progress Using IoT-Enabled Smart Health Systems for Rural Healthcare Accessibility",
+      "volumeIssuePage": "Vol. 18, No. 4",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 82,
+      "faculty name": "Dr. R. T. Subhalakshmi, Mr. Murugan K",
+      "journal": "Journal of Xidian University",
+      "indexing": "UGC",
+      "title": "Harnessing Convolutional Neural Networks for Precise Classification of Paddy Leaf Diseases",
+      "volumeIssuePage": "Vol. 18, Issue 11",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 83,
+      "faculty name": "Mr. Murugan K",
+      "journal": "Journal of Xidian University",
+      "indexing": "UGC",
+      "title": "Revolutionizing Safety with an AI-Powered Smart Security Solution Dedicated to Women's Protection and Peace of Mind",
+      "volumeIssuePage": "Vol. 18, No. 5, pp. 296-303",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 84,
+      "faculty name": "Dr. N. B. Mahesh Kumar",
+      "journal": "International Journal of Computational and Experimental Science and Engineering",
+      "indexing": "Scopus",
+      "title": "AI-Powered Early Detection and Prevention System for Student Dropout Risk",
+      "volumeIssuePage": "Vol. 11, No. 1, pp. 78-86",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 85,
+      "faculty name": "Mrs. Rathika Prabhu",
+      "journal": "International Journal of Computational and Experimental Science and Engineering (IJCESEN)",
+      "indexing": "Scopus",
+      "title": "Developing an AI-Powered Interactive Virtual Tutor for Enhanced Learning Experiences",
+      "volumeIssuePage": "Vol. 10, No. 4, pp. 1594-1690",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 86,
+      "faculty name": "Dr. S. Ramasamy",
+      "journal": "Ingénierie des Systèmes d’Information",
+      "indexing": "Scopus",
+      "title": "Adaptive Rendezvous Based Congestion Control Using Optimized Bio-Inspired Algorithm for Clustered WSN",
+      "volumeIssuePage": "Vol. 29, No. 6, pp. 2391-2398",
+      "DOI": "https://doi.org/10.18280/isi.290626",
+      "year": "2024"
+    },
+    {
+      "s.no.": 87,
+      "faculty name": "Dr. S. Ramasamy, Mr. J. Uthayakumar",
+      "journal": "The Bioscan",
+      "indexing": "WOS",
+      "title": "Utilizing Machine Learning for Predicting Diabetes in Pregnant Women: A Comparative Analysis of Logistic Regression, Random Forest, and Naive Bayes Models",
+      "volumeIssuePage": "Vol. 19, Special Issue-1",
+      "DOI": "",
+      "year": "2024"
+    },
+    {
+      "s.no.": 88,
+      "faculty name": "Dr. N. B. Mahesh Kumar",
+      "journal": "Journal of Advanced Database Management & Systems",
+      "indexing": "UGC",
+      "title": "From Theory to Practice: The Mathematical Foundations of Secure Blockchain Transactions",
+      "volumeIssuePage": "Vol. 12, Issue 01",
+      "DOI": "",
+      "year": "2025"
+    },
+    {
+      "s.no.": 89,
+      "faculty name": "Dr. R. T. Subhalakshmi",
+      "journal": "An Adaptive Learning path Optimization algorithm for personalized E-Learning",
+      "indexing": "Scopus",
+      "title": "An Adaptive Learning path Optimization algorithm for personalized E-Learning",
+      "volumeIssuePage": "Vol. 10, No. 4, pp. 783-791",
+      "DOI": "",
+      "year": "2025"
+    },
+    {
+      "s.no.": 90,
+      "faculty name": "Dr. S. Ramasamy",
+      "journal": "International Journal of Computational and Experimental Science and Engineering",
+      "indexing": "Scopus",
+      "title": "Intellifuzz: An Advanced Fuzzy Logic Framework for dynamic Evaluation of Student performance in open-ended Learning Task",
+      "volumeIssuePage": "Vol. 11, No. 1, pp. 783-791",
+      "DOI": "",
+      "year": "2025"
+    },
+    {
+      "s.no.": 91,
+      "faculty name": "Dr. R. Senthilkumar",
+      "journal": "Computer Standards & Interfaces",
+      "indexing": "SCI",
+      "title": "Performance analysis of multiple-input multiple-output orthogonal frequency division multiplexing system using arithmetic optimization algorithm",
+      "volumeIssuePage": "Vol. 92",
+      "DOI": "",
+      "year": "2025"
+    }
 ],
 "fac_nptel":[
   {
