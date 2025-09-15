@@ -119,6 +119,17 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
     return 'min-w-[120px]';
   };
 
+  // ✅ Column name formatter (ALL CAPS)
+  const formatColumnName = (col: string): string => {
+    if (/^[A-Z0-9_]+$/.test(col)) {
+      return col.toUpperCase(); // Keep POPSO, SDGS, etc. in uppercase
+    }
+    let formatted = col.replace(/_/g, ' ');
+    formatted = formatted.replace(/([a-z])([A-Z])/g, '$1 $2');
+    formatted = formatted.replace(/\b\w/g, (char) => char.toUpperCase());
+    return formatted.toUpperCase(); // Convert everything to uppercase
+  };
+
   return (
     <>
       {/* Title & Description */}
@@ -145,7 +156,9 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                   const key = typeof option === 'string' ? option : option.key;
                   const label =
                     typeof option === 'string'
-                      ? option.charAt(0).toUpperCase() + option.slice(1).replace(/([A-Z])/g, ' $1')
+                      ? /^[A-Z0-9]+$/.test(option)
+                        ? option
+                        : option.charAt(0).toUpperCase() + option.slice(1).replace(/([A-Z])/g, ' $1')
                       : option.label;
                   const isActive = selectedCategory === key;
                   return (
@@ -214,14 +227,15 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                   {columns.map((col, idx) => (
                     <th
                       key={idx}
-                      className={`px-3 sm:px-4 py-2 sm:py-3 text-center font-semibold uppercase break-words 
+                      className={`px-3 sm:px-4 py-2 sm:py-3 text-center font-semibold break-words 
                         ${getColumnWidth(col)} ${isMobile ? 'text-xs' : ''} 
                         ${idx === 0 ? 'rounded-tl-2xl' : ''} ${idx === columns.length - 1 ? 'rounded-tr-2xl' : ''} 
                         ${col.toLowerCase().includes('date') ? 'cursor-pointer hover:bg-amber-600' : ''}`}
                       onClick={() => col.toLowerCase().includes('date') && handleSort(col)}
                     >
                       <div className="flex items-center justify-center">
-                        {col.replace(/([A-Z])/g, ' $1')}
+                        {formatColumnName(col)}
+
                         {col.toLowerCase().includes('date') && (
                           <span className="ml-1">
                             {sortConfig && sortConfig.key === col ? (
@@ -236,6 +250,7 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                   ))}
                 </tr>
               </thead>
+
               <tbody>
                 {paginatedData.length > 0 ? (
                   paginatedData.map((row, rowIndex) => (
@@ -334,4 +349,4 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
   );
 };
 
-export default ReusableTable; 
+export default ReusableTable;
