@@ -638,7 +638,7 @@
     }
   ],
 
-  "research_data":[
+"research_data": [
   {
     "s.no.": 1,
     "faculty name": ["Dr.A.JameerBasha, Professor & Head", "Dr.S.Lokesh, ASP/CSE", "Ms.P.Jeevitha, AP/CSE"],
@@ -710,6 +710,141 @@
     "funding_agency": "Hindusthan Educational and Charitable Trust",
     "amount": "Rs.2,08,000",
     "duration": "1 Year (Completed)"
+  },
+  {
+    "s.no.": 9,
+    "faculty name": ["Dr.JameerBasha.A", "Dr.Senthilkumar.R"],
+    "project_title": "CRM / ERP Development",
+    "project_type": "Consultancy",
+    "funding_agency": "Metalica Motors, Pollachi Road, Achampatti Coimbatore",
+    "amount": "Rs.1,45,000",
+    "duration": "1 Year (2023-24)"
+  },
+  {
+    "s.no.": 10,
+    "faculty name": ["Dr.Senthilkumar.R", "Dr.Ramasamy.S"],
+    "project_title": "Automated Resume Screening System",
+    "project_type": "Consultancy",
+    "funding_agency": "Initz Technologies, Coimbatore",
+    "amount": "Rs.1,60,000",
+    "duration": "1 Year (2023-24)"
+  },
+  {
+    "s.no.": 11,
+    "faculty name": ["Mr.Murugan.K", "Mr.Devendran.M"],
+    "project_title": "Real Time Food Tracker",
+    "project_type": "Consultancy",
+    "funding_agency": "Clarozon Technologies",
+    "amount": "Rs.1,35,000",
+    "duration": "1 Year (2023-24)"
+  },
+  {
+    "s.no.": 12,
+    "faculty name": ["Dr.Jayasudha.D", "Mr.Uthayakumar.J"],
+    "project_title": "IoT-based Smart Home Automation System",
+    "project_type": "Consultancy",
+    "funding_agency": "Quantanics TechServ, Madurai",
+    "amount": "Rs.1,40,000",
+    "duration": "1 Year (2023-24)"
+  },
+  {
+    "s.no.": 13,
+    "faculty name": ["Dr.Chitra.M", "Mr.Arun.R"],
+    "project_title": "Chat-bot System for Customer Support",
+    "project_type": "Consultancy",
+    "funding_agency": "Little Genius Technologies",
+    "amount": "Rs.1,50,000",
+    "duration": "1 Year (2023-24)"
+  },
+  {
+    "s.no.": 14,
+    "faculty name": ["Dr.Subhalakshmi.R.T", "Mrs.Jeevitha.P"],
+    "project_title": "AI-Based Real-Time Voice Assistant",
+    "project_type": "Consultancy",
+    "funding_agency": "Webnest Technologies",
+    "amount": "Rs.1,55,000",
+    "duration": "1 Year (2023-24)"
+  },
+  {
+    "s.no.": 15,
+    "faculty name": ["Dr.Maheshkumar.N.B", "Mr.Murugan.K"],
+    "project_title": "AI-Based Video Surveillance System",
+    "project_type": "Consultancy",
+    "funding_agency": "Visaithalam Solutions",
+    "amount": "Rs.1,60,000",
+    "duration": "1 Year (2023-24)"
+  },
+  {
+    "s.no.": 16,
+    "faculty name": ["Mrs.Jeevitha.P", "Mrs.Pavithra.K.S"],
+    "project_title": "Blockchain based Supply Chain management",
+    "project_type": "Consultancy",
+    "funding_agency": "Litz Technologies",
+    "amount": "Rs.1,70,000",
+    "duration": "1 Year (2022-23)"
+  },
+  {
+    "s.no.": 17,
+    "faculty name": ["Dr.Senthilkumar.R", "Mr.Devendran.M"],
+    "project_title": "IoT Based Energy Monitoring and Optimization System",
+    "project_type": "Consultancy",
+    "funding_agency": "Talent Factori Pvt Ltd",
+    "amount": "Rs.1,75,000",
+    "duration": "1 Year (2022-23)"
+  },
+  {
+    "s.no.": 18,
+    "faculty name": ["Dr.Jeyasudha.D", "Mrs.BanuPriya.M"],
+    "project_title": "Vehicle Tracking System",
+    "project_type": "Consultancy",
+    "funding_agency": "Icore solutions",
+    "amount": "Rs.1,58,000",
+    "duration": "1 Year (2022-23)"
+  },
+  {
+    "s.no.": 19,
+    "faculty name": ["Dr.Subhalakshmi.R.T", "Mr.Kalaiselvi.T"],
+    "project_title": "AI-Based Disease Diagnosis System",
+    "project_type": "Consultancy",
+    "funding_agency": "Dataspire Technologies",
+    "amount": "Rs.1,50,000",
+    "duration": "1 Year (2022-23)"
+  },
+  {
+    "s.no.": 20,
+    "faculty name": ["Dr.Kala.R", "Mrs.Vidhya.D"],
+    "project_title": "Smart Blind Stick",
+    "project_type": "Consultancy",
+    "funding_agency": "Initz Technologies",
+    "amount": "Rs.1,55,000",
+    "duration": "1 Year (2021-22)"
+  },
+  {
+    "s.no.": 21,
+    "faculty name": ["Dr.Uma.S", "Mr.Senthilkumar.R"],
+    "project_title": "Smart Farming using IoT",
+    "project_type": "Consultancy",
+    "funding_agency": "Quantanics TechServ Pvt Ltd",
+    "amount": "Rs.1,60,000",
+    "duration": "1 Year (2021-22)"
+  },
+  {
+    "s.no.": 22,
+    "faculty name": ["Dr.Lokesh.S", "Mrs.Banupriya.M"],
+    "project_title": "QR Code based Street light control system",
+    "project_type": "Consultancy",
+    "funding_agency": "Talent Factori Pvt Ltd",
+    "amount": "Rs.1,78,000",
+    "duration": "1 Year (2021-22)"
+  },
+  {
+    "s.no.": 23,
+    "faculty name": ["Dr.Ramasamy.S", "Mr.Devendran.M"],
+    "project_title": "An AI Driven & Blockchain Enabled Employee Tracking & Ethical Rating Platform",
+    "project_type": "Consultancy",
+    "funding_agency": "Talent Factori Pvt Ltd",
+    "amount": "Rs.1,50,000",
+    "duration": "1 Year (2021-22)"
   }
 ],
 "powered_industry": [
