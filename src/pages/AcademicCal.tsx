@@ -20,7 +20,7 @@ const yearWiseData = years.map(({ year }) => ({
     calendars: [
       { label: 'I Year Academic Calendar' },
       { label: 'II Year Academic Calendar' },
-      { label: 'III & IV Year Academic Calendar' },
+      { label: 'III & IV                  Year Academic Calendar' },
     ],
   })),
 }));
