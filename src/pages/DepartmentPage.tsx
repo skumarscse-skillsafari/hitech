@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
-
+import { BookOpen, Newspaper } from "lucide-react";
 import PageLayout from '../components/layout/PageLayout';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import DepartmentDetail from '../components/DepartmentDetail';
@@ -129,6 +129,32 @@ const DepartmentPage: React.FC = () => {
           </div>
         </SectionWrapper>
       </div>
+      {/* First button */}
+<div className="fixed right-0 top-[38%] transform -translate-y-1/2 z-50">
+  <div className="-rotate-90 origin-bottom-right">
+    <button onClick={() => navigate("/magazine")}
+      className="text-sm md:text-base font-bold bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-t-xl shadow-lg transition-all duration-300 whitespace-nowrap"
+      title="Magazine"
+    >
+      <BookOpen className="w-5 h-5" />
+    </button>
+  </div>
+</div>
+
+{/* Second button */}
+<div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
+  <div className="-rotate-90 origin-bottom-right">
+    <button onClick={() => navigate("/newsletter")}
+      className="text-sm md:text-base font-bold bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-t-xl shadow-lg transition-all duration-300 whitespace-nowrap"
+      title="NewsLetter"
+    >
+      <Newspaper className="w-5 h-5" />
+    </button>
+  </div>
+</div>
+
+
+
     </PageLayout>
   );
 };

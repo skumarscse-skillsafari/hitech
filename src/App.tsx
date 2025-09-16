@@ -16,7 +16,8 @@ import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import ReusePage from './pages/ReusePage';
 import InnovativeMethods from './pages/InnovativeMethods';
-
+import MagazinePage from "./pages/MagazinePage";
+import NewsletterPage from "./pages/NewsLetterPage";
 import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
 import FacultyProfilePage from './pages/FacultyProfilePage';
@@ -78,7 +79,8 @@ function App() {
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/reuse" element={<ReusePage />} />
                 <Route path="/innovative-methods" element={<InnovativeMethods />} />
-                
+                <Route path="/magazine" element={<MagazinePage />} />
+                <Route path="/newsletter" element={<NewsletterPage />} />
                 <Route path="/about/management" element={<Management />} />
                 <Route path="/vision-mission" element={<Management />} />
                 <Route path="/leadership" element={<PrincipalsDesk />} />
