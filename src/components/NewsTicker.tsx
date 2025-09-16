@@ -41,16 +41,22 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ newsItems, speed = 60, pauseOnH
   };
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
-
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (Math.abs(currentScrollY - lastScrollY) > 5) setIsVisible(false);
-      if (currentScrollY < 50) setIsVisible(true);
-      lastScrollY = currentScrollY;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      
+      // Only show the ticker when at the very top of the page
+      if (scrollTop <= 10) { // Small threshold to account for minor scrolling
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Check initial scroll position
+    handleScroll();
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -72,14 +78,16 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ newsItems, speed = 60, pauseOnH
   };
 
   useEffect(() => {
-    if (activeNews.length > 0) {
+    if (activeNews.length > 0 && isVisible) {
       animationRef.current = requestAnimationFrame(animate);
+    } else if (animationRef.current) {
+      cancelAnimationFrame(animationRef.current);
     }
 
     return () => {
       if (animationRef.current) cancelAnimationFrame(animationRef.current);
     };
-  }, [activeNews.length, speed, isPaused]);
+  }, [activeNews.length, speed, isPaused, isVisible]);
 
   useEffect(() => {
     if (scrollingRef.current) {
@@ -99,10 +107,10 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ newsItems, speed = 60, pauseOnH
 
   return (
     <div
-      className={`relative z-30 bg-yellow-500 border-b border-yellow-600 transition-transform duration-300 mt-[80px] ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
-      }`}
-    >
+  className={`relative z-30 bg-yellow-500 border-b border-yellow-600 transition-transform duration-300 mt-[80px] ${
+    isVisible ? 'translate-y-0' : '-translate-y-[calc(100%+80px)]'
+  }`}
+>
       <div className="relative overflow-hidden h-12">
         <div className="flex items-center h-full relative">
           <div className="flex-shrink-0 px-6 flex items-center space-x-3 bg-yellow-600/30">
