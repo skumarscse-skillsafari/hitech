@@ -1,5 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Search, ChevronLeft, ChevronRight, ArrowRight, ArrowUp, ArrowDown } from 'lucide-react';
+import {
+  Search,
+  ChevronLeft,
+  ChevronRight,
+  ArrowRight,
+  ArrowUp,
+  ArrowDown,
+  ChevronRight as ExpandIcon,
+  ChevronLeft as CollapseIcon,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface CategoryOption {
@@ -35,6 +44,8 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
 
   // ✅ Year filter state
   const [selectedYear, setSelectedYear] = useState('All');
+  // ✅ Expand/Collapse state
+  const [expanded, setExpanded] = useState(false);
 
   const itemsPerPage = 10;
 
@@ -101,8 +112,10 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const paginatedData = filteredData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
-  // ✅ Remove "year" column from table
-  const columns = data.length > 0 ? Object.keys(data[0]).filter((c) => c.toLowerCase() !== 'year') : [];
+  // ✅ Columns handling
+  const allColumns = data.length > 0 ? Object.keys(data[0]).filter((c) => c.toLowerCase() !== 'year') : [];
+  const compactColumns = allColumns.slice(0, 4); // only first 4 columns in collapsed view
+  const columns = expanded ? allColumns : compactColumns;
 
   const isMobile = windowWidth < 768;
   const isTablet = windowWidth >= 768 && windowWidth < 1024;
@@ -206,7 +219,13 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
-                <button onClick={() => { setSearchTerm(''); setShowSearch(false); }} className="ml-2 text-gray-400 hover:text-red-400 text-sm">
+                <button
+                  onClick={() => {
+                    setSearchTerm('');
+                    setShowSearch(false);
+                  }}
+                  className="ml-2 text-gray-400 hover:text-red-400 text-sm"
+                >
                   ✕
                 </button>
               </div>
@@ -218,45 +237,80 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
           </div>
         </div>
 
+
         {/* Responsive Scrollable Table */}
         <div className="px-2 sm:px-4 md:px-6 pb-6 overflow-x-auto">
           <div className="inline-block min-w-full rounded-2xl border border-gray-200">
             <table className="min-w-full border-collapse text-sm md:text-base">
-              <thead>
-                <tr className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 text-white">
-                  {columns.map((col, idx) => (
-                    <th
-                      key={idx}
-                      className={`px-3 sm:px-4 py-2 sm:py-3 text-center font-semibold break-words 
-                        ${getColumnWidth(col)} ${isMobile ? 'text-xs' : ''} 
-                        ${idx === 0 ? 'rounded-tl-2xl' : ''} ${idx === columns.length - 1 ? 'rounded-tr-2xl' : ''} 
-                        ${col.toLowerCase().includes('date') ? 'cursor-pointer hover:bg-amber-600' : ''}`}
-                      onClick={() => col.toLowerCase().includes('date') && handleSort(col)}
-                    >
-                      <div className="flex items-center justify-center">
-                        {formatColumnName(col)}
+             <thead>
+  <tr className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-400 text-white">
+    {columns.map((col, idx) => (
+      <th
+        key={idx}
+        className={`relative px-3 sm:px-4 py-2 sm:py-3 text-center font-semibold break-words 
+  ${getColumnWidth(col)} ${isMobile ? 'text-xs' : ''} 
+  ${idx === 0 ? 'rounded-tl-2xl' : ''} ${idx === columns.length - 1 ? 'rounded-tr-2xl pr-12' : ''} 
+  ${col.toLowerCase().includes('date') ? 'cursor-pointer hover:bg-amber-600' : ''}`}
 
-                        {col.toLowerCase().includes('date') && (
-                          <span className="ml-1">
-                            {sortConfig && sortConfig.key === col ? (
-                              sortConfig.direction === 'ascending' ? <ArrowUp size={14} /> : <ArrowDown size={14} />
-                            ) : (
-                              <ArrowUp size={14} className="opacity-50" />
-                            )}
-                          </span>
-                        )}
-                      </div>
-                    </th>
-                  ))}
-                </tr>
-              </thead>
+        onClick={() => col.toLowerCase().includes('date') && handleSort(col)}
+      >
+        <div className="flex items-center justify-center">
+          {formatColumnName(col)}
+
+          {col.toLowerCase().includes('date') && (
+            <span className="ml-1">
+              {sortConfig && sortConfig.key === col ? (
+                sortConfig.direction === 'ascending' ? (
+                  <ArrowUp size={14} />
+                ) : (
+                  <ArrowDown size={14} />
+                )
+              ) : (
+                <ArrowUp size={14} className="opacity-50" />
+              )}
+            </span>
+          )}
+        </div>
+{/* ✅ Floating expand/collapse button (outside normal header flow) */}
+{idx === columns.length - 1 && (
+  <div className="absolute -right-[-1.5px] top-1/2 -translate-y-1/2 ">
+    <button
+      onClick={(e) => {
+        e.stopPropagation(); // avoid triggering sort
+        setExpanded(!expanded);
+      }}
+      className={`p-1.5 rounded-full shadow-lg transition-colors
+        ${expanded
+          ? "bg-orange-500 text-white"
+          : "bg-white text-orange-500 hover:bg-orange-500 hover:text-white"
+        }`}
+    >
+      {expanded ? (
+        <CollapseIcon className="w-3.5 h-3.5" />
+      ) : (
+        <ExpandIcon className="w-3.5 h-3.5" />
+      )}
+    </button>
+  </div>
+)}
+
+
+
+      </th>
+    ))}
+  </tr>
+</thead>
+
 
               <tbody>
                 {paginatedData.length > 0 ? (
                   paginatedData.map((row, rowIndex) => (
                     <tr key={rowIndex} className="even:bg-gray-50 hover:bg-amber-50 transition duration-150">
                       {columns.map((col, colIndex) => (
-                        <td key={colIndex} className="px-3 sm:px-4 py-2 sm:py-3 text-center align-top break-words text-[11px] sm:text-xs md:text-sm text-gray-600">
+                        <td
+                          key={colIndex}
+                          className="px-3 sm:px-4 py-2 sm:py-3 text-center align-top break-words text-[11px] sm:text-xs md:text-sm text-gray-600"
+                        >
                           {Array.isArray(row[col])
                             ? row[col].join(', ')
                             : typeof row[col] === 'object' && row[col] !== null
@@ -286,7 +340,11 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
             <span className="font-medium">{filteredData.length}</span> results
           </div>
           <div className="flex items-center gap-1">
-            <button onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))} disabled={currentPage === 1} className="p-1 sm:p-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50">
+            <button
+              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+              disabled={currentPage === 1}
+              className="p-1 sm:p-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
+            >
               <ChevronLeft size={isMobile ? 14 : 16} />
             </button>
             {Array.from({ length: Math.min(totalPages, isMobile ? 3 : 5) }, (_, index) => {
@@ -314,22 +372,27 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                 </button>
               );
             })}
-            {totalPages > (isMobile ? 3 : 5) && currentPage < totalPages - Math.floor((isMobile ? 3 : 5) / 2) && (
-              <>
-                <span className="px-1 text-gray-500">...</span>
-                <button
-                  onClick={() => setCurrentPage(totalPages)}
-                  className={`px-2 sm:px-3 py-1 text-xs sm:text-sm font-medium rounded-md ${
-                    currentPage === totalPages
-                      ? 'bg-amber-100 text-amber-700 border border-amber-400'
-                      : 'text-gray-600 hover:bg-gray-100 border border-transparent'
-                  }`}
-                >
-                  {totalPages}
-                </button>
-              </>
-            )}
-            <button onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))} disabled={currentPage === totalPages} className="p-1 sm:p-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50">
+            {totalPages > (isMobile ? 3 : 5) &&
+              currentPage < totalPages - Math.floor((isMobile ? 3 : 5) / 2) && (
+                <>
+                  <span className="px-1 text-gray-500">...</span>
+                  <button
+                    onClick={() => setCurrentPage(totalPages)}
+                    className={`px-2 sm:px-3 py-1 text-xs sm:text-sm font-medium rounded-md ${
+                      currentPage === totalPages
+                        ? 'bg-amber-100 text-amber-700 border border-amber-400'
+                        : 'text-gray-600 hover:bg-gray-100 border border-transparent'
+                    }`}
+                  >
+                    {totalPages}
+                  </button>
+                </>
+              )}
+            <button
+              onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+              disabled={currentPage === totalPages}
+              className="p-1 sm:p-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
+            >
               <ChevronRight size={isMobile ? 14 : 16} />
             </button>
           </div>
