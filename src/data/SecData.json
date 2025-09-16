@@ -248,29 +248,374 @@
 
 "fac_patents":[
 {
-      "s.no.": 1,
-      "faculty_name": "Dr. ABC",
-      "patent_title": "AI-Based Traffic Management System",
-      "year_of_publication": "2024",
-      "category": "Utility Patent",
+      "sno": 1,
+      "faculty": "Dr.MaheshKumar.N.B",
+      "title": "IoT And Artificial Intelligence Based Detection And Prevention Of Plant Disease With Smart Drip Irrigation System Using Block Chain Technology And Deep Learning",
+      "application_no": "202441017814",
+      "date_of_filing": "12.03.2024",
       "status": "Published"
     },
     {
-      "s.no.": 2,
-      "faculty_name": "",
-      "patent_title": "",
-      "year_of_publication": "",
-      "category": "",
-      "status": ""
+      "sno": 2,
+      "faculty": "Dr.MaheshKumar.N.B",
+      "title": "Robot For Determining Crop Yield",
+      "application_no": "413621-001",
+      "date_of_filing": "15.04.2024",
+      "status": "Design Granted"
     },
     {
-      "s.no.": 3,
-      "faculty_name": "",
-      "patent_title": "",
-      "year_of_publication": "",
-      "category": "",
-      "status": ""
+      "sno": 3,
+      "faculty": "Dr.MaheshKumar.N.B",
+      "title": "IoT and AI based smart home automation using Wi-Fi through Android apps from smart phone",
+      "application_no": "202321047600",
+      "date_of_filing": "14.07.2023",
+      "status": "Published"
+    },
+    {
+      "sno": 4,
+      "faculty": "Dr.MaheshKumar.N.B",
+      "title": "Device to predict cardiovascular attack",
+      "application_no": "397144-001",
+      "date_of_filing": "09.10.2023",
+      "status": "Design Granted"
+    },
+    {
+      "sno": 5,
+      "faculty": "Dr.MaheshKumar.N.B",
+      "title": "Wearable ECG monitoring Device",
+      "application_no": "399703-001",
+      "date_of_filing": "10.11.2023",
+      "status": "Design Granted"
+    },
+    {
+      "sno": 6,
+      "faculty": "Dr.MaheshKumar.N.B",
+      "title": "Detection and classification of eye cancer using DL techniques",
+      "application_no": "202341062322",
+      "date_of_filing": "15.09.2023",
+      "status": "Published"
+    },
+    {
+      "sno": 7,
+      "faculty": "Dr.MaheshKumar.N.B",
+      "title": "AI based safe health care system for fertility preservation for young woman with breast cancer using cloud and ML algorithms",
+      "application_no": "202311064995",
+      "date_of_filing": "27.09.2023",
+      "status": "Published"
+    },
+    {
+      "sno": 8,
+      "faculty": "Dr.MaheshKumar.N.B",
+      "title": "AI and computer vision based detection and prevention of brain disorder disease and tumor at early stage and to provide efficient treatment using data mining and DL algorithm for smart health care management",
+      "application_no": "202341090160",
+      "date_of_filing": "30.12.2023",
+      "status": "Published"
+    },
+    {
+      "sno": 9,
+      "faculty": "Mr.Uthayakumar.J",
+      "title": "Elevating Wellness Through Intelligent Nutrition: Leveraging Artificial Intelligence",
+      "application_no": "202441039240",
+      "date_of_filing": "20.05.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 10,
+      "faculty": "Mr.Periyasamy.P.N.",
+      "title": "AI and ML: A model for enhancing faculty performance reliability",
+      "application_no": "202441035195",
+      "date_of_filing": "03.05.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 11,
+      "faculty": "Mr.Periyasamy.P.N.",
+      "title": "Smart Healthcare Environment using IOT and Machine Learning for Predictive Maintenance and Infection Control",
+      "application_no": "202341068088",
+      "date_of_filing": "20.10.2023",
+      "status": "Published"
+    },
+    {
+      "sno": 12,
+      "faculty": "Dr.Ramasamy.S",
+      "title": "Logistic Tracking Device",
+      "application_no": "405790-001",
+      "date_of_filing": "26.01.2024",
+      "status": "Design Granted"
+    },
+    {
+      "sno": 13,
+      "faculty": "Dr.Ramasamy.S",
+      "title": "Advancing Pedagogy Through Information And Communication Technology (ICT): The Potential Of Mentoring And Mirrored Practice",
+      "application_no": "202441035264",
+      "date_of_filing": "10.05.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 14,
+      "faculty": "Dr.Ramasamy.S",
+      "title": "A Cloud-Based Platform for Crop Recommendation for Precision Farming",
+      "application_no": "202341036565",
+      "date_of_filing": "01.09.2023",
+      "status": "Published"
+    },
+    {
+      "sno": 15,
+      "faculty": "Dr.Ramasamy.S",
+      "title": "Smart IOT Based System Integrated with Artificial Intelligence Frame Work for Prediction of Air and Water pollution",
+      "application_no": "202241065330",
+      "date_of_filing": "25.11.2023",
+      "status": "Published"
+    },
+    {
+      "sno": 16,
+      "faculty": "Mrs.Jeevitha.P",
+      "title": "An Improved Real-Time Object Detection Capable Of Being Adapted In Real-Time For Use In Traffic Surveillance By Utilizing R-CNN In Place Of CNN",
+      "application_no": "202441018913",
+      "date_of_filing": "14.03.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 17,
+      "faculty": "Dr.Jayasutha.D",
+      "title": "Systems and Methods for detection of anomalies in civil infrastructure using context aware semantic computer vision techniques",
+      "application_no": "202321049964",
+      "date_of_filing": "25.07.2023",
+      "status": "Published"
+    },
+    {
+      "sno": 18,
+      "faculty": "Dr.Thangamani.M",
+      "title": "Intelligent chatbot for the banking sector using machine learning",
+      "application_no": "202441000426",
+      "date_of_filing": "03.01.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 19,
+      "faculty": "Dr.Thangamani.M",
+      "title": "IoT and ML based weather monitoring and prediction system",
+      "application_no": "202441028598",
+      "date_of_filing": "08.04.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 20,
+      "faculty": "Dr.Thangamani.M",
+      "title": "Implementing CNN algorithm for recognize the face in attendance",
+      "application_no": "202441028580",
+      "date_of_filing": "08.04.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 21,
+      "faculty": "Dr.Thangamani.M",
+      "title": "Smart Reheb: A Gamified Approach with ML for effective recovery using XGBBOOST Gradient",
+      "application_no": "202441030795",
+      "date_of_filing": "17.04.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 22,
+      "faculty": "Dr.Thangamani.M",
+      "title": "AI enhanced monitoring solutions for brain tumor patient",
+      "application_no": "202441042007",
+      "date_of_filing": "30.05.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 23,
+      "faculty": "Dr.Thangamani.M",
+      "title": "COGNICARE: A DL based diagnosis model for cognitive impairment",
+      "application_no": "202441039245",
+      "date_of_filing": "20.05.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 24,
+      "faculty": "Dr.Thangamani.M",
+      "title": "Automated Plastic Sorting System Utilizing DL Technology",
+      "application_no": "202441039288",
+      "date_of_filing": "20.05.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 25,
+      "faculty": "Dr.Thangamani.M",
+      "title": "Automating Waste Detection and Management with DL Technologies",
+      "application_no": "202441039289",
+      "date_of_filing": "20.05.2024",
+      "status": "Published"
+    },
+    {
+      "sno": 26,
+      "faculty": "Dr.Thangamani.M",
+      "title": "Novel presymptomatic breast cancer detection device",
+      "application_no": "397731-001",
+      "date_of_filing": "17.10.2023",
+      "status": "Design Granted"
+    },
+    {
+      "sno": 27,
+      "faculty": "Mr.Suresh Kumar.P",
+      "title": "Systematic Approach for monitoring the pollution control in smart cities and addressing the security challenges integrated with IoT",
+      "application_no": "202211056475",
+      "date_of_filing": "01.10.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 28,
+      "faculty": "Ms.Umamaheshwari.P",
+      "title": "DL based technique to predict the nutritional value of edible mushrooms for improving human health and promoting quality of life",
+      "application_no": "202211056600",
+      "date_of_filing": "21.10.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 29,
+      "faculty": "Ms.Umamaheshwari.P",
+      "title": "AI based car tire blowout security system",
+      "application_no": "202241067480",
+      "date_of_filing": "24.11.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 30,
+      "faculty": "Dr.Ramasamy.S",
+      "title": "A robust mechanism for preventing adversarial attacks on audio classifications",
+      "application_no": "202241069942",
+      "date_of_filing": "30.12.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 31,
+      "faculty": "Dr.Ramasamy.S",
+      "title": "Smart IoT based system integrates with AI frame work for prediction of air and weather pollution",
+      "application_no": "202241065330",
+      "date_of_filing": "15.11.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 32,
+      "faculty": "Dr.Senthilkumar.R",
+      "title": "An Intelligent real time monitoring and control method for grid attribute access control method based on bloom filter",
+      "application_no": "202214071991",
+      "date_of_filing": "30.12.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 33,
+      "faculty": "Mr.Biju Balakrishnan",
+      "title": "Sensor based computationally intelligent e-nose to detect respiratory diseases in older adults using ML",
+      "application_no": "202241053382",
+      "date_of_filing": "19.09.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 34,
+      "faculty": "Mr.Biju Balakrishnan",
+      "title": "Intelligent remote disease diagnosis system using IoT and wireless body sensor networks",
+      "application_no": "202241056353",
+      "date_of_filing": "30.09.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 35,
+      "faculty": "Mrs.Banupriya.M",
+      "title": "Enumerating and manipulating tree data for tagging trees using ML",
+      "application_no": "202211059179",
+      "date_of_filing": "17.10.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 36,
+      "faculty": "Mrs.Ganakumari.R",
+      "title": "Sensor based intelligent wearable neck patch to detect and diagnose early warning sign of strokes",
+      "application_no": "202241061148",
+      "date_of_filing": "27.10.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 37,
+      "faculty": "Dr.Subhalakshmi.R.T",
+      "title": "A System and method for encrypting emoticon communications using AI and ML",
+      "application_no": "202241076969",
+      "date_of_filing": "29.12.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 38,
+      "faculty": "Mr.Devendran.M",
+      "title": "Cover of Smart Identity Card(PI Digital Valet using IOT)",
+      "application_no": "369659-001",
+      "date_of_filing": "23.08.2022",
+      "status": "Design Granted"
+    },
+    {
+      "sno": 39,
+      "faculty": "Ms.C.E.Rajaprabha",
+      "title": "Enumerating and manipulating tree data for tagging trees using machine learning",
+      "application_no": "202211059179",
+      "date_of_filing": "21.10.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 40,
+      "faculty": "Dr.Jameer Basha.A",
+      "title": "An automated system for diary product supply chain management using IoT",
+      "application_no": "202241023015",
+      "date_of_filing": "19.04.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 41,
+      "faculty": "Dr.Jameer Basha.A",
+      "title": "Food nutrition detection system using DL and fuzzy logic",
+      "application_no": "202241022985",
+      "date_of_filing": "19.04.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 42,
+      "faculty": "Dr.Jameer Basha.A",
+      "title": "Advanced IoT and AI enabled semi-autonomous vehicle with advanced driver assistance system for commercial purpose",
+      "application_no": "202241023008",
+      "date_of_filing": "19.04.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 43,
+      "faculty": "Mr.Periyasamy.P.N.",
+      "title": "Design System of Autonomous Vehicle State Estimation and Mapping using AI approach",
+      "application_no": "202241032120",
+      "date_of_filing": "10.06.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 44,
+      "faculty": "Mrs.Banupriya.M",
+      "title": "AI based deworming robotics arm system",
+      "application_no": "202241025827",
+      "date_of_filing": "04.05.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 45,
+      "faculty": "Mr.Biju Balakrishnan",
+      "title": "Artificial bionic eye to assist visually impaired people with artificial vision",
+      "application_no": "202241013336",
+      "date_of_filing": "11.03.2022",
+      "status": "Published"
+    },
+    {
+      "sno": 46,
+      "faculty": "Mr.Biju Balakrishnan",
+      "title": "ML based system to translate text to sign language processing for assisting deaf and hearing impaired people",
+      "application_no": "202241016790",
+      "date_of_filing": "24.03.2022",
+      "status": "Published"
     }
+
 ],
 
   "internships": [
@@ -2851,60 +3196,154 @@
 
 ],
 "Books": [
+
     {
-      "s.no.": 1,
-      "faculty_name": "Dr. ABC",
-      "book_title": "Introduction to Artificial Intelligence",
-      "publisher_name": "Springer",
-      "ISBN": "978-3-030-12345-6",
-      "year_of_publication": "2024"
+      "S.N.": 1,
+      "Title": "Wireless Sensor Networks (WSN) with Internet of Things (IoT)",
+      "Authors": ["Dr. S. Ramasamy"],
+      "ISBN": "9786205630778",
+      "Publisher": "LAP LAMBERT Academic Publishing",
+      "Status": "Published"
     },
     {
-      "s.no.": 2,
-      "faculty_name": "",
-      "book_title": "",
-      "publisher_name": "",
-      "ISBN": "",
-      "year_of_publication": ""
+      "S.N.": 2,
+      "Title": "Genetic Algorithm and Machine Learning",
+      "Authors": ["Mrs. R. Gnanakumari"],
+      "ISBN": "9789357570800",
+      "Publisher": "Scientific International Publishing House (SIPH)",
+      "Status": "Published"
     },
     {
-      "s.no.": 3,
-      "faculty_name": "",
-      "book_title": "",
-      "publisher_name": "",
-      "ISBN": "",
-      "year_of_publication": ""
-    }
+      "S.N.": 3,
+      "Title": "Artificial Intelligence & Machine Learning",
+      "Authors": ["Dr. S. Ramasamy"],
+      "ISBN": "9789319432950",
+      "Publisher": "Sri Krishna Hitech Publishing Company",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 4,
+      "Title": "Internet of Things (IoT): Technologies and Applications",
+      "Authors": ["Dr. S. Ramasamy"],
+      "ISBN": "9789367366912",
+      "Publisher": "IGI Global Publishing Next Gen Research",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 5,
+      "Title": "Agile Learning Methodologies",
+      "Authors": ["Mr. T. Tamizharasu"],
+      "ISBN": "9788193433492",
+      "Publisher": "Mercury Publications Consortium",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 6,
+      "Title": "A Deep Learning Based Emotion Detection Using Convolutional Neural Network",
+      "Authors": ["Mrs. R. Gnanakumari", "Mr. G. Jeevanantham"],
+      "ISBN": "9786206810452",
+      "Publisher": "AETS Global Publisher",
+      "Status": "Published"
+    },
+{
+      "S.N.": 7,
+      "Title": "Genetic Algorithm and Machine Learning",
+      "Authors": ["Mrs. R. Gnanakumari"],
+      "ISBN": "9789357570800",
+      "Publisher": "Scientific International Publishing House (SIPH)",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 8,
+      "Title": "Fundamentals of Data Science",
+      "Authors": ["Mrs. R. Gnanakumari"],
+      "ISBN": "9766119313129",
+      "Publisher": "Global Aasan Research",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 9,
+      "Title": "Blockchain Technology for Beginners",
+      "Authors": ["Dr. D. Jayasutha"],
+      "ISBN": "9788119313150",
+      "Publisher": "Global Aasan Research",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 10,
+      "Title": "Full Stack Web Development",
+      "Authors": ["Dr. D. Jayasutha"],
+      "ISBN": "9788119313273",
+      "Publisher": "Global Aasan Research",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 11,
+      "Title": "Big Data Analytics",
+      "Authors": ["Mr. S. Tamizharasu"],
+      "ISBN": "9789357570800",
+      "Publisher": "Scientific International Publishing House (SIPH)",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 12,
+      "Title": "Information Retrieval",
+      "Authors": ["Dr. M. Thangamani"],
+      "ISBN": "9788193433478",
+      "Publisher": "Mercury Publications Consortium",
+      "Status": "Published"
+    },
+    {
+      "S.N.": 13,
+      "Title": "Data Visualization Techniques",
+      "Authors": ["Dr. M. Thangamani"],
+      "ISBN": "9788195490196",
+      "Publisher": "Mercury Publications Consortium",
+      "Status": "Published"
+    },
+    {
+    "sno": 14,
+    "title": "Natural Language Processing and Machine Learning",
+    "author": "Dr. S. Karthik",
+    "isbn": "9789355517586",
+    "publisher": "Scientific International Publishing House (SIPH)",
+    "status": "Published"
+  },
+  {
+    "sno": 15,
+    "title": "Next Generation Computing",
+    "author": "Mrs. Bhuvaneshwari. S",
+    "isbn": "9789358137576",
+    "publisher": "Scientific International Publishing House (SIPH)",
+    "status": "Published"
+  },
+  {
+    "sno": 16,
+    "title": "Principles of Compiler Design",
+    "author": "Dr. D. Jayasutha",
+    "isbn": "9788119313143",
+    "publisher": "Global Aasan Research",
+    "status": "Published"
+  }
 
 ],
 "Books_chapters": [
-    {
-      "s.no.": 1,
-      "faculty_name": "Dr. XYZ",
-      "chapter_name": "Deep Learning for Healthcare",
-      "indexing": "Scopus",
-      "title": "Advances in Artificial Intelligence",
-      "volume_issue_page": "Vol. 12, Issue 3, pp. 45-60",
-      "doi": "10.1000/xyz123"
-    },
-    {
-      "s.no.": 2,
-      "faculty_name": "",
-      "chapter_name": "",
-      "indexing": "",
-      "title": "",
-      "volume_issue_page": "",
-      "doi": ""
-    },
-    {
-      "s.no.": 3,
-      "faculty_name": "",
-      "chapter_name": "",
-      "indexing": "",
-      "title": "",
-      "volume_issue_page": "",
-      "doi": ""
-    }
+{
+    "sno": 1,
+    "title": "Towards Artificial General Intelligence: Meta-learning Through Ensemble Approach - Bagging, Boosting, and Random Forest Strategies",
+    "author": "Dr. S. Ramasamy",
+    "isbn": "9783111323749",
+    "publisher": "DEGURUYTER",
+    "status": "Published"
+  },
+  {
+    "sno": 2,
+    "title": "Analysis of Cervical Image to Predict the Complications of Pregnancy: Predicting Pregnancy Complication Through Artificial Intelligence and Machine Learning",
+    "author": "Dr. R. Senthilkumar",
+    "isbn": "9781668489741",
+    "publisher": "IGI Global",
+    "status": "Published"
+  }
 
 ],
 
