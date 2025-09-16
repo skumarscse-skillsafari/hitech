@@ -973,155 +973,27 @@
     },
     {
       "s.no.": 2,
-      "studentOrFacultyName": "Priya Sharma",
-      "projectName": "AI-Based Traffic Control",
-      "agencyName": "AICTE",
-      "year": "2024",
-      "status": "Ongoing"
+      "studentOrFacultyName": "",
+      "projectName": "",
+      "agencyName": "",
+      "year": "",
+      "status": ""
     },
     {
       "s.no.": 3,
-      "studentOrFacultyName": "Arun Gupta",
-      "projectName": "Renewable Energy Optimization",
-      "agencyName": "MNRE",
-      "year": "2023",
-      "status": "Completed"
+      "studentOrFacultyName": "",
+      "projectName": "",
+      "agencyName": "",
+      "year": "",
+      "status":""
     },
     {
       "s.no.": 4,
-      "studentOrFacultyName": "Neha Singh",
-      "projectName": "IoT Health Monitoring Device",
-      "agencyName": "ICMR",
-      "year": "2024",
-      "status": "Ongoing"
-    },
-    {
-      "s.no.": 5,
-      "studentOrFacultyName": "Suresh Kumar",
-      "projectName": "Blockchain for Education Records",
-      "agencyName": "UGC",
-      "year": "2023",
-      "status": "Completed"
-    },
-    {
-      "s.no.": 6,
-      "studentOrFacultyName": "Amit Verma",
-      "projectName": "Low-Cost Water Purification",
-      "agencyName": "CSR Initiative",
-      "year": "2024",
-      "status": "Ongoing"
-    },
-    {
-      "s.no.": 7,
-      "studentOrFacultyName": "Faculty - Dr. Meena R",
-      "projectName": "AI Chatbot for Student Guidance",
-      "agencyName": "AICTE",
-      "year": "2024",
-      "status": "Proposal Submitted"
-    },
-    {
-      "s.no.": 8,
-      "studentOrFacultyName": "Anjali Das",
-      "projectName": "Smart Farming Drone",
-      "agencyName": "DST",
-      "year": "2023",
-      "status": "Completed"
-    },
-    {
-      "s.no.": 9,
-      "studentOrFacultyName": "Vikas Kumar",
-      "projectName": "E-Waste Management System",
-      "agencyName": "MoEFCC",
-      "year": "2024",
-      "status": "Ongoing"
-    },
-    {
-      "s.no.": 10,
-      "studentOrFacultyName": "Faculty - Dr. Rajesh N",
-      "projectName": "AI for Mental Health Analysis",
-      "agencyName": "ICMR",
-      "year": "2023",
-      "status": "Completed"
-    },
-    {
-      "s.no.": 11,
-      "studentOrFacultyName": "Rahul Mehta",
-      "projectName": "Autonomous Delivery Robot",
-      "agencyName": "Startup India",
-      "year": "2024",
-      "status": "Proposal Submitted"
-    },
-    {
-      "s.no.": 12,
-      "studentOrFacultyName": "Shivani Kapoor",
-      "projectName": "Virtual Reality Learning Platform",
-      "agencyName": "AICTE",
-      "year": "2023",
-      "status": "Completed"
-    },
-    {
-      "s.no.": 13,
-      "studentOrFacultyName": "Faculty - Dr. S. Krishnan",
-      "projectName": "Bio-Plastic Development",
-      "agencyName": "DST",
-      "year": "2024",
-      "status": "Ongoing"
-    },
-    {
-      "s.no.": 14,
-      "studentOrFacultyName": "Karan Patel",
-      "projectName": "AI Tutor for Mathematics",
-      "agencyName": "AICTE",
-      "year": "2023",
-      "status": "Completed"
-    },
-    {
-      "s.no.": 15,
-      "studentOrFacultyName": "Deepika Nair",
-      "projectName": "Renewable Battery Storage",
-      "agencyName": "MNRE",
-      "year": "2024",
-      "status": "Proposal Submitted"
-    },
-    {
-      "s.no.": 16,
-      "studentOrFacultyName": "Faculty - Dr. Anitha P",
-      "projectName": "Smart Campus Energy Monitoring",
-      "agencyName": "UGC",
-      "year": "2023",
-      "status": "Completed"
-    },
-    {
-      "s.no.": 17,
-      "studentOrFacultyName": "Ramesh Babu",
-      "projectName": "Mobile App for Waste Segregation",
-      "agencyName": "MoEFCC",
-      "year": "2024",
-      "status": "Ongoing"
-    },
-    {
-      "s.no.": 18,
-      "studentOrFacultyName": "Faculty - Dr. Lakshmi V",
-      "projectName": "AI for Predictive Healthcare",
-      "agencyName": "ICMR",
-      "year": "2023",
-      "status": "Completed"
-    },
-    {
-      "s.no.": 19,
-      "studentOrFacultyName": "Ankit Yadav",
-      "projectName": "Low-Cost Smart Wheelchair",
-      "agencyName": "Startup India",
-      "year": "2024",
-      "status": "Proposal Submitted"
-    },
-    {
-      "s.no.": 20,
-      "studentOrFacultyName": "Faculty - Dr. Pradeep S",
-      "projectName": "IoT Based Disaster Management",
-      "agencyName": "DST",
-      "year": "2024",
-      "status": "Ongoing"
+      "studentOrFacultyName": "",
+      "projectName": "",
+      "agencyName": "",
+      "year": "",
+      "status": ""
     }
   ],
   "placements_tab": [
