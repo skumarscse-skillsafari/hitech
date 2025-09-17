@@ -17,50 +17,50 @@ const semesters = [
 const calendarPDFs = {
   '2025–26': {
     'ODD Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2025-26/odd/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2025-26/odd/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2025-26/odd/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '/pdf/AC_2025 - 2026 - ODD SEM for III SEM - Copy (1).pdf',
+      'III & IV Year Academic Calendar': '/pdf/AC_2025 - 2026 - ODD SEM for V & VII SEM (1).pdf',
     },
     'EVEN Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2025-26/even/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2025-26/even/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2025-26/even/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
   },
   '2024–25': {
     'ODD Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2024-25/odd/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2024-25/odd/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2024-25/odd/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
     'EVEN Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2024-25/even/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2024-25/even/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2024-25/even/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
   },
   '2023–24': {
     'ODD Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2023-24/odd/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2023-24/odd/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2023-24/odd/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '/pdf/AC_ 2023-24 -II YR ODD SEM  -16.08.2023.pdf',
+      'III & IV Year Academic Calendar': '',
     },
     'EVEN Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2023-24/even/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2023-24/even/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2023-24/even/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
   },
   '2022–23': {
     'ODD Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2022-23/odd/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2022-23/odd/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2022-23/odd/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
     'EVEN Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2022-23/even/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2022-23/even/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2022-23/even/iii-iv-year.pdf',
+      'I Year Academic Calendar': '/pdf/ACADEMIC CALENDER EVEN SEM 2022-2023.pdf',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
   },
 };
