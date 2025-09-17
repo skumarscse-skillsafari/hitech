@@ -4942,6 +4942,231 @@
       "SDGs": "",
       "outcome_impact": ""
     }
+], 
+
+"Resource_Person": [
+    {
+    "S.N": 1,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Ramasamy. S",
+    "Seminar/Workshop/FDP": "Seminar on Artificial Intelligence",
+    "Name_of_STTP/FDP": "Emerging Technologies for Next Generation Networks",
+    "Date": "10.07.2023",
+    "Location": "Erode",
+    "Organized_by": "Department of Computer Science and Engineering, United Institute of Technology"
+  },
+  {
+    "S.N": 2,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Thangamani.T",
+    "Seminar/Workshop/FDP": "FDP on Blockchain Technologies and its Applications",
+    "Name_of_STTP/FDP": "One Day workshop on Recent trends in AI / ML",
+    "Date": "11.10.2023",
+    "Location": "Trichy",
+    "Organized_by": "Department of Computer Science and Engineering, Surya Engineering College"
+  },
+  {
+    "S.N": 3,
+    "Name_of_Faculty_as_Resource_Person": "Mr.Tamizharasu.T",
+    "Seminar/Workshop/FDP": "Cyber Security Threats and Vulnerabilities",
+    "Date": "06.11.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Artificial Intelligence and Data Science, Adithya Institute of Technology"
+  },
+  {
+    "S.N": 4,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Jameer Basha. A",
+    "Seminar/Workshop/FDP": "Security and Privacy Issues in Wireless Networks",
+    "Date": "18.07.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Electronics and Communication Engineering, Erode Sengunthar Engineering College"
+  },
+  {
+    "S.N": 5,
+    "Name_of_Faculty_as_Resource_Person": "Dr. Senthil Kumar.R",
+    "Seminar/Workshop/FDP": "Hands on Session to Unleash the Power of Data Exploration",
+    "Date": "25.08.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Computer Science and Engineering"
+  },
+  {
+    "S.N": 6,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Subhalaskhmi. R.T",
+    "Seminar/Workshop/FDP": "Hands on Session to Unleash the Power of Data Exploration",
+    
+    "Date": "13.09.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Artificial Intelligence and Data Science, M.A.M College of Engineering and Technology"
+  },
+  {
+    "S.N": 7,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Subhalaskhmi. R.T",
+    "Seminar/Workshop/FDP": "Hands on Session to Unleash the Power of Data Exploration",
+    "Date": "22.02.2024",
+    "Location": "Perundurai",
+    "Organized_by": "Department of Computer Science and Engineering, Sri Sai Ranganathar Institute of Technology"
+  },
+  {
+    "S.N": 8,
+    "Name_of_Faculty_as_Resource_Person": "Mr.Murugan.M",
+    "Seminar/Workshop/FDP": "Preparation of IQAC and SSR for NAAC",
+
+    "Date": "16.04.2024",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Artificial Intelligence and Data Science, RVS Technical Campus"
+  },
+  {
+    "S.N": 9,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Jameer Basha.A",
+    "Seminar/Workshop/FDP": "FDP on Artificial Intelligence (AI) Enabled Internet of Things (IoT)",
+    "Date": "28.05.2024",
+    "Location": "Tiruchirapalli",
+    "Organized_by": "Department of Computer Science and Engineering, Indira Ganesan College of Engineering"
+  },
+   {
+    "S.N": 10,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Jameer Basha.A",
+    "Seminar/Workshop/FDP": "FDP on Outcome Based Education (OBE) Awareness Program",
+    "Date": "11.07.2022",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Artificial Intelligence and Data Science, Indira Ganesan College of Engineering"
+  },
+  {
+    "S.N": 11,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Jameer Basha.A",
+    "Seminar/Workshop/FDP": "Orientation Towards Autonomous Curriculum Framing and its Process",
+    "Date": "12.08.2022",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Computer Science and Engineering, United Institute of Technology"
+  },
+  {
+    "S.N": 12,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Jameer Basha.A",
+    "Seminar/Workshop/FDP": "Technology in Teaching Methodology",
+    "Date": "14.10.2022",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Computer Science, Yuva Guru College of Arts and Science"
+  },
+  {
+    "S.N": 13,
+    "Name_of_Faculty_as_Resource_Person": "Mr.Sureshkumar.P",
+    "Seminar/Workshop/FDP": "Edge Computing Applications in Medical Big Data",
+    "Date": "05.09.2022",
+    "Location": "Tirupur",
+    "Organized_by": "Department of Computer Science and Engineering, Angel College of Engineering and Technology"
+  },
+  {
+    "S.N": 14,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Uma.S",
+    "Seminar/Workshop/FDP": "Empirical Data Science and its Applications",
+    "Date": "05.10.2022",
+    "Location": "Pollachi",
+    "Organized_by": "Department of Artificial Intelligence and Data Science, Pollachi Institute of Engineering and Technology"
+  },
+  {
+    "S.N": 15,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Senthilsingh.C",
+    "Seminar/Workshop/FDP": "FDP on Big Data and Business Analytics",
+    "Date": "20.10.2022",
+    "Location": "Tirupur",
+    "Organized_by": "Department of Computer Science and Engineering, Jai Sriram Engineering College"
+  },
+  {
+    "S.N": 16,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Ramasamy.S",
+    "Seminar/Workshop/FDP": "Foundations of Cyber Security and Physical Systems",
+    "Date": "02.03.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Cyber Security, Dhanalakshmi Srinivasan College of Engineering"
+  },
+  {
+    "S.N": 17,
+    "Name_of_Faculty_as_Resource_Person": "Mrs.Jeevitha.P",
+    "Seminar/Workshop/FDP": "FDP on Intelligent Internet of Things (IoT) Computing and Applications",
+    "Date": "12.04.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Information Technology, Akshaya College of Engineering and Technology"
+  }, 
+  {
+    "S.N": 18,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Ramasamy. S",
+    "Seminar/Workshop/FDP": "Seminar on Artificial Intelligence",
+    "Name_of_STTP/FDP": "Emerging Technologies for Next Generation Networks",
+    "Date": "10.07.2023",
+    "Location": "Erode",
+    "Organized_by": "Department of Computer Science and Engineering, United Institute of Technology"
+  },
+  {
+    "S.N": 19,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Thangamani.T",
+    "Seminar/Workshop/FDP": "FDP on Blockchain Technologies and its Applications",
+    "Name_of_STTP/FDP": "One Day workshop on Recent trends in AI / ML",
+    "Date": "11.10.2023",
+    "Location": "Trichy",
+    "Organized_by": "Department of Computer Science and Engineering, Surya Engineering College"
+  },
+  {
+    "S.N": 20,
+    "Name_of_Faculty_as_Resource_Person": "Mr.Tamizharasu.T",
+    "Seminar/Workshop/FDP": "Cyber Security Threats and Vulnerabilities",
+    
+    "Date": "06.11.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Artificial Intelligence and Data Science, Adithya Institute of Technology"
+  },
+  {
+    "S.N": 21,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Jameer Basha. A",
+    "Seminar/Workshop/FDP": "Security and Privacy Issues in Wireless Networks",
+   
+    "Date": "18.07.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Electronics and Communication Engineering, Erode Sengunthar Engineering College"
+  },
+  {
+    "S.N": 22,
+    "Name_of_Faculty_as_Resource_Person": "Dr. Senthil Kumar.R",
+    "Seminar/Workshop/FDP": "Hands on Session to Unleash the Power of Data Exploration",
+   
+    "Date": "25.08.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Computer Science and Engineering"
+  },
+  {
+    "S.N": 23,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Subhalaskhmi. R.T",
+    "Seminar/Workshop/FDP": "Hands on Session to Unleash the Power of Data Exploration",
+  
+    "Date": "13.09.2023",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Artificial Intelligence and Data Science, M.A.M College of Engineering and Technology"
+  },
+  {
+    "S.N": 24,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Subhalaskhmi. R.T",
+    "Seminar/Workshop/FDP": "Hands on Session to Unleash the Power of Data Exploration",
+
+    "Date": "22.02.2024",
+    "Location": "Perundurai",
+    "Organized_by": "Department of Computer Science and Engineering, Sri Sai Ranganathar Institute of Technology"
+  },
+  {
+    "S.N": 25,
+    "Name_of_Faculty_as_Resource_Person": "Mr.Murugan.M",
+    "Seminar/Workshop/FDP": "Preparation of IQAC and SSR for NAAC",
+ 
+    "Date": "16.04.2024",
+    "Location": "Coimbatore",
+    "Organized_by": "Department of Artificial Intelligence and Data Science, RVS Technical Campus"
+  },
+  {
+    "S.N": 26,
+    "Name_of_Faculty_as_Resource_Person": "Dr.Jameer Basha.A",
+    "Seminar/Workshop/FDP": "FDP on Artificial Intelligence (AI) Enabled Internet of Things (IoT)",
+
+    "Date": "28.05.2024",
+    "Location": "Tiruchirapalli",
+    "Organized_by": "Department of Computer Science and Engineering, Indira Ganesan College of Engineering"
+  }
+
 ]
 }
 
