@@ -3220,247 +3220,247 @@
 ],
 
   "participations": [
-    {
-      "sno": 1,
-      "students": ["Rohith P, Sridhar S"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Uyir Hackathon",
-      "organizer": "Sri Krishna College of Engineering and Technology",
-      "level": "National",
-      "date": "08.02.2025",
-      "award": "Participated",
-      "Status":""
-    },
-    {
-      "sno": 2,
-      "students": ["Kishore R"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "EDII's Hackathon 2024",
-      "organizer": "EDII-TN",
-      "level": "State",
-      "date": "16.03.2024 - 17.03.2025",
-      "award": "Participated"
-    },
-    {
-      "sno": 3,
-      "students": ["Sanjay V V", "Sankara Narayanan V"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Project Expo",
-      "organizer": "Karpagam Institutions",
-      "level": "National",
-      "date": "22.05.2024",
-      "award": "1st Prize"
-    },
-    {
-      "sno": 4,
-      "students": ["Mohamed Halif A"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Code in Chos",
-      "organizer": "Information Technology Association, Madras Institute of Technology",
-      "level": "National",
-      "date": "16.03.2024 & 17.03.2024",
-      "award": "Runner"
-    },
-    {
-      "sno": 5,
-      "students": ["Hariprasad R S"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Code in Chos",
-      "organizer": "Information Technology Association, Madras Institute of Technology",
-      "level": "National",
-      "date": "16.03.2024 & 17.03.2024",
-      "award": "Runner"
-    },
-    {
-      "sno": 6,
-      "students": ["Karthick S"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "EDII's Hackathon 2024",
-      "organizer": "EDII-TN",
-      "level": "State",
-      "date": "16.03.2024 - 17.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 7,
-      "students": ["Jagan A"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "EDII's Hackathon 2024",
-      "organizer": "EDII-TN",
-      "level": "State",
-      "date": "16.03.2024 - 17.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 8,
-      "students": ["Kishore R"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "RAISEathon 2024",
-      "organizer": "AIC Raise",
-      "level": "State",
-      "date": "16.03.2024 - 17.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 9,
-      "students": ["Jagan A"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "RAISEathon 2024",
-      "organizer": "AIC Raise",
-      "level": "State",
-      "date": "16.03.2024 - 17.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 10,
-      "students": ["Dharani R"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "RAISEathon 2024",
-      "organizer": "AIC Raise",
-      "level": "State",
-      "date": "16.03.2024 - 17.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 11,
-      "students": ["Akashaya E"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "RAISEathon 2024",
-      "organizer": "AIC Raise",
-      "level": "State",
-      "date": "16.03.2024 - 17.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 12,
-      "students": ["Kamaleshwari R"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "NCIIPC-AICTE Pentathon 2024",
-      "organizer": "St. Joseph's College of Engineering",
-      "level": "National",
-      "date": "04.02.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 13,
-      "students": ["Karthic S"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "NCIIPC-AICTE Pentathon 2024",
-      "organizer": "St. Joseph's College of Engineering",
-      "level": "National",
-      "date": "04.02.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 14,
-      "students": ["Harish B"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Technical quiz",
-      "organizer": "Dept of Computer Science, Sri Krishna Arts and Science College",
-      "level": "National",
-      "date": "04.03.2024",
-      "award": "I Place"
-    },
-    {
-      "sno": 15,
-      "students": ["Harish P"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Technical quiz",
-      "organizer": "Dept of Computer Science, Sri Krishna Arts and Science College",
-      "level": "National",
-      "date": "04.03.2024",
-      "award": "I Place"
-    },
-    {
-      "sno": 16,
-      "students": ["Vishnu S"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Debugging",
-      "organizer": "Dr. NGP Institute of Technology",
-      "level": "National",
-      "date": "22.03.2024",
-      "award": "II Prize"
-    },
-    {
-      "sno": 17,
-      "students": ["Mohamed Tharik"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Debugging",
-      "organizer": "Dr. NGP Institute of Technology",
-      "level": "National",
-      "date": "22.03.2024",
-      "award": "II Prize"
-    },
-    {
-      "sno": 18,
-      "students": ["Akash K"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Paper Presentation",
-      "organizer": "PSG College of Arts and Science",
-      "level": "National",
-      "date": "21.03.2024",
-      "award": "I Place"
-    },
-    {
-      "sno": 19,
-      "students": ["Gokul G"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Paper Presentation",
-      "organizer": "PSG College of Arts and Science",
-      "level": "National",
-      "date": "21.03.2024",
-      "award": "I Place"
-    },
-    {
-      "sno": 20,
-      "students": ["Praveen A"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Hackathon",
-      "organizer": "Sri Eshwar College of Engineering",
-      "level": "National",
-      "date": "15.03.2024 - 16.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 21,
-      "students": ["Santhosh S"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Hackathon",
-      "organizer": "Sri Eshwar College of Engineering",
-      "level": "National",
-      "date": "15.03.2024 - 16.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 22,
-      "students": ["Yuvaraj G"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Hackathon",
-      "organizer": "Sri Eshwar College of Engineering",
-      "level": "National",
-      "date": "15.03.2024 - 16.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 23,
-      "students": ["Nithish Kumar S"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Hackathon",
-      "organizer": "Sri Eshwar College of Engineering",
-      "level": "National",
-      "date": "15.03.2024 - 16.03.2024",
-      "award": "Participated"
-    },
-    {
-      "sno": 24,
-      "students": ["Sivanesan P"],
-      "Year/Semester": "2024-2025 / III",
-      "event": "Hackathon",
-      "organizer": "Sri Eshwar College of Engineering",
-      "level": "National",
-      "date": "15.03.2024 - 16.03.2024",
-      "award": "Participated"
-    },
+  {
+    "sno": 1,
+    "students": ["Rohith P, Sridhar S"],
+    "Year/Semester": "II / III",
+    "event": "Uyir Hackathon",
+    "organizer": "Sri Krishna College of Engineering and Technology",
+    "level": "National",
+    "date": "08.02.2025",
+    "award": "Participated",
+    "Status": ""
+  },
+  {
+    "sno": 2,
+    "students": ["Kishore R"],
+    "Year/Semester": "II / III",
+    "event": "EDII's Hackathon 2024",
+    "organizer": "EDII-TN",
+    "level": "State",
+    "date": "16.03.2024 - 17.03.2025",
+    "award": "Participated"
+  },
+  {
+    "sno": 3,
+    "students": ["Sanjay V V", "Sankara Narayanan V"],
+    "Year/Semester": "II / III",
+    "event": "Project Expo",
+    "organizer": "Karpagam Institutions",
+    "level": "National",
+    "date": "22.05.2024",
+    "award": "1st Prize"
+  },
+  {
+    "sno": 4,
+    "students": ["Mohamed Halif A"],
+    "Year/Semester": "II / III",
+    "event": "Code in Chos",
+    "organizer": "Information Technology Association, Madras Institute of Technology",
+    "level": "National",
+    "date": "16.03.2024 & 17.03.2024",
+    "award": "Runner"
+  },
+  {
+    "sno": 5,
+    "students": ["Hariprasad R S"],
+    "Year/Semester": "II / III",
+    "event": "Code in Chos",
+    "organizer": "Information Technology Association, Madras Institute of Technology",
+    "level": "National",
+    "date": "16.03.2024 & 17.03.2024",
+    "award": "Runner"
+  },
+  {
+    "sno": 6,
+    "students": ["Karthick S"],
+    "Year/Semester": "II / III",
+    "event": "EDII's Hackathon 2024",
+    "organizer": "EDII-TN",
+    "level": "State",
+    "date": "16.03.2024 - 17.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 7,
+    "students": ["Jagan A"],
+    "Year/Semester": "II / III",
+    "event": "EDII's Hackathon 2024",
+    "organizer": "EDII-TN",
+    "level": "State",
+    "date": "16.03.2024 - 17.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 8,
+    "students": ["Kishore R"],
+    "Year/Semester": "II / III",
+    "event": "RAISEathon 2024",
+    "organizer": "AIC Raise",
+    "level": "State",
+    "date": "16.03.2024 - 17.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 9,
+    "students": ["Jagan A"],
+    "Year/Semester": "II / III",
+    "event": "RAISEathon 2024",
+    "organizer": "AIC Raise",
+    "level": "State",
+    "date": "16.03.2024 - 17.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 10,
+    "students": ["Dharani R"],
+    "Year/Semester": "II / III",
+    "event": "RAISEathon 2024",
+    "organizer": "AIC Raise",
+    "level": "State",
+    "date": "16.03.2024 - 17.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 11,
+    "students": ["Akashaya E"],
+    "Year/Semester": "II / III",
+    "event": "RAISEathon 2024",
+    "organizer": "AIC Raise",
+    "level": "State",
+    "date": "16.03.2024 - 17.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 12,
+    "students": ["Kamaleshwari R"],
+    "Year/Semester": "II / III",
+    "event": "NCIIPC-AICTE Pentathon 2024",
+    "organizer": "St. Joseph's College of Engineering",
+    "level": "National",
+    "date": "04.02.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 13,
+    "students": ["Karthic S"],
+    "Year/Semester": "II / III",
+    "event": "NCIIPC-AICTE Pentathon 2024",
+    "organizer": "St. Joseph's College of Engineering",
+    "level": "National",
+    "date": "04.02.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 14,
+    "students": ["Harish B"],
+    "Year/Semester": "II / III",
+    "event": "Technical quiz",
+    "organizer": "Dept of Computer Science, Sri Krishna Arts and Science College",
+    "level": "National",
+    "date": "04.03.2024",
+    "award": "I Place"
+  },
+  {
+    "sno": 15,
+    "students": ["Harish P"],
+    "Year/Semester": "II / III",
+    "event": "Technical quiz",
+    "organizer": "Dept of Computer Science, Sri Krishna Arts and Science College",
+    "level": "National",
+    "date": "04.03.2024",
+    "award": "I Place"
+  },
+  {
+    "sno": 16,
+    "students": ["Vishnu S"],
+    "Year/Semester": "II / III",
+    "event": "Debugging",
+    "organizer": "Dr. NGP Institute of Technology",
+    "level": "National",
+    "date": "22.03.2024",
+    "award": "II Prize"
+  },
+  {
+    "sno": 17,
+    "students": ["Mohamed Tharik"],
+    "Year/Semester": "II / III",
+    "event": "Debugging",
+    "organizer": "Dr. NGP Institute of Technology",
+    "level": "National",
+    "date": "22.03.2024",
+    "award": "II Prize"
+  },
+  {
+    "sno": 18,
+    "students": ["Akash K"],
+    "Year/Semester": "II / III",
+    "event": "Paper Presentation",
+    "organizer": "PSG College of Arts and Science",
+    "level": "National",
+    "date": "21.03.2024",
+    "award": "I Place"
+  },
+  {
+    "sno": 19,
+    "students": ["Gokul G"],
+    "Year/Semester": "II / III",
+    "event": "Paper Presentation",
+    "organizer": "PSG College of Arts and Science",
+    "level": "National",
+    "date": "21.03.2024",
+    "award": "I Place"
+  },
+  {
+    "sno": 20,
+    "students": ["Praveen A"],
+    "Year/Semester": "II / III",
+    "event": "Hackathon",
+    "organizer": "Sri Eshwar College of Engineering",
+    "level": "National",
+    "date": "15.03.2024 - 16.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 21,
+    "students": ["Santhosh S"],
+    "Year/Semester": "II / III",
+    "event": "Hackathon",
+    "organizer": "Sri Eshwar College of Engineering",
+    "level": "National",
+    "date": "15.03.2024 - 16.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 22,
+    "students": ["Yuvaraj G"],
+    "Year/Semester": "II / III",
+    "event": "Hackathon",
+    "organizer": "Sri Eshwar College of Engineering",
+    "level": "National",
+    "date": "15.03.2024 - 16.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 23,
+    "students": ["Nithish Kumar S"],
+    "Year/Semester": "II / III",
+    "event": "Hackathon",
+    "organizer": "Sri Eshwar College of Engineering",
+    "level": "National",
+    "date": "15.03.2024 - 16.03.2024",
+    "award": "Participated"
+  },
+  {
+    "sno": 24,
+    "students": ["Sivanesan P"],
+    "Year/Semester": "II / III",
+    "event": "Hackathon",
+    "organizer": "Sri Eshwar College of Engineering",
+    "level": "National",
+    "date": "15.03.2024 - 16.03.2024",
+    "award": "Participated"
+  },
     {
       "sno": 25,
       "students": ["Deepanraj R"],
