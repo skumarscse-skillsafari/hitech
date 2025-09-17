@@ -1,34 +1,63 @@
 import React, { useState } from 'react';
 import { FileText, X } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const magazineLinks = [
-  { title: "Magazine 1", url: "/pdf/magazine(2324).pdf" },
-  { title: "Magazine 2", url: "/pdf/magazine(2223).pdf" },
-  { title: "Magazine 3", url: "/pdf/maganize(2122).pdf" },
+  { title: "Magazine 2023-24", url: "/pdf/magazine(2324).pdf" },
+  { title: "Magazine 2022-23", url: "/pdf/magazine(2223).pdf" },
+  { title: "Magazine 2021-22", url: "/pdf/maganize(2122).pdf" },
 ];
 
 const MagazinePage = () => {
   const [selectedPDF, setSelectedPDF] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-white text-center px-4 pb-10">
-      <h1 className="text-4xl font-bold text-yellow-900 pt-10">Magazines</h1>
-      <p className="text-md text-gray-600 mt-2 mb-10 px-4 max-w-2xl mx-auto">
-        Discover our magazines showcasing creativity, insights, and the vibrant
-        culture of our institution.
-      </p>
-
-      <div className="flex flex-wrap justify-center gap-8">
-        {magazineLinks.map((item, idx) => (
-          <button
-            key={idx}
-            className="bg-yellow-500 rounded-2xl shadow-xl p-8 w-72 text-center hover:scale-105 transition-transform text-white"
-            onClick={() => setSelectedPDF(item.url)}
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center px-4 pb-10">
+      {/* Back Button */}
+      <div className="fixed top-[200px] left-9 z-50">
+        <div
+          className="group relative w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+          onClick={() => navigate(-1)}
+        >
+          <svg
+            className="w-5 h-5 text-black"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+            viewBox="0 0 24 24"
           >
-            <FileText className="w-10 h-10 mx-auto mb-4" />
-            <span className="text-lg font-semibold">{item.title}</span>
-          </button>
-        ))}
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          <div className="absolute left-full ml-2 top-1/2 -translate-y-1/2 px-2 py-1 rounded bg-black text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+            Back
+          </div>
+        </div>
+      </div>
+
+      {/* Big White Card */}
+      <div className="bg-white shadow-2xl rounded-2xl p-10 mt-16 w-full max-w-6xl">
+        <h1 className="text-4xl font-bold text-black text-center">Magazines</h1>
+        <div className="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full" />
+        <p className="text-md text-gray-600 mt-2 mb-10 px-4 max-w-2xl mx-auto text-center">
+          Discover our magazines showcasing creativity, insights, and the vibrant
+          culture of our institution.
+        </p>
+
+        {/* Card Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {magazineLinks.map((item, idx) => (
+            <button
+              key={idx}
+              className="relative group bg-yellow-500 rounded-2xl shadow-xl p-8 w-full text-center hover:scale-105 transition-transform text-white"
+              onClick={() => setSelectedPDF(item.url)}
+            >
+              <FileText className="w-10 h-10 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+              <span className="text-lg font-semibold">{item.title}</span>
+              <span className="absolute bottom-4 left-1/2 -translate-x-1/2 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-3/4"></span>
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* PDF Modal */}
@@ -41,7 +70,6 @@ const MagazinePage = () => {
             >
               <X className="w-6 h-6" />
             </button>
-            
             <div className="h-full w-full">
               <iframe 
                 src={selectedPDF} 
