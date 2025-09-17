@@ -82,7 +82,7 @@ const AcademicCalendar = () => {
 
   return (
     <div className="min-h-screen bg-white text-center px-4 pb-10">
-      <h1 className="text-4xl font-bold text-yellow-900 pt-10">Academic Calendar</h1>
+      <h1 className="text-4xl font-bold text-black pt-10">Academic Calendar</h1>
       <p className="text-md text-gray-600 mt-2 mb-6 px-4 max-w-2xl mx-auto">
         Explore the structured academic timeline including semester start dates, important events, and examination periods for the academic years listed below.
       </p>
