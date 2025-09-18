@@ -23,6 +23,7 @@ const DepartmentPage: React.FC = () => {
   }
 
   return (
+    
     <PageLayout
       title={`${department.name} - Hindusthan Institute of Technology`}
       description={department.description}
@@ -129,30 +130,41 @@ const DepartmentPage: React.FC = () => {
           </div>
         </SectionWrapper>
       </div>
-      {/* First button */}
+ {/* Magazine button */}
 <div className="fixed right-0 top-[38%] transform -translate-y-1/2 z-50">
-  <div className="-rotate-90 origin-bottom-right">
-    <button onClick={() => navigate("/magazine")}
-      className="text-sm md:text-base font-bold bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-t-xl shadow-lg transition-all duration-300 whitespace-nowrap"
-      title="Magazine"
-    >
-      <BookOpen className="w-5 h-5" />
-    </button>
-  </div>
+  <button
+    onClick={() => navigate("/magazine")}
+    className="group flex items-center bg-yellow-500 hover:bg-yellow-600 text-gray-900 w-12 hover:w-40 h-12 rounded-l-xl shadow-lg transition-all duration-300 overflow-hidden"
+    title="Magazine"
+  >
+    {/* Icon always visible, stays at right */}
+    <div className="flex-shrink-0 w-12 flex items-center justify-center">
+      <BookOpen className="w-6 h-6 transition-transform duration-300 group-hover:scale-110 group-hover:animate-bounce" />
+    </div>
+
+    {/* Text slides in when expanded */}
+    <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 whitespace-nowrap font-bold">
+      Magazine
+    </span>
+  </button>
 </div>
 
-{/* Second button */}
+{/* Newsletter button */}
 <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
-  <div className="-rotate-90 origin-bottom-right">
-    <button onClick={() => navigate("/newsletter")}
-      className="text-sm md:text-base font-bold bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-t-xl shadow-lg transition-all duration-300 whitespace-nowrap"
-      title="NewsLetter"
-    >
-      <Newspaper className="w-5 h-5" />
-    </button>
-  </div>
-</div>
+  <button
+    onClick={() => navigate("/newsletter")}
+    className="group flex items-center bg-yellow-500 hover:bg-yellow-600 text-gray-900 w-12 hover:w-40 h-12 rounded-l-xl shadow-lg transition-all duration-300 overflow-hidden"
+    title="NewsLetter"
+  >
+    <div className="flex-shrink-0 w-12 flex items-center justify-center">
+      <Newspaper className="w-6 h-6 transition-transform duration-300 group-hover:scale-110 group-hover:animate-bounce" />
+    </div>
 
+    <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 whitespace-nowrap font-bold">
+      NewsLetter
+    </span>
+  </button>
+</div>
 
 
     </PageLayout>
