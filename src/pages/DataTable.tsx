@@ -80,6 +80,7 @@ const sectionTitleMap: Record<string, string> = {
   National_confrence: 'National Conference',
   Books: 'Books',
   Books_chapters: 'Book Chapters',
+  Resource_Person: 'Faculty as Resource Person',
   participations: 'Event Participations',
   stu_International_Confrense: 'Student International Conference',
   stu_National_journals: 'Student National Journals',
@@ -122,6 +123,7 @@ const sectionDescriptions: Record<string, string> = {
   stu_micro: 'Micro projects carried out by students focusing on practical problem-solving.',
   stu_Books: 'Books published by students.',
   hackathon: 'Hackathon events participated by students.',
+  Resource_Person: 'Details of faculty as resource persons in various events.',
 };
 
 const DataTable: React.FC = () => {
