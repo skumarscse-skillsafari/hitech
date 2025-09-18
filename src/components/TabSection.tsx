@@ -207,20 +207,21 @@ const TabsSection: React.FC = () => {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="border-b border-gray-200">
-        <div className="flex flex-wrap">
+        {/* ✅ Mobile scrollable tabs */}
+        <div className="flex sm:flex-wrap overflow-x-auto sm:overflow-visible no-scrollbar">
           {tabs.map((tab) => (
             <button
-  key={tab.id}
-  onClick={() => setActiveTab(tab.id)}
-  className={`flex items-center justify-center min-w-[200px] space-x-2 px-4 sm:px-6 py-3 sm:py-4 font-medium transition-all duration-200 border-b-2 ${
-    activeTab === tab.id
-      ? 'text-yellow-600 border-yellow-500 bg-yellow-50'
-      : 'text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50'
-  }`}
->
-
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex items-center justify-center flex-shrink-0 min-w-[150px] sm:min-w-[200px] space-x-2 px-3 sm:px-6 py-2 sm:py-4 font-medium transition-all duration-200 border-b-2 ${
+                activeTab === tab.id
+                  ? 'text-yellow-600 border-yellow-500 bg-yellow-50'
+                  : 'text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50'
+              }`}
+            >
               {tab.icon && <tab.icon className="h-5 w-5" />}
               <span className="hidden sm:block">{tab.name}</span>
+              <span className="sm:hidden text-sm">{tab.name}</span>
             </button>
           ))}
         </div>
