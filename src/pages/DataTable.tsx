@@ -20,7 +20,7 @@ const facultyCategoryOptions = [
   { label: 'Book Chapters', key: 'Books_chapters' },
   { label: 'Book Published', key: 'Books' },
   { label: 'NPTEL', key: 'fac_nptel' },
-  { label: 'Resource Person', key: 'Resource_Person' }
+  
 ];
 
 const stuCategoryOptions = [
