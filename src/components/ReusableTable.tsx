@@ -71,10 +71,40 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
   };
 
   const parseDate = (dateStr: string) => {
-    if (!dateStr) return new Date(0);
-    const [day, month, year] = dateStr.split('-').map(Number);
-    return new Date(year, month - 1, day);
-  };
+  if (!dateStr) return new Date(0);
+  
+  const formats = [
+    // DD-MM-YYYY
+    () => {
+      const [day, month, year] = dateStr.split('-').map(Number);
+      return new Date(year, month - 1, day);
+    },
+    // MM-DD-YYYY
+    () => {
+      const [month, day, year] = dateStr.split('-').map(Number);
+      return new Date(year, month - 1, day);
+    },
+    // YYYY-MM-DD
+    () => {
+      const [year, month, day] = dateStr.split('-').map(Number);
+      return new Date(year, month - 1, day);
+    },
+    () => new Date(dateStr)
+  ];
+  
+  // Try each format until we get a valid date
+  for (const format of formats) {
+    try {
+      const date = format();
+      if (!isNaN(date.getTime())) {
+        return date;
+      }
+    } catch (e) {
+
+    }
+  }
+  return new Date(0);
+};
 
   const handleSort = (key: string) => {
     let direction: 'ascending' | 'descending' = 'ascending';
@@ -85,23 +115,30 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
   };
 
   const sortedData = React.useMemo(() => {
-    let sortableItems = [...data];
-    if (sortConfig !== null) {
-      sortableItems.sort((a, b) => {
-        const isDateColumn = sortConfig.key.toLowerCase().includes('date');
-        let aValue = a[sortConfig.key];
-        let bValue = b[sortConfig.key];
-        if (isDateColumn) {
-          aValue = parseDate(aValue);
-          bValue = parseDate(bValue);
-        }
-        if (aValue < bValue) return sortConfig.direction === 'ascending' ? -1 : 1;
-        if (aValue > bValue) return sortConfig.direction === 'ascending' ? 1 : -1;
-        return 0;
-      });
-    }
-    return sortableItems;
-  }, [data, sortConfig]);
+  let sortableItems = [...data];
+  if (sortConfig !== null) {
+    sortableItems.sort((a, b) => {
+      const isDateColumn = sortConfig.key.toLowerCase().includes('date');
+      let aValue = a[sortConfig.key];
+      let bValue = b[sortConfig.key];
+      
+      if (isDateColumn) {
+        // For dates, compare timestamps
+        aValue = parseDate(aValue).getTime();
+        bValue = parseDate(bValue).getTime();
+      } else {
+        // Handle non-date values
+        if (typeof aValue === 'string') aValue = aValue.toLowerCase();
+        if (typeof bValue === 'string') bValue = bValue.toLowerCase();
+      }
+      
+      if (aValue < bValue) return sortConfig.direction === 'ascending' ? -1 : 1;
+      if (aValue > bValue) return sortConfig.direction === 'ascending' ? 1 : -1;
+      return 0;
+    });
+  }
+  return sortableItems;
+}, [data, sortConfig]);
 
   // ✅ Apply year + search filter
   const filteredData = sortedData.filter((item) => {
