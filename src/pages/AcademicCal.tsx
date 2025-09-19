@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FileText, X } from 'lucide-react';
-
+import { FileText, X , ChevronLeft} from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 const years = [
   { year: '2025–26' },
   { year: '2024–25' },
@@ -17,50 +17,50 @@ const semesters = [
 const calendarPDFs = {
   '2025–26': {
     'ODD Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2025-26/odd/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2025-26/odd/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2025-26/odd/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '/pdf/AC_2025 - 2026 - ODD SEM for III SEM - Copy (1).pdf',
+      'III & IV Year Academic Calendar': '/pdf/AC_2025 - 2026 - ODD SEM for V & VII SEM (1).pdf',
     },
     'EVEN Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2025-26/even/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2025-26/even/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2025-26/even/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
   },
   '2024–25': {
     'ODD Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2024-25/odd/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2024-25/odd/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2024-25/odd/iii-iv-year.pdf',
+      'I Year Academic Calendar': '/pdf/AC_HIT - AC_2024 - 2025 - ODD SEM for I SEMESTER.pdf',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
     'EVEN Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2024-25/even/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2024-25/even/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2024-25/even/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '',
     },
   },
   '2023–24': {
     'ODD Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2023-24/odd/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2023-24/odd/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2023-24/odd/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '/pdf/AC_ 2023-24 -II YR ODD SEM  -16.08.2023.pdf',
+      'III & IV Year Academic Calendar': '/pdf/AC_ 2023-24 -ODD SEM for III IV Yr.pdf',
     },
     'EVEN Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2023-24/even/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2023-24/even/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2023-24/even/iii-iv-year.pdf',
+      'I Year Academic Calendar': '',
+      'II Year Academic Calendar': '',
+      'III & IV Year Academic Calendar': '/pdf/AC EVEN SEMESTER 2023-2024 VII &VIII (3).pdf',
     },
   },
   '2022–23': {
     'ODD Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2022-23/odd/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2022-23/odd/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2022-23/odd/iii-iv-year.pdf',
+      'I Year Academic Calendar': '/pdf/ACADEMIC CALENDER ODD SEM I YR 22-23.pdf',
+      'II Year Academic Calendar': '/pdf/ACADEMIC CALENDER ODD SEM II YR.pdf',
+      'III & IV Year Academic Calendar': '/pdf/ACADEMIC CALENDER ODD SEM  III YEAR 2023-2024.pdf',
     },
     'EVEN Semester': {
-      'I Year Academic Calendar': '/pdf/academic-calendars/2022-23/even/i-year.pdf',
-      'II Year Academic Calendar': '/pdf/academic-calendars/2022-23/even/ii-year.pdf',
-      'III & IV Year Academic Calendar': '/pdf/academic-calendars/2022-23/even/iii-iv-year.pdf',
+      'I Year Academic Calendar': '/pdf/ACADEMIC CALENDER EVEN SEM 2022-2023.pdf',
+      'II Year Academic Calendar': '/pdf/AC II,III,IV YR EVEN SEM ACADEMIC CALENDER 22-23-compressed.pdf',
+      'III & IV Year Academic Calendar': '',
     },
   },
 };
@@ -79,11 +79,25 @@ const yearWiseData = years.map(({ year }) => ({
 
 const AcademicCalendar = () => {
   const [selectedPDF, setSelectedPDF] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   return (
+     <div className="relative mt-0 bg-white">
+      {/* Back Button */}
+      <button
+        onClick={() => navigate(-1)}
+        className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+        aria-label="Back"
+      >
+        <ChevronLeft className="w-6 h-6 text-black" strokeWidth={3} />
+        <span className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 px-3 py-1 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+          Back
+        </span>
+      </button>
     <div className="min-h-screen bg-white text-center px-4 pb-10">
-      <h1 className="text-4xl font-bold text-black pt-10">Academic Calendar</h1>
-      <p className="text-md text-gray-600 mt-2 mb-6 px-4 max-w-2xl mx-auto">
+      <h4 className="text-3xl md:text-4xl font-extrabold text-gray-800 mt-6">Academic Calendar</h4>
+      <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4"></div>
+      <p className="text-gray-600 max-w-3xl mt-2 mx-auto">
         Explore the structured academic timeline including semester start dates, important events, and examination periods for the academic years listed below.
       </p>
 
@@ -153,6 +167,7 @@ const AcademicCalendar = () => {
         </div>
       )}
     </div>
+  </div>
   );
 };
 
