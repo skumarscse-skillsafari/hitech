@@ -20,6 +20,7 @@ import MagazinePage from "./pages/MagazinePage";
 import NewsletterPage from "./pages/NewsLetterPage";
 import Management from './pages/Management';
 import PrincipalsDesk from './pages/PrincipalsDesk';
+import Objectives from './pages/objectives';
 import FacultyProfilePage from './pages/FacultyProfilePage';
 import GoverningCouncilPage from './pages/GoverningCouncilPage';
 import AcademicCalendar from './pages/AcademicCal';
@@ -84,6 +85,7 @@ function App() {
                 <Route path="/about/management" element={<Management />} />
                 <Route path="/vision-mission" element={<Management />} />
                 <Route path="/leadership" element={<PrincipalsDesk />} />
+                <Route path="/about/objectives" element={<Objectives />} />
                 <Route path="/governing-council" element={<GoverningCouncilPage />} />
                 <Route path="/profile/:id" element={<FacultyProfilePage />} />
                 <Route path="/datatable/:section" element={<DataTable />} />
