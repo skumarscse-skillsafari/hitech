@@ -153,7 +153,7 @@ const Footer: React.FC<FooterProps> = ({ collegeName, contact }) => {
             <div className="flex items-center space-x-3">
                 <div className="flex items-center space-x-3 mb-6 mt-8">
               <img
-                src="public/Logo_footer.jpg"
+                src="/Logo_footer.jpg"
                 alt="College Logo"
                 className="h-10 w-10 object-contain rounded-lg p-100"
               />
