@@ -3221,9 +3221,6087 @@
 
   "participations": 
 [
-  
-  ],
-
+    {
+        "sno": 1,
+        "students": [
+            "NHASIK MOHAMMMED N (720820103080)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "KRIZEN 21",
+        "organizer": "SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "12-09-2021 to 15-09-2021",
+        "award": "THIRD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 2,
+        "students": [
+            "NAVEEN A (720820103073)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "KRIZEN 21",
+        "organizer": "SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "12-09-2021 to 15-09-2021",
+        "award": "THIRD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 3,
+        "students": [
+            "LOKESH MPT (720819104062)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "TEKSPARK 21",
+        "organizer": "KARPAGAM INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "29-10-2021",
+        "award": "SECOND PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 4,
+        "students": [
+            "LEELA CHRISTY I (720820103057)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "TEKSPARK 21",
+        "organizer": "KARPAGAM INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PROJECT PRESENTATION",
+        "date": "29-10-2021 to 31-10-2021",
+        "award": "SECOND PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 5,
+        "students": [
+            "ABHISHA DIVYADHARSHINI F R (720820103004)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "TEKSPARK 21",
+        "organizer": "KARPAGAM INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PROJECT PRESENTATION",
+        "date": "29-10-2021 to 31-10-2021",
+        "award": "SECOND PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 6,
+        "students": [
+            "KOLLA VENKATASATHISH (720820103055)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "CSE TECXTREME 202",
+        "organizer": "CHALAPATHI INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+        "level": "PAPER PRESENTATION",
+        "date": "17-12-2021 to 18-12-2021",
+        "award": "THIRD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 7,
+        "students": [
+            "CHINTHALAPALLI KIRAN KUMAR REDDY (720820103024)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "CSE TECXTREME 202",
+        "organizer": "CHALAPATHI INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+        "level": "PAPER PRESENTATION",
+        "date": "17-12-2021 to 18-12-2021",
+        "award": "THIRD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 8,
+        "students": [
+            "RISHI BALA M (720820103091)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "CHAKRAWAR 2K22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "PAPER PRESENTATION",
+        "date": "07-04-2022",
+        "award": "2ND PRICE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 9,
+        "students": [
+            "POONTHAMILAN M (720820103087)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "CHAKRAWAR 2K22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "PAPER PRESENTATION",
+        "date": "07-04-2022",
+        "award": "2ND PRICE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 10,
+        "students": [
+            "PACHIGULLA DEEPTHI (720819104080)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "NEXUS 22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "DEBUGGING",
+        "date": "07-04-2022",
+        "award": "2ND PRICE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 11,
+        "students": [
+            "RAJALAKSHMI R (720819104093)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "INNOTECH 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "BRAINSTROMING",
+        "date": "11-04-2022",
+        "award": "2ND PRICE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 12,
+        "students": [
+            "PRADEEP K (720819104087)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "ZHAKRA 22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "PROJECT PRESENTATION",
+        "date": "12-04-2022",
+        "award": "3RD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 13,
+        "students": [
+            "NELATURI SUDHA MANI (720819104076)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "ZHAKRA 22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "PROJECT PRESENTATION",
+        "date": "12-04-2022",
+        "award": "3RD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 14,
+        "students": [
+            "SREERAG M (720819104109)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "ZHAKRA 22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "PROJECT PRESENTATION",
+        "date": "12-04-2022",
+        "award": "3RD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 15,
+        "students": [
+            "SRIRAMKARAN C (720820103109)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MEDIX 2K22",
+        "organizer": "VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "19-04-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 16,
+        "students": [
+            "UNAIS AHAMED S (720820103119)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MEDIX 2K22",
+        "organizer": "VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "19-04-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 17,
+        "students": [
+            "SANJAY P (720820103092)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TEXANTO 2K22",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE - ERODE",
+        "level": "WEB DESIGN",
+        "date": "22-04-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 18,
+        "students": [
+            "GOKUL B (720819104033)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RUBIX 22",
+        "organizer": "BANNARI AMMAN INSTITUTE OF TECHNOLOGY - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "07-05-2022",
+        "award": "3RD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 19,
+        "students": [
+            "IRFAN RAHIM (720819104044)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RUBIX 22",
+        "organizer": "BANNARI AMMAN INSTITUTE OF TECHNOLOGY - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "07-05-2022",
+        "award": "3RD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 20,
+        "students": [
+            "GURUULA SIRISHA (720819104039)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RUBIX 22",
+        "organizer": "BANNARI AMMAN INSTITUTE OF TECHNOLOGY - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "07-05-2022",
+        "award": "3RD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 21,
+        "students": [
+            "JOEL T ABRAHAM (720819104048)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NOVITAS 22",
+        "organizer": "DHIRAJLAL GANDHI COLLEGE OF ENGINEERING - SALEM",
+        "level": "PAPER PRESENTATION",
+        "date": "14-05-2022",
+        "award": "3RD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 22,
+        "students": [
+            "KANNAN M (720819104050)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NOVITAS 22",
+        "organizer": "DHIRAJLAL GANDHI COLLEGE OF ENGINEERING - SALEM",
+        "level": "PAPER PRESENTATION",
+        "date": "14-05-2022",
+        "award": "3RD PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 23,
+        "students": [
+            "KAVIRAJAN S (720819104055)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TRONEXUS 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY – COIMBATORE",
+        "level": "PROJECT EXPO",
+        "date": "26-05-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 24,
+        "students": [
+            "RISHIKA S (720819104096)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TRONEXUS 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY – COIMBATORE",
+        "level": "PROJECT EXPO",
+        "date": "26-05-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 25,
+        "students": [
+            "SANTHOSH C (720819104098)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "SRIT RISE 2022",
+        "organizer": "SRI RAMAKRISHNA INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "27-05-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 26,
+        "students": [
+            "ILYAS P I (720819104042)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "SRIT RISE 2022",
+        "organizer": "SRI RAMAKRISHNA INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "27-05-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 27,
+        "students": [
+            "THAGATAMIL A (720819104116)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "YUGAM 2022",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-05-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 28,
+        "students": [
+            "YELLAVULA KUMAR RAO (720819104127)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "YUGAM 2022",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-05-2022",
+        "award": "1ST PRIZE",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 29,
+        "students": [
+            "AGARSHANA S (720820103008)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "KRIZEN 21",
+        "organizer": "SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "12-09-2021 to 15-09-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 30,
+        "students": [
+            "ISWARYA K (720820103039)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "KRIZEN 21",
+        "organizer": "SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "12-09-2021 to 15-09-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 31,
+        "students": [
+            "JENESHA J (720820103042)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "KRIZEN 21",
+        "organizer": "SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "12-09-2021 to 15-09-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 32,
+        "students": [
+            "ILYAS P I (720819104042)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "TEKSPARK 21",
+        "organizer": "KARPAGAM INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "29-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 33,
+        "students": [
+            "IRFAN RAHIM Z (720819104044)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "TEKSPARK 21",
+        "organizer": "KARPAGAM INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "29-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 34,
+        "students": [
+            "NANDHAKUMARAN R T (720820103073)"
+        ],
+        "Year/Semester": "3RD SEM \\ 2ND YEAR",
+        "event": "SRISHTI 2K2",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-10-2021 to 31-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 35,
+        "students": [
+            "VANI.L (720820103310)"
+        ],
+        "Year/Semester": "3RD SEM \\ 2ND YEAR",
+        "event": "SRISHTI 2K2",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-10-2021 to 31-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 36,
+        "students": [
+            "MADHULIKA M (720820103061)"
+        ],
+        "Year/Semester": "3RD SEM \\ 2ND YEAR",
+        "event": "SRISHTI 2K2",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-10-2021 to 31-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 37,
+        "students": [
+            "JAYA ANCY R (720819104047)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "SRISHTI 2K2",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-10-2021 to 31-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 38,
+        "students": [
+            "JAGATHEESHWARAN S (720819104045)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "SRISHTI 2K2",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-10-2021 to 31-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 39,
+        "students": [
+            "KAVIARASAN R (720819104053)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "SRISHTI 2K2",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-10-2021 to 31-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 40,
+        "students": [
+            "KAVIN VIGNESH T (720819104054)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "SRISHTI 2K2",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-10-2021 to 31-10-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 41,
+        "students": [
+            "SHAKTHIPRIYA S (720820103100)"
+        ],
+        "Year/Semester": "3RD SEM \\ 2ND YEAR",
+        "event": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "organizer": "AVC COLLEGE OF ENGINEERING - MAILADUTHURAI",
+        "level": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "date": "18-12-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 42,
+        "students": [
+            "CHOTTAI VARUSAI GANI H (720819104024)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "organizer": "AVC COLLEGE OF ENGINEERING - MAILADUTHURAI",
+        "level": "NATIONAL SEMINAR ON ETHICAL HACKING 149AND CYBER SECURITY",
+        "date": "18-12-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 43,
+        "students": [
+            "DEENA SANKAR V (720819104025)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "organizer": "AVC COLLEGE OF ENGINEERING - MAILADUTHURAI",
+        "level": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "date": "18-12-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 44,
+        "students": [
+            "KURAPATI GOWTHAMI (720819104060)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "organizer": "AVC COLLEGE OF ENGINEERING - MAILADUTHURAI",
+        "level": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "date": "18-12-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 45,
+        "students": [
+            "JENKE SUBBA REDDY (720819104046)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "organizer": "AVC COLLEGE OF ENGINEERING - MAILADUTHURAI",
+        "level": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "date": "18-12-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 46,
+        "students": [
+            "MOHAMED YEHIA M (720820103067)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "organizer": "AVC COLLEGE OF ENGINEERING - MAILADUTHURAI",
+        "level": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "date": "18-12-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 47,
+        "students": [
+            "NISHA S (720820103082)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "organizer": "AVC COLLEGE OF ENGINEERING - MAILADUTHURAI",
+        "level": "NATIONAL SEMINAR ON ETHICAL HACKING AND CYBER SECURITY",
+        "date": "18-12-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 48,
+        "students": [
+            "SUDHAKAR P (720819104111)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TWO DAYS STATE LEVEL CSI STUDENT CONVENTION - 2022",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING - COIMBATORE",
+        "level": "PAPER PRRESENTATION",
+        "date": "08-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 49,
+        "students": [
+            "ABISHEIK G (720820103005)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "MEQNZO 2O21",
+        "organizer": "SRM VALLIAMMAI ENGINEERING COLLEGE KATTANKULATHUR",
+        "level": "PAPER PRESENTATION",
+        "date": "04-09-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 50,
+        "students": [
+            "ADITHYAN S (720820103007)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "MEQNZO 2O21",
+        "organizer": "SRM VALLIAMMAI ENGINEERING COLLEGE KATTANKULATHUR",
+        "level": "PAPER PRESENTATION",
+        "date": "04-09-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 51,
+        "students": [
+            "KAVIYA S (720820103051)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "WORKSHOP",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY",
+        "level": "WORKSHOP",
+        "date": "26-11-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 52,
+        "students": [
+            "KANAMARLAPUDI AKSHAY KUMAR GUPTA (720820103046)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "WORKSHOP",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY",
+        "level": "WORKSHOP",
+        "date": "26-11-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 53,
+        "students": [
+            "KARTHICK R (720820103047)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "WORKSHOP",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY",
+        "level": "WORKSHOP",
+        "date": "26-11-2021",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 54,
+        "students": [
+            "KISHORE S (720820103308)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "AVANZARE 16.0",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "WORKSHOP",
+        "date": "29-03-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 55,
+        "students": [
+            "VIKRAM S (720820103122)"
+        ],
+        "Year/Semester": "6th SEM / 3RD YEAR",
+        "event": "AVANZARE 16.0",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "WORKSHOP",
+        "date": "29-03-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 56,
+        "students": [
+            "THIRISHA S (720820103118)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "AVANZARE 16.0",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "WORKSHOP",
+        "date": "29-03-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 57,
+        "students": [
+            "SWETHA P (720820103114)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "AVANZARE 16.0",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "WORKSHOP",
+        "date": "29-03-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 58,
+        "students": [
+            "NAVEEN A (720820103075)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "AVANZARE 16.0",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "WORKSHOP",
+        "date": "29-03-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 59,
+        "students": [
+            "NHASIK MOHAMMED N (720820103080)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "CHAKRAWAR 2K22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "PAPER PRESENTATION",
+        "date": "07-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 60,
+        "students": [
+            "SANTHIYA D (720820103095)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "CHAKRAWAR 2K22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "PROJECT PRESENTATION",
+        "date": "07-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 61,
+        "students": [
+            "SUMESHAS V (720820103112)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "CHAKRAWAR 2K22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "PROJECT PRESENTATION",
+        "date": "07-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 62,
+        "students": [
+            "NELATURI SUDHA MANI (720819104076)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NEXUS 22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "DEBUGGING",
+        "date": "07-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 63,
+        "students": [
+            "MOHSIN NATHAR ALI (720819104070)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NEXUS 22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "DEBUGGING",
+        "date": "07-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 64,
+        "students": [
+            "PATHAKOTI VNKATA LINGA RAO (720819104083)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NEXUS 22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "DEBUGGING",
+        "date": "07-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 65,
+        "students": [
+            "VIKRAM S (720820103122)"
+        ],
+        "Year/Semester": "6th SEM / 3RD YEAR",
+        "event": "NEXUS 22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "DEBUGGING",
+        "date": "07-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 66,
+        "students": [
+            "PREM K (720819104091)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TWO DAYS STATE LEVEL CSI STUDENT CONVENTION - 2022",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING - COIMBATORE",
+        "level": "PAPER PRRESENTATION",
+        "date": "08-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 67,
+        "students": [
+            "NUTHI ANEEL (720819104079)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "08-04-20202 to 09-04-20202",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 68,
+        "students": [
+            "LEELA CHRISTY I (720820103058)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "08-04-20202 to 09-04-20202",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 69,
+        "students": [
+            "KESAVAN B (720819104056)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "INNOTECH 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "BRAINSTROMING",
+        "date": "11-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 70,
+        "students": [
+            "PRAVEEN (720819104090)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "INNOTECH 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "BRAINSTROMING",
+        "date": "11-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 71,
+        "students": [
+            "KOLA PRAVALLIKA (720819104058)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "INNOTECH 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "BRAINSTROMING",
+        "date": "11-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 72,
+        "students": [
+            "LEONARD JONES V (720819104061)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "INNOTECH 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "BRAINSTROMING",
+        "date": "11-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 73,
+        "students": [
+            "NUTHI ANEEL (720819104079)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "INNOTECH 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "BRAINSTROMING",
+        "date": "11-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 74,
+        "students": [
+            "SANTHOSH M (720820103096)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MEDIX 2K22",
+        "organizer": "VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "19-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 75,
+        "students": [
+            "VANISRI MS (720820103120)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MEDIX 2K22",
+        "organizer": "VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "19-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 76,
+        "students": [
+            "SREE MATHI R (720820103107)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TEXANTO 2K22",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE - ERODE",
+        "level": "WEB DESIGN",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 77,
+        "students": [
+            "PULI SRI HARI (720820103089)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TEXANTO 2K22",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE - ERODE",
+        "level": "WEB DESIGN",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 78,
+        "students": [
+            "SREE MANIKANDAN B (720820103106)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TEXANTO 2K22",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE - ERODE",
+        "level": "WEB DESIGN",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 79,
+        "students": [
+            "SANJAY S (720820103092)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TEXANTO 2K22",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE - ERODE",
+        "level": "WEB DESIGN",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 80,
+        "students": [
+            "SANTHOSH M (720820103096)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TEXANTO 2K22",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE - ERODE",
+        "level": "WEB DESIGN",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 81,
+        "students": [
+            "TADIMARRI NARESH KUMAR (720820103115)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MESCIA 2K22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "QUIZ",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 82,
+        "students": [
+            "MADHULIKA M (720820103061)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MESCIA 2K22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "QUIZ",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 83,
+        "students": [
+            "KAVIPRIYA M (720820103046)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MESCIA 2K22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 84,
+        "students": [
+            "MACHAVARAPU ACHYUTH (720820103060)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MESCIA 2K22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 85,
+        "students": [
+            "LOGESHWARAN M (720820103059)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "MESCIA 2K22",
+        "organizer": "KONGU ENGINEERING COLLEGE - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 86,
+        "students": [
+            "JENESHA J (720820103042)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "DHRUVA 2022",
+        "organizer": "SRI RAMAKRISHNA COLLEGE OF ARTS AND SCIENCE FOR WOMEN - COIMBATORE",
+        "level": "BRAIN HUNT",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 87,
+        "students": [
+            "KAMARAJ N (720820103045)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "DHRUVA 2022",
+        "organizer": "SRI RAMAKRISHNA COLLEGE OF ARTS AND SCIENCE FOR WOMEN - COIMBATORE",
+        "level": "BRAIN HUNT",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 88,
+        "students": [
+            "JAI KRISHNA SAGAR S (720820103040)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "DHRUVA 2022",
+        "organizer": "SRI RAMAKRISHNA COLLEGE OF ARTS AND SCIENCE FOR WOMEN - COIMBATORE",
+        "level": "BRAIN HUNT",
+        "date": "22-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 89,
+        "students": [
+            "SIVABALAJI T (720819104106)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RESNOVAE 2K22",
+        "organizer": "SSM INSTITUTE OF ENGINEERING AND TECHNOLOGY - DINDIGUL",
+        "level": "PAPER PRESENTATION",
+        "date": "28-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 90,
+        "students": [
+            "SAVIDI BOJINA VENKATA BALAJI (720819104099)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RESNOVAE 2K22",
+        "organizer": "SSM INSTITUTE OF ENGINEERING AND TECHNOLOGY - DINDIGUL",
+        "level": "PAPER PRESENTATION",
+        "date": "28-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 91,
+        "students": [
+            "RISHIKA S (720819104096)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RESNOVAE 2K22",
+        "organizer": "SSM INSTITUTE OF ENGINEERING AND TECHNOLOGY - DINDIGUL",
+        "level": "PAPER PRESENTATION",
+        "date": "28-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 92,
+        "students": [
+            "DEEPAK SAMY R"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RESNOVAE 2K22",
+        "organizer": "SSM INSTITUTE OF ENGINEERING AND TECHNOLOGY - DINDIGUL",
+        "level": "PAPER PRESENTATION",
+        "date": "28-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 93,
+        "students": [
+            "YELLAVULA KUMAR RAO (720819104127)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "YUDDHA VARNA 22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "TECHNO PRESENTATION",
+        "date": "05-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 94,
+        "students": [
+            "MOHSIN NATHAR ALI (720819104070)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "YUDDHA VARNA 22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "TECHNO PRESENTATION",
+        "date": "05-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 95,
+        "students": [
+            "CHILLAKURU DEEKSHITHA (720819104023)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RUBIX 22",
+        "organizer": "BANNARI AMMAN INSTITUTE OF TECHNOLOGY - ERODE",
+        "level": "CODE IT TO CRACK IT",
+        "date": "07-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 96,
+        "students": [
+            "DEEPIKA C (720819104026)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RUBIX 22",
+        "organizer": "BANNARI AMMAN INSTITUTE OF TECHNOLOGY - ERODE",
+        "level": "CODE IT TO CRACK IT",
+        "date": "07-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 97,
+        "students": [
+            "DRONADULA CHANDRA SEKAR (720819104028)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RUBIX 22",
+        "organizer": "BANNARI AMMAN INSTITUTE OF TECHNOLOGY - ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "07-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 98,
+        "students": [
+            "NOUFIA FIRTHOUS B (720820103304)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHSPURTZ 2K22",
+        "organizer": "NANDHA COLLEGE OF TECHNOLOGY - ERODE",
+        "level": "SLIDE DESK",
+        "date": "10-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 99,
+        "students": [
+            "VANI L (720820103310)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHSPURTZ 2K22",
+        "organizer": "NANDHA COLLEGE OF TECHNOLOGY - ERODE",
+        "level": "SLIDE DESK",
+        "date": "10-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 100,
+        "students": [
+            "NISHANTH G (720820103309)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHSPURTZ 2K22",
+        "organizer": "NANDHA COLLEGE OF TECHNOLOGY - ERODE",
+        "level": "SLIDE DESK",
+        "date": "10-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 101,
+        "students": [
+            "HARIKRISHNAN M (720819104041)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NMLDLTP’22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "WORKSHOP (MASHINE LEARNING)",
+        "date": "11-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 102,
+        "students": [
+            "MONISHA M (720820103069)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NMLDLTP’22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "WORKSHOP (MASHINE LEARNING)",
+        "date": "11-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 103,
+        "students": [
+            "MUTHUKUMAR M (720820103071)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NMLDLTP’22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "WORKSHOP (MASHINE LEARNING)",
+        "date": "11-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 104,
+        "students": [
+            "NAVEEN S (720820103077)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NMLDLTP’22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "WORKSHOP (MASHINE LEARNING)",
+        "date": "11-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 105,
+        "students": [
+            "NIRMAL DEV M (720820103081)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NMLDLTP’22",
+        "organizer": "M.KUMARASAMY COLLEGE OF ENGINEERING - KARUR",
+        "level": "WORKSHOP (MASHINE LEARNING)",
+        "date": "11-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 106,
+        "students": [
+            "SUDHAKAR M (720819104110)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "HENOSIS 2K22",
+        "organizer": "DR.N.G.P. INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "CODE WARS (DEBUGGIN G)",
+        "date": "13-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 107,
+        "students": [
+            "THANGTAMIL A (720819104116)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "HENOSIS 2K22",
+        "organizer": "DR.N.G.P. INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "CODE WARS (DEBUGGIN G)",
+        "date": "13-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 108,
+        "students": [
+            "VYSHAKH V S (720819104126)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "HENOSIS 2K22",
+        "organizer": "DR.N.G.P. INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "CODE WARS (DEBUGGIN G)",
+        "date": "13-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 109,
+        "students": [
+            "VEDIKOLA RAVENDRA REDDY (720819104121)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "HENOSIS 2K22",
+        "organizer": "DR.N.G.P. INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "13-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 110,
+        "students": [
+            "SUDARSAN P (720819104111)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "HENOSIS 2K22",
+        "organizer": "DR.N.G.P. INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "13-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 111,
+        "students": [
+            "UDHAYA M (720819104118)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "HENOSIS 2K22",
+        "organizer": "DR.N.G.P. INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "13-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 112,
+        "students": [
+            "GURRALA SIRISHA (720819104039)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NOVITAS 22",
+        "organizer": "DHIRAJLAL GANDHI COLLEGE OF ENGINEERING - SALEM",
+        "level": "WORKSHOP",
+        "date": "14-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 113,
+        "students": [
+            "IMRAN KHAN S (720819104043)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NOVITAS 22",
+        "organizer": "DHIRAJLAL GANDHI COLLEGE OF ENGINEERING - SALEM",
+        "level": "WORKSHOP",
+        "date": "14-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 114,
+        "students": [
+            "RISHI R (720819104095)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "THER-O-FEST 2022",
+        "organizer": "SREE SAKTHI ENGINEERING COLLEGE - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "20-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 115,
+        "students": [
+            "SEDHU MADHAVAN K (720819104100)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "THER-O-FEST 2022",
+        "organizer": "SREE SAKTHI ENGINEERING COLLEGE - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "20-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 116,
+        "students": [
+            "PANDIYARAJAN G (720819104082)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "THER-O-FEST 2022",
+        "organizer": "SREE SAKTHI ENGINEERING COLLEGE - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "20-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 117,
+        "students": [
+            "PANDI R (720819104081)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH FIESTA 22",
+        "organizer": "NEHRU INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "POSTER PRESENTATION",
+        "date": "25-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 118,
+        "students": [
+            "VAISHNAV P (720819104120)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH FIESTA 22",
+        "organizer": "NEHRU INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "TECHNICAL QUIZ",
+        "date": "25-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 119,
+        "students": [
+            "THILLAI AISHWARYA S (720819104117)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH FIESTA 22",
+        "organizer": "NEHRU INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "TECHNICAL QUIZ",
+        "date": "25-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 120,
+        "students": [
+            "VELGA NIKHILA (720819104122)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH FIESTA 22",
+        "organizer": "NEHRU INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "TECHNICAL QUIZ",
+        "date": "25-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 121,
+        "students": [
+            "NALLI JAGADEESH (720819104074)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "CERPTERA 2022",
+        "organizer": "COIMBATORE INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "CODING CONTEST",
+        "date": "25-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 122,
+        "students": [
+            "DEEPIKA C (720819104026)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TRONEXUS 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY – COIMBATORE",
+        "level": "TECH QUIZ",
+        "date": "26-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 123,
+        "students": [
+            "KESAVAN B (720819104056)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TRONEXUS 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY – COIMBATORE",
+        "level": "TECH QUIZ",
+        "date": "26-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 124,
+        "students": [
+            "KISHORE P (720819104057)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TRONEXUS 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY – COIMBATORE",
+        "level": "WEB DESIGNING",
+        "date": "26-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 125,
+        "students": [
+            "SHILPA K P (720819104102)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TRONEXUS 22",
+        "organizer": "SNS COLLEGE OF TECHNOLOGY – COIMBATORE",
+        "level": "WEB DESIGNING",
+        "date": "26-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 126,
+        "students": [
+            "ELAVARASAN K (720819104030)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "SRIT RISE 2022",
+        "organizer": "SRI RAMAKRISHNA INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "27-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 127,
+        "students": [
+            "IRFAN RAHIM Z (720819104044)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "SRIT RISE 2022",
+        "organizer": "SRI RAMAKRISHNA INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "27-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 128,
+        "students": [
+            "UDHAYA KUMAR S (720819104119)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TORQUE 2K22",
+        "organizer": "SELVAM COLLEGE OF TECHNOLOGY - NAMAKKAL",
+        "level": "PAPER PRESENTATION",
+        "date": "27-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 129,
+        "students": [
+            "PODAPATI ANVESH (720819104084)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TORQUE 2K22",
+        "organizer": "SELVAM COLLEGE OF TECHNOLOGY - NAMAKKAL",
+        "level": "PAPER PRESENTATION",
+        "date": "27-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 130,
+        "students": [
+            "REENA (720819104094)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TORQUE 2K22",
+        "organizer": "SELVAM COLLEGE OF TECHNOLOGY - NAMAKKAL",
+        "level": "PAPER PRESENTATION",
+        "date": "27-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 131,
+        "students": [
+            "SIRAPARAPU SANDYA RANI (720819104105)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "YUGAM 2022",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY - COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "30-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 132,
+        "students": [
+            "MANIKANDAN M (720819104064)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "XENTRIX 2K22",
+        "organizer": "EXCEL ENGINEERING COLLEGE - NAMAKKAL",
+        "level": "DEBUGGING",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 133,
+        "students": [
+            "SHILPA KP (720819104102)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "XENTRIX 2K22",
+        "organizer": "EXCEL ENGINEERING COLLEGE - NAMAKKAL",
+        "level": "DEBUGGING",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 134,
+        "students": [
+            "MUJAY A (720819104071)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "XENTRIX 2K22",
+        "organizer": "EXCEL ENGINEERING COLLEGE - NAMAKKAL",
+        "level": "DEBUGGING",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 135,
+        "students": [
+            "PANDI R (720819104081)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "XENTRIX 2K22",
+        "organizer": "EXCEL ENGINEERING COLLEGE - NAMAKKAL",
+        "level": "DEBUGGING",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 136,
+        "students": [
+            "JONNALAGADDA SURYA SASANKA (720820103043)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "IRISH 2K22",
+        "organizer": "PA COLLEGE OF ENGINEERING – POLLACHI",
+        "level": "PAPER PRESENTATION",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 137,
+        "students": [
+            "BHARATH M (720820103020)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "IRISH 2K22",
+        "organizer": "PA COLLEGE OF ENGINEERING – POLLACHI",
+        "level": "PAPER PRESENTATION",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 138,
+        "students": [
+            "ASHWIN M (720820103017)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "RANSOMEWARE 2K22",
+        "organizer": "ADITHYA INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PROJECT PRESENTATRION",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 139,
+        "students": [
+            "AASHAD S (720820103002)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "RANSOMEWARE 2K22",
+        "organizer": "ADITHYA INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PROJECT PRESENTATRION",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 140,
+        "students": [
+            "SIVA BALAJI T (720819104106)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RANSOMEWARE 2K22",
+        "organizer": "ADITHYA INSTITUTE OF TECHNOLOGY - COIMBATORE",
+        "level": "PROJECT PRESENTATRION",
+        "date": "31-05-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2021-2022"
+    },
+    {
+        "sno": 141,
+        "students": [
+            "SUDHRSAN L (720819104112)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 142,
+        "students": [
+            "SREERAG M (720819104109)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 143,
+        "students": [
+            "NHASIK MOHAMMED N (720820103080)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "ANNA UNIVERSITY REGIONAL CAMPUS-COIMBATORE",
+        "level": "EKNA 2K22",
+        "date": "04-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 144,
+        "students": [
+            "RAMMOHAN P (720820103090)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "ANNA UNIVERSITY REGIONAL CAMPUS-COIMBATORE",
+        "level": "EKNA 2K22",
+        "date": "04-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 145,
+        "students": [
+            "PATHAKOTI VENKATA LINGA RAO (720819104083)"
+        ],
+        "Year/Semester": "5TH SEM / 3RD YEAR",
+        "event": "JFINAGLES",
+        "organizer": "JCT COLLEGE OF ENGINEERING AND TECHNOLOGY, COIMBATORE",
+        "level": "QUIZE",
+        "date": "27-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 146,
+        "students": [
+            "MACHAVARAPU ACHYUTH (720820103060)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH ZEAL 2023 (Hackathon)",
+        "organizer": "SONA COLLEGE OF TECHNOLOGY",
+        "level": "HACKATHON",
+        "date": "10-02-2023 to 11-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 147,
+        "students": [
+            "VETTORI FERNANDO (720820103305)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH ZEAL 2023 (Hackathon)",
+        "organizer": "SONA COLLEGE OF TECHNOLOGY",
+        "level": "HACKATHON",
+        "date": "10-02-2023 to 11-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 148,
+        "students": [
+            "KANAMARLAPUDI AKSHAY KUMAR GUPTA (720820103046)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH ZEAL 2023 (Hackathon)",
+        "organizer": "SONA COLLEGE OF TECHNOLOGY",
+        "level": "HACKATHON",
+        "date": "10-02-2023 to 11-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 149,
+        "students": [
+            "KAVIN KUMAR P (720820103050)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH ZEAL 2023 (Hackathon)",
+        "organizer": "SONA COLLEGE OF TECHNOLOGY",
+        "level": "HACKATHON",
+        "date": "10-02-2023 to 11-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 150,
+        "students": [
+            "CHINTALAPALLI KIRAN KUMAR REDDY (720820103024)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "TECH ZEAL 2023 (Hackathon)",
+        "organizer": "SONA COLLEGE OF TECHNOLOGY",
+        "level": "HACKATHON",
+        "date": "10-02-2023 to 11-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 151,
+        "students": [
+            "PRAKASHRAJA P (720819104088)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "WEB HUNTING",
+        "organizer": "SONA COLLEGE OF TECHNOLOGY-SALEM",
+        "level": "PORT 2023",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 152,
+        "students": [
+            "GOKULA KANNAN A (720820103032)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "BLIND CODING",
+        "organizer": "SONA COLLEGE OF TECHNOLOGY-SALEM",
+        "level": "PORT 2023",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 153,
+        "students": [
+            "GOWRESHANKER G (720820103302)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "BLIND CODING",
+        "organizer": "SONA COLLEGE OF TECHNOLOGY-SALEM",
+        "level": "PORT 2023",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 154,
+        "students": [
+            "NANTHAKUMARAN R T (720820103073)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "CODE DEBUGGING",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY -COIMBATORE",
+        "level": "CRYTO GATHERERS 2023",
+        "date": "02-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 155,
+        "students": [
+            "PALAVALLI SATISH KUMAR REDDY (720820103085)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "CODE DEBUGGING",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY -COIMBATORE",
+        "level": "CRYTO GATHERERS 2023",
+        "date": "02-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 156,
+        "students": [
+            "MUHAMMED ANSIL M (720820103070)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY -COIMBATORE",
+        "level": "CRYTO GATHERERS 2023",
+        "date": "02-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 157,
+        "students": [
+            "MONISHA M (720820103078)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY -COIMBATORE",
+        "level": "CRYTO GATHERERS 2023",
+        "date": "02-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 158,
+        "students": [
+            "PRADEEP KUMAR V (720820103088)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY -COIMBATORE",
+        "level": "CRYTO GATHERERS 2023",
+        "date": "02-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 159,
+        "students": [
+            "ABHISHA DIVYADHARSHINI F R (720820103004)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "QUIZ",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY -COIMBATORE",
+        "level": "CRYTO GATHERERS 2023",
+        "date": "02-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 160,
+        "students": [
+            "RAMMOHAN P (720820103090)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "AVANZARE V17.0",
+        "date": "19-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 161,
+        "students": [
+            "THIRISHA S (720820103118)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "AVENTURO 2K23",
+        "date": "19-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 162,
+        "students": [
+            "SREERAG M (720819104109)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "PAPER PRESENTATION DEBUGGING",
+        "organizer": "HINDHUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY",
+        "level": "Techazura 23",
+        "date": "26-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 163,
+        "students": [
+            "PRANAV P (720819104089)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "JFINAGLES",
+        "organizer": "JCT- COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "27-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 164,
+        "students": [
+            "BABU N (720820103019)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBATE",
+        "organizer": "SRI SAI RANGANATHAN ENGINEERING COLLEGE-COIMBATORE",
+        "level": "TRADIC’22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 165,
+        "students": [
+            "DANDI ESWARARAO (720820103025)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBATE",
+        "organizer": "SRI SAI RANGANATHAN ENGINEERING COLLEGE-COIMBATORE",
+        "level": "TRADIC’22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 166,
+        "students": [
+            "KALAIVANI M (720820103044)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBATE",
+        "organizer": "SRI SAI RANGANATHAN ENGINEERING COLLEGE-COIMBATORE",
+        "level": "TRADIC’22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 167,
+        "students": [
+            "LAM AMULYA (720820103056)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBATE",
+        "organizer": "SRI SAI RANGANATHAN ENGINEERING COLLEGE-COIMBATORE",
+        "level": "TRADIC’22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 168,
+        "students": [
+            "SANTHOSH M (720820103096)"
+        ],
+        "Year/Semester": "",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "SRI RAMAKRISHNA EMNGINEERING COLLEGE-COIMBATORE",
+        "level": "MEQUEST’22",
+        "date": "19-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 169,
+        "students": [
+            "VIKRAM S (720820103122)"
+        ],
+        "Year/Semester": "",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "SRI RAMAKRISHNA EMNGINEERING COLLEGE-COIMBATORE",
+        "level": "MEQUEST’22",
+        "date": "19-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 170,
+        "students": [
+            "NAVEEN A (720820103075)"
+        ],
+        "Year/Semester": "",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "SRI RAMAKRISHNA EMNGINEERING COLLEGE-COIMBATORE",
+        "level": "MEQUEST’22",
+        "date": "19-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 171,
+        "students": [
+            "NISHA S (720820103082)"
+        ],
+        "Year/Semester": "",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "SRI RAMAKRISHNA EMNGINEERING COLLEGE-COIMBATORE",
+        "level": "MEQUEST’22",
+        "date": "19-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 172,
+        "students": [
+            "NITHISH P (720820103083)"
+        ],
+        "Year/Semester": "",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "SRI RAMAKRISHNA EMNGINEERING COLLEGE-COIMBATORE",
+        "level": "MEQUEST’22",
+        "date": "19-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 173,
+        "students": [
+            "SANJAI P (720820103092)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "ANNA UNIVERSITY REGIONAL CAMPUS-COIMBATORE",
+        "level": "GENIO 2K22",
+        "date": "09-07-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 174,
+        "students": [
+            "VANI L (720820103310)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "ANNA UNIVERSITY REGIONAL CAMPUS-COIMBATORE",
+        "level": "GENIO 2K22",
+        "date": "09-07-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 175,
+        "students": [
+            "ISWARYA K (720820103039)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "ANNA UNIVERSITY REGIONAL CAMPUS-COIMBATORE",
+        "level": "GENIO 2K22",
+        "date": "09-07-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 176,
+        "students": [
+            "JENESHA J (720820103042)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "ANNA UNIVERSITY REGIONAL CAMPUS-COIMBATORE",
+        "level": "GENIO 2K22",
+        "date": "09-07-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 177,
+        "students": [
+            "KAMARAJ N (720820103045)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING",
+        "level": "KALAM 2023",
+        "date": "12-05-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 178,
+        "students": [
+            "YUVARAAJ S (720820103126)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING",
+        "level": "KALAM 2023",
+        "date": "12-05-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 179,
+        "students": [
+            "SWETHA P (720820103114)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING",
+        "level": "KALAM 2023",
+        "date": "12-05-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 180,
+        "students": [
+            "NAVEEN R (720820103076)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING",
+        "level": "KALAM 2023",
+        "date": "12-05-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 181,
+        "students": [
+            "NAVEEN S (720820103077)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT EXPO",
+        "organizer": "HINDHUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY",
+        "level": "TECHAZURA’23",
+        "date": "26-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 182,
+        "students": [
+            "SNOWIN J (720820103104)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT EXPO",
+        "organizer": "HINDHUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY",
+        "level": "TECHAZURA’23",
+        "date": "26-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 183,
+        "students": [
+            "SANTHIYA D (720820103095)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT EXPO",
+        "organizer": "HINDHUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY",
+        "level": "TECHAZURA’23",
+        "date": "26-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 184,
+        "students": [
+            "SANJAY S (720820103093)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT EXPO",
+        "organizer": "HINDHUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY",
+        "level": "TECHAZURA’23",
+        "date": "26-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 185,
+        "students": [
+            "SIVA V (720821103102)"
+        ],
+        "Year/Semester": "",
+        "event": "Intel FPGAs",
+        "organizer": "NIT, TRICHY",
+        "level": "Intel FPGAs",
+        "date": "25-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 186,
+        "students": [
+            "SARAVANA K (720820103097)"
+        ],
+        "Year/Semester": "",
+        "event": "BLIND CODING",
+        "organizer": "UNITED INSTITUTE OF TECHNOLOGY",
+        "level": "UTSAV 2K23",
+        "date": "06-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 187,
+        "students": [
+            "YUGESWARAN N (720820103125)"
+        ],
+        "Year/Semester": "",
+        "event": "BLIND CODING",
+        "organizer": "UNITED INSTITUTE OF TECHNOLOGY",
+        "level": "UTSAV 2K23",
+        "date": "06-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 188,
+        "students": [
+            "YUVARAAJ S (720820103126)"
+        ],
+        "Year/Semester": "",
+        "event": "BLIND CODING",
+        "organizer": "UNITED INSTITUTE OF TECHNOLOGY",
+        "level": "UTSAV 2K23",
+        "date": "06-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 189,
+        "students": [
+            "NOUFIA FIRTHOUS B (720820103304)"
+        ],
+        "Year/Semester": "",
+        "event": "BLIND CODING",
+        "organizer": "UNITED INSTITUTE OF TECHNOLOGY",
+        "level": "UTSAV 2K23",
+        "date": "06-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 190,
+        "students": [
+            "MUTHUKUMAR M (720820103071)"
+        ],
+        "Year/Semester": "",
+        "event": "HACKATHON",
+        "organizer": "COIMBATORE INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "INTELLINA2023",
+        "date": "01-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 191,
+        "students": [
+            "NADISH K S (720820103072)"
+        ],
+        "Year/Semester": "",
+        "event": "HACKATHON",
+        "organizer": "COIMBATORE INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "INTELLINA2023",
+        "date": "01-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 192,
+        "students": [
+            "HILTON PAUL P (720820103038)"
+        ],
+        "Year/Semester": "",
+        "event": "HACKATHON",
+        "organizer": "COIMBATORE INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "INTELLINA2023",
+        "date": "01-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 193,
+        "students": [
+            "JAI KRISHNA SAGAR S (720820103040)"
+        ],
+        "Year/Semester": "",
+        "event": "HACKATHON",
+        "organizer": "COIMBATORE INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "INTELLINA2023",
+        "date": "01-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 194,
+        "students": [
+            "SEEMALA BHUVANA TEJA (720820103099)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE HUNTER",
+        "organizer": "KALAIGNARKARUNANIDHI INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "UDHAYAM 2023",
+        "date": "24-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 195,
+        "students": [
+            "LAM AMULYA (720820103056)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE HUNTER",
+        "organizer": "KALAIGNARKARUNANIDHI INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "UDHAYAM 2023",
+        "date": "24-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 196,
+        "students": [
+            "MADHULIKA M (720820103061)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE HUNTER",
+        "organizer": "KALAIGNARKARUNANIDHI INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "UDHAYAM 2023",
+        "date": "24-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 197,
+        "students": [
+            "SIVA SHANKARAN E (720820103102)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE HUNTER",
+        "organizer": "KALAIGNARKARUNANIDHI INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "UDHAYAM 2023",
+        "date": "24-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 198,
+        "students": [
+            "SUMEDHAS V (720820103112)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE HUNTER",
+        "organizer": "KALAIGNARKARUNANIDHI INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "UDHAYAM 2023",
+        "date": "24-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 199,
+        "students": [
+            "SREE MANIKANDAN B (720820103106)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE HUNTER",
+        "organizer": "KALAIGNARKARUNANIDHI INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "UDHAYAM 2023",
+        "date": "24-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 200,
+        "students": [
+            "JONNALAGADDA SURYA SASANKA (720820103043)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "RATHINAM TECHNICAL CAMPUS-COIMBATORE",
+        "level": "RATHINAM GRAND FEST",
+        "date": "31-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 201,
+        "students": [
+            "LOGESHWARAN M (720820103059)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "RATHINAM TECHNICAL CAMPUS-COIMBATORE",
+        "level": "RATHINAM GRAND FEST",
+        "date": "31-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 202,
+        "students": [
+            "SRIRAMKARAN C (720820103109)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "RATHINAM TECHNICAL CAMPUS-COIMBATORE",
+        "level": "RATHINAM GRAND FEST",
+        "date": "31-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 203,
+        "students": [
+            "KULANTHAI DAISON F (720820103055)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "RATHINAM TECHNICAL CAMPUS-COIMBATORE",
+        "level": "RATHINAM GRAND FEST",
+        "date": "31-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 204,
+        "students": [
+            "NOUFIA FIRTHOUS B (720820103304)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "RATHINAM TECHNICAL CAMPUS-COIMBATORE",
+        "level": "RATHINAM GRAND FEST",
+        "date": "31-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 205,
+        "students": [
+            "PRADEEP KUMAR S (720820103311)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "RATHINAM TECHNICAL CAMPUS-COIMBATORE",
+        "level": "RATHINAM GRAND FEST",
+        "date": "31-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 206,
+        "students": [
+            "VIJAY ANAND S (720820103121)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "JARVIS 2K23",
+        "date": "05-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 207,
+        "students": [
+            "SUBRAMANI P (720820103111)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "JARVIS 2K23",
+        "date": "05-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 208,
+        "students": [
+            "TADIMARRI SAIBHARGAV (720820103116)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "JARVIS 2K23",
+        "date": "05-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 209,
+        "students": [
+            "SUMEDHAS V (720820103112)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "JARVIS 2K23",
+        "date": "05-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 210,
+        "students": [
+            "AADHARSH A (720820103001)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "JARVIS 2K23",
+        "date": "05-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 211,
+        "students": [
+            "DANDI ESWARARAO (720820103025)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "JARVIS 2K23",
+        "date": "05-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 212,
+        "students": [
+            "HILTON PAUL P (720820103038)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "YUGAM 2023",
+        "date": "04-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 213,
+        "students": [
+            "MADHULIKA M (720820103061)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 214,
+        "students": [
+            "VANI L (720820103310)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 215,
+        "students": [
+            "NAVANEETH (720820103074)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "YUGAM 2023",
+        "date": "04-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 216,
+        "students": [
+            "GOKULA KANNAN A (720820103032)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "YUGAM 2023",
+        "date": "04-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 217,
+        "students": [
+            "MOHAMED YEHIA M (720820103067)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "YUGAM 2023",
+        "date": "04-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 218,
+        "students": [
+            "ABISHEK MANNAM (720820103006)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "YUGAM 2023",
+        "date": "04-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 219,
+        "students": [
+            "SRIKRISHNAN R (720820103108)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "YUGAM 2023",
+        "date": "04-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 220,
+        "students": [
+            "RISHI BALA M (720820103091)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "YUGAM 2023",
+        "date": "04-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 221,
+        "students": [
+            "SRIRAMKARAN C (720820103109)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "JANSONS INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "CAMCEEE 2K23",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 222,
+        "students": [
+            "E.DHANASEKAR (720820103307)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "JANSONS INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "CAMCEEE 2K23",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 223,
+        "students": [
+            "NISHANTH.G (720820103309)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "JANSONS INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "CAMCEEE 2K23",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 224,
+        "students": [
+            "KAVIYA S (720820103051)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "JANSONS INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "CAMCEEE 2K23",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 225,
+        "students": [
+            "KAVIN C (720820103049)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "JANSONS INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "CAMCEEE 2K23",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 226,
+        "students": [
+            "KAMARAJ N (720820103045)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT PRESENTATION",
+        "organizer": "JANSONS INSTITUTE OF TECHNOLOGY-COIMBATORE",
+        "level": "CAMCEEE 2K23",
+        "date": "25-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 227,
+        "students": [
+            "LOGESHWARAN M (720820103059)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE DEBUGGING",
+        "organizer": "KUMARAGURU COLLEGE OF TECHNOLOGY -COIMBATORE",
+        "level": "CRYTO GATHERERS 2023",
+        "date": "02-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 228,
+        "students": [
+            "AYUSH J CHANDRAN (720820103018)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING- COIMBATORE",
+        "level": "DHRUVA 2023",
+        "date": "17-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 229,
+        "students": [
+            "ANANYA G (720820103014)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING- COIMBATORE",
+        "level": "DHRUVA 2023",
+        "date": "17-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 230,
+        "students": [
+            "GOKULA KANNAN A (720820103032)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING- COIMBATORE",
+        "level": "DHRUVA 2023",
+        "date": "17-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 231,
+        "students": [
+            "MADHUMITHA P (720820103062)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING- COIMBATORE",
+        "level": "DHRUVA 2023",
+        "date": "17-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 232,
+        "students": [
+            "CHANDRASEKAR R (720820103023)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING- COIMBATORE",
+        "level": "DHRUVA 2023",
+        "date": "17-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 233,
+        "students": [
+            "BHARATH V (720820103021)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING- COIMBATORE",
+        "level": "DHRUVA 2023",
+        "date": "17-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 234,
+        "students": [
+            "KANAMARLAPUDI AKSHAY KUMAR GUPTA (720820103046)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KARPAGAM COLLEGE OF ENGINEERING- COIMBATORE",
+        "level": "DHRUVA 2023",
+        "date": "17-02-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 235,
+        "students": [
+            "KAVIN KUMAR P (720820103050)"
+        ],
+        "Year/Semester": "",
+        "event": "ALGOCODE",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "LOGIN 2022",
+        "date": "15-10-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 236,
+        "students": [
+            "MADHULIKA M (720820103061)"
+        ],
+        "Year/Semester": "",
+        "event": "ALGOCODE",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "LOGIN 2022",
+        "date": "15-10-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 237,
+        "students": [
+            "LOGESHWARAN M (720820103058)"
+        ],
+        "Year/Semester": "",
+        "event": "ALGOCODE",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "LOGIN 2022",
+        "date": "15-10-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 238,
+        "students": [
+            "PRADEEP KUMAR S (720820103311)"
+        ],
+        "Year/Semester": "",
+        "event": "ALGOCODE",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "LOGIN 2022",
+        "date": "15-10-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 239,
+        "students": [
+            "VIJAY ANAND S (720820103121)"
+        ],
+        "Year/Semester": "",
+        "event": "ALGOCODE",
+        "organizer": "PSG COLLEGE OF TECHNOLOGY-COIMBATORE",
+        "level": "LOGIN 2022",
+        "date": "15-10-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 240,
+        "students": [
+            "SUBRAMANI P (720820103111)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "SALEM COLLEGE OF ENGINEERING-SALEM",
+        "level": "XLARATZ 22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 241,
+        "students": [
+            "TADIMARRI SAIBHARGAV (720820103116)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "SALEM COLLEGE OF ENGINEERING-SALEM",
+        "level": "XLARATZ 22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 242,
+        "students": [
+            "SUMEDHAS V (720820103112)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "SALEM COLLEGE OF ENGINEERING-SALEM",
+        "level": "XLARATZ 22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 243,
+        "students": [
+            "AADHARSH A (720820103001)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "SALEM COLLEGE OF ENGINEERING-SALEM",
+        "level": "XLARATZ 22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 244,
+        "students": [
+            "DANDI ESWARARAO (720820103025)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "SALEM COLLEGE OF ENGINEERING-SALEM",
+        "level": "XLARATZ 22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 245,
+        "students": [
+            "HILTON PAUL P (720820103038)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "SALEM COLLEGE OF ENGINEERING-SALEM",
+        "level": "XLARATZ 22",
+        "date": "14-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 246,
+        "students": [
+            "PRADEEP KUMAR S (720820103311)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE DEBUGGING",
+        "organizer": "VINAYAKA MISSIONS VARIYAR ENGINEERING COLLEGE-SALEM",
+        "level": "INNOVATEX 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 247,
+        "students": [
+            "SARAVANA K (720820103097)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE DEBUGGING",
+        "organizer": "VINAYAKA MISSIONS VARIYAR ENGINEERING COLLEGE-SALEM",
+        "level": "INNOVATEX 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 248,
+        "students": [
+            "YUGESWARAN N (720820103125)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE DEBUGGING",
+        "organizer": "VINAYAKA MISSIONS VARIYAR ENGINEERING COLLEGE-SALEM",
+        "level": "INNOVATEX 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 249,
+        "students": [
+            "YUVARAAJ S (720820103126)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE DEBUGGING",
+        "organizer": "VINAYAKA MISSIONS VARIYAR ENGINEERING COLLEGE-SALEM",
+        "level": "INNOVATEX 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 250,
+        "students": [
+            "NOUFIA FIRTHOUS B (720820103304)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE DEBUGGING",
+        "organizer": "VINAYAKA MISSIONS VARIYAR ENGINEERING COLLEGE-SALEM",
+        "level": "INNOVATEX 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 251,
+        "students": [
+            "MUTHUKUMAR M (720820103071)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI SHANMUGA COLLEGE OF ENGINEERING & TECHNOLOGY-SALEM",
+        "level": "CEREBRATE 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 252,
+        "students": [
+            "AGARSHANA S (720820103008)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI SHANMUGA COLLEGE OF ENGINEERING & TECHNOLOGY-SALEM",
+        "level": "CEREBRATE 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 253,
+        "students": [
+            "YUVARAAJ S (720820103126)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI SHANMUGA COLLEGE OF ENGINEERING & TECHNOLOGY-SALEM",
+        "level": "CEREBRATE 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 254,
+        "students": [
+            "ANANYA G (720820103014)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI SHANMUGA COLLEGE OF ENGINEERING & TECHNOLOGY-SALEM",
+        "level": "CEREBRATE 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 255,
+        "students": [
+            "NANTHAKUMARAN (720820103073)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI SHANMUGA COLLEGE OF ENGINEERING & TECHNOLOGY-SALEM",
+        "level": "CEREBRATE 23",
+        "date": "28-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 256,
+        "students": [
+            "DEEPASH SAMY R (720820103301)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "NANDHA COLLEGE OF TECHNOLOGY-ERODE",
+        "level": "TECH SPURTZ 2K22",
+        "date": "20-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 257,
+        "students": [
+            "MIDHUN R R (720820103064)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "NANDHA COLLEGE OF TECHNOLOGY-ERODE",
+        "level": "TECH SPURTZ 2K22",
+        "date": "20-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 258,
+        "students": [
+            "SEEMALA BHUVANA TEJA (720820103099)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "NANDHA COLLEGE OF TECHNOLOGY-ERODE",
+        "level": "TECH SPURTZ 2K22",
+        "date": "20-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 259,
+        "students": [
+            "JENESHA J (720820103042)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "NANDHA COLLEGE OF TECHNOLOGY-ERODE",
+        "level": "TECH SPURTZ 2K22",
+        "date": "20-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 260,
+        "students": [
+            "NISHANTH.G (720820103309)"
+        ],
+        "Year/Semester": "",
+        "event": "TECH DEBATE",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE-ERODE",
+        "level": "TECH SPARK 2K22",
+        "date": "21-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 261,
+        "students": [
+            "RAJALAKSHMI R (720819104093)"
+        ],
+        "Year/Semester": "",
+        "event": "TECH DEBATE",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE-ERODE",
+        "level": "TECH SPARK 2K22",
+        "date": "21-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 262,
+        "students": [
+            "RUSSEL GABRIEL THOMAS (720819104097)"
+        ],
+        "Year/Semester": "",
+        "event": "TECH DEBATE",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE-ERODE",
+        "level": "TECH SPARK 2K22",
+        "date": "21-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 263,
+        "students": [
+            "SUDHRSAN L (720819104112)"
+        ],
+        "Year/Semester": "",
+        "event": "LOGO PROGRAMMING",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE-ERODE",
+        "level": "INNOWIZ",
+        "date": "21-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 264,
+        "students": [
+            "SREERAG M (720819104109)"
+        ],
+        "Year/Semester": "",
+        "event": "LOGO PROGRAMMING",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE-ERODE",
+        "level": "INNOWIZ",
+        "date": "21-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 265,
+        "students": [
+            "NAVANEETH (720820103074)"
+        ],
+        "Year/Semester": "",
+        "event": "LOGO PROGRAMMING",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE-ERODE",
+        "level": "INNOWIZ",
+        "date": "21-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 266,
+        "students": [
+            "GOKULA KANNAN A (720820103032)"
+        ],
+        "Year/Semester": "",
+        "event": "LOGO PROGRAMMING",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE-ERODE",
+        "level": "INNOWIZ",
+        "date": "21-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 267,
+        "students": [
+            "MOHAMED YEHIA M (720820103067)"
+        ],
+        "Year/Semester": "",
+        "event": "LOGO PROGRAMMING",
+        "organizer": "ERODE SENGUNTHAR ENGINEERING COLLEGE-ERODE",
+        "level": "INNOWIZ",
+        "date": "21-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 268,
+        "students": [
+            "JENESHA J (720820103042)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY-ERODE",
+        "level": "ECLECTIC 2K22",
+        "date": "01-10-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 269,
+        "students": [
+            "PRANAV P (720819104089)"
+        ],
+        "Year/Semester": "",
+        "event": "HACKATHON",
+        "organizer": "SRI RAMAKRISHNA INSTITUTE OF TECHNOLOGY, COIMBATORE",
+        "level": "HACKATHON",
+        "date": "07-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 270,
+        "students": [
+            "VETTORI FERNANDO M (720820103305)"
+        ],
+        "Year/Semester": "",
+        "event": "HACKATHON",
+        "organizer": "SRI RAMAKRISHNA INSTITUTE OF TECHNOLOGY, COIMBATORE",
+        "level": "HACKATHON",
+        "date": "07-03-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 271,
+        "students": [
+            "SREERAG M (720819104109)"
+        ],
+        "Year/Semester": "",
+        "event": "INTELLIGENT INNOVATORS",
+        "organizer": "SRI ESHWAR COLLEGE OF ENGINEERING",
+        "level": "I2H 2022",
+        "date": "04-11-2022 to 05-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 272,
+        "students": [
+            "SNOWIN J (720820103104)"
+        ],
+        "Year/Semester": "",
+        "event": "INTELLIGENT INNOVATORS",
+        "organizer": "SRI ESHWAR COLLEGE OF ENGINEERING",
+        "level": "I2H 2022",
+        "date": "04-11-2022 to 05-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 273,
+        "students": [
+            "YUVARAAJ S (720820103126)"
+        ],
+        "Year/Semester": "",
+        "event": "INTELLIGENT INNOVATORS",
+        "organizer": "SRI ESHWAR COLLEGE OF ENGINEERING",
+        "level": "I2H 2022",
+        "date": "04-11-2022 to 05-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 274,
+        "students": [
+            "AGARSHANA S (720820103008)"
+        ],
+        "Year/Semester": "",
+        "event": "INTELLIGENT INNOVATORS",
+        "organizer": "SRI ESHWAR COLLEGE OF ENGINEERING",
+        "level": "I2H 2022",
+        "date": "04-11-2022 to 05-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 275,
+        "students": [
+            "PRANAV P (720819104089)"
+        ],
+        "Year/Semester": "",
+        "event": "JFINAGLES",
+        "organizer": "JCT COLLEGE OF ENGINEERING AND TECHNOLOGY, COIMBATORE",
+        "level": "PAPER PRESENTATION",
+        "date": "27-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 276,
+        "students": [
+            "S. RISHIKA (720819104096)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 277,
+        "students": [
+            "LOKESH.M.P.T (720819104062)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "DEBUGGING",
+        "date": "05-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 278,
+        "students": [
+            "NELATURI SUDHA MANI (720819104076)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 279,
+        "students": [
+            "RAJALAKSHMI R (720819104093)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "DEBUGGING",
+        "date": "05-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 280,
+        "students": [
+            "RUSSEL GABRIEL THOMAS (720819104097)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 281,
+        "students": [
+            "SUDHRSAN L (720819104112)"
+        ],
+        "Year/Semester": "",
+        "event": "SMART INDIA HACKATHON",
+        "organizer": "SIH 2023",
+        "level": "GRAND FINALE- 2022",
+        "date": "25-08-2022 to 26-08-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 282,
+        "students": [
+            "SREERAG M (720819104109)"
+        ],
+        "Year/Semester": "",
+        "event": "SMART INDIA HACKATHON",
+        "organizer": "SIH 2023",
+        "level": "GRAND FINALE- 2022",
+        "date": "25-08-2022 to 26-08-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 283,
+        "students": [
+            "SNOWIN J (720820103104)"
+        ],
+        "Year/Semester": "",
+        "event": "SMART INDIA HACKATHON",
+        "organizer": "SIH 2023",
+        "level": "GRAND FINALE- 2022",
+        "date": "25-08-2022 to 26-08-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 284,
+        "students": [
+            "AGARSHANA S (720820103008)"
+        ],
+        "Year/Semester": "",
+        "event": "SMART INDIA HACKATHON",
+        "organizer": "SIH 2023",
+        "level": "GRAND FINALE- 2022",
+        "date": "25-08-2022 to 26-08-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 285,
+        "students": [
+            "YUVARAAJ S (720820103126)"
+        ],
+        "Year/Semester": "",
+        "event": "SMART INDIA HACKATHON",
+        "organizer": "SIH 2023",
+        "level": "GRAND FINALE- 2022",
+        "date": "25-08-2022 to 26-08-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 286,
+        "students": [
+            "ANANYA G (720820103014)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 287,
+        "students": [
+            "NANTHAKUMARAN (720820103073)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 288,
+        "students": [
+            "NHASIK MOHAMMED (720820103080)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 289,
+        "students": [
+            "MOHAMED YEHIA (720820103067)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 290,
+        "students": [
+            "NISHA (720820103082)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+        "level": "PAPER PRESENTATION",
+        "date": "02-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 291,
+        "students": [
+            "DUNGALA MOHANA PRIYANKA (720819104029)"
+        ],
+        "Year/Semester": "",
+        "event": "DEBUGGING",
+        "organizer": "KONGU ENGINEERING COLLEGE-ERODE",
+        "level": "DEBUGGING",
+        "date": "05-04-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 292,
+        "students": [
+            "PACHIGULLA DEEPTHI (720819104080)"
+        ],
+        "Year/Semester": "",
+        "event": "JFINAGLES",
+        "organizer": "JCT COLLEGE OF ENGINEERING AND TECHNOLOGY, COIMBATORE",
+        "level": "GOOGLING",
+        "date": "27-11-2022",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 293,
+        "students": [
+            "PACHIGULLA DEEPTHI (720819104080)"
+        ],
+        "Year/Semester": "",
+        "event": "PAPER PRESENTATION",
+        "organizer": "JCT COLLEGE OF ENGINEERING AND TECHNOLOGY",
+        "level": "PAPER PRESENTATION",
+        "date": "27-04-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2022-2023"
+    },
+    {
+        "sno": 294,
+        "students": [
+            "AKASH N (720820103009)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IRISH- 2K23",
+        "organizer": "",
+        "level": "CODE LEAGUE",
+        "date": "16-06-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 295,
+        "students": [
+            "VIKRAM S (720820103122)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IGNITE-2023",
+        "organizer": "",
+        "level": "PPT PRESENTATION",
+        "date": "07-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 296,
+        "students": [
+            "YUVARAAJ S (720820103126)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IGNITE-2023",
+        "organizer": "",
+        "level": "PPT PRESENTATION",
+        "date": "07-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 297,
+        "students": [
+            "ASHWIN M (720820103017)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CBEYONZ’24",
+        "organizer": "",
+        "level": "PAPER’NZA",
+        "date": "15-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 298,
+        "students": [
+            "ANANYA G (720820103014)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CBEYONZ’24",
+        "organizer": "",
+        "level": "PAPER’NZA",
+        "date": "15-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 299,
+        "students": [
+            "KISHORE P (720820103053)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CRYPTERA 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 300,
+        "students": [
+            "HARISH B (720822103065)"
+        ],
+        "Year/Semester": "",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "",
+        "level": "TECHNICAL QUIZ",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 301,
+        "students": [
+            "HARISH P (720822103067)"
+        ],
+        "Year/Semester": "",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "",
+        "level": "TECHNICAL QUIZ",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 302,
+        "students": [
+            "ARUN S"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "EPOCH 2024",
+        "organizer": "",
+        "level": "PAPERPULSE",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 303,
+        "students": [
+            "MOHAMED HALIF A (720822103104)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE IN CHOS",
+        "organizer": "",
+        "level": "CODE IN CHOS",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 304,
+        "students": [
+            "HARIPRASAD R S (720822103064)"
+        ],
+        "Year/Semester": "",
+        "event": "CODE IN CHOS",
+        "organizer": "",
+        "level": "CODE IN CHOS",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 305,
+        "students": [
+            "SANJAY S (720820103093)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "V-PRAYUKTI’24",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "27-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 306,
+        "students": [
+            "POONTHAMILAN M (720820103087)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "V-PRAYUKTI’24",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "27-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 307,
+        "students": [
+            "SUMEDHAS V (720820103112)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "HECURA 2024",
+        "organizer": "",
+        "level": "REVERSE CODING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 308,
+        "students": [
+            "NISHA S (720820103082)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2024",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 309,
+        "students": [
+            "MIDHUN R R (720820103064)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2024",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 310,
+        "students": [
+            "KAMARAJ N (720820103045)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GENESIZ’S 2K24",
+        "organizer": "",
+        "level": "CODE ZENITH",
+        "date": "02-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 311,
+        "students": [
+            "NITHISH P (720820103083)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "QUANTAS-24",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "03-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 312,
+        "students": [
+            "MONISHA M (720820103069)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "BLIND CODING",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 313,
+        "students": [
+            "BARATH V (720820103021)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CELESTIX 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 314,
+        "students": [
+            "NIRMAL DEV M (720820103081)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 315,
+        "students": [
+            "KAVIYA S (720820103051)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 316,
+        "students": [
+            "GOMATHI D (720820103033)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CELESTIX 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 317,
+        "students": [
+            "SANJAY P (720823103137)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CELESTIX 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 318,
+        "students": [
+            "GOBI R (720820103031)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2K24",
+        "organizer": "",
+        "level": "TECHNICAL DEBATE",
+        "date": "16-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 319,
+        "students": [
+            "SIVAMANICKAM P (720820103103)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHNOFEST 24",
+        "organizer": "",
+        "level": "CODE BOAT",
+        "date": "22-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 320,
+        "students": [
+            "SANKU PAVAN KUMAR (720820103094)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "DESIGNZIA 24",
+        "organizer": "",
+        "level": "PAPER SCRIPTUM",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 321,
+        "students": [
+            "NAVANEETH (720820103074)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CYNOSURE 2K24",
+        "organizer": "",
+        "level": "CODING",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 322,
+        "students": [
+            "SANJAY VV (720823103139)",
+            "SANKARA NARAYANAN V (720823103140)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT EXPO",
+        "organizer": "",
+        "level": "PROJECT EXPO",
+        "date": "22-05-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 323,
+        "students": [
+            "SANJAY VV (720823103139)",
+            "SANKARA NARAYANAN V (720823103140)"
+        ],
+        "Year/Semester": "",
+        "event": "PROJECT EXPO",
+        "organizer": "",
+        "level": "PROJECT EXPO",
+        "date": "26-05-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 324,
+        "students": [
+            "NAUFFAL AHAMED K (720822103113)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS",
+        "date": "08-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 325,
+        "students": [
+            "MAHESHPRAVEEN E (720822103099)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS",
+        "date": "08-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 326,
+        "students": [
+            "MRIDUL P (720822103064)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS",
+        "date": "08-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 327,
+        "students": [
+            "KARTHIK R (720820103047)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "TECHNOVISTA-2023",
+        "organizer": "",
+        "level": "WORKSHOP",
+        "date": "09-09-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 328,
+        "students": [
+            "AADHARASH A (720820103001)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "TECHNOVISTA-2023",
+        "organizer": "",
+        "level": "WORKSHOP",
+        "date": "09-09-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 329,
+        "students": [
+            "MADHULIKA M (720820103061)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "TECHNOVISTA-2023",
+        "organizer": "",
+        "level": "WORKSHOP",
+        "date": "09-09-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 330,
+        "students": [
+            "THIRISHA S (720820103118)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IGNITE-2023",
+        "organizer": "",
+        "level": "PPT PRESENTATION",
+        "date": "07-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 331,
+        "students": [
+            "NITHISH P (720820103083)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IGNITE-2023",
+        "organizer": "",
+        "level": "PPT PRESENTATION",
+        "date": "07-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 332,
+        "students": [
+            "KAVIN C (720820103049)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IGNITE-2023",
+        "organizer": "",
+        "level": "PPT PRESENTATION",
+        "date": "07-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 333,
+        "students": [
+            "KISHORE R (720821103056)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RAISEATHON 2024 BY AIC RAISE",
+        "organizer": "",
+        "level": "RAISEATHON 2024 BY AIC RAISE",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 334,
+        "students": [
+            "JAGAN A (720821103041)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RAISEATHON 2024 BY AIC RAISE",
+        "organizer": "",
+        "level": "RAISEATHON 2024 BY AIC RAISE",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 335,
+        "students": [
+            "DHARANI.R (720821103019)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RAISEATHON 2024 BY AIC RAISE",
+        "organizer": "",
+        "level": "RAISEATHON 2024 BY AIC RAISE",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 336,
+        "students": [
+            "AKASHAYA.E (720821103009)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "RAISEATHON 2024 BY AIC RAISE",
+        "organizer": "",
+        "level": "RAISEATHON 2024 BY AIC RAISE",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 337,
+        "students": [
+            "SNOWIN J (720820103104)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IRISH- 2K23",
+        "organizer": "",
+        "level": "CODE LEAGUE",
+        "date": "16-06-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 338,
+        "students": [
+            "SREE MATHI R (720820103107)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IRISH- 2K23",
+        "organizer": "",
+        "level": "CODE LEAGUE",
+        "date": "16-06-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 339,
+        "students": [
+            "AKASH N (720820103009)"
+        ],
+        "Year/Semester": "7TH SEM / 4TH YEAR",
+        "event": "IRISH- 2K23",
+        "organizer": "",
+        "level": "CODE LEAGUE",
+        "date": "16-06-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 340,
+        "students": [
+            "VIKRAM S (720820103122)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CRYPTERA 2024",
+        "organizer": "",
+        "level": "WORKSHOP",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 341,
+        "students": [
+            "SHAKTHIPRIYA S (720820103100)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CRYPTERA 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 342,
+        "students": [
+            "KISHORE P (720820103053)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CRYPTERA 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 343,
+        "students": [
+            "PULI SRI HARI (720820103089)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CRYPTERA 2024",
+        "organizer": "",
+        "level": "WORKSHOP",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 344,
+        "students": [
+            "UNAIS AHAMED (720820103119)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CRYPTERA 2024",
+        "organizer": "",
+        "level": "WORKSHOP",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 345,
+        "students": [
+            "PRINCELA R (720822103126)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNOFEST 24",
+        "organizer": "",
+        "level": "CODE BOAT",
+        "date": "22-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 346,
+        "students": [
+            "PATANDAWOOD KHAN (720820103086)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHNOFEST 24",
+        "organizer": "",
+        "level": "CODE BOAT",
+        "date": "22-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 347,
+        "students": [
+            "VINISHA M (720820103123)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHNOFEST 24",
+        "organizer": "",
+        "level": "CODE BOAT",
+        "date": "22-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 348,
+        "students": [
+            "SIVAMANICKAM P (720820103103)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHNOFEST 24",
+        "organizer": "",
+        "level": "CODE BOAT",
+        "date": "22-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 349,
+        "students": [
+            "VIJAY ANAND S (720820103121)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "EPOCH 2024",
+        "organizer": "",
+        "level": "PAPERPULSE",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 350,
+        "students": [
+            "ARUN S (720820103015)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "EPOCH 2024",
+        "organizer": "",
+        "level": "PAPERPULSE",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 351,
+        "students": [
+            "ROHINI PRIYA P (720822103136)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "YOUNG INDIA HACKATHON (2023)",
+        "organizer": "",
+        "level": "YOUNG INDIA HACKATHON (2023)",
+        "date": "13-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 352,
+        "students": [
+            "VERONIK A K S (720822103172)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "YOUNG INDIA HACKATHON (2023)",
+        "organizer": "",
+        "level": "YOUNG INDIA HACKATHON (2023)",
+        "date": "13-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 353,
+        "students": [
+            "THILLAI GOWRI (720822103172)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "YOUNG INDIA HACKATHON (2023)",
+        "organizer": "",
+        "level": "YOUNG INDIA HACKATHON (2023)",
+        "date": "13-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 354,
+        "students": [
+            "SUGUNA (720822103156)"
+        ],
+        "Year/Semester": "3RD SEM / 2ND YEAR",
+        "event": "YOUNG INDIA HACKATHON (2023)",
+        "organizer": "",
+        "level": "YOUNG INDIA HACKATHON (2023)",
+        "date": "13-11-2023",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 355,
+        "students": [
+            "SHARVESH R M (720820103101)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "DESIGNZIA 24",
+        "organizer": "",
+        "level": "PAPER SCRIPTUM",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 356,
+        "students": [
+            "SANKU PAVAN KUMAR (720820103094)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "DESIGNZIA 24",
+        "organizer": "",
+        "level": "PAPER SCRIPTUM",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 357,
+        "students": [
+            "GHANTTASALA BHANU PRASAD (720820103030)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "DESIGNZIA 24",
+        "organizer": "",
+        "level": "PAPER SCRIPTUM",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 358,
+        "students": [
+            "JAYA PRAKASH S (720822103071)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL QUIZ, ORGANIZED BY DEPT OF COMPUTER SCIENCE",
+        "organizer": "",
+        "level": "TECHNICAL QUIZ, ORGANIZED BY DEPT OF COMPUTER SCIENCE",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 359,
+        "students": [
+            "JOSHUA J (720822103306)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL QUIZ, ORGANIZED BY DEPT OF COMPUTER SCIENCE",
+        "organizer": "",
+        "level": "TECHNICAL QUIZ, ORGANIZED BY DEPT OF COMPUTER SCIENCE",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 360,
+        "students": [
+            "PADMASREE S (720820103084)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CYNOSURE 2K24",
+        "organizer": "",
+        "level": "CODING",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 361,
+        "students": [
+            "NAVANEETH (720820103074)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CYNOSURE 2K24",
+        "organizer": "",
+        "level": "CODING",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 362,
+        "students": [
+            "NAVIN STYRIS A (720820103078)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CYNOSURE 2K24",
+        "organizer": "",
+        "level": "CODING",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 363,
+        "students": [
+            "NISHA S (720820103082)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CODE COMBAT, ORGANIZED BY CSI KEC STUDENT BRANCH",
+        "organizer": "",
+        "level": "CODE COMBAT, ORGANIZED BY CSI KEC STUDENT BRANCH",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 364,
+        "students": [
+            "LATHIKA K (720822103093)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "CODE COMBAT, ORGANIZED BY CSI KEC STUDENT BRANCH",
+        "organizer": "",
+        "level": "CODE COMBAT, ORGANIZED BY CSI KEC STUDENT BRANCH",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 365,
+        "students": [
+            "SARAVANAN K (720820103097)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "HECURA 2024",
+        "organizer": "",
+        "level": "REVERSE CODING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 366,
+        "students": [
+            "SUMEDHAS V (720820103112)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "HECURA 2024",
+        "organizer": "",
+        "level": "REVERSE CODING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 367,
+        "students": [
+            "ARUN S (720820103015)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "HECURA 2024",
+        "organizer": "",
+        "level": "REVERSE CODING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 368,
+        "students": [
+            "MITHUN RAJ M (720822103103)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "PROJECT EXPO ORGANIZED BY DEPT OF MECHATRONICS ENGG",
+        "organizer": "",
+        "level": "PROJECT EXPO ORGANIZED BY DEPT OF MECHATRONICS ENGG",
+        "date": "14-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 369,
+        "students": [
+            "CHINTHALAPALLI KIRAN KUMAR REDDY (720820103024)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CBEYONZ’24",
+        "organizer": "",
+        "level": "PAPER’NZA",
+        "date": "15-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 370,
+        "students": [
+            "AGARSHANA S (720820103008)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CBEYONZ’24",
+        "organizer": "",
+        "level": "PAPER’NZA",
+        "date": "15-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 371,
+        "students": [
+            "ASHWIN M (720820103017)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CBEYONZ’24",
+        "organizer": "",
+        "level": "PAPER’NZA",
+        "date": "15-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 372,
+        "students": [
+            "ANANYA G (720820103014)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CBEYONZ’24",
+        "organizer": "",
+        "level": "PAPER’NZA",
+        "date": "15-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 373,
+        "students": [
+            "HARIHARAN N (720820103035)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CBEYONZ’24",
+        "organizer": "",
+        "level": "PAPER’NZA",
+        "date": "15-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 374,
+        "students": [
+            "KISHOR P (720820103053)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "INFEST 2K24",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "23-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 375,
+        "students": [
+            "ISWARYA K (720820103039)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2024",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 376,
+        "students": [
+            "RAMMOHAN P (720820103090)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2024",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 377,
+        "students": [
+            "NISHA S (720820103082)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2024",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 378,
+        "students": [
+            "MIDHUN R R (720820103064)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2024",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "28-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 379,
+        "students": [
+            "KARTHICK (720820103047)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "EDII’S HACKATHON 2024 BY EDII-TN",
+        "organizer": "",
+        "level": "EDII’S HACKATHON 2024 BY EDII-TN",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 380,
+        "students": [
+            "KISHOR P (720820103053)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "EDII’S HACKATHON 2024 BY EDII-TN",
+        "organizer": "",
+        "level": "EDII’S HACKATHON 2024 BY EDII-TN",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 381,
+        "students": [
+            "JAGAN A (720821103041)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "EDII’S HACKATHON 2024 BY EDII-TN",
+        "organizer": "",
+        "level": "EDII’S HACKATHON 2024 BY EDII-TN",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 382,
+        "students": [
+            "SARAVANA K (720820103097)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GENESIZ’S 2K24",
+        "organizer": "",
+        "level": "CODE ZENITH",
+        "date": "02-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 383,
+        "students": [
+            "KAMARAJ N (720820103045)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GENESIZ’S 2K24",
+        "organizer": "",
+        "level": "CODE ZENITH",
+        "date": "02-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 384,
+        "students": [
+            "VISHWA K (720822103185)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "PAPER PRESENTATION",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "24-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 385,
+        "students": [
+            "NADISH K S (720820103072)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2K24",
+        "organizer": "",
+        "level": "TECHNICAL DEBATE",
+        "date": "16-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 386,
+        "students": [
+            "MADHUMITHA P (720820103062)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2K24",
+        "organizer": "",
+        "level": "TECHNICAL DEBATE",
+        "date": "16-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 387,
+        "students": [
+            "NAVEEN R (720820103076)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2K24",
+        "organizer": "",
+        "level": "TECHNICAL DEBATE",
+        "date": "16-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 388,
+        "students": [
+            "GOBI R (720820103031)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHFEST 2K24",
+        "organizer": "",
+        "level": "TECHNICAL DEBATE",
+        "date": "16-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 389,
+        "students": [
+            "GOMATHI D (720820103033)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CELESTIX 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 390,
+        "students": [
+            "KAVSITH RAJA K (720822103084)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF CSE",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF CSE",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 391,
+        "students": [
+            "KRISHNA PRABHU E (720822103092)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF CSE",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF CSE",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 392,
+        "students": [
+            "JEEVITHKARAN D (720822103074)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF CSE",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF CSE",
+        "date": "02-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 393,
+        "students": [
+            "SANJAY P (720823103137)"
+        ],
+        "Year/Semester": "2ND SEM / 1ST YEAR",
+        "event": "CELESTIX 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 394,
+        "students": [
+            "HARISH J (720823103055)"
+        ],
+        "Year/Semester": "2ND SEM / 1ST YEAR",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "",
+        "level": "TECHNICAL QUIZ",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 395,
+        "students": [
+            "HARISH T"
+        ],
+        "Year/Semester": "2ND SEM / 1ST YEAR",
+        "event": "TECHNICAL QUIZ",
+        "organizer": "",
+        "level": "TECHNICAL QUIZ",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 396,
+        "students": [
+            "SANJAY VV (720823103139)",
+            "SANKARA NARAYANAN V (720823103140)"
+        ],
+        "Year/Semester": "2ND SEM / 1ST YEAR",
+        "event": "PROJECT EXPO",
+        "organizer": "",
+        "level": "PROJECT EXPO",
+        "date": "22-05-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 397,
+        "students": [
+            "SANJAY VV (720823103139)",
+            "SANKARA NARAYANAN V (720823103140)"
+        ],
+        "Year/Semester": "2ND SEM / 1ST YEAR",
+        "event": "PROJECT EXPO",
+        "organizer": "",
+        "level": "PROJECT EXPO",
+        "date": "26-05-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 398,
+        "students": [
+            "SARAVANAN K (720820103097)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHSPARK 2K24",
+        "organizer": "",
+        "level": "WEB DESIGNING",
+        "date": "22-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 399,
+        "students": [
+            "MOHAMED ANSIL M (720820103070)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHSPARK 2K24",
+        "organizer": "",
+        "level": "WEB DESIGNING",
+        "date": "22-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 400,
+        "students": [
+            "SUBRAMANI P (720820103111)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "V-PRAYUKTI’24",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "27-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 401,
+        "students": [
+            "SANJAY S (720820103093)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "V-PRAYUKTI’24",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "27-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 402,
+        "students": [
+            "POONTHAMILAN M (720820103087)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "V-PRAYUKTI’24",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "27-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 403,
+        "students": [
+            "MOHAMED RIYAS S (720820103066)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "V-PRAYUKTI’24",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "27-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 404,
+        "students": [
+            "SWETHA P (720820103114)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "V-PRAYUKTI’24",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "27-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 405,
+        "students": [
+            "MITHUN RAJ (720822103103)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "PROJECT EMPORIUM ORGANIZED BY DEPT OF AI & ML",
+        "organizer": "",
+        "level": "PROJECT EMPORIUM ORGANIZED BY DEPT OF AI & ML",
+        "date": "07-03-2024 to 08-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 406,
+        "students": [
+            "MOHAMED HALIF A (720822103104)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NINJA CODING, LETS' C,LANGUAGE GEEK & LEARN CODE UNLEASH, ORGANIZED BY INFORMATION TECHNOLOGY ASSOCIATION",
+        "organizer": "",
+        "level": "NINJA CODING, LETS' C,LANGUAGE GEEK & LEARN CODE UNLEASH, ORGANIZED BY INFORMATION TECHNOLOGY ASSOCIATION",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 407,
+        "students": [
+            "KOUSIKA S (720822103090)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NINJA CODING, LETS' C,LANGUAGE GEEK & LEARN CODE UNLEASH, ORGANIZED BY INFORMATION TECHNOLOGY ASSOCIATION",
+        "organizer": "",
+        "level": "NINJA CODING, LETS' C,LANGUAGE GEEK & LEARN CODE UNLEASH, ORGANIZED BY INFORMATION TECHNOLOGY ASSOCIATION",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 408,
+        "students": [
+            "MADAN PRASATH S (720822103096)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "NINJA CODING, LETS' C,LANGUAGE GEEK & LEARN CODE UNLEASH, ORGANIZED BY INFORMATION TECHNOLOGY ASSOCIATION",
+        "organizer": "",
+        "level": "NINJA CODING, LETS' C,LANGUAGE GEEK & LEARN CODE UNLEASH, ORGANIZED BY INFORMATION TECHNOLOGY ASSOCIATION",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 409,
+        "students": [
+            "HARIPRASAD P S (720820103034)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "NINJA CODING, LETS' C,LANGUAGE GEEK & LEARN CODE UNLEASH, ORGANIZED BY INFORMATION TECHNOLOGY ASSOCIATION",
+        "organizer": "",
+        "level": "NINJA CODING, LETS' C,LANGUAGE GEEK & LEARN CODE UNLEASH, ORGANIZED BY INFORMATION TECHNOLOGY ASSOCIATION",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 410,
+        "students": [
+            "JAYESH RAM P K (720822103072)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF IT",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF IT",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 411,
+        "students": [
+            "PRAVEEN S (720822103123)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF IT",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF IT",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 412,
+        "students": [
+            "MOHAMED IRFAN K (720820103068)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF IT",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF IT",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 413,
+        "students": [
+            "PRAGIN BARATH M (720822103121)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF IT",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS, ORGANIZED BY DEPT OF IT",
+        "date": "15-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 414,
+        "students": [
+            "MOHAMED HALIF A (720822103104)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "CODE IN CHOS",
+        "organizer": "",
+        "level": "CODE IN CHOS",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 415,
+        "students": [
+            "HARIPRASAD R S (720822103064)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "CODE IN CHOS",
+        "organizer": "",
+        "level": "CODE IN CHOS",
+        "date": "16-03-2024 to 17-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 416,
+        "students": [
+            "KAMALESHWARI R (720821103046)"
+        ],
+        "Year/Semester": "6TH SEM / 3RD YEAR",
+        "event": "NCIIPC-AICTE PENTATHON 2024",
+        "organizer": "",
+        "level": "NCIIPC-AICTE PENTATHON 2024",
+        "date": "04-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 417,
+        "students": [
+            "KARTHICK R (720820103047)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "NCIIPC-AICTE PENTATHON 2024",
+        "organizer": "",
+        "level": "NCIIPC-AICTE PENTATHON 2024",
+        "date": "04-02-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 418,
+        "students": [
+            "NITHISH P (720820103083)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "QUANTAS-24",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "03-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 419,
+        "students": [
+            "HARIHARAN N (720820103035)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "QUANTAS-24",
+        "organizer": "",
+        "level": "DEBUGGING",
+        "date": "03-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 420,
+        "students": [
+            "MONISHA M (720820103069)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "BLIND CODING",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 421,
+        "students": [
+            "ABISHEIK G (720820103005)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "PROJECT PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 422,
+        "students": [
+            "JEYASUBA M (720822103075)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 423,
+        "students": [
+            "KALAIVANI C (720822103076)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 424,
+        "students": [
+            "KAMALI SRI M (720822103078)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 425,
+        "students": [
+            "NIVITHA Y (720822103117)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 426,
+        "students": [
+            "PRINCELA (720822103126)"
+        ],
+        "Year/Semester": "4TH SEM / 2ND YEAR",
+        "event": "TECHNICAL EVENTS",
+        "organizer": "",
+        "level": "TECHNICAL EVENTS",
+        "date": "04-03-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 427,
+        "students": [
+            "KAVIN C (720820103049)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CELESTIX 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 428,
+        "students": [
+            "BHARATH V (720820103021)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CELESTIX 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 429,
+        "students": [
+            "KAMARAJ N (720820103045)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "CELESTIX 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 430,
+        "students": [
+            "LEELA CRISTY I (720820103057)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 431,
+        "students": [
+            "NIRMAL DEV M (720820103081)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 432,
+        "students": [
+            "KAVIYA S (720820103051)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 433,
+        "students": [
+            "NAVEEN A (720820103075)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    },
+    {
+        "sno": 434,
+        "students": [
+            "RISHI BALA M (720820103091)"
+        ],
+        "Year/Semester": "8TH SEM / 4TH YEAR",
+        "event": "GUSTO 2024",
+        "organizer": "",
+        "level": "PAPER PRESENTATION",
+        "date": "05-04-2024",
+        "award": "Participated",
+        "Status": "",
+        "academic_year": "2023-2024"
+    }
+],
   "stu_International_Confrense":[
 {
     "s.no.": 1,
