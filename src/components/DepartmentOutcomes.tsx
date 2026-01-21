@@ -61,7 +61,7 @@ const DepartmentOutcomes: React.FC<DepartmentOutcomesProps> = ({
 
         <div className="space-y-6">
           {/* PSOs & PEOs */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* PSOs */}
             <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
               <button
