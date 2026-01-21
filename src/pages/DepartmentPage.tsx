@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { BookOpen, Newspaper } from "lucide-react";
 import PageLayout from '../components/layout/PageLayout';
@@ -9,12 +9,14 @@ import FacultyCarousel from '../components/FacultyCarousel';
 import FacilitiesCarousel from '../components/FacilitiesCarousel';
 import TabsSection from '../components/TabSection';
 import LabSection from '../components/LabSection'; // Now uses its own cseLabsData
+import AchievementsModal from '../components/AchievementsModal';
 import departmentsData from '../data/departmentsData.json';
-import StudentClubs from './StuClub';
+import cseAchievementsData from '../data/cseAchievementsData.json';
 
 const DepartmentPage: React.FC = () => {
   const { departmentId } = useParams<{ departmentId: string }>();
   const navigate = useNavigate();
+  const [showAchievementsModal, setShowAchievementsModal] = useState(false);
 
   const department = departmentsData.departments.find(dept => dept.id === departmentId);
 
@@ -22,12 +24,35 @@ const DepartmentPage: React.FC = () => {
     return <Navigate to="/" replace />;
   }
 
+  // Show achievements modal only for CSE department on page load with a delay
+  useEffect(() => {
+    if (departmentId === 'cse') {
+      // Delay to ensure page is fully loaded and scroll position is set
+      const timer = setTimeout(() => {
+        setShowAchievementsModal(true);
+      }, 800);
+      
+      return () => clearTimeout(timer);
+    } else {
+      setShowAchievementsModal(false);
+    }
+  }, [departmentId]);
+
   return (
-    
-    <PageLayout
-      title={`${department.name} - Hindusthan Institute of Technology`}
-      description={department.description}
-    >
+    <>
+      {/* Achievements Modal for CSE Department */}
+      {departmentId === 'cse' && showAchievementsModal && cseAchievementsData?.teams && (
+        <AchievementsModal
+          isOpen={showAchievementsModal}
+          onClose={() => setShowAchievementsModal(false)}
+          teams={cseAchievementsData.teams}
+        />
+      )}
+
+      <PageLayout
+        title={`${department.name} - Hindusthan Institute of Technology`}
+        description={department.description}
+      >
       {/* Back Button */}
       <div className="fixed top-[200px] left-9 z-50">
         <div
@@ -53,10 +78,6 @@ const DepartmentPage: React.FC = () => {
         {/* Department Header */}
         <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
           <DepartmentDetail department={department} />
-        </SectionWrapper>
-
-        <SectionWrapper lazy lazyHeight="300px" lazyDelay={300}>
-          <StudentClubs />
         </SectionWrapper>
 
         {/* Teaching Methodologies */}
@@ -167,7 +188,8 @@ const DepartmentPage: React.FC = () => {
 </div>
 
 
-    </PageLayout>
+      </PageLayout>
+    </>
   );
 };
 
