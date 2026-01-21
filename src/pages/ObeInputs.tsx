@@ -15,7 +15,7 @@ const obeInputCards = [
     title: 'National Credit Framework (NCrF)',
     description:
       'The NCrF provides a unified structure that integrates academic, vocational, and experiential learning across all levels. It facilitates seamless mobility, lifelong learning, and recognition of prior learning. It promotes skill-based education and aligns with NEP 2020 goals.',
-    image: '/ncrf.png',
+    image: '/OBE inputs/NCrF.jpg',
   },
   {
     title: 'AICTE Program Indicators (PIs)',
@@ -33,19 +33,19 @@ const obeInputCards = [
     title: 'Sustainable Development Goals (SDGs)',
     description:
       'SDGs serve as a universal blueprint for a sustainable future. Integrating them into engineering education ensures students understand global challenges such as climate change, clean energy, and social equity. Curriculum alignment supports national and international goals.',
-    image: '/sdgs.png',
+    image: '/OBE inputs/SDGs.png',
   },
   {
     title: "Bloom's Taxonomy",
     description:
       "Bloom's Taxonomy classifies learning objectives into six hierarchical levels: Remember, Understand, Apply, Analyze, Evaluate, and Create. It provides a structured approach to designing assessments and improving learning outcomes across all subjects.",
-    image: '/blooms.png',
+    image: '/OBE inputs/Blooms.png',
   },
   {
     title: 'Academic Bank of Credits (ABC)',
     description:
       'The ABC platform is a digital repository that stores academic credits earned by students. It enables flexible, modular learning and supports student mobility across institutions. It empowers learners to curate their own educational journeys.',
-    image: '/abc.png',
+    image: '/OBE inputs/ABC.jpg',
   },
 ];
 
@@ -121,18 +121,19 @@ const ObeInput = () => {
               >
                 <div className="bg-yellow-50 border border-yellow-100 rounded-2xl shadow-md overflow-hidden flex flex-col h-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                   {/* Image */}
-                  <div className="h-[160px] bg-white flex items-center justify-center p-4 relative">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="max-h-[120px] object-contain transition-transform duration-300 hover:scale-110"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = '/placeholder-image.png';
-                        target.className = 'h-full w-full object-contain';
-                      }}
-                    />
-                  </div>
+                 <div className="h-[160px] bg-white flex items-center justify-center p-4 relative overflow-hidden rounded-t-xl">
+  <img
+    src={item.image}
+    alt={item.title}
+    className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+    onError={(e) => {
+      const target = e.target as HTMLImageElement;
+      target.src = '/placeholder-image.png';
+      target.className = 'h-full w-full object-cover';
+    }}
+  />
+</div>
+
 
                   {/* Content */}
                   <div className="p-5 flex flex-col flex-1">
