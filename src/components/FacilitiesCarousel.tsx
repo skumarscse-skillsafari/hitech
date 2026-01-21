@@ -100,45 +100,49 @@ const FacilitiesCarousel: React.FC<{ departmentName?: string }> = ({
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg">
       
-      <div className="flex items-center justify-between mb-8">
-        <div>
-          <h4 className="text-2xl font-bold text-gray-900 mb-2">
+      <div className="mb-12">
+        <div className="text-center mb-10">
+          <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Facilities & Infrastructure
           </h4>
-          <p className="text-gray-600">
+          <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mb-6"></div>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
             World-class facilities supporting excellence in {departmentName}
           </p>
         </div>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex justify-center md:justify-end items-center space-x-6 mb-6">
           <div className="flex items-center space-x-2">
             {Array.from({ length: totalPages }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToPage(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   Math.floor(currentIndex / itemsPerPage) === index
-                    ? 'bg-yellow-500'
+                    ? 'bg-yellow-500 w-8'
                     : 'bg-gray-300 hover:bg-gray-400'
                 }`}
+                aria-label={`Go to page ${index + 1}`}
               />
             ))}
           </div>
 
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
             <button
               onClick={prevSlide}
-              className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full transition-colors group"
+              className="bg-gray-100 hover:bg-yellow-500 hover:text-white p-3 rounded-full transition-all duration-300 group shadow-sm"
               disabled={currentIndex === 0}
+              aria-label="Previous slide"
             >
-              <ChevronLeft className="h-5 w-5 text-gray-600 group-hover:text-yellow-600" />
+              <ChevronLeft className="h-5 w-5 text-gray-600 group-hover:text-white transition-colors" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-gray-100 hover:bg-yellow-100 p-2 rounded-full transition-colors group"
+              className="bg-gray-100 hover:bg-yellow-500 hover:text-white p-3 rounded-full transition-all duration-300 group shadow-sm"
               disabled={currentIndex + itemsPerPage >= enhancedFacilities.length}
+              aria-label="Next slide"
             >
-              <ChevronRight className="h-5 w-5 text-gray-600 group-hover:text-yellow-600" />
+              <ChevronRight className="h-5 w-5 text-gray-600 group-hover:text-white transition-colors" />
             </button>
           </div>
         </div>
