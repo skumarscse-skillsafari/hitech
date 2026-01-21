@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { BookOpen, Newspaper } from "lucide-react";
 import PageLayout from '../components/layout/PageLayout';
@@ -10,19 +10,36 @@ import FacultyCarousel from '../components/FacultyCarousel';
 import FacilitiesCarousel from '../components/FacilitiesCarousel';
 import TabsSection from '../components/TabSection';
 import LabSection from '../components/LabSection'; // Now uses its own cseLabsData
+import AchievementsModal from '../components/AchievementsModal';
 import departmentsData from '../data/departmentsData.json';
-import StudentClubs from './StuClub';
+import cseAchievementsData from '../data/cseAchievementsData.json';
+
 import DepartmentSectionNav from '../components/navigation/DepartmentSectionNav';
 
 const DepartmentPage: React.FC = () => {
   const { departmentId } = useParams<{ departmentId: string }>();
   const navigate = useNavigate();
+  const [showAchievementsModal, setShowAchievementsModal] = useState(false);
 
   const department = departmentsData.departments.find(dept => dept.id === departmentId);
 
   if (!department) {
     return <Navigate to="/" replace />;
   }
+
+  // Show achievements modal only for CSE department on page load with a delay
+  useEffect(() => {
+    if (departmentId === 'cse') {
+      // Delay to ensure page is fully loaded and scroll position is set
+      const timer = setTimeout(() => {
+        setShowAchievementsModal(true);
+      }, 800);
+      
+      return () => clearTimeout(timer);
+    } else {
+      setShowAchievementsModal(false);
+    }
+  }, [departmentId]);
 
   const sections = [
     { id: 'about-department', label: 'About the Department' },
@@ -32,7 +49,6 @@ const DepartmentPage: React.FC = () => {
     { id: 'obe-philosophy', label: 'OBE Philosophy' },
     { id: 'obe-inputs', label: 'OBE Inputs' },
     { id: 'centres-of-excellence', label: 'Centres of Excellence' },
-    { id: 'clubs', label: 'Student Clubs' },
     { id: 'teaching', label: 'Teaching Methodology' },
     { id: 'facilities', label: 'Facilities' },
     { id: 'labs', label: 'Laboratories' },
@@ -41,10 +57,20 @@ const DepartmentPage: React.FC = () => {
   ];
 
   return (
-    <PageLayout
-      title={`${department.name} - Hindusthan Institute of Technology`}
-      description={department.description}
-    >
+    <>
+      {/* Achievements Modal for CSE Department */}
+      {departmentId === 'cse' && showAchievementsModal && cseAchievementsData?.teams && (
+        <AchievementsModal
+          isOpen={showAchievementsModal}
+          onClose={() => setShowAchievementsModal(false)}
+          teams={cseAchievementsData.teams}
+        />
+      )}
+
+      <PageLayout
+        title={`${department.name} - Hindusthan Institute of Technology`}
+        description={department.description}
+      >
       <div className="w-full px-4 sm:px-6 lg:px-8 mt-[-120px] sm:mt-[-150px]">
         <div className="lg:flex lg:gap-12 xl:gap-16">
           {/* Left Navigation Sidebar */}
@@ -68,13 +94,7 @@ const DepartmentPage: React.FC = () => {
               </SectionWrapper>
             </div>
 
-            <div id="clubs" className="scroll-mt-24">
-              <SectionWrapper containerClassName="w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8">
-                <LazyLoadWrapper height="300px" delay={300}>
-                  <StudentClubs />
-                </LazyLoadWrapper>
-              </SectionWrapper>
-            </div>
+            
 
             {/* Teaching Methodologies */}
             <div id="teaching" className="scroll-mt-24">
@@ -210,6 +230,7 @@ const DepartmentPage: React.FC = () => {
         </button>
       </div>
     </PageLayout>
+    </>
   );
 };
 

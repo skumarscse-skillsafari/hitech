@@ -83,11 +83,67 @@
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+    }
+  }
+
+  /* Slide-up animation for modal - Optimized */
+  .animate-slideUp {
+    animation: slideUp 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* Custom scrollbar for modal */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #fbbf24;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b;
+  }
+
+  /* Team transition animation */
+  @keyframes teamSlideOut {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-100%) scale(0.95);
+    }
+  }
+
+  @keyframes teamSlideIn {
+    from {
+      opacity: 0;
+      transform: translateX(100%) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
     }
   }
 }
@@ -95,6 +151,25 @@
 /* Ensure smooth scrolling behavior */
 html {
   scroll-behavior: smooth;
+}
+
+/* Performance optimization for modal animations */
+.modal-content {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Hardware acceleration for images */
+img {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smooth transitions */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Image optimization */
