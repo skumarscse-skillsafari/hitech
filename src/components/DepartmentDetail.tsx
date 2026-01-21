@@ -34,7 +34,7 @@ interface Department {
     publications: number;
     researchAreas: string[];
   }>;
-  obePhilosophy: {
+  obePhilosophy?: {
     description: string;
     principles: Array<{
       title: string;
@@ -232,40 +232,66 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
   return (
     <div className="space-y-8">
       {/* Department Header - Unchanged */}
-     <LazyLoadWrapper height="300px" delay={500}>
+     <div id="about-department" className="scroll-mt-32">
+  <LazyLoadWrapper height="300px" delay={500}>
   <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-    <div className="relative h-[400px] sm:h-[300px]">
+    <div className="relative h-[450px] lg:h-[500px]">
       {/* Background Image with Overlay */}
       <img 
         src={department.image} 
         alt={department.name}
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent" />
 
-      {/* Top-left Icon */}
-      <div className="absolute top-4 left-4 bg-white/90 p-3 rounded-lg">
-        <IconComponent className="h-6 w-6 text-gray-600 sm:h-8 sm:w-8" />
-      </div>
-
-      {/* Bottom Content */}
-      <div className="absolute inset-x-4 bottom-4 text-white space-y-2">
-        <div className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold inline-block ">
+      {/* Top-left Icon & Badge */}
+      <div className="absolute top-3 left-6 flex items-center gap-4">
+        {/* Icon */}
+        <div className="bg-white/95 p-4 rounded-xl shadow-lg backdrop-blur-sm">
+          <IconComponent className="h-8 w-8 text-yellow-600 sm:h-10 sm:w-10" />
+        </div>
+        
+        {/* Badge */}
+        <div className="bg-yellow-500 text-gray-900 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider shadow-md backdrop-blur-sm">
           {department.shortName}
         </div>
-        <h1 className="text-xl sm:text-2xl font-bold">{department.name}</h1>
-        <p className="text-sm sm:text-base text-gray-200">
-          {department.description}
-        </p>
+      </div>
+
+      {/* Hero Content */}
+      <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10 lg:p-14 text-white">
+        <div className="max-w-4xl space-y-4 sm:space-y-6">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight shadow-sm">{department.name}</h1>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed max-w-3xl drop-shadow-md">
+            {department.description}
+          </p>
+          
+          {/* Static Academic Context */}
+          <div className="pt-6 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+            <div>
+              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">4+</div>
+              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Specialized Labs</div>
+            </div>
+             <div>
+              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">20+</div>
+              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Industry Partners</div>
+            </div>
+             <div>
+              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">100%</div>
+              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Placement Support</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </LazyLoadWrapper>
+</div>
 
 
       {/* Vision & Mission - Unchanged */}
-      <LazyLoadWrapper height="200px" delay={500}>
-        <div className="grid md:grid-cols-2 gap-6">
+      <div id="department-vision-mission" className="scroll-mt-32">
+        <LazyLoadWrapper height="200px" delay={500}>
+          <div className="grid md:grid-cols-2 gap-6 mt-24 lg:mt-32">
   <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
     <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center space-x-2">
       <Award className="h-5 w-5 text-yellow-500" />
@@ -292,10 +318,11 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
     </div>
   </div>
 </div>
-
+        </LazyLoadWrapper>
+      </div>
      
   {/* Program Outcomes */}
-<SectionWrapper lazyHeight="400px" lazyDelay={600} className="mt-16 mb-4">
+<SectionWrapper id="psos-peos-pos" lazyHeight="400px" lazyDelay={600} className="mt-16 mb-4 scroll-mt-32">
   <DepartmentOutcomes 
     psos={department.psos}
     peos={department.peos}
@@ -305,7 +332,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 </SectionWrapper>
 
 {/* Programs Offered */}
-<SectionWrapper className="mt-0 mb-12">
+<SectionWrapper id="programs-offered" className="mt-0 mb-12 scroll-mt-32">
   <LazyLoadWrapper height="300px" delay={500}>
     <div className="bg-white p-8 rounded-2xl shadow-lg">
       <h4 className="text-2xl font-bold text-gray-900 mb-6">Programs Offered</h4>
@@ -331,57 +358,61 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 
 
       {/* Enhanced OBE Philosophy Section */}
-      <LazyLoadWrapper height="500px" delay={500}>
-        <div className="bg-white p-12 rounded-2xl shadow-lg text-center mb-12">
-          <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">OBE Philosophy</h4>
-           <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            {departmentWithDefaults.obePhilosophy.description}
-          </p>
-          
-          {/* OBE Principles */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            {departmentWithDefaults.obePhilosophy.principles.map((principle, index) => {
-              const Icon = principle.icon;
-              return (
-                <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors duration-300">
-                  <div className="w-10 h-10 rounded-lg bg-yellow-50 flex items-center justify-center mb-4 text-yellow-600">
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <h5 className="font-bold text-gray-900 mb-2">{principle.title}</h5>
-                  <p className="text-gray-600 text-sm">{principle.description}</p>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* OBE Process */}
-          <div className="relative">
-            <div className="hidden lg:block absolute left-0 right-0 top-1/2 h-1 bg-gray-200 -translate-y-1/2"></div>
-            <div className="grid lg:grid-cols-5 gap-6">
-              {departmentWithDefaults.obePhilosophy.processSteps.map((step, index) => (
-                <div key={index} className="relative z-10">
-                  <div className="bg-white p-5 rounded-lg shadow-md border border-gray-200">
-                    <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center text-white font-bold">
-                      {step.step}
+      <div id="obe-philosophy" className="scroll-mt-32">
+        <LazyLoadWrapper height="500px" delay={500}>
+          <div className="bg-white p-12 rounded-2xl shadow-lg text-center mb-12">
+            <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">OBE Philosophy</h4>
+             <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
+            <p className="text-gray-700 mb-8 leading-relaxed">
+              {departmentWithDefaults.obePhilosophy.description}
+            </p>
+            
+            {/* OBE Principles */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+              {departmentWithDefaults.obePhilosophy.principles.map((principle, index) => {
+                const Icon = principle.icon;
+                return (
+                  <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-yellow-50 flex items-center justify-center mb-4 text-yellow-600">
+                      <Icon className="h-5 w-5" />
                     </div>
-                    <h5 className="font-bold text-gray-900 mt-2 mb-2">{step.title}</h5>
-                    <p className="text-gray-600 text-sm">{step.description}</p>
+                    <h5 className="font-bold text-gray-900 mb-2">{principle.title}</h5>
+                    <p className="text-gray-600 text-sm">{principle.description}</p>
                   </div>
-                </div>
-              ))}
+                );
+              })}
+            </div>
+
+            {/* OBE Process */}
+            <div className="relative">
+              <div className="hidden lg:block absolute left-0 right-0 top-1/2 h-1 bg-gray-200 -translate-y-1/2"></div>
+              <div className="grid lg:grid-cols-5 gap-6">
+                {departmentWithDefaults.obePhilosophy.processSteps.map((step, index) => (
+                  <div key={index} className="relative z-10">
+                    <div className="bg-white p-5 rounded-lg shadow-md border border-gray-200">
+                      <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center text-white font-bold">
+                        {step.step}
+                      </div>
+                      <h5 className="font-bold text-gray-900 mt-2 mb-2">{step.title}</h5>
+                      <p className="text-gray-600 text-sm">{step.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </LazyLoadWrapper>
-</LazyLoadWrapper>
+        </LazyLoadWrapper>
+      </div>
 
+ <div id="obe-inputs" className="scroll-mt-32">
  <LazyLoadWrapper height="400px" delay={500}> 
-  <ObeInput />
+    <ObeInput />
  </LazyLoadWrapper>
+ </div>
       {/* New Centre of Excellence Section */}
-      <LazyLoadWrapper height="400px" delay={500}>
-        <div className="bg-white p-12 rounded-2xl shadow-lg text-center mb-12">
+      <div id="centres-of-excellence" className="scroll-mt-32">
+        <LazyLoadWrapper height="400px" delay={500}>
+          <div className="bg-white p-12 rounded-2xl shadow-lg text-center mb-12">
           <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Centres of Excellence</h4>
           <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
           <div className="relative">
@@ -436,8 +467,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
           </div>
         </div>
       </LazyLoadWrapper>
-
-     
+      </div>
 
      
       {/* Specializations - Unchanged */}
