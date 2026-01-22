@@ -82,7 +82,7 @@ const NewsEventsSection: React.FC<NewsEventsSectionProps> = ({ news, events }) =
           {/* News Section */}
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Featured News</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Latest News</h3>
               <div className="space-y-6">
                 {featuredNews.map((item, index) => (
                   <article
@@ -120,53 +120,6 @@ const NewsEventsSection: React.FC<NewsEventsSectionProps> = ({ news, events }) =
                   </article>
                 ))}
               </div>
-            </div>
-
-            {/* Regular News */}
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Recent Updates</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                {regularNews.map((item) => (
-                  <article
-                    key={item.id}
-                    className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover:-translate-y-1"
-                  >
-                    <div className="relative h-40 overflow-hidden">
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                      <div className="absolute top-3 left-3 bg-yellow-500 text-gray-900 px-2 py-1 rounded text-xs font-semibold">
-                        {item.category}
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <div className="flex items-center text-xs text-gray-500 mb-2">
-                        <Calendar className="h-3 w-3 mr-1" />
-                        <span>{formatDate(item.date)}</span>
-                      </div>
-                      <h4 className="font-bold text-gray-900 group-hover:text-yellow-600 transition-colors mb-2 line-clamp-2">
-                        {item.title}
-                      </h4>
-                      <p className="text-gray-600 text-sm leading-relaxed line-clamp-2 mb-3">{item.excerpt}</p>
-                      <button className="text-yellow-600 hover:text-yellow-700 font-medium text-sm">
-                        Read More →
-                      </button>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-
-            <div className="text-center">
-              <button
-                onClick={() => navigate('/news')}
-                className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
-              >
-                View All News
-              </button>
             </div>
           </div>
 

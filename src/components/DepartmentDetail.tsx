@@ -261,25 +261,9 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
       <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10 lg:p-14 text-white">
         <div className="max-w-4xl space-y-4 sm:space-y-6">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight shadow-sm">{department.name}</h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed max-w-3xl drop-shadow-md">
+          <p className="text-base sm:text-lg lg:text-sl text-gray-200 leading-relaxed max-w-3xl drop-shadow-md">
             {department.description}
           </p>
-          
-          {/* Static Academic Context */}
-          <div className="pt-6 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
-            <div>
-              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">4+</div>
-              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Specialized Labs</div>
-            </div>
-             <div>
-              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">20+</div>
-              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Industry Partners</div>
-            </div>
-             <div>
-              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">100%</div>
-              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Placement Support</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
