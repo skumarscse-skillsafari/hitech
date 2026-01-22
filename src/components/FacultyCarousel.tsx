@@ -55,7 +55,27 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
   departmentName = 'Department',
 }) => {
   const [selectedMember, setSelectedMember] = useState<FacultyMember | null>(null);
-  const sliderRef = React.useRef<Slider | null>(null);
+  const [hasBeenViewed, setHasBeenViewed] = useState(false);
+  const sliderRef = useRef<Slider | null>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHasBeenViewed(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 } // Start when 10% visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const sliderSettings = {
     dots: false,
@@ -63,7 +83,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: hasBeenViewed,
     autoplaySpeed: 4000,
     pauseOnHover: true,
     arrows: false,
@@ -87,7 +107,7 @@ const FacultyCarousel: React.FC<FacultyCarouselProps> = ({
   const closeModal = () => setSelectedMember(null);
 
   return (
-    <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg relative">
+    <div ref={sectionRef} className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg relative">
       {/* Header and buttons */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 sm:mb-8 gap-4 sm:gap-0">
         <div>

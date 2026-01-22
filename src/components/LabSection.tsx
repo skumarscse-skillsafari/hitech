@@ -16,42 +16,40 @@ const LabSection: React.FC<LabSectionProps> = ({ departmentName }) => {
     ? (cseLabsData as CseLabsData).subcategories
     : [];
 
-  const getLabDescription = (labName: string): string => {
-    const descriptions: Record<string, string> = {
-      'Computer Science Lab':
-        'Modern computing facility with high-performance systems for programming and software development.',
-      'RDBMS Lab':
-        'Database lab with enterprise DB servers and tools for SQL and data management.',
-      'Network Lab':
-        'Hands-on networking with routers, switches, and simulation tools.',
-      'Operating System Lab':
-        'Multiple OS environments for system programming and administration.',
-    };
-    return (
-      descriptions[labName] ||
-      'State-of-the-art facility designed for hands-on learning with modern equipment.'
-    );
-  };
+// Static Data Dictionaries
+const LAB_DESCRIPTIONS: Record<string, string> = {
+  'Computer Science Lab':
+    'Modern computing facility with high-performance systems for programming and software development.',
+  'RDBMS Lab':
+    'Database lab with enterprise DB servers and tools for SQL and data management.',
+  'Network Lab':
+    'Hands-on networking with routers, switches, and simulation tools.',
+  'Operating System Lab':
+    'Multiple OS environments for system programming and administration.',
+};
 
-  const getLabFeatures = (labName: string): string[] => {
-    const features: Record<string, string[]> = {
-      'Computer Science Lab': ['High-performance PCs', 'Multiple IDEs', 'Git/VCS', 'Cloud access'],
-      'RDBMS Lab': ['Oracle/MySQL', 'SQL Server', 'ER Modeling', 'Data tools'],
-      'Network Lab': ['Cisco gear', 'Simulators', 'Firewall config', 'Wireless setup'],
-      'Operating System Lab': ['VMs', 'Linux distros', 'System programming', 'Shell scripting'],
-    };
-    return features[labName] || ['Modern equipment', 'Expert guidance', 'Hands-on learning'];
-  };
+const LAB_FEATURES: Record<string, string[]> = {
+  'Computer Science Lab': ['High-performance PCs', 'Multiple IDEs', 'Git/VCS', 'Cloud access'],
+  'RDBMS Lab': ['Oracle/MySQL', 'SQL Server', 'ER Modeling', 'Data tools'],
+  'Network Lab': ['Cisco gear', 'Simulators', 'Firewall config', 'Wireless setup'],
+  'Operating System Lab': ['VMs', 'Linux distros', 'System programming', 'Shell scripting'],
+};
 
-  const getStudentCapacity = (labName: string): number => {
-    const capacities: Record<string, number> = {
-      'Web Programming Lab': 75,
-      'RDBMS Lab': 75,
-      'Network Lab': 75,
-      'Operating System Lab': 75,
-    };
-    return capacities[labName] ?? 30;
-  };
+const LAB_CAPACITIES: Record<string, number> = {
+  'Web Programming Lab': 75,
+  'RDBMS Lab': 75,
+  'Network Lab': 75,
+  'Operating System Lab': 75,
+};
+
+const DEFAULT_FEATURES = ['Modern equipment', 'Expert guidance', 'Hands-on learning'];
+const DEFAULT_DESCRIPTION = 'State-of-the-art facility designed for hands-on learning with modern equipment.';
+const DEFAULT_CAPACITY = 30;
+
+// Helper getters (pure functions)
+const getLabDescription = (labName: string): string => LAB_DESCRIPTIONS[labName] || DEFAULT_DESCRIPTION;
+const getLabFeatures = (labName: string): string[] => LAB_FEATURES[labName] || DEFAULT_FEATURES;
+const getStudentCapacity = (labName: string): number => LAB_CAPACITIES[labName] ?? DEFAULT_CAPACITY;
 
   if (labs.length === 0) {
     return (
