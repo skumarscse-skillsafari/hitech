@@ -11,26 +11,28 @@ interface ImageGalleryProps {
   images: Image[];
 }
 
-const ImageGallery: React.FC<ImageGalleryProps> = ({ labName, images }) => {
+const ImageGallery: React.FC<ImageGalleryProps> = React.memo(({ labName, images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const nextImage = () => {
+  const nextImage = React.useCallback((e?: React.MouseEvent) => {
+    e?.stopPropagation();
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
-  };
+  }, [images.length]);
 
-  const prevImage = () => {
+  const prevImage = React.useCallback((e?: React.MouseEvent) => {
+    e?.stopPropagation();
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
+  }, [images.length]);
 
-  const openModal = (index: number) => {
+  const openModal = React.useCallback((index: number) => {
     setCurrentImageIndex(index);
     setIsModalOpen(true);
-  };
+  }, []);
 
-  const closeModal = () => {
+  const closeModal = React.useCallback(() => {
     setIsModalOpen(false);
-  };
+  }, []);
 
   if (images.length === 0) {
     return <p className="text-gray-500">No images available for {labName}.</p>;
@@ -43,6 +45,9 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ labName, images }) => {
           <img
             src={images[currentImageIndex]?.url}
             alt={images[currentImageIndex]?.caption || `${labName} Image`}
+            loading="lazy"
+            decoding="async"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -93,6 +98,10 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ labName, images }) => {
                 <img
                   src={image.url}
                   alt={`${labName} thumbnail ${index + 1}`}
+                  loading="lazy"
+                  decoding="async"
+                  sizes="100px"
+                  {...({ fetchPriority: 'low' } as any)}
                   className="w-full h-full object-cover"
                 />
               </button>
@@ -107,6 +116,10 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ labName, images }) => {
             <img
               src={images[currentImageIndex]?.url}
               alt={images[currentImageIndex]?.caption}
+              loading="lazy"
+              decoding="async"
+              sizes="90vw"
+              {...({ fetchPriority: 'high' } as any)}
               className="max-w-full max-h-[80vh] object-contain rounded-lg"
             />
 
@@ -145,6 +158,6 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ labName, images }) => {
       )}
     </>
   );
-};
+});
 
 export default ImageGallery;
