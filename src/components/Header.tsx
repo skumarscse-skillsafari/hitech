@@ -130,7 +130,7 @@ useEffect(() => {
     <header
   className={`fixed top-10 w-full z-40 transition-all duration-500 ${
     isScrolled 
-      ? 'bg-white/95 backdrop-blur-md shadow-xl top-0 py-0' 
+      ? 'bg-white/95 backdrop-blur-md shadow-xl top-0 py-2' 
       : 'bg-white/90 backdrop-blur-sm shadow-lg py-2'
   }`}
 >
