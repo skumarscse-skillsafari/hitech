@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { BookOpen, Newspaper } from "lucide-react";
 import PageLayout from '../components/layout/PageLayout';
