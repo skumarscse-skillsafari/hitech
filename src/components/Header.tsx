@@ -135,47 +135,49 @@ useEffect(() => {
   }`}
 >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex items-center justify-between min-h-[4rem] gap-2 lg:gap-8">
           {/* Logo and Titles */}
           <Link 
             to="/" 
-            className="flex items-center space-x-3 flex-shrink-0 group/logo transition-all duration-300 hover:scale-105"
+            className="flex items-center gap-3 flex-shrink-0 group/logo max-w-[70%] lg:max-w-[320px] xl:max-w-[400px]"
             onClick={closeAllMenus}
           >
-            <div className="bg-white p-1 rounded-lg shadow-md transition-all duration-300 group-hover/logo:shadow-lg group-hover/logo:ring-2 group-hover/logo:ring-yellow-200">
-              <img src="/Logo.jpg" alt="Logo" className="h-12 w-auto object-contain transition-all duration-300 group-hover/logo:scale-105" />
+            <div className="bg-white p-1 rounded-lg shadow-md transition-all duration-300 group-hover/logo:shadow-lg group-hover/logo:ring-2 group-hover/logo:ring-yellow-200 flex-shrink-0">
+              <img src="/Logo.jpg" alt="Logo" className="h-10 w-auto sm:h-12 object-contain" />
             </div>
-            <div className="hidden lg:block">
-              <div className="text-xl font-bold text-yellow-600 leading-tight transition-colors duration-300 group-hover/logo:text-yellow-700">
+            
+            {/* Desktop Title */}
+            <div className="hidden lg:block transition-transform duration-300 ease-out group-hover/logo:scale-[1.02] origin-left transform-gpu">
+              <div className="text-lg xl:text-xl font-bold text-yellow-600 leading-tight transition-colors duration-300 group-hover/logo:text-yellow-700 whitespace-normal">
                 {collegeName}
               </div>
-              <div className="text-xs font-bold text-gray-600 leading-tight">
+              <div className="text-[10px] xl:text-xs font-bold text-gray-600 leading-tight mt-0.5 whitespace-normal">
                 {collegeSubtitle.split(';')[0]}
               </div>
-              <div className="text-xs text-gray-600 leading-tight">
+              <div className="text-[10px] text-gray-500 leading-tight whitespace-normal">
                 {collegeSubtitle.split(';')[1]}
               </div>
             </div>
+
+            {/* Mobile Title */}
             <div className="lg:hidden">
-              <div className="text-sm font-bold text-yellow-600 leading-tight transition-colors duration-300 group-hover/logo:text-yellow-700">
-                Hindusthan Institute
-                <br />
-                of Technology
+              <div className="text-sm font-bold text-yellow-600 leading-tight transition-colors duration-300 group-hover/logo:text-yellow-700 line-clamp-2">
+                Hindusthan Institute of Technology
               </div>
-              <div className="text-xs font-semibold text-gray-500 leading-tight">
+              <div className="text-[10px] font-semibold text-gray-500 leading-tight">
                 An Autonomous Institution
               </div>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden lg:flex items-center gap-1 flex-shrink-0">
             {navigationItems.map((item) => (
               <div key={item.name} className="relative group">
                 {item.dropdown ? (
                   <div className="relative">
                     <button
-                      className={`flex items-center space-x-1 px-4 py-2 rounded-lg font-medium transition-all duration-300 whitespace-nowrap transform hover:scale-105 ${
+                      className={`flex items-center space-x-1 px-3 py-2 rounded-lg font-medium transition-all duration-300 whitespace-nowrap text-sm xl:text-base ${
                         location.pathname === item.href ||
                         item.dropdown.some((sub) => location.pathname === sub.href)
                           ? 'text-yellow-600 bg-yellow-50 shadow-inner'
@@ -187,7 +189,7 @@ useEffect(() => {
                       <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
                     </button>
                     <div
-                      className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50"
+                      className="absolute top-full right-0 mt-1 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50"
                       onMouseLeave={() => setActiveDropdown(null)}
                     >
                       {renderDropdownItems(item.dropdown)}
@@ -196,7 +198,7 @@ useEffect(() => {
                 ) : (
                   <Link
                     to={item.href}
-                    className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 whitespace-nowrap transform hover:scale-105 ${
+                    className={`px-3 py-2 rounded-lg font-medium transition-all duration-300 whitespace-nowrap text-sm xl:text-base ${
                       location.pathname === item.href
                         ? 'text-yellow-600 bg-yellow-50 shadow-inner'
                         : 'text-gray-900 hover:text-yellow-600 hover:bg-yellow-50'
@@ -209,9 +211,9 @@ useEffect(() => {
             ))}
 
             {/* Desktop Hamburger Dropdown Menu */}
-            <div className="relative ml-4">
+            <div className="relative ml-2">
               <button
-                className="p-2 rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-110"
+                className="p-2 rounded-lg hover:bg-gray-100 transition-all duration-300"
                 onClick={() => handleDropdownToggle('hamburger')}
                 onMouseEnter={() => setActiveDropdown('hamburger')}
               >
@@ -224,28 +226,28 @@ useEffect(() => {
                 >
                   <Link
                     to="/online-fees"
-                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300 transform hover:translate-x-1"
+                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300"
                     onClick={() => setActiveDropdown(null)}
                   >
                     Online Fees Payment
                   </Link>
                   <Link
                     to="/clubs"
-                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300 transform hover:translate-x-1"
+                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300"
                     onClick={() => setActiveDropdown(null)}
                   >
                     Clubs and Societies
                   </Link>
                   <Link
                     to="/ecampus"
-                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300 transform hover:translate-x-1"
+                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300"
                     onClick={() => setActiveDropdown(null)}
                   >
                     E-Campus Login
                   </Link>
                   <Link
                     to="/media"
-                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300 transform hover:translate-x-1"
+                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300"
                     onClick={() => setActiveDropdown(null)}
                   >
                     Media
@@ -258,7 +260,7 @@ useEffect(() => {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-110"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-all duration-300"
             aria-label="Toggle Menu"
           >
             {isMenuOpen ? (
