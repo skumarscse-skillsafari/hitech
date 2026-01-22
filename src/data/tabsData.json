@@ -264,28 +264,52 @@
         "title": "Showcasing Notable Projects",
         "items": [
           {
-            "title": "Integrated Healthcare Solution For Mothers And Newborns",
-            "domain": "Artificial Intelligence",
-            "guide": "Mr Uthayakumar J, AP/CSE",
-            "students": "Jeevananthan R, Mohamed ,Jiyath A, Naveen, Rsarveshwaran L"
+            "title": "AI Enhanced IoT based Water Management System",
+            "students": "AKSHAYA E (720821103009), KAMALESHWARI R (720821103046), KAVIN KUMAR P (720821103053), KAVIYASRI J (720821103054)",
+            "summary": "An automated surveillance system designed to protect agricultural crops from animal intrusions using Real-time Object Detection (YOLOv8), IoT-based deterrents, and Cloud monitoring to ensure crop safety without manual guarding.",
+            "image": "/ai_iot_water_management.jpg",
+            "fullDetails": {
+              "Course": "20CS710 & Project Work",
+              "Source": "Niral Thiruvizha",
+              "WP_Attributes": "WP2, WP4, WP6",
+              "Proposed_EA": "EA1, EA3, EA5",
+              "PO_Mapped": "PO1, PO2, PO4",
+              "SDG_Goals": "SDG6, SDG11",
+              "PSO": "PSO2",
+              "Justification": "WP2 is relevant as the system utilizes data analysis and machine learning algorithms to process real-time data for drainage monitoring and decision-making. WP4 applies because the system integrates IoT and AI technologies, applying engineering principles for smart waste management solutions. WP6 aligns with the real-world application of IoT and AI for waste and drainage management, ensuring the system works effectively in urban environments."
+            }
           },
           {
-            "title": "SingleWindow Platform To Streamline Approvals And Empower Entrepreneurial Success",
-            "domain": "Information / Communication Technology",
-            "guide": "Mr.Devendran , AP/CSE",
-            "students": "Harish Keerthi V, Harish S, Hari Haran S, Mahalingeshvara, Nathan Nl"
+            "title": "Field Visit Tracker: Geo-Tagged Inspections with Digital Signatures",
+            "students": "SRIRAM B (720821103106), THIRUKUMARAN RP (720821103114), UDAY RAM S (720821103115)",
+            "summary": "The Field Visit Tracker is a digital system that modernizes inspections by officials, recording visits with geo-tagging, digital signatures, time, photos, and remarks, storing data in cloud dashboards for monitoring.",
+            "image": "/field_visit_tracker.jpg",
+            "fullDetails": {
+              "Course": "20CS710 & Project Work",
+              "Source": "Niral Thiruvizha",
+              "WP_Attributes": "WP2, WP6, WP7",
+              "Proposed_EA": "EA1, EA2, EA4",
+              "PO_Mapped": "PO4, PO5, PO6",
+              "SDG_Goals": "SDG9, SDG11, SDG16",
+              "PSO": "PSO2",
+              "Justification": "An AI-enabled mobile application allows officials to conduct geo-tagged inspections and submit digitally authenticated reports in a secure and efficient manner. Inspection data uploaded to secure cloud storage with dashboards for HOD and District Collectors monitoring. This system ensures genuine, auditable, tamper-proof reports with accurate location and time recording."
+            }
           },
           {
-            "title": "Field Visit Tracker: GeoTagged Inspections With Digital Signatures And Authentication",
-            "domain": "Information /Communication Technology",
-            "guide": "Dr.R.T.Subhalakshmi",
-            "students": "Thiru Kumaran Rp, Sriram B, Uday Ram S, Sunil Kumar D"
-          },
-          {
-            "title": "AI-Enhanced Iot Based Waste Management System For Real‑Time Drainage Maintenance And Monitoring",
-            "domain": "Solid waste / Bio‑waste /E‑waste",
-            "guide": "Mr.K. Murugan",
-            "students": "Kamaleshwari, R Akshaya E, Kaviyasri J"
+            "title": "Single-Window Platform to Streamline Approvals and Empower Entrepreneurial Success",
+            "students": "HARI HARAN S (720821103031), HARISH KEERTHI V (720821103036), HARISH S (720821103037), MAHALINGESHVARANATHAN N L (720821103062)",
+            "summary": "A unified digital portal designed to streamline government approvals for entrepreneurs. It uses AI-driven automation and real-time tracking to simplify complex regulatory processes into a single-window experience.",
+            "image": "/single_window_platform.jpg",
+            "fullDetails": {
+              "Course": "20CS710 & Project Work",
+              "Source": "Niral Thiruvizha",
+              "WP_Attributes": "WP4, WP6, WP7",
+              "Proposed_EA": "EA1, EA2, E3",
+              "PO_Mapped": "PO5, P6, PO8",
+              "SDG_Goals": "SDG8, SDG9, SDG16",
+              "PSO": "PSO2",
+              "Justification": "WP4 applies as the system leverages engineering knowledge to design a comprehensive single-window platform that streamlines approval processes and enables efficient interaction between businesses and government agencies. WP6 aligns with the use of technology in creating an accessible and user-friendly platform that automates approvals and simplifies workflows."
+            }
           }
         ]
       }
