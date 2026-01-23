@@ -1204,15 +1204,6 @@
 "research_data": [
   {
     "s.no.": 1,
-    "faculty name": ["Dr.A.JameerBasha, Professor & Head", "Dr.S.Lokesh, ASP/CSE", "Ms.P.Jeevitha, AP/CSE"],
-    "project_title": "Design and development of smart assistive device with integration of hybrid blockchain and augmented reality to shape the future mobile healthcare system for post covid challenges and diagnosis system",
-    "project_type": "Research",
-    "funding_agency": "AICTE - Research Promotion Scheme AQIS Application Id: 1-9335652751",
-    "amount": "Rs.9,48,614",
-    "duration": "3 Years (ongoing)"
-  },
-  {
-    "s.no.": 2,
     "faculty name": ["Dr.A.JameerBasha, Professor & Head"],
     "project_title": "Scheme for Promoting Interests, Creativity and Ethics among Students (SPICES)",
     "project_type": "Research",
@@ -1221,7 +1212,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
-    "s.no.": 3,
+    "s.no.": 2,
     "faculty name": ["Ms.P.Jeevitha, AP/CSE"],
     "project_title": "Intelligent Support System for diagnosis of covid 19 and captioning of x ray images using LSTM and RNN with explainability",
     "project_type": "Research",
@@ -1230,7 +1221,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
-    "s.no.": 4,
+    "s.no.": 3,
     "faculty name": ["Dr.R.Kala, AP/CSE"],
     "project_title": "Brain Tumor Detection Using Deep Convolutional Neural Network And Its Application Using FPGA Implementation",
     "project_type": "Research",
@@ -1239,7 +1230,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
-    "s.no.": 5,
+    "s.no.": 4,
     "faculty name": ["Ms.R.T. Subhalakshmi, AP/CSE"],
     "project_title": "Automatic segmentation and classification of COVID-19 CT image Using DCN",
     "project_type": "Research",
@@ -1248,7 +1239,7 @@
     "duration": "1 Year (ongoing)"
   },
   {
-    "s.no.": 6,
+    "s.no.": 5,
     "faculty name": ["Dr.A.JameerBasha, Professor & Head"],
     "project_title": "Application of Artificial Intelligence in Waste Water Management",
     "project_type": "Research",
@@ -1257,7 +1248,7 @@
     "duration": "1 Year (Completed)"
   },
   {
-    "s.no.": 7,
+    "s.no.": 6,
     "faculty name": ["Dr.S.Lokesh, ASP/CSE"],
     "project_title": "Nano Assistive Communication Device for Elderly and Speech Disability People after Stroke",
     "project_type": "Research",
@@ -1266,7 +1257,7 @@
     "duration": "1 Year (Completed)"
   },
   {
-    "s.no.": 8,
+    "s.no.": 7,
     "faculty name": ["Mr.Arun, AP/CSE"],
     "project_title": "Social Vulnerability in context to natural disaster using Machine learning",
     "project_type": "Research",
@@ -1275,7 +1266,7 @@
     "duration": "1 Year (Completed)"
   },
   {
-    "s.no.": 9,
+    "s.no.": 8,
     "faculty name": ["Dr.JameerBasha.A", "Dr.Senthilkumar.R"],
     "project_title": "CRM / ERP Development",
     "project_type": "Consultancy",
@@ -1284,7 +1275,7 @@
     "duration": "1 Year (2023-24)"
   },
   {
-    "s.no.": 10,
+    "s.no.": 9,
     "faculty name": ["Dr.Senthilkumar.R", "Dr.Ramasamy.S"],
     "project_title": "Automated Resume Screening System",
     "project_type": "Consultancy",
@@ -1293,7 +1284,7 @@
     "duration": "1 Year (2023-24)"
   },
   {
-    "s.no.": 11,
+    "s.no.": 10,
     "faculty name": ["Mr.Murugan.K", "Mr.Devendran.M"],
     "project_title": "Real Time Food Tracker",
     "project_type": "Consultancy",
@@ -1302,7 +1293,7 @@
     "duration": "1 Year (2023-24)"
   },
   {
-    "s.no.": 12,
+    "s.no.": 11,
     "faculty name": ["Dr.Jayasudha.D", "Mr.Uthayakumar.J"],
     "project_title": "IoT-based Smart Home Automation System",
     "project_type": "Consultancy",
@@ -1311,7 +1302,7 @@
     "duration": "1 Year (2023-24)"
   },
   {
-    "s.no.": 13,
+    "s.no.": 12,
     "faculty name": ["Dr.Chitra.M", "Mr.Arun.R"],
     "project_title": "Chat-bot System for Customer Support",
     "project_type": "Consultancy",
@@ -1320,7 +1311,7 @@
     "duration": "1 Year (2023-24)"
   },
   {
-    "s.no.": 14,
+    "s.no.": 13,
     "faculty name": ["Dr.Subhalakshmi.R.T", "Mrs.Jeevitha.P"],
     "project_title": "AI-Based Real-Time Voice Assistant",
     "project_type": "Consultancy",
@@ -1329,7 +1320,7 @@
     "duration": "1 Year (2023-24)"
   },
   {
-    "s.no.": 15,
+    "s.no.": 14,
     "faculty name": ["Dr.Maheshkumar.N.B", "Mr.Murugan.K"],
     "project_title": "AI-Based Video Surveillance System",
     "project_type": "Consultancy",
@@ -1338,7 +1329,7 @@
     "duration": "1 Year (2023-24)"
   },
   {
-    "s.no.": 16,
+    "s.no.": 15,
     "faculty name": ["Mrs.Jeevitha.P", "Mrs.Pavithra.K.S"],
     "project_title": "Blockchain based Supply Chain management",
     "project_type": "Consultancy",
@@ -1347,7 +1338,7 @@
     "duration": "1 Year (2022-23)"
   },
   {
-    "s.no.": 17,
+    "s.no.": 16,
     "faculty name": ["Dr.Senthilkumar.R", "Mr.Devendran.M"],
     "project_title": "IoT Based Energy Monitoring and Optimization System",
     "project_type": "Consultancy",
@@ -1356,7 +1347,7 @@
     "duration": "1 Year (2022-23)"
   },
   {
-    "s.no.": 18,
+    "s.no.": 17,
     "faculty name": ["Dr.Jeyasudha.D", "Mrs.BanuPriya.M"],
     "project_title": "Vehicle Tracking System",
     "project_type": "Consultancy",
@@ -1365,7 +1356,7 @@
     "duration": "1 Year (2022-23)"
   },
   {
-    "s.no.": 19,
+    "s.no.": 18,
     "faculty name": ["Dr.Subhalakshmi.R.T", "Mr.Kalaiselvi.T"],
     "project_title": "AI-Based Disease Diagnosis System",
     "project_type": "Consultancy",
@@ -1374,7 +1365,7 @@
     "duration": "1 Year (2022-23)"
   },
   {
-    "s.no.": 20,
+    "s.no.": 19,
     "faculty name": ["Dr.Kala.R", "Mrs.Vidhya.D"],
     "project_title": "Smart Blind Stick",
     "project_type": "Consultancy",
@@ -1383,7 +1374,7 @@
     "duration": "1 Year (2021-22)"
   },
   {
-    "s.no.": 21,
+    "s.no.": 20,
     "faculty name": ["Dr.Uma.S", "Mr.Senthilkumar.R"],
     "project_title": "Smart Farming using IoT",
     "project_type": "Consultancy",
@@ -1392,7 +1383,7 @@
     "duration": "1 Year (2021-22)"
   },
   {
-    "s.no.": 22,
+    "s.no.": 21,
     "faculty name": ["Dr.Lokesh.S", "Mrs.Banupriya.M"],
     "project_title": "QR Code based Street light control system",
     "project_type": "Consultancy",
@@ -1401,7 +1392,7 @@
     "duration": "1 Year (2021-22)"
   },
   {
-    "s.no.": 23,
+    "s.no.": 22,
     "faculty name": ["Dr.Ramasamy.S", "Mr.Devendran.M"],
     "project_title": "An AI Driven & Blockchain Enabled Employee Tracking & Ethical Rating Platform",
     "project_type": "Consultancy",
