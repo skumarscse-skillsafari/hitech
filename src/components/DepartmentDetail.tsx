@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Monitor, Radio, Settings, Building, ArrowRight, Users, BookOpen, Award, Lightbulb, Mail, Target, BarChart2, CheckCircle } from 'lucide-react';
 import LazyLoadWrapper from './LazyLoadWrapper';
 import DepartmentOutcomes from '../components/DepartmentOutcomes';
@@ -188,6 +189,7 @@ const excellenceCards = [
 ];
 
 const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
+  const navigate = useNavigate();
   const departmentWithDefaults = {
     ...department,
     obePhilosophy: department.obePhilosophy || defaultOBEData,
@@ -261,25 +263,9 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
       <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10 lg:p-14 text-white">
         <div className="max-w-4xl space-y-4 sm:space-y-6">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight shadow-sm">{department.name}</h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed max-w-3xl drop-shadow-md">
+          <p className="text-base sm:text-lg lg:text-sl text-gray-200 leading-relaxed max-w-3xl drop-shadow-md">
             {department.description}
           </p>
-          
-          {/* Static Academic Context */}
-          <div className="pt-6 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
-            <div>
-              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">4+</div>
-              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Specialized Labs</div>
-            </div>
-             <div>
-              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">20+</div>
-              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Industry Partners</div>
-            </div>
-             <div>
-              <div className="text-yellow-400 font-bold text-2xl lg:text-3xl">100%</div>
-              <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wider mt-1">Placement Support</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -287,11 +273,35 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 </LazyLoadWrapper>
 </div>
 
+{/* Programs Offered - Immediately after About Department */}
+<div className="mt-16 mb-4">
+  <LazyLoadWrapper height="300px" delay={500}>
+    <div className="bg-white p-8 rounded-2xl shadow-lg">
+      <h4 className="text-2xl font-bold text-gray-900 mb-6">Programs Offered</h4>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {department.programs.map((program, index) => (
+          <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group">
+            <h5 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">{program.name}</h5>
+            <div className="space-y-2 text-sm text-gray-600">
+              <div><span className="font-medium">Duration:</span> {program.duration}</div>
+              <div><span className="font-medium">Intake:</span> {program.intake}</div>
+              <div><span className="font-medium">Eligibility:</span> {program.eligibility}</div>
+            </div>
+            <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
+              <span>Learn More</span>
+              <ArrowRight className="h-3 w-3" />
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  </LazyLoadWrapper>
+</div>
 
-      {/* Vision & Mission - Unchanged */}
+      {/* Vision & Mission */}
       <div id="department-vision-mission" className="scroll-mt-32">
         <LazyLoadWrapper height="200px" delay={500}>
-          <div className="grid md:grid-cols-2 gap-6 mt-24 lg:mt-32">
+          <div className="grid md:grid-cols-2 gap-6 mt-16 lg:mt-20">
   <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
     <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center space-x-2">
       <Award className="h-5 w-5 text-yellow-500" />
@@ -322,7 +332,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
       </div>
      
   {/* Program Outcomes */}
-<SectionWrapper id="psos-peos-pos" lazyHeight="400px" lazyDelay={600} className="mt-16 mb-4 scroll-mt-32">
+<SectionWrapper id="psos-peos-pos" lazyHeight="600px" lazyDelay={600} className="mt-16 mb-8 scroll-mt-32">
   <DepartmentOutcomes 
     psos={department.psos}
     peos={department.peos}
@@ -331,35 +341,9 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
   />
 </SectionWrapper>
 
-{/* Programs Offered */}
-<SectionWrapper id="programs-offered" className="mt-0 mb-12 scroll-mt-32">
-  <LazyLoadWrapper height="300px" delay={500}>
-    <div className="bg-white p-8 rounded-2xl shadow-lg">
-      <h4 className="text-2xl font-bold text-gray-900 mb-6">Programs Offered</h4>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {department.programs.map((program, index) => (
-          <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-md transition-all duration-300 group">
-            <h5 className="font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">{program.name}</h5>
-            <div className="space-y-2 text-sm text-gray-600">
-              <div><span className="font-medium">Duration:</span> {program.duration}</div>
-              <div><span className="font-medium">Intake:</span> {program.intake}</div>
-              <div><span className="font-medium">Eligibility:</span> {program.eligibility}</div>
-            </div>
-            <button className="mt-4 text-yellow-600 hover:text-yellow-700 font-medium text-sm flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
-              <span>Learn More</span>
-              <ArrowRight className="h-3 w-3" />
-            </button>
-          </div>
-        ))}
-      </div>
-    </div>
-  </LazyLoadWrapper>
-</SectionWrapper>
-
-
-      {/* Enhanced OBE Philosophy Section */}
-      <div id="obe-philosophy" className="scroll-mt-32">
-        <LazyLoadWrapper height="500px" delay={500}>
+      {/* Combined OBE Section - OBE Philosophy + OBE Inputs */}
+      <div id="obe" className="scroll-mt-32 mt-16">
+        <LazyLoadWrapper height="800px" delay={500}>
           <div className="bg-white p-12 rounded-2xl shadow-lg text-center mb-12">
             <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">OBE Philosophy</h4>
              <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
@@ -402,13 +386,12 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
             </div>
           </div>
         </LazyLoadWrapper>
+        
+        {/* OBE Inputs - Combined within the same section */}
+        <LazyLoadWrapper height="600px" delay={500}> 
+          <ObeInput />
+        </LazyLoadWrapper>
       </div>
-
- <div id="obe-inputs" className="scroll-mt-32">
- <LazyLoadWrapper height="400px" delay={500}> 
-    <ObeInput />
- </LazyLoadWrapper>
- </div>
       {/* New Centre of Excellence Section */}
       <div id="centres-of-excellence" className="scroll-mt-32">
         <LazyLoadWrapper height="400px" delay={500}>
@@ -469,6 +452,101 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
       </LazyLoadWrapper>
       </div>
 
+      {/* Research & Innovation Section */}
+      <div id="research-innovation" className="scroll-mt-32">
+        <LazyLoadWrapper height="300px" delay={500}>
+          <div className="bg-white p-12 rounded-2xl shadow-lg">
+            <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">Research & Innovation</h4>
+            <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
+            <p className="text-gray-600 text-center mb-8">
+              Explore cutting-edge research initiatives and innovative projects undertaken by our department.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
+                <h5 className="font-bold text-gray-900 mb-3">Research Projects</h5>
+                <p className="text-gray-600 text-sm">Ongoing research initiatives in emerging technologies.</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
+                <h5 className="font-bold text-gray-900 mb-3">Publications</h5>
+                <p className="text-gray-600 text-sm">Research papers and journals published by faculty.</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
+                <h5 className="font-bold text-gray-900 mb-3">Innovation Hub</h5>
+                <p className="text-gray-600 text-sm">Student-led innovation projects and startups.</p>
+              </div>
+            </div>
+          </div>
+        </LazyLoadWrapper>
+      </div>
+
+      {/* Placements Section */}
+      <div id="placements" className="scroll-mt-32">
+        <LazyLoadWrapper height="300px" delay={500}>
+          <div className="bg-white p-12 rounded-2xl shadow-lg">
+            <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">Placements</h4>
+            <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
+            <p className="text-gray-600 text-center mb-8">
+              Our students achieve excellent placement records with leading companies across industries.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center">
+                <div className="text-4xl font-bold text-yellow-600 mb-2">95%</div>
+                <p className="text-gray-600 text-sm">Placement Rate</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center">
+                <div className="text-4xl font-bold text-yellow-600 mb-2">200+</div>
+                <p className="text-gray-600 text-sm">Recruiters</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center">
+                <div className="text-4xl font-bold text-yellow-600 mb-2">12 LPA</div>
+                <p className="text-gray-600 text-sm">Highest Package</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center">
+                <div className="text-4xl font-bold text-yellow-600 mb-2">6 LPA</div>
+                <p className="text-gray-600 text-sm">Average Package</p>
+              </div>
+            </div>
+            
+            {/* View More Button */}
+            <div className="text-center mt-8">
+              <button 
+                onClick={() => navigate('/datatable/placements_tab')}
+                className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 mx-auto shadow-md"
+              >
+                <span>View All Placements</span>
+                <ArrowRight className="h-4 w-4" />
+              </button>
+            </div>
+          </div>
+        </LazyLoadWrapper>
+      </div>
+
+      {/* Events Organised Section */}
+      <div id="events-organised" className="scroll-mt-32">
+        <LazyLoadWrapper height="300px" delay={500}>
+          <div className="bg-white p-12 rounded-2xl shadow-lg">
+            <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">Events Organised</h4>
+            <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
+            <p className="text-gray-600 text-center mb-8">
+              Regular technical events, workshops, and seminars to enhance student learning.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
+                <h5 className="font-bold text-gray-900 mb-3">Technical Symposiums</h5>
+                <p className="text-gray-600 text-sm">Annual technical events featuring competitions and exhibitions.</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
+                <h5 className="font-bold text-gray-900 mb-3">Workshops & Seminars</h5>
+                <p className="text-gray-600 text-sm">Industry expert sessions and hands-on training programs.</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
+                <h5 className="font-bold text-gray-900 mb-3">Hackathons</h5>
+                <p className="text-gray-600 text-sm">Coding challenges and innovation competitions.</p>
+              </div>
+            </div>
+          </div>
+        </LazyLoadWrapper>
+      </div>
      
       {/* Specializations - Unchanged */}
       <LazyLoadWrapper height="150px" delay={500}>
