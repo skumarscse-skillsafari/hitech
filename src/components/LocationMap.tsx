@@ -135,25 +135,6 @@ const LocationMap: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick Actions */}
-            <div className="bg-yellow-50 p-6 rounded-2xl border border-yellow-200">
-              <h4 className="text-lg font-bold text-gray-900 mb-4">Quick Actions</h4>
-              <div className="grid grid-cols-2 gap-3">
-                <button className="bg-white hover:bg-yellow-100 text-gray-700 hover:text-yellow-700 py-3 px-4 rounded-lg font-medium transition-colors text-sm border border-gray-200 hover:border-yellow-300">
-                  Campus Tour
-                </button>
-                <button className="bg-white hover:bg-yellow-100 text-gray-700 hover:text-yellow-700 py-3 px-4 rounded-lg font-medium transition-colors text-sm border border-gray-200 hover:border-yellow-300">
-                  Download Map
-                </button>
-                <button className="bg-white hover:bg-yellow-100 text-gray-700 hover:text-yellow-700 py-3 px-4 rounded-lg font-medium transition-colors text-sm border border-gray-200 hover:border-yellow-300">
-                  Parking Info
-                </button>
-                <button className="bg-white hover:bg-yellow-100 text-gray-700 hover:text-yellow-700 py-3 px-4 rounded-lg font-medium transition-colors text-sm border border-gray-200 hover:border-yellow-300">
-                  Contact Us
-                </button>
-              </div>
-            </div>
-
           </div>
         </div>
 
