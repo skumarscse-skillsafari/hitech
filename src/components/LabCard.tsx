@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Users, ArrowRight } from 'lucide-react';
+import React from 'react';
+import { Users } from 'lucide-react';
 import ImageGallery from './ImageGallery';
-import cseLabs from '../data/labs/cseLabs.json';
 
 interface Image {
   url: string;
@@ -13,23 +12,22 @@ interface LabCardProps {
   description: string;
   keyFeatures: string[];
   studentCapacity: number;
+  images: Image[]; // Accept images directly
 }
 
-const LabCard: React.FC<LabCardProps> = ({
+const LabCard: React.FC<LabCardProps> = React.memo(({
   name,
   description,
   keyFeatures,
   studentCapacity,
+  images, // Use prop
 }) => {
-  const [images, setImages] = useState<Image[]>([]);
-
-  useEffect(() => {
-    const lab = cseLabs.subcategories.find(l => l.name === name);
-    setImages(lab?.images ?? []);
-  }, [name]);
+  // Removed redundant internal state and effect for fetching images
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+    <div 
+      className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+    >
       <div className="p-6 pb-4">
         <ImageGallery labName={name} images={images} />
       </div>
@@ -69,6 +67,6 @@ const LabCard: React.FC<LabCardProps> = ({
       </div>
     </div>
   );
-};
+});
 
 export default LabCard;
