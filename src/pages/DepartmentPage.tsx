@@ -44,18 +44,19 @@ const DepartmentPage: React.FC = () => {
   }, [departmentId]);
 
   const sections = [
-    { id: "about-department", label: "About the Department" },
-    { id: "department-vision-mission", label: "Vision and Mission" },
-    { id: "psos-peos-pos", label: "Outcomes (PEO/PSO)" },
-    { id: "programs-offered", label: "Programs Offered" },
-    { id: "obe-philosophy", label: "OBE Philosophy" },
-    { id: "obe-inputs", label: "OBE Inputs" },
-    { id: "centres-of-excellence", label: "Centres of Excellence" },
-    { id: "teaching", label: "Teaching Methodology" },
-    { id: "facilities", label: "Facilities" },
-    { id: "labs", label: "Laboratories" },
-    { id: "faculty", label: "Faculty Members" },
-    { id: "resources", label: "Resources" },
+    { id: 'about-department', label: 'About the Department' },
+    { id: 'department-vision-mission', label: 'Vision and Mission' },
+    { id: 'psos-peos-pos', label: 'Outcomes (PEO/PSO)' },
+    { id: 'obe', label: 'OBE Philosophy & Inputs' },
+    { id: 'centres-of-excellence', label: 'Centres of Excellence' },
+    { id: 'research-innovation', label: 'Research & Innovation' },
+    { id: 'placements', label: 'Placements' },
+    { id: 'events-organised', label: 'Events Organised' },
+    { id: 'teaching', label: 'Teaching Methodology' },
+    { id: 'facilities', label: 'Facilities' },
+    { id: 'labs', label: 'Laboratories' },
+    { id: 'faculty', label: 'Faculty Members' },
+    { id: 'resources', label: 'Resources' },
   ];
 
   return (

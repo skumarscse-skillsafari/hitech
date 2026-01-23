@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Menu, X, ChevronRight, Home, Target, BarChart2, BookOpen, Lightbulb, 
   Settings, Award, Users, GraduationCap, Building, FlaskConical, 
-  UserCheck, FolderOpen 
+  UserCheck, FolderOpen, Microscope, Briefcase, Calendar
 } from 'lucide-react';
 
 interface Section {
@@ -14,10 +14,11 @@ const sectionIcons: Record<string, React.ElementType> = {
   'about-department': Home,
   'department-vision-mission': Target,
   'psos-peos-pos': BarChart2,
-  'programs-offered': BookOpen,
-  'obe-philosophy': Lightbulb,
-  'obe-inputs': Settings,
+  'obe': Lightbulb,
   'centres-of-excellence': Award,
+  'research-innovation': Microscope,
+  'placements': Briefcase,
+  'events-organised': Calendar,
   'clubs': Users,
   'teaching': GraduationCap,
   'facilities': Building,
@@ -33,57 +34,82 @@ interface DepartmentSectionNavProps {
 const DepartmentSectionNav: React.FC<DepartmentSectionNavProps> = ({ sections }) => {
   const [activeSection, setActiveSection] = useState<string>('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // Scroll Spy Logic
-  const visibleSections = React.useRef<Map<string, IntersectionObserverEntry>>(new Map());
+  const scrollTimeout = React.useRef<number | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        // Update the map of visible sections
-        entries.forEach((entry) => {
-          visibleSections.current.set(entry.target.id, entry);
-        });
+    // Debounced scroll handler for better performance and accuracy
+    const handleScroll = () => {
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
 
-        // Find the "best" visible section
-        // Strategy: First, filter for intersecting elements. 
-        // Then sort by intersection ratio (ascending) or vertical position.
-        // The one with the highest ratio or fulfilling the criterion becomes active.
-        const visible = Array.from(visibleSections.current.values())
-          .filter(entry => entry.isIntersecting);
+      scrollTimeout.current = setTimeout(() => {
+        const scrollPosition = window.scrollY + 200; // Offset for better detection
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
 
-        if (visible.length > 0) {
-          // Sort by intersection ratio (descending) -> most visible section wins
-          // OR, if widely visible, maybe the one closest to the triggers?
-          // Simple "most visible" logic often works best for sections.
-          const bestCandidate = visible.reduce((prev, current) => {
-            return (prev.intersectionRatio > current.intersectionRatio) ? prev : current;
-          });
-          
-          setActiveSection(bestCandidate.target.id);
+        // Special case: if at the very top of the page
+        if (window.scrollY < 100) {
+          setActiveSection(sections[0]?.id || '');
+          return;
         }
-      },
-      {
-        rootMargin: '-10% 0px -70% 0px', // focused sensing zone near the top
-        threshold: [0, 0.25, 0.5, 0.75, 1] // Granular thresholds for better ratio data
-      }
-    );
 
-    sections.forEach(({ id }) => {
-      const element = document.getElementById(id);
-      if (element) {
-        observer.observe(element);
-      }
-    });
+        // Special case: if near the bottom of the page
+        if (window.scrollY + windowHeight >= documentHeight - 100) {
+          setActiveSection(sections[sections.length - 1]?.id || '');
+          return;
+        }
 
-    return () => observer.disconnect();
+        // Find the section that is currently in view
+        let currentSection = sections[0]?.id || '';
+        
+        for (const section of sections) {
+          const element = document.getElementById(section.id);
+          if (!element) continue;
+
+          const rect = element.getBoundingClientRect();
+          const elementTop = rect.top + window.scrollY;
+          const elementBottom = elementTop + rect.height;
+
+          // Check if the section is in the viewport (with some offset)
+          // A section is "active" if its top is above the scroll position + offset
+          if (elementTop <= scrollPosition) {
+            currentSection = section.id;
+          } else {
+            // We've gone past the current scroll position, stop here
+            break;
+          }
+        }
+
+        setActiveSection(currentSection);
+      }, 50); // 50ms debounce
+    };
+
+    // Initial call
+    handleScroll();
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+    };
   }, [sections]);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(id); // Optimistic update
+      // Calculate the position with offset for scroll-mt-32 (128px)
+      const yOffset = -150; // Slightly more than scroll-mt-32 for better visibility
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      
+      // Set active section immediately for better UX
+      setActiveSection(id);
       setIsMobileMenuOpen(false);
     }
   };
