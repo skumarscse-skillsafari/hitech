@@ -9,6 +9,7 @@ import {
   ArrowDown,
   ChevronRight as ExpandIcon,
   ChevronLeft as CollapseIcon,
+  X
 } from 'lucide-react';
 import { BookOpen, Newspaper } from "lucide-react";
 import { Link } from 'react-router-dom';
@@ -41,6 +42,7 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
   const [showSearch, setShowSearch] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState(selectedCategoryKey);
+  const [modalContent, setModalContent] = useState<{ title: string; content: string } | null>(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [sortConfig, setSortConfig] = useState<{ key: string; direction: 'ascending' | 'descending' } | null>(null);
   const navigate = useNavigate();
@@ -164,6 +166,9 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
     const col = columnName.toLowerCase();
     if (col.includes('sno')) return 'w-16';
     if (col.includes('date')) return 'w-24';
+    if (col.includes('justification')) return isMobile ? 'min-w-[250px]' : 'min-w-[400px]';
+    if (col.includes('problem') || col.includes('statement')) return isMobile ? 'min-w-[200px]' : 'min-w-[300px]';
+    if (col.includes('students') || col.includes('team')) return isMobile ? 'min-w-[180px]' : 'min-w-[250px]';
     if (col.includes('conference')) return isMobile ? 'min-w-[180px]' : isTablet ? 'min-w-[220px]' : 'min-w-[300px]';
     if (col.includes('indexed') || col.includes('journal'))
       return isMobile ? 'min-w-[120px]' : isTablet ? 'min-w-[150px]' : 'min-w-[200px]';
@@ -351,7 +356,21 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
                           key={colIndex}
                           className="px-3 sm:px-4 py-2 sm:py-3 text-center align-top break-words text-[11px] sm:text-xs md:text-sm text-gray-600"
                         >
-                          {Array.isArray(row[col])
+                          {col.toLowerCase() === 'justification' ? (
+                            <div className="text-left">
+                              <p className="line-clamp-4 sm:line-clamp-6 text-gray-600">
+                                {row[col]}
+                              </p>
+                              {row[col]?.length > 100 && (
+                                <button
+                                  onClick={() => setModalContent({ title: formatColumnName(col), content: row[col] })}
+                                  className="text-amber-600 hover:text-amber-700 font-semibold text-[10px] sm:text-xs mt-1 transition-colors underline inline-block"
+                                >
+                                  Read More
+                                </button>
+                              )}
+                            </div>
+                          ) : Array.isArray(row[col])
                             ? row[col].join(', ')
                             : typeof row[col] === 'object' && row[col] !== null
                             ? JSON.stringify(row[col])
@@ -483,6 +502,43 @@ const ReusableTable: React.FC<ReusableTableProps> = ({
     </span>
   </button>
 </div>
+
+      {/* Full Content Modal */}
+      {modalContent && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity duration-300">
+          <div 
+            className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[80vh] overflow-hidden flex flex-col transform transition-all scale-100 animate-in fade-in zoom-in duration-200"
+          >
+            {/* Modal Header */}
+            <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between bg-amber-50">
+              <h3 className="text-xl font-bold text-gray-800 tracking-tight">{modalContent.title}</h3>
+              <button
+                onClick={() => setModalContent(null)}
+                className="p-2 rounded-full hover:bg-white text-gray-500 hover:text-red-500 transition-all duration-200"
+              >
+                <X size={20} />
+              </button>
+            </div>
+            
+            {/* Modal Body */}
+            <div className="p-6 overflow-y-auto custom-scrollbar">
+              <p className="text-gray-700 leading-relaxed text-base whitespace-pre-line">
+                {modalContent.content}
+              </p>
+            </div>
+            
+            {/* Modal Footer */}
+            <div className="px-6 py-4 border-t border-gray-100 flex justify-end bg-gray-50">
+              <button
+                onClick={() => setModalContent(null)}
+                className="px-6 py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
     </>
   );
