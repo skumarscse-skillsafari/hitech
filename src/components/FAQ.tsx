@@ -141,7 +141,7 @@ const FAQ: React.FC = () => {
   );
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="bg-white ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -168,40 +168,7 @@ const FAQ: React.FC = () => {
           {renderFAQColumn(rightColumnFAQs)}
         </div>
 
-        {/* Contact for More Questions */}
-        <div className="mt-16 bg-yellow-50 p-8 rounded-2xl border border-yellow-200 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Still have questions?
-          </h3>
-          <p className="text-gray-700 mb-6 text-lg">
-            Our admissions team is here to help you with any additional questions you may have.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                 onClick={() => {
-                 const section = document.getElementById('contact');
-                 if (section) {
-                 section.scrollIntoView({ behavior: 'smooth' });
-                 }
-                  }}
-                className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
-                >
-                Contact Admissions
-              </button>
-          
 
-            <button
-            onClick={() => {
-                 const section = document.getElementById('contact');
-                 if (section) {
-                 section.scrollIntoView({ behavior: 'smooth' });
-                 }
-                  }}
-                   className="border-2 border-yellow-500 text-yellow-700 hover:bg-yellow-500 hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300">
-              Schedule a Campus Visit
-            </button>
-          </div>
-        </div>
 
       </div>
     </section>
