@@ -35,6 +35,7 @@ import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
 import CseLatestEvents from './pages/CseLatestEvents';
 import ControllerOfExaminationsPage from './pages/ControllerOfExaminationsPage';
+import ResearchInnovationPage from './pages/ResearchInnovationPage';
 
 const news = newsEventsData.news;
 const events = newsEventsData.events;
@@ -104,6 +105,7 @@ function App() {
                 <Route path="/calendar-details/:semester" element={<CalendarDetails />} />
                 <Route path="/latest-event" element={<CseLatestEvents />} />
                 <Route path="/coe" element={<ControllerOfExaminationsPage />} />
+                <Route path="/research-innovation" element={<ResearchInnovationPage />} />
               </Routes>
             </main>
               <Footer
