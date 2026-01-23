@@ -10,7 +10,7 @@ const GalleryPage: React.FC = () => {
 
   return (
     <PageLayout
-  title="Gallery - Hindusthan Institute of Technology"
+  title="Hindusthan Institute of Technology"
   description="Explore our beautiful campus, modern facilities, and vibrant student life through our photo gallery."
   className="pt-[92px] min-h-screen bg-white"
   showScrollToTop={false}
