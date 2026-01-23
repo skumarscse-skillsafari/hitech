@@ -9,7 +9,6 @@ import Gallery from '../pages/GalleryPage';
 import Placements from '../components/Placements';
 import FacultyCarousel from '../components/FacultyCarousel';
 import NewsEventsSection from '../components/NewsEventsSection';
-import Admissions from '../components/Admissions';
 import FAQ from '../components/FAQ';
 import LocationMap from '../components/LocationMap';
 import Contact from '../components/Contact';
@@ -149,9 +148,6 @@ const HomePage: React.FC = () => {
         <Placements placements={collegeData.placements} />
       </SectionWrapper>
 
-      <SectionWrapper lazy lazyHeight="500px" lazyDelay={500}>
-        <Admissions admissions={collegeData.admissions} />
-      </SectionWrapper>
 
       <SectionWrapper lazy lazyHeight="600px" lazyDelay={700}>
         <FAQ />
