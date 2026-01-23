@@ -5,6 +5,7 @@ import LazyLoadWrapper from './LazyLoadWrapper';
 import DepartmentOutcomes from '../components/DepartmentOutcomes';
 import SectionWrapper from './layout/SectionWrapper';
 import ObeInput from '../pages/ObeInputs';
+import ResearchInnovationCarousel from './ResearchInnovationCarousel';
 
 interface Department {
   id: string;
@@ -452,30 +453,10 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
       </LazyLoadWrapper>
       </div>
 
-      {/* Research & Innovation Section */}
+      {/* Research & Innovation Section with Auto-Transitioning Carousel */}
       <div id="research-innovation" className="scroll-mt-32">
-        <LazyLoadWrapper height="300px" delay={500}>
-          <div className="bg-white p-12 rounded-2xl shadow-lg">
-            <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">Research & Innovation</h4>
-            <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
-            <p className="text-gray-600 text-center mb-8">
-              Explore cutting-edge research initiatives and innovative projects undertaken by our department.
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
-                <h5 className="font-bold text-gray-900 mb-3">Research Projects</h5>
-                <p className="text-gray-600 text-sm">Ongoing research initiatives in emerging technologies.</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
-                <h5 className="font-bold text-gray-900 mb-3">Publications</h5>
-                <p className="text-gray-600 text-sm">Research papers and journals published by faculty.</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
-                <h5 className="font-bold text-gray-900 mb-3">Innovation Hub</h5>
-                <p className="text-gray-600 text-sm">Student-led innovation projects and startups.</p>
-              </div>
-            </div>
-          </div>
+        <LazyLoadWrapper height="600px" delay={500}>
+          <ResearchInnovationCarousel navigate={navigate} />
         </LazyLoadWrapper>
       </div>
 
