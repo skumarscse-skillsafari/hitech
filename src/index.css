@@ -18,6 +18,25 @@
     display: flex;
   }
 
+  /* Horizontal scrolling animation for research cards */
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll-horizontal {
+    animation: scroll-horizontal 40s linear infinite;
+    display: flex;
+  }
+
+  .animate-scroll-horizontal:hover {
+    animation-play-state: paused;
+  }
+
   /* Smooth transitions */
   .smooth-transition {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
