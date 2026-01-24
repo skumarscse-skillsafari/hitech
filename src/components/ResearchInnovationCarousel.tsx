@@ -81,24 +81,38 @@ const ResearchInnovationCarousel: React.FC<ResearchInnovationCarouselProps> = ({
               {/* Yellow divider */}
               <div className="w-20 h-1.5 bg-yellow-400 rounded-full mb-5"></div>
 
-              {/* Team Members */}
-              {item.authors && (
+              {/* Team Members / Authors */}
+              {(item as any).authors && (
                 <div className="mb-5">
                   <p className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-3">
-                    Team Members
+                    {Array.isArray((item as any).authors) ? 'Team Members' : 'Authors'}
                   </p>
-                  <div className="text-base text-gray-700 space-y-2">
-                    {item.authors.map((author: string, idx: number) => (
-                      <p key={idx} className="line-clamp-1">{author}</p>
-                    ))}
-                  </div>
+                  {Array.isArray((item as any).authors) ? (
+                    <div className="text-base text-gray-700 space-y-2">
+                      {(item as any).authors.map((author: string, idx: number) => (
+                        <p key={idx} className="line-clamp-1">{author}</p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-base text-gray-700 line-clamp-2">{(item as any).authors}</p>
+                  )}
+                </div>
+              )}
+
+              {/* Faculty Name (for Seed Money/Patent items) */}
+              {(item as any).facultyName && (
+                <div className="mb-5">
+                  <p className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-3">
+                    Faculty
+                  </p>
+                  <p className="text-base text-gray-700">{(item as any).facultyName}</p>
                 </div>
               )}
 
               {/* Description */}
-              {item.description && (
+              {(item as any).description && (
                 <p className="text-base text-gray-600 leading-relaxed mb-5 line-clamp-4">
-                  {item.description}
+                  {(item as any).description}
                 </p>
               )}
 
