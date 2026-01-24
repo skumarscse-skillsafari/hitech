@@ -51,6 +51,7 @@ const DepartmentPage: React.FC = () => {
     { id: 'centres-of-excellence', label: 'Centres of Excellence' },
     { id: 'research-innovation', label: 'Research & Innovation' },
     { id: 'placements', label: 'Placements' },
+    { id: 'industry', label: 'Industry Oriented Training' },
     { id: 'events-organised', label: 'Events Organised' },
     { id: 'teaching', label: 'Teaching Methodology' },
     { id: 'facilities', label: 'Facilities' },
