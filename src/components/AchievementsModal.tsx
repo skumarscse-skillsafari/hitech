@@ -310,8 +310,8 @@ const AchievementsModal: React.FC<AchievementsModalProps> = ({ isOpen, onClose, 
               </p>
             </div>
 
-            {/* Team Members - Readable Table - Hidden for StartupTN Achievement */}
-            {!currentAchievement.title.includes('StartupTN') && (
+            {/* Team Members - Readable Table - Hidden for StartupTN and Malaysia Conference */}
+            {!currentAchievement.title.includes('StartupTN') && !currentAchievement.title.includes('Malaysia') && (
               <div className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
                 <div className="bg-gradient-to-r from-blue-500 to-indigo-600 px-3 py-2 flex items-center gap-2">
                   <FontAwesomeIcon icon={faUsers} className="w-4 h-4 text-white" />
