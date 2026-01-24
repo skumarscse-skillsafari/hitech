@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Menu, X, ChevronRight, Home, Target, BarChart2, BookOpen, Lightbulb, 
-  Settings, Award, Users, GraduationCap, Building, FlaskConical, 
+  Settings, Award, Users, GraduationCap, Building,Factory, FlaskConical, 
   UserCheck, FolderOpen, Microscope, Briefcase, Calendar
 } from 'lucide-react';
 
@@ -18,6 +18,7 @@ const sectionIcons: Record<string, React.ElementType> = {
   'centres-of-excellence': Award,
   'research-innovation': Microscope,
   'placements': Briefcase,
+  'industry': Factory,
   'events-organised': Calendar,
   'clubs': Users,
   'teaching': GraduationCap,
