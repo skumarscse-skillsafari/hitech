@@ -35,6 +35,11 @@ import newsTickerData from './data/newsTickerData.json';
 import contactData from './data/contactData.json';
 import CseLatestEvents from './pages/CseLatestEvents';
 import ControllerOfExaminationsPage from './pages/ControllerOfExaminationsPage';
+import RecruitersPage from './pages/RecruitersPage';
+import TrainingDetailsPage from './pages/TrainingDetailsPage';
+import PlacementDetailsPage from './pages/PlacementDetailsPage';
+import TrainingSyllabusPage from './pages/TrainingSyllabusPage';
+import CseSpecializedTraining from './pages/CseSpecializedTraining';
 import ResearchInnovationPage from './pages/ResearchInnovationPage';
 
 const news = newsEventsData.news;
@@ -94,9 +99,11 @@ function App() {
                 <Route path="/events" element={<EventsCards events={events} />} />
                 <Route path="/innovation/innovationpolicy" element={<InnovationPolicy />} />
                 <Route path="/gallery" element={<Gallery />} />
-
-
-
+                <Route path="/recruiters" element={<RecruitersPage />} />
+                <Route path="/training-details" element={<TrainingDetailsPage />} />
+                <Route path="/cse-specialized-training" element={<CseSpecializedTraining />} />
+                <Route path="/placement-details" element={<PlacementDetailsPage />} />
+                <Route path="/training-syllabus" element={<TrainingSyllabusPage />} />
 
                 <Route path="/contactus" element={<ContactPage/>}/>
 
