@@ -310,6 +310,9 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [autoScroll, setAutoScroll] = useState(true);
   
+  // Industry carousel state
+  const industryCarouselRef = useRef<HTMLDivElement>(null);
+  
   // Handle automatic scrolling
   useEffect(() => {
     if (!autoScroll) return;
@@ -1095,6 +1098,625 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                 </div>
               </div>
             )}
+          </div>
+        </LazyLoadWrapper>
+      </div>
+
+      {/* Industry Oriented Training Section */}
+      <div id="industry" className="scroll-mt-32">
+        <LazyLoadWrapper height="400px" delay={500}>
+          <div className="bg-white p-12 rounded-2xl shadow-lg overflow-hidden">
+            <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">Industry Oriented Training</h4>
+            <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
+            <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+              Collaborations with leading tech companies to provide industry-relevant training and certifications to our students.
+            </p>
+            
+            {/* Scrolling Programs Carousel */}
+            <div className="relative">
+              {/* Left Scroll Button */}
+              <button
+                onClick={() => {
+                  const container = industryCarouselRef.current;
+                  if (container) {
+                    // Temporarily pause animation
+                    container.style.animationPlayState = 'paused';
+                    
+                    // Get current scroll position and move left
+                    container.scrollBy({ left: -400, behavior: 'smooth' });
+                    
+                    // Resume animation after a delay
+                    setTimeout(() => {
+                      if (container) {
+                        container.style.animationPlayState = 'running';
+                      }
+                    }, 2000);
+                  }
+                }}
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110"
+                aria-label="Scroll left"
+              >
+                <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              {/* Right Scroll Button */}
+              <button
+                onClick={() => {
+                  const container = industryCarouselRef.current;
+                  if (container) {
+                    // Temporarily pause animation
+                    container.style.animationPlayState = 'paused';
+                    
+                    // Get current scroll position and move right
+                    container.scrollBy({ left: 400, behavior: 'smooth' });
+                    
+                    // Resume animation after a delay
+                    setTimeout(() => {
+                      if (container) {
+                        container.style.animationPlayState = 'running';
+                      }
+                    }, 2000);
+                  }
+                }}
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110"
+                aria-label="Scroll right"
+              >
+                <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              <div className="overflow-hidden">
+                <div 
+                  ref={industryCarouselRef}
+                  className="flex animate-scroll-left gap-6 mb-8 overflow-x-auto scrollbar-hide"
+                  style={{ scrollBehavior: 'smooth' }}
+                  onMouseEnter={() => {
+                    const element = industryCarouselRef.current;
+                    if (element) {
+                      element.style.animationPlayState = 'paused';
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    const element = industryCarouselRef.current;
+                    if (element) {
+                      element.style.animationPlayState = 'running';
+                    }
+                  }}
+                >
+                  {/* Capgemini Women Empowerment */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-blue-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Capgemini" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                          <span className="text-gray-400 font-bold">+</span>
+                          <img 
+                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="ICT Academy" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                        </div>
+                        <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">2024</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/Women empowerment.jpg" 
+                        alt="Women Empowerment Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini Women Empowerment Program</h5>
+                      <div className="border-b-2 border-blue-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Program Details</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          Data Science and Big Data Analytics certificate course organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Target Audience</p>
+                        <p className="text-gray-700 text-sm">Final Year Women Students (CSE, ECE, IT)</p>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Partners:</strong> ICT Academy & Capgemini
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Capgemini Women Transformation */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Capgemini" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                          <span className="text-gray-400 font-bold">+</span>
+                          <img 
+                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="ICT Academy" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                        </div>
+                        <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">2023</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/women transformation.jpg" 
+                        alt="Women Transformation Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3">Capgemini Women Transformation Program</h5>
+                      <div className="border-b-2 border-purple-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Program Focus</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          Career transformation program designed to empower women students with leadership skills, technical expertise, and professional development opportunities.
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Key Benefits</p>
+                        <ul className="text-gray-700 text-sm space-y-1">
+                          <li>• Leadership Development</li>
+                          <li>• Career Mentorship</li>
+                          <li>• Industry Exposure</li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Partners:</strong> Capgemini & ICT Academy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Microsoft Cybersecurity */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-green-50 to-teal-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-green-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src="https://img.logo.dev/microsoft.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Microsoft" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                          <span className="text-gray-400 font-bold">+</span>
+                          <img 
+                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="ICT Academy" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                        </div>
+                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">2022-23</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/microsoft cybersecurty.jpg" 
+                        alt="Cyber Shiksha Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Microsoft Cybersecurity - Cyber Shiksha</h5>
+                      <div className="border-b-2 border-green-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-green-600 uppercase mb-2">Program Overview</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          "Cyber Shiksha for Educators and Students" - A CSR Initiative of Microsoft Philanthropy implemented by ICT Academy from 23.07.22 to 04.02.23.
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-green-600 uppercase mb-2">Focus Areas</p>
+                        <ul className="text-gray-700 text-sm space-y-1">
+                          <li>• Cybersecurity Fundamentals</li>
+                          <li>• Ethical Hacking</li>
+                          <li>• Network Security</li>
+                          <li>• Digital Safety</li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Initiative:</strong> Microsoft Philanthropy & ICT Academy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Capgemini Data Science */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-orange-50 to-red-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-orange-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Capgemini" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                          <span className="text-gray-400 font-bold">+</span>
+                          <img 
+                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="ICT Academy" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                        </div>
+                        <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">420 Hrs</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/capgemini.jpg" 
+                        alt="Data Science Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3">Capgemini Data Science & Big Data Analytics</h5>
+                      <div className="border-b-2 border-orange-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-orange-600 uppercase mb-2">Program Features</p>
+                        <ul className="text-gray-700 text-sm space-y-1">
+                          <li>• 420 Hours Intensive Training</li>
+                          <li>• Technology Skills: 350 Hours</li>
+                          <li>• Soft Skills: 70 Hours</li>
+                          <li>• Activity-based & Hands-on Training</li>
+                          <li>• Joint Certification by Capgemini & ICT Academy</li>
+                        </ul>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-orange-600 uppercase mb-2">Key Highlights</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          Trains 51 students in advanced technology. Curriculum mapped to Global Industry Standards. Fully sponsored by Capgemini and offered free of cost to women students.
+                        </p>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Certification:</strong> Capgemini & ICT Academy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* IBM Naalaiya Thiran */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-cyan-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <img 
+                          src="https://img.logo.dev/ibm.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                          alt="IBM" 
+                          className="h-12 w-auto object-contain" 
+                        />
+                        <span className="bg-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold">HX 8001</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/ibm.jpg" 
+                        alt="Naalaiya Thiran Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">IBM Naalaiya Thiran - Professional Readiness</h5>
+                      <div className="border-b-2 border-cyan-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Course Code: HX 8001</p>
+                        <p className="text-gray-700 text-sm font-semibold mb-2">
+                          Professional Readiness for Innovation, Employability and Entrepreneurship
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Project Details</p>
+                        <p className="text-gray-700 text-sm">
+                          <strong>Project Title:</strong> Crude Oil Price Prediction<br />
+                          <strong>Team ID:</strong> PNT2022TMID10413
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Focus Areas</p>
+                        <ul className="text-gray-700 text-sm space-y-1">
+                          <li>• Innovation & Creativity</li>
+                          <li>• Employability Skills</li>
+                          <li>• Entrepreneurship Development</li>
+                          <li>• Professional Development</li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Program:</strong> Naalaiya Thiran by IBM
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Duplicate cards for seamless loop */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-blue-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Capgemini" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                          <span className="text-gray-400 font-bold">+</span>
+                          <img 
+                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="ICT Academy" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                        </div>
+                        <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">2024</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/Women empowerment.jpg" 
+                        alt="Women Empowerment Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini Women Empowerment Program</h5>
+                      <div className="border-b-2 border-blue-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Program Details</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          Data Science and Big Data Analytics certificate course organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Target Audience</p>
+                        <p className="text-gray-700 text-sm">Final Year Women Students (CSE, ECE, IT)</p>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Partners:</strong> ICT Academy & Capgemini
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Capgemini" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                          <span className="text-gray-400 font-bold">+</span>
+                          <img 
+                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="ICT Academy" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                        </div>
+                        <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">2023</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/women transformation.jpg" 
+                        alt="Women Transformation Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3">Capgemini Women Transformation Program</h5>
+                      <div className="border-b-2 border-purple-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Program Focus</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          Career transformation program designed to empower women students with leadership skills, technical expertise, and professional development opportunities.
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Key Benefits</p>
+                        <ul className="text-gray-700 text-sm space-y-1">
+                          <li>• Leadership Development</li>
+                          <li>• Career Mentorship</li>
+                          <li>• Industry Exposure</li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Partners:</strong> Capgemini & ICT Academy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Microsoft Cybersecurity - Duplicate */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-green-50 to-teal-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-green-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src="https://img.logo.dev/microsoft.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Microsoft" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                          <span className="text-gray-400 font-bold">+</span>
+                          <img 
+                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="ICT Academy" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                        </div>
+                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">2022-23</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/microsoft cybersecurty.jpg" 
+                        alt="Cyber Shiksha Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Microsoft Cybersecurity - Cyber Shiksha</h5>
+                      <div className="border-b-2 border-green-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-green-600 uppercase mb-2">Program Overview</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          "Cyber Shiksha for Educators and Students" - A CSR Initiative of Microsoft Philanthropy implemented by ICT Academy from 23.07.22 to 04.02.23.
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-green-600 uppercase mb-2">Focus Areas</p>
+                        <ul className="text-gray-700 text-sm space-y-1">
+                          <li>• Cybersecurity Fundamentals</li>
+                          <li>• Ethical Hacking</li>
+                          <li>• Network Security</li>
+                          <li>• Digital Safety</li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Initiative:</strong> Microsoft Philanthropy & ICT Academy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Capgemini Data Science - Duplicate */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-orange-50 to-red-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-orange-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Capgemini" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                          <span className="text-gray-400 font-bold">+</span>
+                          <img 
+                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="ICT Academy" 
+                            className="h-10 w-auto object-contain" 
+                          />
+                        </div>
+                        <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">420 Hrs</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/capgemini.jpg" 
+                        alt="Data Science Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3">Capgemini Data Science & Big Data Analytics</h5>
+                      <div className="border-b-2 border-orange-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-orange-600 uppercase mb-2">Program Features</p>
+                        <ul className="text-gray-700 text-sm space-y-1">
+                          <li>• 420 Hours Intensive Training</li>
+                          <li>• Technology Skills: 350 Hours</li>
+                          <li>• Soft Skills: 70 Hours</li>
+                          <li>• Activity-based & Hands-on Training</li>
+                          <li>• Joint Certification by Capgemini & ICT Academy</li>
+                        </ul>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-orange-600 uppercase mb-2">Key Highlights</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          Trains 51 students in advanced technology. Curriculum mapped to Global Industry Standards. Fully sponsored by Capgemini and offered free of cost to women students.
+                        </p>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Certification:</strong> Capgemini & ICT Academy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* IBM Naalaiya Thiran - Duplicate */}
+                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-cyan-500">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <img 
+                          src="https://img.logo.dev/ibm.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                          alt="IBM" 
+                          className="h-12 w-auto object-contain" 
+                        />
+                        <span className="bg-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold">HX 8001</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/ibm.jpg" 
+                        alt="Naalaiya Thiran Program" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">IBM Naalaiya Thiran - Professional Readiness</h5>
+                      <div className="border-b-2 border-cyan-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Course Code: HX 8001</p>
+                        <p className="text-gray-700 text-sm font-semibold mb-2">
+                          Professional Readiness for Innovation, Employability and Entrepreneurship
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Project Details</p>
+                        <p className="text-gray-700 text-sm">
+                          <strong>Project Title:</strong> Crude Oil Price Prediction<br />
+                          <strong>Team ID:</strong> PNT2022TMID10413
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Focus Areas</p>
+                        <ul className="text-gray-700 text-sm space-y-1">
+                          <li>• Innovation & Creativity</li>
+                          <li>• Employability Skills</li>
+                          <li>• Entrepreneurship Development</li>
+                          <li>• Professional Development</li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-xs text-gray-600">
+                          <strong>Program:</strong> Naalaiya Thiran by IBM
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </LazyLoadWrapper>
       </div>
