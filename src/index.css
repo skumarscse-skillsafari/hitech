@@ -37,6 +37,25 @@
     animation-play-state: paused;
   }
 
+  /* Left scrolling animation for industry training cards */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll-left {
+    animation: scroll-left 25s linear infinite;
+    display: flex;
+  }
+
+  .pause-animation:hover {
+    animation-play-state: paused;
+  }
+
   /* Smooth transitions */
   .smooth-transition {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
