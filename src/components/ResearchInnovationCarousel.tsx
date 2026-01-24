@@ -35,7 +35,18 @@ const ResearchInnovationCarousel: React.FC<ResearchInnovationCarouselProps> = ({
   };
 
   const currentCategory = researchData.tabs[currentCategoryIndex];
-  const items = currentCategory.content.items.slice(0, 2); // Show only first 2 items
+  
+  // Handle different data structures - some tabs have direct items, others have nested categories
+  let items: any[] = [];
+  if (currentCategory.content.items && Array.isArray(currentCategory.content.items)) {
+    items = currentCategory.content.items.slice(0, 2); // Show only first 2 items
+  } else if (currentCategory.content.categories && Array.isArray(currentCategory.content.categories)) {
+    // For tabs with categories (like publication), get items from first category
+    const firstCategory = currentCategory.content.categories[0];
+    if (firstCategory?.items && Array.isArray(firstCategory.items)) {
+      items = firstCategory.items.slice(0, 2);
+    }
+  }
 
   return (
     <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 sm:p-12 border-2 border-yellow-200">
@@ -63,12 +74,13 @@ const ResearchInnovationCarousel: React.FC<ResearchInnovationCarouselProps> = ({
 
       {/* Cards Grid - Show 2 larger items */}
       <div className="relative min-h-[500px] mb-8">
-        <div 
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-8 transition-all duration-500 ${
-            isTransitioning ? 'opacity-0 transform scale-95' : 'opacity-100 transform scale-100'
-          }`}
-        >
-          {items.map((item, index) => (
+        {items.length > 0 ? (
+          <div 
+            className={`grid grid-cols-1 lg:grid-cols-2 gap-8 transition-all duration-500 ${
+              isTransitioning ? 'opacity-0 transform scale-95' : 'opacity-100 transform scale-100'
+            }`}
+          >
+            {items.map((item, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
@@ -170,6 +182,11 @@ const ResearchInnovationCarousel: React.FC<ResearchInnovationCarouselProps> = ({
             </div>
           ))}
         </div>
+        ) : (
+          <div className="flex items-center justify-center h-full">
+            <p className="text-gray-500 text-lg">No items available for this category</p>
+          </div>
+        )}
       </div>
 
       {/* Progress Indicators */}
