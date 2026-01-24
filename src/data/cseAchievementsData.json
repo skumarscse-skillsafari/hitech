@@ -165,6 +165,43 @@
           "batch": "2024-2025"
         }
       ]
+    },
+    {
+      "teamId": 4,
+      "teamName": "International Conference Malaysia 2023",
+      "award": "Conference Participation",
+      "achievements": [
+        {
+          "id": 10,
+          "title": "International Conference on Transforming Engineering Systems for Sustainability 2023 - Malaysia",
+          "image": "/images-achievements/Malasiya(1).jpg"
+        },
+        {
+          "id": 11,
+          "title": "International Conference on Transforming Engineering Systems for Sustainability 2023 - Presentation",
+          "image": "/images-achievements/Malasiya(2).jpg"
+        },
+        {
+          "id": 12,
+          "title": "International Conference on Transforming Engineering Systems for Sustainability 2023 - Team Photo",
+          "image": "/images-achievements/Malasiya(3).jpg"
+        },
+        {
+          "id": 13,
+          "title": "International Conference on Transforming Engineering Systems for Sustainability 2023 - Group",
+          "image": "/images-achievements/Malasiya(4).jpg"
+        }
+      ],
+      "problemStatement": "Participated in the International Conference on Transforming Engineering Systems for Sustainability held in Malaysia, 2023. The conference focused on innovative engineering solutions for sustainable development and environmental conservation.",
+      "teamMembers": [
+        {
+          "name": "Faculty Representatives",
+          "rollNo": "-",
+          "year": "-",
+          "semester": "-",
+          "batch": "2023"
+        }
+      ]
     }
   ]
 }
