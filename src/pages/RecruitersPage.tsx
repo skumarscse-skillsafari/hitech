@@ -121,7 +121,7 @@ const RecruitersPage: React.FC = () => {
             </button>
           </div>
           <div className="text-center mb-10">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Our Recruiters</h1>
+            <h1 className="text-4.2xl sm:text-5xl font-bold text-gray-900 mb-4">Our Recruiters</h1>
             <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-2 mb-4"></div>
             <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
               We are partnered with leading companies across IT, core engineering, finance and emerging tech
