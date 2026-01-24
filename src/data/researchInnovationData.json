@@ -1,0 +1,1084 @@
+{
+  "tabs": [
+    {
+      "id": "seed-money",
+      "name": "Seed Money Project",
+      "icon": "DollarSign",
+      "content": {
+        "title": "Institution Seed Money or Internal Research Grant to its Faculty for Research Work",
+        "items": [
+          {
+            "serialNo": "1",
+            "facultyName": "Dr. Jayasutha.D",
+            "title": "Monitoring the Progress of Labour from Remote area using Medical IoT",
+            "duration": "One year",
+            "amount": "1,90,000",
+            "amountUtilized": "1,90,000",
+            "outcomes": "1. This system enables timely medical interventions, early detection of complications, and effective remote consultation, reducing maternal and infant mortality rates. 2. The project demonstrates the feasibility and effectiveness of integrating IoT technology into rural healthcare infrastructure, bridging the gap between remote patients and expert medical care",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": "2",
+            "facultyName": "Dr. Senthilkumar.R",
+            "title": "Robotic Companies in Healthcare: Investigate the Role of Humanoid Robots in Augmenting Patient Well Being",
+            "duration": "One year",
+            "amount": "1,75,000",
+            "amountUtilized": "1,75,000",
+            "outcomes": "1. A humanoid robot used in healthcare has enhanced a patient well-being by assisting in rehabilitation, elderly care, and mental health support. 2. The investigation underscores the growing acceptance and integration of humanoid robots in hospitals and home care, demonstrating their potential to complement human caregivers and transform the delivery of patient-centered care",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": "1",
+            "facultyName": "Dr. Ramasamy.S",
+            "title": "Premature finding and analysis of multi disease from healthcare big data in cloud environment exhausting amalgam deep learning technique",
+            "duration": "One Year",
+            "amount": "1,00,000",
+            "amountUtilized": "1,00,000",
+            "outcomes": "1. Analyzed a multi disease from the healthcare big data and produced the accurate result in heart disease. 2. The approach not only reduces diagnosis time but also supports healthcare professionals with actionable insights, contributing to timely interventions and improved patient outcomes across diverse medical conditions.",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": "2",
+            "facultyName": "Mrs. Banupriya.M, & Mrs. Rajaprabha.C.E",
+            "title": "IoT Based Smart Crop Protection System for Agriculture",
+            "duration": "One Year",
+            "amount": "1,90,000",
+            "amountUtilized": "1,90,000",
+            "outcomes": "1. Analyzed a IoT-based smart crop protection system enhances agricultural productivity by enabling real-time pest detection and watering. 2. The system's remote accessibility and scalability make it especially beneficial for small and medium-scale farmers, promoting smarter farming practices and ensuring healthier crop yields.",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": "3",
+            "facultyName": "Mrs. Vidhya.D",
+            "title": "AI based localization and classification of skin disease with erythema",
+            "duration": "One Year",
+            "amount": "1,85,000",
+            "amountUtilized": "1,85,000",
+            "outcomes": "Monitored an AI-based system for localization and classification of skin diseases with erythrocyte improves early detection and diagnosis",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": "4",
+            "facultyName": "Mrs. Gnanakumari.R, & Mrs. Saranya.S",
+            "title": "Stroke Disease Prediction using Deep learning model CNN and Bidirectional LSTM",
+            "duration": "One Year",
+            "amount": "1,50,000",
+            "amountUtilized": "1,50,000",
+            "outcomes": "1. How a deep learning model using CNN and Bi-directional LSTM enhances stroke prediction by extracting spatial and temporal features for accurate risk assessment. 2. This deep learning-based approach enables timely stroke risk assessment, facilitating early intervention and potentially reducing stroke-related mortality and long-term disability.",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": "5",
+            "facultyName": "Mr. Murugan.K",
+            "title": "IoT Empowered Automated Solar Grass Cutter",
+            "duration": "One Year",
+            "amount": "1,50,000",
+            "amountUtilized": "1,50,000",
+            "outcomes": "1. Analyze how an IoT-empowered automated solar grass cutter enhances lawn maintenance by enabling remote monitoring, autonomous operation, and energy-efficient grass cutting. 2. Powered by solar energy, the system ensures sustainable operation without dependency on external power sources.",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": "1",
+            "facultyName": "Senthilkumar.R",
+            "title": "Intelligence Support System for Diagnosis of Covid-19 and captioning of X-ray images using LSTM and RNN with explain-ability",
+            "duration": "One Year",
+            "amount": "1,40,000",
+            "amountUtilized": "1,40,000",
+            "outcomes": "1. An intelligent support system using LSTM and RNN enhances COVID-19 diagnosis by accurately analyzing and captioning X-ray images with explainability. 2. The model achieved high precision, recall, and F1 score in detecting Covid-19 from X-ray images, validating its potential use as a diagnostic support tool for radiologists and healthcare professionals.",
+            "year": "2021-22"
+          },
+          {
+            "serialNo": "2",
+            "facultyName": "Mr. Arun.R",
+            "title": "Brain Tumour Detection Using DCNN and its Applications using FPGA implementations",
+            "duration": "One Year",
+            "amount": "1,98,000",
+            "amountUtilized": "1,98,000",
+            "outcomes": "1. How a brain tumor detection system using DCNN and FPGA improves diagnostic accuracy by enabling real-time, high-speed image processing with low power consumption. 2. The DCNN model achieved high classification accuracy in detecting and localizing brain tumours from MRI scans, demonstrating its effectiveness in medical image analysis.",
+            "year": "2021-22"
+          },
+          {
+            "serialNo": "3",
+            "facultyName": "Subhalakshmi.R.T",
+            "title": "Automatic Segmentation and Classification of Covi-19 CT images using dual branch combination network (DCN)",
+            "duration": "One Year",
+            "amount": "1,95,000",
+            "amountUtilized": "1,95,000",
+            "outcomes": "1. Analyzed how an automatic segmentation and classification system using a Dual Branch Combination Network (DCN) enhances COVID-19 CT image analysis by improving accuracy in lesion detection and classification. 2. The segmentation branch of the network precisely highlighted infection areas in the lungs, helping radiologists to visualize and assess the severity of Covid-19 involvement.",
+            "year": "2021-22"
+          }
+        ]
+      }
+    },
+    {
+      "id": "active-projects",
+      "name": "Active Ongoing Project",
+      "icon": "Clock",
+      "content": {
+        "title": "Active Ongoing Projects",
+        "items": [
+          {
+            "title": "Design and development of smart assistive device with integration of hybrid blockchain and augmented reality",
+            "authors": [
+              "Dr.A.JameerBasha, Professor & Head",
+              "Dr.S.Lokesh, ASP/CSE",
+              "Ms.P.Jeevitha, AP/CSE"
+            ],
+            "fundingAgency": "AICTE - Research Promotion Scheme",
+            "funding": "Rs.9,48,614",
+            "duration": "3 Years (Ongoing)",
+            "status": "Active",
+            "description": "Smart assistive device to shape the future mobile healthcare system for post covid challenges and diagnosis system."
+          },
+          {
+            "title": "Scheme for Promoting Interests, Creativity and Ethics among Students (SPICES)",
+            "authors": [
+              "Dr.A.JameerBasha, Professor & Head"
+            ],
+            "fundingAgency": "AICTE",
+            "funding": "Rs.1,00,000",
+            "duration": "1 Year (Ongoing)",
+            "status": "Active",
+            "description": "Initiative to promote creativity, ethics and research interests among undergraduate students."
+          },
+          {
+            "title": "Intelligent Support System for diagnosis of covid 19",
+            "authors": [
+              "Ms.P.Jeevitha, AP/CSE"
+            ],
+            "fundingAgency": "Hindusthan Educational and Charitable Trust",
+            "funding": "Rs.2,35,000",
+            "duration": "1 Year (Ongoing)",
+            "status": "Active",
+            "description": "Captioning of x-ray images using LSTM and RNN with explainability for COVID-19 diagnosis."
+          },
+          {
+            "title": "Brain Tumor Detection Using Deep Convolutional Neural Network",
+            "authors": [
+              "Dr.R.Kala, AP/CSE"
+            ],
+            "fundingAgency": "Hindusthan Educational and Charitable Trust",
+            "funding": "Rs.2,00,000",
+            "duration": "1 Year (Ongoing)",
+            "status": "Active",
+            "description": "Brain tumor detection and classification using deep CNN with FPGA implementation for real-time processing."
+          }
+        ]
+      }
+    },
+    {
+      "id": "innovation",
+      "name": "Innovation",
+      "icon": "Lightbulb",
+      "content": {
+        "title": "Innovations",
+        "items": [
+          {
+            "title": "Smart Campus Energy Management System",
+            "authors": [
+              "Dr. Vijay Kumar",
+              "Team of 5 Students"
+            ],
+            "description": "IoT-based energy monitoring and optimization system for campus buildings with automated control and analytics dashboard.",
+            "status": "Implemented",
+            "year": "2023",
+            "impact": "30% reduction in energy consumption"
+          },
+          {
+            "title": "AI-Powered Student Attendance System",
+            "authors": [
+              "Ms. Kavitha R",
+              "Development Team"
+            ],
+            "description": "Face recognition-based attendance system with real-time analytics and automated reporting features.",
+            "status": "Deployed",
+            "year": "2023",
+            "impact": "100% automation of attendance tracking"
+          },
+          {
+            "title": "Blockchain-Based Certificate Verification",
+            "authors": [
+              "Dr. Ramesh K",
+              "Student Developers"
+            ],
+            "description": "Decentralized system for issuing and verifying academic certificates using blockchain technology.",
+            "status": "Pilot Phase",
+            "year": "2024",
+            "impact": "Enhanced security and instant verification"
+          }
+        ]
+      }
+    },
+    {
+      "id": "publication",
+      "name": "Publication",
+      "icon": "FileText",
+      "content": {
+        "title": "Research Publications",
+        "items": [
+          {
+            "title": "Deep Learning Approaches for Medical Image Analysis: A Comprehensive Review",
+            "authors": [
+              "Dr.A.JameerBasha",
+              "Dr.S.Lokesh"
+            ],
+            "journal": "IEEE Transactions on Medical Imaging",
+            "year": "2023",
+            "type": "International Journal",
+            "impactFactor": "10.048",
+            "description": "Comprehensive review of state-of-the-art deep learning techniques for medical imaging applications."
+          },
+          {
+            "title": "Blockchain Integration in IoT Healthcare Systems: Security and Privacy Perspectives",
+            "authors": [
+              "Ms.P.Jeevitha",
+              "Dr.R.Kala"
+            ],
+            "journal": "Journal of Network and Computer Applications",
+            "year": "2023",
+            "type": "International Journal",
+            "impactFactor": "7.574",
+            "description": "Analysis of blockchain technology integration for secure IoT-based healthcare systems."
+          },
+          {
+            "title": "Machine Learning for Sustainable Agriculture: An Indian Context",
+            "authors": [
+              "Dr.S.Lokesh",
+              "Mr.Arun"
+            ],
+            "conference": "International Conference on Artificial Intelligence and Applications",
+            "year": "2024",
+            "type": "International Conference",
+            "location": "Singapore",
+            "description": "Application of ML techniques for precision agriculture in Indian farming scenarios."
+          }
+        ]
+      }
+    },
+    {
+      "id": "patent",
+      "name": "Patent",
+      "icon": "Award",
+      "content": {
+        "title": "Patents",
+        "items": [
+          {
+            "year": "2025",
+            "serialNo": 1,
+            "facultyName": "Mr. Uthayakumar.J",
+            "title": "Harnessing Quantum Mechanics For Accurate Molecular Interaction Simulations in Drug Development",
+            "applicationNo": "202541021193",
+            "dateOfFiling": "09-03-2025"
+          },
+          {
+            "year": "2025",
+            "serialNo": 2,
+            "facultyName": "Ms. Umamaheshwari.P",
+            "title": "Entangled Qubits Transform Traditional Learning Methods into Intelligent Adaptive Systems",
+            "applicationNo": "202541023105",
+            "dateOfFiling": "14-03-2025"
+          },
+          {
+            "year": "2025",
+            "serialNo": 3,
+            "facultyName": "Mrs. Suganthi.D",
+            "title": "Entangled Growth Enhancing Onion Yield Prediction and Automated Harvesting with Quantum Computing Power",
+            "applicationNo": "202541023293",
+            "dateOfFiling": "16-03-2025"
+          },
+          {
+            "year": "2024",
+            "serialNo": 4,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "AI Based Smart Water and Nutrient Recycling System in Aeroponics for Real-Time Growth Monitoring and Adjustment for Autonomous Plant Cultivation Using Deep Learning Algorithms",
+            "applicationNo": "202441051857",
+            "dateOfFiling": "06-07-2024"
+          },
+          {
+            "year": "2024",
+            "serialNo": 5,
+            "facultyName": "Dr. Jayasudha.D",
+            "title": "Strategies for Active Student Learning and Future Business Success for Integrating AI Marketing Analytics into Pedagogy",
+            "applicationNo": "202441086398",
+            "dateOfFiling": "09-11-2024"
+          },
+          {
+            "year": "2024",
+            "serialNo": 6,
+            "facultyName": "Dr. Jayasudha.D",
+            "title": "Transforming Personalized Learning in Higher Education to Predict Student Success Using Machine Learning Approach",
+            "applicationNo": "202441057172",
+            "dateOfFiling": "27-07-2024"
+          },
+          {
+            "year": "2024",
+            "serialNo": 7,
+            "facultyName": "Dr. Mookhambika.N",
+            "title": "Smart EEG Based Brainwave Monitoring Unit",
+            "applicationNo": "431343-001",
+            "dateOfFiling": "23-09-2024",
+            "status": "Design Granted"
+          },
+          {
+            "year": "2024",
+            "serialNo": 8,
+            "facultyName": "Mrs. Vidhya.D",
+            "title": "Integrated Machine Learning and Graph Theory for Improved Feedback and Student Performance Prediction in Higher Education",
+            "applicationNo": "202441096993",
+            "dateOfFiling": "09-12-2024"
+          },
+          {
+            "year": "2024",
+            "serialNo": 9,
+            "facultyName": "Mrs. Rajaprabha.C.E",
+            "title": "Genetic Innovations and Machine Learning for Enhancing Crop Traits and Promoting Sustainable Agriculture",
+            "applicationNo": "202441088290",
+            "dateOfFiling": "14-11-2024"
+          },
+          {
+            "year": "2024",
+            "serialNo": 10,
+            "facultyName": "Mrs. Banupriya.M",
+            "title": "Blockchain and Machine Learning for Secure Cloud Storage in IoT Health Care Management",
+            "applicationNo": "202441100383",
+            "dateOfFiling": "18-12-2024"
+          },
+          {
+            "year": "2024",
+            "serialNo": 11,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "IoT And Artificial Intelligence Based Detection And Prevention Of Plant Disease With Smart Drip Irrigation System Using Block Chain Technology And Deep Learning",
+            "applicationNo": "202441017814",
+            "dateOfFiling": "12-03-2024"
+          },
+          {
+            "year": "2024",
+            "serialNo": 12,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "Robot For Determining Crop Yield",
+            "applicationNo": "413621-001",
+            "dateOfFiling": "15-04-2024",
+            "status": "Design Granted"
+          },
+          {
+            "year": "2023",
+            "serialNo": 13,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "IoT and AI based smart home automation using Wi-Fi through Android apps from smart phone",
+            "applicationNo": "202321047600",
+            "dateOfFiling": "14-07-2023"
+          },
+          {
+            "year": "2023",
+            "serialNo": 14,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "Device to predict cardiovascular attack",
+            "applicationNo": "397144-001",
+            "dateOfFiling": "09-10-2023",
+            "status": "Design Granted"
+          },
+          {
+            "year": "2023",
+            "serialNo": 15,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "Wearable ECG monitoring Device",
+            "applicationNo": "399703-001",
+            "dateOfFiling": "10-11-2023",
+            "status": "Design Granted"
+          },
+          {
+            "year": "2023",
+            "serialNo": 16,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "Detection and classification of eye cancer using DL techniques",
+            "applicationNo": "202341062322",
+            "dateOfFiling": "15-09-2023"
+          },
+          {
+            "year": "2023",
+            "serialNo": 17,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "AI based safe health care system for fertility preservation for young woman with breast cancer using cloud and ML algorithms",
+            "applicationNo": "202311064995",
+            "dateOfFiling": "27-09-2023"
+          },
+          {
+            "year": "2023",
+            "serialNo": 18,
+            "facultyName": "Dr. MaheshKumar.N.B",
+            "title": "AI and computer vision based detection and prevention of brain disorder disease and tumor at early stage and to provide efficient treatment using data mining and DL algorithm for smart health care management",
+            "applicationNo": "202341090160",
+            "dateOfFiling": "30-12-2023"
+          },
+          {
+            "year": "2024",
+            "serialNo": 19,
+            "facultyName": "Mr. Uthayakumar.J",
+            "title": "Elevating Wellness Through Intelligent Nutrition: Leveraging Artificial Intelligence",
+            "applicationNo": "202441039240",
+            "dateOfFiling": "20-05-2024"
+          },
+          {
+            "year": "2024",
+            "serialNo": 20,
+            "facultyName": "Mr. Periyasamy.P.N",
+            "title": "AI and ML: A model for enhancing faculty performance reliability",
+            "applicationNo": "202441035195",
+            "dateOfFiling": "03-05-2024"
+          },
+          {
+            "year": "2023",
+            "serialNo": 21,
+            "facultyName": "Mr. Periyasamy.P.N",
+            "title": "Smart Healthcare Environment using IOT and Machine Learning for Predictive Maintenance and Infection Control",
+            "applicationNo": "202341068088",
+            "dateOfFiling": "20-10-2023"
+          },
+          {
+            "year": "2024",
+            "serialNo": 22,
+            "facultyName": "Dr. Ramasamy.S",
+            "title": "Logistic Tracking Device",
+            "applicationNo": "405790-001",
+            "dateOfFiling": "26-01-2024",
+            "status": "Design Granted"
+          },
+          {
+            "year": "2024",
+            "serialNo": 23,
+            "facultyName": "Dr. Ramasamy.S",
+            "title": "Advancing Pedagogy Through Information And Communication Technology (ICT): The Potential Of Mentoring And Mirrored Practice",
+            "applicationNo": "202441035264",
+            "dateOfFiling": "10-05-2024"
+          },
+          {
+            "year": "2023",
+            "serialNo": 24,
+            "facultyName": "Dr. Ramasamy.S",
+            "title": "A Cloud-Based Platform for Crop Recommendation for Precision Farming",
+            "applicationNo": "202341036565",
+            "dateOfFiling": "01-09-2023"
+          },
+          {
+            "year": "2022",
+            "serialNo": 25,
+            "facultyName": "Mr. Suresh Kumar.P",
+            "title": "Systematic Approach for monitoring the pollution control in smart cities and addressing the security challenges integrated with IoT",
+            "applicationNo": "202211056475",
+            "dateOfFiling": "01-10-2022"
+          },
+          {
+            "year": "2022",
+            "serialNo": 26,
+            "facultyName": "Ms. Umamaheshwari.P",
+            "title": "DL based technique to predict the nutritional value of edible mushrooms for improving human health and promoting quality of life",
+            "applicationNo": "202211056600",
+            "dateOfFiling": "21-10-2022"
+          },
+          {
+            "year": "2022",
+            "serialNo": 27,
+            "facultyName": "Ms. Umamaheshwari.P",
+            "title": "AI based car tire blowout security system",
+            "applicationNo": "202241067480",
+            "dateOfFiling": "24-11-2022"
+          },
+          {
+            "year": "2022",
+            "serialNo": 28,
+            "facultyName": "Dr. Ramasamy.S",
+            "title": "A robust mechanism for preventing adversarial attacks on audio classifications",
+            "applicationNo": "202241069942",
+            "dateOfFiling": "30-12-2022"
+          },
+          {
+            "year": "2022",
+            "serialNo": 29,
+            "facultyName": "Dr. Senthilkumar.R",
+            "title": "An Intelligent real time monitoring and control method for grid attribute access control method based on bloom filter",
+            "applicationNo": "202214071991",
+            "dateOfFiling": "30-12-2022"
+          },
+          {
+            "year": "2022",
+            "serialNo": 30,
+            "facultyName": "Mr. Biju Balakrishnan",
+            "title": "Sensor based computationally intelligent e-nose to detect respiratory diseases in older adults using ML",
+            "applicationNo": "202241053382",
+            "dateOfFiling": "19-09-2022"
+          },
+          {
+            "year": "2022",
+            "serialNo": 31,
+            "facultyName": "Mrs. Banupriya.M",
+            "title": "Enumerating and manipulating tree data for tagging trees using ML",
+            "applicationNo": "202211059179",
+            "dateOfFiling": "17-10-2022"
+          },
+          {
+            "year": "2022",
+            "serialNo": 32,
+            "facultyName": "Mr. Devendran.M",
+            "title": "Cover of Smart Identity Card (PI Digital Valet using IOT)",
+            "applicationNo": "369659-001",
+            "dateOfFiling": "23-08-2022",
+            "status": "Design Granted"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consultancy",
+      "name": "Consultancy",
+      "icon": "Briefcase",
+      "content": {
+        "title": "Consultancy Projects",
+        "items": [
+          {
+            "serialNo": 1,
+            "pi_name": "Dr. JameerBasha.A",
+            "co_pi_names": ["Dr. Senthilkumar.R"],
+            "department": "CSE",
+            "project_title": "CRM / ERP Development",
+            "funding_agency": "Metalica Motors, Pollachi Road, Achampatti, Coimbatore",
+            "duration": "1 year",
+            "amount_rs": 145000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 2,
+            "pi_name": "Dr. Senthilkumar.R",
+            "co_pi_names": ["Dr. Ramasamy.S"],
+            "department": "CSE",
+            "project_title": "Automated Resume Screening System",
+            "funding_agency": "Initz Technologies, Coimbatore",
+            "duration": "1 year",
+            "amount_rs": 160000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 3,
+            "pi_name": "Mr. Murugan.K",
+            "co_pi_names": ["Mr. Devendran.M"],
+            "department": "CSE",
+            "project_title": "Real Time Food Tracker",
+            "funding_agency": "Clarozon Technologies",
+            "duration": "1 year",
+            "amount_rs": 135000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 4,
+            "pi_name": "Dr. Jayasudha.D",
+            "co_pi_names": ["Mr. Uthayakumar.J"],
+            "department": "CSE",
+            "project_title": "IoT-based Smart Home Automation System",
+            "funding_agency": "Quantanics TechServ, Madurai",
+            "duration": "1 year",
+            "amount_rs": 140000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 5,
+            "pi_name": "Dr. Chitra.M",
+            "co_pi_names": ["Mr. Arun.R"],
+            "department": "CSE",
+            "project_title": "Chat-bot System for Customer Support",
+            "funding_agency": "Little Genius Technologies",
+            "duration": "1 year",
+            "amount_rs": 150000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 6,
+            "pi_name": "Dr. Subhalakshmi.R.T",
+            "co_pi_names": ["Mrs. Jeevitha.P"],
+            "department": "CSE",
+            "project_title": "AI-Based Real-Time Voice Assistant",
+            "funding_agency": "Webnest Technologies",
+            "duration": "1 year",
+            "amount_rs": 155000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 7,
+            "pi_name": "Dr. Maheshkumar.N.B",
+            "co_pi_names": ["Mr. Murugan.K"],
+            "department": "CSE",
+            "project_title": "AI-Based Video Surveillance System",
+            "funding_agency": "Visaithalam Solutions",
+            "duration": "1 year",
+            "amount_rs": 160000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 8,
+            "pi_name": "Mrs. Jeevitha.P",
+            "co_pi_names": ["Mrs. Pavithra.K.S"],
+            "department": "CSE",
+            "project_title": "Blockchain based Supply Chain management",
+            "funding_agency": "Litz Technologies",
+            "duration": "1 year",
+            "amount_rs": 170000,
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 9,
+            "pi_name": "Dr. Senthilkumar.R",
+            "co_pi_names": ["Mr. Devendran.M"],
+            "department": "CSE",
+            "project_title": "IoT Based Energy Monitoring and Optimization System",
+            "funding_agency": "M/s. Talent Factori Pvt Ltd",
+            "duration": "1 year",
+            "amount_rs": 175000,
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 10,
+            "pi_name": "Dr. Jeyasudha.D",
+            "co_pi_names": ["Mrs. BanuPriya.M"],
+            "department": "CSE",
+            "project_title": "Vehicle Tracking System",
+            "funding_agency": "Icore Solutions",
+            "duration": "1 year",
+            "amount_rs": 158000,
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 11,
+            "pi_name": "Dr. Subhalakshmi.R.T",
+            "co_pi_names": ["Mr. Kalaiselvi.T"],
+            "department": "CSE",
+            "project_title": "AI-Based Disease Diagnosis System",
+            "funding_agency": "Dataspire Technologies",
+            "duration": "1 year",
+            "amount_rs": 150000,
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 12,
+            "pi_name": "Dr. Kala.R",
+            "co_pi_names": ["Mrs. Vidhya.D"],
+            "department": "CSE",
+            "project_title": "Smart Blind Stick",
+            "funding_agency": "INITZ Technologies",
+            "duration": "1 year",
+            "amount_rs": 155000,
+            "year": "2021-22"
+          },
+          {
+            "serialNo": 13,
+            "pi_name": "Dr. Uma.S",
+            "co_pi_names": ["Mr. Senthilkumar.R"],
+            "department": "CSE",
+            "project_title": "Smart Farming using IoT",
+            "funding_agency": "Quantanics TechServ Pvt Ltd",
+            "duration": "1 year",
+            "amount_rs": 160000,
+            "year": "2021-22"
+          },
+          {
+            "serialNo": 14,
+            "pi_name": "Dr. Lokesh.S",
+            "co_pi_names": ["Mrs. Banupriya.M"],
+            "department": "CSE",
+            "project_title": "QR Code based Street light control system",
+            "funding_agency": "Talent Factori Pvt Ltd",
+            "duration": "1 year",
+            "amount_rs": 178000,
+            "year": "2021-22"
+          },
+          {
+            "serialNo": 15,
+            "pi_name": "Dr. Ramasamy.S",
+            "co_pi_names": ["Mr. Devendran.M"],
+            "department": "CSE",
+            "project_title": "An AI Driven & Blockchain Enabled Employee Tracking & Ethical Rating Platform",
+            "funding_agency": "M/s. Talent Factori Pvt Ltd",
+            "duration": "1 year",
+            "amount_rs": 150000,
+            "year": "2021-22"
+          }
+        ]
+      }
+    },
+    {
+      "id": "conference",
+      "name": "Conference",
+      "icon": "FileText",
+      "content": {
+        "title": "Conference Publications",
+        "items": [
+          {
+            "serialNo": 1,
+            "authors": "K. Murugeswari, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 2,
+            "authors": "K. Murugeswari, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 3,
+            "authors": "K. Murugeswari, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 4,
+            "authors": "J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 5,
+            "authors": "J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 6,
+            "authors": "J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 7,
+            "authors": "J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Springer"
+          },
+          {
+            "serialNo": 8,
+            "authors": "Dr. S. Sathish Kumar, J. Naveen Kumar, Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 9,
+            "authors": "Dr. S. Sathish Kumar, J. Naveen Kumar, Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 10,
+            "authors": "Dr. S. Sathish Kumar, J. Naveen Kumar, Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 11,
+            "authors": "Dr. S. Sathish Kumar, J. Naveen Kumar, Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Springer"
+          },
+          {
+            "serialNo": 12,
+            "authors": "K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 13,
+            "authors": "K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 14,
+            "authors": "K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 15,
+            "authors": "K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Springer"
+          },
+          {
+            "serialNo": 16,
+            "authors": "K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, K. Sowmya",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 17,
+            "authors": "K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, K. Sowmya",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 18,
+            "authors": "K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, K. Sowmya",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 19,
+            "authors": "K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, K. Sowmya",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Springer"
+          },
+          {
+            "serialNo": 20,
+            "authors": "Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 21,
+            "authors": "Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 22,
+            "authors": "Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 23,
+            "authors": "Dr. P. Ranjith, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar",
+            "title": "A Survey on Machine Learning Algorithms for Intrusion Detection System",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Springer"
+          },
+          {
+            "serialNo": 24,
+            "authors": "N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 25,
+            "authors": "N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 26,
+            "authors": "N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 27,
+            "authors": "R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 28,
+            "authors": "R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 29,
+            "authors": "R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 30,
+            "authors": "V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 31,
+            "authors": "V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 32,
+            "authors": "V. Pandeeswari, K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 33,
+            "authors": "K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 34,
+            "authors": "K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 35,
+            "authors": "K. Sowmya, K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 36,
+            "authors": "K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 37,
+            "authors": "K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 38,
+            "authors": "K. Praveen Kumar, J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 39,
+            "authors": "J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran, V. Pandeeswari",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 40,
+            "authors": "J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran, V. Pandeeswari",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 41,
+            "authors": "J. Naveen Kumar, Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran, V. Pandeeswari",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 42,
+            "authors": "Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 43,
+            "authors": "Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          },
+          {
+            "serialNo": 44,
+            "authors": "Dr. S. Sathish Kumar, Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Web of Science"
+          },
+          {
+            "serialNo": 45,
+            "authors": "Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "Scopus"
+          },
+          {
+            "serialNo": 46,
+            "authors": "Dr. P. Ranjith, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar",
+            "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
+            "conference": "2020 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+            "year": 2020,
+            "indexedIn": "IEEE Xplore"
+          }
+        ]
+      }
+    }
+  ]
+}
