@@ -7,12 +7,12 @@ const reportPaths: Record<number, string> = {
   0: '../teachMethod/Active Learning with Technology-IOT.pdf',
   1: '../teachMethod/Problem based learnign.pdf',
   2: '../teachMethod/Flipped Classrooms.pdf',
-  3: '/reports/collaborative-learning-report.pdf',
+  3: '../teachMethod/collabrative_learning.pdf',
   4: '../teachMethod/Competency_Based_Learning_IOT.pdf',
-  5: '/reports/lifelong-learning-report.pdf',
+  5: '../teachMethod/Life long learning.pdf',
   6: '../teachMethod/Online and blended learning.pdf',
   7: '../teachMethod/Multimedia and visualization (colab)- Copy (1).pdf',
-  8: '/reports/industry-aligned-report.pdf',
+  8: '../teachMethod/Industry Aligned.pdf',
 };
 
 interface Method {
