@@ -1233,7 +1233,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       <div className="mb-3">
                         <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Details</p>
                         <p className="text-gray-700 text-base leading-relaxed">
-                          Data Science and Big Data Analytics certificate course organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
+                          Data Science and Big Data Analytics certificate courses organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
                         </p>
                       </div>
 
