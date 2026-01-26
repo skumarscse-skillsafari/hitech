@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { NavigateFunction } from 'react-router-dom';
 import researchData from '../data/researchInnovationData.json';
 
@@ -7,6 +7,7 @@ interface ResearchInnovationCarouselProps {
 }
 
 const ResearchInnovationCarousel: React.FC<ResearchInnovationCarouselProps> = ({ navigate }) => {
+  const researchCarouselRef = useRef<HTMLDivElement>(null);
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -54,155 +55,301 @@ const ResearchInnovationCarousel: React.FC<ResearchInnovationCarouselProps> = ({
       <h4 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-center">
         Research & Innovation Hub
       </h4>
-      <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mb-2"></div>
+      <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mb-6"></div>
       
-      {/* Category Title with smooth transition */}
-      <div className="overflow-hidden h-12 mb-6">
-        <h5 
-          className={`text-2xl font-bold text-yellow-600 text-center transition-all duration-500 ${
-            isTransitioning ? 'opacity-0 transform -translate-y-4' : 'opacity-100 transform translate-y-0'
-          }`}
-        >
-          {currentCategory.name}
-        </h5>
-      </div>
-      
-      <p className="text-base sm:text-lg text-gray-700 mb-8 max-w-3xl mx-auto text-center">
+      <p className="text-base sm:text-lg text-gray-700 mb-12 max-w-3xl mx-auto text-center">
         Discover our cutting-edge research projects, innovative solutions, academic publications, 
         patents, and industry consultancy services that drive technological advancement
       </p>
 
-      {/* Cards Grid - Show 2 larger items */}
-      <div className="relative min-h-[500px] mb-8">
-        {items.length > 0 ? (
+      {/* Horizontal Scrolling Carousel */}
+      <div className="relative">
+        <div className="overflow-hidden">
           <div 
-            className={`grid grid-cols-1 lg:grid-cols-2 gap-8 transition-all duration-500 ${
-              isTransitioning ? 'opacity-0 transform scale-95' : 'opacity-100 transform scale-100'
-            }`}
+            ref={researchCarouselRef}
+            className="flex animate-scroll-left gap-6 pb-4"
+            onMouseEnter={() => {
+              const element = researchCarouselRef.current;
+              if (element) {
+                element.style.animationPlayState = 'paused';
+              }
+            }}
+            onMouseLeave={() => {
+              const element = researchCarouselRef.current;
+              if (element) {
+                element.style.animationPlayState = 'running';
+              }
+            }}
           >
-            {items.map((item, index) => (
+            {/* Render all categories as cards */}
+            {researchData.tabs.flatMap((category, catIndex) => {
+              let items: any[] = [];
+              if (category.content.items && Array.isArray(category.content.items)) {
+                items = category.content.items.slice(0, 2);
+              } else if (category.content.categories && Array.isArray(category.content.categories)) {
+                const firstCategory = category.content.categories[0];
+                if (firstCategory?.items && Array.isArray(firstCategory.items)) {
+                  items = firstCategory.items.slice(0, 2);
+                }
+              }
+
+              return items.map((item, itemIndex) => (
             <div
-              key={index}
-              className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              key={`${catIndex}-${itemIndex}`}
+              className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400 flex flex-col h-[500px]"
             >
+              <div className="p-6 flex flex-col h-full">
+              {/* Category Badge */}
+              <div className="flex items-center justify-between mb-4">
+                <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">{category.name}</span>
+              </div>
+
               {/* Title */}
-              <h6 className="text-2xl font-bold text-gray-900 mb-4 line-clamp-2 min-h-[64px]">
+              <h6 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 h-14">
                 {item.title}
               </h6>
               
               {/* Yellow divider */}
-              <div className="w-20 h-1.5 bg-yellow-400 rounded-full mb-5"></div>
+              <div className="w-16 h-1 bg-yellow-400 rounded-full mb-4"></div>
 
-              {/* Team Members / Authors */}
-              {(item as any).authors && (
-                <div className="mb-5">
-                  <p className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-3">
-                    {Array.isArray((item as any).authors) ? 'Team Members' : 'Authors'}
+              {/* Team Members / Authors / Faculty */}
+              <div className="mb-4 min-h-[60px]">
+                {(item as any).authors && (
+                  <>
+                    <p className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-2">
+                      {Array.isArray((item as any).authors) ? 'Team Members' : 'Authors'}
+                    </p>
+                    {Array.isArray((item as any).authors) ? (
+                      <div className="text-sm text-gray-700 space-y-1">
+                        {(item as any).authors.slice(0, 2).map((author: string, idx: number) => (
+                          <p key={idx} className="line-clamp-1">{author}</p>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-sm text-gray-700 line-clamp-2">{(item as any).authors}</p>
+                    )}
+                  </>
+                )}
+                {(item as any).facultyName && (
+                  <>
+                    <p className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-2">
+                      Faculty
+                    </p>
+                    <p className="text-sm text-gray-700">{(item as any).facultyName}</p>
+                  </>
+                )}
+              </div>
+
+              {/* Description - Always show placeholder if missing */}
+              <div className="mb-4 flex-grow">
+                {(item as any).description ? (
+                  <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+                    {(item as any).description}
                   </p>
-                  {Array.isArray((item as any).authors) ? (
-                    <div className="text-base text-gray-700 space-y-2">
-                      {(item as any).authors.map((author: string, idx: number) => (
-                        <p key={idx} className="line-clamp-1">{author}</p>
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="text-base text-gray-700 line-clamp-2">{(item as any).authors}</p>
-                  )}
-                </div>
-              )}
-
-              {/* Faculty Name (for Seed Money/Patent items) */}
-              {(item as any).facultyName && (
-                <div className="mb-5">
-                  <p className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-3">
-                    Faculty
+                ) : (item as any).outcomes ? (
+                  <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+                    {(item as any).outcomes}
                   </p>
-                  <p className="text-base text-gray-700">{(item as any).facultyName}</p>
-                </div>
-              )}
+                ) : (
+                  <p className="text-sm text-gray-500 italic leading-relaxed">
+                    Research project focused on advancing knowledge and innovation in this domain.
+                  </p>
+                )}
+              </div>
 
-              {/* Description */}
-              {(item as any).description && (
-                <p className="text-base text-gray-600 leading-relaxed mb-5 line-clamp-4">
-                  {(item as any).description}
-                </p>
-              )}
-
-              {/* Additional Info */}
-              <div className="space-y-3 mb-6">
+              {/* Additional Info - Fixed height section */}
+              <div className="space-y-2 mb-4 min-h-[80px]">
                 {(item as any).funding && (
-                  <div className="flex items-start text-base">
-                    <span className="font-bold text-yellow-600 mr-3 whitespace-nowrap">Funding:</span>
-                    <span className="text-gray-700">{(item as any).funding}</span>
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Funding:</span>
+                    <span className="text-gray-700 line-clamp-1">{(item as any).funding}</span>
                   </div>
                 )}
                 {(item as any).status && (
-                  <div className="flex items-start text-base">
-                    <span className="font-bold text-yellow-600 mr-3 whitespace-nowrap">Status:</span>
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Status:</span>
                     <span className="text-gray-700">{(item as any).status}</span>
                   </div>
                 )}
                 {(item as any).duration && (
-                  <div className="flex items-start text-base">
-                    <span className="font-bold text-yellow-600 mr-3 whitespace-nowrap">Duration:</span>
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Duration:</span>
                     <span className="text-gray-700">{(item as any).duration}</span>
                   </div>
                 )}
                 {(item as any).year && (
-                  <div className="flex items-start text-base">
-                    <span className="font-bold text-yellow-600 mr-3 whitespace-nowrap">Year:</span>
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Year:</span>
                     <span className="text-gray-700">{(item as any).year}</span>
                   </div>
                 )}
                 {(item as any).journal && (
-                  <div className="flex items-start text-base">
-                    <span className="font-bold text-yellow-600 mr-3 whitespace-nowrap">Journal:</span>
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Journal:</span>
                     <span className="text-gray-700 line-clamp-1">{(item as any).journal}</span>
                   </div>
                 )}
                 {(item as any).patentNumber && (
-                  <div className="flex items-start text-base">
-                    <span className="font-bold text-yellow-600 mr-3 whitespace-nowrap">Patent No:</span>
-                    <span className="text-gray-700">{(item as any).patentNumber}</span>
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Patent No:</span>
+                    <span className="text-gray-700 line-clamp-1">{(item as any).patentNumber}</span>
                   </div>
                 )}
                 {(item as any).client && (
-                  <div className="flex items-start text-base">
-                    <span className="font-bold text-yellow-600 mr-3 whitespace-nowrap">Client:</span>
-                    <span className="text-gray-700">{(item as any).client}</span>
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Client:</span>
+                    <span className="text-gray-700 line-clamp-1">{(item as any).client}</span>
                   </div>
                 )}
               </div>
 
               {/* Explore Project Button */}
-              <button className="w-full mt-auto bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-4 rounded-lg font-bold text-base transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
-                <span>Explore Project</span>
-                <span>→</span>
-              </button>
+              <div className="pt-3 border-t border-gray-200">
+                <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 py-2.5 rounded-lg font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+                  <span>Explore Project</span>
+                  <span>→</span>
+                </button>
+              </div>
+              </div>
             </div>
-          ))}
-        </div>
-        ) : (
-          <div className="flex items-center justify-center h-full">
-            <p className="text-gray-500 text-lg">No items available for this category</p>
-          </div>
-        )}
-      </div>
+          ));
+            })}
 
-      {/* Progress Indicators */}
-      <div className="flex justify-center gap-2 mb-8">
-        {researchData.tabs.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => handleCategoryChange(index)}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              index === currentCategoryIndex
-                ? 'w-8 bg-yellow-500'
-                : 'w-2 bg-gray-300 hover:bg-gray-400'
-            }`}
-            aria-label={`Go to ${researchData.tabs[index].name}`}
-          />
-        ))}
+            {/* Duplicate cards for seamless loop */}
+            {researchData.tabs.flatMap((category, catIndex) => {
+              let items: any[] = [];
+              if (category.content.items && Array.isArray(category.content.items)) {
+                items = category.content.items.slice(0, 2);
+              } else if (category.content.categories && Array.isArray(category.content.categories)) {
+                const firstCategory = category.content.categories[0];
+                if (firstCategory?.items && Array.isArray(firstCategory.items)) {
+                  items = firstCategory.items.slice(0, 2);
+                }
+              }
+
+              return items.map((item, itemIndex) => (
+            <div
+              key={`dup-${catIndex}-${itemIndex}`}
+              className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400 flex flex-col h-[500px]"
+            >
+              <div className="p-6 flex flex-col h-full">
+              {/* Category Badge */}
+              <div className="flex items-center justify-between mb-4">
+                <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">{category.name}</span>
+              </div>
+
+              {/* Title */}
+              <h6 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 h-14">
+                {item.title}
+              </h6>
+              
+              {/* Yellow divider */}
+              <div className="w-16 h-1 bg-yellow-400 rounded-full mb-4"></div>
+
+              {/* Team Members / Authors / Faculty */}
+              <div className="mb-4 min-h-[60px]">
+                {(item as any).authors && (
+                  <>
+                    <p className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-2">
+                      {Array.isArray((item as any).authors) ? 'Team Members' : 'Authors'}
+                    </p>
+                    {Array.isArray((item as any).authors) ? (
+                      <div className="text-sm text-gray-700 space-y-1">
+                        {(item as any).authors.slice(0, 2).map((author: string, idx: number) => (
+                          <p key={idx} className="line-clamp-1">{author}</p>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-sm text-gray-700 line-clamp-2">{(item as any).authors}</p>
+                    )}
+                  </>
+                )}
+                {(item as any).facultyName && (
+                  <>
+                    <p className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-2">
+                      Faculty
+                    </p>
+                    <p className="text-sm text-gray-700">{(item as any).facultyName}</p>
+                  </>
+                )}
+              </div>
+
+              {/* Description - Always show placeholder if missing */}
+              <div className="mb-4 flex-grow">
+                {(item as any).description ? (
+                  <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+                    {(item as any).description}
+                  </p>
+                ) : (item as any).outcomes ? (
+                  <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+                    {(item as any).outcomes}
+                  </p>
+                ) : (
+                  <p className="text-sm text-gray-500 italic leading-relaxed">
+                    Research project focused on advancing knowledge and innovation in this domain.
+                  </p>
+                )}
+              </div>
+
+              {/* Additional Info - Fixed height section */}
+              <div className="space-y-2 mb-4 min-h-[80px]">
+                {(item as any).funding && (
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Funding:</span>
+                    <span className="text-gray-700 line-clamp-1">{(item as any).funding}</span>
+                  </div>
+                )}
+                {(item as any).status && (
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Status:</span>
+                    <span className="text-gray-700">{(item as any).status}</span>
+                  </div>
+                )}
+                {(item as any).duration && (
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Duration:</span>
+                    <span className="text-gray-700">{(item as any).duration}</span>
+                  </div>
+                )}
+                {(item as any).year && (
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Year:</span>
+                    <span className="text-gray-700">{(item as any).year}</span>
+                  </div>
+                )}
+                {(item as any).journal && (
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Journal:</span>
+                    <span className="text-gray-700 line-clamp-1">{(item as any).journal}</span>
+                  </div>
+                )}
+                {(item as any).patentNumber && (
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Patent No:</span>
+                    <span className="text-gray-700 line-clamp-1">{(item as any).patentNumber}</span>
+                  </div>
+                )}
+                {(item as any).client && (
+                  <div className="flex items-start text-sm">
+                    <span className="font-bold text-yellow-600 mr-2 whitespace-nowrap">Client:</span>
+                    <span className="text-gray-700 line-clamp-1">{(item as any).client}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Explore Project Button */}
+              <div className="pt-3 border-t border-gray-200">
+                <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 py-2.5 rounded-lg font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+                  <span>Explore Project</span>
+                  <span>→</span>
+                </button>
+              </div>
+              </div>
+            </div>
+          ));
+            })}
+          </div>
+        </div>
       </div>
 
       {/* Explore Button */}
