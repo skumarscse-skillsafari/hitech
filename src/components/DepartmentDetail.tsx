@@ -1,12 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Monitor, Radio, Settings, Building, ArrowRight, Users, BookOpen, Award, Lightbulb, Mail, Target, BarChart2, CheckCircle } from 'lucide-react';
+import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion';
+import { useInView as useInViewHook } from 'react-intersection-observer';
 import LazyLoadWrapper from './LazyLoadWrapper';
 import DepartmentOutcomes from '../components/DepartmentOutcomes';
 import SectionWrapper from './layout/SectionWrapper';
 import ObeInput from '../pages/ObeInputs';
 import recruiters from '../data/recruiters.json';
 import ResearchInnovationCarousel from './ResearchInnovationCarousel';
+import AnimatedSection from './AnimatedSection';
 
 interface Department {
   id: string;
@@ -73,6 +76,73 @@ const iconMap = {
   Radio,
   Settings,
   Building,
+};
+
+// Premium Animation Variants
+const animations = {
+  // Fade in from bottom with scale
+  fadeInUp: {
+    initial: { opacity: 0, y: 60, scale: 0.95 },
+    animate: { opacity: 1, y: 0, scale: 1 },
+    transition: { duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] }
+  },
+  // Fade in from top
+  fadeInDown: {
+    initial: { opacity: 0, y: -60 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.7, ease: "easeOut" }
+  },
+  // Slide in from left with bounce
+  slideInLeft: {
+    initial: { opacity: 0, x: -100 },
+    animate: { opacity: 1, x: 0 },
+    transition: { type: "spring", stiffness: 100, damping: 20 }
+  },
+  // Slide in from right
+  slideInRight: {
+    initial: { opacity: 0, x: 100 },
+    animate: { opacity: 1, x: 0 },
+    transition: { type: "spring", stiffness: 100, damping: 20 }
+  },
+  // Scale and fade in
+  scaleIn: {
+    initial: { opacity: 0, scale: 0.8 },
+    animate: { opacity: 1, scale: 1 },
+    transition: { duration: 0.6, ease: "easeOut" }
+  },
+  // Rotate and fade in (for cards)
+  rotateIn: {
+    initial: { opacity: 0, rotate: -10, scale: 0.9 },
+    animate: { opacity: 1, rotate: 0, scale: 1 },
+    transition: { duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }
+  },
+  // Stagger children animation
+  staggerContainer: {
+    animate: {
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2
+      }
+    }
+  },
+  // Card hover effect
+  cardHover: {
+    scale: 1.05,
+    y: -10,
+    boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
+    transition: { duration: 0.3, ease: "easeOut" }
+  },
+  // Button hover
+  buttonHover: {
+    scale: 1.05,
+    boxShadow: "0 10px 30px rgba(245, 158, 11, 0.4)",
+    transition: { duration: 0.2 }
+  },
+  // Pulse effect
+  pulse: {
+    scale: [1, 1.05, 1],
+    transition: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+  }
 };
 
 // Default OBE data matching original theme
@@ -655,7 +725,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                 
                 <div className="bg-gradient-to-br from-purple-50 to-violet-50 p-8 rounded-2xl border-2 border-purple-200 mb-8">
                   <div className="text-center max-w-3xl mx-auto">
-                    <h6 className="text-xl font-bold text-gray-900 mb-3">Exclusive Training for CSE Students</h6>
+                    <h6 className="text-2xl font-bold text-gray-900 mb-3">Exclusive Training for CSE Students</h6>
                     <p className="text-gray-700 leading-relaxed mb-4">
                       Specialized training programs designed exclusively for Computer Science Engineering students, 
                       delivered by external technical experts from leading industry organizations.
@@ -692,16 +762,16 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-bold">3rd Sem</span>
                       </div>
                       
-                      <h6 className="text-xl font-bold text-gray-900 mb-2">Quantumnique</h6>
-                      <div className="border-b-2 border-purple-500 w-16 mb-4"></div>
+                      <h6 className="text-2xl font-bold text-gray-900 mb-2">Quantumnique</h6>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-4">
-                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Training Program</p>
-                        <p className="text-gray-700 text-sm">Java Programming & Advanced Data Structures</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Training Program</p>
+                        <p className="text-gray-700 text-base">Java Programming & Advanced Data Structures</p>
                       </div>
 
                       <div className="mb-4">
-                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Course Modules</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Course Modules</p>
                         <ul className="space-y-1 text-sm text-gray-700">
                           <li>• Core Java Programming Fundamentals</li>
                           <li>• Object-Oriented Programming Concepts</li>
@@ -712,17 +782,17 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="mb-4">
-                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Duration & Mode</p>
-                        <p className="text-gray-700 text-sm">3 Months | Offline Classroom</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Duration & Mode</p>
+                        <p className="text-gray-700 text-base">3 Months | Offline Classroom</p>
                       </div>
 
                       <div className="mb-4">
-                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Target Students</p>
-                        <p className="text-gray-700 text-sm">3rd Semester CSE Students Only</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Target Students</p>
+                        <p className="text-gray-700 text-base">3rd Semester CSE Students Only</p>
                       </div>
 
                       <div className="pt-4 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Certification:</strong> Quantumnique Certified Java & Data Structures Specialist
                         </p>
                       </div>
@@ -741,16 +811,16 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">3rd Sem</span>
                       </div>
                       
-                      <h6 className="text-xl font-bold text-gray-900 mb-2">IgenuineLearning</h6>
-                      <div className="border-b-2 border-blue-500 w-16 mb-4"></div>
+                      <h6 className="text-2xl font-bold text-gray-900 mb-2">IgenuineLearning</h6>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-4">
-                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Training Program</p>
-                        <p className="text-gray-700 text-sm">Java Programming & Advanced Data Structures</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Training Program</p>
+                        <p className="text-gray-700 text-base">Java Programming & Advanced Data Structures</p>
                       </div>
 
                       <div className="mb-4">
-                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Course Modules</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Course Modules</p>
                         <ul className="space-y-1 text-sm text-gray-700">
                           <li>• Java Syntax, Data Types & Control Flow</li>
                           <li>• Classes, Objects & Inheritance</li>
@@ -761,17 +831,17 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="mb-4">
-                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Duration & Mode</p>
-                        <p className="text-gray-700 text-sm">3 Months | Offline Classroom</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Duration & Mode</p>
+                        <p className="text-gray-700 text-base">3 Months | Offline Classroom</p>
                       </div>
 
                       <div className="mb-4">
-                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Target Students</p>
-                        <p className="text-gray-700 text-sm">3rd Semester CSE Students Only</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Target Students</p>
+                        <p className="text-gray-700 text-base">3rd Semester CSE Students Only</p>
                       </div>
 
                       <div className="pt-4 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Certification:</strong> IgenuineLearning Java & Advanced DS Certificate
                         </p>
                       </div>
@@ -793,12 +863,12 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <span className="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-bold">4th Sem</span>
                       </div>
                       
-                      <h6 className="text-xl font-bold text-gray-900 mb-2">Quantumnique</h6>
+                      <h6 className="text-2xl font-bold text-gray-900 mb-2">Quantumnique</h6>
                       <div className="border-b-2 border-indigo-500 w-16 mb-4"></div>
                       
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-indigo-600 uppercase mb-2">Training Program</p>
-                        <p className="text-gray-700 text-sm">Database Management & Analysis of Algorithms</p>
+                        <p className="text-gray-700 text-base">Database Management & Analysis of Algorithms</p>
                       </div>
 
                       <div className="mb-4">
@@ -815,16 +885,16 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-indigo-600 uppercase mb-2">Duration & Mode</p>
-                        <p className="text-gray-700 text-sm">3 Months | Offline Classroom</p>
+                        <p className="text-gray-700 text-base">3 Months | Offline Classroom</p>
                       </div>
 
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-indigo-600 uppercase mb-2">Target Students</p>
-                        <p className="text-gray-700 text-sm">4th Semester CSE Students Only</p>
+                        <p className="text-gray-700 text-base">4th Semester CSE Students Only</p>
                       </div>
 
                       <div className="pt-4 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Certification:</strong> Quantumnique DBMS & Algorithm Analysis Expert
                         </p>
                       </div>
@@ -848,12 +918,12 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">2025</span>
                       </div>
                       
-                      <h6 className="text-xl font-bold text-gray-900 mb-2">IgenuineLearning</h6>
+                      <h6 className="text-2xl font-bold text-gray-900 mb-2">IgenuineLearning</h6>
                       <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Training Program</p>
-                        <p className="text-gray-700 text-sm">Full Stack Java Development</p>
+                        <p className="text-gray-700 text-base">Full Stack Java Development</p>
                       </div>
 
                       <div className="mb-4">
@@ -869,16 +939,16 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Duration & Mode</p>
-                        <p className="text-gray-700 text-sm">6 Months | Offline Classroom</p>
+                        <p className="text-gray-700 text-base">6 Months | Offline Classroom</p>
                       </div>
 
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Target Students</p>
-                        <p className="text-gray-700 text-sm">5th to 7th Semester Students</p>
+                        <p className="text-gray-700 text-base">5th to 7th Semester Students</p>
                       </div>
 
                       <div className="pt-4 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Certification:</strong> Industry-recognized Full Stack Java Developer
                         </p>
                       </div>
@@ -893,12 +963,12 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">2024</span>
                       </div>
                       
-                      <h6 className="text-xl font-bold text-gray-900 mb-2">Six Phrase</h6>
+                      <h6 className="text-2xl font-bold text-gray-900 mb-2">Six Phrase</h6>
                       <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Training Program</p>
-                        <p className="text-gray-700 text-sm">Full Stack Java Development</p>
+                        <p className="text-gray-700 text-base">Full Stack Java Development</p>
                       </div>
 
                       <div className="mb-4">
@@ -914,16 +984,16 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Duration & Mode</p>
-                        <p className="text-gray-700 text-sm">5 Months | Offline Classroom</p>
+                        <p className="text-gray-700 text-base">5 Months | Offline Classroom</p>
                       </div>
 
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Target Students</p>
-                        <p className="text-gray-700 text-sm">5th to 7th Semester Students</p>
+                        <p className="text-gray-700 text-base">5th to 7th Semester Students</p>
                       </div>
 
                       <div className="pt-4 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Certification:</strong> Six Phrase Certified Full Stack Java Developer
                         </p>
                       </div>
@@ -938,12 +1008,12 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">2023</span>
                       </div>
                       
-                      <h6 className="text-xl font-bold text-gray-900 mb-2">Terv</h6>
+                      <h6 className="text-2xl font-bold text-gray-900 mb-2">Terv</h6>
                       <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Training Program</p>
-                        <p className="text-gray-700 text-sm">Full Stack Java Development</p>
+                        <p className="text-gray-700 text-base">Full Stack Java Development</p>
                       </div>
 
                       <div className="mb-4">
@@ -959,16 +1029,16 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Duration & Mode</p>
-                        <p className="text-gray-700 text-sm">4 Months | Offline Classroom</p>
+                        <p className="text-gray-700 text-base">4 Months | Offline Classroom</p>
                       </div>
 
                       <div className="mb-4">
                         <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Target Students</p>
-                        <p className="text-gray-700 text-sm">5th to 7th Semester Students</p>
+                        <p className="text-gray-700 text-base">5th to 7th Semester Students</p>
                       </div>
 
                       <div className="pt-4 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Certification:</strong> Terv Full Stack Java Development Certificate
                         </p>
                       </div>
@@ -983,7 +1053,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
             {activePlacementTab === 'recruiters' && (
               <div className="mt-4">
                 <div className="flex items-center justify-between mb-4">
-                  <h5 className="text-xl font-bold text-gray-900">Our Recruiters</h5>
+                  <h5 className="text-2xl font-bold text-gray-900">Our Recruiters</h5>
                   <p className="text-sm text-gray-500">
                     Total Companies: <span className="font-semibold">{sortedRecruiters.length}</span>
                   </p>
@@ -1035,7 +1105,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 
                 {/* Placement Coordinators Table */}
                 <div className="mb-8">
-                  <h6 className="text-xl font-bold text-gray-900 mb-4">Placement Coordinators from Placement Cell</h6>
+                  <h6 className="text-2xl font-bold text-gray-900 mb-4">Placement Coordinators from Placement Cell</h6>
                   <div className="overflow-x-auto">
                     <div className="inline-block min-w-full rounded-2xl border border-gray-200">
                       <table className="min-w-full border-collapse text-sm md:text-base">
@@ -1105,7 +1175,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
       {/* Industry Oriented Training Section */}
       <div id="industry" className="scroll-mt-32">
         <LazyLoadWrapper height="400px" delay={500}>
-          <div className="bg-white p-12 rounded-2xl shadow-lg overflow-hidden">
+          <div className="bg-white p-6 sm:p-8 md:p-12 rounded-2xl shadow-lg">
             <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">Industry Oriented Training</h4>
             <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
             <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
@@ -1114,43 +1184,10 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
             
             {/* Scrolling Programs Carousel */}
             <div className="relative">
-              {/* Left Scroll Button */}
-              <button
-                onClick={() => {
-                  const container = industryCarouselRef.current;
-                  if (container) {
-                    container.scrollBy({ left: -400, behavior: 'smooth' });
-                  }
-                }}
-                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110"
-                aria-label="Scroll left"
-              >
-                <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-
-              {/* Right Scroll Button */}
-              <button
-                onClick={() => {
-                  const container = industryCarouselRef.current;
-                  if (container) {
-                    container.scrollBy({ left: 400, behavior: 'smooth' });
-                  }
-                }}
-                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110"
-                aria-label="Scroll right"
-              >
-                <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
               <div className="overflow-hidden">
                 <div 
                   ref={industryCarouselRef}
-                  className="flex gap-6 mb-8 overflow-x-auto scrollbar-hide"
-                  style={{ scrollBehavior: 'smooth' }}
+                  className="flex animate-scroll-left gap-6 pb-4"
                   onMouseEnter={() => {
                     // Pause the CSS animation when hovering
                     const element = industryCarouselRef.current;
@@ -1167,7 +1204,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   }}
                 >
                   {/* Capgemini Women Empowerment */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-blue-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -1183,7 +1220,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">2024</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2024</span>
                       </div>
                       
                       <img 
@@ -1192,23 +1229,23 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini Women Empowerment Program</h5>
-                      <div className="border-b-2 border-blue-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini Women Empowerment Program</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Program Details</p>
-                        <p className="text-gray-700 text-sm leading-relaxed">
-                          Data Science and Big Data Analytics certificate course organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Details</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
+                          Data Science and Big Data Analytics certificate courses organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Target Audience</p>
-                        <p className="text-gray-700 text-sm">Final Year Women Students (CSE, ECE, IT)</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Target Audience</p>
+                        <p className="text-gray-700 text-base">Final Year Women Students (CSE, ECE, IT)</p>
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Partners:</strong> ICT Academy & Capgemini
                         </p>
                       </div>
@@ -1216,7 +1253,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* Capgemini Women Transformation */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -1232,7 +1269,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">2023</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2023</span>
                       </div>
                       
                       <img 
@@ -1241,19 +1278,19 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3">Capgemini Women Transformation Program</h5>
-                      <div className="border-b-2 border-purple-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3">Capgemini Women Transformation Program</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Program Focus</p>
-                        <p className="text-gray-700 text-sm leading-relaxed">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Focus</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
                           Career transformation program designed to empower women students with leadership skills, technical expertise, and professional development opportunities.
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Key Benefits</p>
-                        <ul className="text-gray-700 text-sm space-y-1">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Benefits</p>
+                        <ul className="text-gray-700 text-base space-y-1">
                           <li>• Leadership Development</li>
                           <li>• Career Mentorship</li>
                           <li>• Industry Exposure</li>
@@ -1261,7 +1298,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Partners:</strong> Capgemini & ICT Academy
                         </p>
                       </div>
@@ -1269,7 +1306,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* Microsoft Cybersecurity */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-green-50 to-teal-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-green-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -1285,7 +1322,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">2022-23</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2022-23</span>
                       </div>
                       
                       <img 
@@ -1294,19 +1331,19 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Microsoft Cybersecurity - Cyber Shiksha</h5>
-                      <div className="border-b-2 border-green-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Microsoft Cybersecurity - Cyber Shiksha</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-green-600 uppercase mb-2">Program Overview</p>
-                        <p className="text-gray-700 text-sm leading-relaxed">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Overview</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
                           "Cyber Shiksha for Educators and Students" - A CSR Initiative of Microsoft Philanthropy implemented by ICT Academy from 23.07.22 to 04.02.23.
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-green-600 uppercase mb-2">Focus Areas</p>
-                        <ul className="text-gray-700 text-sm space-y-1">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Focus Areas</p>
+                        <ul className="text-gray-700 text-base space-y-1">
                           <li>• Cybersecurity Fundamentals</li>
                           <li>• Ethical Hacking</li>
                           <li>• Network Security</li>
@@ -1315,7 +1352,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Initiative:</strong> Microsoft Philanthropy & ICT Academy
                         </p>
                       </div>
@@ -1323,7 +1360,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* Capgemini Data Science */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-orange-50 to-red-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-orange-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -1339,7 +1376,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">420 Hrs</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">420 Hrs</span>
                       </div>
                       
                       <img 
@@ -1348,12 +1385,12 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3">Capgemini Data Science & Big Data Analytics</h5>
-                      <div className="border-b-2 border-orange-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3">Capgemini Data Science & Big Data Analytics</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-orange-600 uppercase mb-2">Program Features</p>
-                        <ul className="text-gray-700 text-sm space-y-1">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Features</p>
+                        <ul className="text-gray-700 text-base space-y-1">
                           <li>• 420 Hours Intensive Training</li>
                           <li>• Technology Skills: 350 Hours</li>
                           <li>• Soft Skills: 70 Hours</li>
@@ -1363,14 +1400,14 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-orange-600 uppercase mb-2">Key Highlights</p>
-                        <p className="text-gray-700 text-sm leading-relaxed">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Highlights</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
                           Trains 51 students in advanced technology. Curriculum mapped to Global Industry Standards. Fully sponsored by Capgemini and offered free of cost to women students.
                         </p>
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Certification:</strong> Capgemini & ICT Academy
                         </p>
                       </div>
@@ -1378,7 +1415,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* IBM Naalaiya Thiran */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-cyan-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <img 
@@ -1386,7 +1423,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                           alt="IBM" 
                           className="h-12 w-auto object-contain" 
                         />
-                        <span className="bg-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold">HX 8001</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">HX 8001</span>
                       </div>
                       
                       <img 
@@ -1395,27 +1432,27 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">IBM Naalaiya Thiran - Professional Readiness</h5>
-                      <div className="border-b-2 border-cyan-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">IBM Naalaiya Thiran - Professional Readiness</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Course Code: HX 8001</p>
-                        <p className="text-gray-700 text-sm font-semibold mb-2">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Course Code: HX 8001</p>
+                        <p className="text-gray-700 text-base font-semibold mb-2">
                           Professional Readiness for Innovation, Employability and Entrepreneurship
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Project Details</p>
-                        <p className="text-gray-700 text-sm">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Project Details</p>
+                        <p className="text-gray-700 text-base">
                           <strong>Project Title:</strong> Crude Oil Price Prediction<br />
                           <strong>Team ID:</strong> PNT2022TMID10413
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Focus Areas</p>
-                        <ul className="text-gray-700 text-sm space-y-1">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Focus Areas</p>
+                        <ul className="text-gray-700 text-base space-y-1">
                           <li>• Innovation & Creativity</li>
                           <li>• Employability Skills</li>
                           <li>• Entrepreneurship Development</li>
@@ -1424,7 +1461,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Program:</strong> Naalaiya Thiran by IBM
                         </p>
                       </div>
@@ -1432,7 +1469,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* Duplicate cards for seamless loop */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-blue-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -1448,7 +1485,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">2024</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2024</span>
                       </div>
                       
                       <img 
@@ -1457,30 +1494,30 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini Women Empowerment Program</h5>
-                      <div className="border-b-2 border-blue-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini Women Empowerment Program</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Program Details</p>
-                        <p className="text-gray-700 text-sm leading-relaxed">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Details</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
                           Data Science and Big Data Analytics certificate course organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-blue-600 uppercase mb-2">Target Audience</p>
-                        <p className="text-gray-700 text-sm">Final Year Women Students (CSE, ECE, IT)</p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Target Audience</p>
+                        <p className="text-gray-700 text-base">Final Year Women Students (CSE, ECE, IT)</p>
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Partners:</strong> ICT Academy & Capgemini
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -1496,7 +1533,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">2023</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2023</span>
                       </div>
                       
                       <img 
@@ -1505,19 +1542,19 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3">Capgemini Women Transformation Program</h5>
-                      <div className="border-b-2 border-purple-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3">Capgemini Women Transformation Program</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Program Focus</p>
-                        <p className="text-gray-700 text-sm leading-relaxed">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Focus</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
                           Career transformation program designed to empower women students with leadership skills, technical expertise, and professional development opportunities.
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Key Benefits</p>
-                        <ul className="text-gray-700 text-sm space-y-1">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Benefits</p>
+                        <ul className="text-gray-700 text-base space-y-1">
                           <li>• Leadership Development</li>
                           <li>• Career Mentorship</li>
                           <li>• Industry Exposure</li>
@@ -1525,7 +1562,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Partners:</strong> Capgemini & ICT Academy
                         </p>
                       </div>
@@ -1533,7 +1570,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* Microsoft Cybersecurity - Duplicate */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-green-50 to-teal-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-green-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -1549,7 +1586,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">2022-23</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2022-23</span>
                       </div>
                       
                       <img 
@@ -1558,19 +1595,19 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Microsoft Cybersecurity - Cyber Shiksha</h5>
-                      <div className="border-b-2 border-green-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Microsoft Cybersecurity - Cyber Shiksha</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-green-600 uppercase mb-2">Program Overview</p>
-                        <p className="text-gray-700 text-sm leading-relaxed">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Overview</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
                           "Cyber Shiksha for Educators and Students" - A CSR Initiative of Microsoft Philanthropy implemented by ICT Academy from 23.07.22 to 04.02.23.
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-green-600 uppercase mb-2">Focus Areas</p>
-                        <ul className="text-gray-700 text-sm space-y-1">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Focus Areas</p>
+                        <ul className="text-gray-700 text-base space-y-1">
                           <li>• Cybersecurity Fundamentals</li>
                           <li>• Ethical Hacking</li>
                           <li>• Network Security</li>
@@ -1579,7 +1616,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Initiative:</strong> Microsoft Philanthropy & ICT Academy
                         </p>
                       </div>
@@ -1587,7 +1624,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* Capgemini Data Science - Duplicate */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-orange-50 to-red-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-orange-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -1603,7 +1640,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">420 Hrs</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">420 Hrs</span>
                       </div>
                       
                       <img 
@@ -1612,12 +1649,12 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3">Capgemini Data Science & Big Data Analytics</h5>
-                      <div className="border-b-2 border-orange-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3">Capgemini Data Science & Big Data Analytics</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-orange-600 uppercase mb-2">Program Features</p>
-                        <ul className="text-gray-700 text-sm space-y-1">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Features</p>
+                        <ul className="text-gray-700 text-base space-y-1">
                           <li>• 420 Hours Intensive Training</li>
                           <li>• Technology Skills: 350 Hours</li>
                           <li>• Soft Skills: 70 Hours</li>
@@ -1627,14 +1664,14 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-orange-600 uppercase mb-2">Key Highlights</p>
-                        <p className="text-gray-700 text-sm leading-relaxed">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Highlights</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
                           Trains 51 students in advanced technology. Curriculum mapped to Global Industry Standards. Fully sponsored by Capgemini and offered free of cost to women students.
                         </p>
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Certification:</strong> Capgemini & ICT Academy
                         </p>
                       </div>
@@ -1642,7 +1679,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* IBM Naalaiya Thiran - Duplicate */}
-                  <div className="flex-shrink-0 w-96 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-cyan-500">
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <img 
@@ -1650,7 +1687,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                           alt="IBM" 
                           className="h-12 w-auto object-contain" 
                         />
-                        <span className="bg-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold">HX 8001</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">HX 8001</span>
                       </div>
                       
                       <img 
@@ -1659,27 +1696,27 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">IBM Naalaiya Thiran - Professional Readiness</h5>
-                      <div className="border-b-2 border-cyan-500 w-16 mb-4"></div>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">IBM Naalaiya Thiran - Professional Readiness</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Course Code: HX 8001</p>
-                        <p className="text-gray-700 text-sm font-semibold mb-2">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Course Code: HX 8001</p>
+                        <p className="text-gray-700 text-base font-semibold mb-2">
                           Professional Readiness for Innovation, Employability and Entrepreneurship
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Project Details</p>
-                        <p className="text-gray-700 text-sm">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Project Details</p>
+                        <p className="text-gray-700 text-base">
                           <strong>Project Title:</strong> Crude Oil Price Prediction<br />
                           <strong>Team ID:</strong> PNT2022TMID10413
                         </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-sm font-semibold text-cyan-600 uppercase mb-2">Focus Areas</p>
-                        <ul className="text-gray-700 text-sm space-y-1">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Focus Areas</p>
+                        <ul className="text-gray-700 text-base space-y-1">
                           <li>• Innovation & Creativity</li>
                           <li>• Employability Skills</li>
                           <li>• Entrepreneurship Development</li>
@@ -1688,13 +1725,24 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-sm text-gray-600">
                           <strong>Program:</strong> Naalaiya Thiran by IBM
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+              
+              {/* Pagination Dots */}
+              <div className="flex justify-center gap-2 mt-6">
+                {[0, 1, 2, 3, 4].map((index) => (
+                  <button
+                    key={index}
+                    className="h-2.5 w-2.5 rounded-full bg-gray-300 hover:bg-yellow-400 transition-colors"
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
               </div>
             </div>
           </div>
