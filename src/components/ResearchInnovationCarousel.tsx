@@ -62,7 +62,7 @@ const ResearchInnovationCarousel: React.FC<ResearchInnovationCarouselProps> = ({
         patents, and industry consultancy services that drive technological advancement
       </p>
 
-      {/* Horizontal Scrolling Carousel */}
+      {/* Horizontal Scrolling Carousell */}
       <div className="relative">
         <div className="overflow-hidden">
           <div 
