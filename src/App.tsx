@@ -41,6 +41,7 @@ import PlacementDetailsPage from './pages/PlacementDetailsPage';
 import TrainingSyllabusPage from './pages/TrainingSyllabusPage';
 import CseSpecializedTraining from './pages/CseSpecializedTraining';
 import ResearchInnovationPage from './pages/ResearchInnovationPage';
+import EventsOrganisedPage from './pages/EventsOrganisedPage';
 
 const news = newsEventsData.news;
 const events = newsEventsData.events;
@@ -113,6 +114,7 @@ function App() {
                 <Route path="/latest-event" element={<CseLatestEvents />} />
                 <Route path="/coe" element={<ControllerOfExaminationsPage />} />
                 <Route path="/research-innovation" element={<ResearchInnovationPage />} />
+                <Route path="/events-organised" element={<EventsOrganisedPage />} />
               </Routes>
             </main>
               <Footer
