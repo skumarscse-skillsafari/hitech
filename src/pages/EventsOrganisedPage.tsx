@@ -7,7 +7,7 @@ import { ChevronLeft, Calendar } from 'lucide-react';
 const EventsOrganisedPage: React.FC = () => {
   const navigate = useNavigate();
 
-  // Transform the data to match table format with proper column names
+  // Transform the data to match table format with proper column namess
   const tableData = eventsData.events.map((event) => ({
     'S.No': event.serialNo,
     'Society / Body': event.society,
