@@ -202,7 +202,7 @@ const handlePreviousTeam = useCallback(() => {
                     : currentTeam.achievements
                   ).map((achievement, index) => (
                     <div 
-                      key={`img-${index}`}
+                      key={`team-${currentTeam.teamId}-achievement-${achievement.id}-${index}`}
                       className="flex-shrink-0 w-80 group relative"
                     >
                       <div className="relative overflow-hidden rounded-xl shadow-xl ring-2 ring-yellow-400/20">
@@ -235,7 +235,7 @@ const handlePreviousTeam = useCallback(() => {
                     : currentTeam.achievements
                   ).map((achievement, index) => (
                     <div 
-                      key={`img-dup-${index}`}
+                      key={`team-${currentTeam.teamId}-achievement-dup-${achievement.id}-${index}`}
                       className="flex-shrink-0 w-80 group relative"
                     >
                       <div className="relative overflow-hidden rounded-xl shadow-xl ring-2 ring-yellow-400/20">
