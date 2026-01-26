@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ChevronLeft } from 'lucide-react';
 import PageLayout from '../components/layout/PageLayout';
 
 const PlacementDetailsPage: React.FC = () => {
@@ -10,20 +11,22 @@ const PlacementDetailsPage: React.FC = () => {
       title="About Placement - Hindusthan Institute of Technology"
       description="Comprehensive placement support and industry partnerships"
     >
+      {/* Back Button (standardized size) */}
+      <button
+        onClick={() => navigate(-1)}
+        className="group fixed top-[200px] left-9 z-50 w-12 h-12 rounded-full bg-yellow-500 shadow-lg flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-all duration-300"
+        aria-label="Back"
+      >
+        <ChevronLeft className="w-6 h-6 text-black" strokeWidth={3} />
+        <span className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 px-3 py-1 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+          Back
+        </span>
+      </button>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-32">
         <div className="bg-white p-8 rounded-2xl shadow-lg">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">About Placement</h2>
           <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-8"></div>
-          
-          <div className="flex items-center justify-between mt-4 mb-8">
-            <button
-              onClick={() => navigate(-1)}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-            >
-              <span className="text-lg">←</span>
-              <span>Back to Department</span>
-            </button>
-          </div>
 
           {/* Placement Statistics */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
