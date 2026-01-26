@@ -189,8 +189,8 @@ useEffect(() => {
                       <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
                     </button>
                     <div
-                      className="absolute top-full right-0 mt-1 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[100] pointer-events-none group-hover:pointer-events-auto"
-                      onMouseEnter={() => setActiveDropdown(item.name)}
+                      className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                      onMouseLeave={() => setActiveDropdown(null)}
                     >
                       {renderDropdownItems(item.dropdown)}
                     </div>
@@ -211,7 +211,7 @@ useEffect(() => {
             ))}
 
             {/* Desktop Hamburger Dropdown Menu */}
-            <div className="relative ml-2" onMouseLeave={() => setActiveDropdown(null)}>
+            <div className="relative ml-4">
               <button
                 className="p-2 rounded-lg hover:bg-gray-100 transition-all duration-300"
                 onClick={() => handleDropdownToggle('hamburger')}
@@ -220,10 +220,7 @@ useEffect(() => {
                 <Menu className="h-6 w-6 text-gray-900 transition-colors duration-300 hover:text-yellow-600" />
               </button>
               {activeDropdown === 'hamburger' && (
-                <div 
-                  className="absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-xl z-[100] opacity-0 animate-fadeIn pointer-events-auto"
-                  onMouseEnter={() => setActiveDropdown('hamburger')}
-                >
+                <div className="absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-xl z-50">
                   <Link
                     to="/online-fees"
                     className="block px-4 py-2 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300"
