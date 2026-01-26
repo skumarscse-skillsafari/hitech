@@ -17,7 +17,7 @@ import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg";
-import { Award, Trophy } from 'lucide-react';
+import { Award, Trophy, FileText, Building2, GraduationCap, Lightbulb, User, Users, Briefcase, Globe } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
