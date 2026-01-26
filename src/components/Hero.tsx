@@ -112,7 +112,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
 
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60 pointer-events-none"></div>
 
       {/* Hero Content */}
       <div className="

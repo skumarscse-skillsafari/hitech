@@ -1,4 +1,29 @@
 import { useState, useEffect, Fragment, useRef } from "react";
+>>>>>>> bc84bfec71ec6d463c260534eb52750fb06e9f32
+import { useNavigate } from "react-router-dom";
+import {
+import { useState, useEffect, Fragment, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  DollarSign,
+  Clock,
+  Lightbulb,
+  FileText,
+  Award,
+  Briefcase,
+  ChevronRight,
+  ArrowRight,
+  Building2,
+  Calendar,
+  Target,
+  ChevronLeft,
+  ChevronRight as ExpandIcon,
+  ChevronLeft as CollapseIcon,
+} from "lucide-react";
+import PageLayout from "../components/layout/PageLayout";
+import researchData from "../data/ResearchData.json";
+import { useState, useEffect, Fragment, useRef } from "react";
+>>>>>>> bc84bfec71ec6d463c260534eb52750fb06e9f32
 import { useNavigate } from "react-router-dom";
 import {
   DollarSign,
@@ -609,6 +634,54 @@ const PublicationTable: React.FC<TableProps> = ({ items, type = 'book-chapter', 
 // Research Card Component
 const ResearchCard: React.FC<{ item: any }> = ({ item }) => {
   return (
+<<<<<<< HEAD
+    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-yellow-200 group">
+      <div className="mb-4">
+        <h3 className="text-xl font-bold text-yellow-500 leading-tight mb-3 group-hover:text-yellow-600 transition-colors">
+          {item.title}
+        </h3>
+
+        <div className="space-y-2 text-gray-600">
+          {item.authors
+            ? item.authors.map((author: string, idx: number) => (
+                <p key={idx} className="text-sm font-medium">
+                  {author}
+                </p>
+              ))
+            : item.author && <p className="text-sm font-medium">{item.author}</p>}
+        </div>
+      </div>
+
+      {item.description && (
+        <p className="text-sm text-gray-600 leading-relaxed mb-4">{item.description}</p>
+      )}
+
+      <div className="space-y-3">
+        {Object.entries(item).map(([key, value]) => {
+          if (EXCLUDE_FIELDS.includes(key) || !value) return null;
+
+          const Icon = fieldIconMap[key] || FileText;
+          const capitalizedKey = formatFieldName(key);
+
+          return (
+            <div key={key} className="flex items-start gap-2">
+              <Icon className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
+              <div className="flex-1">
+                <span className="text-sm font-semibold text-yellow-600">{capitalizedKey}:</span>
+                <p className="text-sm text-gray-700 mt-1 leading-relaxed break-words">
+                  {Array.isArray(value) ? value.join(", ") : String(value)}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="mt-6 pt-4 border-t border-gray-100">
+        <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-yellow-500 text-black font-medium rounded-lg hover:bg-yellow-600 transition-all duration-200 group-hover:shadow-md">
+          <span>Learn More</span>
+          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+        </button>
     <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">
@@ -682,6 +755,7 @@ const ResearchCard: React.FC<{ item: any }> = ({ item }) => {
             <ArrowRight className="w-4 h-4 transition-transform hover:translate-x-1" />
           </button>
         </div>
+>>>>>>> bc84bfec71ec6d463c260534eb52750fb06e9f32
       </div>
     </div>
   );
@@ -695,7 +769,6 @@ const ResearchInnovationPage: React.FC = () => {
   const [publicationCategory, setPublicationCategory] = useState<string>("book-chapter");
   const [publicationYear, setPublicationYear] = useState<string>("All");
   const navigate = useNavigate();
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     import("../data/researchInnovationData.json").then((data) => {
@@ -735,6 +808,13 @@ const ResearchInnovationPage: React.FC = () => {
         }
         return null;
       default:
+<<<<<<< HEAD
+        return (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {activeTabData.content.items.map((item: any, index: number) => (
+              <ResearchCard key={index} item={item} />
+            ))}
+        const scrollRef = useRef<HTMLDivElement>(null);
         return (
           <div className="relative">
             <div className="overflow-hidden">
@@ -759,6 +839,7 @@ const ResearchInnovationPage: React.FC = () => {
                 ))}
               </div>
             </div>
+>>>>>>> bc84bfec71ec6d463c260534eb52750fb06e9f32
           </div>
         );
     }
