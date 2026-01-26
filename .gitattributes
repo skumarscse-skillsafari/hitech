@@ -1,5 +1,1 @@
-public/drone/drone.mp4 filter=lfs diff=lfs merge=lfs -text
-public/drone/dronee.mov filter=lfs diff=lfs merge=lfs -text
-public/drone/*.mov filter=lfs diff=lfs merge=lfs -text
-public/drone/*.mp4 filter=lfs diff=lfs merge=lfs -text
 public/drone/dronee.mp4 filter=lfs diff=lfs merge=lfs -text
