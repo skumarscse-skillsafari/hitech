@@ -74,73 +74,73 @@
     },
     {
       "teamId": 2,
-      "teamName": "Team 2",
-      "award": "Outstanding Performance",
+      "teamName": "Tech_Wizards",
+      "award": "Finalist - Smart India Hackathon 2025",
       "achievements": [
         {
           "id": 5,
-          "title": "Smart India Hackathon 2025 - Team 2",
+          "title": "Smart India Hackathon 2025 - Tech_Wizards Team",
           "image": "/images-achievements/SIH -Team2.jpeg"
         },
         {
           "id": 6,
-          "title": "Smart India Hackathon 2025 - Team 2 Presentation",
+          "title": "Smart India Hackathon 2025 - Tech_Wizards Presentation",
           "image": "/images-achievements/SIH -Team2(2).jpeg"
         },
         {
           "id": 7,
-          "title": "Smart India Hackathon 2025 - Team 2 Demo",
+          "title": "Smart India Hackathon 2025 - Tech_Wizards Demo",
           "image": "/images-achievements/SIH -Team2(3).jpeg"
         },
         {
           "id": 8,
-          "title": "Smart India Hackathon 2025 - Team 2 Award",
+          "title": "Smart India Hackathon 2025 - Tech_Wizards Award",
           "image": "/images-achievements/SIH -Team2(4).jpeg"
         }
       ],
-      "problemStatement": "Modern educational institutions face challenges in managing real-time communication between students, faculty, and administration. Traditional notice boards and email systems often lead to missed information and delayed responses.",
+      "problemStatement": "Team Tech_Wizards from Hindusthan Institute of Technology (AISHE Code: C-37046) participated in Smart India Hackathon 2025. Team ID: 77725, Idea ID: 72111, PS ID: SIH25138. The team developed innovative solutions addressing real-world challenges.",
       "teamMembers": [
         {
-          "name": "Priya Sharma",
-          "rollNo": "720824103071",
-          "year": "2nd Year",
-          "semester": "4th Sem",
-          "batch": "2024-2028"
+          "name": "Swetha S (Team Leader)",
+          "rollNo": "720823103163",
+          "year": "3rd Year",
+          "semester": "5th Sem",
+          "batch": "2023-2027"
         },
         {
-          "name": "Karthik Kumar",
-          "rollNo": "720824103072",
-          "year": "2nd Year",
-          "semester": "4th Sem",
-          "batch": "2024-2028"
+          "name": "Vasu P",
+          "rollNo": "720823103171",
+          "year": "3rd Year",
+          "semester": "5th Sem",
+          "batch": "2023-2027"
         },
         {
-          "name": "Divya Rajesh",
-          "rollNo": "720824103073",
-          "year": "2nd Year",
-          "semester": "4th Sem",
-          "batch": "2024-2028"
+          "name": "Vijayakumar G",
+          "rollNo": "720823103173",
+          "year": "3rd Year",
+          "semester": "5th Sem",
+          "batch": "2023-2027"
         },
         {
-          "name": "Arun Krishna",
-          "rollNo": "720824103074",
-          "year": "2nd Year",
-          "semester": "4th Sem",
-          "batch": "2024-2028"
+          "name": "Sham S",
+          "rollNo": "720823103149",
+          "year": "3rd Year",
+          "semester": "5th Sem",
+          "batch": "2023-2027"
         },
         {
-          "name": "Sneha Reddy",
-          "rollNo": "720824103075",
-          "year": "2nd Year",
-          "semester": "4th Sem",
-          "batch": "2024-2028"
+          "name": "Sakthivel S",
+          "rollNo": "720823103134",
+          "year": "3rd Year",
+          "semester": "5th Sem",
+          "batch": "2023-2027"
         },
         {
-          "name": "Vijay Prasad",
-          "rollNo": "720824103076",
-          "year": "2nd Year",
-          "semester": "4th Sem",
-          "batch": "2024-2028"
+          "name": "Yogeshwari S",
+          "rollNo": "720823103183",
+          "year": "3rd Year",
+          "semester": "5th Sem",
+          "batch": "2023-2027"
         }
       ]
     },

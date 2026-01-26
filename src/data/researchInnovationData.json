@@ -215,501 +215,197 @@
       "icon": "FileText",
       "content": {
         "title": "Research Publications",
-        "items": [
-          {
-            "title": "Deep Learning Approaches for Medical Image Analysis: A Comprehensive Review",
-            "authors": [
-              "Dr.A.JameerBasha",
-              "Dr.S.Lokesh"
-            ],
-            "journal": "IEEE Transactions on Medical Imaging",
-            "year": "2023",
-            "type": "International Journal",
-            "impactFactor": "10.048",
-            "description": "Comprehensive review of state-of-the-art deep learning techniques for medical imaging applications."
+        "hasDropdown": true,
+        "categories": {
+          "book-chapter": {
+            "name": "Book Chapter",
+            "items": [
+              {
+                "serialNo": 1,
+                "title": "Wireless Sensor Networks (WSN) with Internet of Things (IOT)",
+                "bookTitle": "-",
+                "authors": "Dr.S.Ramasamy",
+                "isbn": "9786205630778",
+                "publisher": "LAP LAMBERT Academic Publishing",
+                "year": "2022-23",
+                "status": "Published"
+              },
+              {
+                "serialNo": 2,
+                "title": "Genetic Algorithm and Machine Learning",
+                "bookTitle": "-",
+                "authors": "Mrs.R.Gnanakumari",
+                "isbn": "9789357570800",
+                "publisher": "Scientific International Publishing House (SIPH)",
+                "year": "2022-23",
+                "status": "Published"
+              },
+              {
+                "serialNo": 3,
+                "title": "Agile Learning Methodologies",
+                "bookTitle": "-",
+                "authors": "Mr.T.Tamilzarasu",
+                "isbn": "9788193433492",
+                "publisher": "Mercury Publications",
+                "year": "2022-23",
+                "status": "Published"
+              },
+              {
+                "serialNo": 4,
+                "title": "An Deep Learning Based Emotion Detection Using Convolutional Neural Network",
+                "bookTitle": "-",
+                "authors": "Mrs.R.Gnanakumari, Mr.G.Jeevanantham",
+                "isbn": "9786206810452",
+                "publisher": "AETS Global Publisher",
+                "year": "2022-23",
+                "status": "Published"
+              },
+              {
+                "serialNo": 5,
+                "title": "Fundamentals of Data Science",
+                "bookTitle": "-",
+                "authors": "Mrs.Gnanakumari R",
+                "isbn": "9766119313129",
+                "publisher": "GLOBAL AASAN RESEARCH",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 6,
+                "title": "Artificial Intelligence & Machine Learning",
+                "bookTitle": "-",
+                "authors": "Dr.S.Ramasamy",
+                "isbn": "9789319432950",
+                "publisher": "Sri Krishna Hitech Publishing Company",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 7,
+                "title": "Digital Forensics and Cyber Physical Systems",
+                "bookTitle": "-",
+                "authors": "Dr.N.B.Maheshkumar",
+                "isbn": "-",
+                "publisher": "Scientific International Publishing House (SIPH)",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 8,
+                "title": "Introduction to Compilers and Language Design",
+                "bookTitle": "-",
+                "authors": "Dr.N.B.Maheshkumar",
+                "isbn": "9781312097582",
+                "publisher": "LuLu Publications",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 9,
+                "title": "Towards Artificial General Intelligence",
+                "bookTitle": "Meta-learning Through ensemble approach :bagging, boosting, and random forest strategies",
+                "authors": "Dr.S.Ramasamy",
+                "isbn": "9783111323749",
+                "publisher": "DEGURUYTER",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 10,
+                "title": "Artificial Intelligence & Internet of Things Unleashed: Revolutionizing the connected world",
+                "bookTitle": "-",
+                "authors": "Mr.Uthayakumar",
+                "isbn": "9788196440817",
+                "publisher": "Thing bytes Publication",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 11,
+                "title": "Information Retrieval",
+                "bookTitle": "-",
+                "authors": "Dr.M Thangamani",
+                "isbn": "9788193433478",
+                "publisher": "Mercury Publications Consortium",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 12,
+                "title": "Data Visualization Techniques",
+                "bookTitle": "-",
+                "authors": "Dr.M Thangamani",
+                "isbn": "9788195490196",
+                "publisher": "Mercury Publications Consortium",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 13,
+                "title": "Artificial Intelligence and Machine learning for Multidisciplinary research",
+                "bookTitle": "-",
+                "authors": "Dr.M Thangamani",
+                "isbn": "9788193433485",
+                "publisher": "Mercury Publications Consortium",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 14,
+                "title": "Remote sensing and Its Applications",
+                "bookTitle": "-",
+                "authors": "Dr.M Thangamani",
+                "isbn": "9788193433447",
+                "publisher": "Mercury Publications Consortium",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 15,
+                "title": "Full Stack Web Development",
+                "bookTitle": "-",
+                "authors": "Dr.Jayasutha.D",
+                "isbn": "9788119313273",
+                "publisher": "GLOBAL AASAN RESEARCH",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 16,
+                "title": "Big Data Analytics",
+                "bookTitle": "-",
+                "authors": "Mr.Tamizharasu.S",
+                "isbn": "9789357570800",
+                "publisher": "Scientific International Publishing House(SIPH)",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 17,
+                "title": "Block chain Technology for Beginners",
+                "bookTitle": "-",
+                "authors": "Dr.Jayasutha.D",
+                "isbn": "9788119313150",
+                "publisher": "GLOBAL AASAN RESEARCH",
+                "year": "2023-24",
+                "status": "Published"
+              },
+              {
+                "serialNo": 18,
+                "title": "Analysis of Cervical Image to Predict the Complications of Pregnancy",
+                "bookTitle": "Predicting Pregnancy Complication Through Artificial Intelligence and Machine Learning",
+                "authors": "Dr.R.Senthilkumar",
+                "isbn": "9781668489741",
+                "publisher": "IGI Global",
+                "year": "2023-24",
+                "status": "Published"
+              }
+            ]
           },
-          {
-            "title": "Blockchain Integration in IoT Healthcare Systems: Security and Privacy Perspectives",
-            "authors": [
-              "Ms.P.Jeevitha",
-              "Dr.R.Kala"
-            ],
-            "journal": "Journal of Network and Computer Applications",
-            "year": "2023",
-            "type": "International Journal",
-            "impactFactor": "7.574",
-            "description": "Analysis of blockchain technology integration for secure IoT-based healthcare systems."
-          },
-          {
-            "title": "Machine Learning for Sustainable Agriculture: An Indian Context",
-            "authors": [
-              "Dr.S.Lokesh",
-              "Mr.Arun"
-            ],
-            "conference": "International Conference on Artificial Intelligence and Applications",
-            "year": "2024",
-            "type": "International Conference",
-            "location": "Singapore",
-            "description": "Application of ML techniques for precision agriculture in Indian farming scenarios."
-          }
-        ]
-      }
-    },
-    {
-      "id": "patent",
-      "name": "Patent",
-      "icon": "Award",
-      "content": {
-        "title": "Patents",
-        "items": [
-          {
-            "year": "2025",
-            "serialNo": 1,
-            "facultyName": "Mr. Uthayakumar.J",
-            "title": "Harnessing Quantum Mechanics For Accurate Molecular Interaction Simulations in Drug Development",
-            "applicationNo": "202541021193",
-            "dateOfFiling": "09-03-2025"
-          },
-          {
-            "year": "2025",
-            "serialNo": 2,
-            "facultyName": "Ms. Umamaheshwari.P",
-            "title": "Entangled Qubits Transform Traditional Learning Methods into Intelligent Adaptive Systems",
-            "applicationNo": "202541023105",
-            "dateOfFiling": "14-03-2025"
-          },
-          {
-            "year": "2025",
-            "serialNo": 3,
-            "facultyName": "Mrs. Suganthi.D",
-            "title": "Entangled Growth Enhancing Onion Yield Prediction and Automated Harvesting with Quantum Computing Power",
-            "applicationNo": "202541023293",
-            "dateOfFiling": "16-03-2025"
-          },
-          {
-            "year": "2024",
-            "serialNo": 4,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "AI Based Smart Water and Nutrient Recycling System in Aeroponics for Real-Time Growth Monitoring and Adjustment for Autonomous Plant Cultivation Using Deep Learning Algorithms",
-            "applicationNo": "202441051857",
-            "dateOfFiling": "06-07-2024"
-          },
-          {
-            "year": "2024",
-            "serialNo": 5,
-            "facultyName": "Dr. Jayasudha.D",
-            "title": "Strategies for Active Student Learning and Future Business Success for Integrating AI Marketing Analytics into Pedagogy",
-            "applicationNo": "202441086398",
-            "dateOfFiling": "09-11-2024"
-          },
-          {
-            "year": "2024",
-            "serialNo": 6,
-            "facultyName": "Dr. Jayasudha.D",
-            "title": "Transforming Personalized Learning in Higher Education to Predict Student Success Using Machine Learning Approach",
-            "applicationNo": "202441057172",
-            "dateOfFiling": "27-07-2024"
-          },
-          {
-            "year": "2024",
-            "serialNo": 7,
-            "facultyName": "Dr. Mookhambika.N",
-            "title": "Smart EEG Based Brainwave Monitoring Unit",
-            "applicationNo": "431343-001",
-            "dateOfFiling": "23-09-2024",
-            "status": "Design Granted"
-          },
-          {
-            "year": "2024",
-            "serialNo": 8,
-            "facultyName": "Mrs. Vidhya.D",
-            "title": "Integrated Machine Learning and Graph Theory for Improved Feedback and Student Performance Prediction in Higher Education",
-            "applicationNo": "202441096993",
-            "dateOfFiling": "09-12-2024"
-          },
-          {
-            "year": "2024",
-            "serialNo": 9,
-            "facultyName": "Mrs. Rajaprabha.C.E",
-            "title": "Genetic Innovations and Machine Learning for Enhancing Crop Traits and Promoting Sustainable Agriculture",
-            "applicationNo": "202441088290",
-            "dateOfFiling": "14-11-2024"
-          },
-          {
-            "year": "2024",
-            "serialNo": 10,
-            "facultyName": "Mrs. Banupriya.M",
-            "title": "Blockchain and Machine Learning for Secure Cloud Storage in IoT Health Care Management",
-            "applicationNo": "202441100383",
-            "dateOfFiling": "18-12-2024"
-          },
-          {
-            "year": "2024",
-            "serialNo": 11,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "IoT And Artificial Intelligence Based Detection And Prevention Of Plant Disease With Smart Drip Irrigation System Using Block Chain Technology And Deep Learning",
-            "applicationNo": "202441017814",
-            "dateOfFiling": "12-03-2024"
-          },
-          {
-            "year": "2024",
-            "serialNo": 12,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "Robot For Determining Crop Yield",
-            "applicationNo": "413621-001",
-            "dateOfFiling": "15-04-2024",
-            "status": "Design Granted"
-          },
-          {
-            "year": "2023",
-            "serialNo": 13,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "IoT and AI based smart home automation using Wi-Fi through Android apps from smart phone",
-            "applicationNo": "202321047600",
-            "dateOfFiling": "14-07-2023"
-          },
-          {
-            "year": "2023",
-            "serialNo": 14,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "Device to predict cardiovascular attack",
-            "applicationNo": "397144-001",
-            "dateOfFiling": "09-10-2023",
-            "status": "Design Granted"
-          },
-          {
-            "year": "2023",
-            "serialNo": 15,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "Wearable ECG monitoring Device",
-            "applicationNo": "399703-001",
-            "dateOfFiling": "10-11-2023",
-            "status": "Design Granted"
-          },
-          {
-            "year": "2023",
-            "serialNo": 16,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "Detection and classification of eye cancer using DL techniques",
-            "applicationNo": "202341062322",
-            "dateOfFiling": "15-09-2023"
-          },
-          {
-            "year": "2023",
-            "serialNo": 17,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "AI based safe health care system for fertility preservation for young woman with breast cancer using cloud and ML algorithms",
-            "applicationNo": "202311064995",
-            "dateOfFiling": "27-09-2023"
-          },
-          {
-            "year": "2023",
-            "serialNo": 18,
-            "facultyName": "Dr. MaheshKumar.N.B",
-            "title": "AI and computer vision based detection and prevention of brain disorder disease and tumor at early stage and to provide efficient treatment using data mining and DL algorithm for smart health care management",
-            "applicationNo": "202341090160",
-            "dateOfFiling": "30-12-2023"
-          },
-          {
-            "year": "2024",
-            "serialNo": 19,
-            "facultyName": "Mr. Uthayakumar.J",
-            "title": "Elevating Wellness Through Intelligent Nutrition: Leveraging Artificial Intelligence",
-            "applicationNo": "202441039240",
-            "dateOfFiling": "20-05-2024"
-          },
-          {
-            "year": "2024",
-            "serialNo": 20,
-            "facultyName": "Mr. Periyasamy.P.N",
-            "title": "AI and ML: A model for enhancing faculty performance reliability",
-            "applicationNo": "202441035195",
-            "dateOfFiling": "03-05-2024"
-          },
-          {
-            "year": "2023",
-            "serialNo": 21,
-            "facultyName": "Mr. Periyasamy.P.N",
-            "title": "Smart Healthcare Environment using IOT and Machine Learning for Predictive Maintenance and Infection Control",
-            "applicationNo": "202341068088",
-            "dateOfFiling": "20-10-2023"
-          },
-          {
-            "year": "2024",
-            "serialNo": 22,
-            "facultyName": "Dr. Ramasamy.S",
-            "title": "Logistic Tracking Device",
-            "applicationNo": "405790-001",
-            "dateOfFiling": "26-01-2024",
-            "status": "Design Granted"
-          },
-          {
-            "year": "2024",
-            "serialNo": 23,
-            "facultyName": "Dr. Ramasamy.S",
-            "title": "Advancing Pedagogy Through Information And Communication Technology (ICT): The Potential Of Mentoring And Mirrored Practice",
-            "applicationNo": "202441035264",
-            "dateOfFiling": "10-05-2024"
-          },
-          {
-            "year": "2023",
-            "serialNo": 24,
-            "facultyName": "Dr. Ramasamy.S",
-            "title": "A Cloud-Based Platform for Crop Recommendation for Precision Farming",
-            "applicationNo": "202341036565",
-            "dateOfFiling": "01-09-2023"
-          },
-          {
-            "year": "2022",
-            "serialNo": 25,
-            "facultyName": "Mr. Suresh Kumar.P",
-            "title": "Systematic Approach for monitoring the pollution control in smart cities and addressing the security challenges integrated with IoT",
-            "applicationNo": "202211056475",
-            "dateOfFiling": "01-10-2022"
-          },
-          {
-            "year": "2022",
-            "serialNo": 26,
-            "facultyName": "Ms. Umamaheshwari.P",
-            "title": "DL based technique to predict the nutritional value of edible mushrooms for improving human health and promoting quality of life",
-            "applicationNo": "202211056600",
-            "dateOfFiling": "21-10-2022"
-          },
-          {
-            "year": "2022",
-            "serialNo": 27,
-            "facultyName": "Ms. Umamaheshwari.P",
-            "title": "AI based car tire blowout security system",
-            "applicationNo": "202241067480",
-            "dateOfFiling": "24-11-2022"
-          },
-          {
-            "year": "2022",
-            "serialNo": 28,
-            "facultyName": "Dr. Ramasamy.S",
-            "title": "A robust mechanism for preventing adversarial attacks on audio classifications",
-            "applicationNo": "202241069942",
-            "dateOfFiling": "30-12-2022"
-          },
-          {
-            "year": "2022",
-            "serialNo": 29,
-            "facultyName": "Dr. Senthilkumar.R",
-            "title": "An Intelligent real time monitoring and control method for grid attribute access control method based on bloom filter",
-            "applicationNo": "202214071991",
-            "dateOfFiling": "30-12-2022"
-          },
-          {
-            "year": "2022",
-            "serialNo": 30,
-            "facultyName": "Mr. Biju Balakrishnan",
-            "title": "Sensor based computationally intelligent e-nose to detect respiratory diseases in older adults using ML",
-            "applicationNo": "202241053382",
-            "dateOfFiling": "19-09-2022"
-          },
-          {
-            "year": "2022",
-            "serialNo": 31,
-            "facultyName": "Mrs. Banupriya.M",
-            "title": "Enumerating and manipulating tree data for tagging trees using ML",
-            "applicationNo": "202211059179",
-            "dateOfFiling": "17-10-2022"
-          },
-          {
-            "year": "2022",
-            "serialNo": 32,
-            "facultyName": "Mr. Devendran.M",
-            "title": "Cover of Smart Identity Card (PI Digital Valet using IOT)",
-            "applicationNo": "369659-001",
-            "dateOfFiling": "23-08-2022",
-            "status": "Design Granted"
-          }
-        ]
-      }
-    },
-    {
-      "id": "consultancy",
-      "name": "Consultancy",
-      "icon": "Briefcase",
-      "content": {
-        "title": "Consultancy Projects",
-        "items": [
-          {
-            "serialNo": 1,
-            "pi_name": "Dr. JameerBasha.A",
-            "co_pi_names": ["Dr. Senthilkumar.R"],
-            "department": "CSE",
-            "project_title": "CRM / ERP Development",
-            "funding_agency": "Metalica Motors, Pollachi Road, Achampatti, Coimbatore",
-            "duration": "1 year",
-            "amount_rs": 145000,
-            "year": "2023-24"
-          },
-          {
-            "serialNo": 2,
-            "pi_name": "Dr. Senthilkumar.R",
-            "co_pi_names": ["Dr. Ramasamy.S"],
-            "department": "CSE",
-            "project_title": "Automated Resume Screening System",
-            "funding_agency": "Initz Technologies, Coimbatore",
-            "duration": "1 year",
-            "amount_rs": 160000,
-            "year": "2023-24"
-          },
-          {
-            "serialNo": 3,
-            "pi_name": "Mr. Murugan.K",
-            "co_pi_names": ["Mr. Devendran.M"],
-            "department": "CSE",
-            "project_title": "Real Time Food Tracker",
-            "funding_agency": "Clarozon Technologies",
-            "duration": "1 year",
-            "amount_rs": 135000,
-            "year": "2023-24"
-          },
-          {
-            "serialNo": 4,
-            "pi_name": "Dr. Jayasudha.D",
-            "co_pi_names": ["Mr. Uthayakumar.J"],
-            "department": "CSE",
-            "project_title": "IoT-based Smart Home Automation System",
-            "funding_agency": "Quantanics TechServ, Madurai",
-            "duration": "1 year",
-            "amount_rs": 140000,
-            "year": "2023-24"
-          },
-          {
-            "serialNo": 5,
-            "pi_name": "Dr. Chitra.M",
-            "co_pi_names": ["Mr. Arun.R"],
-            "department": "CSE",
-            "project_title": "Chat-bot System for Customer Support",
-            "funding_agency": "Little Genius Technologies",
-            "duration": "1 year",
-            "amount_rs": 150000,
-            "year": "2023-24"
-          },
-          {
-            "serialNo": 6,
-            "pi_name": "Dr. Subhalakshmi.R.T",
-            "co_pi_names": ["Mrs. Jeevitha.P"],
-            "department": "CSE",
-            "project_title": "AI-Based Real-Time Voice Assistant",
-            "funding_agency": "Webnest Technologies",
-            "duration": "1 year",
-            "amount_rs": 155000,
-            "year": "2023-24"
-          },
-          {
-            "serialNo": 7,
-            "pi_name": "Dr. Maheshkumar.N.B",
-            "co_pi_names": ["Mr. Murugan.K"],
-            "department": "CSE",
-            "project_title": "AI-Based Video Surveillance System",
-            "funding_agency": "Visaithalam Solutions",
-            "duration": "1 year",
-            "amount_rs": 160000,
-            "year": "2023-24"
-          },
-          {
-            "serialNo": 8,
-            "pi_name": "Mrs. Jeevitha.P",
-            "co_pi_names": ["Mrs. Pavithra.K.S"],
-            "department": "CSE",
-            "project_title": "Blockchain based Supply Chain management",
-            "funding_agency": "Litz Technologies",
-            "duration": "1 year",
-            "amount_rs": 170000,
-            "year": "2022-23"
-          },
-          {
-            "serialNo": 9,
-            "pi_name": "Dr. Senthilkumar.R",
-            "co_pi_names": ["Mr. Devendran.M"],
-            "department": "CSE",
-            "project_title": "IoT Based Energy Monitoring and Optimization System",
-            "funding_agency": "M/s. Talent Factori Pvt Ltd",
-            "duration": "1 year",
-            "amount_rs": 175000,
-            "year": "2022-23"
-          },
-          {
-            "serialNo": 10,
-            "pi_name": "Dr. Jeyasudha.D",
-            "co_pi_names": ["Mrs. BanuPriya.M"],
-            "department": "CSE",
-            "project_title": "Vehicle Tracking System",
-            "funding_agency": "Icore Solutions",
-            "duration": "1 year",
-            "amount_rs": 158000,
-            "year": "2022-23"
-          },
-          {
-            "serialNo": 11,
-            "pi_name": "Dr. Subhalakshmi.R.T",
-            "co_pi_names": ["Mr. Kalaiselvi.T"],
-            "department": "CSE",
-            "project_title": "AI-Based Disease Diagnosis System",
-            "funding_agency": "Dataspire Technologies",
-            "duration": "1 year",
-            "amount_rs": 150000,
-            "year": "2022-23"
-          },
-          {
-            "serialNo": 12,
-            "pi_name": "Dr. Kala.R",
-            "co_pi_names": ["Mrs. Vidhya.D"],
-            "department": "CSE",
-            "project_title": "Smart Blind Stick",
-            "funding_agency": "INITZ Technologies",
-            "duration": "1 year",
-            "amount_rs": 155000,
-            "year": "2021-22"
-          },
-          {
-            "serialNo": 13,
-            "pi_name": "Dr. Uma.S",
-            "co_pi_names": ["Mr. Senthilkumar.R"],
-            "department": "CSE",
-            "project_title": "Smart Farming using IoT",
-            "funding_agency": "Quantanics TechServ Pvt Ltd",
-            "duration": "1 year",
-            "amount_rs": 160000,
-            "year": "2021-22"
-          },
-          {
-            "serialNo": 14,
-            "pi_name": "Dr. Lokesh.S",
-            "co_pi_names": ["Mrs. Banupriya.M"],
-            "department": "CSE",
-            "project_title": "QR Code based Street light control system",
-            "funding_agency": "Talent Factori Pvt Ltd",
-            "duration": "1 year",
-            "amount_rs": 178000,
-            "year": "2021-22"
-          },
-          {
-            "serialNo": 15,
-            "pi_name": "Dr. Ramasamy.S",
-            "co_pi_names": ["Mr. Devendran.M"],
-            "department": "CSE",
-            "project_title": "An AI Driven & Blockchain Enabled Employee Tracking & Ethical Rating Platform",
-            "funding_agency": "M/s. Talent Factori Pvt Ltd",
-            "duration": "1 year",
-            "amount_rs": 150000,
-            "year": "2021-22"
-          }
-        ]
-      }
-    },
-    {
-      "id": "conference",
-      "name": "Conference",
-      "icon": "FileText",
-      "content": {
-        "title": "Conference Publications",
-        "items": [
-          {
+          "conference": {
+            "name": "Conference",
+            "items": [
+              {
             "serialNo": 1,
             "authors": "K. Murugeswari, N. Sivakumar, R. Logeshwaran, V. Pandeeswari, K. Sowmya, K. Praveen Kumar",
             "title": "Performance Analysis of High Speed Vedic Multiplier Designs",
@@ -1077,8 +773,728 @@
             "year": 2020,
             "indexedIn": "IEEE Xplore"
           }
+             
+            ]
+          },
+          "journal": {
+            "name": "Journal",
+            "items": [
+              {
+                "serialNo": 1,
+                "authors": "Dr. D. Jayasutha",
+                "title": "Integration Of Fuzzy Logic And Deep Learning For Medical Image Analysis In Neuroimaging.",
+                "journal": "South Eastern European Journal of Public Health",
+                "indexedIn": "SCOPUS",
+                "publicationDetails": "https://doi.org/10.70135/seejph.vi.891 Page:24-34",
+                "monthYear": "July 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 2,
+                "authors": "Dr. D. Jayasutha",
+                "title": "DIWGAN-WBSN: A novel health monitoring approach for wireless body sensor networks",
+                "journal": "International Journal of Communication Systems",
+                "indexedIn": "SCOPUS",
+                "publicationDetails": "Volume37, Issue17",
+                "monthYear": "Aug 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 3,
+                "authors": "Dr. Jameer Basha. A",
+                "title": "Ultra‐Sensitive Photonic Crystal Fiber–Based SPR Sensor for Cancer Detection Utilizing Hybrid Nanocomposite Layers",
+                "journal": "Plasmonics",
+                "indexedIn": "SCI",
+                "publicationDetails": "https://doi.org/10.1007/s11468-024-02584y 1557-1955",
+                "monthYear": "Nov 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 4,
+                "authors": "Dr. N.B. Mahesh Kumar",
+                "title": "Intelligent Medical Devices and Robotics in Modern Health Care: Technological Advancements and Economic Considerations",
+                "journal": "Journal of Advancements in Robotics",
+                "indexedIn": "UGC",
+                "publicationDetails": "Volume : 11 | Issue : 03",
+                "monthYear": "Nov 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 5,
+                "authors": "Dr. N.B. Mahesh Kumar",
+                "title": "Comprehensive Security Frameworks for 6G Wireless Networks: Analysis and Insights",
+                "journal": "International Journal of Wireless Security and Networks",
+                "indexedIn": "UGC",
+                "publicationDetails": "Volume : 02 | Issue : 02 | Page : 35-41",
+                "monthYear": "Nov 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 6,
+                "authors": "Dr. N.B. Mahesh Kumar",
+                "title": "The Evolution of Payments: Traditional Bill Methods Compared to Mobile Innovations",
+                "journal": "International Journal of Mobile Computing Technology",
+                "indexedIn": "UGC",
+                "publicationDetails": "Volume : 03 | Issue : 01 | Page : 17-28",
+                "monthYear": "Nov 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 7,
+                "authors": "Dr. D. Jayasutha",
+                "title": "Remote Monitoring and Early Detection of Labor Progress Using IoT-Enabled Smart Health Systems for Rural Healthcare Accessibility",
+                "journal": "International Journal of Computational and Experimental Science and Engineering",
+                "indexedIn": "SCOPUS",
+                "publicationDetails": "Vol. 18, No. 4",
+                "monthYear": "Nov 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 8,
+                "authors": "Dr. R.T. Subhalakshmi, Mr. Murugan K",
+                "title": "Harnessing Convolutional Neural Networks for Precise Classification of Paddy Leaf Diseases",
+                "journal": "Journal of Xidian University",
+                "indexedIn": "UGC",
+                "publicationDetails": "Vol18, Issue 11",
+                "monthYear": "Nov 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 9,
+                "authors": "Mr. Murugan K",
+                "title": "Revolutionizing Safety with an AI-Powered Smart Security Solution Dedicated to Women's Protection and Peace of Mind",
+                "journal": "Journal of Xidian University",
+                "indexedIn": "UGC",
+                "publicationDetails": "Vol. 18, No. 5, Page: 296-303",
+                "monthYear": "Nov 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 10,
+                "authors": "Dr. N.B. Mahesh Kumar",
+                "title": "AI- Powered Early Detection and Prevention System for Student Dropout Risk",
+                "journal": "International Journal of Computational and Experimental Science and Engineering",
+                "indexedIn": "SCOPUS",
+                "publicationDetails": "Vol. 11-No.1 pp. 78-86",
+                "monthYear": "Dec 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 11,
+                "authors": "Mrs. Rathika Prabhu",
+                "title": "Developing an AI-Powered Interactive Virtual Tutor for Enhanced Learning Experiences",
+                "journal": "International Journal of Computational and Experimental Science and Engineering (IJCESEN)",
+                "indexedIn": "SCOPUS",
+                "publicationDetails": "Vol. 10, No. 4, Page: 1594-1690",
+                "monthYear": "Dec 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 12,
+                "authors": "Dr. S. Ramasamy",
+                "title": "Adaptive Rendezvous Based Congestion Control Using Optimized Bio-Inspired Algorithm for Clustered WSN",
+                "journal": "Ingénierie des Systèmes d'Information",
+                "indexedIn": "SCOPUS",
+                "publicationDetails": "Vol. 29, No. 6, Page: 2391-2398 https://doi.org/10.18280/isi.290626",
+                "monthYear": "Dec 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 13,
+                "authors": "Dr. S. Ramasamy, Mr. J. Uthayakumar",
+                "title": "Utilizing Machine Learning for Predicting Diabetes in Pregnant Women: A Comparative Analysis of Logistic Regression, Random Forest, and Naive Bayes Models",
+                "journal": "The Bioscan",
+                "indexedIn": "WOS",
+                "publicationDetails": "Vol. 19 No. Special Issue-1",
+                "monthYear": "Dec 2024",
+                "year": "2024"
+              },
+              {
+                "serialNo": 14,
+                "authors": "Dr. N.B. Mahesh Kumar",
+                "title": "From Theory to Practice: The Mathematical Foundations of Secure Blockchain Transactions",
+                "journal": "Journal of Advanced Database Management & Systems",
+                "indexedIn": "UGC",
+                "publicationDetails": "Volume : 12 | Issue : 01",
+                "monthYear": "Jan 2025",
+                "year": "2025"
+              },
+              {
+                "serialNo": 15,
+                "authors": "Dr. R.T. Subhalakshmi",
+                "title": "An Adaptive Learning path Optimization algorithm for personalized E-Learning",
+                "journal": "An Adaptive Learning path Optimization algorithm for personalized E-Learning",
+                "indexedIn": "SCOPUS",
+                "publicationDetails": "Vol. 10, No. 4, Page:783-791",
+                "monthYear": "Feb 2025",
+                "year": "2025"
+              },
+              {
+                "serialNo": 16,
+                "authors": "Dr. S. Ramasamy",
+                "title": "Intellifuzz:An Advanced Fuzzy Logic Framework for dynamic Evaluation of Student performance in open-ended Learning Task",
+                "journal": "International Journal of Computational and Experimental Science and ENgineering",
+                "indexedIn": "SCOPUS",
+                "publicationDetails": "Vol. 11, No. 1, Page:783-791",
+                "monthYear": "Feb 2025",
+                "year": "2025"
+              },
+              {
+                "serialNo": 17,
+                "authors": "Dr. R. Senthilkumar",
+                "title": "Performance analysis of multiple-input multiple-output orthogonal frequency division multiplexing system using arithmetic optimization algorithm",
+                "journal": "Computer Standards & Interfaces",
+                "indexedIn": "SCI",
+                "publicationDetails": "Volume 92,",
+                "monthYear": "Mar 2025",
+                "year": "2025"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "patent",
+      "name": "Patent",
+      "icon": "Award",
+      "content": {
+        "title": "Patents",
+        "items": [
+          {
+            "serialNo": 1,
+            "facultyName": "Dr.MaheshKumar.N.B",
+            "title": "AI Based Smart Water and Nutrient Recycling System in Aeroponics for Real-Time Growth Monitoring and Adjustment For Autonomous Plant Cultivation Using Deep Learning Algorithms",
+            "applicationNo": "202441051857",
+            "dateOfFiling": "06-07-2024",
+            "status": "Published",
+            "year": "2024"
+          },
+          {
+            "serialNo": 2,
+            "facultyName": "Dr.Jayasudha.D",
+            "title": "Strategies For Active Student Learning and Future Business Success For Integrating AI Marketing Analytics Into Pedagogy; Transforming Personalized Learning in Higher Education to Predict Student Success Using ML Approach",
+            "applicationNo": "202441086398 / 202441057172",
+            "dateOfFiling": "09-11-2024 / 27-07-2024",
+            "status": "Published",
+            "year": "2024"
+          },
+          {
+            "serialNo": 3,
+            "facultyName": "Dr.Mookhambika.N",
+            "title": "Smart EEG Based Brainwave Monitoring Unit",
+            "applicationNo": "431343-001",
+            "dateOfFiling": "23-09-2024",
+            "status": "Design Granted",
+            "year": "2024"
+          },
+          {
+            "serialNo": 4,
+            "facultyName": "Mrs.Vidhya.D",
+            "title": "Integrated Machine Learning and Graph Theory For Improved Feedback and Student Performance Prediction in Higher Education",
+            "applicationNo": "202441096993",
+            "dateOfFiling": "09-12-2024",
+            "status": "Published",
+            "year": "2024"
+          },
+          {
+            "serialNo": 5,
+            "facultyName": "Mrs.Rajaprabha.C.E",
+            "title": "Genetic Innovations and Machine Learning For Enhancing Crop Traits and Promoting Sustainable Agriculture",
+            "applicationNo": "202441088290",
+            "dateOfFiling": "14-11-2024",
+            "status": "Published",
+            "year": "2024"
+          },
+          {
+            "serialNo": 6,
+            "facultyName": "Mrs.Banupriya.M",
+            "title": "Blockchain and Machine Learning For Secure Cloud Storage in IOT Health Care Management",
+            "applicationNo": "202441100383",
+            "dateOfFiling": "18-12-2024",
+            "status": "Published",
+            "year": "2024"
+          },
+          {
+            "serialNo": 7,
+            "facultyName": "Mr.Uthayakumar.J",
+            "title": "Secure IOT Device Authentication System Using AI-Based Anomaly Detection Algorithms; Harnessing Quantum Mechanics For Accurate Molecular Interaction Simulations in Drug Development",
+            "applicationNo": "202441079511 / 202541021193",
+            "dateOfFiling": "19-10-2024 / 09-03-2025",
+            "status": "Published",
+            "year": "2024"
+          },
+          {
+            "serialNo": 8,
+            "facultyName": "Mrs.Nishanandhini.A",
+            "title": "IOT Flood Monitoring Buoys",
+            "applicationNo": "442140-001",
+            "dateOfFiling": "27-12-2024",
+            "status": "Design Granted",
+            "year": "2024"
+          },
+          {
+            "serialNo": 9,
+            "facultyName": "Ms.Umamaheshwari.P",
+            "title": "Entangled Qubits Transform Traditional Learning Methods into Intelligent Adaptive Systems",
+            "applicationNo": "202541023105",
+            "dateOfFiling": "14-03-2025",
+            "status": "Published",
+            "year": "2025"
+          },
+          {
+            "serialNo": 10,
+            "facultyName": "Mrs.Suganthi.D",
+            "title": "Entangled Growth Enhancing Onion Yield Prediction and Automated Harvesting with Quantum Computing Power",
+            "applicationNo": "202541023293",
+            "dateOfFiling": "16-03-2025",
+            "status": "Published",
+            "year": "2025"
+          },
+          {
+            "serialNo": 11,
+            "facultyName": "Dr. MaheshKumar N.B",
+            "title": "IoT And Artificial Intelligence Based Detection And Prevention Of Plant Disease With Smart Drip Irrigation System Using Block Chain Technology And Deep Learning",
+            "applicationNo": "202441017814",
+            "dateOfFiling": "12-03-2024",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 12,
+            "facultyName": "Dr. MaheshKumar N.B",
+            "title": "Robot For Determining Crop Yield",
+            "applicationNo": "413621-001",
+            "dateOfFiling": "15-04-2024",
+            "status": "Design Granted",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 13,
+            "facultyName": "Dr. MaheshKumar N.B",
+            "title": "IoT and AI based smart home automation using Wi-Fi through Android apps from smart phone",
+            "applicationNo": "202321047600",
+            "dateOfFiling": "14-07-2023",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 14,
+            "facultyName": "Dr. MaheshKumar N.B",
+            "title": "Device to predict cardiovascular attack",
+            "applicationNo": "397144-001",
+            "dateOfFiling": "09-10-2023",
+            "status": "Design Granted",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 15,
+            "facultyName": "Dr. MaheshKumar N.B",
+            "title": "Wearable ECG monitoring Device",
+            "applicationNo": "399703-001",
+            "dateOfFiling": "10-11-2023",
+            "status": "Design Granted",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 16,
+            "facultyName": "Dr. MaheshKumar N.B",
+            "title": "Detection and classification of eye cancer using DL techniques",
+            "applicationNo": "202341062322",
+            "dateOfFiling": "15-09-2023",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 17,
+            "facultyName": "Dr. MaheshKumar N.B",
+            "title": "AI based safe health care system for fertility preservation for young woman with breast cancer using cloud and ML algorithms",
+            "applicationNo": "202311064995",
+            "dateOfFiling": "27-09-2023",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 18,
+            "facultyName": "Dr. MaheshKumar N.B",
+            "title": "AI and computer vision based detection and prevention of brain disorder disease and tumor at early stage using DL",
+            "applicationNo": "202341090160",
+            "dateOfFiling": "30-12-2023",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 19,
+            "facultyName": "Mr. Uthayakumar J",
+            "title": "Elevating Wellness Through Intelligent Nutrition: Leveraging Artificial Intelligence",
+            "applicationNo": "202441039240",
+            "dateOfFiling": "20-05-2024",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 20,
+            "facultyName": "Mr. Periyasamy P.N",
+            "title": "AI and ML: A model for enhancing faculty performance reliability",
+            "applicationNo": "202441035195",
+            "dateOfFiling": "03-05-2024",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 21,
+            "facultyName": "Mr. Periyasamy P.N",
+            "title": "Smart Healthcare Environment using IOT and Machine Learning for Predictive Maintenance and Infection Control",
+            "applicationNo": "202341068088",
+            "dateOfFiling": "20-10-2023",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 22,
+            "facultyName": "Dr. Ramasamy S",
+            "title": "Logistic Tracking Device",
+            "applicationNo": "405790-001",
+            "dateOfFiling": "26-01-2024",
+            "status": "Design Granted",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 23,
+            "facultyName": "Dr. Ramasamy S",
+            "title": "Advancing Pedagogy Through ICT: Mentoring And Mirrored Practice",
+            "applicationNo": "202441035264",
+            "dateOfFiling": "10-05-2024",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 24,
+            "facultyName": "Mrs. Jeevitha P",
+            "title": "An Improved Real-Time Object Detection Capable Of Being Adapted In Real-Time For Use In Traffic Surveillance By Utilizing R-CNN",
+            "applicationNo": "202441018913",
+            "dateOfFiling": "14-03-2024",
+            "status": "Published",
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 25,
+            "facultyName": "Mr. Suresh Kumar P",
+            "title": "Systematic Approach for monitoring the pollution control in smart cities using IoT",
+            "applicationNo": "202211056475",
+            "dateOfFiling": "01-10-2022",
+            "status": "Published",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 26,
+            "facultyName": "Ms. Umamaheshwari P",
+            "title": "DL based technique to predict the nutritional value of edible mushrooms",
+            "applicationNo": "202211056600",
+            "dateOfFiling": "21-10-2022",
+            "status": "Published",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 27,
+            "facultyName": "Ms. Umamaheshwari P",
+            "title": "AI based car tire blowout security system",
+            "applicationNo": "202241067480",
+            "dateOfFiling": "24-11-2022",
+            "status": "Published",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 28,
+            "facultyName": "Mr. Devendran M",
+            "title": "Cover of Smart Identity Card (PI Digital Valet using IoT)",
+            "applicationNo": "369659-001",
+            "dateOfFiling": "23-08-2022",
+            "status": "Design Granted",
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 29,
+            "facultyName": "Dr. Jameer Basha A",
+            "title": "An automated system for dairy product supply chain management using IoT",
+            "applicationNo": "202241023015",
+            "dateOfFiling": "19-04-2022",
+            "status": "Published",
+            "year": "2021-22"
+          },
+          {
+            "serialNo": 30,
+            "facultyName": "Dr. Jameer Basha A",
+            "title": "Food nutrition detection system using DL and fuzzy logic",
+            "applicationNo": "202241022985",
+            "dateOfFiling": "19-04-2022",
+            "status": "Published",
+            "year": "2021-22"
+          },
+          {
+            "serialNo": 31,
+            "facultyName": "Mr. Biju Balakrishnan",
+            "title": "Artificial bionic eye to assist visually impaired people",
+            "applicationNo": "202241013336",
+            "dateOfFiling": "11-03-2022",
+            "status": "Published",
+            "year": "2021-22"
+          }
         ]
       }
-    }
+    },
+    {
+      "id": "consultancy",
+      "name": "Consultancy",
+      "icon": "Briefcase",
+      "content": {
+        "title": "Consultancy Projects",
+        "items": [
+          {
+            "serialNo": 1,
+            "pi_name": "Dr. JameerBasha.A",
+            "co_pi_names": ["Dr. Senthilkumar.R"],
+            "department": "CSE",
+            "project_title": "CRM / ERP Development",
+            "funding_agency": "Metalica Motors, Pollachi Road, Achampatti, Coimbatore",
+            "duration": "1 year",
+            "amount_rs": 145000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 2,
+            "pi_name": "Dr. Senthilkumar.R",
+            "co_pi_names": ["Dr. Ramasamy.S"],
+            "department": "CSE",
+            "project_title": "Automated Resume Screening System",
+            "funding_agency": "Initz Technologies, Coimbatore",
+            "duration": "1 year",
+            "amount_rs": 160000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 3,
+            "pi_name": "Mr. Murugan.K",
+            "co_pi_names": ["Mr. Devendran.M"],
+            "department": "CSE",
+            "project_title": "Real Time Food Tracker",
+            "funding_agency": "Clarozon Technologies",
+            "duration": "1 year",
+            "amount_rs": 135000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 4,
+            "pi_name": "Dr. Jayasudha.D",
+            "co_pi_names": ["Mr. Uthayakumar.J"],
+            "department": "CSE",
+            "project_title": "IoT-based Smart Home Automation System",
+            "funding_agency": "Quantanics TechServ, Madurai",
+            "duration": "1 year",
+            "amount_rs": 140000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 5,
+            "pi_name": "Dr. Chitra.M",
+            "co_pi_names": ["Mr. Arun.R"],
+            "department": "CSE",
+            "project_title": "Chat-bot System for Customer Support",
+            "funding_agency": "Little Genius Technologies",
+            "duration": "1 year",
+            "amount_rs": 150000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 6,
+            "pi_name": "Dr. Subhalakshmi.R.T",
+            "co_pi_names": ["Mrs. Jeevitha.P"],
+            "department": "CSE",
+            "project_title": "AI-Based Real-Time Voice Assistant",
+            "funding_agency": "Webnest Technologies",
+            "duration": "1 year",
+            "amount_rs": 155000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 7,
+            "pi_name": "Dr. Maheshkumar.N.B",
+            "co_pi_names": ["Mr. Murugan.K"],
+            "department": "CSE",
+            "project_title": "AI-Based Video Surveillance System",
+            "funding_agency": "Visaithalam Solutions",
+            "duration": "1 year",
+            "amount_rs": 160000,
+            "year": "2023-24"
+          },
+          {
+            "serialNo": 8,
+            "pi_name": "Mrs. Jeevitha.P",
+            "co_pi_names": ["Mrs. Pavithra.K.S"],
+            "department": "CSE",
+            "project_title": "Blockchain based Supply Chain management",
+            "funding_agency": "Litz Technologies",
+            "duration": "1 year",
+            "amount_rs": 170000,
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 9,
+            "pi_name": "Dr. Senthilkumar.R",
+            "co_pi_names": ["Mr. Devendran.M"],
+            "department": "CSE",
+            "project_title": "IoT Based Energy Monitoring and Optimization System",
+            "funding_agency": "M/s. Talent Factori Pvt Ltd",
+            "duration": "1 year",
+            "amount_rs": 175000,
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 10,
+            "pi_name": "Dr. Jeyasudha.D",
+            "co_pi_names": ["Mrs. BanuPriya.M"],
+            "department": "CSE",
+            "project_title": "Vehicle Tracking System",
+            "funding_agency": "Icore Solutions",
+            "duration": "1 year",
+            "amount_rs": 158000,
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 11,
+            "pi_name": "Dr. Subhalakshmi.R.T",
+            "co_pi_names": ["Mr. Kalaiselvi.T"],
+            "department": "CSE",
+            "project_title": "AI-Based Disease Diagnosis System",
+            "funding_agency": "Dataspire Technologies",
+            "duration": "1 year",
+            "amount_rs": 150000,
+            "year": "2022-23"
+          },
+          {
+            "serialNo": 12,
+            "pi_name": "Dr. Kala.R",
+            "co_pi_names": ["Mrs. Vidhya.D"],
+            "department": "CSE",
+            "project_title": "Smart Blind Stick",
+            "funding_agency": "INITZ Technologies",
+            "duration": "1 year",
+            "amount_rs": 155000,
+            "year": "2021-22"
+          },
+          {
+            "serialNo": 13,
+            "pi_name": "Dr. Uma.S",
+            "co_pi_names": ["Mr. Senthilkumar.R"],
+            "department": "CSE",
+            "project_title": "Smart Farming using IoT",
+            "funding_agency": "Quantanics TechServ Pvt Ltd",
+            "duration": "1 year",
+            "amount_rs": 160000,
+            "year": "2021-22"
+          },
+          {
+            "serialNo": 14,
+            "pi_name": "Dr. Lokesh.S",
+            "co_pi_names": ["Mrs. Banupriya.M"],
+            "department": "CSE",
+            "project_title": "QR Code based Street light control system",
+            "funding_agency": "Talent Factori Pvt Ltd",
+            "duration": "1 year",
+            "amount_rs": 178000,
+            "year": "2021-22"
+          },
+          {
+            "serialNo": 15,
+            "pi_name": "Dr. Ramasamy.S",
+            "co_pi_names": ["Mr. Devendran.M"],
+            "department": "CSE",
+            "project_title": "An AI Driven & Blockchain Enabled Employee Tracking & Ethical Rating Platform",
+            "funding_agency": "M/s. Talent Factori Pvt Ltd",
+            "duration": "1 year",
+            "amount_rs": 150000,
+            "year": "2021-22"
+          }
+        ]
+      }
+    },
+    {
+  "id": "fund_project",
+  "name": "Funded Projects",
+  "icon": "FileText",
+  "content": {
+    "title": "Funded Research Projects",
+    "items": [
+      {
+        "serialNo": 1,
+        "projectTitle": "Startup TN Pre-Incubation Centre",
+        "fundingAgency": "Tamilnadu State Government",
+        "principalInvestigator": "Dr. Jameer Basha A",
+        "coPrincipalInvestigator": "Dr. R.T. Subhalakshmi",
+        "projectDuration": "2 Years",
+        "sanctionedAmount": "7.5 Lakh",
+        "status": "Ongoing"
+      },
+      {
+        "serialNo": 2,
+        "projectTitle": "Hindusthan Innovation Incubation Centre (HIIC)",
+        "fundingAgency": "HECT",
+        "principalInvestigator": "Dr. Jameer Basha A",
+        "coPrincipalInvestigator": "Dr. R.T. Subhalakshmi",
+        "projectDuration": "2 Years",
+        "sanctionedAmount": "7.5 Lakh",
+        "status": "Ongoing"
+      }
+    ]
+  }
+},
+{
+  "id": "seminar_grant",
+  "name": "Seminar Grant",
+  "icon": "FileText",
+  "content": {
+    "title": "Funded Seminar / Workshop / Conference",
+    "items": [
+      {
+        "serialNo": 1,
+        "eventTitle": "Two Days National Level Seminar on “Adaptive AI Based Health Surveillance Systems”",
+        "fundingAgency": "CSIR",
+        "coordinator": "Dr. A. Jameer Basha, Dr. R.T. Subhalakshmi",
+        "eventDate": "17-08-2022 to 18-08-2022",
+        "sanctionedAmount": "Rs. 20,000",
+        "status": "Completed"
+      },
+      {
+        "serialNo": 2,
+        "eventTitle": "Three Days National Level Seminar on “Transforming Digital Healthcare with Adaptive Artificial Intelligence”",
+        "fundingAgency": "SERB",
+        "coordinator": "Dr. S. Ramasamy",
+        "eventDate": "15-03-2023 to 17-03-2023",
+        "sanctionedAmount": "Rs. 1.75 Lakh",
+        "status": "Completed"
+      },
+      {
+        "serialNo": 3,
+        "eventTitle": "Technology Based Entrepreneurship Development Programme (TEDP)",
+        "fundingAgency": "DST",
+        "coordinator": "Dr. A. Jameer Basha, P. Umamaheswari, Dr. R.T. Subhalakshmi",
+        "eventDate": "02-04-2025 to 21-05-2025",
+        "sanctionedAmount": "Rs. 3 Lakh",
+        "status": "Completed"
+      },
+      {
+        "serialNo": 4,
+        "eventTitle": "Two Days National Level Seminar on “GenAI Diagnostics and Sustainability for shaping the future of Healthcare”",
+        "fundingAgency": "SERB",
+        "coordinator": "Dr. A. Jameer Basha, Dr. N.B. Maheshkumar",
+        "eventDate": "21-08-2024 to 22-08-2024",
+        "sanctionedAmount": "Rs. 50,000",
+        "status": "Completed"
+      }
+    ]
+  }
+}
+
+
   ]
 }
