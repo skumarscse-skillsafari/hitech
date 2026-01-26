@@ -25,7 +25,7 @@ const ReusePage: React.FC = () => {
           <DepartmentDetail department={reusePage} />
         </SectionWrapper>
 
-        {/* Custom Sections - Dynamic rendering based on JSON */}
+        {/* Custom Sections - Dynamic rendering based on JSONn */}
         {reusePage.sections.map((section, index) => (
           <SectionWrapper 
             key={section.id}
