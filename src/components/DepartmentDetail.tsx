@@ -647,32 +647,35 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
               Our students achieve excellent placement records with leading companies across industries.
             </p>
 
-            {/* Placement section tabs */}
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {[
-                { id: 'home', label: 'Home' },
-                { id: 'cse-specialized', label: 'CSE Specialized Training' },
-                { id: 'partners', label: 'Industrial Partners' },
-                { id: 'team', label: 'Placement Team' },
-                { id: 'recruiters', label: 'Recruiters' },
-                { id: 'training', label: 'Training' },
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActivePlacementTab(tab.id as 'home' | 'cse-specialized' | 'partners' | 'team' | 'recruiters' | 'training')}
-                  className={`px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base font-semibold border transition-all ${
-                    tab.id === 'cse-specialized'
-                      ? activePlacementTab === tab.id
-                        ? 'bg-purple-600 text-white border-purple-600 shadow-md'
-                        : 'bg-blue-100 text-blue-700 border-blue-300 hover:bg-blue-200'
-                      : activePlacementTab === tab.id
-                        ? 'bg-yellow-500 text-gray-900 border-yellow-500 shadow-md'
-                        : 'bg-gray-50 text-gray-700 border-gray-200 hover:bg-gray-100'
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
+            {/* Placement section tabs - Single line full width */}
+            <div className="border-b border-gray-200 mb-6">
+              <div className="flex justify-between gap-2">
+                {[
+                  { id: 'home', label: 'Home', icon: 'fas fa-user' },
+                  { id: 'cse-specialized', label: 'CSE Specialized Training', icon: 'fas fa-laptop-code' },
+                  { id: 'partners', label: 'Industrial Partners', icon: 'fas fa-handshake' },
+                  { id: 'team', label: 'Placement Team', icon: 'fas fa-users' },
+                  { id: 'recruiters', label: 'Recruiters', icon: 'fas fa-building' },
+                  { id: 'training', label: 'Training', icon: 'fas fa-chalkboard-teacher' },
+                ].map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActivePlacementTab(tab.id as 'home' | 'cse-specialized' | 'partners' | 'team' | 'recruiters' | 'training')}
+                    className={`flex items-center justify-center space-x-2 flex-1 px-4 py-4 text-sm lg:text-base font-bold transition-all duration-200 border-b-4 whitespace-nowrap ${
+                      tab.id === 'cse-specialized'
+                        ? activePlacementTab === tab.id
+                          ? "text-violet-700 border-violet-700 bg-violet-100"
+                          : "text-violet-500 border-transparent hover:text-violet-700 hover:bg-violet-50"
+                        : activePlacementTab === tab.id
+                          ? "text-yellow-600 border-yellow-500 bg-yellow-50"
+                          : "text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+                    }`}
+                  >
+                    <i className={`${tab.icon} text-base lg:text-lg`}></i>
+                    <span className="hidden sm:inline">{tab.label}</span>
+                  </button>
+                ))}
+              </div>
             </div>
 
             {activePlacementTab === 'home' && (
@@ -757,7 +760,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <img 
                           src="https://img.logo.dev/quantumniquesolutions.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
                           alt="Quantumnique" 
-                          className="h-12 w-12 object-contain" 
+                          className="h-20 w-20 object-contain" 
                         />
                         <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-bold">3rd Sem</span>
                       </div>
@@ -806,7 +809,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <img 
                           src="https://img.logo.dev/igenuinelearning.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
                           alt="IgenuineLearning" 
-                          className="h-12 w-12 object-contain" 
+                          className="h-20 w-20 object-contain" 
                         />
                         <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">3rd Sem</span>
                       </div>
@@ -858,7 +861,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                         <img 
                           src="https://img.logo.dev/quantumniquesolutions.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
                           alt="Quantumnique" 
-                          className="h-12 w-12 object-contain" 
+                          className="h-20 w-20 object-contain" 
                         />
                         <span className="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-bold">4th Sem</span>
                       </div>
@@ -908,13 +911,13 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
               <div className="mt-4">
                 <h5 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Industrial Training Partners</h5>
                 
-                {/* Partner Cards Grid */}
+                {/* Partner Cards Grid - Back to 3 columns */}
                 <div className="grid md:grid-cols-3 gap-6">
                   {/* IgenuineLearning 2025 */}
                   <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-yellow-500">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
-                        <img src="https://img.logo.dev/igenuinelearning.com?token=pk_K8u3uM3kQMik6ox3R29MqA" alt="IgenuineLearning" className="h-12 w-12 object-contain" />
+                        <img src="https://img.logo.dev/igenuinelearning.com?token=pk_K8u3uM3kQMik6ox3R29MqA" alt="IgenuineLearning" className="h-20 w-20 object-contain" />
                         <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">2025</span>
                       </div>
                       
@@ -959,7 +962,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-yellow-500">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
-                        <img src="https://img.logo.dev/sixphrase.com?token=pk_K8u3uM3kQMik6ox3R29MqA" alt="Six Phrase" className="h-12 w-12 object-contain" />
+                        <img src="https://img.logo.dev/sixphrase.com?token=pk_K8u3uM3kQMik6ox3R29MqA" alt="Six Phrase" className="h-20 w-20 object-contain" />
                         <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">2024</span>
                       </div>
                       
@@ -1004,7 +1007,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-yellow-500">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
-                        <img src="https://img.logo.dev/terv.pro?token=pk_K8u3uM3kQMik6ox3R29MqA" alt="Terv" className="h-12 w-12 object-contain" />
+                        <img src="https://img.logo.dev/terv.pro?token=pk_K8u3uM3kQMik6ox3R29MqA" alt="Terv" className="h-20 w-20 object-contain" />
                         <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">2023</span>
                       </div>
                       
@@ -1058,26 +1061,26 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                     Total Companies: <span className="font-semibold">{sortedRecruiters.length}</span>
                   </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                   {sortedRecruiters.slice(0, 5).map((company) => {
                     const logoUrl = getCompanyEnrichLogoUrl(company.name);
                     return (
                       <div
                         key={company.name}
-                        className="flex flex-col items-center justify-center bg-gray-50 rounded-xl border border-gray-200 p-4 hover:border-yellow-300 hover:shadow-md transition-all"
+                        className="flex flex-col items-center justify-center bg-white rounded-xl border-2 border-gray-200 p-6 hover:border-yellow-400 hover:shadow-lg transition-all"
                       >
                         {logoUrl ? (
                           <img
                             src={logoUrl}
                             alt={company.name}
-                            className="w-16 h-16 object-contain mb-3"
+                            className="w-32 h-32 object-contain mb-4"
                           />
                         ) : (
-                          <div className="w-16 h-16 mb-3 rounded-full flex items-center justify-center bg-yellow-100 text-yellow-700 font-bold text-lg">
+                          <div className="w-32 h-32 mb-4 rounded-full flex items-center justify-center bg-yellow-100 text-yellow-700 font-bold text-2xl">
                             {company.name.charAt(0)}
                           </div>
                         )}
-                        <p className="text-center text-sm font-medium text-gray-800">
+                        <p className="text-center text-base font-semibold text-gray-800">
                           {company.name}
                         </p>
                       </div>
@@ -1189,19 +1192,21 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   ref={industryCarouselRef}
                   className="flex animate-scroll-left gap-6 pb-4"
                   onMouseEnter={() => {
+                    // Pause the CSS animation when hovering
                     const element = industryCarouselRef.current;
                     if (element) {
                       element.style.animationPlayState = 'paused';
                     }
                   }}
                   onMouseLeave={() => {
+                    // Resume the CSS animation when leaving
                     const element = industryCarouselRef.current;
                     if (element) {
                       element.style.animationPlayState = 'running';
                     }
                   }}
                 >
-                  {/* Capgemini Women Empowerment */}
+                  {/* Capgemini & ICT Academy Programs - Consolidated */}
                   <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
@@ -1218,81 +1223,36 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2024</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">Multiple</span>
                       </div>
                       
                       <img 
-                        src="/industry oriented/Women empowerment.jpg" 
-                        alt="Women Empowerment Program" 
+                        src="/industry oriented/capgemini.jpg" 
+                        alt="Capgemini Programs" 
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini Women Empowerment Program</h5>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini & ICT Academy Training Programs</h5>
                       <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Details</p>
-                        <p className="text-gray-700 text-base leading-relaxed">
-                          Data Science and Big Data Analytics certificate courses organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
-                        </p>
-                      </div>
-
-                      <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Target Audience</p>
-                        <p className="text-gray-700 text-base">Final Year Women Students (CSE, ECE, IT)</p>
-                      </div>
-
-                      <div className="pt-3 border-t border-gray-200">
-                        <p className="text-sm text-gray-600">
-                          <strong>Partners:</strong> ICT Academy & Capgemini
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Capgemini Women Transformation */}
-                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
-                    <div className="p-6">
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-3">
-                          <img 
-                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
-                            alt="Capgemini" 
-                            className="h-10 w-auto object-contain" 
-                          />
-                          <span className="text-gray-400 font-bold">+</span>
-                          <img 
-                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
-                            alt="ICT Academy" 
-                            className="h-10 w-auto object-contain" 
-                          />
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Programs Offered</p>
+                        <div className="text-gray-700 text-sm space-y-3">
+                          <div>
+                            <p className="font-bold text-base">1. Women Empowerment Program (2024)</p>
+                            <p className="pl-4 text-sm">• Data Science and Big Data Analytics for final year students (CSE, ECE, IT)</p>
+                          </div>
+                          
+                          <div>
+                            <p className="font-bold text-base">2. Women Transformation Program (2023)</p>
+                            <p className="pl-4 text-sm">• Leadership skills, technical expertise, and professional development</p>
+                          </div>
+                          
+                          <div>
+                            <p className="font-bold text-base">3. Data Science & Big Data Analytics (420 Hours)</p>
+                            <p className="pl-4 text-sm">• 51 students trained • Joint certification • Free for women students</p>
+                          </div>
                         </div>
-                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2023</span>
-                      </div>
-                      
-                      <img 
-                        src="/industry oriented/women transformation.jpg" 
-                        alt="Women Transformation Program" 
-                        className="w-full h-48 object-cover rounded-lg mb-4" 
-                      />
-                      
-                      <h5 className="text-2xl font-bold text-gray-900 mb-3">Capgemini Women Transformation Program</h5>
-                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
-                      
-                      <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Focus</p>
-                        <p className="text-gray-700 text-base leading-relaxed">
-                          Career transformation program designed to empower women students with leadership skills, technical expertise, and professional development opportunities.
-                        </p>
-                      </div>
-
-                      <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Benefits</p>
-                        <ul className="text-gray-700 text-base space-y-1">
-                          <li>• Leadership Development</li>
-                          <li>• Career Mentorship</li>
-                          <li>• Industry Exposure</li>
-                        </ul>
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
@@ -1357,14 +1317,14 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                     </div>
                   </div>
 
-                  {/* Capgemini Data Science */}
+                  {/* Microsoft Power BI */}
                   <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
                           <img 
-                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
-                            alt="Capgemini" 
+                            src="https://img.logo.dev/microsoft.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Microsoft" 
                             className="h-10 w-auto object-contain" 
                           />
                           <span className="text-gray-400 font-bold">+</span>
@@ -1374,39 +1334,91 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">420 Hrs</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2025</span>
                       </div>
                       
                       <img 
-                        src="/industry oriented/capgemini.jpg" 
-                        alt="Data Science Program" 
+                        src="/industry oriented/Microsoft Powerbi.png" 
+                        alt="Power BI Training" 
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-2xl font-bold text-gray-900 mb-3">Capgemini Data Science & Big Data Analytics</h5>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Microsoft Power BI Training Program</h5>
                       <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Features</p>
-                        <ul className="text-gray-700 text-base space-y-1">
-                          <li>• 420 Hours Intensive Training</li>
-                          <li>• Technology Skills: 350 Hours</li>
-                          <li>• Soft Skills: 70 Hours</li>
-                          <li>• Activity-based & Hands-on Training</li>
-                          <li>• Joint Certification by Capgemini & ICT Academy</li>
-                        </ul>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Details</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
+                          Training conducted by certified trainers from ICT Academy. Learn to transform raw data into meaningful insights through interactive dashboards, reports, and analytics.
+                        </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Highlights</p>
-                        <p className="text-gray-700 text-base leading-relaxed">
-                          Trains 51 students in advanced technology. Curriculum mapped to Global Industry Standards. Fully sponsored by Capgemini and offered free of cost to women students.
-                        </p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Training Info</p>
+                        <ul className="text-gray-700 text-base space-y-1">
+                          <li>• <strong>Class:</strong> III Year CSE and AI&DS</li>
+                          <li>• <strong>Students:</strong> 50</li>
+                          <li>• <strong>Date:</strong> 15.09.2025 to 19.09.2025 (5 days)</li>
+                        </ul>
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
                         <p className="text-sm text-gray-600">
-                          <strong>Certification:</strong> Capgemini & ICT Academy
+                          <strong>Partners:</strong> Microsoft & ICT Academy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* UiPath RPA */}
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <img 
+                          src="https://img.logo.dev/uipath.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                          alt="UiPath" 
+                          className="h-12 w-auto object-contain" 
+                        />
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2025</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/UiPath.png" 
+                        alt="UiPath RPA Training" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">UiPath Robotic Process Automation Training</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Objective</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
+                          Equip students with hands-on skills in automation, workflow design, and RPA tools. Learn to automate repetitive business tasks using UiPath Studio.
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Training Info</p>
+                        <ul className="text-gray-700 text-base space-y-1">
+                          <li>• <strong>Class:</strong> IV Year CSE, AI&DS, and IT</li>
+                          <li>• <strong>Students:</strong> 50</li>
+                          <li>• <strong>Date:</strong> 08.09.2025 to 12.09.2025 (5 days)</li>
+                        </ul>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Topics</p>
+                        <ul className="text-gray-700 text-base space-y-1">
+                          <li>• UiPath Studio & Workflow Design</li>
+                          <li>• Screen & Data Scraping</li>
+                          <li>• Exception Handling & Debugging</li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-sm text-gray-600">
+                          <strong>Platform:</strong> UiPath RPA
                         </p>
                       </div>
                     </div>
@@ -1467,6 +1479,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                   </div>
 
                   {/* Duplicate cards for seamless loop */}
+                  {/* Capgemini & ICT Academy Programs - Duplicate */}
                   <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
@@ -1483,80 +1496,36 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2024</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">Multiple</span>
                       </div>
                       
                       <img 
-                        src="/industry oriented/Women empowerment.jpg" 
-                        alt="Women Empowerment Program" 
+                        src="/industry oriented/capgemini.jpg" 
+                        alt="Capgemini Programs" 
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini Women Empowerment Program</h5>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Capgemini & ICT Academy Training Programs</h5>
                       <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Details</p>
-                        <p className="text-gray-700 text-base leading-relaxed">
-                          Data Science and Big Data Analytics certificate course organized in association with ICT Academy and Capgemini for final year students (2020-2024) from CSE, ECE, and IT branches.
-                        </p>
-                      </div>
-
-                      <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Target Audience</p>
-                        <p className="text-gray-700 text-base">Final Year Women Students (CSE, ECE, IT)</p>
-                      </div>
-
-                      <div className="pt-3 border-t border-gray-200">
-                        <p className="text-sm text-gray-600">
-                          <strong>Partners:</strong> ICT Academy & Capgemini
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
-                    <div className="p-6">
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-3">
-                          <img 
-                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
-                            alt="Capgemini" 
-                            className="h-10 w-auto object-contain" 
-                          />
-                          <span className="text-gray-400 font-bold">+</span>
-                          <img 
-                            src="https://img.logo.dev/ictacademy.in?token=pk_K8u3uM3kQMik6ox3R29MqA" 
-                            alt="ICT Academy" 
-                            className="h-10 w-auto object-contain" 
-                          />
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Programs Offered</p>
+                        <div className="text-gray-700 text-sm space-y-3">
+                          <div>
+                            <p className="font-bold text-base">1. Women Empowerment Program (2024)</p>
+                            <p className="pl-4 text-sm">• Data Science and Big Data Analytics for final year students (CSE, ECE, IT)</p>
+                          </div>
+                          
+                          <div>
+                            <p className="font-bold text-base">2. Women Transformation Program (2023)</p>
+                            <p className="pl-4 text-sm">• Leadership skills, technical expertise, and professional development</p>
+                          </div>
+                          
+                          <div>
+                            <p className="font-bold text-base">3. Data Science & Big Data Analytics (420 Hours)</p>
+                            <p className="pl-4 text-sm">• 51 students trained • Joint certification • Free for women students</p>
+                          </div>
                         </div>
-                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2023</span>
-                      </div>
-                      
-                      <img 
-                        src="/industry oriented/women transformation.jpg" 
-                        alt="Women Transformation Program" 
-                        className="w-full h-48 object-cover rounded-lg mb-4" 
-                      />
-                      
-                      <h5 className="text-2xl font-bold text-gray-900 mb-3">Capgemini Women Transformation Program</h5>
-                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
-                      
-                      <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Focus</p>
-                        <p className="text-gray-700 text-base leading-relaxed">
-                          Career transformation program designed to empower women students with leadership skills, technical expertise, and professional development opportunities.
-                        </p>
-                      </div>
-
-                      <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Benefits</p>
-                        <ul className="text-gray-700 text-base space-y-1">
-                          <li>• Leadership Development</li>
-                          <li>• Career Mentorship</li>
-                          <li>• Industry Exposure</li>
-                        </ul>
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
@@ -1621,14 +1590,14 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                     </div>
                   </div>
 
-                  {/* Capgemini Data Science - Duplicate */}
+                  {/* Microsoft Power BI - Duplicate */}
                   <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
                           <img 
-                            src="https://img.logo.dev/capgemini.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
-                            alt="Capgemini" 
+                            src="https://img.logo.dev/microsoft.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                            alt="Microsoft" 
                             className="h-10 w-auto object-contain" 
                           />
                           <span className="text-gray-400 font-bold">+</span>
@@ -1638,39 +1607,91 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                             className="h-10 w-auto object-contain" 
                           />
                         </div>
-                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">420 Hrs</span>
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2025</span>
                       </div>
                       
                       <img 
-                        src="/industry oriented/capgemini.jpg" 
-                        alt="Data Science Program" 
+                        src="/industry oriented/Microsoft Powerbi.png" 
+                        alt="Power BI Training" 
                         className="w-full h-48 object-cover rounded-lg mb-4" 
                       />
                       
-                      <h5 className="text-2xl font-bold text-gray-900 mb-3">Capgemini Data Science & Big Data Analytics</h5>
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">Microsoft Power BI Training Program</h5>
                       <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
                       
                       <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Features</p>
-                        <ul className="text-gray-700 text-base space-y-1">
-                          <li>• 420 Hours Intensive Training</li>
-                          <li>• Technology Skills: 350 Hours</li>
-                          <li>• Soft Skills: 70 Hours</li>
-                          <li>• Activity-based & Hands-on Training</li>
-                          <li>• Joint Certification by Capgemini & ICT Academy</li>
-                        </ul>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Details</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
+                          Training conducted by certified trainers from ICT Academy. Learn to transform raw data into meaningful insights through interactive dashboards, reports, and analytics.
+                        </p>
                       </div>
 
                       <div className="mb-3">
-                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Highlights</p>
-                        <p className="text-gray-700 text-base leading-relaxed">
-                          Trains 51 students in advanced technology. Curriculum mapped to Global Industry Standards. Fully sponsored by Capgemini and offered free of cost to women students.
-                        </p>
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Training Info</p>
+                        <ul className="text-gray-700 text-base space-y-1">
+                          <li>• <strong>Class:</strong> III Year CSE and AI&DS</li>
+                          <li>• <strong>Students:</strong> 50</li>
+                          <li>• <strong>Date:</strong> 15.09.2025 to 19.09.2025 (5 days)</li>
+                        </ul>
                       </div>
 
                       <div className="pt-3 border-t border-gray-200">
                         <p className="text-sm text-gray-600">
-                          <strong>Certification:</strong> Capgemini & ICT Academy
+                          <strong>Partners:</strong> Microsoft & ICT Academy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* UiPath RPA - Duplicate */}
+                  <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <img 
+                          src="https://img.logo.dev/uipath.com?token=pk_K8u3uM3kQMik6ox3R29MqA" 
+                          alt="UiPath" 
+                          className="h-12 w-auto object-contain" 
+                        />
+                        <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">2025</span>
+                      </div>
+                      
+                      <img 
+                        src="/industry oriented/UiPath.png" 
+                        alt="UiPath RPA Training" 
+                        className="w-full h-48 object-cover rounded-lg mb-4" 
+                      />
+                      
+                      <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">UiPath Robotic Process Automation Training</h5>
+                      <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
+                      
+                      <div className="mb-3">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Program Objective</p>
+                        <p className="text-gray-700 text-base leading-relaxed">
+                          Equip students with hands-on skills in automation, workflow design, and RPA tools. Learn to automate repetitive business tasks using UiPath Studio.
+                        </p>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Training Info</p>
+                        <ul className="text-gray-700 text-base space-y-1">
+                          <li>• <strong>Class:</strong> IV Year CSE, AI&DS, and IT</li>
+                          <li>• <strong>Students:</strong> 50</li>
+                          <li>• <strong>Date:</strong> 08.09.2025 to 12.09.2025 (5 days)</li>
+                        </ul>
+                      </div>
+
+                      <div className="mb-3">
+                        <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Topics</p>
+                        <ul className="text-gray-700 text-base space-y-1">
+                          <li>• UiPath Studio & Workflow Design</li>
+                          <li>• Screen & Data Scraping</li>
+                          <li>• Exception Handling & Debugging</li>
+                        </ul>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-200">
+                        <p className="text-sm text-gray-600">
+                          <strong>Platform:</strong> UiPath RPA
                         </p>
                       </div>
                     </div>
