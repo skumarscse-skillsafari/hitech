@@ -1119,18 +1119,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                 onClick={() => {
                   const container = industryCarouselRef.current;
                   if (container) {
-                    // Temporarily pause animation
-                    container.style.animationPlayState = 'paused';
-                    
-                    // Get current scroll position and move left
                     container.scrollBy({ left: -400, behavior: 'smooth' });
-                    
-                    // Resume animation after a delay
-                    setTimeout(() => {
-                      if (container) {
-                        container.style.animationPlayState = 'running';
-                      }
-                    }, 2000);
                   }
                 }}
                 className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110"
@@ -1146,18 +1135,7 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
                 onClick={() => {
                   const container = industryCarouselRef.current;
                   if (container) {
-                    // Temporarily pause animation
-                    container.style.animationPlayState = 'paused';
-                    
-                    // Get current scroll position and move right
                     container.scrollBy({ left: 400, behavior: 'smooth' });
-                    
-                    // Resume animation after a delay
-                    setTimeout(() => {
-                      if (container) {
-                        container.style.animationPlayState = 'running';
-                      }
-                    }, 2000);
                   }
                 }}
                 className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110"
@@ -1171,15 +1149,17 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
               <div className="overflow-hidden">
                 <div 
                   ref={industryCarouselRef}
-                  className="flex animate-scroll-left gap-6 mb-8 overflow-x-auto scrollbar-hide"
+                  className="flex gap-6 mb-8 overflow-x-auto scrollbar-hide"
                   style={{ scrollBehavior: 'smooth' }}
                   onMouseEnter={() => {
+                    // Pause the CSS animation when hovering
                     const element = industryCarouselRef.current;
                     if (element) {
                       element.style.animationPlayState = 'paused';
                     }
                   }}
                   onMouseLeave={() => {
+                    // Resume the CSS animation when leaving
                     const element = industryCarouselRef.current;
                     if (element) {
                       element.style.animationPlayState = 'running';
