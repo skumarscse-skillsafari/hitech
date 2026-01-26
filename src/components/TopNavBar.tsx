@@ -102,7 +102,8 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                             setActiveDropdown(null);
                             setActiveSubDropdown(null);
                           }}
-                          className="absolute top-full left-0 w-56 bg-white text-gray-900 shadow-xl border rounded-b-lg z-50"
+                          onMouseEnter={() => setActiveDropdown(item.name)}
+                          className="absolute top-full left-0 w-56 bg-white text-gray-900 shadow-xl border rounded-b-lg z-[100] pointer-events-auto"
                         >
                           {item.dropdown.map((subItem) => (
                             <div key={subItem.name} className="relative group">

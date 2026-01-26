@@ -17,7 +17,7 @@ import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg";
-import { Award, Trophy } from 'lucide-react';
+import { Award, Trophy, FileText, Building2, GraduationCap, Lightbulb, User, Users, Briefcase, Globe } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -52,8 +52,254 @@ const HomePage: React.FC = () => {
     >
       <Hero hero={collegeData.college.hero} />
 
+      {/* ===== Resources Navigation Bar ===== */}
+      <section className="pt-6 pb-0 relative z-[60]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl shadow-lg relative" style={{ overflow: 'visible' }}>
+            <div className="border-b border-gray-200" style={{ overflow: 'visible' }}>
+              {/* TabSection.tsx style navbar */}
+              <div className="flex flex-wrap" style={{ overflow: 'visible' }}>
+              {/* AQAR Report 2022-23 */}
+              <a
+                href="/pdf nav/AQAR 2022-23.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <FileText className="h-5 w-5" />
+                <span>AQAR Report 2022-23</span>
+              </a>
+
+              {/* ARIIA Report */}
+              <a
+                href="/pdf nav/ARI-C-37046.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <FileText className="h-5 w-5" />
+                <span>ARIIA Report</span>
+              </a>
+
+              {/* NIRF Report 2025 - Dropdown with yellow header */}
+              <div className="relative group">
+                <button 
+                  className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-yellow-600 border-yellow-500 bg-yellow-50"
+                >
+                  <FileText className="h-5 w-5" />
+                  <span>NIRF Report 2025</span>
+                </button>
+                <div
+                  className="absolute top-full left-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
+                >
+                  <div className="bg-yellow-500 text-white px-4 py-2 text-sm font-semibold">NIRF Report 2025</div>
+                  <a href="/pdf nav/NIRF-Engineering-DCS-2025.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    NIRF-Engineering-DCS-2025
+                  </a>
+                  <a href="/pdf nav/NIRF-Innovation-DCS-2025.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    NIRF-Innovation-DCS-2025
+                  </a>
+                  <a href="/pdf nav/NIRF-Overall-DCS-2025.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    NIRF-Overall-DCS-2025
+                  </a>
+                  <a href="/pdf nav/NIRF-SDG REPORT-2025.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    NIRF-SDG Report-2025
+                  </a>
+                </div>
+              </div>
+
+              {/* Mandatory Disclosure */}
+              <a
+                href="/pdf nav/mandt_disclos.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <FileText className="h-5 w-5" />
+                <span>Mandatory Disclosure</span>
+              </a>
+
+              {/* NAAC / NBA */}
+              <a
+                href="/pdf nav/accreditation2022.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <Award className="h-5 w-5" />
+                <span>NAAC / NBA</span>
+              </a>
+
+              {/* AU Affiliation - Dropdown with yellow header */}
+              <div className="relative group">
+                <button 
+                  className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+                >
+                  <Building2 className="h-5 w-5" />
+                  <span>AU Affiliation</span>
+                </button>
+                <div
+                  className="absolute top-full left-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] min-w-[180px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
+                >
+                  <div className="bg-yellow-500 text-white px-4 py-2 text-sm font-semibold">AU Affiliation</div>
+                  <a href="/pdf nav/AU Affiliation 2024-25.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    AU Affiliation 2024-25
+                  </a>
+                  <a href="/pdf nav/AU Affiliation 2023-24.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    AU Affiliation 2023-24
+                  </a>
+                  <a href="/pdf nav/AU Affiliation 2022-23.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    AU Affiliation 2022-23
+                  </a>
+                  <a href="/pdf nav/AU Affiliation 2021-22.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    AU Affiliation 2021-22
+                  </a>
+                </div>
+              </div>
+
+              {/* AICTE EOA/LOA - Dropdown with yellow header */}
+              <div className="relative group">
+                <button 
+                  className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+                >
+                  <FileText className="h-5 w-5" />
+                  <span>AICTE EOA/LOA</span>
+                </button>
+                <div
+                  className="absolute top-full left-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] min-w-[180px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
+                >
+                  <div className="bg-yellow-500 text-white px-4 py-2 text-sm font-semibold">AICTE EOA/LOA</div>
+                  <a href="/pdf nav/EOA 25-26.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    EOA 2025-26
+                  </a>
+                  <a href="/pdf nav/EOA 24-25.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    EOA 2024-25
+                  </a>
+                  <a href="/pdf nav/EOA 23-24.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    EOA 2023-24
+                  </a>
+                  <a href="/pdf nav/EOA 22-23.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    EOA 2022-23
+                  </a>
+                  <a href="/pdf nav/EOA 21-22.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    EOA 2021-22
+                  </a>
+                  <a href="/pdf nav/EOA 07-08 TO 25-26.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    EOA 2007-2026
+                  </a>
+                </div>
+              </div>
+
+              {/* Academic Bank of Credits */}
+              <a
+                href="https://www.abc.gov.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <GraduationCap className="h-5 w-5" />
+                <span>Academic Bank of Credits</span>
+              </a>
+
+              {/* INNOVATION & START-UP POLICY - Dropdown with yellow header */}
+              <div className="relative group">
+                <button 
+                  className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+                >
+                  <Lightbulb className="h-5 w-5" />
+                  <span>INNOVATION & START-UP POLICY</span>
+                </button>
+                <div
+                  className="absolute top-full left-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] min-w-[320px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
+                >
+                  <div className="bg-yellow-500 text-white px-4 py-2 text-sm font-semibold">INNOVATION & START-UP POLICY</div>
+                  <a href="/pdf nav/Hitech Policy_new.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    HINDUSTHAN INSTITUTE OF TECHNOLOGY INNOVATION & START-UP POLICY AND GUIDELINES 2021 FOR FACULTY AND STUDENTS
+                  </a>
+                  <a href="/pdf nav/startup_policy_2019.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100">
+                    National INNOVATION and STARTUP Policy 2019 for Students and Faculty
+                  </a>
+                </div>
+              </div>
+
+              {/* INTERNATIONAL YOGA DAY 2024 */}
+              <a
+                href="/pdf nav/YOGA DAY CELEBRATION 2024.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <User className="h-5 w-5" />
+                <span className="italic">INTERNATIONAL YOGA DAY 2024</span>
+              </a>
+
+              {/* STUDENT'S TESTIMONIALS */}
+              <a
+                href="/pdf nav/student testimonials.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <Users className="h-5 w-5" />
+                <span>STUDENT'S TESTIMONIALS</span>
+              </a>
+
+              {/* Placement Details */}
+              <a
+                href="/pdf nav/HiTECH Placement Details.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <Briefcase className="h-5 w-5" />
+                <span>Placement Details</span>
+              </a>
+
+              {/* AUERC Remote Access */}
+              <a
+                href="https://library.annauniv.edu/auerc_home.php"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+              >
+                <Globe className="h-5 w-5" />
+                <span>AUERC Remote Access</span>
+              </a>
+
+              {/* Audit Reports - Dropdown with yellow header */}
+              <div className="relative group">
+                <button 
+                  className="flex items-center justify-center space-x-2 px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:bg-yellow-50"
+                >
+                  <FileText className="h-5 w-5" />
+                  <span>Audit Reports</span>
+                </button>
+                <div
+                  className="absolute top-full left-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] min-w-[180px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
+                >
+                  <div className="bg-yellow-500 text-white px-4 py-2 text-sm font-semibold">Audit Reports</div>
+                  <a href="/pdf nav/Audit 2022-23.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    Audit Report 2022-23
+                  </a>
+                  <a href="/pdf nav/Audit 2021-22.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    Audit Report 2021-22
+                  </a>
+                  <a href="/pdf nav/Audit 2020-21.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
+                    Audit Report 2020-21
+                  </a>
+                  <a href="/pdf nav/Audit 2019-20.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Audit Report 2019-20
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
       {/* ===== About The Trust Section ===== */}
-      <SectionWrapper className="pt-6 pb-0" lazy lazyDelay={200}>
+      <SectionWrapper className="pt-6 pb-0 relative z-10" lazy lazyDelay={200}>
   <div className="text-center mb-4 pt-10">
     <div className="overflow-hidden mb-4 text-center">
   {trustInfo.title.split(" ").map((word, index) => (
@@ -81,7 +327,7 @@ const HomePage: React.FC = () => {
 
 
       {/* ===== About Us Section (with extra margin) ===== */}
-      <SectionWrapper lazy lazyHeight="200px" lazyDelay={200}>
+      <SectionWrapper className="relative z-10" lazy lazyHeight="200px" lazyDelay={200}>
         <div className="grid lg:grid-cols-2 gap-10 items-center mt-[-100]">
           <div className="space-y-3">
             <div className="flex items-center space-x-3 mb-6">
