@@ -1,4 +1,4 @@
-import { useState, useEffect, Fragment } from "react";
+import { useState, useEffect, Fragment, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   DollarSign,
@@ -609,53 +609,79 @@ const PublicationTable: React.FC<TableProps> = ({ items, type = 'book-chapter', 
 // Research Card Component
 const ResearchCard: React.FC<{ item: any }> = ({ item }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-yellow-200 group">
-      <div className="mb-4">
-        <h3 className="text-xl font-bold text-yellow-500 leading-tight mb-3 group-hover:text-yellow-600 transition-colors">
+    <div className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
+      <div className="p-6">
+        <div className="flex items-center justify-between mb-4">
+          {item.year && (
+            <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">
+              {item.year}
+            </span>
+          )}
+          {item.status && (
+            <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+              item.status === 'Active' || item.status === 'Ongoing'
+                ? 'bg-green-100 text-green-700'
+                : item.status === 'Completed'
+                ? 'bg-blue-100 text-blue-700'
+                : 'bg-gray-100 text-gray-700'
+            }`}>
+              {item.status}
+            </span>
+          )}
+        </div>
+
+        <h3 className="text-xl font-bold text-gray-900 leading-tight mb-3 line-clamp-2">
           {item.title}
         </h3>
+        <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
 
-        <div className="space-y-2 text-gray-600">
-          {item.authors
-            ? item.authors.map((author: string, idx: number) => (
-                <p key={idx} className="text-sm font-medium">
-                  {author}
-                </p>
-              ))
-            : item.author && <p className="text-sm font-medium">{item.author}</p>}
-        </div>
-      </div>
-
-      {item.description && (
-        <p className="text-sm text-gray-600 leading-relaxed mb-4">{item.description}</p>
-      )}
-
-      <div className="space-y-3">
-        {Object.entries(item).map(([key, value]) => {
-          if (EXCLUDE_FIELDS.includes(key) || !value) return null;
-
-          const Icon = fieldIconMap[key] || FileText;
-          const capitalizedKey = formatFieldName(key);
-
-          return (
-            <div key={key} className="flex items-start gap-2">
-              <Icon className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
-              <div className="flex-1">
-                <span className="text-sm font-semibold text-yellow-600">{capitalizedKey}:</span>
-                <p className="text-sm text-gray-700 mt-1 leading-relaxed break-words">
-                  {Array.isArray(value) ? value.join(", ") : String(value)}
-                </p>
-              </div>
+        {(item.authors || item.author) && (
+          <div className="mb-3">
+            <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Faculty/Researchers</p>
+            <div className="space-y-1 text-gray-700 text-sm">
+              {item.authors
+                ? item.authors.map((author: string, idx: number) => (
+                    <p key={idx}>{author}</p>
+                  ))
+                : <p>{item.author}</p>}
             </div>
-          );
-        })}
-      </div>
+          </div>
+        )}
 
-      <div className="mt-6 pt-4 border-t border-gray-100">
-        <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-yellow-500 text-black font-medium rounded-lg hover:bg-yellow-600 transition-all duration-200 group-hover:shadow-md">
-          <span>Learn More</span>
-          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-        </button>
+        {item.description && (
+          <div className="mb-3">
+            <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Description</p>
+            <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">{item.description}</p>
+          </div>
+        )}
+
+        {item.fundingAgency && (
+          <div className="mb-3">
+            <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Funding Agency</p>
+            <p className="text-gray-700 text-sm">{item.fundingAgency}</p>
+          </div>
+        )}
+
+        {item.funding && (
+          <div className="mb-3">
+            <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Funding</p>
+            <p className="text-gray-700 text-sm font-semibold">{item.funding}</p>
+          </div>
+        )}
+
+        {item.duration && (
+          <div className="mb-3">
+            <p className="text-sm font-semibold text-yellow-600 uppercase mb-2">Duration</p>
+            <p className="text-gray-700 text-sm">{item.duration}</p>
+          </div>
+        )}
+
+        <div className="mt-6 pt-4 border-t border-gray-200">
+          <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-yellow-500 text-black font-medium rounded-lg hover:bg-yellow-600 transition-all duration-200">
+            <span>View Details</span>
+            <ArrowRight className="w-4 h-4 transition-transform hover:translate-x-1" />
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -708,11 +734,31 @@ const ResearchInnovationPage: React.FC = () => {
         }
         return null;
       default:
+        const scrollRef = useRef<HTMLDivElement>(null);
         return (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {activeTabData.content.items.map((item: any, index: number) => (
-              <ResearchCard key={index} item={item} />
-            ))}
+          <div className="relative">
+            <div className="overflow-hidden">
+              <div 
+                ref={scrollRef}
+                className="flex animate-scroll-left gap-6 pb-4"
+                onMouseEnter={() => {
+                  const element = scrollRef.current;
+                  if (element) {
+                    element.style.animationPlayState = 'paused';
+                  }
+                }}
+                onMouseLeave={() => {
+                  const element = scrollRef.current;
+                  if (element) {
+                    element.style.animationPlayState = 'running';
+                  }
+                }}
+              >
+                {[...activeTabData.content.items, ...activeTabData.content.items].map((item: any, index: number) => (
+                  <ResearchCard key={index} item={item} />
+                ))}
+              </div>
+            </div>
           </div>
         );
     }
