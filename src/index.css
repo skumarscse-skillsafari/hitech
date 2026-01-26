@@ -43,7 +43,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(calc(-408px * 5));
     }
   }
 
@@ -54,6 +54,16 @@
 
   .pause-animation:hover {
     animation-play-state: paused;
+  }
+
+  /* Dynamic scrolling for achievement modal carousel */
+  @keyframes scroll-achievements {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
   /* Smooth transitions */
@@ -183,6 +193,43 @@
       opacity: 1;
       transform: translateX(0) scale(1);
     }
+  }
+
+  /* Floating animation for modal background pattern */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-10px) translateX(5px);
+    }
+  }
+
+  /* Thin scrollbar utility classes */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 10px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #eab308;
+    border-radius: 10px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #ca8a04;
+  }
+
+  .scrollbar-thumb-yellow-500::-webkit-scrollbar-thumb {
+    background: #eab308;
+  }
+
+  .scrollbar-track-gray-100::-webkit-scrollbar-track {
+    background: #f3f4f6;
   }
 }
 
