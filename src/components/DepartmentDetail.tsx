@@ -8,8 +8,8 @@ import DepartmentOutcomes from '../components/DepartmentOutcomes';
 import SectionWrapper from './layout/SectionWrapper';
 import ObeInput from '../pages/ObeInputs';
 import recruiters from '../data/recruiters.json';
+import eventsData from '../data/eventsOrganisedData.json';
 import ResearchInnovationCarousel from './ResearchInnovationCarousel';
-import AnimatedSection from './AnimatedSection';
 
 interface Department {
   id: string;
@@ -19,7 +19,7 @@ interface Department {
   icon: string;
   image: string;
   vision: string;
-  mission: string;
+  mission: string | string[];
   programs: Array<{
     name: string;
     duration: string;
@@ -54,15 +54,21 @@ interface Department {
     }>;
   };
   psos: Array<{
-    code: string;
+    id?: string;
+    code?: string;
+    title?: string;
     description: string;
   }>;
   peos: Array<{
-    code: string;
+    id?: string;
+    code?: string;
+    title?: string;
     description: string;
   }>;
   pos: Array<{
-    code: string;
+    id?: string;
+    code?: string;
+    title?: string;
     description: string;
   }>;
 }
@@ -383,6 +389,12 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
   // Industry carousel state
   const industryCarouselRef = useRef<HTMLDivElement>(null);
   
+  // Events carousel ref
+  const eventsCarouselRef = useRef<HTMLDivElement>(null);
+  
+  // Events year filter state
+  const [selectedEventsYear, setSelectedEventsYear] = useState<string>('2024-25');
+  
   // Handle automatic scrolling
   useEffect(() => {
     if (!autoScroll) return;
@@ -495,14 +507,18 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
     </h4>
 
     <div className="text-gray-700 leading-relaxed space-y-3">
-      {department.mission.map((point: string, index: number) => {
-        const [label, ...rest] = point.split(":");
-        return (
-          <p key={index} className="text-sm">
-            <span className="font-semibold">{label}:</span> {rest.join(":").trim()}
-          </p>
-        );
-      })}
+      {Array.isArray(department.mission) ? (
+        department.mission.map((point: string, index: number) => {
+          const [label, ...rest] = point.split(":");
+          return (
+            <p key={index} className="text-sm">
+              <span className="font-semibold">{label}:</span> {rest.join(":").trim()}
+            </p>
+          );
+        })
+      ) : (
+        <p className="text-sm">{department.mission}</p>
+      )}
     </div>
   </div>
 </div>
@@ -512,9 +528,21 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
   {/* Program Outcomes */}
 <SectionWrapper id="psos-peos-pos" lazyHeight="600px" lazyDelay={600} className="mt-16 mb-8 scroll-mt-32">
   <DepartmentOutcomes 
-    psos={department.psos}
-    peos={department.peos}
-    pos={department.pos}
+    psos={department.psos.map(item => ({
+      id: (item.id || item.code || '') as string,
+      title: (item.title || '') as string,
+      description: item.description
+    }))}
+    peos={department.peos.map(item => ({
+      id: (item.id || item.code || '') as string,
+      title: (item.title || '') as string,
+      description: item.description
+    }))}
+    pos={department.pos.map(item => ({
+      id: (item.id || item.code || '') as string,
+      title: (item.title || '') as string,
+      description: item.description
+    }))}
     departmentName={department.name}
   />
 </SectionWrapper>
@@ -1770,26 +1798,224 @@ const DepartmentDetail: React.FC<DepartmentDetailProps> = ({ department }) => {
 
       {/* Events Organised Section */}
       <div id="events-organised" className="scroll-mt-32">
-        <LazyLoadWrapper height="300px" delay={500}>
-          <div className="bg-white p-12 rounded-2xl shadow-lg">
+        <LazyLoadWrapper height="400px" delay={500}>
+          <div className="bg-white p-6 sm:p-8 md:p-12 rounded-2xl shadow-lg">
             <h4 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">Events Organised</h4>
             <div className="w-32 h-1 bg-[#f59e0b] rounded-full mx-auto mb-6"></div>
-            <p className="text-gray-600 text-center mb-8">
-              Regular technical events, workshops, and seminars to enhance student learning.
+            <p className="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+              Professional societies and clubs regularly organizing technical events, workshops, seminars, and hackathons to enhance student learning and industry exposure.
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
-                <h5 className="font-bold text-gray-900 mb-3">Technical Symposiums</h5>
-                <p className="text-gray-600 text-sm">Annual technical events featuring competitions and exhibitions.</p>
+            
+            {/* Year Filter Pills */}
+            <div className="flex justify-center gap-3 mb-8 flex-wrap">
+              {['2024-25', '2023-24', '2022-23', '2021-22'].map((year) => (
+                <button
+                  key={year}
+                  onClick={() => setSelectedEventsYear(year)}
+                  className={`px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 ${
+                    selectedEventsYear === year
+                      ? 'bg-yellow-500 text-white shadow-lg scale-105'
+                      : 'bg-gray-100 text-gray-700 hover:bg-yellow-100 hover:text-yellow-700'
+                  }`}
+                >
+                  {year}
+                </button>
+              ))}
+            </div>
+            
+            {/* Scrolling Events Carousel */}
+            <div className="relative">
+              <div className="overflow-hidden">
+                <div 
+                  ref={eventsCarouselRef}
+                  className="flex animate-scroll-left gap-6 pb-4"
+                  onMouseEnter={() => {
+                    const element = eventsCarouselRef.current;
+                    if (element) {
+                      element.style.animationPlayState = 'paused';
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    const element = eventsCarouselRef.current;
+                    if (element) {
+                      element.style.animationPlayState = 'running';
+                    }
+                  }}
+                >
+                  {/* Show events filtered by selected year and with images */}
+                  {eventsData.events
+                    .filter(event => event.year === selectedEventsYear && event.image)
+                    .map((event, index) => (
+                    <div key={`event-${selectedEventsYear}-${index}`} className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
+                      <div className="p-6">
+                        {/* Society Badge and Level Badge */}
+                        <div className="flex items-center justify-between mb-4">
+                          <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">
+                            {event.society}
+                          </span>
+                          <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                            event.level.includes('National') 
+                              ? 'bg-green-100 text-green-700' 
+                              : 'bg-blue-100 text-blue-700'
+                          }`}>
+                            {event.level}
+                          </span>
+                        </div>
+                        
+                        {/* Event Image */}
+                        {event.image && (
+                          <img 
+                            src={event.image} 
+                            alt={event.eventName}
+                            className="w-full h-48 object-cover rounded-lg mb-4"
+                            loading="lazy"
+                          />
+                        )}
+                        
+                        {/* Event Title */}
+                        <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">{event.eventName}</h5>
+                        <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
+                        
+                        {/* Event Description */}
+                        {(event as any).description && (
+                          <div className="mb-3">
+                            <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Event Overview</p>
+                            <p className="text-gray-700 text-base leading-relaxed">
+                              {(event as any).description}
+                            </p>
+                          </div>
+                        )}
+                        
+                        {/* Event Highlights */}
+                        {(event as any).highlights && (event as any).highlights.length > 0 && (
+                          <div className="mb-3">
+                            <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Highlights</p>
+                            <ul className="text-gray-700 text-base space-y-1">
+                              {(event as any).highlights.map((highlight: string, idx: number) => (
+                                <li key={idx}>• {highlight}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        
+                        {/* Event Date and Year */}
+                        <div className="pt-3 border-t border-gray-200">
+                          {event.date && (
+                            <p className="text-sm text-gray-600 mb-1">
+                              <strong>Date:</strong> {event.date}
+                            </p>
+                          )}
+                          <p className="text-sm text-gray-600">
+                            <strong>Academic Year:</strong> {event.year}
+                          </p>
+                          {(event as any).resourcePerson && (
+                            <p className="text-sm text-gray-600 mt-2">
+                              <strong>Resource Person:</strong> {(event as any).resourcePerson}
+                            </p>
+                          )}
+                          {(event as any).coordinator && (
+                            <p className="text-sm text-gray-600 mt-1">
+                              <strong>Coordinator:</strong> {(event as any).coordinator}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+
+                  {/* Duplicate cards for seamless loop */}
+                  {eventsData.events
+                    .filter(event => event.year === selectedEventsYear && event.image)
+                    .map((event, index) => (
+                    <div key={`event-dup-${selectedEventsYear}-${index}`} className="flex-shrink-0 w-96 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-yellow-400">
+                      <div className="p-6">
+                        {/* Society Badge and Level Badge */}
+                        <div className="flex items-center justify-between mb-4">
+                          <span className="bg-yellow-500 text-white px-4 py-1.5 rounded-md text-sm font-bold">
+                            {event.society}
+                          </span>
+                          <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                            event.level.includes('National') 
+                              ? 'bg-green-100 text-green-700' 
+                              : 'bg-blue-100 text-blue-700'
+                          }`}>
+                            {event.level}
+                          </span>
+                        </div>
+                        
+                        {/* Event Image */}
+                        {event.image && (
+                          <img 
+                            src={event.image} 
+                            alt={event.eventName}
+                            className="w-full h-48 object-cover rounded-lg mb-4"
+                            loading="lazy"
+                          />
+                        )}
+                        
+                        {/* Event Title */}
+                        <h5 className="text-2xl font-bold text-gray-900 mb-3 line-clamp-2">{event.eventName}</h5>
+                        <div className="border-b-2 border-yellow-500 w-16 mb-4"></div>
+                        
+                        {/* Event Description */}
+                        {(event as any).description && (
+                          <div className="mb-3">
+                            <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Event Overview</p>
+                            <p className="text-gray-700 text-base leading-relaxed">
+                              {(event as any).description}
+                            </p>
+                          </div>
+                        )}
+                        
+                        {/* Event Highlights */}
+                        {(event as any).highlights && (event as any).highlights.length > 0 && (
+                          <div className="mb-3">
+                            <p className="text-base font-semibold text-yellow-600 uppercase mb-2">Key Highlights</p>
+                            <ul className="text-gray-700 text-base space-y-1">
+                              {(event as any).highlights.map((highlight: string, idx: number) => (
+                                <li key={idx}>• {highlight}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        
+                        {/* Event Date and Year */}
+                        <div className="pt-3 border-t border-gray-200">
+                          {event.date && (
+                            <p className="text-sm text-gray-600 mb-1">
+                              <strong>Date:</strong> {event.date}
+                            </p>
+                          )}
+                          <p className="text-sm text-gray-600">
+                            <strong>Academic Year:</strong> {event.year}
+                          </p>
+                          {(event as any).resourcePerson && (
+                            <p className="text-sm text-gray-600 mt-2">
+                              <strong>Resource Person:</strong> {(event as any).resourcePerson}
+                            </p>
+                          )}
+                          {(event as any).coordinator && (
+                            <p className="text-sm text-gray-600 mt-1">
+                              <strong>Coordinator:</strong> {(event as any).coordinator}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
-                <h5 className="font-bold text-gray-900 mb-3">Workshops & Seminars</h5>
-                <p className="text-gray-600 text-sm">Industry expert sessions and hands-on training programs.</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors">
-                <h5 className="font-bold text-gray-900 mb-3">Hackathons</h5>
-                <p className="text-gray-600 text-sm">Coding challenges and innovation competitions.</p>
-              </div>
+            </div>
+
+            {/* View All Events Button */}
+            <div className="text-center mt-8">
+              <button
+                onClick={() => navigate('/events-organised')}
+                className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg text-lg inline-flex items-center gap-2"
+              >
+                <span>View All Events</span>
+                <ArrowRight className="h-5 w-5" />
+              </button>
             </div>
           </div>
         </LazyLoadWrapper>
