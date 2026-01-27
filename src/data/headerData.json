@@ -17,13 +17,17 @@
         "name": "Academics", 
         "href": "/academics",
         "dropdown": [
-          { "name": "Aeronautical Engineering", "href": "/department/ae" },
-          { "name": "Artificial Intelligence and Data Science", "href": "/department/aids" },
+          { "name": "Aeronautical Engineering", "href": "http://hit.edu.in/aero.html", "external": true },
+          { "name": "Artificial Intelligence and Data Science", "href": "http://hit.edu.in/ai/", "external": true },
           { "name": "Computer Science & Engineering", "href": "/department/cse" },
-          { "name": "Electronics & Communication Engineering", "href": "/department/ece" },
-          { "name": "Information Technology", "href": "/department/it" },
-          { "name": "Mechanical Engineering", "href": "/department/me" },
-          { "name": "MBA", "href": "/academic-calendar" }
+          { "name": "Electronics & Communication Engineering", "href": "http://hit.edu.in/ece.html", "external": true },
+          { "name": "Information Technology", "href": "http://hit.edu.in/it/index.html", "external": true },
+          { "name": "Mechanical Engineering", "href": "http://hit.edu.in/mech.html", "external": true },
+          { "name": "MBA", "href": "http://hit.edu.in/mba.html", "external": true },
+          { "name": "Pharmaceutical Technology", "href": "http://hit.edu.in/Pharmaceutical.html", "external": true },
+          { "name": "M.E Computer Science Engineering", "href": "http://hit.edu.in/cse/", "external": true },
+          { "name": "M.E VLSI Design", "href": "http://hit.edu.in/ece.html", "external": true },
+          { "name": "Science and Humanities", "href": "http://hit.edu.in/sh.html", "external": true }
         ]
       },
       {
