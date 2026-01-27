@@ -643,6 +643,8 @@
       "description": "We empower future AI and Data Science experts with an innovative curriculum, hands-on training, and advanced research, enabling them to solve complex real-world problems and deliver impactful, data-driven solutions across industries and global communities.we prepare graduates to lead in an ever-evolving technologies.",
       "icon": "Brain",
       "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/ai/",
       "vision": "To be a leading department in AI and data science education, producing innovative professionals who drive technological advancements.",
       "mission": "To provide comprehensive education in AI and data science, foster research and innovation, and develop ethical professionals for the global technology industry.",
       "programs": [
@@ -749,6 +751,8 @@
       "description": "We bridge technology and business by crafting innovative and scalable IT solutions that power digital transformation initiatives, enabling organizations to effectively optimize processes, enhance customer experiences, improve decision-making, drive sustainable growth, and thrive in rapidly evolving digital economy.",
       "icon": "Globe",
       "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/it/index.html",
       "vision": "To be a premier department in information technology education, creating IT professionals who drive digital innovation.",
       "mission": "To provide comprehensive IT education, foster innovation in digital technologies, and develop skilled professionals for the global IT industry.",
       "programs": [
@@ -891,6 +895,8 @@
       "description": "Electronics Engineering combines physics, mathematics, and practical skills to design and develop electronic systems used in robotics, communication, and embedded technologies.It focuses on analyzing and integrating electronic components and circuits for real-world applications.",
       "icon": "Radio",
       "image": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/ece.html",
       "vision": "To excel in electronics and communication engineering education and research, creating innovative solutions for emerging technologies.",
       "mission": "To provide quality education in electronics and communication, promote research in emerging areas, and develop skilled professionals for the electronics industry.",
       "programs": [
@@ -1033,6 +1039,8 @@
       "description": "Engineering innovative mechanical solutions for manufacturing, automation, and sustainable technologies—enhancing productivity, promoting eco-friendly practices, and driving technological advancement across industries for a smarter, greener future.",
       "icon": "Settings",
       "image": "public/mech.jpg",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/mech.html",
       "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
       "mission": "To provide comprehensive mechanical engineering education, promote innovation in manufacturing and design, and develop competent engineers for industry and research.",
       "programs": [
@@ -1176,6 +1184,8 @@
       "description": "Aeronautical engineering focuses on the design, development, testing, and maintenance of aircraft. It combines principles of aerodynamics, propulsion, materials science, and structural analysis to create efficient, safe, and high-performance flying machines.",
       "icon": "Award",
       "image": "/public/aero.jpg",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/aero.html",
       "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
       "mission": "To advance the science and technology of flight through innovative research, design, and development of aircraft systems, ensuring safety, efficiency, and sustainability in aerospace transportation for the benefit of society.",
       "programs": [
@@ -1319,6 +1329,8 @@
       "description": "Developing future business leaders with strategic thinking, management excellence, and practical experience—equipping them to innovate, make impactful decisions, and lead organizations effectively in a dynamic global environment.",
       "icon": "Briefcase",
       "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/mba.html",
       "vision": "To be a premier business school that develops ethical leaders and innovative managers for the global business environment.",
       "mission": "To provide world-class management education, foster entrepreneurship, and develop business leaders who create value for organizations and society.",
       "programs": [
@@ -1465,6 +1477,103 @@
     "topRecruiters": ["Hexaware", "HCL", "Cognizant", "Accenture", "Amazon", "Atos", "Bosch"]
   }
 
+    },
+    {
+      "id": "pharma",
+      "name": "Pharmaceutical Technology",
+      "shortName": "PHARMA",
+      "description": "Pharmaceutical Technology focuses on the design, development, and manufacturing of pharmaceutical products, ensuring quality, safety, and efficacy in drug delivery systems.",
+      "icon": "Building",
+      "image": "https://images.pexels.com/photos/3683041/pexels-photo-3683041.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/Pharmaceutical.html",
+      "vision": "To be a leading department in pharmaceutical education and research.",
+      "mission": "To provide quality pharmaceutical education and develop skilled professionals for the pharmaceutical industry.",
+      "programs": [
+        {
+          "name": "B.Tech Pharmaceutical Technology",
+          "duration": "4 Years",
+          "intake": "60 Students",
+          "eligibility": "10+2 with PCB/PCM"
+        }
+      ],
+      "specializations": [],
+      "facilities": [],
+      "psos": [],
+      "peos": [],
+      "pos": [],
+      "faculty": []
+    },
+    {
+      "id": "me-cse",
+      "name": "M.E Computer Science Engineering",
+      "shortName": "M.E CSE",
+      "description": "Master of Engineering in Computer Science Engineering offers advanced study in computing technologies, research methodologies, and specialized areas of computer science.",
+      "icon": "Monitor",
+      "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/cse/",
+      "vision": "To excel in postgraduate computer science education and research.",
+      "mission": "To provide advanced computer science education and foster research excellence.",
+      "programs": [
+        {
+          "name": "M.E Computer Science Engineering",
+          "duration": "2 Years",
+          "intake": "24 Students",
+          "eligibility": "B.E/B.Tech CSE/IT, GATE/TANCET"
+        }
+      ],
+      "specializations": [],
+      "facilities": [],
+      "psos": [],
+      "peos": [],
+      "pos": [],
+      "faculty": []
+    },
+    {
+      "id": "me-vlsi",
+      "name": "M.E VLSI Design",
+      "shortName": "M.E VLSI",
+      "description": "Master of Engineering in VLSI Design focuses on advanced integrated circuit design, semiconductor technology, and electronic system design methodologies.",
+      "icon": "Radio",
+      "image": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/ece.html",
+      "vision": "To be a center of excellence in VLSI design education and research.",
+      "mission": "To provide advanced VLSI education and develop skilled VLSI design professionals.",
+      "programs": [
+        {
+          "name": "M.E VLSI Design",
+          "duration": "2 Years",
+          "intake": "18 Students",
+          "eligibility": "B.E/B.Tech ECE/EEE, GATE/TANCET"
+        }
+      ],
+      "specializations": [],
+      "facilities": [],
+      "psos": [],
+      "peos": [],
+      "pos": [],
+      "faculty": []
+    },
+    {
+      "id": "sh",
+      "name": "Science and Humanities",
+      "shortName": "S&H",
+      "description": "The Department of Science and Humanities provides foundational education in mathematics, physics, chemistry, and communication skills essential for engineering education.",
+      "icon": "BookOpen",
+      "image": "https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "hasExternalLink": true,
+      "externalUrl": "http://hit.edu.in/sh.html",
+      "vision": "To provide strong foundational knowledge in science and humanities.",
+      "mission": "To develop strong fundamentals in science, mathematics, and communication skills for engineering students.",
+      "programs": [],
+      "specializations": [],
+      "facilities": [],
+      "psos": [],
+      "peos": [],
+      "pos": [],
+      "faculty": []
     }
   ]
   
