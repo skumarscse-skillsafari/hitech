@@ -70,14 +70,12 @@ useEffect(() => {
               </div>
             </>
           ) : item.external ? (
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block px-4 py-3 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300 transform hover:translate-x-1"
+            <button
+              onClick={() => window.location.assign(item.href)}
+              className="block w-full text-left px-4 py-3 text-sm text-gray-900 hover:bg-yellow-50 hover:text-yellow-600 transition-all duration-300 transform hover:translate-x-1"
             >
               {item.name}
-            </a>
+            </button>
           ) : (
             <Link
               to={item.href}
@@ -112,6 +110,16 @@ useEffect(() => {
                 {activeDropdown === item.name && renderMobileDropdown(item.dropdown, level + 1)}
               </div>
             </>
+          ) : item.external ? (
+            <button
+              onClick={() => {
+                window.location.assign(item.href);
+                closeAllMenus();
+              }}
+              className="block w-full text-left py-2 px-3 text-sm text-gray-600 hover:text-yellow-600 transition-colors duration-200"
+            >
+              {item.name}
+            </button>
           ) : (
             <Link
               to={item.href}

@@ -12,6 +12,8 @@ interface Department {
   description: string;
   icon: string;
   image: string;
+  hasExternalLink?: boolean;
+  externalUrl?: string;
   programs: Array<{
     name: string;
     duration: string;
@@ -113,13 +115,27 @@ const DepartmentCardItem: React.FC<{ dept: Department }> = ({ dept }) => {
         </div>
 
         {/* View Details Button */}
-        <Link
-          to={`/department/${dept.id}`}
-          className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 group/btn text-base mt-auto"
-        >
-          <span>Explore {dept.shortName}</span>
-          <ArrowRight className="h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
-        </Link>
+        {dept.hasExternalLink && dept.externalUrl ? (
+          <button
+            onClick={() => {
+              if (dept.externalUrl) {
+                window.location.assign(dept.externalUrl);
+              }
+            }}
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 group/btn text-base mt-auto cursor-pointer"
+          >
+            <span>Explore {dept.shortName}</span>
+            <ArrowRight className="h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
+          </button>
+        ) : (
+          <Link
+            to={`/department/${dept.id}`}
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 group/btn text-base mt-auto"
+          >
+            <span>Explore {dept.shortName}</span>
+            <ArrowRight className="h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
+          </Link>
+        )}
       </div>
     </div>
   );
