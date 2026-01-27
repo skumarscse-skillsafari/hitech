@@ -12,6 +12,7 @@
           { "name": "Management", "href": "/vision-mission" },
           { "name": "Principal's Desk", "href": "/leadership" },
           { "name": "Board of Governors", "href": "http://www.hit.edu.in/boardofgover.html" }
+          { "name": "Principal's Desk", "href": "/leadership" }
         ]
       },
       { 
@@ -50,6 +51,7 @@
           { "name": "Prospectus", "href": "/pdf/Prospect.pdf", "external": true },
           { "name": "Scholarships", "href": "/scholarships" },
           { "name": "Admission Contact", "href": "http://www.hit.edu.in/adm_contact.html" }
+          { "name": "Scholarships", "href": "/scholarships" }
         ]
       },
       { 
@@ -70,6 +72,7 @@
               { "name": "Sports", "href": "/sports" },
               { "name": "Transport", "href": "/transportation" },
               { "name": "Knowledge Center", "href": "http://www.hit.edu.in/kc.html" }
+              { "name": "Transport", "href": "/transportation" }
             ]
           },
           {
