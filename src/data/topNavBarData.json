@@ -134,6 +134,16 @@
           { "name": "Campus Map", "href": "/campus-map" }
         ]
       },
+
+      {
+        "name": "Committee",
+        "href": "/committee",
+        "dropdown": [
+          { "name": "Internal Complaints - POSH Cell", "href": "http://www.hit.edu.in/pdf/posh.pdf" },
+          { "name": "Research Cell", "href": "http://www.hit.edu.in/hsm2023.html" },
+          { "name": "Campus Security Audit ", "href": "http://www.hit.edu.in/pdf/HiTech%20Campus%20Security%20Audit%20Checklist.pdf" }
+        ]
+      },
               {
       "name": "Contact Us",
       "href": "/contactus"}

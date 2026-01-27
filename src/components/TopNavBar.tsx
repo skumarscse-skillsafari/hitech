@@ -57,7 +57,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
   return (
     <nav className="relative z-[999] bg-yellow-500 text-gray-900 border-b border-yellow-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-between items-center h-12 md:h-10">
+        <div className="flex justify-between items-center h-10">
           {/* Mobile Menu Button */}
           <button
             aria-label="Toggle mobile menu"
@@ -189,8 +189,8 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex items-center space-x-2">
-            <span className="text-xs font-medium hidden md:inline-block">Follow us:</span>
+          <div className="flex items-center space-x-1.5">
+            <span className="text-xs font-medium hidden xl:inline-block mr-1">Follow us:</span>
             {Object.entries(socialMedia).map(([platform, url]) => {
               const Icon = socialIcons[platform as keyof typeof socialIcons];
               return (
@@ -200,7 +200,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ socialMedia, menuItems }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   title={`Follow us on ${platform}`}
-                  className="p-1.5 rounded hover:bg-yellow-600 hover:scale-110 transition"
+                  className="p-1 rounded hover:bg-yellow-600 hover:scale-110 transition"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
