@@ -17,6 +17,7 @@ import departmentsData from '../data/departmentsData.json';
 import newsEventsData from '../data/newsEventsData.json';
 import placementsData from '../data/placementsData.json';
 import hit from "../../public/hit.jpg";
+import { Award, Trophy, FileText, Building2, GraduationCap, Lightbulb, User, Users, Briefcase, Globe, ChevronDown, Headphones } from 'lucide-react';
 import { Award, Trophy, FileText, Building2, GraduationCap, Lightbulb, User, Users, Briefcase, Globe } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -56,6 +57,8 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Title */}
           <div className="text-center mb-6">
+            <h2 className="inline-block text-5xl sm:text-6xl font-extrabold text-gray-900 hover:text-yellow-500 transition-colors duration-300">Quick Resources</h2>
+            <div className="w-32 h-1 bg-yellow-400 rounded-full mx-auto mt-4 mb-4"></div>
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Quick Resources</h2>
             <div className="w-24 h-1 bg-yellow-400 rounded-full mx-auto"></div>
           </div>
@@ -93,6 +96,7 @@ const HomePage: React.FC = () => {
                   >
                     <FileText className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                     <span className="text-xs sm:text-sm md:text-base whitespace-nowrap">NIRF Report 2025</span>
+                    <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0 transition-transform group-hover:rotate-180" />
                   </button>
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] w-[90vw] sm:w-auto sm:min-w-[200px] max-w-[300px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
@@ -142,6 +146,7 @@ const HomePage: React.FC = () => {
                   >
                     <Building2 className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                     <span className="text-xs sm:text-sm md:text-base whitespace-nowrap">AU Affiliation</span>
+                    <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0 transition-transform group-hover:rotate-180" />
                   </button>
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] w-[90vw] sm:w-auto sm:min-w-[180px] max-w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
@@ -169,6 +174,7 @@ const HomePage: React.FC = () => {
                   >
                     <FileText className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                     <span className="text-xs sm:text-sm md:text-base whitespace-nowrap">AICTE EOA/LOA</span>
+                    <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0 transition-transform group-hover:rotate-180" />
                   </button>
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] w-[90vw] sm:w-auto sm:min-w-[180px] max-w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
@@ -212,11 +218,14 @@ const HomePage: React.FC = () => {
                     className="flex items-center justify-center space-x-2 px-4 sm:px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:border-yellow-500 hover:bg-yellow-50 group-hover:text-yellow-600 group-hover:border-yellow-500 group-hover:bg-yellow-50"
                   >
                     <Lightbulb className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm md:text-base whitespace-nowrap">Innovation & Startup Policy</span>
+                    <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0 transition-transform group-hover:rotate-180" />
                     <span className="text-xs sm:text-sm md:text-base whitespace-nowrap">INNOVATION & START-UP POLICY</span>
                   </button>
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] w-[90vw] sm:w-auto sm:min-w-[320px] max-w-[400px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
                   >
+                    <div className="bg-yellow-500 text-white px-4 py-2 text-sm font-semibold">Innovation & Startup Policy</div>
                     <div className="bg-yellow-500 text-white px-4 py-2 text-sm font-semibold">INNOVATION & START-UP POLICY</div>
                     <a href="/pdf nav/Hitech Policy_new.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">
                       HINDUSTHAN INSTITUTE OF TECHNOLOGY INNOVATION & START-UP POLICY AND GUIDELINES 2021 FOR FACULTY AND STUDENTS
@@ -235,6 +244,7 @@ const HomePage: React.FC = () => {
                   className="flex items-center justify-center space-x-2 px-4 sm:px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:border-yellow-500 hover:bg-yellow-50"
                 >
                   <User className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm md:text-base whitespace-nowrap italic">International Yoga Day 2024</span>
                   <span className="text-xs sm:text-sm md:text-base whitespace-nowrap italic">INTERNATIONAL YOGA DAY 2024</span>
                 </a>
 
@@ -246,6 +256,7 @@ const HomePage: React.FC = () => {
                   className="flex items-center justify-center space-x-2 px-4 sm:px-6 py-4 font-medium transition-all duration-200 border-b-2 text-gray-600 border-transparent hover:text-yellow-600 hover:border-yellow-500 hover:bg-yellow-50"
                 >
                   <Users className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm md:text-base whitespace-nowrap">Students Testimonial</span>
                   <span className="text-xs sm:text-sm md:text-base whitespace-nowrap">STUDENT'S TESTIMONIALS</span>
                 </a>
 
@@ -278,6 +289,7 @@ const HomePage: React.FC = () => {
                   >
                     <FileText className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                     <span className="text-xs sm:text-sm md:text-base whitespace-nowrap">Audit Reports</span>
+                    <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0 transition-transform group-hover:rotate-180" />
                   </button>
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 mt-1 bg-white border border-gray-300 shadow-xl z-[200] w-[90vw] sm:w-auto sm:min-w-[180px] max-w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
@@ -355,6 +367,67 @@ const HomePage: React.FC = () => {
           <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
             <div className="bg-gray-900 text-white px-3 py-2 rounded-lg text-xs font-medium whitespace-nowrap shadow-xl">
               NBA Data Capturing Points
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45 w-2 h-2 bg-gray-900"></div>
+            </div>
+          </div>
+        </div>
+      </motion.a>
+
+      {/* Help Desk Floating Button */}
+      <motion.a
+        href="http://www.hit.edu.in/helpdesk/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed right-6 top-[55%] z-50 group cursor-pointer"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <div className="relative">
+          {/* Animated pulse ring */}
+          <motion.div
+            className="absolute inset-0 rounded-xl bg-blue-400 opacity-30"
+            animate={{
+              scale: [1, 1.3, 1],
+              opacity: [0.3, 0, 0.3],
+            }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.5,
+            }}
+          />
+
+          {/* Main button */}
+          <div className="relative bg-gradient-to-br from-blue-400 to-blue-600 px-4 py-3 rounded-xl shadow-xl transition-all duration-300">
+            <div className="flex items-center gap-2">
+              <motion.div
+                animate={{
+                  y: [0, -3, 0],
+                }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                }}
+              >
+                <Headphones className="w-4 h-4 text-white" strokeWidth={3} />
+              </motion.div>
+
+              <div className="text-left">
+                <p className="text-white font-bold text-xs leading-tight">Help Desk</p>
+                <p className="text-blue-100 text-[10px] font-medium">Get Support</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tooltip */}
+          <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <div className="bg-gray-900 text-white px-3 py-2 rounded-lg text-xs font-medium whitespace-nowrap shadow-xl">
+              Student Help Desk
               <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45 w-2 h-2 bg-gray-900"></div>
             </div>
           </div>
@@ -453,6 +526,12 @@ const HomePage: React.FC = () => {
       </SectionWrapper>
       <SectionWrapper lazy lazyHeight="400px" lazyDelay={500}>
         <Gallery />
+      </SectionWrapper>
+
+      <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={500}>
+        <Placements />
+      </SectionWrapper>
+
       </SectionWrapper>
 
       <SectionWrapper className="py-20 bg-gray-50" lazy lazyHeight="600px" lazyDelay={500}>

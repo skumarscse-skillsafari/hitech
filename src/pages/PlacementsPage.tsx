@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, Users, Award, Building, Star, ArrowRight } from 'lucide-react';
+import { TrendingUp, Users, Award, Building, Star, ArrowRight, FileText } from 'lucide-react';
 import PageLayout from '../components/layout/PageLayout';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import collegeData from '../data/collegeData.json';
@@ -65,6 +65,87 @@ const PlacementsPage: React.FC = () => {
               <div className="text-4xl font-bold text-gray-900 mb-3">{placements.stats.companiesVisited}</div>
               <div className="text-gray-600 font-medium">Companies Visited</div>
               <div className="text-sm text-green-600 mt-2">↗ 25 new companies</div>
+            </div>
+          </div>
+        </SectionWrapper>
+
+        {/* Placement Reports Section */}
+        <SectionWrapper lazy lazyHeight="400px" lazyDelay={600} className="mb-16">
+          <div className="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl shadow-2xl p-8 md:p-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Placement Reports</h2>
+            
+            <div className="grid gap-4 md:gap-6">
+              {/* Placement 2022-23 */}
+              <a
+                href="http://www.hit.edu.in/pdf/PLACEMENT%202022-2023.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-50 p-5 rounded-xl border-2 border-transparent hover:border-yellow-600 transition-all duration-300 shadow-md hover:shadow-xl group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 bg-yellow-100 p-3 rounded-lg group-hover:bg-yellow-200 transition-colors">
+                    <FileText className="h-6 w-6 text-yellow-700" strokeWidth={2.5} />
+                  </div>
+                  <span className="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition-colors">
+                    PLACEMENT 2022-23
+                  </span>
+                  <ArrowRight className="h-5 w-5 ml-auto text-gray-400 group-hover:text-yellow-600 group-hover:translate-x-2 transition-all" />
+                </div>
+              </a>
+
+              {/* Placement 2021-22 */}
+              <a
+                href="http://www.hit.edu.in/pdf/PLACEMENT%202021-2022.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-50 p-5 rounded-xl border-2 border-transparent hover:border-yellow-600 transition-all duration-300 shadow-md hover:shadow-xl group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 bg-yellow-100 p-3 rounded-lg group-hover:bg-yellow-200 transition-colors">
+                    <FileText className="h-6 w-6 text-yellow-700" strokeWidth={2.5} />
+                  </div>
+                  <span className="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition-colors">
+                    PLACEMENT 2021-22
+                  </span>
+                  <ArrowRight className="h-5 w-5 ml-auto text-gray-400 group-hover:text-yellow-600 group-hover:translate-x-2 transition-all" />
+                </div>
+              </a>
+
+              {/* Placement 2020-21 */}
+              <a
+                href="http://www.hit.edu.in/pdf/PLACEMENT%202020-2021.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-50 p-5 rounded-xl border-2 border-transparent hover:border-yellow-600 transition-all duration-300 shadow-md hover:shadow-xl group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 bg-yellow-100 p-3 rounded-lg group-hover:bg-yellow-200 transition-colors">
+                    <FileText className="h-6 w-6 text-yellow-700" strokeWidth={2.5} />
+                  </div>
+                  <span className="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition-colors">
+                    PLACEMENT 2020-21
+                  </span>
+                  <ArrowRight className="h-5 w-5 ml-auto text-gray-400 group-hover:text-yellow-600 group-hover:translate-x-2 transition-all" />
+                </div>
+              </a>
+
+              {/* Placement 2019-20 */}
+              <a
+                href="http://www.hit.edu.in/pdf/PLACEMENT%202019-2020.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-50 p-5 rounded-xl border-2 border-transparent hover:border-yellow-600 transition-all duration-300 shadow-md hover:shadow-xl group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 bg-yellow-100 p-3 rounded-lg group-hover:bg-yellow-200 transition-colors">
+                    <FileText className="h-6 w-6 text-yellow-700" strokeWidth={2.5} />
+                  </div>
+                  <span className="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition-colors">
+                    PLACEMENT 2019-20
+                  </span>
+                  <ArrowRight className="h-5 w-5 ml-auto text-gray-400 group-hover:text-yellow-600 group-hover:translate-x-2 transition-all" />
+                </div>
+              </a>
             </div>
           </div>
         </SectionWrapper>

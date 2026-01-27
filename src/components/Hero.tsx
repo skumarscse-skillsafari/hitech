@@ -68,6 +68,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
+        src="../Drone/drone(og).mp4"
         src="\drone\dronee.mp4"
         autoPlay
         loop
