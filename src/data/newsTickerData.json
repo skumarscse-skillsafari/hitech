@@ -1,0 +1,34 @@
+{
+  "newsTicker": {
+    "settings": {
+      "speed": 60,
+      "pauseOnHover": true,
+      "showControls": false,
+      "autoHide": true
+    },
+    "newsItems": [
+      {
+        "id": 1,
+        "text": "Admissions Open for Academic Year 2025-26! Apply now for B.E / B.Tech & M.E ",
+        "type": "announcement",
+        "url": "/admissions",
+        "isActive": true
+      },
+      {
+        "id": 2,
+        "text": "HITECH Students Win National Robotics Championship 2024 - Congratulations to Team Innovators!",
+        "type": "achievement",
+        "url": "/news/robotics-championship",
+        "isActive": true
+      },
+      {
+        "id": 3,
+        "text": "TechFest 2025, March 15-17, 2025. Register now for technical competitions and workshops",
+        "type": "event",
+        "url": "/events/techfest-2024",
+        "isActive": true
+      }
+
+    ]
+  }
+}

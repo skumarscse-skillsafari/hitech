@@ -1,0 +1,109 @@
+{
+  "header": {
+    "collegeName": "Hindusthan Institute of Technology",
+    "collegeSubtitle": "(An Autonomous Institution); Approved by AICTE New Delhi, Affiliated to Anna University, Chennai.",
+    "navigationItems": [
+      { "name": "Home", "href": "/" },
+      { 
+        "name": "About", 
+        "href": "/about",
+        "dropdown": [
+          { "name": "Objectives", "href": "/about/Objectives" },
+          { "name": "Management", "href": "/vision-mission" },
+          { "name": "Principal's Desk", "href": "/leadership" },
+          { "name": "Board of Governors", "href": "http://www.hit.edu.in/boardofgover.html" }
+        ]
+      },
+      { 
+        "name": "Academics", 
+        "href": "/academics",
+        "dropdown": [
+          { "name": "Aeronautical Engineering", "href": "http://hit.edu.in/aero.html", "external": true },
+          { "name": "Artificial Intelligence and Data Science", "href": "http://hit.edu.in/ai/", "external": true },
+          { "name": "Computer Science & Engineering", "href": "/department/cse" },
+          { "name": "Electronics & Communication Engineering", "href": "http://hit.edu.in/ece.html", "external": true },
+          { "name": "Information Technology", "href": "http://hit.edu.in/it/index.html", "external": true },
+          { "name": "Mechanical Engineering", "href": "http://hit.edu.in/mech.html", "external": true },
+          { "name": "MBA", "href": "http://hit.edu.in/mba.html", "external": true },
+          { "name": "Pharmaceutical Technology", "href": "http://hit.edu.in/Pharmaceutical.html", "external": true },
+          { "name": "M.E Computer Science Engineering", "href": "http://hit.edu.in/cse/", "external": true },
+          { "name": "M.E VLSI Design", "href": "http://hit.edu.in/ece.html", "external": true },
+          { "name": "Science and Humanities", "href": "http://hit.edu.in/sh.html", "external": true }
+        ]
+      },
+      {
+        "name": "Research",
+        "href": "/research",
+        "dropdown": [
+          { "name": "Research Areas", "href": "/research/areas" },
+          { "name": "Publications", "href": "/research/publications" },
+          { "name": "Projects & Grants", "href": "/research/projects" }
+        ]
+      },
+      { 
+        "name": "Admissions", 
+        "href": "/admissions",
+        "dropdown": [
+          { "name": "Admission Process", "href": "/admissions" },
+          { "name": "Eligibility", "href": "/eligibility" },
+          { "name": "Application form", "href": "/appform" },
+          { "name": "Prospectus", "href": "/pdf/Prospect.pdf", "external": true },
+          { "name": "Scholarships", "href": "/scholarships" },
+          { "name": "Admission Contact", "href": "http://www.hit.edu.in/adm_contact.html" }
+        ]
+      },
+      { 
+        "name": "Campus Life", 
+        "href": "/campus-life",
+        "dropdown": [
+          { "name": "Gallery", "href": "/gallery" },
+          { "name": "Events", "href": "/events" },
+          {
+            "name": "Facilities",
+            "href": "/facilities",
+            "dropdown": [
+              { "name": "Hostel", "href": "/hostel" },
+              { "name": "Cafeteria", "href": "/cafeteria" },
+              { "name": "Library", "href": "/campus-life/facilities/library" },
+              { "name": "ATM", "href": "/atm" },
+              { "name": "GYM", "href": "/gym" },
+              { "name": "Sports", "href": "/sports" },
+              { "name": "Transport", "href": "/transportation" },
+              { "name": "Knowledge Center", "href": "http://www.hit.edu.in/kc.html" }
+            ]
+          },
+          {
+            "name": "Innovation",
+            "href": "/innovation",
+            "dropdown": [
+              { "name": "Incubation Lab", "href": "/innovation/innovationpolicy" },
+              { "name": "AICTE Idea Lab", "href": "/aicte-lab" }
+            ]
+          },
+          {
+            "name": "Club Activities",
+            "href": "/club-activities",
+            "dropdown": [
+              { "name": "Entrepreneurship Development Cell", "href": "http://www.hit.edu.in/edc.html" },
+              { "name": "Students Chapter", "href": "/club-activities/students-chapter" },
+              { "name": "Communication Skill and Development Cell", "href": "http://www.hit.edu.in/csdc.html" },
+              { "name": "NSS", "href": "http://www.hit.edu.in/nss.html" },
+              { "name": "NCC", "href": "http://www.hit.edu.in/ncc.html" },
+              { "name": "Social Welfare Association", "href": "http://www.hit.edu.in/swa.html" }
+            ]
+          }
+        ]
+      },
+      { 
+        "name": "Placements", 
+        "href": "/placements",
+        "dropdown": [
+          { "name": "Placement Statistics", "href": "/placements" },
+          { "name": "Top Recruiters", "href": "/recruiters" },
+          { "name": "Training Programs", "href": "/training" },
+          { "name": "Alumni Network", "href": "/alumni" }
+        ]
+      }
+    ]
+  }
+}

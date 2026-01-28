@@ -1,0 +1,562 @@
+{
+  "college": {
+    "name": "Hindusthan Institute of Technology",
+    "fullName": "Hindusthan Institute of Technology - An Autonomous Institution",
+    "tagline": "Engineering Excellence Since 1995",
+    "subtitle": "(An Autonomous Institution); Approved by AICTE New Delhi, Affiliated to Anna University, Chennai.",
+    "description": "Leading the future of engineering education with cutting-edge research, world-class faculty, and industry partnerships.",
+    "logo": "/api/placeholder/120/60",
+    "hero": {
+      "title": "Get the Best in  Everything",
+      "subtitle": "Join 2500+ alumni who are transforming industries worldwide through innovative engineering solutions.",
+      "backgroundImage": "https://images.pexels.com/photos/159306/building-architecture-sky-blue-159306.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "stats": [
+        { "number": "15+", "label": "Years of Excellence" },
+        { "number": "2500+", "label": "Students" },
+        { "number": "500+", "label": "Faculty Members" },
+        { "number": "90%", "label": "Placement Rate" }
+      ]
+    },
+    "about": {
+      "title": "About Our Institution",
+      "content": "Hindusthan Institute of Technology stands at the forefront of engineering education, combining theoretical excellence with practical innovation. Our state-of-the-art facilities, distinguished faculty, and industry partnerships create an environment where future engineers thrive.",
+      "highlights": [
+        "NAAC A Grade Accreditation",
+        "NBA Accredited Programs",
+        "ISO 9001:2015 Certified",
+        "NIRF Ranking: Top 50 Engineering Colleges"
+      ],
+      "image": "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    "vision": "To be a globally recognized institution of excellence in engineering education, research, and innovation.",
+    "mission": "To provide world-class engineering education, foster innovation, and develop ethical leaders who contribute to society's advancement through technology and research.",
+    "socialMedia": {
+      "facebook": "https://facebook.com/hect.hitech",
+      "twitter": "https://twitter.com/hit_official",
+      "linkedin": "https://linkedin.com/school/hindusthan-institute-of-tech",
+      "instagram": "https://instagram.com/hindusthan.hitech",
+      "youtube": "https://youtube.com/c/HindusthanInstituteOfTechnology"
+    },
+    "accreditations": [
+      {
+        "name": "NAAC",
+        "grade": "A",
+        "url": "https://naac.gov.in",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=100"
+      },
+      {
+        "name": "NBA",
+        "status": "Accredited",
+        "url": "https://nbaind.org",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=100"
+      },
+      {
+        "name": "NIRF",
+        "ranking": "Top 50",
+        "url": "https://nirfindia.org",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=100"
+      },
+      {
+        "name": "AICTE",
+        "status": "Approved",
+        "url": "https://aicte-india.org",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=100"
+      },
+      {
+        "name": "Anna University",
+        "status": "Affiliated",
+        "url": "https://annauniv.edu",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=100"
+      }
+    ]
+  },
+  "departments": [
+    {
+      "id": "cse",
+      "name": "Computer Science & Engineering",
+      "shortName": "CSE",
+      "description": " Pioneering the digital revolution with cutting-edge curriculum in AI, ML, Data Science, and Software Engineering.",
+      "icon": "Monitor",
+      "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To be a leading department in computer science education and research, producing innovative engineers who drive technological advancement.",
+      "mission": "To provide comprehensive education in computer science, foster research and innovation, and develop ethical professionals for the global technology industry.",
+      "programs": [
+        {
+          "name": "B.Tech Computer Science & Engineering",
+          "duration": "4 Years",
+          "intake": "180 Students",
+          "eligibility": "10+2 with PCM, JEE"
+        },
+        {
+          "name": "M.Tech Computer Science & Engineering",
+          "duration": "2 Years",
+          "intake": "30 Students",
+          "eligibility": "B.Tech CSE/IT, GATE"
+        },
+        {
+          "name": "Ph.D Computer Science",
+          "duration": "3-6 Years",
+          "intake": "15 Students",
+          "eligibility": "M.Tech/M.E, NET/GATE"
+        }
+      ],
+      "specializations": ["Artificial Intelligence", "Machine Learning", "Cybersecurity", "Data Science", "Cloud Computing", "IoT"],
+      "facilities": ["AI Lab", "Robotics Lab", "Cloud Computing Center", "Research Center", "High Performance Computing Lab"],
+      "teachingMethodologies": [
+        "Project-Based Learning",
+        "Industry-Integrated Curriculum",
+        "Hands-on Laboratory Sessions",
+        "Research-Oriented Teaching",
+        "Collaborative Learning",
+        "Case Study Method"
+      ],
+      "faculty": [
+        {
+          "id": 1,
+          "name": "Dr. Rajesh Kumar",
+          "designation": "Professor & Head",
+          "specialization": "Artificial Intelligence, Machine Learning",
+          "experience": "18 years",
+          "education": "Ph.D from IIT Delhi",
+          "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "rajesh.kumar@hit.edu",
+          "publications": 45,
+          "researchAreas": ["Deep Learning", "Computer Vision", "Natural Language Processing"]
+        },
+        {
+          "id": 2,
+          "name": "Dr. Anita Singh",
+          "designation": "Associate Professor",
+          "specialization": "Data Science, Big Data Analytics",
+          "experience": "12 years",
+          "education": "Ph.D from IIT Bombay",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "anita.singh@hit.edu",
+          "publications": 32,
+          "researchAreas": ["Big Data", "Data Mining", "Business Intelligence"]
+        },
+        {
+          "id": 3,
+          "name": "Dr. Vikram Patel",
+          "designation": "Assistant Professor",
+          "specialization": "Cybersecurity, Network Security",
+          "experience": "8 years",
+          "education": "Ph.D from IIT Kanpur",
+          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "vikram.patel@hit.edu",
+          "publications": 28,
+          "researchAreas": ["Cryptography", "Network Security", "Blockchain"]
+        }
+      ]
+    },
+    {
+      "id": "ece",
+      "name": "Electronics & Communication Engineering",
+      "shortName": "ECE",
+      "description": "Advancing communication technologies and embedded systems for the connected world.",
+      "icon": "Radio",
+      "image": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To excel in electronics and communication engineering education and research, creating innovative solutions for emerging technologies.",
+      "mission": "To provide quality education in electronics and communication, promote research in emerging areas, and develop skilled professionals for the electronics industry.",
+      "programs": [
+        {
+          "name": "B.Tech Electronics & Communication Engineering",
+          "duration": "4 Years",
+          "intake": "90 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Electronics & Communication Engineering",
+          "duration": "2 Years",
+          "intake": "24 Students",
+          "eligibility": "B.Tech ECE/EEE, GATE"
+        }
+      ],
+      "specializations": ["VLSI Design", "Embedded Systems", "Signal Processing", "IoT", "Wireless Communication"],
+      "facilities": ["VLSI Lab", "Communication Lab", "Microprocessor Lab", "Digital Signal Processing Lab", "Embedded Systems Lab"],
+      "teachingMethodologies": [
+        "Simulation-Based Learning",
+        "Hardware-in-Loop Testing",
+        "Industry Projects",
+        "Research-Based Learning",
+        "Peer Learning",
+        "Problem-Based Learning"
+      ],
+      "faculty": [
+        {
+          "id": 4,
+          "name": "Dr. Priya Sharma",
+          "designation": "Professor & Head",
+          "specialization": "VLSI Design, Digital Signal Processing",
+          "experience": "15 years",
+          "education": "Ph.D from IIT Madras",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "priya.sharma@hit.edu",
+          "publications": 38,
+          "researchAreas": ["VLSI Design", "Low Power Design", "Digital Signal Processing"]
+        },
+        {
+          "id": 5,
+          "name": "Dr. Suresh Kumar",
+          "designation": "Associate Professor",
+          "specialization": "Embedded Systems, IoT",
+          "experience": "11 years",
+          "education": "Ph.D from NIT Trichy",
+          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "suresh.kumar@hit.edu",
+          "publications": 29,
+          "researchAreas": ["Embedded Systems", "IoT", "Wireless Sensor Networks"]
+        }
+      ]
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "shortName": "ME",
+      "description": "Engineering innovative mechanical solutions for manufacturing, automation, and sustainable technologies—enhancing productivity, promoting eco-friendly practices, and driving technological advancement across industries for a smarter, greener future.",
+      "icon": "Settings",
+      "image": "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To be a center of excellence in mechanical engineering education and research, contributing to sustainable technological development.",
+      "mission": "To provide comprehensive mechanical engineering education, promote innovation in manufacturing and design, and develop competent engineers for industry and research.",
+      "programs": [
+        {
+          "name": "B.Tech Mechanical Engineering",
+          "duration": "4 Years",
+          "intake": "120 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Mechanical Engineering",
+          "duration": "2 Years",
+          "intake": "30 Students",
+          "eligibility": "B.Tech ME, GATE"
+        }
+      ],
+      "specializations": ["Robotics & Automation", "Thermal Engineering", "Manufacturing", "Design Engineering", "Renewable Energy"],
+      "facilities": ["CAD/CAM Lab", "Thermal Lab", "Manufacturing Lab", "Robotics Workshop", "Materials Testing Lab"],
+      "teachingMethodologies": [
+        "Design Thinking Approach",
+        "Industry-Integrated Projects",
+        "Simulation-Based Learning",
+        "Workshop-Based Training",
+        "Research-Oriented Learning",
+        "Collaborative Design Projects"
+      ],
+      "faculty": [
+        {
+          "id": 6,
+          "name": "Dr. Amit Patel",
+          "designation": "Professor & Head",
+          "specialization": "Robotics, Manufacturing Engineering",
+          "experience": "16 years",
+          "education": "Ph.D from IIT Kanpur",
+          "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "amit.patel@hit.edu",
+          "publications": 42,
+          "researchAreas": ["Industrial Robotics", "Advanced Manufacturing", "Automation"]
+        }
+      ]
+    },
+    {
+      "id": "ce",
+      "name": "Civil Engineering",
+      "shortName": "CE",
+      "description": "Building sustainable infrastructure and smart cities for tomorrow's world.",
+      "icon": "Building",
+      "image": "https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "vision": "To be a leading department in civil engineering education, creating sustainable infrastructure solutions for society.",
+      "mission": "To provide quality civil engineering education, promote sustainable construction practices, and develop skilled professionals for infrastructure development.",
+      "programs": [
+        {
+          "name": "B.Tech Civil Engineering",
+          "duration": "4 Years",
+          "intake": "90 Students",
+          "eligibility": "10+2 with PCM, JEE Main"
+        },
+        {
+          "name": "M.Tech Civil Engineering",
+          "duration": "2 Years",
+          "intake": "24 Students",
+          "eligibility": "B.Tech CE, GATE"
+        }
+      ],
+      "specializations": ["Structural Engineering", "Environmental Engineering", "Transportation", "Geotechnical", "Water Resources"],
+      "facilities": ["Structural Lab", "Concrete Lab", "Survey Lab", "Environmental Lab", "Geotechnical Lab"],
+      "teachingMethodologies": [
+        "Field-Based Learning",
+        "Project-Based Learning",
+        "Site Visits and Practical Training",
+        "Software-Based Design",
+        "Research Projects",
+        "Industry Collaboration"
+      ],
+      "faculty": [
+        {
+          "id": 7,
+          "name": "Dr. Kavitha Reddy",
+          "designation": "Professor & Head",
+          "specialization": "Structural Engineering, Earthquake Engineering",
+          "experience": "14 years",
+          "education": "Ph.D from IIT Delhi",
+          "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+          "email": "kavitha.reddy@hit.edu",
+          "publications": 35,
+          "researchAreas": ["Seismic Design", "Structural Dynamics", "Smart Materials"]
+        }
+      ]
+    }
+  ],
+  
+  "placements": {
+    "stats": {
+      "placementRate": "90%",
+      "averagePackage": "4.5 LPA",
+      "highestPackage": "42 LPA",
+      "companiesVisited": "50+"
+    },
+    "topRecruiters": [
+      {
+        "name": "Google",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "package": "35-45 LPA"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "package": "28-40 LPA"
+      },
+      {
+        "name": "Amazon",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "package": "25-35 LPA"
+      },
+      {
+        "name": "TCS",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "package": "4-8 LPA"
+      },
+      {
+        "name": "Infosys",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "package": "4-7 LPA"
+      },
+      {
+        "name": "Wipro",
+        "logo": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200",
+        "package": "4-6 LPA"
+      }
+    ],
+    "placementProcess": [
+      {
+        "step": 1,
+        "title": "Registration",
+        "description": "Students register for placement process through online portal"
+      },
+      {
+        "step": 2,
+        "title": "Pre-Placement Training By Industry Experts",
+        "description": "Comprehensive training on aptitude, technical skills, and soft skills"
+      },
+      {
+        "step": 3,
+        "title": "Company Visits",
+        "description": "Companies conduct pre-placement talks and selection processes"
+      },
+      {
+        "step": 4,
+        "title": "Final Selection",
+        "description": "Students receive offer letters and complete joining formalities"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Rahul Sharma",
+        "company": "Google",
+        "package": "42 LPA",
+        "year": "2024",
+        "department": "CSE",
+        "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "testimonial": "The placement cell at HIT provided excellent support throughout my placement journey. The training sessions and mock interviews were instrumental in my success."
+      },
+      {
+        "name": "Priya Patel",
+        "company": "Microsoft",
+        "package": "38 LPA",
+        "year": "2024",
+        "department": "ECE",
+        "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "testimonial": "The industry exposure and practical learning at HIT prepared me well for the corporate world. I'm grateful for the opportunities provided."
+      }
+    ]
+  },
+  "faculty": [
+    {
+      "id": 1,
+      "name": "Dr. Rajesh Kumar",
+      "designation": "Professor & Head",
+      "department": "Computer Science & Engineering",
+      "specialization": "Artificial Intelligence, Machine Learning",
+      "experience": "18 years",
+      "education": "Ph.D from IIT Delhi",
+      "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "email": "rajesh.kumar@hit.edu",
+      "publications": 45
+    },
+    {
+      "id": 2,
+      "name": "Dr. Anita Singh",
+      "designation": "Associate Professor",
+      "department": "Computer Science & Engineering",
+      "specialization": "Data Science, Big Data Analytics",
+      "experience": "12 years",
+      "education": "Ph.D from IIT Bombay",
+      "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "email": "anita.singh@hit.edu",
+      "publications": 32
+    },
+    {
+      "id": 3,
+      "name": "Dr. Priya Sharma",
+      "designation": "Professor & Head",
+      "department": "Electronics & Communication Engineering",
+      "specialization": "VLSI Design, Digital Signal Processing",
+      "experience": "15 years",
+      "education": "Ph.D from IIT Madras",
+      "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "email": "priya.sharma@hit.edu",
+      "publications": 38
+    },
+    {
+      "id": 4,
+      "name": "Dr. Amit Patel",
+      "designation": "Professor & Head",
+      "department": "Mechanical Engineering",
+      "specialization": "Robotics, Manufacturing Engineering",
+      "experience": "16 years",
+      "education": "Ph.D from IIT Kanpur",
+      "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "email": "amit.patel@hit.edu",
+      "publications": 42
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "HIT Students Win National Robotics Championship",
+      "excerpt": "Our robotics team secured first place in the National Inter-College Robotics Competition, showcasing innovative autonomous navigation solutions.",
+      "date": "2024-01-15",
+      "category": "Achievement",
+      "image": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "New AI Research Center Inaugurated",
+      "excerpt": "State-of-the-art Artificial Intelligence Research Center opens with advanced computing infrastructure and industry partnerships.",
+      "date": "2024-01-10",
+      "category": "Infrastructure",
+      "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Industry Partnership with Tech Giants",
+      "excerpt": "Signed MOUs with leading technology companies for internships, placements, and collaborative research projects.",
+      "date": "2024-01-05",
+      "category": "Partnership",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Record Placement Season 2024",
+      "excerpt": "Achieved 98% placement rate with highest package of 45 LPA, setting new records in student placements.",
+      "date": "2024-01-20",
+      "category": "Placement",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "featured": false
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "TechFest 2024",
+      "description": "Annual technical festival featuring competitions, workshops, and guest lectures from industry experts.",
+      "date": "2024-03-15",
+      "time": "09:00 AM",
+      "venue": "Main Auditorium",
+      "type": "Festival",
+      "registrationOpen": true
+    },
+    {
+      "id": 2,
+      "title": "Industry Expert Lecture Series",
+      "description": "Weekly lectures by industry leaders sharing insights on emerging technologies and career opportunities.",
+      "date": "2024-02-20",
+      "time": "02:00 PM",
+      "venue": "Conference Hall",
+      "type": "Lecture",
+      "registrationOpen": true
+    }
+  ],
+  "admissions": {
+    "process": [
+      {
+        "step": 1,
+        "title": "Online Application",
+        "description": "Complete the online application form with required documents"
+      },
+      {
+        "step": 2,
+        "title": "Apply for Councelling / Management Quota",
+        "description": "Apply Counselling with your original documents"
+      },
+      {
+        "step": 3,
+        "title": "Document Verification",
+        "description": "Submit original documents for verification"
+      },
+      {
+        "step": 4,
+        "title": "Final Selection",
+        "description": "Merit-based selection and admission confirmation"
+      }
+    ],
+    "requirements": [
+      "10+2 with Physics, Chemistry, Mathematics (for BE and B.Tech)",
+      "Minimum 45% aggregate in HSC examination",
+      
+      "Age limit: 17-25 years"
+    ],
+    "deadlines": {
+      "applicationStart": "2024-04-01",
+      "applicationEnd": "2024-06-30",
+      
+      "resultDeclaration": "2024-08-01"
+    }
+  },
+  "contact": {
+    "address": "Valley Campus, Pollachi Main Road, Othakkalmandapam (Post), Coimbatore - 641 032 ,Tamil Nadu, India",
+    "phone": "+91 97152 60118",
+    "email": "hit.office@hindusthan.net",
+    "website": "www.hit.edu.in",
+    "socialMedia": {
+      "facebook": "HECT HITECH",
+      "twitter": "HIT_Official",
+      "linkedin": "hindusthan-institute-of-tech",
+      "instagram": "hindusthan.hitech"
+    },
+    "departments": [
+      {
+        "name": "Admissions Office",
+        "phone": "+91-80-1234-5679",
+        "email": "admissions@hit.edu"
+      },
+      {
+        "name": "Placement Cell",
+        "phone": "+91-80-1234-5680",
+        "email": "placements@hit.edu"
+      }
+    ]
+  }
+}

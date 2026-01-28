@@ -1,0 +1,44 @@
+{
+  "contact": {
+    "address": "Valley Campus, Pollachi Main Road, Othakkalmandapam (Post), Coimbatore - 641 032 Tamil Nadu, India",
+    "phone": "+91 97152 601184,+91 97151 29797, +91 94438 45599, +91 90470 10006",
+    "email": "hit.office@hindusthan.net",
+    "website": "www.hit.edu.in",
+    "socialMedia": {
+      "facebook": "https://facebook.com/hect.hitech",
+      "twitter": "https://twitter.com/hit_official",
+      "linkedin": "hindusthan-institute-technology",
+      "instagram": "hit_official",
+      "youtube": "HindusthanInstituteOfTechnology"
+    },
+    "departments": [
+      {
+        "name": "Admissions Office",
+        "phone": "+91-422-2987655",
+        "email": "admissions@hit.edu.in"
+      },
+      {
+        "name": "Placement Cell",
+        "phone": "+91-422-2987656",
+        "email": "placements@hit.edu.in"
+      },
+      {
+        "name": "Academic Office",
+        "phone": "+91-422-2987657",
+        "email": "academics@hit.edu.in"
+      },
+      {
+        "name": "Finance Office",
+        "phone": "+91-422-2987658",
+        "email": "finance@hit.edu.in"
+      }
+    ],
+    "officeHours": {
+      "weekdays": "Monday - Saturday: 9:00 AM - 5:00 PM"
+    },
+    "emergencyContact": {
+      "phone": "+91-422-2987699",
+      "email": "emergency@hit.edu.in"
+    }
+  }
+}

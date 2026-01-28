@@ -1,0 +1,107 @@
+{
+  "cms": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-25",
+    "adminConfig": {
+      "enableContentManagement": true,
+      "enableUserManagement": true,
+      "enableAnalytics": true,
+      "enableSEO": true
+    },
+    "contentTypes": [
+      {
+        "name": "Hero Section",
+        "fields": ["title", "subtitle", "backgroundImage", "stats", "ctaButtons"],
+        "editable": true,
+        "dataSource": "heroData.json"
+      },
+      {
+        "name": "News & Events",
+        "fields": ["title", "content", "image", "date", "category", "featured"],
+        "editable": true,
+        "dataSource": "newsEventsData.json"
+      },
+      {
+        "name": "Departments",
+        "fields": ["name", "description", "programs", "faculty", "facilities"],
+        "editable": true,
+        "dataSource": "departmentsData.json"
+      },
+      {
+        "name": "Faculty",
+        "fields": ["name", "designation", "specialization", "image", "publications"],
+        "editable": true,
+        "dataSource": "departmentsData.json"
+      },
+     
+      {
+        "name": "Contact Information",
+        "fields": ["address", "phone", "email", "socialMedia", "departments"],
+        "editable": true,
+        "dataSource": "contactData.json"
+      },
+      {
+        "name": "Gallery",
+        "fields": ["categories", "images", "captions"],
+        "editable": true,
+        "dataSource": "collegeData.json"
+      },
+      {
+        "name": "Accreditations",
+        "fields": ["name", "grade", "description", "validUntil"],
+        "editable": true,
+        "dataSource": "accreditationData.json"
+      },
+      {
+        "name": "Social Media Posts",
+        "fields": ["platform", "content", "image", "likes", "shares"],
+        "editable": true,
+        "dataSource": "socialMediaData.json"
+      },
+      {
+        "name": "Navigation Menu",
+        "fields": ["menuItems", "dropdownItems", "order"],
+        "editable": true,
+        "dataSource": "headerData.json"
+      }
+    ],
+    "userRoles": [
+      {
+        "role": "admin",
+        "permissions": ["create", "read", "update", "delete", "publish"]
+      },
+      {
+        "role": "editor",
+        "permissions": ["create", "read", "update", "publish"]
+      },
+      {
+        "role": "contributor",
+        "permissions": ["create", "read", "update"]
+      },
+      {
+        "role": "viewer",
+        "permissions": ["read"]
+      }
+    ],
+    "apiEndpoints": {
+      "baseUrl": "/api/cms",
+      "auth": "/auth",
+      "content": "/content",
+      "media": "/media",
+      "users": "/users",
+      "analytics": "/analytics"
+    },
+    "mediaManagement": {
+      "allowedTypes": ["image/jpeg", "image/png", "image/webp", "video/mp4"],
+      "maxFileSize": "10MB",
+      "storageLocation": "/uploads",
+      "imageOptimization": true
+    },
+    "seoConfig": {
+      "enableMetaTags": true,
+      "enableOpenGraph": true,
+      "enableTwitterCards": true,
+      "enableStructuredData": true
+    }
+  }
+}

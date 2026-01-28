@@ -1,0 +1,89 @@
+{
+  "placements": {
+    "stats": {
+      "placementRate": "98%",
+      "averagePackage": "8.5 LPA",
+      "highestPackage": "45 LPA",
+      "companiesVisited": "150+"
+    },
+   
+    "placementProcess": [
+      {
+        "step": 1,
+        "title": "Registration",
+        "description": "Students register for placement process through online portal"
+      },
+      {
+        "step": 2,
+        "title": "Pre-Placement Training ",
+        "description": "Comprehensive training on aptitude, technical skills, and soft skills"
+      },
+      {
+        "step": 3,
+        "title": "Company Visits",
+        "description": "Companies conduct pre-placement talks and selection processes"
+      },
+      {
+        "step": 4,
+        "title": "Final Selection",
+        "description": "Students receive offer letters and complete joining formalities"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Rahul Sharma",
+        "company": "Google",
+        "package": "42 LPA",
+        "year": "2024",
+        "department": "CSE",
+        "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "testimonial": "The placement cell at HIT provided excellent support throughout my placement journey. The training sessions and mock interviews were instrumental in my success."
+      },
+      {
+        "name": "Priya Patel",
+        "company": "Microsoft",
+        "package": "38 LPA",
+        "year": "2024",
+        "department": "ECE",
+        "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "testimonial": "The industry exposure and practical learning at HIT prepared me well for the corporate world. I'm grateful for the opportunities provided."
+      },
+      {
+        "name": "Arjun Reddy",
+        "company": "Amazon",
+        "package": "32 LPA",
+        "year": "2024",
+        "department": "CSE",
+        "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "testimonial": "The comprehensive training program and industry exposure at HIT helped me secure my dream job at Amazon. The placement cell's support was exceptional."
+      },
+      {
+        "name": "Sneha Krishnan",
+        "company": "TCS",
+        "package": "7.5 LPA",
+        "year": "2024",
+        "department": "ECE",
+        "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "testimonial": "The practical learning approach and strong foundation in electronics helped me excel in my career. HIT provided the perfect platform for growth."
+      },
+      {
+        "name": "Karthik Sharma",
+        "company": "Infosys",
+        "package": "6 LPA",
+        "year": "2023",
+        "department": "ME",
+        "image": "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "testimonial": "The mechanical engineering program at HIT is outstanding. The faculty guidance and hands-on experience prepared me well for the industry."
+      },
+      {
+        "name": "Divya Nair",
+        "company": "Wipro",
+        "package": "5.5 LPA",
+        "year": "2023",
+        "department": "CE",
+        "image": "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "testimonial": "The civil engineering department's focus on sustainable construction and modern techniques gave me an edge in the competitive job market."
+      }
+    ]
+  }
+}
